@@ -222,6 +222,8 @@ namespace Microsoft.Data.Entity.ChangeTracking.Internal
             _stateData.FlagProperty(property.GetIndex(), PropertyFlag.TemporaryOrModified, isTemporary);
         }
 
+        public virtual object ReadShadowValue(int shadowIndex) => null;
+
         protected virtual object ReadPropertyValue([NotNull] IPropertyBase propertyBase)
         {
             Debug.Assert(!(propertyBase is IProperty) || !((IProperty)propertyBase).IsShadowProperty);
