@@ -1,0 +1,50 @@
+﻿{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "../src/**/*.csproj",
+          ],
+          "exclude": [ "**/bin/**", "**/obj/**" ]
+        }
+      ],
+      "dest": "obj/reference"
+    }
+  ],
+  "build": {
+    "content":
+      [
+        {
+          "files": ["reference/**/*.yml"],
+          "cwd": "obj/"
+        },
+        {
+          "files": [
+            "documentation/**/*.md",
+            "**/index.md"
+          ]
+        },
+        {
+          "files": ["toc.yml"]
+        }
+      ],
+    "resource":
+      [
+        {
+          "files": [
+            "documentation/_images/**",
+            "images/**"
+          ]
+        }
+      ],
+    "overwrite": "apidoc/*.md",
+    "externalReference": [
+    ],
+    "globalMetadata": {
+      "_appTitle": "Entity Framework"
+    },
+    "dest": "_site",
+    "template": [ "default" ]
+  }
+}
