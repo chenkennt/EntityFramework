@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DatabaseProviderServices | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DatabaseProviderServices | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L28" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices">Class DatabaseProviderServices</h1>
+              <div class="markdown level0 summary"><para>
+The base set of services required by EF for a database provider to function.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">DatabaseProviderServices</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Storage</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class DatabaseProviderServices : IDatabaseProviderServices</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L34">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices__ctor_System_IServiceProvider_">DatabaseProviderServices(IServiceProvider)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.Storage.DatabaseProviderServices.html#Microsoft_Data_Entity_Storage_DatabaseProviderServices">DatabaseProviderServices</a> class.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected DatabaseProviderServices(IServiceProvider services)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td><em>services</em></td>
+                    <td><p>The service provider to resolve services from.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L85">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_CompiledQueryCacheKeyGenerator">CompiledQueryCacheKeyGenerator</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.html#Microsoft_Data_Entity_Query_ICompiledQueryCacheKeyGenerator">ICompiledQueryCacheKeyGenerator</a> for the database provider. By default, EF will register a default
+implementation
+(<a class="xref" href="Microsoft.Data.Entity.Query.CompiledQueryCacheKeyGenerator.html#Microsoft_Data_Entity_Query_CompiledQueryCacheKeyGenerator">CompiledQueryCacheKeyGenerator</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ICompiledQueryCacheKeyGenerator CompiledQueryCacheKeyGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.html#Microsoft_Data_Entity_Query_ICompiledQueryCacheKeyGenerator">ICompiledQueryCacheKeyGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L63">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ConventionSetBuilder">ConventionSetBuilder</h4>
+              <div class="markdown level1 summary"><p>The convention set builder for the database provider. By default this returns null, meaning the
+default <a class="xref" href="Microsoft.Data.Entity.Metadata.Conventions.Internal.CoreConventionSetBuilder.html#Microsoft_Data_Entity_Metadata_Conventions_Internal_CoreConventionSetBuilder">CoreConventionSetBuilder</a> will be used.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IConventionSetBuilder ConventionSetBuilder { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder.html#Microsoft_Data_Entity_Metadata_Conventions_Internal_IConventionSetBuilder">IConventionSetBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L130">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_Creator">Creator</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Storage.IDatabaseCreator.html#Microsoft_Data_Entity_Storage_IDatabaseCreator">IDatabaseCreator</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IDatabaseCreator Creator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDatabaseCreator.html#Microsoft_Data_Entity_Storage_IDatabaseCreator">IDatabaseCreator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L120">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_Database">Database</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Storage.IDatabase.html#Microsoft_Data_Entity_Storage_IDatabase">IDatabase</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IDatabase Database { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDatabase.html#Microsoft_Data_Entity_Storage_IDatabase">IDatabase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L150">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_EntityQueryableExpressionVisitorFactory">EntityQueryableExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityQueryableExpressionVisitorFactory">IEntityQueryableExpressionVisitorFactory</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IEntityQueryableExpressionVisitorFactory EntityQueryableExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityQueryableExpressionVisitorFactory">IEntityQueryableExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L155">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_EntityQueryModelVisitorFactory">EntityQueryModelVisitorFactory</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.html#Microsoft_Data_Entity_Query_IEntityQueryModelVisitorFactory">IEntityQueryModelVisitorFactory</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IEntityQueryModelVisitorFactory EntityQueryModelVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.html#Microsoft_Data_Entity_Query_IEntityQueryModelVisitorFactory">IEntityQueryModelVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L92">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ExpressionPrinter">ExpressionPrinter</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.html#Microsoft_Data_Entity_Query_Internal_IExpressionPrinter">IExpressionPrinter</a> for the database provider. By default, EF will register a default implementation
+(<a class="xref" href="Microsoft.Data.Entity.Query.Internal.ExpressionPrinter.html#Microsoft_Data_Entity_Query_Internal_ExpressionPrinter">ExpressionPrinter</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IExpressionPrinter ExpressionPrinter { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.html#Microsoft_Data_Entity_Query_Internal_IExpressionPrinter">IExpressionPrinter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L45">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_InvariantName">InvariantName</h4>
+              <div class="markdown level1 summary"><p>The unique name used to identify the database provider. This should be the same as the NuGet package name
+for the providers runtime.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract string InvariantName { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L135">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ModelSource">ModelSource</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Infrastructure.IModelSource.html#Microsoft_Data_Entity_Infrastructure_IModelSource">IModelSource</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IModelSource ModelSource { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IModelSource.html#Microsoft_Data_Entity_Infrastructure_IModelSource">IModelSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L77">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ModelValidator">ModelValidator</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Internal.IModelValidator.html#Microsoft_Data_Entity_Internal_IModelValidator">IModelValidator</a> for the database provider. By default, EF will register a default implementation
+(<a class="xref" href="Microsoft.Data.Entity.Internal.LoggingModelValidator.html#Microsoft_Data_Entity_Internal_LoggingModelValidator">LoggingModelValidator</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IModelValidator ModelValidator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IModelValidator.html#Microsoft_Data_Entity_Internal_IModelValidator">IModelValidator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L115">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ProjectionExpressionVisitorFactory">ProjectionExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IProjectionExpressionVisitorFactory">IProjectionExpressionVisitorFactory</a> for the database provider. By default, EF will register a default
+implementation
+(<a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.ProjectionExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_Internal_ProjectionExpressionVisitorFactory">ProjectionExpressionVisitorFactory</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IProjectionExpressionVisitorFactory ProjectionExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IProjectionExpressionVisitorFactory">IProjectionExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L107">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_QueryCompilationContextFactory">QueryCompilationContextFactory</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.html#Microsoft_Data_Entity_Query_IQueryCompilationContextFactory">IQueryCompilationContextFactory</a> for the database provider. By default, EF will register a default
+implementation
+(<a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorSelector">ValueGeneratorSelector</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IQueryCompilationContextFactory QueryCompilationContextFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.html#Microsoft_Data_Entity_Query_IQueryCompilationContextFactory">IQueryCompilationContextFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L145">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_QueryContextFactory">QueryContextFactory</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.IQueryContextFactory.html#Microsoft_Data_Entity_Query_IQueryContextFactory">IQueryContextFactory</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IQueryContextFactory QueryContextFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IQueryContextFactory.html#Microsoft_Data_Entity_Query_IQueryContextFactory">IQueryContextFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L99">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ResultOperatorHandler">ResultOperatorHandler</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Query.IResultOperatorHandler.html#Microsoft_Data_Entity_Query_IResultOperatorHandler">IResultOperatorHandler</a> for the database provider. By default, EF will register a default implementation
+(<a class="xref" href="Microsoft.Data.Entity.Query.ResultOperatorHandler.html#Microsoft_Data_Entity_Query_ResultOperatorHandler">ResultOperatorHandler</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IResultOperatorHandler ResultOperatorHandler { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IResultOperatorHandler.html#Microsoft_Data_Entity_Query_IResultOperatorHandler">IResultOperatorHandler</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L50">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_Services">Services</h4>
+              <div class="markdown level1 summary"><p>Gets the service provider to resolve services from.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IServiceProvider Services { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L125">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_TransactionManager">TransactionManager</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.Storage.IDbContextTransactionManager.html#Microsoft_Data_Entity_Storage_IDbContextTransactionManager">IDbContextTransactionManager</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IDbContextTransactionManager TransactionManager { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDbContextTransactionManager.html#Microsoft_Data_Entity_Storage_IDbContextTransactionManager">IDbContextTransactionManager</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L140">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ValueGeneratorCache">ValueGeneratorCache</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorCache">IValueGeneratorCache</a> for the database provider.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IValueGeneratorCache ValueGeneratorCache { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorCache">IValueGeneratorCache</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L70">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_ValueGeneratorSelector">ValueGeneratorSelector</h4>
+              <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorSelector">IValueGeneratorSelector</a> for the database provider. By default, EF will register a default implementation
+(<a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorSelector">ValueGeneratorSelector</a>) which provides basic functionality but can be
+overridden if needed.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IValueGeneratorSelector ValueGeneratorSelector { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorSelector">IValueGeneratorSelector</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L57">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_DatabaseProviderServices_GetService__1">GetService&lt;TService&gt;()</h4>
+              <div class="markdown level1 summary"><p>Resolves a required service from <a class="xref" href="Microsoft.Data.Entity.Storage.DatabaseProviderServices.html#Microsoft_Data_Entity_Storage_DatabaseProviderServices_Services">Services</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual TService GetService&lt;TService&gt;()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TService</span></td>
+                    <td><p>The resolved service.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

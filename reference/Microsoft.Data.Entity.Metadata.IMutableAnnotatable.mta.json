@@ -1,0 +1,430 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+    "id": "IMutableAnnotatable",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)",
+            "id": "Item_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+            "name": "Item[String]",
+            "name.vb": "Item(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item[System.String]",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets or sets the value of the annotation with the given name.</p>\n",
+            "syntax": {
+              "content": "object this[string name] { get; set; }",
+              "content.vb": "Property Item(name As String) As Object",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Object",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Object",
+                  "fullName": "System.Object",
+                  "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                  "id": "Object",
+                  "level": 0
+                },
+                "description": "<p>The value of the existing annotation if an annotation with the specified name already exists. Otherwise, null.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item[System.String]\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L31"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String,System.Object)",
+            "id": "AddAnnotation_String__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+            "name": "AddAnnotation(String, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+              "startLine": 43,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Adds an annotation to this object. Throws if an annotation with the specified name already exists.</p>\n",
+            "syntax": {
+              "content": "Annotation AddAnnotation(string name, object value)",
+              "content.vb": "Function AddAnnotation(name As String, value As Object) As Annotation",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation to be added.</p>\n"
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The value to be stored in the annotation.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml",
+                  "name": "Annotation",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "type": "class",
+                  "summary": "<para>\nAn arbitrary piece of metadata that can be stored on an object that implements <xref href=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\"></xref>.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotation\" name=\"Microsoft.Data.Entity.Infrastructure.Annotation\"/>",
+                  "id": "Annotation",
+                  "level": 0
+                },
+                "description": "<p>The newly added annotation.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L44"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)",
+            "id": "FindAnnotation_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+            "name": "FindAnnotation(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+              "startLine": 52,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the annotation with the given name, returning null if it does not exist.</p>\n",
+            "syntax": {
+              "content": "Annotation FindAnnotation(string name)",
+              "content.vb": "Function FindAnnotation(name As String) As Annotation",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation to find.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml",
+                  "name": "Annotation",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "type": "class",
+                  "summary": "<para>\nAn arbitrary piece of metadata that can be stored on an object that implements <xref href=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\"></xref>.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotation\" name=\"Microsoft.Data.Entity.Infrastructure.Annotation\"/>",
+                  "id": "Annotation",
+                  "level": 0
+                },
+                "description": "<p>The existing annotation if an annotation with the specified name already exists. Otherwise, null.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L53"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations",
+            "id": "GetAnnotations__",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+            "name": "GetAnnotations()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets all annotations on the current object.</p>\n",
+            "syntax": {
+              "content": "IEnumerable<Annotation> GetAnnotations()",
+              "content.vb": "Function GetAnnotations As IEnumerable(Of Annotation)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Infrastructure.Annotation}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml",
+                  "name": "IEnumerable<Annotation>",
+                  "name.vb": "IEnumerable(Of Annotation)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Infrastructure.Annotation>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Infrastructure.Annotation)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                      "name": "Annotation",
+                      "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                      "name": "Annotation",
+                      "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotation\" name=\"Microsoft.Data.Entity.Infrastructure.Annotation\"/>&gt;",
+                  "id": "IEnumerable_Annotation_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L36"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)",
+            "id": "RemoveAnnotation_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+            "name": "RemoveAnnotation(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+              "startLine": 59,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Removes the given annotation from this object.</p>\n",
+            "syntax": {
+              "content": "Annotation RemoveAnnotation(string name)",
+              "content.vb": "Function RemoveAnnotation(name As String) As Annotation",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The annotation to remove.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml",
+                  "name": "Annotation",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+                  "type": "class",
+                  "summary": "<para>\nAn arbitrary piece of metadata that can be stored on an object that implements <xref href=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\"></xref>.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotation\" name=\"Microsoft.Data.Entity.Infrastructure.Annotation\"/>",
+                  "id": "Annotation",
+                  "level": 0
+                },
+                "description": "<p>The annotation that was removed.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L60"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.yml",
+    "name": "IMutableAnnotatable",
+    "fullName": "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<para>\nA class that exposes annotations that can be modified. Annotations allow for arbitrary metadata to be\nstored on an object.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IMutableAnnotatable : IAnnotatable",
+      "content.vb": "Public Interface IMutableAnnotatable Inherits IAnnotatable"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable\" name=\"Microsoft.Data.Entity.Metadata.IMutableAnnotatable\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableAnnotatable.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

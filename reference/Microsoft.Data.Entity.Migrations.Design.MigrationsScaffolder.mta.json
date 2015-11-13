@@ -1,0 +1,776 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+    "id": "MigrationsScaffolder",
+    "parent": "Microsoft.Data.Entity.Migrations.Design",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.#ctor(Microsoft.Data.Entity.DbContext,Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Migrations.IMigrationsAssembly,Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer,Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator,Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator,Microsoft.Data.Entity.Migrations.IHistoryRepository,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Data.Entity.Storage.IDatabaseProviderServices)",
+            "id": "MigrationsScaffolder_DbContext__IModel__IMigrationsAssembly__IMigrationsModelDiffer__IMigrationsIdGenerator__MigrationsCodeGenerator__IHistoryRepository__ILoggerFactory__IDatabaseProviderServices_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "MigrationsScaffolder(DbContext, IModel, IMigrationsAssembly, IMigrationsModelDiffer, IMigrationsIdGenerator, MigrationsCodeGenerator, IHistoryRepository, ILoggerFactory, IDatabaseProviderServices)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.MigrationsScaffolder(Microsoft.Data.Entity.DbContext, Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Migrations.IMigrationsAssembly, Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer, Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator, Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator, Microsoft.Data.Entity.Migrations.IHistoryRepository, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Data.Entity.Storage.IDatabaseProviderServices)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "public MigrationsScaffolder(DbContext context, IModel model, IMigrationsAssembly migrationsAssembly, IMigrationsModelDiffer modelDiffer, IMigrationsIdGenerator idGenerator, MigrationsCodeGenerator migrationCodeGenerator, IHistoryRepository historyRepository, ILoggerFactory loggerFactory, IDatabaseProviderServices providerServices)",
+              "content.vb": "Public Sub New(context As DbContext, model As IModel, migrationsAssembly As IMigrationsAssembly, modelDiffer As IMigrationsModelDiffer, idGenerator As IMigrationsIdGenerator, migrationCodeGenerator As MigrationsCodeGenerator, historyRepository As IHistoryRepository, loggerFactory As ILoggerFactory, providerServices As IDatabaseProviderServices)",
+              "parameters": [
+                {
+                  "id": "context",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "migrationsAssembly",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsAssembly",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsAssembly.yml",
+                    "name": "IMigrationsAssembly",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsAssembly",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsAssembly\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsAssembly\"/>",
+                    "id": "IMigrationsAssembly",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "modelDiffer",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer.yml",
+                    "name": "IMigrationsModelDiffer",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer\"/>",
+                    "id": "IMigrationsModelDiffer",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "idGenerator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator.yml",
+                    "name": "IMigrationsIdGenerator",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator\"/>",
+                    "id": "IMigrationsIdGenerator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "migrationCodeGenerator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator",
+                    "parent": "Microsoft.Data.Entity.Migrations.Design",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator.yml",
+                    "name": "MigrationsCodeGenerator",
+                    "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator\"/>",
+                    "id": "MigrationsCodeGenerator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "historyRepository",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IHistoryRepository",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IHistoryRepository.yml",
+                    "name": "IHistoryRepository",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IHistoryRepository",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IHistoryRepository\" name=\"Microsoft.Data.Entity.Migrations.IHistoryRepository\"/>",
+                    "id": "IHistoryRepository",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "loggerFactory",
+                  "type": {
+                    "uid": "Microsoft.Extensions.Logging.ILoggerFactory",
+                    "parent": "Microsoft.Extensions.Logging",
+                    "isExternal": true,
+                    "name": "ILoggerFactory",
+                    "fullName": "Microsoft.Extensions.Logging.ILoggerFactory",
+                    "specName": "<xref href=\"Microsoft.Extensions.Logging.ILoggerFactory\" name=\"Microsoft.Extensions.Logging.ILoggerFactory\"/>",
+                    "id": "ILoggerFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "providerServices",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices.yml",
+                    "name": "IDatabaseProviderServices",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\"/>",
+                    "id": "IDatabaseProviderServices",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.#ctor(Microsoft.Data.Entity.DbContext,Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Migrations.IMigrationsAssembly,Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer,Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator,Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator,Microsoft.Data.Entity.Migrations.IHistoryRepository,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Data.Entity.Storage.IDatabaseProviderServices)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.MigrationsScaffolder(Microsoft.Data.Entity.DbContext, Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Migrations.IMigrationsAssembly, Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer, Microsoft.Data.Entity.Migrations.IMigrationsIdGenerator, Microsoft.Data.Entity.Migrations.Design.MigrationsCodeGenerator, Microsoft.Data.Entity.Migrations.IHistoryRepository, Microsoft.Extensions.Logging.ILoggerFactory, Microsoft.Data.Entity.Storage.IDatabaseProviderServices)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L34"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetDirectory(System.String,System.String,System.String)",
+            "id": "GetDirectory_String__String__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "GetDirectory(String, String, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetDirectory(System.String, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 336,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "protected virtual string GetDirectory(string projectDir, string siblingFileName, string subnamespace)",
+              "content.vb": "Protected Overridable Function GetDirectory(projectDir As String, siblingFileName As String, subnamespace As String) As String",
+              "parameters": [
+                {
+                  "id": "projectDir",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "siblingFileName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "subnamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetDirectory(System.String,System.String,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetDirectory(System.String, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L337"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetNamespace(System.Type,System.String)",
+            "id": "GetNamespace_Type__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "GetNamespace(Type, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetNamespace(System.Type, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 320,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "protected virtual string GetNamespace(Type siblingType, string defaultNamespace)",
+              "content.vb": "Protected Overridable Function GetNamespace(siblingType As Type, defaultNamespace As String) As String",
+              "parameters": [
+                {
+                  "id": "siblingType",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "defaultNamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetNamespace(System.Type,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetNamespace(System.Type, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L321"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetSubNamespace(System.String,System.String)",
+            "id": "GetSubNamespace_String__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "GetSubNamespace(String, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetSubNamespace(System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 175,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "protected virtual string GetSubNamespace(string rootNamespace, string namespace)",
+              "content.vb": "Protected Overridable Function GetSubNamespace(rootNamespace As String, namespace As String) As String",
+              "parameters": [
+                {
+                  "id": "rootNamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "namespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetSubNamespace(System.String,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.GetSubNamespace(System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L176"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.RemoveMigration(System.String,System.String)",
+            "id": "RemoveMigration_String__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "RemoveMigration(String, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.RemoveMigration(System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 183,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "public virtual MigrationFiles RemoveMigration(string projectDir, string rootNamespace)",
+              "content.vb": "Public Overridable Function RemoveMigration(projectDir As String, rootNamespace As String) As MigrationFiles",
+              "parameters": [
+                {
+                  "id": "projectDir",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "rootNamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles",
+                  "parent": "Microsoft.Data.Entity.Migrations.Design",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles.yml",
+                  "name": "MigrationFiles",
+                  "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationFiles\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationFiles\"/>",
+                  "id": "MigrationFiles",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.RemoveMigration(System.String,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.RemoveMigration(System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L184"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.Save(System.String,Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration)",
+            "id": "Save_String__ScaffoldedMigration_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "Save(String, ScaffoldedMigration)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.Save(System.String, Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 290,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "public virtual MigrationFiles Save(string projectDir, ScaffoldedMigration migration)",
+              "content.vb": "Public Overridable Function Save(projectDir As String, migration As ScaffoldedMigration) As MigrationFiles",
+              "parameters": [
+                {
+                  "id": "projectDir",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "migration",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration.yml",
+                    "name": "ScaffoldedMigration",
+                    "fullName": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration\" name=\"Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration\"/>",
+                    "id": "ScaffoldedMigration",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles",
+                  "parent": "Microsoft.Data.Entity.Migrations.Design",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles.yml",
+                  "name": "MigrationFiles",
+                  "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationFiles",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationFiles\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationFiles\"/>",
+                  "id": "MigrationFiles",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.Save(System.String,Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.Save(System.String, Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L291"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.ScaffoldMigration(System.String,System.String,System.String)",
+            "id": "ScaffoldMigration_String__String__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "ScaffoldMigration(String, String, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.ScaffoldMigration(System.String, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "public virtual ScaffoldedMigration ScaffoldMigration(string migrationName, string rootNamespace, string subNamespace = null)",
+              "content.vb": "Public Overridable Function ScaffoldMigration(migrationName As String, rootNamespace As String, subNamespace As String = Nothing) As ScaffoldedMigration",
+              "parameters": [
+                {
+                  "id": "migrationName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "rootNamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "subNamespace",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration.yml",
+                  "name": "ScaffoldedMigration",
+                  "fullName": "Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration\" name=\"Microsoft.Data.Entity.Migrations.Design.ScaffoldedMigration\"/>",
+                  "id": "ScaffoldedMigration",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.ScaffoldMigration(System.String,System.String,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.ScaffoldMigration(System.String, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.TryGetProjectFile(System.String,System.String)",
+            "id": "TryGetProjectFile_String__String_",
+            "parent": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+            "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+            "name": "TryGetProjectFile(String, String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.TryGetProjectFile(System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+              "startLine": 364,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Design",
+            "syntax": {
+              "content": "protected virtual string TryGetProjectFile(string projectDir, string fileName)",
+              "content.vb": "Protected Overridable Function TryGetProjectFile(projectDir As String, fileName As String) As String",
+              "parameters": [
+                {
+                  "id": "projectDir",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "fileName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.TryGetProjectFile(System.String,System.String)\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.TryGetProjectFile(System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L365"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder.yml",
+    "name": "MigrationsScaffolder",
+    "fullName": "Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs",
+      "startLine": 21,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Commands"
+    ],
+    "namespace": "Microsoft.Data.Entity.Migrations.Design",
+    "syntax": {
+      "content": "public class MigrationsScaffolder",
+      "content.vb": "Public Class MigrationsScaffolder"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder\" name=\"Microsoft.Data.Entity.Migrations.Design.MigrationsScaffolder\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/MigrationsScaffolder.cs/#L22"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,193 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.MutableKeyExtensions",
+    "id": "MutableKeyExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.MutableKeyExtensions.FindReferencingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableKey)",
+            "id": "FindReferencingForeignKeys_IMutableKey_",
+            "parent": "Microsoft.Data.Entity.MutableKeyExtensions",
+            "href": "Microsoft.Data.Entity.MutableKeyExtensions.yml",
+            "name": "FindReferencingForeignKeys(IMutableKey)",
+            "fullName": "Microsoft.Data.Entity.MutableKeyExtensions.FindReferencingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableKey)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all foreign keys that target a given primary or alternate key.</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IMutableForeignKey> FindReferencingForeignKeys(IMutableKey key)",
+              "content.vb": "Public Shared Function FindReferencingForeignKeys(key As IMutableKey) As IEnumerable(Of IMutableForeignKey)",
+              "parameters": [
+                {
+                  "id": "key",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+                    "name": "IMutableKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a primary or alternate key on an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IKey\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey\"/>",
+                    "id": "IMutableKey",
+                    "level": 0
+                  },
+                  "description": "<p>The key to find the foreign keys for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IMutableForeignKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+                  "name": "IEnumerable<IMutableForeignKey>",
+                  "name.vb": "IEnumerable(Of IMutableForeignKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IMutableForeignKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IMutableForeignKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "name": "IMutableForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "name": "IMutableForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\"/>&gt;",
+                  "id": "IEnumerable_IMutableForeignKey_",
+                  "level": 0
+                },
+                "description": "<p>The foreign keys that reference the given key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableKeyExtensions.FindReferencingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableKey)\" name=\"Microsoft.Data.Entity.MutableKeyExtensions.FindReferencingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableKey)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs/#L21"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.MutableKeyExtensions.yml",
+    "name": "MutableKeyExtensions",
+    "fullName": "Microsoft.Data.Entity.MutableKeyExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class MutableKeyExtensions",
+      "content.vb": "Public Class MutableKeyExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.MutableKeyExtensions\" name=\"Microsoft.Data.Entity.MutableKeyExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableKeyExtensions.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,1476 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ModelBuilder",
+    "id": "ModelBuilder",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+            "id": "ModelBuilder_ConventionSet_",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "ModelBuilder(ConventionSet)",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.ModelBuilder(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> class that will\napply a set of conventions.</p>\n",
+            "syntax": {
+              "content": "public ModelBuilder(ConventionSet conventions)",
+              "content.vb": "Public Sub New(conventions As ConventionSet)",
+              "parameters": [
+                {
+                  "id": "conventions",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Conventions.ConventionSet",
+                    "parent": "Microsoft.Data.Entity.Metadata.Conventions",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Conventions.ConventionSet.yml",
+                    "name": "ConventionSet",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Conventions.ConventionSet",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.ConventionSet\" name=\"Microsoft.Data.Entity.Metadata.Conventions.ConventionSet\"/>",
+                    "id": "ConventionSet",
+                    "level": 0
+                  },
+                  "description": "<p>The conventions to be applied to the model.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)\" name=\"Microsoft.Data.Entity.ModelBuilder.ModelBuilder(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L35"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+            "id": "IInfrastructure_InternalModelBuilder__Instance",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "IInfrastructure<InternalModelBuilder>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder>.Instance",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 79,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nThe internal <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> being used to configure this model.\n</para>\n<para>\nThis property is intended for use by extension methods to configure the model. It is not intended to be used in\napplication code.\n</para>",
+            "syntax": {
+                "content": "InternalModelBuilder IInfrastructure<InternalModelBuilder>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder>.Instance As InternalModelBuilder Implements IInfrastructure(Of InternalModelBuilder).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder.yml",
+                    "name": "InternalModelBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder\"/>",
+                    "id": "InternalModelBuilder",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance\" name=\"Microsoft.Data.Entity.ModelBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L80"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Model",
+            "id": "Model",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Model",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Model",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 51,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>The model being configured.</p>\n",
+            "syntax": {
+                "content": "public virtual IMutableModel Model { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Model As IMutableModel",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Model\" name=\"Microsoft.Data.Entity.ModelBuilder.Model\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L52"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+            "id": "Entity_String_",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity(String)",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 110,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Returns an object that can be used to configure a given entity type in the model.\nIf an entity type with the provided name is not already part of the model,\na new entity type that does not have a corresponding CLR type will be added to the model.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder Entity(string name)",
+              "content.vb": "Public Overridable Function Entity(name As String) As EntityTypeBuilder",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the entity type to be configured.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+                  "name": "EntityTypeBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>",
+                  "id": "EntityTypeBuilder",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.String)\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L111"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+            "id": "Entity_String__Action_EntityTypeBuilder__",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity(String, Action<EntityTypeBuilder>)",
+            "name.vb": "Entity(String, Action(Of EntityTypeBuilder))",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity(System.String, System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder>)",
+            "fullName.vb": "Microsoft.Data.Entity.ModelBuilder.Entity(System.String, System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 185,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nPerforms configuration of a given entity type in the model.\nIf an entity type with the provided name is not already part of the model,\na new entity type that does not have a corresponding CLR type will be added to the model.\n</para>\n<para>\nThis overload allows configuration of the entity type to be done in line in the method call rather\nthan being chained after a call to <xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.String)\"></xref>. This allows additional\nconfiguration at the model level to be chained after configuration for the entity type.\n</para>",
+            "syntax": {
+              "content": "public virtual ModelBuilder Entity(string name, Action<EntityTypeBuilder> buildAction)",
+              "content.vb": "Public Overridable Function Entity(name As String, buildAction As Action(Of EntityTypeBuilder)) As ModelBuilder",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the entity type to be configured.</p>\n"
+                },
+                {
+                  "id": "buildAction",
+                  "type": {
+                    "uid": "System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder}",
+                    "parent": "System",
+                    "definition": "System.Action`1",
+                    "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+                    "name": "Action<EntityTypeBuilder>",
+                    "name.vb": "Action(Of EntityTypeBuilder)",
+                    "fullName": "System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder>",
+                    "fullName.vb": "System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`1\" name=\"System.Action\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>&gt;",
+                    "id": "Action_EntityTypeBuilder_",
+                    "level": 0
+                  },
+                  "description": "<p>An action that performs configuration of the entity type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> instance so that additional configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.String, System.Action&lt;Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L186"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+            "id": "Entity_Type_",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity(Type)",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 96,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Returns an object that can be used to configure a given entity type in the model.\nIf the entity type is not already part of the model, it will be added to the model.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder Entity(Type type)",
+              "content.vb": "Public Overridable Function Entity(type As Type) As EntityTypeBuilder",
+              "parameters": [
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type to be configured.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+                  "name": "EntityTypeBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>",
+                  "id": "EntityTypeBuilder",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L97"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+            "id": "Entity_Type__Action_EntityTypeBuilder__",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity(Type, Action<EntityTypeBuilder>)",
+            "name.vb": "Entity(Type, Action(Of EntityTypeBuilder))",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type, System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder>)",
+            "fullName.vb": "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type, System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 158,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nPerforms configuration of a given entity type in the model. If the entity type is not already part\nof the model, it will be added to the model.\n</para>\n<para>\nThis overload allows configuration of the entity type to be done in line in the method call rather\nthan being chained after a call to <xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity``1\"></xref>. This allows additional\nconfiguration at the model level to be chained after configuration for the entity type.\n</para>",
+            "syntax": {
+              "content": "public virtual ModelBuilder Entity(Type type, Action<EntityTypeBuilder> buildAction)",
+              "content.vb": "Public Overridable Function Entity(type As Type, buildAction As Action(Of EntityTypeBuilder)) As ModelBuilder",
+              "parameters": [
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type to be configured.</p>\n"
+                },
+                {
+                  "id": "buildAction",
+                  "type": {
+                    "uid": "System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder}",
+                    "parent": "System",
+                    "definition": "System.Action`1",
+                    "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+                    "name": "Action<EntityTypeBuilder>",
+                    "name.vb": "Action(Of EntityTypeBuilder)",
+                    "fullName": "System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder>",
+                    "fullName.vb": "System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`1\" name=\"System.Action\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>&gt;",
+                    "id": "Action_EntityTypeBuilder_",
+                    "level": 0
+                  },
+                  "description": "<p>An action that performs configuration of the entity type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> instance so that additional configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity(System.Type, System.Action&lt;Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L159"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+            "id": "Entity_TEntity___",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity<TEntity>()",
+            "name.vb": "Entity(Of TEntity)()",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity<TEntity>()",
+            "fullName.vb": "Microsoft.Data.Entity.ModelBuilder.Entity(Of TEntity)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 87,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Returns an object that can be used to configure a given entity type in the model.\nIf the entity type is not already part of the model, it will be added to the model.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> Entity<TEntity>()where TEntity : class",
+              "content.vb": "Public Overridable Function Entity(Of TEntity As Class) As EntityTypeBuilder(Of TEntity)",
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The entity type to be configured."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                      "name": "EntityTypeBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                      "name": "EntityTypeBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>&lt;TEntity&gt;",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity``1\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity&lt;TEntity&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L88"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+            "id": "Entity_TEntity__Action_EntityTypeBuilder_TEntity___",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Entity<TEntity>(Action<EntityTypeBuilder<TEntity>>)",
+            "name.vb": "Entity(Of TEntity)(Action(Of EntityTypeBuilder(Of TEntity)))",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Entity<TEntity>(System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>>)",
+            "fullName.vb": "Microsoft.Data.Entity.ModelBuilder.Entity(Of TEntity)(System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 133,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nPerforms configuration of a given entity type in the model. If the entity type is not already part\nof the model, it will be added to the model.\n</para>\n<para>\nThis overload allows configuration of the entity type to be done in line in the method call rather\nthan being chained after a call to <xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity``1\"></xref>. This allows additional\nconfiguration at the model level to be chained after configuration for the entity type.\n</para>",
+            "syntax": {
+              "content": "public virtual ModelBuilder Entity<TEntity>(Action<EntityTypeBuilder<TEntity>> buildAction)where TEntity : class",
+              "content.vb": "Public Overridable Function Entity(Of TEntity As Class)(buildAction As Action(Of EntityTypeBuilder(Of TEntity))) As ModelBuilder",
+              "parameters": [
+                {
+                  "id": "buildAction",
+                  "type": {
+                    "uid": "System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{{TEntity}}}",
+                    "parent": "System",
+                    "definition": "System.Action`1",
+                    "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                    "name": "Action<EntityTypeBuilder<TEntity>>",
+                    "name.vb": "Action(Of EntityTypeBuilder(Of TEntity))",
+                    "fullName": "System.Action<Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>>",
+                    "fullName.vb": "System.Action(Of Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`1\" name=\"System.Action\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>&lt;TEntity&gt;&gt;",
+                    "id": "Action_EntityTypeBuilder_TEntity__",
+                    "level": 0
+                  },
+                  "description": "<p>An action that performs configuration of the entity type.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The entity type to be configured."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> instance so that additional configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})\" name=\"Microsoft.Data.Entity.ModelBuilder.Entity&lt;TEntity&gt;(System.Action&lt;Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L134"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+            "id": "HasAnnotation_String__Object_",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "HasAnnotation(String, Object)",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 60,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Adds or updates an annotation on the model. If an annotation with the key specified in</p>\n<p><paramref name=\"annotation\"></paramref> already exists it&#39;s value will be updated.</p>\n",
+            "syntax": {
+              "content": "public virtual ModelBuilder HasAnnotation(string annotation, object value)",
+              "content.vb": "Public Overridable Function HasAnnotation(annotation As String, value As Object) As ModelBuilder",
+              "parameters": [
+                {
+                  "id": "annotation",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation to be added or updated.</p>\n"
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The value to be stored in the annotation.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)\" name=\"Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L61"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+            "id": "Ignore_Type_",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Ignore(Type)",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 208,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Excludes the given entity type from the model. This method is typically used to remove types from\nthe model that were added by convention.</p>\n",
+            "syntax": {
+              "content": "public virtual ModelBuilder Ignore(Type type)",
+              "content.vb": "Public Overridable Function Ignore(type As Type) As ModelBuilder",
+              "parameters": [
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type to be removed from the model.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)\" name=\"Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L209"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+            "id": "Ignore_TEntity___",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Ignore<TEntity>()",
+            "name.vb": "Ignore(Of TEntity)()",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Ignore<TEntity>()",
+            "fullName.vb": "Microsoft.Data.Entity.ModelBuilder.Ignore(Of TEntity)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 200,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Excludes the given entity type from the model. This method is typically used to remove types from\nthe model that were added by convention.</p>\n",
+            "syntax": {
+              "content": "public virtual ModelBuilder Ignore<TEntity>()where TEntity : class",
+              "content.vb": "Public Overridable Function Ignore(Of TEntity As Class) As ModelBuilder",
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The  entity type to be removed from the model."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Ignore``1\" name=\"Microsoft.Data.Entity.ModelBuilder.Ignore&lt;TEntity&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L201"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ModelBuilder.Validate",
+            "id": "Validate__",
+            "parent": "Microsoft.Data.Entity.ModelBuilder",
+            "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+            "name": "Validate()",
+            "fullName": "Microsoft.Data.Entity.ModelBuilder.Validate()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ModelBuilder.cs",
+              "startLine": 41,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public virtual ModelBuilder Validate()",
+              "content.vb": "Public Overridable Function Validate As ModelBuilder",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ModelBuilder",
+                  "id": "ModelBuilder",
+                  "parent": "Microsoft.Data.Entity",
+                  "children": [
+                    "Microsoft.Data.Entity.ModelBuilder.#ctor(Microsoft.Data.Entity.Metadata.Conventions.ConventionSet)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.String,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity(System.Type,System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder})",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Entity``1(System.Action{Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{``0}})",
+                    "Microsoft.Data.Entity.ModelBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore(System.Type)",
+                    "Microsoft.Data.Entity.ModelBuilder.Ignore``1",
+                    "Microsoft.Data.Entity.ModelBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalModelBuilder}#Instance",
+                    "Microsoft.Data.Entity.ModelBuilder.Model",
+                    "Microsoft.Data.Entity.ModelBuilder.Validate"
+                  ],
+                  "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                  "name": "ModelBuilder",
+                  "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ModelBuilder.cs",
+                    "startLine": 25,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity",
+                  "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+                  "syntax": {
+                    "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+                    "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                  "level": 1
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder.Validate\" name=\"Microsoft.Data.Entity.ModelBuilder.Validate()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L42"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+    "name": "ModelBuilder",
+    "fullName": "Microsoft.Data.Entity.ModelBuilder",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ModelBuilder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ModelBuilder.cs",
+      "startLine": 25,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<para>\nProvides a simple API surface for configuring a <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref> that defines the shape of your\nentities, the relationships between them, and how they map to the database.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> to construct a model for a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> on your derived context. Alternatively you can create the\nmodel externally and set it on a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> instance that is passed to the context constructor.\n</para>",
+    "syntax": {
+      "content": "public class ModelBuilder : IInfrastructure<InternalModelBuilder>",
+      "content.vb": "Public Class ModelBuilder Implements IInfrastructure(Of InternalModelBuilder)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ModelBuilder.cs/#L26"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

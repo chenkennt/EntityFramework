@@ -1,0 +1,191 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+    "id": "ValueGenerator_TValue_",
+    "parent": "Microsoft.Data.Entity.ValueGeneration",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.Next",
+            "id": "Next__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+            "name": "Next()",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<TValue>.Next()",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of TValue).Next()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+              "startLine": 14,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Template method to be overridden by implementations to perform value generation.</p>\n",
+            "syntax": {
+              "content": "public abstract TValue Next()",
+              "content.vb": "Public MustOverride Function Next As TValue",
+              "return": {
+                "type": {
+                  "uid": "{TValue}",
+                  "isExternal": false,
+                  "name": "TValue",
+                  "fullName": "TValue",
+                  "specName": "<xref href=\"{TValue}\" name=\"TValue\"/>",
+                  "id": "TValue",
+                  "level": 0
+                },
+                "description": "<p>The generated value.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.Next\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator&lt;TValue&gt;.Next()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L15"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.NextValue",
+            "id": "NextValue__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+            "name": "NextValue()",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<TValue>.NextValue()",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of TValue).NextValue()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets a value to be assigned to a property.</p>\n",
+            "syntax": {
+              "content": "protected override object NextValue()",
+              "content.vb": "Protected Overrides Function NextValue As Object",
+              "return": {
+                "type": {
+                  "uid": "System.Object",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Object",
+                  "fullName": "System.Object",
+                  "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                  "id": "Object",
+                  "level": 0
+                },
+                "description": "<p>The value to be assigned to a property.</p>\n"
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.NextValue",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.NextValue\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator&lt;TValue&gt;.NextValue()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L21"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+    "name": "ValueGenerator<TValue>",
+    "name.vb": "ValueGenerator(Of TValue)",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<TValue>",
+    "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of TValue)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+      "startLine": 8,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ValueGeneration",
+    "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+    "syntax": {
+      "content": "public abstract class ValueGenerator<TValue> : ValueGenerator",
+      "content.vb": "Public MustInherit Class ValueGenerator(Of TValue) Inherits ValueGenerator",
+      "typeParameters": [
+        {
+          "id": "TValue"
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "parent": "Microsoft.Data.Entity.ValueGeneration",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+        "name": "ValueGenerator",
+        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "type": "class",
+        "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+        "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+        "id": "ValueGenerator",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.GeneratesTemporaryValues",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator&lt;TValue&gt;\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L9"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

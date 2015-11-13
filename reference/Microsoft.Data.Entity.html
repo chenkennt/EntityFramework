@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Microsoft.Data.Entity | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Microsoft.Data.Entity | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L4" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity">Namespace Microsoft.Data.Entity
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a></h4>
+                  <section><para>
+Provides a simple API surface for configuring <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a>. Databases (and other extensions)
+typically define extension methods on this object that allow you to configure the database connection (and other
+options) to be used for a context.
+</para>
+<para>
+You can use <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a> to configure a context by overriding
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> or creating a <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a>
+externally and passing it to the context constructor.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder`1.html#Microsoft_Data_Entity_DbContextOptionsBuilder_1">DbContextOptionsBuilder</a>&lt;TContext&gt;</h4>
+                  <section><para>
+Provides a simple API surface for configuring <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_1">DbContextOptions&lt;TContext&gt;</a>. Databases (and other extensions)
+typically define extension methods on this object that allow you to configure the database connection (and other
+options) to be used for a context.
+</para>
+<para>
+You can use <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a> to configure a context by overriding
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> or creating a <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a>
+externally and passing it to the context constructor.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet</a>&lt;TEntity&gt;</h4>
+                  <section><para>
+A <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> can be used to query and save instances of <typeparamref name="TEntity"></typeparamref>.
+LINQ queries against a <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> will be translated into queries against the database.
+</para>
+<para>
+The results of a LINQ query against a <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> will contain the results
+returned from the database and may not reflect changes made in the context that have not
+been persisted to the database. For example, the results will not contain newly added entities
+and may still contain entities that are marked for deletion.
+</para>
+<para>
+Depending on the database being used, some parts of a LINQ query against a <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a>
+may be evaluated in memory rather than being translated into a database query.
+</para>
+<para><a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> objects are usually obtained from a <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a>
+property on a derived <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> or from the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Set__1">Set&lt;TEntity&gt;()</a>
+method.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.DbUpdateConcurrencyException.html#Microsoft_Data_Entity_DbUpdateConcurrencyException">DbUpdateConcurrencyException</a></h4>
+                  <section><p>An exception that is thrown when a concurrency violation is encountered while saving to the database. A concurrency violation
+occurs when an unexpected number of rows are affected during save. This is usually because the data in the database has
+been modified since it was loaded into memory.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.DbUpdateException.html#Microsoft_Data_Entity_DbUpdateException">DbUpdateException</a></h4>
+                  <section><p>An exception that is thrown when an error is encountered while saving to the database.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.EF.html#Microsoft_Data_Entity_EF">EF</a></h4>
+                  <section><p>Static methods that are useful in application code where there is not an EF type for the method to be accessed from. For example,
+referencing a shadow state property in a LINQ query.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.EntityFrameworkQueryableExtensions.html#Microsoft_Data_Entity_EntityFrameworkQueryableExtensions">EntityFrameworkQueryableExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.EntityTypeExtensions.html#Microsoft_Data_Entity_EntityTypeExtensions">EntityTypeExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.InMemoryDbContextOptionsExtensions.html#Microsoft_Data_Entity_InMemoryDbContextOptionsExtensions">InMemoryDbContextOptionsExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.KeyExtensions.html#Microsoft_Data_Entity_KeyExtensions">KeyExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ModelExtensions.html#Microsoft_Data_Entity_ModelExtensions">ModelExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutableAnnotatableExtensions.html#Microsoft_Data_Entity_MutableAnnotatableExtensions">MutableAnnotatableExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableAnnotatable.html#Microsoft_Data_Entity_Metadata_IMutableAnnotatable">IMutableAnnotatable</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutableEntityTypeExtensions.html#Microsoft_Data_Entity_MutableEntityTypeExtensions">MutableEntityTypeExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutableKeyExtensions.html#Microsoft_Data_Entity_MutableKeyExtensions">MutableKeyExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutableModelExtensions.html#Microsoft_Data_Entity_MutableModelExtensions">MutableModelExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableModel.html#Microsoft_Data_Entity_Metadata_IMutableModel">IMutableModel</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutableNavigationExtensions.html#Microsoft_Data_Entity_MutableNavigationExtensions">MutableNavigationExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableNavigation.html#Microsoft_Data_Entity_Metadata_IMutableNavigation">IMutableNavigation</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.MutablePropertyExtensions.html#Microsoft_Data_Entity_MutablePropertyExtensions">MutablePropertyExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.NavigationExtensions.html#Microsoft_Data_Entity_NavigationExtensions">NavigationExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.INavigation.html#Microsoft_Data_Entity_Metadata_INavigation">INavigation</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.PropertyExtensions.html#Microsoft_Data_Entity_PropertyExtensions">PropertyExtensions</a></h4>
+                  <section><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.html#Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions">RelationalDatabaseFacadeExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalEntityTypeBuilderExtensions.html#Microsoft_Data_Entity_RelationalEntityTypeBuilderExtensions">RelationalEntityTypeBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalIndexBuilderExtensions.html#Microsoft_Data_Entity_RelationalIndexBuilderExtensions">RelationalIndexBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalKeyBuilderExtensions.html#Microsoft_Data_Entity_RelationalKeyBuilderExtensions">RelationalKeyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalMetadataExtensions.html#Microsoft_Data_Entity_RelationalMetadataExtensions">RelationalMetadataExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalModelBuilderExtensions.html#Microsoft_Data_Entity_RelationalModelBuilderExtensions">RelationalModelBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalPropertyBuilderExtensions.html#Microsoft_Data_Entity_RelationalPropertyBuilderExtensions">RelationalPropertyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalQueryableExtensions.html#Microsoft_Data_Entity_RelationalQueryableExtensions">RelationalQueryableExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalReferenceCollectionBuilderExtensions.html#Microsoft_Data_Entity_RelationalReferenceCollectionBuilderExtensions">RelationalReferenceCollectionBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.RelationalReferenceReferenceBuilderExtensions.html#Microsoft_Data_Entity_RelationalReferenceReferenceBuilderExtensions">RelationalReferenceReferenceBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteDbContextOptionsBuilderExtensions.html#Microsoft_Data_Entity_SqliteDbContextOptionsBuilderExtensions">SqliteDbContextOptionsBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteEntityTypeBuilderExtensions.html#Microsoft_Data_Entity_SqliteEntityTypeBuilderExtensions">SqliteEntityTypeBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteIndexBuilderExtensions.html#Microsoft_Data_Entity_SqliteIndexBuilderExtensions">SqliteIndexBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteKeyBuilderExtensions.html#Microsoft_Data_Entity_SqliteKeyBuilderExtensions">SqliteKeyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteMetadataExtensions.html#Microsoft_Data_Entity_SqliteMetadataExtensions">SqliteMetadataExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlitePropertyBuilderExtensions.html#Microsoft_Data_Entity_SqlitePropertyBuilderExtensions">SqlitePropertyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteReferenceCollectionBuilderExtensions.html#Microsoft_Data_Entity_SqliteReferenceCollectionBuilderExtensions">SqliteReferenceCollectionBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqliteReferenceReferenceBuilderExtensions.html#Microsoft_Data_Entity_SqliteReferenceReferenceBuilderExtensions">SqliteReferenceReferenceBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.html#Microsoft_Data_Entity_SqlServerDbContextOptionsExtensions">SqlServerDbContextOptionsExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerEntityTypeBuilderExtensions.html#Microsoft_Data_Entity_SqlServerEntityTypeBuilderExtensions">SqlServerEntityTypeBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerIndexBuilderExtensions.html#Microsoft_Data_Entity_SqlServerIndexBuilderExtensions">SqlServerIndexBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerKeyBuilderExtensions.html#Microsoft_Data_Entity_SqlServerKeyBuilderExtensions">SqlServerKeyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerMetadataExtensions.html#Microsoft_Data_Entity_SqlServerMetadataExtensions">SqlServerMetadataExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerModelBuilderExtensions.html#Microsoft_Data_Entity_SqlServerModelBuilderExtensions">SqlServerModelBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerPropertyBuilderExtensions.html#Microsoft_Data_Entity_SqlServerPropertyBuilderExtensions">SqlServerPropertyBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerReferenceCollectionBuilderExtensions.html#Microsoft_Data_Entity_SqlServerReferenceCollectionBuilderExtensions">SqlServerReferenceCollectionBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.SqlServerReferenceReferenceBuilderExtensions.html#Microsoft_Data_Entity_SqlServerReferenceReferenceBuilderExtensions">SqlServerReferenceReferenceBuilderExtensions</a></h4>
+                  <section></section>
+                <h3 id="enums">Enums</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState">EntityState</a></h4>
+                  <section><p>The state in which an entity is being tracked by a context.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></h4>
+                  <section><p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively
+performed on the entities that it is related to.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.QueryTrackingBehavior.html#Microsoft_Data_Entity_QueryTrackingBehavior">QueryTrackingBehavior</a></h4>
+                  <section><p>Indicates how the results of a query are tracked by the <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker">ChangeTracker</a>.</p>
+</section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory",
+    "id": "ISqlTranslatingExpressionVisitorFactory",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.Create(Microsoft.Data.Entity.Query.RelationalQueryModelVisitor,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Linq.Expressions.Expression,System.Boolean,System.Boolean)",
+            "id": "Create_RelationalQueryModelVisitor__SelectExpression__Expression__Boolean__Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.yml",
+            "name": "Create(RelationalQueryModelVisitor, SelectExpression, Expression, Boolean, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.Create(Microsoft.Data.Entity.Query.RelationalQueryModelVisitor, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Linq.Expressions.Expression, System.Boolean, System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs",
+              "startLine": 11,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "SqlTranslatingExpressionVisitor Create(RelationalQueryModelVisitor queryModelVisitor, SelectExpression targetSelectExpression = null, Expression topLevelPredicate = null, bool bindParentQueries = false, bool inProjection = false)",
+              "content.vb": "Function Create(queryModelVisitor As RelationalQueryModelVisitor, targetSelectExpression As SelectExpression = Nothing, topLevelPredicate As Expression = Nothing, bindParentQueries As Boolean = False, inProjection As Boolean = False) As SqlTranslatingExpressionVisitor",
+              "parameters": [
+                {
+                  "id": "queryModelVisitor",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor.yml",
+                    "name": "RelationalQueryModelVisitor",
+                    "fullName": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.RelationalQueryModelVisitor\" name=\"Microsoft.Data.Entity.Query.RelationalQueryModelVisitor\"/>",
+                    "id": "RelationalQueryModelVisitor",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "targetSelectExpression",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "parent": "Microsoft.Data.Entity.Query.Expressions",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Expressions.SelectExpression.yml",
+                    "name": "SelectExpression",
+                    "fullName": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\" name=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\"/>",
+                    "id": "SelectExpression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "topLevelPredicate",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "bindParentQueries",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "inProjection",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+                  "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+                  "name": "SqlTranslatingExpressionVisitor",
+                  "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor\"/>",
+                  "id": "SqlTranslatingExpressionVisitor",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.Create(Microsoft.Data.Entity.Query.RelationalQueryModelVisitor,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Linq.Expressions.Expression,System.Boolean,System.Boolean)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.Create(Microsoft.Data.Entity.Query.RelationalQueryModelVisitor, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Linq.Expressions.Expression, System.Boolean, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs/#L12"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory.yml",
+    "name": "ISqlTranslatingExpressionVisitorFactory",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "syntax": {
+      "content": "public interface ISqlTranslatingExpressionVisitorFactory",
+      "content.vb": "Public Interface ISqlTranslatingExpressionVisitorFactory"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ISqlTranslatingExpressionVisitorFactory\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/ISqlTranslatingExpressionVisitorFactory.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

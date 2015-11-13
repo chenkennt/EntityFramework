@@ -1,0 +1,404 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration",
+    "id": "Microsoft_Data_Entity_ValueGeneration",
+    "children": [
+      {
+        "name": "Class",
+        "title": "Classes",
+        "id": "classes",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator.yml",
+            "name": "GuidValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator",
+            "type": "class",
+            "summary": "<p>Generates <xref href=\"System.Guid\"></xref> values using <xref href=\"System.Guid.NewGuid\"></xref>.\nThe generated values are non-temporary, meaning they will be saved to the database.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator\"/>",
+            "id": "GuidValueGenerator",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml",
+            "name": "HiLoValueGenerator<TValue>",
+            "name.vb": "HiLoValueGenerator(Of TValue)",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator<TValue>",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator(Of TValue)",
+            "type": "class",
+            "summary": "<para>\nActs as a <xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"></xref>  by requesting a block of values from the\nunderlying database and returning them one by one. Will ask the underlying\ndatabase for another block when the current block is exhausted.\n</para>\n<para>\nA block is represented by a low value fetched from the database, and then a block size\nthat indicates how many sequential values can be used, starting from the low value, before\na new low value must be fetched from the database.\n</para>",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+                "name": "HiLoValueGenerator",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TValue",
+                "fullName": "TValue",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+                "name": "HiLoValueGenerator",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TValue",
+                "fullName": "TValue",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator\"/>&lt;TValue&gt;",
+            "id": "HiLoValueGenerator_TValue_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState.yml",
+            "name": "HiLoValueGeneratorState",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState",
+            "type": "class",
+            "summary": "<p>The thread safe state used by <xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1\"></xref>.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState\"/>",
+            "id": "HiLoValueGeneratorState",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector.yml",
+            "name": "RelationalValueGeneratorSelector",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector\"/>",
+            "id": "RelationalValueGeneratorSelector",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.yml",
+            "name": "SequentialGuidValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+            "type": "class",
+            "summary": "<p>Generates sequential <xref href=\"System.Guid\"></xref> values using the same algorithm as NEWSEQUENTIALID()\nin Microsoft SQL Server. This is useful when entities are being saved to a database where sequential\nGUIDs will provide a performance benefit. The generated values are non-temporary, meaning they will\nbe saved to the database.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator\"/>",
+            "id": "SequentialGuidValueGenerator",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator.yml",
+            "name": "TemporaryGuidValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator",
+            "type": "class",
+            "summary": "<p>Generates <xref href=\"System.Guid\"></xref> values using <xref href=\"System.Guid.NewGuid\"></xref>.\nThe generated values are temporary, meaning they will be replaced by database\ngenerated values when the entity is saved.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator\"/>",
+            "id": "TemporaryGuidValueGenerator",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "parent": "Microsoft.Data.Entity.ValueGeneration",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+            "name": "ValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "type": "class",
+            "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+            "id": "ValueGenerator",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "parent": "Microsoft.Data.Entity.ValueGeneration",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+            "name": "ValueGenerator<TValue>",
+            "name.vb": "ValueGenerator(Of TValue)",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<TValue>",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of TValue)",
+            "type": "class",
+            "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+                "name": "ValueGenerator",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TValue",
+                "fullName": "TValue",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+                "name": "ValueGenerator",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TValue",
+                "fullName": "TValue",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>&lt;TValue&gt;",
+            "id": "ValueGenerator_TValue_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache.yml",
+            "name": "ValueGeneratorCache",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache",
+            "type": "class",
+            "summary": "<para>\nKeeps a cache of value generators for properties.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache\"/>",
+            "id": "ValueGeneratorCache",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory",
+            "parent": "Microsoft.Data.Entity.ValueGeneration",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory.yml",
+            "name": "ValueGeneratorFactory",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory",
+            "type": "class",
+            "summary": "<p>Base class for factories that create value generators.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory\"/>",
+            "id": "ValueGeneratorFactory",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1.yml",
+            "name": "ValueGeneratorFactory<TValueGenerator>",
+            "name.vb": "ValueGeneratorFactory(Of TValueGenerator)",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory<TValueGenerator>",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory(Of TValueGenerator)",
+            "type": "class",
+            "summary": "<p>Factory to create value generators of type</p>\n<p><typeparam name=\"TValueGenerator\"></typeparam>\n.</p>\n",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1",
+                "name": "ValueGeneratorFactory",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TValueGenerator",
+                "fullName": "TValueGenerator",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1",
+                "name": "ValueGeneratorFactory",
+                "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TValueGenerator",
+                "fullName": "TValueGenerator",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory\"/>&lt;TValueGenerator&gt;",
+            "id": "ValueGeneratorFactory_TValueGenerator_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector.yml",
+            "name": "ValueGeneratorSelector",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector",
+            "type": "class",
+            "summary": "<para>\nSelects value generators to be used to generate values for properties of entities.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector\"/>",
+            "id": "ValueGeneratorSelector",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          }
+        ]
+      },
+      {
+        "name": "Interface",
+        "title": "Interfaces",
+        "id": "interfaces",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+            "parent": "Microsoft.Data.Entity.ValueGeneration",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.yml",
+            "name": "IValueGeneratorCache",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+            "type": "interface",
+            "summary": "<para>\nKeeps a cache of value generators for properties.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\"/>",
+            "id": "IValueGeneratorCache",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+            "parent": "Microsoft.Data.Entity.ValueGeneration",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.yml",
+            "name": "IValueGeneratorSelector",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+            "type": "interface",
+            "summary": "<para>\nSelects value generators to be used to generate values for properties of entities.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\"/>",
+            "id": "IValueGeneratorSelector",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.yml",
+    "name": "Microsoft.Data.Entity.ValueGeneration",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration",
+    "type": "Namespace",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs",
+      "startLine": 3,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration\" name=\"Microsoft.Data.Entity.ValueGeneration\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L4"
+  },
+  "isNamespace": true,
+  "_allowToc": true
+}

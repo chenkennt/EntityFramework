@@ -1,0 +1,147 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+    "id": "MigrationOperation",
+    "parent": "Microsoft.Data.Entity.Migrations.Operations",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.IsDestructiveChange",
+            "id": "IsDestructiveChange",
+            "parent": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+            "href": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.yml",
+            "name": "IsDestructiveChange",
+            "fullName": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.IsDestructiveChange",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs",
+              "startLine": 9,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations.Operations",
+            "syntax": {
+                "content": "public virtual bool IsDestructiveChange { get; set; }",
+                "content.vb": "Public Overridable Property IsDestructiveChange As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.IsDestructiveChange\" name=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.IsDestructiveChange\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs/#L10"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.yml",
+    "name": "MigrationOperation",
+    "fullName": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs",
+      "startLine": 7,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Migrations.Operations",
+    "syntax": {
+      "content": "public abstract class MigrationOperation : Annotatable, IMutableAnnotatable, IAnnotatable",
+      "content.vb": "Public MustInherit Class MigrationOperation Inherits Annotatable Implements IMutableAnnotatable, IAnnotatable"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Infrastructure.Annotatable",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Infrastructure.Annotatable.yml",
+        "name": "Annotatable",
+        "fullName": "Microsoft.Data.Entity.Infrastructure.Annotatable",
+        "type": "class",
+        "summary": "<para>\nBase class for types that support reading and writing annotations.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotatable\" name=\"Microsoft.Data.Entity.Infrastructure.Annotatable\"/>",
+        "id": "Annotatable",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.GetAnnotations",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.AddAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.AddAnnotation(System.String,Microsoft.Data.Entity.Infrastructure.Annotation)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.SetAnnotation(System.String,Microsoft.Data.Entity.Infrastructure.Annotation)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.GetOrAddAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.RemoveAnnotation(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.CreateAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.Microsoft#Data#Entity#Infrastructure#IAnnotatable#GetAnnotations",
+      "Microsoft.Data.Entity.Infrastructure.Annotatable.Microsoft#Data#Entity#Infrastructure#IAnnotatable#FindAnnotation(System.String)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation\" name=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Operations/MigrationOperation.cs/#L8"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

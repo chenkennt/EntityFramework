@@ -1,0 +1,477 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+    "id": "IProperty",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.ClrType",
+            "id": "ClrType",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "ClrType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.ClrType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 17,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the type of value that this property holds.</p>\n",
+            "syntax": {
+                "content": "Type ClrType { get; }",
+                "content.vb": "ReadOnly Property ClrType As Type",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.ClrType\" name=\"Microsoft.Data.Entity.Metadata.IProperty.ClrType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L18"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsConcurrencyToken",
+            "id": "IsConcurrencyToken",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsConcurrencyToken",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsConcurrencyToken",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 75,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether this property is used as a concurrency token. When a property is configured\nas a concurrency token the value in the database will be checked when an instance of this entity type\nis updated or deleted during <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> to ensure it has not changed since\nthe instance was retrieved from the database. If it has changed, an exception will be thrown and the\nchanges will not be applied to the database.</p>\n",
+            "syntax": {
+                "content": "bool IsConcurrencyToken { get; }",
+                "content.vb": "ReadOnly Property IsConcurrencyToken As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsConcurrencyToken\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsConcurrencyToken\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L76"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsNullable",
+            "id": "IsNullable",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsNullable",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsNullable",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether this property can contain null.</p>\n",
+            "syntax": {
+                "content": "bool IsNullable { get; }",
+                "content.vb": "ReadOnly Property IsNullable As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsNullable\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsNullable\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L23"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyAfterSave",
+            "id": "IsReadOnlyAfterSave",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsReadOnlyAfterSave",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyAfterSave",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 36,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether or not this property can be modified after the entity is\nsaved to the database. If true, an exception will be thrown if a new value is assigned to\nthis property after the entity exists in the database.</p>\n",
+            "syntax": {
+                "content": "bool IsReadOnlyAfterSave { get; }",
+                "content.vb": "ReadOnly Property IsReadOnlyAfterSave As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyAfterSave\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyAfterSave\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L37"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyBeforeSave",
+            "id": "IsReadOnlyBeforeSave",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsReadOnlyBeforeSave",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyBeforeSave",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether or not this property can be modified before the entity is\nsaved to the database. If true, an exception will be thrown if a value is assigned to\nthis property when it is in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state.</p>\n",
+            "syntax": {
+                "content": "bool IsReadOnlyBeforeSave { get; }",
+                "content.vb": "ReadOnly Property IsReadOnlyBeforeSave As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyBeforeSave\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsReadOnlyBeforeSave\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L30"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsShadowProperty",
+            "id": "IsShadowProperty",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsShadowProperty",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsShadowProperty",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 66,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether this is a shadow property. A shadow property is one that does not have a\ncorresponding property in the entity class. The current value for the property is stored in\nthe <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> rather than being stored in instances of the entity class.</p>\n",
+            "syntax": {
+                "content": "bool IsShadowProperty { get; }",
+                "content.vb": "ReadOnly Property IsShadowProperty As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsShadowProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsShadowProperty\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L67"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.IsStoreGeneratedAlways",
+            "id": "IsStoreGeneratedAlways",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "IsStoreGeneratedAlways",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.IsStoreGeneratedAlways",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether or not the database will always generate a value for this property.\nIf set to true, a value will always be read back from the database whenever the entity is saved\nregardless of the state of the property. If set to false, whenever a value is assigned to the property\n(or marked as modified) EF will attempt to save that value to the database rather than letting the\ndatabase generate one.</p>\n",
+            "syntax": {
+                "content": "bool IsStoreGeneratedAlways { get; }",
+                "content.vb": "ReadOnly Property IsStoreGeneratedAlways As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsStoreGeneratedAlways\" name=\"Microsoft.Data.Entity.Metadata.IProperty.IsStoreGeneratedAlways\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.RequiresValueGenerator",
+            "id": "RequiresValueGenerator",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "RequiresValueGenerator",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.RequiresValueGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 59,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether this property requires a <xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"></xref> to generate\nvalues when new entities are added to the context.</p>\n",
+            "syntax": {
+                "content": "bool RequiresValueGenerator { get; }",
+                "content.vb": "ReadOnly Property RequiresValueGenerator As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.RequiresValueGenerator\" name=\"Microsoft.Data.Entity.Metadata.IProperty.RequiresValueGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L60"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IProperty.ValueGenerated",
+            "id": "ValueGenerated",
+            "parent": "Microsoft.Data.Entity.Metadata.IProperty",
+            "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+            "name": "ValueGenerated",
+            "fullName": "Microsoft.Data.Entity.Metadata.IProperty.ValueGenerated",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+              "startLine": 53,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating when a value for this property will be generated by the database. Even when the\nproperty is set to be generated by the database, EF may still attempt to save a specific value (rather than\nhaving one generated by the database) when the entity is added and a value is assigned, or the property is\nmarked as modified for an existing entity. See <xref href=\"Microsoft.Data.Entity.Metadata.IProperty.IsStoreGeneratedAlways\"></xref> for more information.</p>\n",
+            "syntax": {
+                "content": "ValueGenerated ValueGenerated { get; }",
+                "content.vb": "ReadOnly Property ValueGenerated As ValueGenerated",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.ValueGenerated",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.ValueGenerated.yml",
+                    "name": "ValueGenerated",
+                    "fullName": "Microsoft.Data.Entity.Metadata.ValueGenerated",
+                    "type": "enum",
+                    "summary": "<p>Indicates when a value for a property will be generated by the database. Even when a\nproperty is set to be generated by the database, EF may still attempt to save a specific value (rather than\nhaving one generated by the database) when an entity is added and a value is assigned, or the property is\nmarked as modified for an existing entity.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.ValueGenerated\" name=\"Microsoft.Data.Entity.Metadata.ValueGenerated\"/>",
+                    "id": "ValueGenerated",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty.ValueGenerated\" name=\"Microsoft.Data.Entity.Metadata.IProperty.ValueGenerated\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L54"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+    "name": "IProperty",
+    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IProperty.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<p>Represents a scalar property of an entity.</p>\n",
+    "syntax": {
+      "content": "public interface IProperty : IPropertyBase, IAnnotatable",
+      "content.vb": "Public Interface IProperty Inherits IPropertyBase"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.IPropertyBase.Name",
+      "Microsoft.Data.Entity.Metadata.IPropertyBase.DeclaringEntityType",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.GetAnnotations"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IProperty.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

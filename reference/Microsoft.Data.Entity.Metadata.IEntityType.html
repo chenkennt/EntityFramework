@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IEntityType | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IEntityType | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L14" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_IEntityType">Interface IEntityType</h1>
+              <div class="markdown level0 summary"><p>Represents an entity in an <a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_IEntityType_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IEntityType : IAnnotatable</code></pre>
+              </div>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L29">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_BaseType">BaseType</h4>
+              <div class="markdown level1 summary"><p>Gets the base type of the entity. Returns null if this is not a derived type in an inheritance hierarchy.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEntityType BaseType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L41">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_ClrType">ClrType</h4>
+              <div class="markdown level1 summary"><para>
+Gets the CLR class that is used to represent instances of this entity. Returns null if the entity does not have a
+corresponding CLR class (known as a shadow entity).
+</para>
+<para>
+Shadow entities are not currently supported in a model that is used at runtime with a <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>.
+Therefore, shadow entities will only exist in migration model snapshots, etc.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Type ClrType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L19">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_Model">Model</h4>
+              <div class="markdown level1 summary"><p>Gets the model this entity belongs to.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IModel Model { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L24">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_Name">Name</h4>
+              <div class="markdown level1 summary"><p>Gets the name of the entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L81">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_FindForeignKey_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IProperty__Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Metadata_IEntityType_">FindForeignKey(IReadOnlyList&lt;IProperty&gt;, IKey, IEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets the foreign key for the given properties that points to a given primary or alternate key. Returns null
+if no foreign key is found.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IForeignKey FindForeignKey(IReadOnlyList&lt;IProperty&gt; properties, IKey principalKey, IEntityType principalEntityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties that the foreign key is defined on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>principalKey</em></td>
+                    <td><p>The primary or alternate key that is referenced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td><p>The entity type that the relationship targets. This may be different from the type that <paramref name="principalKey"></paramref>
+is defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the
+base type of the hierarchy).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><p>The foreign key, or null if none is defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L97">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_FindIndex_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IProperty__">FindIndex(IReadOnlyList&lt;IProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the index defined on the given properties. Returns null if no index is defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IIndex FindIndex(IReadOnlyList&lt;IProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties to find the index on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><p>The index, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L61">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_FindKey_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IProperty__">FindKey(IReadOnlyList&lt;IProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the primary or alternate key that is defined on the given properties. Returns null if no key is defined
+for the given properties.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKey FindKey(IReadOnlyList&lt;IProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties that make up the key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><p>The key, or null if none is defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L53">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_FindPrimaryKey">FindPrimaryKey()</h4>
+              <div class="markdown level1 summary"><para>
+Gets primary key for this entity. Returns null if no primary key is defined.
+</para>
+<para>
+To be a valid model, each entity type must have a primary key defined. Therefore, the primary key may be
+null while the model is being created, but will be present by the time the model is used with a <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKey FindPrimaryKey()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><p>The primary key, or null if none is defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L116">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_FindProperty_System_String_">FindProperty(String)</h4>
+              <div class="markdown level1 summary"><para>
+Gets the property with a given name. Returns null if no property with the given name is defined.
+</para>
+<para>
+This API only finds scalar properties and does not find navigation properties. Use
+<a class="xref" href="Microsoft.Data.Entity.EntityTypeExtensions.html#Microsoft_Data_Entity_EntityTypeExtensions_FindNavigation_Microsoft_Data_Entity_Metadata_IEntityType_System_String_">FindNavigation(IEntityType, String)</a> to find a navigation property.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IProperty FindProperty(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><p>The property, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L90">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_GetForeignKeys">GetForeignKeys()</h4>
+              <div class="markdown level1 summary"><p>Gets the foreign keys defined on this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerable&lt;IForeignKey&gt; GetForeignKeys()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a>&gt;</td>
+                    <td><p>The foreign keys defined on this entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L103">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_GetIndexes">GetIndexes()</h4>
+              <div class="markdown level1 summary"><p>Gets the indexes defined on this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerable&lt;IIndex&gt; GetIndexes()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a>&gt;</td>
+                    <td><p>The indexes defined on this entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L67">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_GetKeys">GetKeys()</h4>
+              <div class="markdown level1 summary"><p>Gets the primary and alternate keys for this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerable&lt;IKey&gt; GetKeys()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a>&gt;</td>
+                    <td><p>The primary and alternate keys.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L128">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_IEntityType_GetProperties">GetProperties()</h4>
+              <div class="markdown level1 summary"><para>
+Gets the properties defined on this entity.
+</para>
+<para>
+This API only returns scalar properties and does not return navigation properties. Use
+<a class="xref" href="Microsoft.Data.Entity.EntityTypeExtensions.html#Microsoft_Data_Entity_EntityTypeExtensions_GetNavigations_Microsoft_Data_Entity_Metadata_IEntityType_">GetNavigations(IEntityType)</a> to get navigation properties.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEnumerable&lt;IProperty&gt; GetProperties()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><p>The properties defined on this entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

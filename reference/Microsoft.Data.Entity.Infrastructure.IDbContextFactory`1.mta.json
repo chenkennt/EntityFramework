@@ -1,0 +1,107 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1",
+    "id": "IDbContextFactory_TContext_",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.Create",
+            "id": "Create__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1",
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.yml",
+            "name": "Create()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory<TContext>.Create()",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory(Of TContext).Create()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "summary": "<p>Creates a new instance of a derived context.</p>\n",
+            "syntax": {
+              "content": "TContext Create()",
+              "content.vb": "Function Create As TContext",
+              "return": {
+                "type": {
+                  "uid": "{TContext}",
+                  "isExternal": false,
+                  "name": "TContext",
+                  "fullName": "TContext",
+                  "specName": "<xref href=\"{TContext}\" name=\"TContext\"/>",
+                  "id": "TContext",
+                  "level": 0
+                },
+                "description": "<p>An instance of <typeparamref name=\"TContext\"></typeparamref>.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.Create\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory&lt;TContext&gt;.Create()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs/#L21"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.yml",
+    "name": "IDbContextFactory<TContext>",
+    "name.vb": "IDbContextFactory(Of TContext)",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory<TContext>",
+    "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory(Of TContext)",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "summary": "<p>A factory for creating derived <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> instances. Implement this interface to enable\ndesign-time services for context types that do not have a public default constructor. At design-time,\nderived <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> instances can be created in order to enable specific design-time\nexperiences such as Migrations. Design-time services will automatically discover implementations of\nthis interface that are in the same assembly as the derived context.</p>\n",
+    "syntax": {
+      "content": "public interface IDbContextFactory<out TContext> where TContext : DbContext",
+      "content.vb": "Public Interface IDbContextFactory(Of Out TContext As DbContext)",
+      "typeParameters": [
+        {
+          "id": "TContext",
+          "description": "The type of the context."
+        }
+      ]
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory&lt;TContext&gt;\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextFactory.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

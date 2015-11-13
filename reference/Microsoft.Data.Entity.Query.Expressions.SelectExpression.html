@@ -1,0 +1,1805 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SelectExpression | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SelectExpression | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L17" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression">Class SelectExpression</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">System.Linq.Expressions.Expression</span></div>
+                  <div class="level2"><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></div>
+                  <div class="level3"><span class="xref">SelectExpression</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Query.Expressions</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SelectExpression : TableExpressionBase</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L38">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression__ctor_Microsoft_Data_Entity_Query_Sql_IQuerySqlGeneratorFactory_">SelectExpression(IQuerySqlGeneratorFactory)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SelectExpression(IQuerySqlGeneratorFactory querySqlGeneratorFactory)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory.html#Microsoft_Data_Entity_Query_Sql_IQuerySqlGeneratorFactory">IQuerySqlGeneratorFactory</a></td>
+                    <td><em>querySqlGeneratorFactory</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L46">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression__ctor_Microsoft_Data_Entity_Query_Sql_IQuerySqlGeneratorFactory_System_String_">SelectExpression(IQuerySqlGeneratorFactory, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SelectExpression(IQuerySqlGeneratorFactory querySqlGeneratorFactory, string alias)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory.html#Microsoft_Data_Entity_Query_Sql_IQuerySqlGeneratorFactory">IQuerySqlGeneratorFactory</a></td>
+                    <td><em>querySqlGeneratorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>alias</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L151">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_IsDistinct">IsDistinct</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsDistinct { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L85">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_IsProjectStar">IsProjectStar</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsProjectStar { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L165">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Limit">Limit</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int ? Limit { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L178">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Offset">Offset</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int ? Offset { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L570">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_OrderBy">OrderBy</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;Ordering&gt; OrderBy { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">Remotion.Linq.Clauses.Ordering</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L36">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Predicate">Predicate</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression Predicate { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L281">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Projection">Projection</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;Expression&gt; Projection { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L83">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Tables">Tables</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;TableExpressionBase&gt; Tables { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L56">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Type">Type</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override Type Type { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L713">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Accept_System_Linq_Expressions_ExpressionVisitor_">Accept(ExpressionVisitor)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression Accept(ExpressionVisitor visitor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ExpressionVisitor</span></td>
+                    <td><em>visitor</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L344">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddAliasToProjection_System_String_System_Linq_Expressions_Expression_">AddAliasToProjection(String, Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddAliasToProjection(string alias, Expression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>alias</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L595">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddCrossJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__">AddCrossJoin(TableExpressionBase, IEnumerable&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddCrossJoin(TableExpressionBase tableExpression, IEnumerable&lt;Expression&gt; projection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>projection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L621">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddInnerJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_">AddInnerJoin(TableExpressionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual JoinExpressionBase AddInnerJoin(TableExpressionBase tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.JoinExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_JoinExpressionBase">JoinExpressionBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L628">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddInnerJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__">AddInnerJoin(TableExpressionBase, IEnumerable&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual JoinExpressionBase AddInnerJoin(TableExpressionBase tableExpression, IEnumerable&lt;Expression&gt; projection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>projection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.JoinExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_JoinExpressionBase">JoinExpressionBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L608">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddLateralJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__">AddLateralJoin(TableExpressionBase, IEnumerable&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddLateralJoin(TableExpressionBase tableExpression, IEnumerable&lt;Expression&gt; projection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>projection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L645">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddOuterJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_">AddOuterJoin(TableExpressionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual JoinExpressionBase AddOuterJoin(TableExpressionBase tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.JoinExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_JoinExpressionBase">JoinExpressionBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L652">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddOuterJoin_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_System_Collections_Generic_IEnumerable_System_Linq_Expressions_Expression__">AddOuterJoin(TableExpressionBase, IEnumerable&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual JoinExpressionBase AddOuterJoin(TableExpressionBase tableExpression, IEnumerable&lt;Expression&gt; projection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>projection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.JoinExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_JoinExpressionBase">JoinExpressionBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L87">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddTable_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_">AddTable(TableExpressionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddTable(TableExpressionBase tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L90">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddTables_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase__">AddTables(IEnumerable&lt;TableExpressionBase&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddTables(IEnumerable&lt;TableExpressionBase&gt; tableExpressions)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a>&gt;</td>
+                    <td><em>tableExpressions</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L553">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToOrderBy_Remotion_Linq_Clauses_Ordering_">AddToOrderBy(Ordering)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddToOrderBy(Ordering ordering)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.Ordering</span></td>
+                    <td><em>ordering</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L528">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToOrderBy_System_Collections_Generic_IEnumerable_Remotion_Linq_Clauses_Ordering__">AddToOrderBy(IEnumerable&lt;Ordering&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddToOrderBy(IEnumerable&lt;Ordering&gt; orderings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Remotion.Linq.Clauses.Ordering</span>&gt;</td>
+                    <td><em>orderings</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L507">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToOrderBy_System_String_Microsoft_Data_Entity_Metadata_IProperty_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_Remotion_Linq_Clauses_OrderingDirection_">AddToOrderBy(String, IProperty, TableExpressionBase, OrderingDirection)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual AliasExpression AddToOrderBy(string column, IProperty property, TableExpressionBase table, OrderingDirection orderingDirection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.OrderingDirection</span></td>
+                    <td><em>orderingDirection</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.AliasExpression.html#Microsoft_Data_Entity_Query_Expressions_AliasExpression">AliasExpression</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L341">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToProjection_Microsoft_Data_Entity_Query_Expressions_AliasExpression_">AddToProjection(AliasExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddToProjection(AliasExpression aliasExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.AliasExpression.html#Microsoft_Data_Entity_Query_Expressions_AliasExpression">AliasExpression</a></td>
+                    <td><em>aliasExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L399">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToProjection_Microsoft_Data_Entity_Query_Expressions_ColumnExpression_">AddToProjection(ColumnExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddToProjection(ColumnExpression columnExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.ColumnExpression.html#Microsoft_Data_Entity_Query_Expressions_ColumnExpression">ColumnExpression</a></td>
+                    <td><em>columnExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L306">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToProjection_System_Linq_Expressions_Expression_">AddToProjection(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddToProjection(Expression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L309">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToProjection_System_Linq_Expressions_Expression_System_Boolean_">AddToProjection(Expression, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddToProjection(Expression expression, bool resetProjectStar)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>resetProjectStar</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L283">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_AddToProjection_System_String_Microsoft_Data_Entity_Metadata_IProperty_Remotion_Linq_Clauses_IQuerySource_">AddToProjection(String, IProperty, IQuerySource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int AddToProjection(string column, IProperty property, IQuerySource querySource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.IQuerySource</span></td>
+                    <td><em>querySource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L572">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_ClearOrderBy">ClearOrderBy()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void ClearOrderBy()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L469">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_ClearProjection">ClearProjection()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void ClearProjection()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L93">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_ClearTables">ClearTables()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void ClearTables()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L60">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_Clone_System_String_">Clone(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual SelectExpression Clone(string alias)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>alias</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L746">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_CreateDefaultQuerySqlGenerator">CreateDefaultQuerySqlGenerator()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IQuerySqlGenerator CreateDefaultQuerySqlGenerator()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Sql.IQuerySqlGenerator.html#Microsoft_Data_Entity_Query_Sql_IQuerySqlGenerator">IQuerySqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L749">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_CreateFromSqlQuerySqlGenerator_System_String_System_String_">CreateFromSqlQuerySqlGenerator(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IQuerySqlGenerator CreateFromSqlQuerySqlGenerator(string sql, string argumentsParameterName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>argumentsParameterName</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Sql.IQuerySqlGenerator.html#Microsoft_Data_Entity_Query_Sql_IQuerySqlGenerator">IQuerySqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L574">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_ExplodeStarProjection">ExplodeStarProjection()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void ExplodeStarProjection()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L490">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_GetProjectionIndex_Microsoft_Data_Entity_Metadata_IProperty_Remotion_Linq_Clauses_IQuerySource_">GetProjectionIndex(IProperty, IQuerySource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int GetProjectionIndex(IProperty property, IQuerySource querySource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.IQuerySource</span></td>
+                    <td><em>querySource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L439">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_GetProjectionTypes">GetProjectionTypes()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;Type&gt; GetProjectionTypes()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Type</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L141">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_GetTableForQuerySource_Remotion_Linq_Clauses_IQuerySource_">GetTableForQuerySource(IQuerySource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual TableExpressionBase GetTableForQuerySource(IQuerySource querySource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.IQuerySource</span></td>
+                    <td><em>querySource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L132">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_HandlesQuerySource_Remotion_Linq_Clauses_IQuerySource_">HandlesQuerySource(IQuerySource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool HandlesQuerySource(IQuerySource querySource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Clauses.IQuerySource</span></td>
+                    <td><em>querySource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L95">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_IsCorrelated">IsCorrelated()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsCorrelated()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L563">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_PrependToOrderBy_System_Collections_Generic_IEnumerable_Remotion_Linq_Clauses_Ordering__">PrependToOrderBy(IEnumerable&lt;Ordering&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void PrependToOrderBy(IEnumerable&lt;Ordering&gt; orderings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Remotion.Linq.Clauses.Ordering</span>&gt;</td>
+                    <td><em>orderings</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L226">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_PushDownSubquery">PushDownSubquery()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual SelectExpression PushDownSubquery()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L483">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_RemoveFromProjection_System_Collections_Generic_IEnumerable_Remotion_Linq_Clauses_Ordering__">RemoveFromProjection(IEnumerable&lt;Ordering&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveFromProjection(IEnumerable&lt;Ordering&gt; orderBy)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Remotion.Linq.Clauses.Ordering</span>&gt;</td>
+                    <td><em>orderBy</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L475">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_RemoveRangeFromProjection_System_Int32_">RemoveRangeFromProjection(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveRangeFromProjection(int index)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>index</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L706">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_RemoveTable_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_">RemoveTable(TableExpressionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveTable(TableExpressionBase tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L450">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_SetProjectionConditionalExpression_System_Linq_Expressions_ConditionalExpression_">SetProjectionConditionalExpression(ConditionalExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetProjectionConditionalExpression(ConditionalExpression conditionalExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ConditionalExpression</span></td>
+                    <td><em>conditionalExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L458">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_SetProjectionExpression_System_Linq_Expressions_Expression_">SetProjectionExpression(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetProjectionExpression(Expression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L758">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_ToString">ToString()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L764">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_UpdateColumnExpression_System_Linq_Expressions_Expression_Microsoft_Data_Entity_Query_Expressions_TableExpressionBase_">UpdateColumnExpression(Expression, TableExpressionBase)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression UpdateColumnExpression(Expression expression, TableExpressionBase tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpressionBase.html#Microsoft_Data_Entity_Query_Expressions_TableExpressionBase">TableExpressionBase</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Expressions/SelectExpression.cs/#L724">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Expressions_SelectExpression_VisitChildren_System_Linq_Expressions_ExpressionVisitor_">VisitChildren(ExpressionVisitor)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitChildren(ExpressionVisitor visitor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ExpressionVisitor</span></td>
+                    <td><em>visitor</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

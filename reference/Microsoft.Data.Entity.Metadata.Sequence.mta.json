@@ -1,0 +1,1335 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Sequence",
+    "id": "Sequence",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.#ctor(Microsoft.Data.Entity.Metadata.IMutableModel,System.String,System.String,System.String)",
+            "id": "Sequence_IMutableModel__String__String__String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "Sequence(IMutableModel, String, String, String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Sequence(Microsoft.Data.Entity.Metadata.IMutableModel, System.String, System.String, System.String)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+              "content": "public Sequence(IMutableModel model, string annotationPrefix, string name, string schema = null)",
+              "content.vb": "Public Sub New(model As IMutableModel, annotationPrefix As String, name As String, schema As String = Nothing)",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "annotationPrefix",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.#ctor(Microsoft.Data.Entity.Metadata.IMutableModel,System.String,System.String,System.String)\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Sequence(Microsoft.Data.Entity.Metadata.IMutableModel, System.String, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L21"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.ClrType",
+            "id": "ClrType",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ClrType",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.ClrType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 133,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual Type ClrType { get; set; }",
+                "content.vb": "Public Overridable Property ClrType As Type",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.ClrType\" name=\"Microsoft.Data.Entity.Metadata.Sequence.ClrType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L134"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.IncrementBy",
+            "id": "IncrementBy",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "IncrementBy",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.IncrementBy",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 100,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual int IncrementBy { get; set; }",
+                "content.vb": "Public Overridable Property IncrementBy As Integer",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.IncrementBy\" name=\"Microsoft.Data.Entity.Metadata.Sequence.IncrementBy\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L101"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.IsCyclic",
+            "id": "IsCyclic",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "IsCyclic",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.IsCyclic",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 153,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual bool IsCyclic { get; set; }",
+                "content.vb": "Public Overridable Property IsCyclic As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.IsCyclic\" name=\"Microsoft.Data.Entity.Metadata.Sequence.IsCyclic\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L154"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.MaxValue",
+            "id": "MaxValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "MaxValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.MaxValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 122,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual long ? MaxValue { get; set; }",
+                "content.vb": "Public Overridable Property MaxValue As Long?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Int64}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int64>",
+                    "name.vb": "Nullable(Of Int64)",
+                    "fullName": "System.Nullable<System.Int64>",
+                    "fullName.vb": "System.Nullable(Of System.Int64)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int64\" name=\"System.Int64\"/>&gt;",
+                    "id": "Nullable_Int64_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.MaxValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.MaxValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L123"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#ClrType",
+            "id": "ISequence_ClrType",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.ClrType",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.ClrType",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.ClrType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 181,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "Type ISequence.ClrType { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.ClrType As Type Implements ISequence.ClrType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#ClrType\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.ClrType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L182"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#IncrementBy",
+            "id": "ISequence_IncrementBy",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.IncrementBy",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.IncrementBy",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.IncrementBy",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 175,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "int ISequence.IncrementBy { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.IncrementBy As Integer Implements ISequence.IncrementBy",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#IncrementBy\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.IncrementBy\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L176"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#IsCyclic",
+            "id": "ISequence_IsCyclic",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.IsCyclic",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.IsCyclic",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.IsCyclic",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 183,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "bool ISequence.IsCyclic { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.IsCyclic As Boolean Implements ISequence.IsCyclic",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#IsCyclic\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.IsCyclic\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L184"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#MaxValue",
+            "id": "ISequence_MaxValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.MaxValue",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.MaxValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.MaxValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 179,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "long ? ISequence.MaxValue { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.MaxValue As Long? Implements ISequence.MaxValue",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Int64}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int64>",
+                    "name.vb": "Nullable(Of Int64)",
+                    "fullName": "System.Nullable<System.Int64>",
+                    "fullName.vb": "System.Nullable(Of System.Int64)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int64\" name=\"System.Int64\"/>&gt;",
+                    "id": "Nullable_Int64_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#MaxValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.MaxValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L180"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#MinValue",
+            "id": "ISequence_MinValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.MinValue",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.MinValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.MinValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 177,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "long ? ISequence.MinValue { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.MinValue As Long? Implements ISequence.MinValue",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Int64}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int64>",
+                    "name.vb": "Nullable(Of Int64)",
+                    "fullName": "System.Nullable<System.Int64>",
+                    "fullName.vb": "System.Nullable(Of System.Int64)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int64\" name=\"System.Int64\"/>&gt;",
+                    "id": "Nullable_Int64_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#MinValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.MinValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L178"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#Model",
+            "id": "ISequence_Model",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.Model",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.Model",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.Model",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 171,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "IModel ISequence.Model { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.Model As IModel Implements ISequence.Model",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#Model\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.Model\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L172"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#StartValue",
+            "id": "ISequence_StartValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "ISequence.StartValue",
+            "name.vb": "Microsoft.Data.Entity.Metadata.ISequence.StartValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.StartValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 173,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "long ISequence.StartValue { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Metadata.ISequence.StartValue As Long Implements ISequence.StartValue",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Int64",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int64",
+                    "fullName": "System.Int64",
+                    "specName": "<xref href=\"System.Int64\" name=\"System.Int64\"/>",
+                    "id": "Int64",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft#Data#Entity#Metadata#ISequence#StartValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Microsoft.Data.Entity.Metadata.ISequence.StartValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L174"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.MinValue",
+            "id": "MinValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "MinValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.MinValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 111,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual long ? MinValue { get; set; }",
+                "content.vb": "Public Overridable Property MinValue As Long?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Int64}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int64>",
+                    "name.vb": "Nullable(Of Int64)",
+                    "fullName": "System.Nullable<System.Int64>",
+                    "fullName.vb": "System.Nullable(Of System.Int64)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int64",
+                        "name": "Int64",
+                        "fullName": "System.Int64",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int64\" name=\"System.Int64\"/>&gt;",
+                    "id": "Nullable_Int64_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.MinValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.MinValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L112"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Model",
+            "id": "Model",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "Model",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Model",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 83,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual Model Model { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Model As Model",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.Model",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.Model.yml",
+                    "name": "Model",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.Model",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.Model\" name=\"Microsoft.Data.Entity.Metadata.Internal.Model\"/>",
+                    "id": "Model",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Model\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Model\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L84"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Name",
+            "id": "Name",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "Name",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Name",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 85,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual string Name { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Name As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Name\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Name\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L86"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.Schema",
+            "id": "Schema",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "Schema",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.Schema",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 87,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual string Schema { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Schema As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.Schema\" name=\"Microsoft.Data.Entity.Metadata.Sequence.Schema\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L88"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.StartValue",
+            "id": "StartValue",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "StartValue",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.StartValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 89,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+                "content": "public virtual long StartValue { get; set; }",
+                "content.vb": "Public Overridable Property StartValue As Long",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Int64",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int64",
+                    "fullName": "System.Int64",
+                    "specName": "<xref href=\"System.Int64\" name=\"System.Int64\"/>",
+                    "id": "Int64",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.StartValue\" name=\"Microsoft.Data.Entity.Metadata.Sequence.StartValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L90"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.FindSequence(Microsoft.Data.Entity.Metadata.IModel,System.String,System.String,System.String)",
+            "id": "FindSequence_IModel__String__String__String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "FindSequence(IModel, String, String, String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.FindSequence(Microsoft.Data.Entity.Metadata.IModel, System.String, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+              "content": "public static ISequence FindSequence(IModel model, string annotationPrefix, string name, string schema = null)",
+              "content.vb": "Public Shared Function FindSequence(model As IModel, annotationPrefix As String, name As String, schema As String = Nothing) As ISequence",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "annotationPrefix",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.ISequence",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.ISequence.yml",
+                  "name": "ISequence",
+                  "fullName": "Microsoft.Data.Entity.Metadata.ISequence",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.ISequence\" name=\"Microsoft.Data.Entity.Metadata.ISequence\"/>",
+                  "id": "ISequence",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.FindSequence(Microsoft.Data.Entity.Metadata.IModel,System.String,System.String,System.String)\" name=\"Microsoft.Data.Entity.Metadata.Sequence.FindSequence(Microsoft.Data.Entity.Metadata.IModel, System.String, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L57"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Sequence.GetSequences(Microsoft.Data.Entity.Metadata.IModel,System.String)",
+            "id": "GetSequences_IModel__String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Sequence",
+            "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+            "name": "GetSequences(IModel, String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Sequence.GetSequences(Microsoft.Data.Entity.Metadata.IModel, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+              "startLine": 71,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "syntax": {
+              "content": "public static IEnumerable<ISequence> GetSequences(IModel model, string annotationPrefix)",
+              "content.vb": "Public Shared Function GetSequences(model As IModel, annotationPrefix As String) As IEnumerable(Of ISequence)",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "annotationPrefix",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.ISequence}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.ISequence.yml",
+                  "name": "IEnumerable<ISequence>",
+                  "name.vb": "IEnumerable(Of ISequence)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.ISequence>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.ISequence)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.ISequence",
+                      "name": "ISequence",
+                      "fullName": "Microsoft.Data.Entity.Metadata.ISequence",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.ISequence.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.ISequence",
+                      "name": "ISequence",
+                      "fullName": "Microsoft.Data.Entity.Metadata.ISequence",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.ISequence.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.ISequence\" name=\"Microsoft.Data.Entity.Metadata.ISequence\"/>&gt;",
+                  "id": "IEnumerable_ISequence_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence.GetSequences(Microsoft.Data.Entity.Metadata.IModel,System.String)\" name=\"Microsoft.Data.Entity.Metadata.Sequence.GetSequences(Microsoft.Data.Entity.Metadata.IModel, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L72"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Sequence.yml",
+    "name": "Sequence",
+    "fullName": "Microsoft.Data.Entity.Metadata.Sequence",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Metadata/Sequence.cs",
+      "startLine": 15,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "syntax": {
+      "content": "public class Sequence : ISequence",
+      "content.vb": "Public Class Sequence Implements ISequence"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Metadata.ISequence"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Sequence\" name=\"Microsoft.Data.Entity.Metadata.Sequence\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Sequence.cs/#L16"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

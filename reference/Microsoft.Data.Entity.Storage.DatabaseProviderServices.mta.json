@@ -1,0 +1,1055 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+    "id": "DatabaseProviderServices",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.#ctor(System.IServiceProvider)",
+            "id": "DatabaseProviderServices_IServiceProvider_",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "DatabaseProviderServices(IServiceProvider)",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.DatabaseProviderServices(System.IServiceProvider)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices\"></xref> class.</p>\n",
+            "syntax": {
+              "content": "protected DatabaseProviderServices(IServiceProvider services)",
+              "content.vb": "Protected Sub New(services As IServiceProvider)",
+              "parameters": [
+                {
+                  "id": "services",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  },
+                  "description": "<p>The service provider to resolve services from.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.#ctor(System.IServiceProvider)\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.DatabaseProviderServices(System.IServiceProvider)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L34"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.CompiledQueryCacheKeyGenerator",
+            "id": "CompiledQueryCacheKeyGenerator",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "CompiledQueryCacheKeyGenerator",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.CompiledQueryCacheKeyGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 84,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator\"></xref> for the database provider. By default, EF will register a default\nimplementation\n(<xref href=\"Microsoft.Data.Entity.Query.CompiledQueryCacheKeyGenerator\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual ICompiledQueryCacheKeyGenerator CompiledQueryCacheKeyGenerator { get; }",
+                "content.vb": "Public Overridable ReadOnly Property CompiledQueryCacheKeyGenerator As ICompiledQueryCacheKeyGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.yml",
+                    "name": "ICompiledQueryCacheKeyGenerator",
+                    "fullName": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator\" name=\"Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator\"/>",
+                    "id": "ICompiledQueryCacheKeyGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.CompiledQueryCacheKeyGenerator\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.CompiledQueryCacheKeyGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L85"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ConventionSetBuilder",
+            "id": "ConventionSetBuilder",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ConventionSetBuilder",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ConventionSetBuilder",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 62,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>The convention set builder for the database provider. By default this returns null, meaning the\ndefault <xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.CoreConventionSetBuilder\"></xref> will be used.</p>\n",
+            "syntax": {
+                "content": "public virtual IConventionSetBuilder ConventionSetBuilder { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ConventionSetBuilder As IConventionSetBuilder",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder.yml",
+                    "name": "IConventionSetBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder\"/>",
+                    "id": "IConventionSetBuilder",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ConventionSetBuilder\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ConventionSetBuilder\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L63"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Creator",
+            "id": "Creator",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "Creator",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Creator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 129,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Storage.IDatabaseCreator\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IDatabaseCreator Creator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property Creator As IDatabaseCreator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabaseCreator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabaseCreator.yml",
+                    "name": "IDatabaseCreator",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabaseCreator",
+                    "type": "interface",
+                    "summary": "<para>\nCreates and deletes databases for a given database provider.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseCreator\" name=\"Microsoft.Data.Entity.Storage.IDatabaseCreator\"/>",
+                    "id": "IDatabaseCreator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Creator\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Creator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L130"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Database",
+            "id": "Database",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "Database",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Database",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 119,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Storage.IDatabase\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IDatabase Database { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property Database As IDatabase",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabase.yml",
+                    "name": "IDatabase",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "type": "interface",
+                    "summary": "<para>\nThe main interaction point between a context and the database provider.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabase\" name=\"Microsoft.Data.Entity.Storage.IDatabase\"/>",
+                    "id": "IDatabase",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Database\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Database\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L120"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryableExpressionVisitorFactory",
+            "id": "EntityQueryableExpressionVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "EntityQueryableExpressionVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryableExpressionVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 149,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IEntityQueryableExpressionVisitorFactory EntityQueryableExpressionVisitorFactory { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property EntityQueryableExpressionVisitorFactory As IEntityQueryableExpressionVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.yml",
+                    "name": "IEntityQueryableExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory\"/>",
+                    "id": "IEntityQueryableExpressionVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryableExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryableExpressionVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L150"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryModelVisitorFactory",
+            "id": "EntityQueryModelVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "EntityQueryModelVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryModelVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 154,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IEntityQueryModelVisitorFactory EntityQueryModelVisitorFactory { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property EntityQueryModelVisitorFactory As IEntityQueryModelVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.yml",
+                    "name": "IEntityQueryModelVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"/>",
+                    "id": "IEntityQueryModelVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryModelVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L155"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ExpressionPrinter",
+            "id": "ExpressionPrinter",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ExpressionPrinter",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ExpressionPrinter",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 91,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.Internal.IExpressionPrinter\"></xref> for the database provider. By default, EF will register a default implementation\n(<xref href=\"Microsoft.Data.Entity.Query.Internal.ExpressionPrinter\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IExpressionPrinter ExpressionPrinter { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ExpressionPrinter As IExpressionPrinter",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter",
+                    "parent": "Microsoft.Data.Entity.Query.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.yml",
+                    "name": "IExpressionPrinter",
+                    "fullName": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IExpressionPrinter\" name=\"Microsoft.Data.Entity.Query.Internal.IExpressionPrinter\"/>",
+                    "id": "IExpressionPrinter",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ExpressionPrinter\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ExpressionPrinter\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L92"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.InvariantName",
+            "id": "InvariantName",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "InvariantName",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.InvariantName",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 44,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>The unique name used to identify the database provider. This should be the same as the NuGet package name\nfor the providers runtime.</p>\n",
+            "syntax": {
+                "content": "public abstract string InvariantName { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property InvariantName As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.InvariantName\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.InvariantName\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L45"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelSource",
+            "id": "ModelSource",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ModelSource",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelSource",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 134,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Infrastructure.IModelSource\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IModelSource ModelSource { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property ModelSource As IModelSource",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IModelSource",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IModelSource.yml",
+                    "name": "IModelSource",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IModelSource",
+                    "type": "interface",
+                    "summary": "<para>\nProduces an <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> based on a context. This is typically implemented by database providers to ensure that any\nconventions\nand validation specific to their database are used.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IModelSource\" name=\"Microsoft.Data.Entity.Infrastructure.IModelSource\"/>",
+                    "id": "IModelSource",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelSource\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelSource\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L135"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelValidator",
+            "id": "ModelValidator",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ModelValidator",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelValidator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 76,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Internal.IModelValidator\"></xref> for the database provider. By default, EF will register a default implementation\n(<xref href=\"Microsoft.Data.Entity.Internal.LoggingModelValidator\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IModelValidator ModelValidator { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ModelValidator As IModelValidator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Internal.IModelValidator",
+                    "parent": "Microsoft.Data.Entity.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Internal.IModelValidator.yml",
+                    "name": "IModelValidator",
+                    "fullName": "Microsoft.Data.Entity.Internal.IModelValidator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.IModelValidator\" name=\"Microsoft.Data.Entity.Internal.IModelValidator\"/>",
+                    "id": "IModelValidator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelValidator\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelValidator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L77"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ProjectionExpressionVisitorFactory",
+            "id": "ProjectionExpressionVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ProjectionExpressionVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ProjectionExpressionVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 114,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory\"></xref> for the database provider. By default, EF will register a default\nimplementation\n(<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.ProjectionExpressionVisitorFactory\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IProjectionExpressionVisitorFactory ProjectionExpressionVisitorFactory { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ProjectionExpressionVisitorFactory As IProjectionExpressionVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.yml",
+                    "name": "IProjectionExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory\"/>",
+                    "id": "IProjectionExpressionVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ProjectionExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ProjectionExpressionVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L115"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryCompilationContextFactory",
+            "id": "QueryCompilationContextFactory",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "QueryCompilationContextFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryCompilationContextFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 106,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\"></xref> for the database provider. By default, EF will register a default\nimplementation\n(<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IQueryCompilationContextFactory QueryCompilationContextFactory { get; }",
+                "content.vb": "Public Overridable ReadOnly Property QueryCompilationContextFactory As IQueryCompilationContextFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.yml",
+                    "name": "IQueryCompilationContextFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\"/>",
+                    "id": "IQueryCompilationContextFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryCompilationContextFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L107"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryContextFactory",
+            "id": "QueryContextFactory",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "QueryContextFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryContextFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 144,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.IQueryContextFactory\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IQueryContextFactory QueryContextFactory { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property QueryContextFactory As IQueryContextFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryContextFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryContextFactory.yml",
+                    "name": "IQueryContextFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryContextFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryContextFactory\" name=\"Microsoft.Data.Entity.Query.IQueryContextFactory\"/>",
+                    "id": "IQueryContextFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryContextFactory\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryContextFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L145"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ResultOperatorHandler",
+            "id": "ResultOperatorHandler",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ResultOperatorHandler",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ResultOperatorHandler",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 98,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Query.IResultOperatorHandler\"></xref> for the database provider. By default, EF will register a default implementation\n(<xref href=\"Microsoft.Data.Entity.Query.ResultOperatorHandler\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IResultOperatorHandler ResultOperatorHandler { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ResultOperatorHandler As IResultOperatorHandler",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IResultOperatorHandler",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IResultOperatorHandler.yml",
+                    "name": "IResultOperatorHandler",
+                    "fullName": "Microsoft.Data.Entity.Query.IResultOperatorHandler",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IResultOperatorHandler\" name=\"Microsoft.Data.Entity.Query.IResultOperatorHandler\"/>",
+                    "id": "IResultOperatorHandler",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ResultOperatorHandler\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ResultOperatorHandler\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L99"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services",
+            "id": "Services",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "Services",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the service provider to resolve services from.</p>\n",
+            "syntax": {
+                "content": "protected virtual IServiceProvider Services { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property Services As IServiceProvider",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.TransactionManager",
+            "id": "TransactionManager",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "TransactionManager",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.TransactionManager",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 124,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransactionManager\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IDbContextTransactionManager TransactionManager { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property TransactionManager As IDbContextTransactionManager",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.yml",
+                    "name": "IDbContextTransactionManager",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransactionManager\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransactionManager\"/>",
+                    "id": "IDbContextTransactionManager",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.TransactionManager\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.TransactionManager\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L125"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorCache",
+            "id": "ValueGeneratorCache",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ValueGeneratorCache",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorCache",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 139,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\"></xref> for the database provider.</p>\n",
+            "syntax": {
+                "content": "public abstract IValueGeneratorCache ValueGeneratorCache { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property ValueGeneratorCache As IValueGeneratorCache",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+                    "parent": "Microsoft.Data.Entity.ValueGeneration",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.yml",
+                    "name": "IValueGeneratorCache",
+                    "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+                    "type": "interface",
+                    "summary": "<para>\nKeeps a cache of value generators for properties.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\"/>",
+                    "id": "IValueGeneratorCache",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorCache\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorCache\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L140"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorSelector",
+            "id": "ValueGeneratorSelector",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "ValueGeneratorSelector",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorSelector",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 69,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the <xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\"></xref> for the database provider. By default, EF will register a default implementation\n(<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector\"></xref>) which provides basic functionality but can be\noverridden if needed.</p>\n",
+            "syntax": {
+                "content": "public virtual IValueGeneratorSelector ValueGeneratorSelector { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ValueGeneratorSelector As IValueGeneratorSelector",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+                    "parent": "Microsoft.Data.Entity.ValueGeneration",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.yml",
+                    "name": "IValueGeneratorSelector",
+                    "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+                    "type": "interface",
+                    "summary": "<para>\nSelects value generators to be used to generate values for properties of entities.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\"/>",
+                    "id": "IValueGeneratorSelector",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorSelector\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorSelector\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L70"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService``1",
+            "id": "GetService_TService___",
+            "parent": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+            "name": "GetService<TService>()",
+            "name.vb": "GetService(Of TService)()",
+            "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService<TService>()",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService(Of TService)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Resolves a required service from <xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services\"></xref>.</p>\n",
+            "syntax": {
+              "content": "protected virtual TService GetService<TService>()",
+              "content.vb": "Protected Overridable Function GetService(Of TService) As TService",
+              "typeParameters": [
+                {
+                  "id": "TService",
+                  "description": "The service to be resolved."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TService}",
+                  "isExternal": false,
+                  "name": "TService",
+                  "fullName": "TService",
+                  "specName": "<xref href=\"{TService}\" name=\"TService\"/>",
+                  "id": "TService",
+                  "level": 0
+                },
+                "description": "<p>The resolved service.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService``1\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService&lt;TService&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L57"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+    "name": "DatabaseProviderServices",
+    "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Storage/DatabaseProviderServices.cs",
+      "startLine": 27,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "summary": "<para>\nThe base set of services required by EF for a database provider to function.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public abstract class DatabaseProviderServices : IDatabaseProviderServices",
+      "content.vb": "Public MustInherit Class DatabaseProviderServices Implements IDatabaseProviderServices"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IDatabaseProviderServices"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/DatabaseProviderServices.cs/#L28"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

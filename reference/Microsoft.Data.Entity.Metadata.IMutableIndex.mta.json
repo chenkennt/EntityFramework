@@ -1,0 +1,304 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+    "id": "IMutableIndex",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableIndex.DeclaringEntityType",
+            "id": "DeclaringEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableIndex.yml",
+            "name": "DeclaringEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableIndex.DeclaringEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the entity type the index is defined on. This may be different from the type that <xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex.Properties\"></xref>\nare defined on when the index is defined a derived type in an inheritance hierarchy (since the properties\nmay be defined on a base type).</p>\n",
+            "syntax": {
+                "content": "IMutableEntityType DeclaringEntityType { get; }",
+                "content.vb": "ReadOnly Property DeclaringEntityType As IMutableEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                    "name": "IMutableEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                    "id": "IMutableEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex.DeclaringEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableIndex.DeclaringEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableIndex.cs/#L34"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableIndex.IsUnique",
+            "id": "IsUnique",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableIndex.yml",
+            "name": "IsUnique",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableIndex.IsUnique",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets or sets a value indicating whether the values assigned to the indexed properties are unique.</p>\n",
+            "syntax": {
+                "content": "bool ? IsUnique { get; set; }",
+                "content.vb": "Property IsUnique As Boolean?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Boolean>",
+                    "name.vb": "Nullable(Of Boolean)",
+                    "fullName": "System.Nullable<System.Boolean>",
+                    "fullName.vb": "System.Nullable(Of System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Nullable_Boolean_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex.IsUnique\" name=\"Microsoft.Data.Entity.Metadata.IMutableIndex.IsUnique\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableIndex.cs/#L22"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableIndex.Properties",
+            "id": "Properties",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableIndex.yml",
+            "name": "Properties",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableIndex.Properties",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the properties that this index is defined on.</p>\n",
+            "syntax": {
+                "content": "IReadOnlyList<IMutableProperty> Properties { get; }",
+                "content.vb": "ReadOnly Property Properties As IReadOnlyList(Of IMutableProperty)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IMutableProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IReadOnlyList<IMutableProperty>",
+                    "name.vb": "IReadOnlyList(Of IMutableProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IMutableProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IMutableProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IMutableProperty_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex.Properties\" name=\"Microsoft.Data.Entity.Metadata.IMutableIndex.Properties\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableIndex.cs/#L27"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IMutableIndex.yml",
+    "name": "IMutableIndex",
+    "fullName": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IMutableIndex.cs",
+      "startLine": 16,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<para>\nRepresents an index on a set of properties.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IIndex\"></xref> represents a ready-only view of the same metadata.\n</para>",
+    "syntax": {
+      "content": "public interface IMutableIndex : IIndex, IMutableAnnotatable, IAnnotatable",
+      "content.vb": "Public Interface IMutableIndex Inherits IIndex, IMutableAnnotatable"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex\" name=\"Microsoft.Data.Entity.Metadata.IMutableIndex\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableIndex.cs/#L17"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,105 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension",
+    "id": "IDbContextOptionsExtension",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.ApplyServices(Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder)",
+            "id": "ApplyServices_EntityFrameworkServicesBuilder_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension",
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.yml",
+            "name": "ApplyServices(EntityFrameworkServicesBuilder)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.ApplyServices(Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs",
+              "startLine": 25,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "summary": "<p>Adds the services required to make the selected options work. This is used when there is no external <xref href=\"System.IServiceProvider\"></xref>\nand EF is maintaining its own service provider internally. This allows database providers (and other extensions) to register their\nrequired services when EF is creating an service provider.</p>\n",
+            "syntax": {
+              "content": "void ApplyServices(EntityFrameworkServicesBuilder builder)",
+              "content.vb": "Sub ApplyServices(builder As EntityFrameworkServicesBuilder)",
+              "parameters": [
+                {
+                  "id": "builder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.yml",
+                    "name": "EntityFrameworkServicesBuilder",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+                    "type": "class",
+                    "summary": "<p>Provides Entity Framework specific APIs for configuring services in an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.\nThese APIs are usually accessed by calling\n<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"></xref>\nand then chaining API calls on the returned <xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"></xref>.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"/>",
+                    "id": "EntityFrameworkServicesBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The builder to add services to.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.ApplyServices(Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder)\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.ApplyServices(Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs/#L26"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.yml",
+    "name": "IDbContextOptionsExtension",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs",
+      "startLine": 17,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "summary": "<para>\nInterface for extensions that are stored in <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions.Extensions\"></xref>.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IDbContextOptionsExtension",
+      "content.vb": "Public Interface IDbContextOptionsExtension"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextOptionsExtension.cs/#L18"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,831 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+    "id": "IMutableForeignKey",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeclaringEntityType",
+            "id": "DeclaringEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "DeclaringEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeclaringEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the dependent entity type. This may be different from the type that <xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.Properties\"></xref>\nare defined on when the relationship is defined a derived type in an inheritance hierarchy (since the properties\nmay be defined on a base type).</p>\n",
+            "syntax": {
+                "content": "IMutableEntityType DeclaringEntityType { get; }",
+                "content.vb": "ReadOnly Property DeclaringEntityType As IMutableEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                    "name": "IMutableEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                    "id": "IMutableEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeclaringEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeclaringEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L36"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeleteBehavior",
+            "id": "DeleteBehavior",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "DeleteBehavior",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeleteBehavior",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 89,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets or sets a value indicating how a delete operation is applied to dependent entities in the relationship when the\nprincipal is deleted or the relationship is severed.</p>\n",
+            "syntax": {
+                "content": "DeleteBehavior? DeleteBehavior { get; set; }",
+                "content.vb": "Property DeleteBehavior As DeleteBehavior?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{Microsoft.Data.Entity.Metadata.DeleteBehavior}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "href": "Microsoft.Data.Entity.Metadata.DeleteBehavior.yml",
+                    "name": "Nullable<DeleteBehavior>",
+                    "name.vb": "Nullable(Of DeleteBehavior)",
+                    "fullName": "System.Nullable<Microsoft.Data.Entity.Metadata.DeleteBehavior>",
+                    "fullName.vb": "System.Nullable(Of Microsoft.Data.Entity.Metadata.DeleteBehavior)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                        "name": "DeleteBehavior",
+                        "fullName": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.DeleteBehavior.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                        "name": "DeleteBehavior",
+                        "fullName": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.DeleteBehavior.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.DeleteBehavior\" name=\"Microsoft.Data.Entity.Metadata.DeleteBehavior\"/>&gt;",
+                    "id": "Nullable_DeleteBehavior_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeleteBehavior\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DeleteBehavior\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L90"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DependentToPrincipal",
+            "id": "DependentToPrincipal",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "DependentToPrincipal",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.DependentToPrincipal",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 47,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the navigation property on the dependent entity type that points to the principal entity.</p>\n",
+            "syntax": {
+                "content": "IMutableNavigation DependentToPrincipal { get; }",
+                "content.vb": "ReadOnly Property DependentToPrincipal As IMutableNavigation",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                    "name": "IMutableNavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                    "id": "IMutableNavigation",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DependentToPrincipal\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.DependentToPrincipal\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L48"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsRequired",
+            "id": "IsRequired",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "IsRequired",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsRequired",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 83,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets or sets a value indicating if this relationship is required. If true, the dependent entity must always be\nassigned to a valid principal entity.</p>\n",
+            "syntax": {
+                "content": "bool ? IsRequired { get; set; }",
+                "content.vb": "Property IsRequired As Boolean?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Boolean>",
+                    "name.vb": "Nullable(Of Boolean)",
+                    "fullName": "System.Nullable<System.Boolean>",
+                    "fullName.vb": "System.Nullable(Of System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Nullable_Boolean_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsRequired\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsRequired\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L84"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsUnique",
+            "id": "IsUnique",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "IsUnique",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsUnique",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 77,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets or sets a value indicating whether the values assigned to the foreign key properties are unique.</p>\n",
+            "syntax": {
+                "content": "bool ? IsUnique { get; set; }",
+                "content.vb": "Property IsUnique As Boolean?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Boolean>",
+                    "name.vb": "Nullable(Of Boolean)",
+                    "fullName": "System.Nullable<System.Boolean>",
+                    "fullName.vb": "System.Nullable(Of System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Nullable_Boolean_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsUnique\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.IsUnique\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L78"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalEntityType",
+            "id": "PrincipalEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "PrincipalEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 42,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the principal entity type that this relationship targets. This may be different from the type that\n<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalKey\"></xref> is defined on when the relationship targets a derived type in an inheritance\nhierarchy (since the key is defined on the base type of the hierarchy).</p>\n",
+            "syntax": {
+                "content": "IMutableEntityType PrincipalEntityType { get; }",
+                "content.vb": "ReadOnly Property PrincipalEntityType As IMutableEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                    "name": "IMutableEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                    "id": "IMutableEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L43"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalKey",
+            "id": "PrincipalKey",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "PrincipalKey",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalKey",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the primary or alternate key that the relationship targets.</p>\n",
+            "syntax": {
+                "content": "IMutableKey PrincipalKey { get; }",
+                "content.vb": "ReadOnly Property PrincipalKey As IMutableKey",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+                    "name": "IMutableKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a primary or alternate key on an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IKey\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey\"/>",
+                    "id": "IMutableKey",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalKey\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L29"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalToDependent",
+            "id": "PrincipalToDependent",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "PrincipalToDependent",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalToDependent",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 52,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the navigation property on the principal entity type that points to the dependent entity.</p>\n",
+            "syntax": {
+                "content": "IMutableNavigation PrincipalToDependent { get; }",
+                "content.vb": "ReadOnly Property PrincipalToDependent As IMutableNavigation",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                    "name": "IMutableNavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                    "id": "IMutableNavigation",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalToDependent\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.PrincipalToDependent\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L53"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.Properties",
+            "id": "Properties",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "Properties",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.Properties",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the foreign key properties in the dependent entity.</p>\n",
+            "syntax": {
+                "content": "IReadOnlyList<IMutableProperty> Properties { get; }",
+                "content.vb": "ReadOnly Property Properties As IReadOnlyList(Of IMutableProperty)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IMutableProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IReadOnlyList<IMutableProperty>",
+                    "name.vb": "IReadOnlyList(Of IMutableProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IMutableProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IMutableProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IMutableProperty_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.Properties\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.Properties\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L24"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasDependentToPrincipal(System.String)",
+            "id": "HasDependentToPrincipal_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "HasDependentToPrincipal(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasDependentToPrincipal(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 62,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Sets the navigation property on the dependent entity type that points to the principal entity.</p>\n",
+            "syntax": {
+              "content": "IMutableNavigation HasDependentToPrincipal(string name)",
+              "content.vb": "Function HasDependentToPrincipal(name As String) As IMutableNavigation",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the navigation property on the dependent type. Passing null will result in there being\nno navigation property defined.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                  "name": "IMutableNavigation",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                  "id": "IMutableNavigation",
+                  "level": 0
+                },
+                "description": "<p>The newly created navigation property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasDependentToPrincipal(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasDependentToPrincipal(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L63"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasPrincipalToDependent(System.String)",
+            "id": "HasPrincipalToDependent_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+            "name": "HasPrincipalToDependent(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasPrincipalToDependent(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+              "startLine": 72,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Sets the navigation property on the principal entity type that points to the dependent entity.</p>\n",
+            "syntax": {
+              "content": "IMutableNavigation HasPrincipalToDependent(string name)",
+              "content.vb": "Function HasPrincipalToDependent(name As String) As IMutableNavigation",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the navigation property on the principal type. Passing null will result in there being\nno navigation property defined.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                  "name": "IMutableNavigation",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                  "id": "IMutableNavigation",
+                  "level": 0
+                },
+                "description": "<p>The newly created navigation property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasPrincipalToDependent(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey.HasPrincipalToDependent(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L73"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+    "name": "IMutableForeignKey",
+    "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IMutableForeignKey.cs",
+      "startLine": 18,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<para>\nRepresents a relationship where a foreign key property(s) in a dependent entity type\nreference a corresponding primary or alternate key in a principal entity type.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\"></xref> represents a ready-only view of the same metadata.\n</para>",
+    "syntax": {
+      "content": "public interface IMutableForeignKey : IForeignKey, IMutableAnnotatable, IAnnotatable",
+      "content.vb": "Public Interface IMutableForeignKey Inherits IForeignKey, IMutableAnnotatable"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableForeignKey.cs/#L19"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

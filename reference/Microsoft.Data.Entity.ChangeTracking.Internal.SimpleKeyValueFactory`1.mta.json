@@ -1,0 +1,415 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1",
+    "id": "SimpleKeyValueFactory_TKey_",
+    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.#ctor(Microsoft.Data.Entity.Metadata.IKey)",
+            "id": "SimpleKeyValueFactory_IKey_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.yml",
+            "name": "SimpleKeyValueFactory(IKey)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory<TKey>.SimpleKeyValueFactory(Microsoft.Data.Entity.Metadata.IKey)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory(Of TKey).SimpleKeyValueFactory(Microsoft.Data.Entity.Metadata.IKey)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+              "startLine": 16,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public SimpleKeyValueFactory(IKey key)",
+              "content.vb": "Public Sub New(key As IKey)",
+              "parameters": [
+                {
+                  "id": "key",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.#ctor(Microsoft.Data.Entity.Metadata.IKey)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory&lt;TKey&gt;.SimpleKeyValueFactory(Microsoft.Data.Entity.Metadata.IKey)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs/#L17"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "id": "Create_ValueBuffer_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.yml",
+            "name": "Create(ValueBuffer)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory<TKey>.Create(Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory(Of TKey).Create(Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public override IKeyValue Create(ValueBuffer valueBuffer)",
+              "content.vb": "Public Overrides Function Create(valueBuffer As ValueBuffer) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "valueBuffer",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "ValueBuffer",
+                    "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "type": "struct",
+                    "summary": "<para>\nRepresents a set of indexed values. Typically used to represent a row of data returned from a database.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>",
+                    "id": "ValueBuffer",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.Create(Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(Microsoft.Data.Entity.Storage.ValueBuffer)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory&lt;TKey&gt;.Create(Microsoft.Data.Entity.Storage.ValueBuffer)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs/#L23"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "id": "Create_IReadOnlyList_IProperty___ValueBuffer_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.yml",
+            "name": "Create(IReadOnlyList<IProperty>, ValueBuffer)",
+            "name.vb": "Create(IReadOnlyList(Of IProperty), ValueBuffer)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory<TKey>.Create(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>, Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory(Of TKey).Create(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty), Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+              "startLine": 25,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public override IKeyValue Create(IReadOnlyList<IProperty> properties, ValueBuffer valueBuffer)",
+              "content.vb": "Public Overrides Function Create(properties As IReadOnlyList(Of IProperty), valueBuffer As ValueBuffer) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "properties",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IReadOnlyList<IProperty>",
+                    "name.vb": "IReadOnlyList(Of IProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IProperty_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "valueBuffer",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "ValueBuffer",
+                    "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "type": "struct",
+                    "summary": "<para>\nRepresents a set of indexed values. Typically used to represent a row of data returned from a database.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>",
+                    "id": "ValueBuffer",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.Create(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Storage.ValueBuffer)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory&lt;TKey&gt;.Create(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.IProperty&gt;, Microsoft.Data.Entity.Storage.ValueBuffer)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs/#L26"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(System.Object)",
+            "id": "Create_Object_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.yml",
+            "name": "Create(Object)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory<TKey>.Create(System.Object)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory(Of TKey).Create(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public override IKeyValue Create(object value)",
+              "content.vb": "Public Overrides Function Create(value As Object) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.Create(System.Object)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.Create(System.Object)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory&lt;TKey&gt;.Create(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs/#L30"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1.yml",
+    "name": "SimpleKeyValueFactory<TKey>",
+    "name.vb": "SimpleKeyValueFactory(Of TKey)",
+    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory<TKey>",
+    "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory(Of TKey)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+    "syntax": {
+      "content": "public class SimpleKeyValueFactory<TKey> : KeyValueFactory",
+      "content.vb": "Public Class SimpleKeyValueFactory(Of TKey) Inherits KeyValueFactory",
+      "typeParameters": [
+        {
+          "id": "TKey"
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+        "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.yml",
+        "name": "KeyValueFactory",
+        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\"/>",
+        "id": "KeyValueFactory",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.Key",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory`1\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.SimpleKeyValueFactory&lt;TKey&gt;\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/SimpleKeyValueFactory.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,254 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+    "id": "SequentialGuidValueGenerator",
+    "parent": "Microsoft.Data.Entity.ValueGeneration",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.GeneratesTemporaryValues",
+            "id": "GeneratesTemporaryValues",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+            "href": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.yml",
+            "name": "GeneratesTemporaryValues",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.GeneratesTemporaryValues",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+              "startLine": 48,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets a value indicating whether the values generated are temporary or permanent. This implementation\nalways returns false, meaning the generated values will be saved to the database.</p>\n",
+            "syntax": {
+                "content": "public override bool GeneratesTemporaryValues { get; }",
+                "content.vb": "Public Overrides ReadOnly Property GeneratesTemporaryValues As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.GeneratesTemporaryValues",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.GeneratesTemporaryValues\" name=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.GeneratesTemporaryValues\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs/#L49"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.Next",
+            "id": "Next__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+            "href": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.yml",
+            "name": "Next()",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.Next()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets a value to be assigned to a property.</p>\n",
+            "syntax": {
+              "content": "public override Guid Next()",
+              "content.vb": "Public Overrides Function Next As Guid",
+              "return": {
+                "type": {
+                  "uid": "System.Guid",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Guid",
+                  "fullName": "System.Guid",
+                  "specName": "<xref href=\"System.Guid\" name=\"System.Guid\"/>",
+                  "id": "Guid",
+                  "level": 0
+                },
+                "description": "<p>The value to be assigned to a property.</p>\n"
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{System.Guid}.Next",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.Next\" name=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.Next()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs/#L23"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.yml",
+    "name": "SequentialGuidValueGenerator",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ValueGeneration",
+    "summary": "<p>Generates sequential <xref href=\"System.Guid\"></xref> values using the same algorithm as NEWSEQUENTIALID()\nin Microsoft SQL Server. This is useful when entities are being saved to a database where sequential\nGUIDs will provide a performance benefit. The generated values are non-temporary, meaning they will\nbe saved to the database.</p>\n",
+    "syntax": {
+      "content": "public class SequentialGuidValueGenerator : ValueGenerator<Guid>",
+      "content.vb": "Public Class SequentialGuidValueGenerator Inherits ValueGenerator(Of Guid)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "parent": "Microsoft.Data.Entity.ValueGeneration",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+        "name": "ValueGenerator",
+        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "type": "class",
+        "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+        "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+        "id": "ValueGenerator",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{System.Guid}",
+        "parent": "Microsoft.Data.Entity.ValueGeneration",
+        "definition": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+        "name": "ValueGenerator<Guid>",
+        "name.vb": "ValueGenerator(Of Guid)",
+        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<System.Guid>",
+        "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of System.Guid)",
+        "spec.csharp": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "name": "ValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+          },
+          {
+            "name": "<",
+            "fullName": "<",
+            "isExternal": false
+          },
+          {
+            "uid": "System.Guid",
+            "name": "Guid",
+            "fullName": "System.Guid",
+            "isExternal": true
+          },
+          {
+            "name": ">",
+            "fullName": ">",
+            "isExternal": false
+          }
+        ],
+        "spec.vb": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "name": "ValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+          },
+          {
+            "name": "(Of ",
+            "fullName": "(Of ",
+            "isExternal": false
+          },
+          {
+            "uid": "System.Guid",
+            "name": "Guid",
+            "fullName": "System.Guid",
+            "isExternal": true
+          },
+          {
+            "name": ")",
+            "fullName": ")",
+            "isExternal": false
+          }
+        ],
+        "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>&lt;<xref href=\"System.Guid\" name=\"System.Guid\"/>&gt;",
+        "id": "ValueGenerator_Guid_",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{System.Guid}.NextValue",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/SequentialGuidValueGenerator.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

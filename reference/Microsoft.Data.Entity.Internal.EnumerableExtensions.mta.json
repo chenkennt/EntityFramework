@@ -1,0 +1,883 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+    "id": "EnumerableExtensions",
+    "parent": "Microsoft.Data.Entity.Internal",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Distinct``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})",
+            "id": "Distinct_T__IEnumerable_T___Func_T__T__Boolean__",
+            "parent": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+            "href": "Microsoft.Data.Entity.Internal.EnumerableExtensions.yml",
+            "name": "Distinct<T>(IEnumerable<T>, Func<T, T, Boolean>)",
+            "name.vb": "Distinct(Of T)(IEnumerable(Of T), Func(Of T, T, Boolean))",
+            "fullName": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Distinct<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, T, System.Boolean>)",
+            "fullName.vb": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Distinct(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, T, System.Boolean))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public static IEnumerable<T> Distinct<T>(IEnumerable<T> source, Func<T, T, bool> comparer)where T : class",
+              "content.vb": "Public Shared Function Distinct(Of T As Class)(source As IEnumerable(Of T), comparer As Func(Of T, T, Boolean)) As IEnumerable(Of T)",
+              "parameters": [
+                {
+                  "id": "source",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{{T}}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<T>",
+                    "name.vb": "IEnumerable(Of T)",
+                    "fullName": "System.Collections.Generic.IEnumerable<T>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of T)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;T&gt;",
+                    "id": "IEnumerable_T_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "comparer",
+                  "type": {
+                    "uid": "System.Func{{T},{T},System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Func`3",
+                    "name": "Func<T, T, Boolean>",
+                    "name.vb": "Func(Of T, T, Boolean)",
+                    "fullName": "System.Func<T, T, System.Boolean>",
+                    "fullName.vb": "System.Func(Of T, T, System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`3\" name=\"System.Func\"/>&lt;T, T, <xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Func_T__T__Boolean_",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "T"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{{T}}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "name": "IEnumerable<T>",
+                  "name.vb": "IEnumerable(Of T)",
+                  "fullName": "System.Collections.Generic.IEnumerable<T>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of T)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "T",
+                      "fullName": "T",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "T",
+                      "fullName": "T",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;T&gt;",
+                  "id": "IEnumerable_T_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.Distinct``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})\" name=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.Distinct&lt;T&gt;(System.Collections.Generic.IEnumerable&lt;T&gt;, System.Func&lt;T, T, System.Boolean&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/EnumerableExtensions.cs/#L21"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable{System.Object},System.String)",
+            "id": "Join_IEnumerable_Object___String_",
+            "parent": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+            "href": "Microsoft.Data.Entity.Internal.EnumerableExtensions.yml",
+            "name": "Join(IEnumerable<Object>, String)",
+            "name.vb": "Join(IEnumerable(Of Object), String)",
+            "fullName": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable<System.Object>, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Internal.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable(Of System.Object), System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+              "startLine": 41,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public static string Join(IEnumerable<object> source, string separator = \", \")",
+              "content.vb": "Public Shared Function Join(source As IEnumerable(Of Object), separator As String = \", \") As String",
+              "parameters": [
+                {
+                  "id": "source",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "separator",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable{System.Object},System.String)\" name=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.Join(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/EnumerableExtensions.cs/#L42"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Internal.EnumerableExtensions.OrderByOrdinal``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})",
+            "id": "OrderByOrdinal_TSource__IEnumerable_TSource___Func_TSource__String__",
+            "parent": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+            "href": "Microsoft.Data.Entity.Internal.EnumerableExtensions.yml",
+            "name": "OrderByOrdinal<TSource>(IEnumerable<TSource>, Func<TSource, String>)",
+            "name.vb": "OrderByOrdinal(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, String))",
+            "fullName": "Microsoft.Data.Entity.Internal.EnumerableExtensions.OrderByOrdinal<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, System.String>)",
+            "fullName.vb": "Microsoft.Data.Entity.Internal.EnumerableExtensions.OrderByOrdinal(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, System.String))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public static IOrderedEnumerable<TSource> OrderByOrdinal<TSource>(IEnumerable<TSource> source, Func<TSource, string> keySelector)",
+              "content.vb": "Public Shared Function OrderByOrdinal(Of TSource)(source As IEnumerable(Of TSource), keySelector As Func(Of TSource, String)) As IOrderedEnumerable(Of TSource)",
+              "parameters": [
+                {
+                  "id": "source",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{{TSource}}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<TSource>",
+                    "name.vb": "IEnumerable(Of TSource)",
+                    "fullName": "System.Collections.Generic.IEnumerable<TSource>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of TSource)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TSource&gt;",
+                    "id": "IEnumerable_TSource_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "keySelector",
+                  "type": {
+                    "uid": "System.Func{{TSource},System.String}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "name": "Func<TSource, String>",
+                    "name.vb": "Func(Of TSource, String)",
+                    "fullName": "System.Func<TSource, System.String>",
+                    "fullName.vb": "System.Func(Of TSource, System.String)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TSource, <xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                    "id": "Func_TSource__String_",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TSource"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.IOrderedEnumerable{{TSource}}",
+                  "parent": "System.Linq",
+                  "definition": "System.Linq.IOrderedEnumerable`1",
+                  "name": "IOrderedEnumerable<TSource>",
+                  "name.vb": "IOrderedEnumerable(Of TSource)",
+                  "fullName": "System.Linq.IOrderedEnumerable<TSource>",
+                  "fullName.vb": "System.Linq.IOrderedEnumerable(Of TSource)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Linq.IOrderedEnumerable`1",
+                      "name": "IOrderedEnumerable",
+                      "fullName": "System.Linq.IOrderedEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TSource",
+                      "fullName": "TSource",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Linq.IOrderedEnumerable`1",
+                      "name": "IOrderedEnumerable",
+                      "fullName": "System.Linq.IOrderedEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TSource",
+                      "fullName": "TSource",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Linq.IOrderedEnumerable`1\" name=\"System.Linq.IOrderedEnumerable\"/>&lt;TSource&gt;",
+                  "id": "IOrderedEnumerable_TSource_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.OrderByOrdinal``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.String})\" name=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.OrderByOrdinal&lt;TSource&gt;(System.Collections.Generic.IEnumerable&lt;TSource&gt;, System.Func&lt;TSource, System.String&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/EnumerableExtensions.cs/#L16"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Internal.EnumerableExtensions.StructuralSequenceEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})",
+            "id": "StructuralSequenceEqual_TSource__IEnumerable_TSource___IEnumerable_TSource__",
+            "parent": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+            "href": "Microsoft.Data.Entity.Internal.EnumerableExtensions.yml",
+            "name": "StructuralSequenceEqual<TSource>(IEnumerable<TSource>, IEnumerable<TSource>)",
+            "name.vb": "StructuralSequenceEqual(Of TSource)(IEnumerable(Of TSource), IEnumerable(Of TSource))",
+            "fullName": "Microsoft.Data.Entity.Internal.EnumerableExtensions.StructuralSequenceEqual<TSource>(System.Collections.Generic.IEnumerable<TSource>, System.Collections.Generic.IEnumerable<TSource>)",
+            "fullName.vb": "Microsoft.Data.Entity.Internal.EnumerableExtensions.StructuralSequenceEqual(Of TSource)(System.Collections.Generic.IEnumerable(Of TSource), System.Collections.Generic.IEnumerable(Of TSource))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public static bool StructuralSequenceEqual<TSource>(IEnumerable<TSource> first, IEnumerable<TSource> second)",
+              "content.vb": "Public Shared Function StructuralSequenceEqual(Of TSource)(first As IEnumerable(Of TSource), second As IEnumerable(Of TSource)) As Boolean",
+              "parameters": [
+                {
+                  "id": "first",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{{TSource}}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<TSource>",
+                    "name.vb": "IEnumerable(Of TSource)",
+                    "fullName": "System.Collections.Generic.IEnumerable<TSource>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of TSource)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TSource&gt;",
+                    "id": "IEnumerable_TSource_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "second",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{{TSource}}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<TSource>",
+                    "name.vb": "IEnumerable(Of TSource)",
+                    "fullName": "System.Collections.Generic.IEnumerable<TSource>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of TSource)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TSource",
+                        "fullName": "TSource",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TSource&gt;",
+                    "id": "IEnumerable_TSource_",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TSource"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.StructuralSequenceEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})\" name=\"Microsoft.Data.Entity.Internal.EnumerableExtensions.StructuralSequenceEqual&lt;TSource&gt;(System.Collections.Generic.IEnumerable&lt;TSource&gt;, System.Collections.Generic.IEnumerable&lt;TSource&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/EnumerableExtensions.cs/#L47"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Internal.EnumerableExtensions.yml",
+    "name": "EnumerableExtensions",
+    "fullName": "Microsoft.Data.Entity.Internal.EnumerableExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Internal/EnumerableExtensions.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Internal",
+    "syntax": {
+      "content": "public class EnumerableExtensions",
+      "content.vb": "Public Class EnumerableExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.EnumerableExtensions\" name=\"Microsoft.Data.Entity.Internal.EnumerableExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/EnumerableExtensions.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

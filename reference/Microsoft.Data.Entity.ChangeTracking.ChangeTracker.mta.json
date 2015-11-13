@@ -1,0 +1,799 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+    "id": "ChangeTracker",
+    "parent": "Microsoft.Data.Entity.ChangeTracking",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager,Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector,Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator,Microsoft.Data.Entity.DbContext)",
+            "id": "ChangeTracker_IStateManager__IChangeDetector__IEntityEntryGraphIterator__DbContext_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "ChangeTracker(IStateManager, IChangeDetector, IEntityEntryGraphIterator, DbContext)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.ChangeTracker(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager, Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector, Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator, Microsoft.Data.Entity.DbContext)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> class. Instances of this class are typically\nobtained from <xref href=\"Microsoft.Data.Entity.DbContext.ChangeTracker\"></xref> and it is not designed to be directly constructed\nin your application code.</p>\n",
+            "syntax": {
+              "content": "public ChangeTracker(IStateManager stateManager, IChangeDetector changeDetector, IEntityEntryGraphIterator graphIterator, DbContext context)",
+              "content.vb": "Public Sub New(stateManager As IStateManager, changeDetector As IChangeDetector, graphIterator As IEntityEntryGraphIterator, context As DbContext)",
+              "parameters": [
+                {
+                  "id": "stateManager",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager.yml",
+                    "name": "IStateManager",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\"/>",
+                    "id": "IStateManager",
+                    "level": 0
+                  },
+                  "description": "<p>The internal state manager being used to store information about tracked entities.</p>\n"
+                },
+                {
+                  "id": "changeDetector",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector.yml",
+                    "name": "IChangeDetector",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector\"/>",
+                    "id": "IChangeDetector",
+                    "level": 0
+                  },
+                  "description": "<p>The internal change detector used to identify changes in tracked entities.</p>\n"
+                },
+                {
+                  "id": "graphIterator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator.yml",
+                    "name": "IEntityEntryGraphIterator",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator\"/>",
+                    "id": "IEntityEntryGraphIterator",
+                    "level": 0
+                  },
+                  "description": "<p>The internal graph iterator used to traverse graphs of entities.</p>\n"
+                },
+                {
+                  "id": "context",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  },
+                  "description": "<p>The context this change tracker belongs to.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager,Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector,Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator,Microsoft.Data.Entity.DbContext)\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.ChangeTracker(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager, Microsoft.Data.Entity.ChangeTracking.Internal.IChangeDetector, Microsoft.Data.Entity.ChangeTracking.Internal.IEntityEntryGraphIterator, Microsoft.Data.Entity.DbContext)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L35"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled",
+            "id": "AutoDetectChangesEnabled",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "AutoDetectChangesEnabled",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nGets or sets a value indicating whether the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> method is called\nautomatically by methods of <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> and related classes.\n</para>\n<para>\nThe default value is true. This ensures the context is aware of any changes to tracked entity instances\nbefore performing operations such as <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> or returning change tracking\ninformation. If you disable automatic detect changes then you must ensure that\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> is called when entity instances have been modified.\nFailure to do so may result in some changes not being persisted during\n<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> or out-of-date change tracking information being returned.\n</para>",
+            "syntax": {
+                "content": "public virtual bool AutoDetectChangesEnabled { get; set; }",
+                "content.vb": "Public Overridable Property AutoDetectChangesEnabled As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Context",
+            "id": "Context",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "Context",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Context",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 135,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets the context this change tracker belongs to.</p>\n",
+            "syntax": {
+                "content": "public virtual DbContext Context { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Context As DbContext",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Context\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Context\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L136"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#IStateManager}#Instance",
+            "id": "IInfrastructure_IStateManager__Instance",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "IInfrastructure<IStateManager>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager>.Instance",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 130,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nGets the internal state manager being used to store information about tracked entities.\n</para>\n<para>\nThis property is intended for use by extension methods. It is not intended to be used in\napplication code.\n</para>",
+            "syntax": {
+                "content": "IStateManager IInfrastructure<IStateManager>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager>.Instance As IStateManager Implements IInfrastructure(Of IStateManager).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager.yml",
+                    "name": "IStateManager",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\"/>",
+                    "id": "IStateManager",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#IStateManager}#Instance\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L131"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.QueryTrackingBehavior",
+            "id": "QueryTrackingBehavior",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "QueryTrackingBehavior",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.QueryTrackingBehavior",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 84,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nGets or sets the tracking behavior for LINQ queries run against the context. Disabling change tracking\nis useful for read-only scenarios because it avoids the overhead of setting up change tracking for each\nentity instance. You should not disable change tracking if you want to manipulate entity instances and\npersist those changes to the database using <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref>.\n</para>\n<para>\nThis method sets the default behavior for the context, but you can override this behavior for individual\nqueries using the <xref href=\"Microsoft.Data.Entity.EntityFrameworkQueryableExtensions.AsNoTracking``1(System.Linq.IQueryable{``0})\"></xref>\nand <xref href=\"Microsoft.Data.Entity.EntityFrameworkQueryableExtensions.AsTracking``1(System.Linq.IQueryable{``0})\"></xref> methods.\n</para>\n<para>\nThe default value is <xref href=\"Microsoft.Data.Entity.QueryTrackingBehavior.TrackAll\"></xref>. This means the change tracker will\nkeep track of changes for all entities that are returned from a LINQ query.\n</para>",
+            "syntax": {
+                "content": "public virtual QueryTrackingBehavior QueryTrackingBehavior { get; set; }",
+                "content.vb": "Public Overridable Property QueryTrackingBehavior As QueryTrackingBehavior",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.QueryTrackingBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.QueryTrackingBehavior.yml",
+                    "name": "QueryTrackingBehavior",
+                    "fullName": "Microsoft.Data.Entity.QueryTrackingBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the results of a query are tracked by the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref>.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.QueryTrackingBehavior\" name=\"Microsoft.Data.Entity.QueryTrackingBehavior\"/>",
+                    "id": "QueryTrackingBehavior",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.QueryTrackingBehavior\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.QueryTrackingBehavior\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L85"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges",
+            "id": "AcceptAllChanges__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "AcceptAllChanges()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 150,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Accepts all changes made to entities in the context. It will be assumed that the tracked entities\nrepresent the current state of the database. This method is typically called by <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref>\nafter changes have been successfully saved to the database.</p>\n",
+            "syntax": {
+              "content": "public virtual void AcceptAllChanges()",
+              "content.vb": "Public Overridable Sub AcceptAllChanges"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L151"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges",
+            "id": "DetectChanges__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "DetectChanges()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 143,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Scans the tracked entity instances to detect any changes made to the instance data. <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref>\nis usually called automatically by the context when up-to-date information is required (before\n<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> and when returning change tracking information). You typically only need to\ncall this method if you have disabled <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"></xref>.</p>\n",
+            "syntax": {
+              "content": "public virtual void DetectChanges()",
+              "content.vb": "Public Overridable Sub DetectChanges"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L144"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries",
+            "id": "Entries__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "Entries()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 91,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets an <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for each entity being tracked by the context.\nThe entries provide access to change tracking information and operations for each entity.</p>\n",
+            "syntax": {
+              "content": "public virtual IEnumerable<EntityEntry> Entries()",
+              "content.vb": "Public Overridable Function Entries As IEnumerable(Of EntityEntry)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.ChangeTracking.EntityEntry}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "IEnumerable<EntityEntry>",
+                  "name.vb": "IEnumerable(Of EntityEntry)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.ChangeTracking.EntityEntry>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.ChangeTracking.EntityEntry)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&gt;",
+                  "id": "IEnumerable_EntityEntry_",
+                  "level": 0
+                },
+                "description": "<p>An entry for each entity being tracked.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L92"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries``1",
+            "id": "Entries_TEntity___",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "Entries<TEntity>()",
+            "name.vb": "Entries(Of TEntity)()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries<TEntity>()",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries(Of TEntity)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 104,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets an <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for all entities of a given type being tracked by the context.\nThe entries provide access to change tracking information and operations for each entity.</p>\n",
+            "syntax": {
+              "content": "public virtual IEnumerable<EntityEntry<TEntity>> Entries<TEntity>()where TEntity : class",
+              "content.vb": "Public Overridable Function Entries(Of TEntity As Class) As IEnumerable(Of EntityEntry(Of TEntity))",
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of entities to get entries for."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "IEnumerable<EntityEntry<TEntity>>",
+                  "name.vb": "IEnumerable(Of EntityEntry(Of TEntity))",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;&gt;",
+                  "id": "IEnumerable_EntityEntry_TEntity__",
+                  "level": 0
+                },
+                "description": "<p>An entry for each entity of the given type that is being tracked.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries``1\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.Entries&lt;TEntity&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L105"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.TrackGraph(System.Object,System.Action{Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode})",
+            "id": "TrackGraph_Object__Action_EntityEntryGraphNode__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+            "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+            "name": "TrackGraph(Object, Action<EntityEntryGraphNode>)",
+            "name.vb": "TrackGraph(Object, Action(Of EntityEntryGraphNode))",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.TrackGraph(System.Object, System.Action<Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode>)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.TrackGraph(System.Object, System.Action(Of Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+              "startLine": 177,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nBegins tracking an entity and any entities that are reachable by traversing it&#39;s navigation properties.\nTraversal is recursive so the navigation properties of any discovered entities will also be scanned.\nThe specified <paramref name=\"callback\"></paramref> is called for each discovered entity and must set the\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry.State\"></xref> that each entity should be tracked in. If no state is set, the entity\nremains untracked.\n</para>\n<para>\nThis method is designed for use in disconnected scenarios where entities are retrieved using one instance of\nthe context and then changes are saved using a different instance of the context. An example of this is a\nweb service where one service call retrieves entities from the database and another service call persists\nany changes to the entities. Each service call uses a new instance of the context that is disposed when the\ncall is complete.\n</para>\n<para>\nIf an entity is discovered that is already tracked by the context, that entity is not processed (and it&#39;s\nnavigation properties are not traversed).\n</para>",
+            "syntax": {
+              "content": "public virtual void TrackGraph(object rootEntity, Action<EntityEntryGraphNode> callback)",
+              "content.vb": "Public Overridable Sub TrackGraph(rootEntity As Object, callback As Action(Of EntityEntryGraphNode))",
+              "parameters": [
+                {
+                  "id": "rootEntity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to begin traversal from.</p>\n"
+                },
+                {
+                  "id": "callback",
+                  "type": {
+                    "uid": "System.Action{Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode}",
+                    "parent": "System",
+                    "definition": "System.Action`1",
+                    "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+                    "name": "Action<EntityEntryGraphNode>",
+                    "name.vb": "Action(Of EntityEntryGraphNode)",
+                    "fullName": "System.Action<Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode>",
+                    "fullName.vb": "System.Action(Of Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                        "name": "EntityEntryGraphNode",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                        "name": "EntityEntryGraphNode",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`1\" name=\"System.Action\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\"/>&gt;",
+                    "id": "Action_EntityEntryGraphNode_",
+                    "level": 0
+                  },
+                  "description": "<p>An action to configure the change tracking information for each entity. For the entity to begin being tracked,\nthe <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry.State\"></xref> must be set.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.TrackGraph(System.Object,System.Action{Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode})\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.TrackGraph(System.Object, System.Action&lt;Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L178"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+    "name": "ChangeTracker",
+    "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ChangeTracking",
+    "summary": "<p>Provides access to change tracking information and operations for entity instances the context is tracking.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.ChangeTracker\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+    "syntax": {
+      "content": "public class ChangeTracker : IInfrastructure<IStateManager>",
+      "content.vb": "Public Class ChangeTracker Implements IInfrastructure(Of IStateManager)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/ChangeTracker.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,236 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions",
+    "id": "SqlServerDbContextOptionsExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder,System.Data.Common.DbConnection)",
+            "id": "UseSqlServer_DbContextOptionsBuilder__DbConnection_",
+            "parent": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions",
+            "href": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.yml",
+            "name": "UseSqlServer(DbContextOptionsBuilder, DbConnection)",
+            "fullName": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder, System.Data.Common.DbConnection)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.MicrosoftSqlServer"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Configures the context to connect to a Microsoft SQL Server database.</p>\n",
+            "syntax": {
+              "content": "public static SqlServerDbContextOptionsBuilder UseSqlServer(DbContextOptionsBuilder optionsBuilder, DbConnection connection)",
+              "content.vb": "Public Shared Function UseSqlServer(optionsBuilder As DbContextOptionsBuilder, connection As DbConnection) As SqlServerDbContextOptionsBuilder",
+              "parameters": [
+                {
+                  "id": "optionsBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The options for the context.</p>\n"
+                },
+                {
+                  "id": "connection",
+                  "type": {
+                    "uid": "System.Data.Common.DbConnection",
+                    "parent": "System.Data.Common",
+                    "isExternal": true,
+                    "name": "DbConnection",
+                    "fullName": "System.Data.Common.DbConnection",
+                    "specName": "<xref href=\"System.Data.Common.DbConnection\" name=\"System.Data.Common.DbConnection\"/>",
+                    "id": "DbConnection",
+                    "level": 0
+                  },
+                  "description": "<p>An existing <xref href=\"System.Data.Common.DbConnection\"></xref> to be used to connect to the database. If the connection is\nin the open state then EF will not open or close the connection. If the connection is in the closed\nstate then EF will open and close the connection as needed.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder.yml",
+                  "name": "SqlServerDbContextOptionsBuilder",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\"/>",
+                  "id": "SqlServerDbContextOptionsBuilder",
+                  "level": 0
+                },
+                "description": "<p>An options builder to allow additional SQL Server specific configuration.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder,System.Data.Common.DbConnection)\" name=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder, System.Data.Common.DbConnection)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder,System.String)",
+            "id": "UseSqlServer_DbContextOptionsBuilder__String_",
+            "parent": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions",
+            "href": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.yml",
+            "name": "UseSqlServer(DbContextOptionsBuilder, String)",
+            "fullName": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.MicrosoftSqlServer"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Configures the context to connect to a Microsoft SQL Server database.</p>\n",
+            "syntax": {
+              "content": "public static SqlServerDbContextOptionsBuilder UseSqlServer(DbContextOptionsBuilder optionsBuilder, string connectionString)",
+              "content.vb": "Public Shared Function UseSqlServer(optionsBuilder As DbContextOptionsBuilder, connectionString As String) As SqlServerDbContextOptionsBuilder",
+              "parameters": [
+                {
+                  "id": "optionsBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The options for the context.</p>\n"
+                },
+                {
+                  "id": "connectionString",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The connection string of the database to connect to.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder.yml",
+                  "name": "SqlServerDbContextOptionsBuilder",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\"/>",
+                  "id": "SqlServerDbContextOptionsBuilder",
+                  "level": 0
+                },
+                "description": "<p>An options builder to allow additional SQL Server specific configuration.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder,System.String)\" name=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.UseSqlServer(Microsoft.Data.Entity.DbContextOptionsBuilder, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs/#L22"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions.yml",
+    "name": "SqlServerDbContextOptionsExtensions",
+    "fullName": "Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.MicrosoftSqlServer"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "syntax": {
+      "content": "public class SqlServerDbContextOptionsExtensions",
+      "content.vb": "Public Class SqlServerDbContextOptionsExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions\" name=\"Microsoft.Data.Entity.SqlServerDbContextOptionsExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Extensions/SqlServerDbContextOptionsExtensions.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

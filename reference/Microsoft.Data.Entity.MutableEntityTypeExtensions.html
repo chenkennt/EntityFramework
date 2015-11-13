@@ -1,0 +1,1674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MutableEntityTypeExtensions | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MutableEntityTypeExtensions | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L19" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_MutableEntityTypeExtensions">Class MutableEntityTypeExtensions</h1>
+              <div class="markdown level0 summary"><p>Extension methods for <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">MutableEntityTypeExtensions</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class MutableEntityTypeExtensions</code></pre>
+              </div>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L198">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_AddForeignKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_Microsoft_Data_Entity_Metadata_IMutableKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_">AddForeignKey(IMutableEntityType, IMutableProperty, IMutableKey, IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Adds a new relationship to this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableForeignKey AddForeignKey(IMutableEntityType entityType, IMutableProperty property, IMutableKey principalKey, IMutableEntityType principalEntityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to add the foreign key to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property that the foreign key is defined on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><em>principalKey</em></td>
+                    <td><p>The primary or alternate key that is referenced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td><p>The entity type that the relationship targets. This may be different from the type that <paramref name="principalKey"></paramref>
+is defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the
+base type of the hierarchy).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a></td>
+                    <td><p>The newly created foreign key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L425">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_AddIndex_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">AddIndex(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Adds an index to this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableIndex AddIndex(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to add the index to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to be indexed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableIndex.html#Microsoft_Data_Entity_Metadata_IMutableIndex">IMutableIndex</a></td>
+                    <td><p>The newly created index.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L97">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_AddKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">AddKey(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Adds a new alternate key to this entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey AddKey(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to add the alternate key to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to use as an alternate key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The newly created key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L328">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_AddProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Reflection_PropertyInfo_">AddProperty(IMutableEntityType, PropertyInfo)</h4>
+              <div class="markdown level1 summary"><p>Adds a property to this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty AddProperty(IMutableEntityType entityType, PropertyInfo propertyInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to add the property to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+                    <td><em>propertyInfo</em></td>
+                    <td><p>The corresponding property in the entity class.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The newly created property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L311">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_AddProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_String_System_Type_">AddProperty(IMutableEntityType, String, Type)</h4>
+              <div class="markdown level1 summary"><p>Adds a property to this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty AddProperty(IMutableEntityType entityType, string name, Type propertyType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to add the property to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the property to add.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>propertyType</em></td>
+                    <td><p>The type of value the property will hold.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The newly created property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L166">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindForeignKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IProperty_Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Metadata_IEntityType_">FindForeignKey(IMutableEntityType, IProperty, IKey, IEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets the foreign key for the given properties that points to a given primary or alternate key. Returns null
+if no foreign key is found.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableForeignKey FindForeignKey(IMutableEntityType entityType, IProperty property, IKey principalKey, IEntityType principalEntityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the foreign keys on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property that the foreign key is defined on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>principalKey</em></td>
+                    <td><p>The primary or alternate key that is referenced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td><p>The entity type that the relationship targets. This may be different from the type that <paramref name="principalKey"></paramref>
+is defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the
+base type of the hierarchy).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a></td>
+                    <td><p>The foreign key, or null if none is defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L138">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindForeignKeys_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IProperty_">FindForeignKeys(IMutableEntityType, IProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the foreign keys defined on the given property. Only foreign keys that are defined on exactly the specified
+property are returned. Composite foreign keys that include the specified property are not returned.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IMutableForeignKey&gt; FindForeignKeys(IMutableEntityType entityType, IProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the foreign keys on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to find the foreign keys on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a>&gt;</td>
+                    <td><p>The foreign keys.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L149">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindForeignKeys_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IProperty__">FindForeignKeys(IMutableEntityType, IReadOnlyList&lt;IProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the foreign keys defined on the given properties. Only foreign keys that are defined on exactly the specified
+set of properties are returned.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IMutableForeignKey&gt; FindForeignKeys(IMutableEntityType entityType, IReadOnlyList&lt;IProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the foreign keys on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties to find the foreign keys on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a>&gt;</td>
+                    <td><p>The foreign keys.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L412">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindIndex_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IProperty_">FindIndex(IMutableEntityType, IProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the index defined on the given property. Returns null if no index is defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableIndex FindIndex(IMutableEntityType entityType, IProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the index on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to find the index on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableIndex.html#Microsoft_Data_Entity_Metadata_IMutableIndex">IMutableIndex</a></td>
+                    <td><p>The index, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L84">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IProperty_">FindKey(IMutableEntityType, IProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the primary or alternate key that is defined on the given property. Returns null if no key is defined
+for the given property.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey FindKey(IMutableEntityType entityType, IProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property that the key is defined on.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The key, or null if none is defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L258">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindNavigation_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Reflection_PropertyInfo_">FindNavigation(IMutableEntityType, PropertyInfo)</h4>
+              <div class="markdown level1 summary"><p>Gets a navigation property on the given entity type. Returns null if no navigation property is found.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableNavigation FindNavigation(IMutableEntityType entityType, PropertyInfo propertyInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the navigation property on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+                    <td><em>propertyInfo</em></td>
+                    <td><p>The navigation property on the entity class.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableNavigation.html#Microsoft_Data_Entity_Metadata_IMutableNavigation">IMutableNavigation</a></td>
+                    <td><p>The navigation property, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L273">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindNavigation_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_String_">FindNavigation(IMutableEntityType, String)</h4>
+              <div class="markdown level1 summary"><p>Gets a navigation property on the given entity type. Returns null if no navigation property is found.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableNavigation FindNavigation(IMutableEntityType entityType, string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the navigation property on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the navigation property on the entity class.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableNavigation.html#Microsoft_Data_Entity_Metadata_IMutableNavigation">IMutableNavigation</a></td>
+                    <td><p>The navigation property, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L296">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_FindProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Reflection_PropertyInfo_">FindProperty(IMutableEntityType, PropertyInfo)</h4>
+              <div class="markdown level1 summary"><para>
+Gets a property on the given entity type. Returns null if no property is found.
+</para>
+<para>
+This API only finds scalar properties and does not find navigation properties. Use
+<a class="xref" href="Microsoft.Data.Entity.MutableEntityTypeExtensions.html#Microsoft_Data_Entity_MutableEntityTypeExtensions_FindNavigation_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Reflection_PropertyInfo_">FindNavigation(IMutableEntityType, PropertyInfo)</a> to find a navigation property.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty FindProperty(IMutableEntityType entityType, PropertyInfo propertyInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the property on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+                    <td><em>propertyInfo</em></td>
+                    <td><p>The property on the entity class.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The property, or null if none is found.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L26">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetDerivedTypes_Microsoft_Data_Entity_Metadata_IMutableEntityType_">GetDerivedTypes(IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets all types in the model that derive from a given entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IMutableEntityType&gt; GetDerivedTypes(IMutableEntityType entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The base type to find types that derive from.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a>&gt;</td>
+                    <td><p>The derived types.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L281">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetNavigations_Microsoft_Data_Entity_Metadata_IMutableEntityType_">GetNavigations(IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets all navigation properties on the given entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IMutableNavigation&gt; GetNavigations(IMutableEntityType entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get navigation properties for.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableNavigation.html#Microsoft_Data_Entity_Metadata_IMutableNavigation">IMutableNavigation</a>&gt;</td>
+                    <td><p>All navigation properties on the given entity type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L221">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddForeignKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_Microsoft_Data_Entity_Metadata_IMutableKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_">GetOrAddForeignKey(IMutableEntityType, IMutableProperty, IMutableKey, IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets an existing relationship, or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableForeignKey GetOrAddForeignKey(IMutableEntityType entityType, IMutableProperty property, IMutableKey principalKey, IMutableEntityType principalEntityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the foreign key to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property that the foreign key is defined on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><em>principalKey</em></td>
+                    <td><p>The primary or alternate key that is referenced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td><p>The entity type that the relationship targets. This may be different from the type that <paramref name="principalKey"></paramref>
+is defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the
+base type of the hierarchy).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a></td>
+                    <td><p>The existing or newly created foreign key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L240">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddForeignKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IMutableProperty__Microsoft_Data_Entity_Metadata_IMutableKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_">GetOrAddForeignKey(IMutableEntityType, IReadOnlyList&lt;IMutableProperty&gt;, IMutableKey, IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets an existing relationship, or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableForeignKey GetOrAddForeignKey(IMutableEntityType entityType, IReadOnlyList&lt;IMutableProperty&gt; properties, IMutableKey principalKey, IMutableEntityType principalEntityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the foreign key to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties that the foreign key is defined on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><em>principalKey</em></td>
+                    <td><p>The primary or alternate key that is referenced.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td><p>The entity type that the relationship targets. This may be different from the type that <paramref name="principalKey"></paramref>
+is defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the
+base type of the hierarchy).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a></td>
+                    <td><p>The existing or newly created foreign key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L439">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddIndex_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">GetOrAddIndex(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the index defined on the given property or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableIndex GetOrAddIndex(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the index to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to be indexed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableIndex.html#Microsoft_Data_Entity_Metadata_IMutableIndex">IMutableIndex</a></td>
+                    <td><p>The existing or newly created index.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L449">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddIndex_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IMutableProperty__">GetOrAddIndex(IMutableEntityType, IReadOnlyList&lt;IMutableProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the index defined on the given property or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableIndex GetOrAddIndex(IMutableEntityType entityType, IReadOnlyList&lt;IMutableProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the index to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties to be indexed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableIndex.html#Microsoft_Data_Entity_Metadata_IMutableIndex">IMutableIndex</a></td>
+                    <td><p>The existing or newly created index.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L112">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">GetOrAddKey(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the existing alternate key defined on a property, or creates a new one if one is not
+already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey GetOrAddKey(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or create the alternate key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property that is used as the alternate key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The existing or newly created alternate key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L123">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IMutableProperty__">GetOrAddKey(IMutableEntityType, IReadOnlyList&lt;IMutableProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the existing alternate key defined on a set of properties, or creates a new one if one is not
+already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey GetOrAddKey(IMutableEntityType entityType, IReadOnlyList&lt;IMutableProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or create the alternate key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties that are used as the alternate key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The existing or newly created alternate key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L375">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Reflection_PropertyInfo_">GetOrAddProperty(IMutableEntityType, PropertyInfo)</h4>
+              <div class="markdown level1 summary"><p>Gets the property with the given name, or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty GetOrAddProperty(IMutableEntityType entityType, PropertyInfo propertyInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the property to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Reflection.PropertyInfo</span></td>
+                    <td><em>propertyInfo</em></td>
+                    <td><p>The corresponding property in the entity class.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The existing or newly created property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L398">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_String_">GetOrAddProperty(IMutableEntityType, String)</h4>
+              <div class="markdown level1 summary"><p>Gets the property with the given name, or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty GetOrAddProperty(IMutableEntityType entityType, string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the property to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The existing or newly created property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L353">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrAddProperty_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_String_System_Type_">GetOrAddProperty(IMutableEntityType, String, Type)</h4>
+              <div class="markdown level1 summary"><p>Gets the property with the given name, or creates a new one if one is not already defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableProperty GetOrAddProperty(IMutableEntityType entityType, string name, Type propertyType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or add the property to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the property.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>propertyType</em></td>
+                    <td><p>The type of value the property will hold.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><p>The existing or newly created property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L59">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrSetPrimaryKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">GetOrSetPrimaryKey(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets the existing primary key of an entity, or sets it if one is not defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey GetOrSetPrimaryKey(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or set the key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to set as the primary key if one is not already defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The existing or newly created key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L69">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetOrSetPrimaryKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IMutableProperty__">GetOrSetPrimaryKey(IMutableEntityType, IReadOnlyList&lt;IMutableProperty&gt;)</h4>
+              <div class="markdown level1 summary"><p>Gets the existing primary key of an entity, or sets it if one is not defined.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey GetOrSetPrimaryKey(IMutableEntityType entityType, IReadOnlyList&lt;IMutableProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to get or set the key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td><p>The properties to set as the primary key if one is not already defined.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The existing or newly created key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L183">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_GetReferencingForeignKeys_Microsoft_Data_Entity_Metadata_IMutableEntityType_">GetReferencingForeignKeys(IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets all foreign keys that target a given entity type (i.e. foreign keys where the given entity type
+is the principal).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;IMutableForeignKey&gt; GetReferencingForeignKeys(IMutableEntityType entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to find the foreign keys for.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a>&gt;</td>
+                    <td><p>The foreign keys that reference the given entity type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L36">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_RootType_Microsoft_Data_Entity_Metadata_IMutableEntityType_">RootType(IMutableEntityType)</h4>
+              <div class="markdown level1 summary"><p>Gets the root base type for a given entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableEntityType RootType(IMutableEntityType entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The type to find the root of.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><p>The root base type. If the given entity type is not a derived type, then the same entity type is returned.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableEntityTypeExtensions.cs/#L45">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_MutableEntityTypeExtensions_SetPrimaryKey_Microsoft_Data_Entity_Metadata_IMutableEntityType_Microsoft_Data_Entity_Metadata_IMutableProperty_">SetPrimaryKey(IMutableEntityType, IMutableProperty)</h4>
+              <div class="markdown level1 summary"><p>Sets the primary key for this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IMutableKey SetPrimaryKey(IMutableEntityType entityType, IMutableProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The entity type to set the key on.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The primary key property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></td>
+                    <td><p>The newly created key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class QueryCompiler | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class QueryCompiler | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L30" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler">Class QueryCompiler</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">QueryCompiler</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Query.Internal</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class QueryCompiler : IQueryCompiler</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L49">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler__ctor_Microsoft_Data_Entity_Query_IQueryContextFactory_Microsoft_Data_Entity_Query_Internal_ICompiledQueryCache_Microsoft_Data_Entity_Query_ICompiledQueryCacheKeyGenerator_Microsoft_Data_Entity_Storage_IDatabase_Microsoft_Extensions_Logging_ILogger_Microsoft_Data_Entity_Query_Internal_QueryCompiler__Remotion_Linq_Parsing_Structure_NodeTypeProviders_MethodInfoBasedNodeTypeRegistry_Microsoft_Data_Entity_DbContext_">QueryCompiler(IQueryContextFactory, ICompiledQueryCache, ICompiledQueryCacheKeyGenerator, IDatabase, ILogger&lt;QueryCompiler&gt;, MethodInfoBasedNodeTypeRegistry, DbContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public QueryCompiler(IQueryContextFactory queryContextFactory, ICompiledQueryCache compiledQueryCache, ICompiledQueryCacheKeyGenerator compiledQueryCacheKeyGenerator, IDatabase database, ILogger&lt;QueryCompiler&gt; logger, MethodInfoBasedNodeTypeRegistry methodInfoBasedNodeTypeRegistry, DbContext context)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IQueryContextFactory.html#Microsoft_Data_Entity_Query_IQueryContextFactory">IQueryContextFactory</a></td>
+                    <td><em>queryContextFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.html#Microsoft_Data_Entity_Query_Internal_ICompiledQueryCache">ICompiledQueryCache</a></td>
+                    <td><em>compiledQueryCache</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.html#Microsoft_Data_Entity_Query_ICompiledQueryCacheKeyGenerator">ICompiledQueryCacheKeyGenerator</a></td>
+                    <td><em>compiledQueryCacheKeyGenerator</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDatabase.html#Microsoft_Data_Entity_Storage_IDatabase">IDatabase</a></td>
+                    <td><em>database</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Query.Internal.QueryCompiler.html#Microsoft_Data_Entity_Query_Internal_QueryCompiler">QueryCompiler</a>&gt;</td>
+                    <td><em>logger</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Remotion.Linq.Parsing.Structure.NodeTypeProviders.MethodInfoBasedNodeTypeRegistry</span></td>
+                    <td><em>methodInfoBasedNodeTypeRegistry</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a></td>
+                    <td><em>context</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L74">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_Database">Database</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IDatabase Database { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDatabase.html#Microsoft_Data_Entity_Storage_IDatabase">IDatabase</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L190">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_CompileAsyncQuery__1_System_Linq_Expressions_Expression_">CompileAsyncQuery&lt;TResult&gt;(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual Func&lt;QueryContext, IAsyncEnumerable&lt;TResult&gt;&gt; CompileAsyncQuery&lt;TResult&gt;(Expression query)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Query.QueryContext.html#Microsoft_Data_Entity_Query_QueryContext">QueryContext</a>, <span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;TResult&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L134">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_CompileQuery__1_System_Linq_Expressions_Expression_">CompileQuery&lt;TResult&gt;(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual Func&lt;QueryContext, TResult&gt; CompileQuery&lt;TResult&gt;(Expression query)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Query.QueryContext.html#Microsoft_Data_Entity_Query_QueryContext">QueryContext</a>, TResult&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L76">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_Execute__1_System_Linq_Expressions_Expression_">Execute&lt;TResult&gt;(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual TResult Execute&lt;TResult&gt;(Expression query)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TResult</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L87">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_ExecuteAsync__1_System_Linq_Expressions_Expression_">ExecuteAsync&lt;TResult&gt;(Expression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IAsyncEnumerable&lt;TResult&gt; ExecuteAsync&lt;TResult&gt;(Expression query)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IAsyncEnumerable</span>&lt;TResult&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L98">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_ExecuteAsync__1_System_Linq_Expressions_Expression_System_Threading_CancellationToken_">ExecuteAsync&lt;TResult&gt;(Expression, CancellationToken)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Task&lt;TResult&gt; ExecuteAsync&lt;TResult&gt;(Expression query, CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TResult&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompiler.cs/#L125">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Internal_QueryCompiler_ExtractParameters_System_Linq_Expressions_Expression_Microsoft_Data_Entity_Query_QueryContext_">ExtractParameters(Expression, QueryContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual Expression ExtractParameters(Expression query, QueryContext queryContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td><em>query</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.QueryContext.html#Microsoft_Data_Entity_Query_QueryContext">QueryContext</a></td>
+                    <td><em>queryContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

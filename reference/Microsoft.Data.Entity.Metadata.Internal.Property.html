@@ -1,0 +1,1267 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Property | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Property | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L16" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_Internal_Property">Class Property</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="Microsoft.Data.Entity.Infrastructure.Annotatable.html#Microsoft_Data_Entity_Infrastructure_Annotatable">Annotatable</a></div>
+                  <div class="level2"><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConventionalAnnotatable.html#Microsoft_Data_Entity_Metadata_Internal_ConventionalAnnotatable">ConventionalAnnotatable</a></div>
+                  <div class="level3"><span class="xref">Property</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata.Internal</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_Internal_Property_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class Property : ConventionalAnnotatable, IMutableProperty, IProperty, IPropertyBase, IMutableAnnotatable, IAnnotatable, IPropertyBaseAccessors, IPropertyIndexesAccessor</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L43">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property__ctor_System_String_Microsoft_Data_Entity_Metadata_Internal_EntityType_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">Property(String, EntityType, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Property(string name, EntityType declaringEntityType, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>declaringEntityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L57">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Builder">Builder</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalPropertyBuilder Builder { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalPropertyBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalPropertyBuilder">InternalPropertyBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L64">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_ClrType">ClrType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Type ClrType { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L56">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_DeclaringEntityType">DeclaringEntityType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityType DeclaringEntityType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L374">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Getter">Getter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IClrPropertyGetter Getter { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.IClrPropertyGetter.html#Microsoft_Data_Entity_Metadata_Internal_IClrPropertyGetter">IClrPropertyGetter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L380">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Indexes">Indexes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyIndexes Indexes { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.PropertyIndexes.html#Microsoft_Data_Entity_Metadata_Internal_PropertyIndexes">PropertyIndexes</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L286">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsConcurrencyToken">IsConcurrencyToken</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsConcurrencyToken { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L94">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsNullable">IsNullable</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsNullable { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L190">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsReadOnlyAfterSave">IsReadOnlyAfterSave</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsReadOnlyAfterSave { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L169">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsReadOnlyBeforeSave">IsReadOnlyBeforeSave</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsReadOnlyBeforeSave { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L235">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsShadowProperty">IsShadowProperty</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsShadowProperty { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L309">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_IsStoreGeneratedAlways">IsStoreGeneratedAlways</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsStoreGeneratedAlways { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L347">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Microsoft_Data_Entity_Metadata_IMutableProperty_DeclaringEntityType">IMutableProperty.DeclaringEntityType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IMutableEntityType IMutableProperty.DeclaringEntityType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L346">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Microsoft_Data_Entity_Metadata_IPropertyBase_DeclaringEntityType">IPropertyBase.DeclaringEntityType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEntityType IPropertyBase.DeclaringEntityType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L55">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Name">Name</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string Name { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L217">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_RequiresValueGenerator">RequiresValueGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool RequiresValueGenerator { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L377">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_Setter">Setter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IClrPropertySetter Setter { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.IClrPropertySetter.html#Microsoft_Data_Entity_Metadata_Internal_IClrPropertySetter">IClrPropertySetter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L127">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_ValueGenerated">ValueGenerated</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ValueGenerated ValueGenerated { get; set; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.ValueGenerated.html#Microsoft_Data_Entity_Metadata_ValueGenerated">ValueGenerated</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L363">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_AreCompatible_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__Microsoft_Data_Entity_Metadata_Internal_EntityType_">AreCompatible(IReadOnlyList&lt;Property&gt;, EntityType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool AreCompatible(IReadOnlyList&lt;Property&gt; properties, EntityType entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L332">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_FindContainingForeignKeys">FindContainingForeignKeys()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ForeignKey&gt; FindContainingForeignKeys()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ForeignKey.html#Microsoft_Data_Entity_Metadata_Internal_ForeignKey">ForeignKey</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L89">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetClrTypeConfigurationSource">GetClrTypeConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetClrTypeConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L59">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetConfigurationSource">GetConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource GetConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L304">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsConcurrencyTokenConfigurationSource">GetIsConcurrencyTokenConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsConcurrencyTokenConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L122">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsNullableConfigurationSource">GetIsNullableConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsNullableConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L212">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsReadOnlyAfterSaveConfigurationSource">GetIsReadOnlyAfterSaveConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsReadOnlyAfterSaveConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L185">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsReadOnlyBeforeSaveConfigurationSource">GetIsReadOnlyBeforeSaveConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsReadOnlyBeforeSaveConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L281">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsShadowPropertyConfigurationSource">GetIsShadowPropertyConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsShadowPropertyConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L327">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetIsStoreGeneratedAlwaysConfigurationSource">GetIsStoreGeneratedAlwaysConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetIsStoreGeneratedAlwaysConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L230">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetRequiresValueGeneratorConfigurationSource">GetRequiresValueGeneratorConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetRequiresValueGeneratorConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L164">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_GetValueGeneratedConfigurationSource">GetValueGeneratedConfigurationSource()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource? GetValueGeneratedConfigurationSource()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L71">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_HasClrType_System_Type_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasClrType(Type, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void HasClrType(Type type, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L292">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsConcurrencyToken_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsConcurrencyToken(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsConcurrencyToken(bool concurrencyToken, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>concurrencyToken</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L100">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsNullable_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsNullable(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsNullable(bool nullable, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>nullable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L196">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsReadOnlyAfterSave_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsReadOnlyAfterSave(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsReadOnlyAfterSave(bool readOnlyAfterSave, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>readOnlyAfterSave</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L175">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsReadOnlyBeforeSave_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsReadOnlyBeforeSave(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsReadOnlyBeforeSave(bool readOnlyBeforeSave, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>readOnlyBeforeSave</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L241">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsShadowProperty_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsShadowProperty(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsShadowProperty(bool shadowProperty, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>shadowProperty</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L315">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetIsStoreGeneratedAlways_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetIsStoreGeneratedAlways(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetIsStoreGeneratedAlways(bool storeGeneratedAlways, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>storeGeneratedAlways</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L223">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetRequiresValueGenerator_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetRequiresValueGenerator(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetRequiresValueGenerator(bool requiresValueGenerator, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>requiresValueGenerator</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L145">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_SetValueGenerated_System_Nullable_Microsoft_Data_Entity_Metadata_ValueGenerated__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">SetValueGenerated(Nullable&lt;ValueGenerated&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void SetValueGenerated(ValueGenerated? valueGenerated, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.ValueGenerated.html#Microsoft_Data_Entity_Metadata_ValueGenerated">ValueGenerated</a>&gt;</td>
+                    <td><em>valueGenerated</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/Property.cs/#L61">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_Property_UpdateConfigurationSource_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">UpdateConfigurationSource(ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ConfigurationSource UpdateConfigurationSource(ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

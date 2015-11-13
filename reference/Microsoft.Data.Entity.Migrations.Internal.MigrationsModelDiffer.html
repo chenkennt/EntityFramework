@@ -1,0 +1,2132 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MigrationsModelDiffer | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MigrationsModelDiffer | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer">Class MigrationsModelDiffer</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">MigrationsModelDiffer</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Migrations.Internal</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class MigrationsModelDiffer : IMigrationsModelDiffer</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L48">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer__ctor_Microsoft_Data_Entity_Storage_IRelationalTypeMapper_Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider_Microsoft_Data_Entity_Migrations_IMigrationsAnnotationProvider_">MigrationsModelDiffer(IRelationalTypeMapper, IRelationalAnnotationProvider, IMigrationsAnnotationProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MigrationsModelDiffer(IRelationalTypeMapper typeMapper, IRelationalAnnotationProvider annotations, IMigrationsAnnotationProvider migrationsAnnotations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalTypeMapper.html#Microsoft_Data_Entity_Storage_IRelationalTypeMapper">IRelationalTypeMapper</a></td>
+                    <td><em>typeMapper</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.html#Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider">IRelationalAnnotationProvider</a></td>
+                    <td><em>annotations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider.html#Microsoft_Data_Entity_Migrations_IMigrationsAnnotationProvider">IMigrationsAnnotationProvider</a></td>
+                    <td><em>migrationsAnnotations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L63">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Annotations">Annotations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IRelationalAnnotationProvider Annotations { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.html#Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider">IRelationalAnnotationProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L64">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_MigrationsAnnotations">MigrationsAnnotations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IMigrationsAnnotationProvider MigrationsAnnotations { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider.html#Microsoft_Data_Entity_Migrations_IMigrationsAnnotationProvider">IMigrationsAnnotationProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L62">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_TypeMapper">TypeMapper</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IRelationalTypeMapper TypeMapper { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalTypeMapper.html#Microsoft_Data_Entity_Storage_IRelationalTypeMapper">IRelationalTypeMapper</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L338">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Add(IEntityType, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IEntityType target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L602">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Add(IForeignKey, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IForeignKey target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L699">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IIndex_">Add(IIndex)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IIndex target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L520">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IKey_">Add(IKey)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IKey target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L248">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Add(IModel, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IModel target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L463">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_IProperty_System_Boolean_">Add(IProperty, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(IProperty target, bool inline = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>inline</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L786">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_Microsoft_Data_Entity_Metadata_ISequence_">Add(ISequence)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(ISequence target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L271">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Add_System_String_">Add(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Add(string target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L893">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_CopyAnnotations_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Infrastructure_IAnnotation__Microsoft_Data_Entity_Metadata_IMutableAnnotatable_">CopyAnnotations(IEnumerable&lt;IAnnotation&gt;, IMutableAnnotatable)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void CopyAnnotations(IEnumerable&lt;IAnnotation&gt; annotations, IMutableAnnotatable annotatable)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotation.html#Microsoft_Data_Entity_Infrastructure_IAnnotation">IAnnotation</a>&gt;</td>
+                    <td><em>annotations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableAnnotatable.html#Microsoft_Data_Entity_Metadata_IMutableAnnotatable">IMutableAnnotatable</a></td>
+                    <td><em>annotatable</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L306">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEntityType, IEntityType, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEntityType source, IEntityType target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L596">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IForeignKey, IForeignKey, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IForeignKey source, IForeignKey target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L671">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IIndex_Microsoft_Data_Entity_Metadata_IIndex_">Diff(IIndex, IIndex)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IIndex source, IIndex target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L515">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Metadata_IKey_">Diff(IKey, IKey)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IKey source, IKey target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L228">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IModel, IModel, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IModel source, IModel target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L405">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_IProperty_Microsoft_Data_Entity_Metadata_IProperty_">Diff(IProperty, IProperty)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IProperty source, IProperty target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L744">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_Microsoft_Data_Entity_Metadata_ISequence_Microsoft_Data_Entity_Metadata_ISequence_">Diff(ISequence, ISequence)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(ISequence source, ISequence target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L282">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IEntityType__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IEntityType__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEnumerable&lt;IEntityType&gt;, IEnumerable&lt;IEntityType&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;IEntityType&gt; source, IEnumerable&lt;IEntityType&gt; target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L580">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IForeignKey__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IForeignKey__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEnumerable&lt;IForeignKey&gt;, IEnumerable&lt;IForeignKey&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;IForeignKey&gt; source, IEnumerable&lt;IForeignKey&gt; target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L657">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IIndex__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IIndex__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEnumerable&lt;IIndex&gt;, IEnumerable&lt;IIndex&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;IIndex&gt; source, IEnumerable&lt;IIndex&gt; target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L504">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IKey__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IKey__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEnumerable&lt;IKey&gt;, IEnumerable&lt;IKey&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;IKey&gt; source, IEnumerable&lt;IKey&gt; target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L384">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IProperty__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IProperty__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Diff(IEnumerable&lt;IProperty&gt;, IEnumerable&lt;IProperty&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;IProperty&gt; source, IEnumerable&lt;IProperty&gt; target, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L732">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_ISequence__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_ISequence__">Diff(IEnumerable&lt;ISequence&gt;, IEnumerable&lt;ISequence&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;ISequence&gt; source, IEnumerable&lt;ISequence&gt; target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L262">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__">Diff(IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(IEnumerable&lt;string&gt; source, IEnumerable&lt;string&gt; target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L268">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Diff_System_String_System_String_">Diff(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Diff(string source, string target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L812">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffCollection__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__System_Func___0___0_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation___System_Func___0_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation___System_Func___0_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation___System_Func___0___0_System_Boolean____">DiffCollection&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;, Func&lt;T, T, IEnumerable&lt;MigrationOperation&gt;&gt;, Func&lt;T, IEnumerable&lt;MigrationOperation&gt;&gt;, Func&lt;T, IEnumerable&lt;MigrationOperation&gt;&gt;, Func&lt;T, T, Boolean&gt;[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; DiffCollection&lt;T&gt;(IEnumerable&lt;T&gt; sources, IEnumerable&lt;T&gt; targets, Func&lt;T, T, IEnumerable&lt;MigrationOperation&gt;&gt; diff, Func&lt;T, IEnumerable&lt;MigrationOperation&gt;&gt; add, Func&lt;T, IEnumerable&lt;MigrationOperation&gt;&gt; remove, params Func&lt;T, T, bool&gt;[] predicates)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+                    <td><em>sources</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+                    <td><em>targets</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T, T, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;&gt;</td>
+                    <td><em>diff</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;&gt;</td>
+                    <td><em>add</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;&gt;</td>
+                    <td><em>remove</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;T, T, <span class="xref">System.Boolean</span>&gt;[]</td>
+                    <td><em>predicates</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L872">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_GetColumns_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IProperty__">GetColumns(IEnumerable&lt;IProperty&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string[] GetColumns(IEnumerable&lt;IProperty&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L905">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_GetDefaultValue_System_Type_">GetDefaultValue(Type)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual object GetDefaultValue(Type type)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L69">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_GetDifferences_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Metadata_IModel_">GetDifferences(IModel, IModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IReadOnlyList&lt;MigrationOperation&gt; GetDifferences(IModel source, IModel target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L901">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_GetSchemas_Microsoft_Data_Entity_Metadata_IModel_">GetSchemas(IModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;string&gt; GetSchemas(IModel model)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L66">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_HasDifferences_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Metadata_IModel_">HasDifferences(IModel, IModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool HasDifferences(IModel source, IModel target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L875">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_HasDifferences_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Infrastructure_IAnnotation__System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Infrastructure_IAnnotation__">HasDifferences(IEnumerable&lt;IAnnotation&gt;, IEnumerable&lt;IAnnotation&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual bool HasDifferences(IEnumerable&lt;IAnnotation&gt; source, IEnumerable&lt;IAnnotation&gt; target)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotation.html#Microsoft_Data_Entity_Infrastructure_IAnnotation">IAnnotation</a>&gt;</td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotation.html#Microsoft_Data_Entity_Infrastructure_IAnnotation">IAnnotation</a>&gt;</td>
+                    <td><em>target</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L365">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Remove(IEntityType, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IEntityType source, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L636">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Remove(IForeignKey, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IForeignKey source, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L716">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IIndex_">Remove(IIndex)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IIndex source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L551">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IKey_">Remove(IKey)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IKey source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L254">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Remove(IModel, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IModel source, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L488">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_IProperty_">Remove(IProperty)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(IProperty source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L801">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_Microsoft_Data_Entity_Metadata_ISequence_">Remove(ISequence)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(ISequence source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L276">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Remove_System_String_">Remove(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;MigrationOperation&gt; Remove(string source)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>source</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/Internal/MigrationsModelDiffer.cs/#L76">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_Sort_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation__Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext_">Sort(IEnumerable&lt;MigrationOperation&gt;, MigrationsModelDiffer.DiffContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IReadOnlyList&lt;MigrationOperation&gt; Sort(IEnumerable&lt;MigrationOperation&gt; operations, MigrationsModelDiffer.DiffContext diffContext)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Internal.MigrationsModelDiffer.DiffContext.html#Microsoft_Data_Entity_Migrations_Internal_MigrationsModelDiffer_DiffContext">MigrationsModelDiffer.DiffContext</a></td>
+                    <td><em>diffContext</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

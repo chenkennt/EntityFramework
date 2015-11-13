@@ -1,0 +1,789 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.PropertyExtensions",
+    "id": "PropertyExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "FindContainingForeignKeys_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "FindContainingForeignKeys(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 69,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all foreign keys that use this property (including composite foreign keys in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IForeignKey> FindContainingForeignKeys(IProperty property)",
+              "content.vb": "Public Shared Function FindContainingForeignKeys(property As IProperty) As IEnumerable(Of IForeignKey)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get foreign keys for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IForeignKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                  "name": "IEnumerable<IForeignKey>",
+                  "name.vb": "IEnumerable(Of IForeignKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IForeignKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IForeignKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "name": "IForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "name": "IForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>&gt;",
+                  "id": "IEnumerable_IForeignKey_",
+                  "level": 0
+                },
+                "description": "<p>The foreign keys that use this property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L70"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.FindContainingIndexes(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "FindContainingIndexes_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "FindContainingIndexes(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.FindContainingIndexes(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 88,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all indexes that use this property (including composite indexes in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IIndex> FindContainingIndexes(IProperty property)",
+              "content.vb": "Public Shared Function FindContainingIndexes(property As IProperty) As IEnumerable(Of IIndex)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get indexes for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IIndex}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IIndex.yml",
+                  "name": "IEnumerable<IIndex>",
+                  "name.vb": "IEnumerable(Of IIndex)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IIndex>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IIndex)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "name": "IIndex",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IIndex.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "name": "IIndex",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IIndex.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IIndex\" name=\"Microsoft.Data.Entity.Metadata.IIndex\"/>&gt;",
+                  "id": "IEnumerable_IIndex_",
+                  "level": 0
+                },
+                "description": "<p>The indexes that use this property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingIndexes(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingIndexes(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L89"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "FindContainingKeys_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "FindContainingKeys(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 129,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all primary or alternate keys that use this property (including composite keys in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IKey> FindContainingKeys(IProperty property)",
+              "content.vb": "Public Shared Function FindContainingKeys(property As IProperty) As IEnumerable(Of IKey)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get primary and alternate keys for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                  "name": "IEnumerable<IKey>",
+                  "name.vb": "IEnumerable(Of IKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                      "name": "IKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                      "name": "IKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>&gt;",
+                  "id": "IEnumerable_IKey_",
+                  "level": 0
+                },
+                "description": "<p>The primary and alternate keys that use this property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L130"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "FindContainingPrimaryKey_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "FindContainingPrimaryKey(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 107,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the primary key that uses this property (including a composite primary key in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IKey FindContainingPrimaryKey(IProperty property)",
+              "content.vb": "Public Shared Function FindContainingPrimaryKey(property As IProperty) As IKey",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get primary key for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                  "name": "IKey",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                  "id": "IKey",
+                  "level": 0
+                },
+                "description": "<p>The primary that use this property, or null if it is not part of the primary key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L108"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.GetMaxLength(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "GetMaxLength_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "GetMaxLength(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.GetMaxLength(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the maximum length of data that is allowed in this property. For example, if the property is a <xref href=\"System.String\"></xref> &#39;\nthen this is the maximum number of characters.</p>\n",
+            "syntax": {
+              "content": "public static int ? GetMaxLength(IProperty property)",
+              "content.vb": "Public Shared Function GetMaxLength(property As IProperty) As Integer?",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get the maximum length of.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Nullable{System.Int32}",
+                  "parent": "System",
+                  "definition": "System.Nullable`1",
+                  "name": "Nullable<Int32>",
+                  "name.vb": "Nullable(Of Int32)",
+                  "fullName": "System.Nullable<System.Int32>",
+                  "fullName.vb": "System.Nullable(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Nullable`1",
+                      "name": "Nullable",
+                      "fullName": "System.Nullable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Nullable`1",
+                      "name": "Nullable",
+                      "fullName": "System.Nullable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Nullable_Int32_",
+                  "level": 0
+                },
+                "description": "<p>The maximum length, or null if none if defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.GetMaxLength(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.GetMaxLength(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L24"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.IsForeignKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "IsForeignKey_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "IsForeignKey(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.IsForeignKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 37,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets a value indicating whether this property is used as a foreign key (or part of a composite foreign key).</p>\n",
+            "syntax": {
+              "content": "public static bool IsForeignKey(IProperty property)",
+              "content.vb": "Public Shared Function IsForeignKey(property As IProperty) As Boolean",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to check.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the property is used as a foreign key, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.IsForeignKey(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.IsForeignKey(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L38"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.IsKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "IsKey_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "IsKey(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.IsKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 58,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets a value indicating whether this property is used as part of a primary or alternate key\n(or part of a composite primary or alternate key).</p>\n",
+            "syntax": {
+              "content": "public static bool IsKey(IProperty property)",
+              "content.vb": "Public Shared Function IsKey(property As IProperty) As Boolean",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to check.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the property is part of a key, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.IsKey(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.IsKey(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L59"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.PropertyExtensions.IsPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "IsPrimaryKey_IProperty_",
+            "parent": "Microsoft.Data.Entity.PropertyExtensions",
+            "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+            "name": "IsPrimaryKey(IProperty)",
+            "fullName": "Microsoft.Data.Entity.PropertyExtensions.IsPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+              "startLine": 47,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets a value indicating whether this property is used as the primary key (or part of a composite primary key).</p>\n",
+            "syntax": {
+              "content": "public static bool IsPrimaryKey(IProperty property)",
+              "content.vb": "Public Shared Function IsPrimaryKey(property As IProperty) As Boolean",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to check.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the property is used as the primary key, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions.IsPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.PropertyExtensions.IsPrimaryKey(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L48"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.PropertyExtensions.yml",
+    "name": "PropertyExtensions",
+    "fullName": "Microsoft.Data.Entity.PropertyExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/PropertyExtensions.cs",
+      "startLine": 15,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.IProperty\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class PropertyExtensions",
+      "content.vb": "Public Class PropertyExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.PropertyExtensions\" name=\"Microsoft.Data.Entity.PropertyExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/PropertyExtensions.cs/#L16"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

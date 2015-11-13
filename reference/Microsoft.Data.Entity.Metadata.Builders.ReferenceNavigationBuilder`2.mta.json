@@ -1,0 +1,966 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+    "id": "ReferenceNavigationBuilder_TEntity__TRelatedEntity_",
+    "parent": "Microsoft.Data.Entity.Metadata.Builders",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.#ctor(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String,Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder)",
+            "id": "ReferenceNavigationBuilder_EntityType__String__InternalRelationshipBuilder_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+            "name": "ReferenceNavigationBuilder(EntityType, String, InternalRelationshipBuilder)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.ReferenceNavigationBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType, System.String, Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity).ReferenceNavigationBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType, System.String, Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+              "startLine": 42,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<para>\nInitializes a new instance of the <xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2\"></xref> class.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+            "syntax": {
+              "content": "public ReferenceNavigationBuilder(EntityType relatedEntityType, string navigationName, InternalRelationshipBuilder builder)",
+              "content.vb": "Public Sub New(relatedEntityType As EntityType, navigationName As String, builder As InternalRelationshipBuilder)",
+              "parameters": [
+                {
+                  "id": "relatedEntityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.EntityType.yml",
+                    "name": "EntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"/>",
+                    "id": "EntityType",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type that the reference points to.</p>\n"
+                },
+                {
+                  "id": "navigationName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the reference navigation property on the end of the relationship that configuration began\non. If null, there is no navigation property on this end of the relationship.</p>\n"
+                },
+                {
+                  "id": "builder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.yml",
+                    "name": "InternalRelationshipBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder\"/>",
+                    "id": "InternalRelationshipBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The internal builder being used to configure the relationship.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.#ctor(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String,Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder)\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;.ReferenceNavigationBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType, System.String, Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L43"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithMany(System.Linq.Expressions.Expression{System.Func{`1,System.Collections.Generic.IEnumerable{`0}}})",
+            "id": "WithMany_Expression_Func_TRelatedEntity__IEnumerable_TEntity____",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+            "name": "WithMany(Expression<Func<TRelatedEntity, IEnumerable<TEntity>>>)",
+            "name.vb": "WithMany(Expression(Of Func(Of TRelatedEntity, IEnumerable(Of TEntity))))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity).WithMany(System.Linq.Expressions.Expression(Of System.Func(Of TRelatedEntity, System.Collections.Generic.IEnumerable(Of TEntity))))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+              "startLine": 59,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures this as a one-to-many relationship.</p>\n",
+            "syntax": {
+              "content": "public virtual ReferenceCollectionBuilder<TRelatedEntity, TEntity> WithMany(Expression<Func<TRelatedEntity, IEnumerable<TEntity>>> collection)",
+              "content.vb": "Public Overridable Function WithMany(collection As Expression(Of Func(Of TRelatedEntity, IEnumerable(Of TEntity)))) As ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+              "parameters": [
+                {
+                  "id": "collection",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TRelatedEntity},System.Collections.Generic.IEnumerable{{TEntity}}}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TRelatedEntity, IEnumerable<TEntity>>>",
+                    "name.vb": "Expression(Of Func(Of TRelatedEntity, IEnumerable(Of TEntity)))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TRelatedEntity, System.Collections.Generic.IEnumerable(Of TEntity)))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TRelatedEntity, <xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TEntity&gt;&gt;&gt;",
+                    "id": "Expression_Func_TRelatedEntity__IEnumerable_TEntity___",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the collection navigation property on the other end of this\nrelationship (<c>blog =&gt; blog.Posts</c>). If no property is specified, the relationship will be\nconfigured without a navigation property on the other end of the relationship.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder{{TRelatedEntity},{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml",
+                  "name": "ReferenceCollectionBuilder<TRelatedEntity, TEntity>",
+                  "name.vb": "ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder<TRelatedEntity, TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                      "name": "ReferenceCollectionBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                      "name": "ReferenceCollectionBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder\"/>&lt;TRelatedEntity, TEntity&gt;",
+                  "id": "ReferenceCollectionBuilder_TRelatedEntity__TEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object to further configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithMany(System.Linq.Expressions.Expression{System.Func{`1,System.Collections.Generic.IEnumerable{`0}}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;.WithMany(System.Linq.Expressions.Expression&lt;System.Func&lt;TRelatedEntity, System.Collections.Generic.IEnumerable&lt;TEntity&gt;&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L60"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithMany(System.String)",
+            "id": "WithMany_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+            "name": "WithMany(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity).WithMany(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+              "startLine": 83,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures this as a one-to-many relationship.</p>\n",
+            "syntax": {
+              "content": "public virtual ReferenceCollectionBuilder<TRelatedEntity, TEntity> WithMany(string collection = null)",
+              "content.vb": "Public Overridable Function WithMany(collection As String = Nothing) As ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+              "parameters": [
+                {
+                  "id": "collection",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the collection navigation property on the other end of this relationship.\nIf null, there is no navigation property on the other end of the relationship.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder{{TRelatedEntity},{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml",
+                  "name": "ReferenceCollectionBuilder<TRelatedEntity, TEntity>",
+                  "name.vb": "ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder<TRelatedEntity, TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder(Of TRelatedEntity, TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                      "name": "ReferenceCollectionBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2",
+                      "name": "ReferenceCollectionBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder\"/>&lt;TRelatedEntity, TEntity&gt;",
+                  "id": "ReferenceCollectionBuilder_TRelatedEntity__TEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object to further configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithMany(System.String)\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;.WithMany(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L84"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithOne(System.Linq.Expressions.Expression{System.Func{`1,`0}})",
+            "id": "WithOne_Expression_Func_TRelatedEntity__TEntity___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+            "name": "WithOne(Expression<Func<TRelatedEntity, TEntity>>)",
+            "name.vb": "WithOne(Expression(Of Func(Of TRelatedEntity, TEntity)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithOne(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, TEntity>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity).WithOne(System.Linq.Expressions.Expression(Of System.Func(Of TRelatedEntity, TEntity)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+              "startLine": 72,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures this as a one-to-one relationship.</p>\n",
+            "syntax": {
+              "content": "public virtual ReferenceReferenceBuilder<TEntity, TRelatedEntity> WithOne(Expression<Func<TRelatedEntity, TEntity>> reference)",
+              "content.vb": "Public Overridable Function WithOne(reference As Expression(Of Func(Of TRelatedEntity, TEntity))) As ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+              "parameters": [
+                {
+                  "id": "reference",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TRelatedEntity},{TEntity}}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TRelatedEntity, TEntity>>",
+                    "name.vb": "Expression(Of Func(Of TRelatedEntity, TEntity))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TRelatedEntity, TEntity>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TRelatedEntity, TEntity))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TRelatedEntity, TEntity&gt;&gt;",
+                    "id": "Expression_Func_TRelatedEntity__TEntity__",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the reference navigation property on the other end of this\nrelationship (<c>blog =&gt; blog.BlogInfo</c>). If no property is specified, the relationship will be\nconfigured without a navigation property on the other end of the relationship.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder{{TEntity},{TRelatedEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml",
+                  "name": "ReferenceReferenceBuilder<TEntity, TRelatedEntity>",
+                  "name.vb": "ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder<TEntity, TRelatedEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                      "name": "ReferenceReferenceBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                      "name": "ReferenceReferenceBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder\"/>&lt;TEntity, TRelatedEntity&gt;",
+                  "id": "ReferenceReferenceBuilder_TEntity__TRelatedEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object to further configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithOne(System.Linq.Expressions.Expression{System.Func{`1,`0}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;.WithOne(System.Linq.Expressions.Expression&lt;System.Func&lt;TRelatedEntity, TEntity&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L73"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithOne(System.String)",
+            "id": "WithOne_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+            "name": "WithOne(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithOne(System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity).WithOne(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+              "startLine": 94,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures this as a one-to-one relationship.</p>\n",
+            "syntax": {
+              "content": "public virtual ReferenceReferenceBuilder<TEntity, TRelatedEntity> WithOne(string reference = null)",
+              "content.vb": "Public Overridable Function WithOne(reference As String = Nothing) As ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+              "parameters": [
+                {
+                  "id": "reference",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the reference navigation property on the other end of this relationship.\nIf null, there is no navigation property on the other end of the relationship.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder{{TEntity},{TRelatedEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml",
+                  "name": "ReferenceReferenceBuilder<TEntity, TRelatedEntity>",
+                  "name.vb": "ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder<TEntity, TRelatedEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder(Of TEntity, TRelatedEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                      "name": "ReferenceReferenceBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2",
+                      "name": "ReferenceReferenceBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder\"/>&lt;TEntity, TRelatedEntity&gt;",
+                  "id": "ReferenceReferenceBuilder_TEntity__TRelatedEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object to further configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithOne(System.String)\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;.WithOne(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L95"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+    "name": "ReferenceNavigationBuilder<TEntity, TRelatedEntity>",
+    "name.vb": "ReferenceNavigationBuilder(Of TEntity, TRelatedEntity)",
+    "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>",
+    "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs",
+      "startLine": 23,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+    "summary": "<para>\nProvides a simple API for configuring a relationship where configuration began on an end of the\nrelationship with a reference that points to an instance of another entity type.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+    "syntax": {
+      "content": "public class ReferenceNavigationBuilder<TEntity, TRelatedEntity> : ReferenceNavigationBuilder, IInfrastructure<InternalRelationshipBuilder> where TEntity : class where TRelatedEntity : class",
+      "content.vb": "Public Class ReferenceNavigationBuilder(Of TEntity As Class, TRelatedEntity As Class) Inherits ReferenceNavigationBuilder Implements IInfrastructure(Of InternalRelationshipBuilder)",
+      "typeParameters": [
+        {
+          "id": "TEntity",
+          "description": "The entity type to be configured."
+        },
+        {
+          "id": "TRelatedEntity",
+          "description": "The entity type that this relationship targets."
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder",
+        "parent": "Microsoft.Data.Entity.Metadata.Builders",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.yml",
+        "name": "ReferenceNavigationBuilder",
+        "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder",
+        "type": "class",
+        "summary": "<para>\nProvides a simple API for configuring a relationship where configuration began on\nan end of the relationship with a reference that points to an instance of another entity type.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder\"/>",
+        "id": "ReferenceNavigationBuilder",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder}"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.ReferenceName",
+      "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.RelatedEntityType",
+      "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalRelationshipBuilder}#Instance",
+      "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.WithManyBuilder(System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.WithOneBuilder(System.String)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder&lt;TEntity, TRelatedEntity&gt;\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder`.cs/#L24"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

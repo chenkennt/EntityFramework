@@ -1,0 +1,211 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.MutableNavigationExtensions",
+    "id": "MutableNavigationExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.MutableNavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.IMutableNavigation)",
+            "id": "FindInverse_IMutableNavigation_",
+            "parent": "Microsoft.Data.Entity.MutableNavigationExtensions",
+            "href": "Microsoft.Data.Entity.MutableNavigationExtensions.yml",
+            "name": "FindInverse(IMutableNavigation)",
+            "fullName": "Microsoft.Data.Entity.MutableNavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.IMutableNavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the navigation property on the other end of the relationship. Returns null if\nthere is no navigation property defined on the other end of the relationship.</p>\n",
+            "syntax": {
+              "content": "public static IMutableNavigation FindInverse(IMutableNavigation navigation)",
+              "content.vb": "Public Shared Function FindInverse(navigation As IMutableNavigation) As IMutableNavigation",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                    "name": "IMutableNavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                    "id": "IMutableNavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to find the inverse of.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                  "name": "IMutableNavigation",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                  "id": "IMutableNavigation",
+                  "level": 0
+                },
+                "description": "<p>The inverse navigation, or null if none is defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableNavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.IMutableNavigation)\" name=\"Microsoft.Data.Entity.MutableNavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.IMutableNavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs/#L22"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutableNavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.IMutableNavigation)",
+            "id": "GetTargetType_IMutableNavigation_",
+            "parent": "Microsoft.Data.Entity.MutableNavigationExtensions",
+            "href": "Microsoft.Data.Entity.MutableNavigationExtensions.yml",
+            "name": "GetTargetType(IMutableNavigation)",
+            "fullName": "Microsoft.Data.Entity.MutableNavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.IMutableNavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the entity type that a given navigation property will hold an instance of\n(or hold instances of if it is a collection navigation).</p>\n",
+            "syntax": {
+              "content": "public static IMutableEntityType GetTargetType(IMutableNavigation navigation)",
+              "content.vb": "Public Shared Function GetTargetType(navigation As IMutableNavigation) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableNavigation.yml",
+                    "name": "IMutableNavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableNavigation",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a navigation property which can be used to navigate a relationship.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\" name=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"/>",
+                    "id": "IMutableNavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to find the target entity type of.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                },
+                "description": "<p>The target entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableNavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.IMutableNavigation)\" name=\"Microsoft.Data.Entity.MutableNavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.IMutableNavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs/#L31"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.MutableNavigationExtensions.yml",
+    "name": "MutableNavigationExtensions",
+    "fullName": "Microsoft.Data.Entity.MutableNavigationExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.IMutableNavigation\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class MutableNavigationExtensions",
+      "content.vb": "Public Class MutableNavigationExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.MutableNavigationExtensions\" name=\"Microsoft.Data.Entity.MutableNavigationExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableNavigationExtensions.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

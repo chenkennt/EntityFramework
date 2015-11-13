@@ -1,0 +1,267 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2",
+    "id": "PropertyEntry_TEntity__TProperty_",
+    "parent": "Microsoft.Data.Entity.ChangeTracking",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,System.String)",
+            "id": "PropertyEntry_InternalEntityEntry__String_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2",
+            "href": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.yml",
+            "name": "PropertyEntry(InternalEntityEntry, String)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry<TEntity, TProperty>.PropertyEntry(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry(Of TEntity, TProperty).PropertyEntry(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, System.String)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nInitializes a new instance of the <xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2\"></xref> class.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+            "syntax": {
+              "content": "public PropertyEntry(InternalEntityEntry internalEntry, string name)",
+              "content.vb": "Public Sub New(internalEntry As InternalEntityEntry, name As String)",
+              "parameters": [
+                {
+                  "id": "internalEntry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  },
+                  "description": "<p>The internal entry tracking information about the entity the property belongs to.</p>\n"
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the property.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,System.String)\" name=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry&lt;TEntity, TProperty&gt;.PropertyEntry(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs/#L34"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.CurrentValue",
+            "id": "CurrentValue",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2",
+            "href": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.yml",
+            "name": "CurrentValue",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry<TEntity, TProperty>.CurrentValue",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry(Of TEntity, TProperty).CurrentValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+              "startLine": 43,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets or sets the value currently assigned to this property. If the current value is set using this property,\nthe change tracker is aware of the change and <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> is not required\nfor the context to detect the change.</p>\n",
+            "syntax": {
+                "content": "public virtual TProperty CurrentValue { get; set; }",
+                "content.vb": "Public Overridable Property CurrentValue As TProperty",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "{TProperty}",
+                    "isExternal": false,
+                    "name": "TProperty",
+                    "fullName": "TProperty",
+                    "specName": "<xref href=\"{TProperty}\" name=\"TProperty\"/>",
+                    "id": "TProperty",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.CurrentValue\" name=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry&lt;TEntity, TProperty&gt;.CurrentValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs/#L44"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.OriginalValue",
+            "id": "OriginalValue",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2",
+            "href": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.yml",
+            "name": "OriginalValue",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry<TEntity, TProperty>.OriginalValue",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry(Of TEntity, TProperty).OriginalValue",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+              "startLine": 55,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets or sets the value that was assigned to this property when it was retrieved from the database.\nThis property is populated when an entity is retrieved from the database, but setting it may be\nuseful in disconnected scenarios where entities are retrieved with one context instance and\nsaved with a different context instance.</p>\n",
+            "syntax": {
+                "content": "public virtual TProperty OriginalValue { get; set; }",
+                "content.vb": "Public Overridable Property OriginalValue As TProperty",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "{TProperty}",
+                    "isExternal": false,
+                    "name": "TProperty",
+                    "fullName": "TProperty",
+                    "specName": "<xref href=\"{TProperty}\" name=\"TProperty\"/>",
+                    "id": "TProperty",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.OriginalValue\" name=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry&lt;TEntity, TProperty&gt;.OriginalValue\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs/#L56"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2.yml",
+    "name": "PropertyEntry<TEntity, TProperty>",
+    "name.vb": "PropertyEntry(Of TEntity, TProperty)",
+    "fullName": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry<TEntity, TProperty>",
+    "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry(Of TEntity, TProperty)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ChangeTracking",
+    "summary": "<para>\nProvides access to change tracking information and operations for a given property.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+    "syntax": {
+      "content": "public class PropertyEntry<TEntity, TProperty> : PropertyEntry where TEntity : class",
+      "content.vb": "Public Class PropertyEntry(Of TEntity As Class, TProperty) Inherits PropertyEntry",
+      "typeParameters": [
+        {
+          "id": "TEntity",
+          "description": "The type of the entity the property belongs to."
+        },
+        {
+          "id": "TProperty",
+          "description": "The type of the property."
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry",
+        "parent": "Microsoft.Data.Entity.ChangeTracking",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry.yml",
+        "name": "PropertyEntry",
+        "fullName": "Microsoft.Data.Entity.ChangeTracking.PropertyEntry",
+        "type": "class",
+        "summary": "<para>\nProvides access to change tracking information and operations for a given property.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+        "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry\"/>",
+        "id": "PropertyEntry",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.ChangeTracking.PropertyEntry.IsModified",
+      "Microsoft.Data.Entity.ChangeTracking.PropertyEntry.Metadata",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry`2\" name=\"Microsoft.Data.Entity.ChangeTracking.PropertyEntry&lt;TEntity, TProperty&gt;\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/PropertyEntry`.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

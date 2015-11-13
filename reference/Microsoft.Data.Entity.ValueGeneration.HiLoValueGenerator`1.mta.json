@@ -1,0 +1,313 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+    "id": "HiLoValueGenerator_TValue_",
+    "parent": "Microsoft.Data.Entity.ValueGeneration",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.#ctor(Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState)",
+            "id": "HiLoValueGenerator_HiLoValueGeneratorState_",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+            "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml",
+            "name": "HiLoValueGenerator(HiLoValueGeneratorState)",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator<TValue>.HiLoValueGenerator(Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState)",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator(Of TValue).HiLoValueGenerator(Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1\"></xref> class.</p>\n",
+            "syntax": {
+              "content": "protected HiLoValueGenerator(HiLoValueGeneratorState generatorState)",
+              "content.vb": "Protected Sub New(generatorState As HiLoValueGeneratorState)",
+              "parameters": [
+                {
+                  "id": "generatorState",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState.yml",
+                    "name": "HiLoValueGeneratorState",
+                    "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState",
+                    "type": "class",
+                    "summary": "<p>The thread safe state used by <xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1\"></xref>.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState\"/>",
+                    "id": "HiLoValueGeneratorState",
+                    "level": 0
+                  },
+                  "description": "<p>The state used to keep track of which value to return next.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.#ctor(Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState)\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator&lt;TValue&gt;.HiLoValueGenerator(Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs/#L30"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.GetNewLowValue",
+            "id": "GetNewLowValue__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+            "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml",
+            "name": "GetNewLowValue()",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator<TValue>.GetNewLowValue()",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator(Of TValue).GetNewLowValue()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets the low value for the next block of values to be used.</p>\n",
+            "syntax": {
+              "content": "protected abstract long GetNewLowValue()",
+              "content.vb": "Protected MustOverride Function GetNewLowValue As Long",
+              "return": {
+                "type": {
+                  "uid": "System.Int64",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int64",
+                  "fullName": "System.Int64",
+                  "specName": "<xref href=\"System.Int64\" name=\"System.Int64\"/>",
+                  "id": "Int64",
+                  "level": 0
+                },
+                "description": "<p>The low value for the next block of values to be used.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.GetNewLowValue\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator&lt;TValue&gt;.GetNewLowValue()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs/#L47"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.Next",
+            "id": "Next__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1",
+            "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml",
+            "name": "Next()",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator<TValue>.Next()",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator(Of TValue).Next()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+              "startLine": 40,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets a value to be assigned to a property.</p>\n",
+            "syntax": {
+              "content": "public override TValue Next()",
+              "content.vb": "Public Overrides Function Next As TValue",
+              "return": {
+                "type": {
+                  "uid": "{TValue}",
+                  "isExternal": false,
+                  "name": "TValue",
+                  "fullName": "TValue",
+                  "specName": "<xref href=\"{TValue}\" name=\"TValue\"/>",
+                  "id": "TValue",
+                  "level": 0
+                },
+                "description": "<p>The value to be assigned to a property.</p>\n"
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{{TValue}}.Next",
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.Next\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator&lt;TValue&gt;.Next()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs/#L41"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.yml",
+    "name": "HiLoValueGenerator<TValue>",
+    "name.vb": "HiLoValueGenerator(Of TValue)",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator<TValue>",
+    "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator(Of TValue)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs",
+      "startLine": 21,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ValueGeneration",
+    "summary": "<para>\nActs as a <xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"></xref>  by requesting a block of values from the\nunderlying database and returning them one by one. Will ask the underlying\ndatabase for another block when the current block is exhausted.\n</para>\n<para>\nA block is represented by a low value fetched from the database, and then a block size\nthat indicates how many sequential values can be used, starting from the low value, before\na new low value must be fetched from the database.\n</para>",
+    "syntax": {
+      "content": "public abstract class HiLoValueGenerator<TValue> : ValueGenerator<TValue>",
+      "content.vb": "Public MustInherit Class HiLoValueGenerator(Of TValue) Inherits ValueGenerator(Of TValue)",
+      "typeParameters": [
+        {
+          "id": "TValue",
+          "description": "The type of values that are generated."
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "parent": "Microsoft.Data.Entity.ValueGeneration",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+        "name": "ValueGenerator",
+        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+        "type": "class",
+        "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+        "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+        "id": "ValueGenerator",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{{TValue}}",
+        "parent": "Microsoft.Data.Entity.ValueGeneration",
+        "definition": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml",
+        "name": "ValueGenerator<TValue>",
+        "name.vb": "ValueGenerator(Of TValue)",
+        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator<TValue>",
+        "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator(Of TValue)",
+        "spec.csharp": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "name": "ValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+          },
+          {
+            "name": "<",
+            "fullName": "<",
+            "isExternal": false
+          },
+          {
+            "name": "TValue",
+            "fullName": "TValue",
+            "isExternal": false
+          },
+          {
+            "name": ">",
+            "fullName": ">",
+            "isExternal": false
+          }
+        ],
+        "spec.vb": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1",
+            "name": "ValueGenerator",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.yml"
+          },
+          {
+            "name": "(Of ",
+            "fullName": "(Of ",
+            "isExternal": false
+          },
+          {
+            "name": "TValue",
+            "fullName": "TValue",
+            "isExternal": false
+          },
+          {
+            "name": ")",
+            "fullName": ")",
+            "isExternal": false
+          }
+        ],
+        "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>&lt;TValue&gt;",
+        "id": "ValueGenerator_TValue_",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.ValueGeneration.ValueGenerator{{TValue}}.NextValue",
+      "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.GeneratesTemporaryValues",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1\" name=\"Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator&lt;TValue&gt;\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/HiLoValueGenerator.cs/#L22"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

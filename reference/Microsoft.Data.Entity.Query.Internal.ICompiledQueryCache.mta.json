@@ -1,0 +1,630 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache",
+    "id": "ICompiledQueryCache",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddAsyncQuery``1(System.Object,System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IAsyncEnumerable{``0}}})",
+            "id": "GetOrAddAsyncQuery_TResult__Object__Func_Func_QueryContext__IAsyncEnumerable_TResult____",
+            "parent": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache",
+            "href": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.yml",
+            "name": "GetOrAddAsyncQuery<TResult>(Object, Func<Func<QueryContext, IAsyncEnumerable<TResult>>>)",
+            "name.vb": "GetOrAddAsyncQuery(Of TResult)(Object, Func(Of Func(Of QueryContext, IAsyncEnumerable(Of TResult))))",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddAsyncQuery<TResult>(System.Object, System.Func<System.Func<Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable<TResult>>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddAsyncQuery(Of TResult)(System.Object, System.Func(Of System.Func(Of Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable(Of TResult))))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "Func<QueryContext, IAsyncEnumerable<TResult>> GetOrAddAsyncQuery<TResult>(object cacheKey, Func<Func<QueryContext, IAsyncEnumerable<TResult>>> compiler)",
+              "content.vb": "Function GetOrAddAsyncQuery(Of TResult)(cacheKey As Object, compiler As Func(Of Func(Of QueryContext, IAsyncEnumerable(Of TResult)))) As Func(Of QueryContext, IAsyncEnumerable(Of TResult))",
+              "parameters": [
+                {
+                  "id": "cacheKey",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "compiler",
+                  "type": {
+                    "uid": "System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IAsyncEnumerable{{TResult}}}}",
+                    "parent": "System",
+                    "definition": "System.Func`1",
+                    "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                    "name": "Func<Func<QueryContext, IAsyncEnumerable<TResult>>>",
+                    "name.vb": "Func(Of Func(Of QueryContext, IAsyncEnumerable(Of TResult)))",
+                    "fullName": "System.Func<System.Func<Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable<TResult>>>",
+                    "fullName.vb": "System.Func(Of System.Func(Of Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable(Of TResult)))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`1",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                        "name": "QueryContext",
+                        "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                        "name": "IAsyncEnumerable",
+                        "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`1",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                        "name": "QueryContext",
+                        "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                        "name": "IAsyncEnumerable",
+                        "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`1\" name=\"System.Func\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, <xref href=\"System.Collections.Generic.IAsyncEnumerable`1\" name=\"System.Collections.Generic.IAsyncEnumerable\"/>&lt;TResult&gt;&gt;&gt;",
+                    "id": "Func_Func_QueryContext__IAsyncEnumerable_TResult___",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IAsyncEnumerable{{TResult}}}",
+                  "parent": "System",
+                  "definition": "System.Func`2",
+                  "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                  "name": "Func<QueryContext, IAsyncEnumerable<TResult>>",
+                  "name.vb": "Func(Of QueryContext, IAsyncEnumerable(Of TResult))",
+                  "fullName": "System.Func<Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable<TResult>>",
+                  "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable(Of TResult))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, <xref href=\"System.Collections.Generic.IAsyncEnumerable`1\" name=\"System.Collections.Generic.IAsyncEnumerable\"/>&lt;TResult&gt;&gt;",
+                  "id": "Func_QueryContext__IAsyncEnumerable_TResult__",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddAsyncQuery``1(System.Object,System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IAsyncEnumerable{``0}}})\" name=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddAsyncQuery&lt;TResult&gt;(System.Object, System.Func&lt;System.Func&lt;Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable&lt;TResult&gt;&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs/#L16"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddQuery``1(System.Object,System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,``0}})",
+            "id": "GetOrAddQuery_TResult__Object__Func_Func_QueryContext__TResult___",
+            "parent": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache",
+            "href": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.yml",
+            "name": "GetOrAddQuery<TResult>(Object, Func<Func<QueryContext, TResult>>)",
+            "name.vb": "GetOrAddQuery(Of TResult)(Object, Func(Of Func(Of QueryContext, TResult)))",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddQuery<TResult>(System.Object, System.Func<System.Func<Microsoft.Data.Entity.Query.QueryContext, TResult>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddQuery(Of TResult)(System.Object, System.Func(Of System.Func(Of Microsoft.Data.Entity.Query.QueryContext, TResult)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+              "startLine": 11,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "Func<QueryContext, TResult> GetOrAddQuery<TResult>(object cacheKey, Func<Func<QueryContext, TResult>> compiler)",
+              "content.vb": "Function GetOrAddQuery(Of TResult)(cacheKey As Object, compiler As Func(Of Func(Of QueryContext, TResult))) As Func(Of QueryContext, TResult)",
+              "parameters": [
+                {
+                  "id": "cacheKey",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "compiler",
+                  "type": {
+                    "uid": "System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,{TResult}}}",
+                    "parent": "System",
+                    "definition": "System.Func`1",
+                    "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                    "name": "Func<Func<QueryContext, TResult>>",
+                    "name.vb": "Func(Of Func(Of QueryContext, TResult))",
+                    "fullName": "System.Func<System.Func<Microsoft.Data.Entity.Query.QueryContext, TResult>>",
+                    "fullName.vb": "System.Func(Of System.Func(Of Microsoft.Data.Entity.Query.QueryContext, TResult))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`1",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                        "name": "QueryContext",
+                        "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`1",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                        "name": "QueryContext",
+                        "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`1\" name=\"System.Func\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, TResult&gt;&gt;",
+                    "id": "Func_Func_QueryContext__TResult__",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Func{Microsoft.Data.Entity.Query.QueryContext,{TResult}}",
+                  "parent": "System",
+                  "definition": "System.Func`2",
+                  "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                  "name": "Func<QueryContext, TResult>",
+                  "name.vb": "Func(Of QueryContext, TResult)",
+                  "fullName": "System.Func<Microsoft.Data.Entity.Query.QueryContext, TResult>",
+                  "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Query.QueryContext, TResult)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, TResult&gt;",
+                  "id": "Func_QueryContext__TResult_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddQuery``1(System.Object,System.Func{System.Func{Microsoft.Data.Entity.Query.QueryContext,``0}})\" name=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.GetOrAddQuery&lt;TResult&gt;(System.Object, System.Func&lt;System.Func&lt;Microsoft.Data.Entity.Query.QueryContext, TResult&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs/#L12"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache.yml",
+    "name": "ICompiledQueryCache",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public interface ICompiledQueryCache",
+      "content.vb": "Public Interface ICompiledQueryCache"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache\" name=\"Microsoft.Data.Entity.Query.Internal.ICompiledQueryCache\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/ICompiledQueryCache.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

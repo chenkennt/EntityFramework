@@ -1,0 +1,497 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.MutablePropertyExtensions",
+    "id": "MutablePropertyExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "id": "FindContainingForeignKeys_IMutableProperty_",
+            "parent": "Microsoft.Data.Entity.MutablePropertyExtensions",
+            "href": "Microsoft.Data.Entity.MutablePropertyExtensions.yml",
+            "name": "FindContainingForeignKeys(IMutableProperty)",
+            "fullName": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all foreign keys that use this property (including composite foreign keys in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IMutableForeignKey> FindContainingForeignKeys(IMutableProperty property)",
+              "content.vb": "Public Shared Function FindContainingForeignKeys(property As IMutableProperty) As IEnumerable(Of IMutableForeignKey)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IMutableProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a scalar property of an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IProperty\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>",
+                    "id": "IMutableProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get foreign keys for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IMutableForeignKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml",
+                  "name": "IEnumerable<IMutableForeignKey>",
+                  "name.vb": "IEnumerable(Of IMutableForeignKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IMutableForeignKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IMutableForeignKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "name": "IMutableForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "name": "IMutableForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableForeignKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableForeignKey\"/>&gt;",
+                  "id": "IEnumerable_IMutableForeignKey_",
+                  "level": 0
+                },
+                "description": "<p>The foreign keys that use this property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)\" name=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingForeignKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "id": "FindContainingKeys_IMutableProperty_",
+            "parent": "Microsoft.Data.Entity.MutablePropertyExtensions",
+            "href": "Microsoft.Data.Entity.MutablePropertyExtensions.yml",
+            "name": "FindContainingKeys(IMutableProperty)",
+            "fullName": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+              "startLine": 67,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets all primary or alternate keys that use this property (including composite keys in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IEnumerable<IMutableKey> FindContainingKeys(IMutableProperty property)",
+              "content.vb": "Public Shared Function FindContainingKeys(property As IMutableProperty) As IEnumerable(Of IMutableKey)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IMutableProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a scalar property of an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IProperty\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>",
+                    "id": "IMutableProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get primary and alternate keys for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IMutableKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+                  "name": "IEnumerable<IMutableKey>",
+                  "name.vb": "IEnumerable(Of IMutableKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IMutableKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IMutableKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                      "name": "IMutableKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                      "name": "IMutableKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey\"/>&gt;",
+                  "id": "IEnumerable_IMutableKey_",
+                  "level": 0
+                },
+                "description": "<p>The primary and alternate keys that use this property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)\" name=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingKeys(Microsoft.Data.Entity.Metadata.IMutableProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs/#L68"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "id": "FindContainingPrimaryKey_IMutableProperty_",
+            "parent": "Microsoft.Data.Entity.MutablePropertyExtensions",
+            "href": "Microsoft.Data.Entity.MutablePropertyExtensions.yml",
+            "name": "FindContainingPrimaryKey(IMutableProperty)",
+            "fullName": "Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IMutableProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the primary key that uses this property (including a composite primary key in which this property\nis included).</p>\n",
+            "syntax": {
+              "content": "public static IMutableKey FindContainingPrimaryKey(IMutableProperty property)",
+              "content.vb": "Public Shared Function FindContainingPrimaryKey(property As IMutableProperty) As IMutableKey",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IMutableProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a scalar property of an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IProperty\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>",
+                    "id": "IMutableProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get primary key for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+                  "name": "IMutableKey",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents a primary or alternate key on an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IKey\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey\"/>",
+                  "id": "IMutableKey",
+                  "level": 0
+                },
+                "description": "<p>The primary that use this property, or null if it is not part of the primary key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IMutableProperty)\" name=\"Microsoft.Data.Entity.MutablePropertyExtensions.FindContainingPrimaryKey(Microsoft.Data.Entity.Metadata.IMutableProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs/#L57"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutablePropertyExtensions.SetMaxLength(Microsoft.Data.Entity.Metadata.IMutableProperty,System.Nullable{System.Int32})",
+            "id": "SetMaxLength_IMutableProperty__Nullable_Int32__",
+            "parent": "Microsoft.Data.Entity.MutablePropertyExtensions",
+            "href": "Microsoft.Data.Entity.MutablePropertyExtensions.yml",
+            "name": "SetMaxLength(IMutableProperty, Nullable<Int32>)",
+            "name.vb": "SetMaxLength(IMutableProperty, Nullable(Of Int32))",
+            "fullName": "Microsoft.Data.Entity.MutablePropertyExtensions.SetMaxLength(Microsoft.Data.Entity.Metadata.IMutableProperty, System.Nullable<System.Int32>)",
+            "fullName.vb": "Microsoft.Data.Entity.MutablePropertyExtensions.SetMaxLength(Microsoft.Data.Entity.Metadata.IMutableProperty, System.Nullable(Of System.Int32))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+              "startLine": 24,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Sets the maximum length of data that is allowed in this property. For example, if the property is a <xref href=\"System.String\"></xref> &#39;\nthen this is the maximum number of characters.</p>\n",
+            "syntax": {
+              "content": "public static void SetMaxLength(IMutableProperty property, int ? maxLength)",
+              "content.vb": "Public Shared Sub SetMaxLength(property As IMutableProperty, maxLength As Integer?)",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IMutableProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents a scalar property of an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IProperty\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>",
+                    "id": "IMutableProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to set the maximum length of.</p>\n"
+                },
+                {
+                  "id": "maxLength",
+                  "type": {
+                    "uid": "System.Nullable{System.Int32}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int32>",
+                    "name.vb": "Nullable(Of Int32)",
+                    "fullName": "System.Nullable<System.Int32>",
+                    "fullName.vb": "System.Nullable(Of System.Int32)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                    "id": "Nullable_Int32_",
+                    "level": 0
+                  },
+                  "description": "<p>The maximum length of data that is allowed in this property.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutablePropertyExtensions.SetMaxLength(Microsoft.Data.Entity.Metadata.IMutableProperty,System.Nullable{System.Int32})\" name=\"Microsoft.Data.Entity.MutablePropertyExtensions.SetMaxLength(Microsoft.Data.Entity.Metadata.IMutableProperty, System.Nullable&lt;System.Int32&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs/#L25"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.MutablePropertyExtensions.yml",
+    "name": "MutablePropertyExtensions",
+    "fullName": "Microsoft.Data.Entity.MutablePropertyExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs",
+      "startLine": 16,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class MutablePropertyExtensions",
+      "content.vb": "Public Class MutablePropertyExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.MutablePropertyExtensions\" name=\"Microsoft.Data.Entity.MutablePropertyExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutablePropertyExtensions.cs/#L17"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

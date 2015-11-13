@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CSharpSnapshotGenerator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CSharpSnapshotGenerator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L16" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator">Class CSharpSnapshotGenerator</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">CSharpSnapshotGenerator</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Migrations.Design</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Commands.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class CSharpSnapshotGenerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L20">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator__ctor_Microsoft_Data_Entity_Migrations_Design_CSharpHelper_">CSharpSnapshotGenerator(CSharpHelper)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CSharpSnapshotGenerator(CSharpHelper codeHelper)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Design.CSharpHelper.html#Microsoft_Data_Entity_Migrations_Design_CSharpHelper">CSharpHelper</a></td>
+                    <td><em>codeHelper</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L27">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_Generate_System_String_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(String, IModel, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Generate(string builderName, IModel model, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>builderName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L460">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateAnnotation_Microsoft_Data_Entity_Infrastructure_IAnnotation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateAnnotation(IAnnotation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateAnnotation(IAnnotation annotation, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotation.html#Microsoft_Data_Entity_Infrastructure_IAnnotation">IAnnotation</a></td>
+                    <td><em>annotation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L447">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateAnnotations_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Infrastructure_IAnnotation__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateAnnotations(IReadOnlyList&lt;IAnnotation&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateAnnotations(IReadOnlyList&lt;IAnnotation&gt; annotations, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotation.html#Microsoft_Data_Entity_Infrastructure_IAnnotation">IAnnotation</a>&gt;</td>
+                    <td><em>annotations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L156">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateBaseType_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateBaseType(IEntityType, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateBaseType(IEntityType baseType, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>baseType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L87">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateEntityType_System_String_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateEntityType(String, IEntityType, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateEntityType(string builderName, IEntityType entityType, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>builderName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L333">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateEntityTypeAnnotations_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateEntityTypeAnnotations(IEntityType, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateEntityTypeAnnotations(IEntityType entityType, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L63">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateEntityTypes_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_IEntityType__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateEntityTypes(String, IReadOnlyList&lt;IEntityType&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateEntityTypes(string builderName, IReadOnlyList&lt;IEntityType&gt; entityTypes, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>builderName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a>&gt;</td>
+                    <td><em>entityTypes</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L377">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateForeignKey_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateForeignKey(IForeignKey, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateForeignKey(IForeignKey foreignKey, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L439">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateForeignKeyAnnotations_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateForeignKeyAnnotations(IForeignKey, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateForeignKeyAnnotations(IForeignKey foreignKey, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L355">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateForeignKeys_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IForeignKey__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateForeignKeys(IEnumerable&lt;IForeignKey&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateForeignKeys(IEnumerable&lt;IForeignKey&gt; foreignKeys, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a>&gt;</td>
+                    <td><em>foreignKeys</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L306">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateIndex_Microsoft_Data_Entity_Metadata_IIndex_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateIndex(IIndex, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateIndex(IIndex index, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a></td>
+                    <td><em>index</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L293">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateIndexes_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IIndex__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateIndexes(IEnumerable&lt;IIndex&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateIndexes(IEnumerable&lt;IIndex&gt; indexes, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a>&gt;</td>
+                    <td><em>indexes</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L273">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateKey_Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Internal_IndentedStringBuilder_System_Boolean_">GenerateKey(IKey, IndentedStringBuilder, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateKey(IKey key, IndentedStringBuilder stringBuilder, bool primary = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>key</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>primary</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L246">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateKeys_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IKey__Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateKeys(IEnumerable&lt;IKey&gt;, IKey, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateKeys(IEnumerable&lt;IKey&gt; keys, IKey primaryKey, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a>&gt;</td>
+                    <td><em>keys</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>primaryKey</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L170">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateProperties_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Metadata_IProperty__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateProperties(IEnumerable&lt;IProperty&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateProperties(IEnumerable&lt;IProperty&gt; properties, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L192">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateProperty_Microsoft_Data_Entity_Metadata_IProperty_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateProperty(IProperty, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateProperty(IProperty property, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L238">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GeneratePropertyAnnotations_Microsoft_Data_Entity_Metadata_IProperty_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GeneratePropertyAnnotations(IProperty, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GeneratePropertyAnnotations(IProperty property, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpSnapshotGenerator.cs/#L126">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpSnapshotGenerator_GenerateRelationships_System_String_Microsoft_Data_Entity_Metadata_IEntityType_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">GenerateRelationships(String, IEntityType, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateRelationships(string builderName, IEntityType entityType, IndentedStringBuilder stringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>builderName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td><em>entityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>stringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

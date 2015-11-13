@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Microsoft.Data.Entity.Metadata | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Microsoft.Data.Entity.Metadata | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/Metadata/ScaffoldingMetadataExtensions.cs/#L10" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata">Namespace Microsoft.Data.Entity.Metadata
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalAnnotations.html#Microsoft_Data_Entity_Metadata_RelationalAnnotations">RelationalAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalEntityTypeAnnotations.html#Microsoft_Data_Entity_Metadata_RelationalEntityTypeAnnotations">RelationalEntityTypeAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalEntityTypeExtensions.html#Microsoft_Data_Entity_Metadata_RelationalEntityTypeExtensions">RelationalEntityTypeExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalIndexAnnotations.html#Microsoft_Data_Entity_Metadata_RelationalIndexAnnotations">RelationalIndexAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalKeyAnnotations.html#Microsoft_Data_Entity_Metadata_RelationalKeyAnnotations">RelationalKeyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalModelExtensions.html#Microsoft_Data_Entity_Metadata_RelationalModelExtensions">RelationalModelExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalPropertyAnnotations.html#Microsoft_Data_Entity_Metadata_RelationalPropertyAnnotations">RelationalPropertyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalPropertyExtensions.html#Microsoft_Data_Entity_Metadata_RelationalPropertyExtensions">RelationalPropertyExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.RelationalSequenceBuilder.html#Microsoft_Data_Entity_Metadata_RelationalSequenceBuilder">RelationalSequenceBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ScaffoldingMetadataExtensions.html#Microsoft_Data_Entity_Metadata_ScaffoldingMetadataExtensions">ScaffoldingMetadataExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.Sequence.html#Microsoft_Data_Entity_Metadata_Sequence">Sequence</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SimpleModelFactory.html#Microsoft_Data_Entity_Metadata_SimpleModelFactory">SimpleModelFactory</a></h4>
+                  <section><para>
+Creates instances of <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableModel.html#Microsoft_Data_Entity_Metadata_IMutableModel">IMutableModel</a> that have no conventions. This is useful when
+Exhaustively configuring a model based on some existing metadata.
+</para>
+<para>
+This is typically not used in application code since building a model by overriding
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnModelCreating_Microsoft_Data_Entity_ModelBuilder_">OnModelCreating(ModelBuilder)</a> or using <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a>
+directly is much easier.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerAnnotationProvider.html#Microsoft_Data_Entity_Metadata_SqlServerAnnotationProvider">SqlServerAnnotationProvider</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerIndexAnnotations.html#Microsoft_Data_Entity_Metadata_SqlServerIndexAnnotations">SqlServerIndexAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerKeyAnnotations.html#Microsoft_Data_Entity_Metadata_SqlServerKeyAnnotations">SqlServerKeyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerModelAnnotations.html#Microsoft_Data_Entity_Metadata_SqlServerModelAnnotations">SqlServerModelAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerPropertyAnnotations.html#Microsoft_Data_Entity_Metadata_SqlServerPropertyAnnotations">SqlServerPropertyAnnotations</a></h4>
+                  <section></section>
+                <h3 id="interfaces">Interfaces</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableAnnotatable.html#Microsoft_Data_Entity_Metadata_IMutableAnnotatable">IMutableAnnotatable</a></h4>
+                  <section><para>
+A class that exposes annotations that can be modified. Annotations allow for arbitrary metadata to be
+stored on an object.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></h4>
+                  <section><para>
+Represents an entity in an <a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableModel.html#Microsoft_Data_Entity_Metadata_IMutableModel">IMutableModel</a>.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableIndex.html#Microsoft_Data_Entity_Metadata_IMutableIndex">IMutableIndex</a></h4>
+                  <section><para>
+Represents an index on a set of properties.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.IIndex.html#Microsoft_Data_Entity_Metadata_IIndex">IIndex</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableKey.html#Microsoft_Data_Entity_Metadata_IMutableKey">IMutableKey</a></h4>
+                  <section><para>
+Represents a primary or alternate key on an entity.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableModel.html#Microsoft_Data_Entity_Metadata_IMutableModel">IMutableModel</a></h4>
+                  <section><para>
+Metadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically
+created by overriding the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> method on a derived context, or
+using <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a>.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableNavigation.html#Microsoft_Data_Entity_Metadata_IMutableNavigation">IMutableNavigation</a></h4>
+                  <section><para>
+Represents a navigation property which can be used to navigate a relationship.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.INavigation.html#Microsoft_Data_Entity_Metadata_INavigation">INavigation</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableProperty.html#Microsoft_Data_Entity_Metadata_IMutableProperty">IMutableProperty</a></h4>
+                  <section><para>
+Represents a scalar property of an entity.
+</para>
+<para>
+This interface is used during model creation and allows the metadata to be modified.
+Once the model is built, <a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a> represents a ready-only view of the same metadata.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.INavigation.html#Microsoft_Data_Entity_Metadata_INavigation">INavigation</a></h4>
+                  <section><p>Represents a navigation property which can be used to navigate a relationship.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IPropertyBase.html#Microsoft_Data_Entity_Metadata_IPropertyBase">IPropertyBase</a></h4>
+                  <section><p>Base type for navigation and scalar properties.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalEntityTypeAnnotations.html#Microsoft_Data_Entity_Metadata_IRelationalEntityTypeAnnotations">IRelationalEntityTypeAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalIndexAnnotations.html#Microsoft_Data_Entity_Metadata_IRelationalIndexAnnotations">IRelationalIndexAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalKeyAnnotations.html#Microsoft_Data_Entity_Metadata_IRelationalKeyAnnotations">IRelationalKeyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalPropertyAnnotations.html#Microsoft_Data_Entity_Metadata_IRelationalPropertyAnnotations">IRelationalPropertyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ISequence.html#Microsoft_Data_Entity_Metadata_ISequence">ISequence</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ISqlServerIndexAnnotations.html#Microsoft_Data_Entity_Metadata_ISqlServerIndexAnnotations">ISqlServerIndexAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ISqlServerKeyAnnotations.html#Microsoft_Data_Entity_Metadata_ISqlServerKeyAnnotations">ISqlServerKeyAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ISqlServerModelAnnotations.html#Microsoft_Data_Entity_Metadata_ISqlServerModelAnnotations">ISqlServerModelAnnotations</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ISqlServerPropertyAnnotations.html#Microsoft_Data_Entity_Metadata_ISqlServerPropertyAnnotations">ISqlServerPropertyAnnotations</a></h4>
+                  <section></section>
+                <h3 id="enums">Enums</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.SqlServerValueGenerationStrategy.html#Microsoft_Data_Entity_Metadata_SqlServerValueGenerationStrategy">SqlServerValueGenerationStrategy</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Metadata.ValueGenerated.html#Microsoft_Data_Entity_Metadata_ValueGenerated">ValueGenerated</a></h4>
+                  <section><p>Indicates when a value for a property will be generated by the database. Even when a
+property is set to be generated by the database, EF may still attempt to save a specific value (rather than
+having one generated by the database) when an entity is added and a value is assigned, or the property is
+marked as modified for an existing entity.</p>
+</section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

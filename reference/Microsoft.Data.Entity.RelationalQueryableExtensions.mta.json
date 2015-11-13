@@ -1,0 +1,289 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.RelationalQueryableExtensions",
+    "id": "RelationalQueryableExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.RelationalQueryableExtensions.FromSql``1(System.Linq.IQueryable{``0},System.String,System.Object[])",
+            "id": "FromSql_TEntity__IQueryable_TEntity___String__Object___",
+            "parent": "Microsoft.Data.Entity.RelationalQueryableExtensions",
+            "href": "Microsoft.Data.Entity.RelationalQueryableExtensions.yml",
+            "name": "FromSql<TEntity>(IQueryable<TEntity>, String, Object[])",
+            "name.vb": "FromSql(Of TEntity)(IQueryable(Of TEntity), String, Object())",
+            "fullName": "Microsoft.Data.Entity.RelationalQueryableExtensions.FromSql<TEntity>(System.Linq.IQueryable<TEntity>, System.String, System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.RelationalQueryableExtensions.FromSql(Of TEntity)(System.Linq.IQueryable(Of TEntity), System.String, System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalQueryableExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalQueryableExtensions.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IQueryable<TEntity> FromSql<TEntity>(IQueryable<TEntity> source, string sql, params object[] parameters)where TEntity : class",
+              "content.vb": "Public Shared Function FromSql(Of TEntity As Class)(source As IQueryable(Of TEntity), sql As String, ParamArray parameters As Object()) As IQueryable(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "source",
+                  "type": {
+                    "uid": "System.Linq.IQueryable{{TEntity}}",
+                    "parent": "System.Linq",
+                    "definition": "System.Linq.IQueryable`1",
+                    "name": "IQueryable<TEntity>",
+                    "name.vb": "IQueryable(Of TEntity)",
+                    "fullName": "System.Linq.IQueryable<TEntity>",
+                    "fullName.vb": "System.Linq.IQueryable(Of TEntity)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.IQueryable`1",
+                        "name": "IQueryable",
+                        "fullName": "System.Linq.IQueryable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.IQueryable`1",
+                        "name": "IQueryable",
+                        "fullName": "System.Linq.IQueryable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.IQueryable`1\" name=\"System.Linq.IQueryable\"/>&lt;TEntity&gt;",
+                    "id": "IQueryable_TEntity_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sql",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameters",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.IQueryable{{TEntity}}",
+                  "parent": "System.Linq",
+                  "definition": "System.Linq.IQueryable`1",
+                  "name": "IQueryable<TEntity>",
+                  "name.vb": "IQueryable(Of TEntity)",
+                  "fullName": "System.Linq.IQueryable<TEntity>",
+                  "fullName.vb": "System.Linq.IQueryable(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Linq.IQueryable`1",
+                      "name": "IQueryable",
+                      "fullName": "System.Linq.IQueryable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Linq.IQueryable`1",
+                      "name": "IQueryable",
+                      "fullName": "System.Linq.IQueryable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Linq.IQueryable`1\" name=\"System.Linq.IQueryable\"/>&lt;TEntity&gt;",
+                  "id": "IQueryable_TEntity_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalQueryableExtensions.FromSql``1(System.Linq.IQueryable{``0},System.String,System.Object[])\" name=\"Microsoft.Data.Entity.RelationalQueryableExtensions.FromSql&lt;TEntity&gt;(System.Linq.IQueryable&lt;TEntity&gt;, System.String, System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalQueryableExtensions.cs/#L21"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.RelationalQueryableExtensions.yml",
+    "name": "RelationalQueryableExtensions",
+    "fullName": "Microsoft.Data.Entity.RelationalQueryableExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/RelationalQueryableExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/RelationalQueryableExtensions.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "syntax": {
+      "content": "public class RelationalQueryableExtensions",
+      "content.vb": "Public Class RelationalQueryableExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.RelationalQueryableExtensions\" name=\"Microsoft.Data.Entity.RelationalQueryableExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalQueryableExtensions.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

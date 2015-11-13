@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntityTypeBuilder | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntityTypeBuilder | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L23" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">Class EntityTypeBuilder</h1>
+              <div class="markdown level0 summary"><para>
+Provides a simple API for configuring an <a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a>.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">EntityTypeBuilder</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata.Builders</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class EntityTypeBuilder : IInfrastructure&lt;IMutableModel&gt;, IInfrastructure&lt;InternalEntityTypeBuilder&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L36">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder__ctor_Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder_">EntityTypeBuilder(InternalEntityTypeBuilder)</h4>
+              <div class="markdown level1 summary"><para>
+Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a> class to configure a given
+entity type.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public EntityTypeBuilder(InternalEntityTypeBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder">InternalEntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td><p>Internal builder for the entity type being configured.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L62">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Metadata">Metadata</h4>
+              <div class="markdown level1 summary"><p>The entity type being configured.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IMutableEntityType Metadata { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableEntityType.html#Microsoft_Data_Entity_Metadata_IMutableEntityType">IMutableEntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L67">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Microsoft_Data_Entity_Infrastructure_IInfrastructure_Microsoft_Data_Entity_Metadata_IMutableModel__Instance">IInfrastructure&lt;IMutableModel&gt;.Instance</h4>
+              <div class="markdown level1 summary"><p>The model that the entity type belongs to.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IMutableModel IInfrastructure&lt;IMutableModel&gt;.Instance { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableModel.html#Microsoft_Data_Entity_Metadata_IMutableModel">IMutableModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L57">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Microsoft_Data_Entity_Infrastructure_IInfrastructure_Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder__Instance">IInfrastructure&lt;InternalEntityTypeBuilder&gt;.Instance</h4>
+              <div class="markdown level1 summary"><p>Gets the internal builder being used to configure the entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">InternalEntityTypeBuilder IInfrastructure&lt;InternalEntityTypeBuilder&gt;.Instance { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder">InternalEntityTypeBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L352">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_CollectionBuilder_Microsoft_Data_Entity_Metadata_Internal_EntityType_System_String_">CollectionBuilder(EntityType, String)</h4>
+              <div class="markdown level1 summary"><p>Creates a relationship builder for a relationship that has a collection navigation property on this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual InternalRelationshipBuilder CollectionBuilder(EntityType relatedEntityType, string navigationName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>relatedEntityType</em></td>
+                    <td><p>The entity type that the relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the navigation property on this entity. If null is passed, then a relationship with no navigation
+property is created.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td><p>The newly created builder.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L120">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasAlternateKey_System_String___">HasAlternateKey(String[])</h4>
+              <div class="markdown level1 summary"><p>Creates a new unique constraint for this entity type if one does not already exist over the specified
+properties.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual KeyBuilder HasAlternateKey(params string[] propertyNames)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>propertyNames</em></td>
+                    <td><p>The names of the properties that make up the unique constraint.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.KeyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_KeyBuilder">KeyBuilder</a></td>
+                    <td><p>An object that can be used to configure the unique constraint.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L76">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasAnnotation_System_String_System_Object_">HasAnnotation(String, Object)</h4>
+              <div class="markdown level1 summary"><p>Adds or updates an annotation on the entity type. If an annotation with the key specified in</p>
+<p><paramref name="annotation"></paramref> already exists it&#39;s value will be updated.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityTypeBuilder HasAnnotation(string annotation, object value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>annotation</em></td>
+                    <td><p>The key of the annotation to be added or updated.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The value to be stored in the annotation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L91">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasBaseType_System_String_">HasBaseType(String)</h4>
+              <div class="markdown level1 summary"><p>Sets the base type of this entity in an inheritance hierarchy.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityTypeBuilder HasBaseType(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td><p>The name of the base type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L99">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasBaseType_System_Type_">HasBaseType(Type)</h4>
+              <div class="markdown level1 summary"><p>Sets the base type of this entity in an inheritance hierarchy.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityTypeBuilder HasBaseType(Type entityType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>entityType</em></td>
+                    <td><p>The base type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L185">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasIndex_System_String___">HasIndex(String[])</h4>
+              <div class="markdown level1 summary"><p>Configures an index on the specified properties. If there is an existing index on the given
+set of properties, then the existing index will be returned for configuration.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IndexBuilder HasIndex(params string[] propertyNames)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>propertyNames</em></td>
+                    <td><p>The names of the properties that make up the index.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.html#Microsoft_Data_Entity_Metadata_Builders_IndexBuilder">IndexBuilder</a></td>
+                    <td><p>An object that can be used to configure the index.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L107">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasKey_System_String___">HasKey(String[])</h4>
+              <div class="markdown level1 summary"><p>Sets the properties that make up the primary key for this entity type.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual KeyBuilder HasKey(params string[] propertyNames)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>propertyNames</em></td>
+                    <td><p>The names of the properties that make up the primary key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.KeyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_KeyBuilder">KeyBuilder</a></td>
+                    <td><p>An object that can be used to configure the primary key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L309">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasMany_System_String_System_String_">HasMany(String, String)</h4>
+              <div class="markdown level1 summary"><para>
+Configures a relationship where this entity type has a collection that contains
+instances of the other type in the relationship.
+</para>
+<para>
+After calling this method, you should chain a call to
+<a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_CollectionNavigationBuilder_WithOne_System_String_">WithOne(String)</a>
+to fully configure the relationship. Calling just this method without the chained call will not
+produce a valid relationship.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual CollectionNavigationBuilder HasMany(string relatedTypeName, string navigationName = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relatedTypeName</em></td>
+                    <td><p>The name of the entity type that this relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the collection navigation property on this entity type that represents the relationship. If
+no property is specified, the relationship will be configured without a navigation property on this
+end.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_CollectionNavigationBuilder">CollectionNavigationBuilder</a></td>
+                    <td><p>An object that can be used to configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L279">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasMany_System_Type_System_String_">HasMany(Type, String)</h4>
+              <div class="markdown level1 summary"><para>
+Configures a relationship where this entity type has a collection that contains
+instances of the other type in the relationship.
+</para>
+<para>
+After calling this method, you should chain a call to
+<a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_CollectionNavigationBuilder_WithOne_System_String_">WithOne(String)</a>
+to fully configure the relationship. Calling just this method without the chained call will not
+produce a valid relationship.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual CollectionNavigationBuilder HasMany(Type relatedType, string navigationName = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>relatedType</em></td>
+                    <td><p>The entity type that this relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the collection navigation property on this entity type that represents the relationship. If
+no property is specified, the relationship will be configured without a navigation property on this
+end.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_CollectionNavigationBuilder">CollectionNavigationBuilder</a></td>
+                    <td><p>An object that can be used to configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L246">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasOne_System_String_System_String_">HasOne(String, String)</h4>
+              <div class="markdown level1 summary"><para>
+Configures a relationship where this entity type has a reference that points
+to a single instance of the other type in the relationship.
+</para>
+<para>
+After calling this method, you should chain a call to
+<a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithMany_System_String_">WithMany(String)</a>
+or <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithOne_System_String_">WithOne(String)</a> to fully configure
+the relationship. Calling just this method without the chained call will not
+produce a valid relationship.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ReferenceNavigationBuilder HasOne(string relatedTypeName, string navigationName = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>relatedTypeName</em></td>
+                    <td><p>The name of the entity type that this relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the reference navigation property on this entity type that represents the relationship. If
+no property is specified, the relationship will be configured without a navigation property on this
+end.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder">ReferenceNavigationBuilder</a></td>
+                    <td><p>An object that can be used to configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L212">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_HasOne_System_Type_System_String_">HasOne(Type, String)</h4>
+              <div class="markdown level1 summary"><para>
+Configures a relationship where this entity type has a reference that points
+to a single instance of the other type in the relationship.
+</para>
+<para>
+After calling this method, you should chain a call to
+<a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithMany_System_String_">WithMany(String)</a>
+or <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithOne_System_String_">WithOne(String)</a> to fully configure
+the relationship. Calling just this method without the chained call will not
+produce a valid relationship.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ReferenceNavigationBuilder HasOne(Type relatedType, string navigationName = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>relatedType</em></td>
+                    <td><p>The entity type that this relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the reference navigation property on this entity type that represents the relationship. If
+no property is specified, the relationship will be configured without a navigation property on this
+end.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder">ReferenceNavigationBuilder</a></td>
+                    <td><p>An object that can be used to configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L170">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Ignore_System_String_">Ignore(String)</h4>
+              <div class="markdown level1 summary"><p>Excludes the given property from the entity type. This method is typically used to remove properties
+from the entity type that were added by convention.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityTypeBuilder Ignore(string propertyName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>propertyName</em></td>
+                    <td><p>The name of then property to be removed from the entity type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L49">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_New_Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder_">New(InternalEntityTypeBuilder)</h4>
+              <div class="markdown level1 summary"><p>Creates a new builder based on the provided internal builder. This can be overridden by derived builders
+so that logic inherited from this base class will create instances of the derived builder.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual EntityTypeBuilder New(InternalEntityTypeBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder">InternalEntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td><p>The internal builder to create the new builder from.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><p>The newly created builder.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L162">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Property_System_Type_System_String_">Property(Type, String)</h4>
+              <div class="markdown level1 summary"><para>
+Returns an object that can be used to configure a property of the entity type.
+If no property with the given name exists, then a new property will be added.
+</para>
+<para>
+When adding a new property, if a property with the same name exists in the entity class
+then it will be added to the model. If no property exists in the entity class, then
+a new shadow state property will be added. A shadow state property is one that does not have a
+corresponding property in the entity class. The current value for the property is stored in
+the <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker">ChangeTracker</a> rather than being stored in instances of the entity class.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder Property(Type propertyType, string propertyName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>propertyType</em></td>
+                    <td><p>The type of the property to be configured.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>propertyName</em></td>
+                    <td><p>The name of the property to be configured.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder">PropertyBuilder</a></td>
+                    <td><p>An object that can be used to configure the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L143">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Property__1_System_String_">Property&lt;TProperty&gt;(String)</h4>
+              <div class="markdown level1 summary"><para>
+Returns an object that can be used to configure a property of the entity type.
+If no property with the given name exists, then a new property will be added.
+</para>
+<para>
+When adding a new property, if a property with the same name exists in the entity class
+then it will be added to the model. If no property exists in the entity class, then
+a new shadow state property will be added. A shadow state property is one that does not have a
+corresponding property in the entity class. The current value for the property is stored in
+the <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker">ChangeTracker</a> rather than being stored in instances of the entity class.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; Property&lt;TProperty&gt;(string propertyName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>propertyName</em></td>
+                    <td><p>The name of the property to be configured.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder</a>&lt;TProperty&gt;</td>
+                    <td><p>An object that can be used to configure the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L366">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_PropertyBuilder_System_Type_System_String_">PropertyBuilder(Type, String)</h4>
+              <div class="markdown level1 summary"><p>Creates a builder for a property on this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual InternalPropertyBuilder PropertyBuilder(Type propertyType, string propertyName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>propertyType</em></td>
+                    <td><p>The type of values stored in the property.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>propertyName</em></td>
+                    <td><p>The name of the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalPropertyBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalPropertyBuilder">InternalPropertyBuilder</a></td>
+                    <td><p>The newly created builder.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder.cs/#L329">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_ReferenceBuilder_Microsoft_Data_Entity_Metadata_Internal_EntityType_System_String_">ReferenceBuilder(EntityType, String)</h4>
+              <div class="markdown level1 summary"><p>Creates a relationship builder for a relationship that has a reference navigation property on this entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual InternalRelationshipBuilder ReferenceBuilder(EntityType relatedEntityType, string navigationName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>relatedEntityType</em></td>
+                    <td><p>The entity type that the relationship targets.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the navigation property on this entity. If null is passed, then a relationship with no navigation
+property is created.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td><p>The newly created builder.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

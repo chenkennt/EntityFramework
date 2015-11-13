@@ -1,0 +1,780 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+    "id": "RelationalDbContextOptionsBuilder_TBuilder__TExtension_",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.#ctor(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "id": "RelationalDbContextOptionsBuilder_DbContextOptionsBuilder_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "RelationalDbContextOptionsBuilder(DbContextOptionsBuilder)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.RelationalDbContextOptionsBuilder(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).RelationalDbContextOptionsBuilder(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "protected RelationalDbContextOptionsBuilder(DbContextOptionsBuilder optionsBuilder)",
+              "content.vb": "Protected Sub New(optionsBuilder As DbContextOptionsBuilder)",
+              "parameters": [
+                {
+                  "id": "optionsBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.#ctor(Microsoft.Data.Entity.DbContextOptionsBuilder)\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.RelationalDbContextOptionsBuilder(Microsoft.Data.Entity.DbContextOptionsBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L14"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.OptionsBuilder",
+            "id": "OptionsBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "OptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.OptionsBuilder",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).OptionsBuilder",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+                "content": "protected virtual DbContextOptionsBuilder OptionsBuilder { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property OptionsBuilder As DbContextOptionsBuilder",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.OptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.OptionsBuilder\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L21"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.CloneExtension",
+            "id": "CloneExtension__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "CloneExtension()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.CloneExtension()",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).CloneExtension()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "protected abstract TExtension CloneExtension()",
+              "content.vb": "Protected MustOverride Function CloneExtension As TExtension",
+              "return": {
+                "type": {
+                  "uid": "{TExtension}",
+                  "isExternal": false,
+                  "name": "TExtension",
+                  "fullName": "TExtension",
+                  "specName": "<xref href=\"{TExtension}\" name=\"TExtension\"/>",
+                  "id": "TExtension",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.CloneExtension\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.CloneExtension()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L23"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.CommandTimeout(System.Nullable{System.Int32})",
+            "id": "CommandTimeout_Nullable_Int32__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "CommandTimeout(Nullable<Int32>)",
+            "name.vb": "CommandTimeout(Nullable(Of Int32))",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.CommandTimeout(System.Nullable<System.Int32>)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).CommandTimeout(System.Nullable(Of System.Int32))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder CommandTimeout(int ? commandTimeout)",
+              "content.vb": "Public Overridable Function CommandTimeout(commandTimeout As Integer?) As TBuilder",
+              "parameters": [
+                {
+                  "id": "commandTimeout",
+                  "type": {
+                    "uid": "System.Nullable{System.Int32}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int32>",
+                    "name.vb": "Nullable(Of Int32)",
+                    "fullName": "System.Nullable<System.Int32>",
+                    "fullName.vb": "System.Nullable(Of System.Int32)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                    "id": "Nullable_Int32_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.CommandTimeout(System.Nullable{System.Int32})\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.CommandTimeout(System.Nullable&lt;System.Int32&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L28"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.DisableQueryClientEvaluation",
+            "id": "DisableQueryClientEvaluation__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "DisableQueryClientEvaluation()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.DisableQueryClientEvaluation()",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).DisableQueryClientEvaluation()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 52,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder DisableQueryClientEvaluation()",
+              "content.vb": "Public Overridable Function DisableQueryClientEvaluation As TBuilder",
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.DisableQueryClientEvaluation\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.DisableQueryClientEvaluation()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L53"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MaxBatchSize(System.Int32)",
+            "id": "MaxBatchSize_Int32_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "MaxBatchSize(Int32)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.MaxBatchSize(System.Int32)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).MaxBatchSize(System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 24,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder MaxBatchSize(int maxBatchSize)",
+              "content.vb": "Public Overridable Function MaxBatchSize(maxBatchSize As Integer) As TBuilder",
+              "parameters": [
+                {
+                  "id": "maxBatchSize",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MaxBatchSize(System.Int32)\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.MaxBatchSize(System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L25"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MigrationsAssembly(System.String)",
+            "id": "MigrationsAssembly_String_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "MigrationsAssembly(String)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.MigrationsAssembly(System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).MigrationsAssembly(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder MigrationsAssembly(string assemblyName)",
+              "content.vb": "Public Overridable Function MigrationsAssembly(assemblyName As String) As TBuilder",
+              "parameters": [
+                {
+                  "id": "assemblyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MigrationsAssembly(System.String)\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.MigrationsAssembly(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L31"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MigrationsHistoryTable(System.String,System.String)",
+            "id": "MigrationsHistoryTable_String__String_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "MigrationsHistoryTable(String, String)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.MigrationsHistoryTable(System.String, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).MigrationsHistoryTable(System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder MigrationsHistoryTable(string tableName, string schema = null)",
+              "content.vb": "Public Overridable Function MigrationsHistoryTable(tableName As String, schema As String = Nothing) As TBuilder",
+              "parameters": [
+                {
+                  "id": "tableName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.MigrationsHistoryTable(System.String,System.String)\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.MigrationsHistoryTable(System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L34"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.SetOption(System.Action{`1})",
+            "id": "SetOption_Action_TExtension__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "SetOption(Action<TExtension>)",
+            "name.vb": "SetOption(Action(Of TExtension))",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.SetOption(System.Action<TExtension>)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).SetOption(System.Action(Of TExtension))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 55,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "protected virtual TBuilder SetOption(Action<TExtension> setAction)",
+              "content.vb": "Protected Overridable Function SetOption(setAction As Action(Of TExtension)) As TBuilder",
+              "parameters": [
+                {
+                  "id": "setAction",
+                  "type": {
+                    "uid": "System.Action{{TExtension}}",
+                    "parent": "System",
+                    "definition": "System.Action`1",
+                    "name": "Action<TExtension>",
+                    "name.vb": "Action(Of TExtension)",
+                    "fullName": "System.Action<TExtension>",
+                    "fullName.vb": "System.Action(Of TExtension)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TExtension",
+                        "fullName": "TExtension",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`1",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TExtension",
+                        "fullName": "TExtension",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`1\" name=\"System.Action\"/>&lt;TExtension&gt;",
+                    "id": "Action_TExtension_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.SetOption(System.Action{`1})\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.SetOption(System.Action&lt;TExtension&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L56"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.SuppressAmbientTransactionWarning",
+            "id": "SuppressAmbientTransactionWarning__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "SuppressAmbientTransactionWarning()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.SuppressAmbientTransactionWarning()",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).SuppressAmbientTransactionWarning()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder SuppressAmbientTransactionWarning()",
+              "content.vb": "Public Overridable Function SuppressAmbientTransactionWarning As TBuilder",
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.SuppressAmbientTransactionWarning\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.SuppressAmbientTransactionWarning()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L47"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.UseRelationalNulls",
+            "id": "UseRelationalNulls__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "UseRelationalNulls()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>.UseRelationalNulls()",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension).UseRelationalNulls()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual TBuilder UseRelationalNulls()",
+              "content.vb": "Public Overridable Function UseRelationalNulls As TBuilder",
+              "return": {
+                "type": {
+                  "uid": "{TBuilder}",
+                  "isExternal": false,
+                  "name": "TBuilder",
+                  "fullName": "TBuilder",
+                  "specName": "<xref href=\"{TBuilder}\" name=\"TBuilder\"/>",
+                  "id": "TBuilder",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.UseRelationalNulls\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;.UseRelationalNulls()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L50"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+    "name": "RelationalDbContextOptionsBuilder<TBuilder, TExtension>",
+    "name.vb": "RelationalDbContextOptionsBuilder(Of TBuilder, TExtension)",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>",
+    "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "syntax": {
+      "content": "public abstract class RelationalDbContextOptionsBuilder<TBuilder, TExtension> where TBuilder : RelationalDbContextOptionsBuilder<TBuilder, TExtension> where TExtension : RelationalOptionsExtension",
+      "content.vb": "Public MustInherit Class RelationalDbContextOptionsBuilder(Of TBuilder As RelationalDbContextOptionsBuilder(Of TBuilder, TExtension), TExtension As RelationalOptionsExtension)",
+      "typeParameters": [
+        {
+          "id": "TBuilder"
+        },
+        {
+          "id": "TExtension"
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder&lt;TBuilder, TExtension&gt;\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalDbContextOptionsBuilder.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

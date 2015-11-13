@@ -1,0 +1,109 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure",
+    "id": "IDbContextOptionsBuilderInfrastructure",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.AddOrUpdateExtension``1(``0)",
+            "id": "AddOrUpdateExtension_TExtension__TExtension_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure",
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.yml",
+            "name": "AddOrUpdateExtension<TExtension>(TExtension)",
+            "name.vb": "AddOrUpdateExtension(Of TExtension)(TExtension)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.AddOrUpdateExtension<TExtension>(TExtension)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.AddOrUpdateExtension(Of TExtension)(TExtension)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "summary": "<para>\nAdds the given extension to the options. If an existing extension of the same type already exists, it will be replaced.\n</para>\n<para>\nThis property is intended for use by extension methods to configure the context. It is not intended to be used in\napplication code.\n</para>",
+            "syntax": {
+              "content": "void AddOrUpdateExtension<TExtension>(TExtension extension)where TExtension : class, IDbContextOptionsExtension",
+              "content.vb": "Sub AddOrUpdateExtension(Of TExtension As {Class, IDbContextOptionsExtension})(extension As TExtension)",
+              "parameters": [
+                {
+                  "id": "extension",
+                  "type": {
+                    "uid": "{TExtension}",
+                    "isExternal": false,
+                    "name": "TExtension",
+                    "fullName": "TExtension",
+                    "specName": "<xref href=\"{TExtension}\" name=\"TExtension\"/>",
+                    "id": "TExtension",
+                    "level": 0
+                  },
+                  "description": "<p>The extension to be added.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TExtension",
+                  "description": "The type of extension to be added."
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.AddOrUpdateExtension``1(``0)\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.AddOrUpdateExtension&lt;TExtension&gt;(TExtension)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs/#L31"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.yml",
+    "name": "IDbContextOptionsBuilderInfrastructure",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs",
+      "startLine": 17,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "summary": "<para>\nExplicitly implemented by <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to hide methods that are used by database provider\nextension methods but not intended to be called by application developers.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IDbContextOptionsBuilderInfrastructure",
+      "content.vb": "Public Interface IDbContextOptionsBuilderInfrastructure"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/IDbContextOptionsBuilderInfrastructure.cs/#L18"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

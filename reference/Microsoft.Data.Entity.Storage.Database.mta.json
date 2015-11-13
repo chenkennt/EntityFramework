@@ -1,0 +1,782 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.Database",
+    "id": "Database",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Database.#ctor(Microsoft.Data.Entity.Query.IQueryCompilationContextFactory)",
+            "id": "Database_IQueryCompilationContextFactory_",
+            "parent": "Microsoft.Data.Entity.Storage.Database",
+            "href": "Microsoft.Data.Entity.Storage.Database.yml",
+            "name": "Database(IQueryCompilationContextFactory)",
+            "fullName": "Microsoft.Data.Entity.Storage.Database.Database(Microsoft.Data.Entity.Query.IQueryCompilationContextFactory)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/Database.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/Database.cs",
+              "startLine": 32,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.Storage.Database\"></xref> class.</p>\n",
+            "syntax": {
+              "content": "protected Database(IQueryCompilationContextFactory queryCompilationContextFactory)",
+              "content.vb": "Protected Sub New(queryCompilationContextFactory As IQueryCompilationContextFactory)",
+              "parameters": [
+                {
+                  "id": "queryCompilationContextFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.yml",
+                    "name": "IQueryCompilationContextFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\"/>",
+                    "id": "IQueryCompilationContextFactory",
+                    "level": 0
+                  },
+                  "description": "<p>Factory for compilation contexts to process LINQ queries.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database.#ctor(Microsoft.Data.Entity.Query.IQueryCompilationContextFactory)\" name=\"Microsoft.Data.Entity.Storage.Database.Database(Microsoft.Data.Entity.Query.IQueryCompilationContextFactory)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L33"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Database.CompileAsyncQuery``1(Remotion.Linq.QueryModel)",
+            "id": "CompileAsyncQuery_TResult__QueryModel_",
+            "parent": "Microsoft.Data.Entity.Storage.Database",
+            "href": "Microsoft.Data.Entity.Storage.Database.yml",
+            "name": "CompileAsyncQuery<TResult>(QueryModel)",
+            "name.vb": "CompileAsyncQuery(Of TResult)(QueryModel)",
+            "fullName": "Microsoft.Data.Entity.Storage.Database.CompileAsyncQuery<TResult>(Remotion.Linq.QueryModel)",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.Database.CompileAsyncQuery(Of TResult)(Remotion.Linq.QueryModel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/Database.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/Database.cs",
+              "startLine": 77,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Translates a query model into a function that can be executed to asynchronously get query results from the database.</p>\n",
+            "syntax": {
+              "content": "public virtual Func<QueryContext, IAsyncEnumerable<TResult>> CompileAsyncQuery<TResult>(QueryModel queryModel)",
+              "content.vb": "Public Overridable Function CompileAsyncQuery(Of TResult)(queryModel As QueryModel) As Func(Of QueryContext, IAsyncEnumerable(Of TResult))",
+              "parameters": [
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  },
+                  "description": "<p>An object model representing the query to be executed.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult",
+                  "description": "The type of results returned by the query."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IAsyncEnumerable{{TResult}}}",
+                  "parent": "System",
+                  "definition": "System.Func`2",
+                  "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                  "name": "Func<QueryContext, IAsyncEnumerable<TResult>>",
+                  "name.vb": "Func(Of QueryContext, IAsyncEnumerable(Of TResult))",
+                  "fullName": "System.Func<Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable<TResult>>",
+                  "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IAsyncEnumerable(Of TResult))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, <xref href=\"System.Collections.Generic.IAsyncEnumerable`1\" name=\"System.Collections.Generic.IAsyncEnumerable\"/>&lt;TResult&gt;&gt;",
+                  "id": "Func_QueryContext__IAsyncEnumerable_TResult__",
+                  "level": 0
+                },
+                "description": "<p>A function that will asynchronously execute the query.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database.CompileAsyncQuery``1(Remotion.Linq.QueryModel)\" name=\"Microsoft.Data.Entity.Storage.Database.CompileAsyncQuery&lt;TResult&gt;(Remotion.Linq.QueryModel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L78"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Database.CompileQuery``1(Remotion.Linq.QueryModel)",
+            "id": "CompileQuery_TResult__QueryModel_",
+            "parent": "Microsoft.Data.Entity.Storage.Database",
+            "href": "Microsoft.Data.Entity.Storage.Database.yml",
+            "name": "CompileQuery<TResult>(QueryModel)",
+            "name.vb": "CompileQuery(Of TResult)(QueryModel)",
+            "fullName": "Microsoft.Data.Entity.Storage.Database.CompileQuery<TResult>(Remotion.Linq.QueryModel)",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.Database.CompileQuery(Of TResult)(Remotion.Linq.QueryModel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/Database.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/Database.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Translates a query model into a function that can be executed to get query results from the database.</p>\n",
+            "syntax": {
+              "content": "public virtual Func<QueryContext, IEnumerable<TResult>> CompileQuery<TResult>(QueryModel queryModel)",
+              "content.vb": "Public Overridable Function CompileQuery(Of TResult)(queryModel As QueryModel) As Func(Of QueryContext, IEnumerable(Of TResult))",
+              "parameters": [
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  },
+                  "description": "<p>An object model representing the query to be executed.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult",
+                  "description": "The type of results returned by the query."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Func{Microsoft.Data.Entity.Query.QueryContext,System.Collections.Generic.IEnumerable{{TResult}}}",
+                  "parent": "System",
+                  "definition": "System.Func`2",
+                  "href": "Microsoft.Data.Entity.Query.QueryContext.yml",
+                  "name": "Func<QueryContext, IEnumerable<TResult>>",
+                  "name.vb": "Func(Of QueryContext, IEnumerable(Of TResult))",
+                  "fullName": "System.Func<Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IEnumerable<TResult>>",
+                  "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Query.QueryContext, System.Collections.Generic.IEnumerable(Of TResult))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Func`2",
+                      "name": "Func",
+                      "fullName": "System.Func",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.QueryContext",
+                      "name": "QueryContext",
+                      "fullName": "Microsoft.Data.Entity.Query.QueryContext",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.QueryContext.yml"
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.QueryContext\" name=\"Microsoft.Data.Entity.Query.QueryContext\"/>, <xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TResult&gt;&gt;",
+                  "id": "Func_QueryContext__IEnumerable_TResult__",
+                  "level": 0
+                },
+                "description": "<p>A function that will execute the query.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database.CompileQuery``1(Remotion.Linq.QueryModel)\" name=\"Microsoft.Data.Entity.Storage.Database.CompileQuery&lt;TResult&gt;(Remotion.Linq.QueryModel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Database.SaveChanges(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})",
+            "id": "SaveChanges_IReadOnlyList_IUpdateEntry__",
+            "parent": "Microsoft.Data.Entity.Storage.Database",
+            "href": "Microsoft.Data.Entity.Storage.Database.yml",
+            "name": "SaveChanges(IReadOnlyList<IUpdateEntry>)",
+            "name.vb": "SaveChanges(IReadOnlyList(Of IUpdateEntry))",
+            "fullName": "Microsoft.Data.Entity.Storage.Database.SaveChanges(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>)",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.Database.SaveChanges(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/Database.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/Database.cs",
+              "startLine": 44,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Persists changes from the supplied entries to the database.</p>\n",
+            "syntax": {
+              "content": "public abstract int SaveChanges(IReadOnlyList<IUpdateEntry> entries)",
+              "content.vb": "Public MustOverride Function SaveChanges(entries As IReadOnlyList(Of IUpdateEntry)) As Integer",
+              "parameters": [
+                {
+                  "id": "entries",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+                    "name": "IReadOnlyList<IUpdateEntry>",
+                    "name.vb": "IReadOnlyList(Of IUpdateEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry\"/>&gt;",
+                    "id": "IReadOnlyList_IUpdateEntry_",
+                    "level": 0
+                  },
+                  "description": "<p>Entries representing the changes to be persisted.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Int32",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int32",
+                  "fullName": "System.Int32",
+                  "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                  "id": "Int32",
+                  "level": 0
+                },
+                "description": "<p>The number of state entries persisted to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database.SaveChanges(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})\" name=\"Microsoft.Data.Entity.Storage.Database.SaveChanges(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.IUpdateEntry&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L45"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Database.SaveChangesAsync(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry},System.Threading.CancellationToken)",
+            "id": "SaveChangesAsync_IReadOnlyList_IUpdateEntry___CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Storage.Database",
+            "href": "Microsoft.Data.Entity.Storage.Database.yml",
+            "name": "SaveChangesAsync(IReadOnlyList<IUpdateEntry>, CancellationToken)",
+            "name.vb": "SaveChangesAsync(IReadOnlyList(Of IUpdateEntry), CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Storage.Database.SaveChangesAsync(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>, System.Threading.CancellationToken)",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.Database.SaveChangesAsync(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry), System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/Database.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/Database.cs",
+              "startLine": 55,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Asynchronously persists changes from the supplied entries to the database.</p>\n",
+            "syntax": {
+              "content": "public abstract Task<int> SaveChangesAsync(IReadOnlyList<IUpdateEntry> entries, CancellationToken cancellationToken = null)",
+              "content.vb": "Public MustOverride Function SaveChangesAsync(entries As IReadOnlyList(Of IUpdateEntry), cancellationToken As CancellationToken = Nothing) As Task(Of Integer)",
+              "parameters": [
+                {
+                  "id": "entries",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+                    "name": "IReadOnlyList<IUpdateEntry>",
+                    "name.vb": "IReadOnlyList(Of IUpdateEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry\"/>&gt;",
+                    "id": "IReadOnlyList_IUpdateEntry_",
+                    "level": 0
+                  },
+                  "description": "<p>Entries representing the changes to be persisted.</p>\n"
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  },
+                  "description": "<p>A <xref href=\"System.Threading.CancellationToken\"></xref> to observe while waiting for the task to complete.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Int32}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Int32>",
+                  "name.vb": "Task(Of Int32)",
+                  "fullName": "System.Threading.Tasks.Task<System.Int32>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Task_Int32_",
+                  "level": 0
+                },
+                "description": "<p>A task that represents the asynchronous save operation. The task result contains the\nnumber of entries persisted to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database.SaveChangesAsync(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry},System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Storage.Database.SaveChangesAsync(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.IUpdateEntry&gt;, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L56"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.Database.yml",
+    "name": "Database",
+    "fullName": "Microsoft.Data.Entity.Storage.Database",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Storage/Database.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Storage/Database.cs",
+      "startLine": 24,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "summary": "<para>\nThe main interaction point between a context and the database provider.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public abstract class Database : IDatabase",
+      "content.vb": "Public MustInherit Class Database Implements IDatabase"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IDatabase"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Database\" name=\"Microsoft.Data.Entity.Storage.Database\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/Database.cs/#L25"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

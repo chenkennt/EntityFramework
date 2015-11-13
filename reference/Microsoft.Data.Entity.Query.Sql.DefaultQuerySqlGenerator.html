@@ -1,0 +1,1990 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultQuerySqlGenerator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultQuerySqlGenerator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator">Class DefaultQuerySqlGenerator</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">System.Linq.Expressions.ExpressionVisitor</span></div>
+                  <div class="level2"><span class="xref">Remotion.Linq.Parsing.RelinqExpressionVisitor</span></div>
+                  <div class="level3"><span class="xref">Remotion.Linq.Parsing.ThrowingExpressionVisitor</span></div>
+                  <div class="level4"><span class="xref">DefaultQuerySqlGenerator</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Query.Sql</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class DefaultQuerySqlGenerator : ThrowingExpressionVisitor, ISqlExpressionVisitor, IQuerySqlGenerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L46">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator__ctor_Microsoft_Data_Entity_Storage_IRelationalCommandBuilderFactory_Microsoft_Data_Entity_Storage_ISqlGenerator_Microsoft_Data_Entity_Storage_IParameterNameGeneratorFactory_Microsoft_Data_Entity_Query_Expressions_SelectExpression_">DefaultQuerySqlGenerator(IRelationalCommandBuilderFactory, ISqlGenerator, IParameterNameGeneratorFactory, SelectExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DefaultQuerySqlGenerator(IRelationalCommandBuilderFactory relationalCommandBuilderFactory, ISqlGenerator sqlGenerator, IParameterNameGeneratorFactory parameterNameGeneratorFactory, SelectExpression selectExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalCommandBuilderFactory.html#Microsoft_Data_Entity_Storage_IRelationalCommandBuilderFactory">IRelationalCommandBuilderFactory</a></td>
+                    <td><em>relationalCommandBuilderFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td><em>sqlGenerator</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory.html#Microsoft_Data_Entity_Storage_IParameterNameGeneratorFactory">IParameterNameGeneratorFactory</a></td>
+                    <td><em>parameterNameGeneratorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td><em>selectExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L95">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_ConcatOperator">ConcatOperator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string ConcatOperator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L97">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_FalseLiteral">FalseLiteral</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string FalseLiteral { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L68">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_ParameterValues">ParameterValues</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IReadOnlyDictionary&lt;string, object&gt; ParameterValues { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L64">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_SelectExpression">SelectExpression</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual SelectExpression SelectExpression { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L93">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_Sql">Sql</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IRelationalCommandBuilder Sql { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalCommandBuilder.html#Microsoft_Data_Entity_Storage_IRelationalCommandBuilder">IRelationalCommandBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L66">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_SqlGenerator">SqlGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ISqlGenerator SqlGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L96">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_TrueLiteral">TrueLiteral</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string TrueLiteral { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L99">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_TypedFalseLiteral">TypedFalseLiteral</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string TypedFalseLiteral { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L98">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_TypedTrueLiteral">TypedTrueLiteral</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string TypedTrueLiteral { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L983">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_CreateUnhandledItemException__1___0_System_String_">CreateUnhandledItemException&lt;T&gt;(T, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Exception CreateUnhandledItemException&lt;T&gt;(T unhandledItem, string visitMethod)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">T</span></td>
+                    <td><em>unhandledItem</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>visitMethod</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L84">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_CreateValueBufferFactory_Microsoft_Data_Entity_Storage_IRelationalValueBufferFactoryFactory_System_Data_Common_DbDataReader_">CreateValueBufferFactory(IRelationalValueBufferFactoryFactory, DbDataReader)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IRelationalValueBufferFactory CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory.html#Microsoft_Data_Entity_Storage_IRelationalValueBufferFactoryFactory">IRelationalValueBufferFactoryFactory</a></td>
+                    <td><em>relationalValueBufferFactoryFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Data.Common.DbDataReader</span></td>
+                    <td><em>dataReader</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalValueBufferFactory.html#Microsoft_Data_Entity_Storage_IRelationalValueBufferFactory">IRelationalValueBufferFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L572">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_ExtractNonNullExpressionValues_System_Collections_Generic_IReadOnlyList_System_Linq_Expressions_Expression__">ExtractNonNullExpressionValues(IReadOnlyList&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IReadOnlyList&lt;Expression&gt; ExtractNonNullExpressionValues(IReadOnlyList&lt;Expression&gt; inExpressionValues)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>inExpressionValues</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L981">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateBinaryOperator_System_Linq_Expressions_ExpressionType_">GenerateBinaryOperator(ExpressionType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string GenerateBinaryOperator(ExpressionType op)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ExpressionType</span></td>
+                    <td><em>op</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L296">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateFromSql_System_String_System_String_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__">GenerateFromSql(String, String, IReadOnlyDictionary&lt;String, Object&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateFromSql(string sql, string argumentsParameterName, IReadOnlyDictionary&lt;string, object&gt; parameters)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>argumentsParameterName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><em>parameters</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L650">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateLimitOffset_Microsoft_Data_Entity_Query_Expressions_SelectExpression_">GenerateLimitOffset(SelectExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateLimitOffset(SelectExpression selectExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td><em>selectExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L220">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateOrderBy_System_Collections_Generic_IReadOnlyList_Remotion_Linq_Clauses_Ordering__">GenerateOrderBy(IReadOnlyList&lt;Ordering&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateOrderBy(IReadOnlyList&lt;Ordering&gt; orderings)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">Remotion.Linq.Clauses.Ordering</span>&gt;</td>
+                    <td><em>orderings</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L70">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateSql_System_Collections_Generic_IReadOnlyDictionary_System_String_System_Object__">GenerateSql(IReadOnlyDictionary&lt;String, Object&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IRelationalCommand GenerateSql(IReadOnlyDictionary&lt;string, object&gt; parameterValues)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><em>parameterValues</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalCommand.html#Microsoft_Data_Entity_Storage_IRelationalCommand">IRelationalCommand</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L637">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_GenerateTop_Microsoft_Data_Entity_Query_Expressions_SelectExpression_">GenerateTop(SelectExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void GenerateTop(SelectExpression selectExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td><em>selectExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L531">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_ProcessInExpressionValues_System_Collections_Generic_IReadOnlyList_System_Linq_Expressions_Expression__">ProcessInExpressionValues(IReadOnlyList&lt;Expression&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IReadOnlyList&lt;Expression&gt; ProcessInExpressionValues(IReadOnlyList&lt;Expression&gt; inExpressionValues)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td><em>inExpressionValues</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L978">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_TryGenerateBinaryOperator_System_Linq_Expressions_ExpressionType_System_String__">TryGenerateBinaryOperator(ExpressionType, out String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual bool TryGenerateBinaryOperator(ExpressionType op, out string result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ExpressionType</span></td>
+                    <td><em>op</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>result</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L823">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitAlias_Microsoft_Data_Entity_Query_Expressions_AliasExpression_">VisitAlias(AliasExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitAlias(AliasExpression aliasExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.AliasExpression.html#Microsoft_Data_Entity_Query_Expressions_AliasExpression">AliasExpression</a></td>
+                    <td><em>aliasExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L735">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitBinary_System_Linq_Expressions_BinaryExpression_">VisitBinary(BinaryExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitBinary(BinaryExpression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.BinaryExpression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L812">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitColumn_Microsoft_Data_Entity_Query_Expressions_ColumnExpression_">VisitColumn(ColumnExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitColumn(ColumnExpression columnExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.ColumnExpression.html#Microsoft_Data_Entity_Query_Expressions_ColumnExpression">ColumnExpression</a></td>
+                    <td><em>columnExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L670">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitConditional_System_Linq_Expressions_ConditionalExpression_">VisitConditional(ConditionalExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitConditional(ConditionalExpression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ConditionalExpression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L950">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitConstant_System_Linq_Expressions_ConstantExpression_">VisitConstant(ConstantExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitConstant(ConstantExpression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ConstantExpression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L385">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitCount_Microsoft_Data_Entity_Query_Expressions_CountExpression_">VisitCount(CountExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitCount(CountExpression countExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.CountExpression.html#Microsoft_Data_Entity_Query_Expressions_CountExpression">CountExpression</a></td>
+                    <td><em>countExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L363">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitCrossJoin_Microsoft_Data_Entity_Query_Expressions_CrossJoinExpression_">VisitCrossJoin(CrossJoinExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitCrossJoin(CrossJoinExpression crossJoinExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.CrossJoinExpression.html#Microsoft_Data_Entity_Query_Expressions_CrossJoinExpression">CrossJoinExpression</a></td>
+                    <td><em>crossJoinExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L719">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitExists_Microsoft_Data_Entity_Query_Expressions_ExistsExpression_">VisitExists(ExistsExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitExists(ExistsExpression existsExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.ExistsExpression.html#Microsoft_Data_Entity_Query_Expressions_ExistsExpression">ExistsExpression</a></td>
+                    <td><em>existsExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L279">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitFromSql_Microsoft_Data_Entity_Query_Expressions_FromSqlExpression_">VisitFromSql(FromSqlExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitFromSql(FromSqlExpression fromSqlExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.FromSqlExpression.html#Microsoft_Data_Entity_Query_Expressions_FromSqlExpression">FromSqlExpression</a></td>
+                    <td><em>fromSqlExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L444">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitIn_Microsoft_Data_Entity_Query_Expressions_InExpression_">VisitIn(InExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitIn(InExpression inExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.InExpression.html#Microsoft_Data_Entity_Query_Expressions_InExpression">InExpression</a></td>
+                    <td><em>inExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L607">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitInnerJoin_Microsoft_Data_Entity_Query_Expressions_InnerJoinExpression_">VisitInnerJoin(InnerJoinExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitInnerJoin(InnerJoinExpression innerJoinExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.InnerJoinExpression.html#Microsoft_Data_Entity_Query_Expressions_InnerJoinExpression">InnerJoinExpression</a></td>
+                    <td><em>innerJoinExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L856">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitIsNotNull_Microsoft_Data_Entity_Query_Expressions_IsNullExpression_">VisitIsNotNull(IsNullExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitIsNotNull(IsNullExpression isNotNullExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.IsNullExpression.html#Microsoft_Data_Entity_Query_Expressions_IsNullExpression">IsNullExpression</a></td>
+                    <td><em>isNotNullExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L845">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitIsNull_Microsoft_Data_Entity_Query_Expressions_IsNullExpression_">VisitIsNull(IsNullExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitIsNull(IsNullExpression isNullExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.IsNullExpression.html#Microsoft_Data_Entity_Query_Expressions_IsNullExpression">IsNullExpression</a></td>
+                    <td><em>isNullExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L374">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitLateralJoin_Microsoft_Data_Entity_Query_Expressions_LateralJoinExpression_">VisitLateralJoin(LateralJoinExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitLateralJoin(LateralJoinExpression lateralJoinExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.LateralJoinExpression.html#Microsoft_Data_Entity_Query_Expressions_LateralJoinExpression">LateralJoinExpression</a></td>
+                    <td><em>lateralJoinExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L867">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitLike_Microsoft_Data_Entity_Query_Expressions_LikeExpression_">VisitLike(LikeExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitLike(LikeExpression likeExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.LikeExpression.html#Microsoft_Data_Entity_Query_Expressions_LikeExpression">LikeExpression</a></td>
+                    <td><em>likeExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L880">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitLiteral_Microsoft_Data_Entity_Query_Expressions_LiteralExpression_">VisitLiteral(LiteralExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitLiteral(LiteralExpression literalExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.LiteralExpression.html#Microsoft_Data_Entity_Query_Expressions_LiteralExpression">LiteralExpression</a></td>
+                    <td><em>literalExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L420">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitMax_Microsoft_Data_Entity_Query_Expressions_MaxExpression_">VisitMax(MaxExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitMax(MaxExpression maxExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.MaxExpression.html#Microsoft_Data_Entity_Query_Expressions_MaxExpression">MaxExpression</a></td>
+                    <td><em>maxExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L407">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitMin_Microsoft_Data_Entity_Query_Expressions_MinExpression_">VisitMin(MinExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitMin(MinExpression minExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.MinExpression.html#Microsoft_Data_Entity_Query_Expressions_MinExpression">MinExpression</a></td>
+                    <td><em>minExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L488">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitNotIn_Microsoft_Data_Entity_Query_Expressions_InExpression_">VisitNotIn(InExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual Expression VisitNotIn(InExpression inExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.InExpression.html#Microsoft_Data_Entity_Query_Expressions_InExpression">InExpression</a></td>
+                    <td><em>inExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L622">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitOuterJoin_Microsoft_Data_Entity_Query_Expressions_LeftOuterJoinExpression_">VisitOuterJoin(LeftOuterJoinExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitOuterJoin(LeftOuterJoinExpression leftOuterJoinExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.LeftOuterJoinExpression.html#Microsoft_Data_Entity_Query_Expressions_LeftOuterJoinExpression">LeftOuterJoinExpression</a></td>
+                    <td><em>leftOuterJoinExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L961">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitParameter_System_Linq_Expressions_ParameterExpression_">VisitParameter(ParameterExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitParameter(ParameterExpression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.ParameterExpression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L101">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitSelect_Microsoft_Data_Entity_Query_Expressions_SelectExpression_">VisitSelect(SelectExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitSelect(SelectExpression selectExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SelectExpression.html#Microsoft_Data_Entity_Query_Expressions_SelectExpression">SelectExpression</a></td>
+                    <td><em>selectExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L889">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitSqlFunction_Microsoft_Data_Entity_Query_Expressions_SqlFunctionExpression_">VisitSqlFunction(SqlFunctionExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitSqlFunction(SqlFunctionExpression sqlFunctionExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SqlFunctionExpression.html#Microsoft_Data_Entity_Query_Expressions_SqlFunctionExpression">SqlFunctionExpression</a></td>
+                    <td><em>sqlFunctionExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L433">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitStringCompare_Microsoft_Data_Entity_Query_Expressions_StringCompareExpression_">VisitStringCompare(StringCompareExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitStringCompare(StringCompareExpression stringCompareExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.StringCompareExpression.html#Microsoft_Data_Entity_Query_Expressions_StringCompareExpression">StringCompareExpression</a></td>
+                    <td><em>stringCompareExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L394">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitSum_Microsoft_Data_Entity_Query_Expressions_SumExpression_">VisitSum(SumExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitSum(SumExpression sumExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.SumExpression.html#Microsoft_Data_Entity_Query_Expressions_SumExpression">SumExpression</a></td>
+                    <td><em>sumExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L346">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitTable_Microsoft_Data_Entity_Query_Expressions_TableExpression_">VisitTable(TableExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Expression VisitTable(TableExpression tableExpression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Expressions.TableExpression.html#Microsoft_Data_Entity_Query_Expressions_TableExpression">TableExpression</a></td>
+                    <td><em>tableExpression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Sql/DefaultQuerySqlGenerator.cs/#L901">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_Sql_DefaultQuerySqlGenerator_VisitUnary_System_Linq_Expressions_UnaryExpression_">VisitUnary(UnaryExpression)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override Expression VisitUnary(UnaryExpression expression)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.UnaryExpression</span></td>
+                    <td><em>expression</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Linq.Expressions.Expression</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

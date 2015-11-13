@@ -1,0 +1,464 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+    "id": "QueryOptimizer",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.FlattenSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression,Remotion.Linq.Clauses.IFromClause,Remotion.Linq.QueryModel,System.Int32)",
+            "id": "FlattenSubQuery_SubQueryExpression__IFromClause__QueryModel__Int32_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.yml",
+            "name": "FlattenSubQuery(SubQueryExpression, IFromClause, QueryModel, Int32)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.FlattenSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression, Remotion.Linq.Clauses.IFromClause, Remotion.Linq.QueryModel, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+              "startLine": 84,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "protected override void FlattenSubQuery(SubQueryExpression subQueryExpression, IFromClause fromClause, QueryModel queryModel, int destinationIndex)",
+              "content.vb": "Protected Overrides Sub FlattenSubQuery(subQueryExpression As SubQueryExpression, fromClause As IFromClause, queryModel As QueryModel, destinationIndex As Integer)",
+              "parameters": [
+                {
+                  "id": "subQueryExpression",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "parent": "Remotion.Linq.Clauses.Expressions",
+                    "isExternal": true,
+                    "name": "SubQueryExpression",
+                    "fullName": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\" name=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\"/>",
+                    "id": "SubQueryExpression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "fromClause",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.IFromClause",
+                    "parent": "Remotion.Linq.Clauses",
+                    "isExternal": true,
+                    "name": "IFromClause",
+                    "fullName": "Remotion.Linq.Clauses.IFromClause",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.IFromClause\" name=\"Remotion.Linq.Clauses.IFromClause\"/>",
+                    "id": "IFromClause",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "destinationIndex",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "overridden": "Remotion.Linq.Transformations.SubQueryFromClauseFlattener.FlattenSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression,Remotion.Linq.Clauses.IFromClause,Remotion.Linq.QueryModel,System.Int32)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.FlattenSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression,Remotion.Linq.Clauses.IFromClause,Remotion.Linq.QueryModel,System.Int32)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.FlattenSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression, Remotion.Linq.Clauses.IFromClause, Remotion.Linq.QueryModel, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs/#L85"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.Optimize(System.Collections.Generic.IReadOnlyCollection{Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation},Remotion.Linq.QueryModel)",
+            "id": "Optimize_IReadOnlyCollection_IQueryAnnotation___QueryModel_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.yml",
+            "name": "Optimize(IReadOnlyCollection<IQueryAnnotation>, QueryModel)",
+            "name.vb": "Optimize(IReadOnlyCollection(Of IQueryAnnotation), QueryModel)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.Optimize(System.Collections.Generic.IReadOnlyCollection<Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation>, Remotion.Linq.QueryModel)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.Optimize(System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation), Remotion.Linq.QueryModel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+              "startLine": 48,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual void Optimize(IReadOnlyCollection<IQueryAnnotation> queryAnnotations, QueryModel queryModel)",
+              "content.vb": "Public Overridable Sub Optimize(queryAnnotations As IReadOnlyCollection(Of IQueryAnnotation), queryModel As QueryModel)",
+              "parameters": [
+                {
+                  "id": "queryAnnotations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyCollection{Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyCollection`1",
+                    "href": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation.yml",
+                    "name": "IReadOnlyCollection<IQueryAnnotation>",
+                    "name.vb": "IReadOnlyCollection(Of IQueryAnnotation)",
+                    "fullName": "System.Collections.Generic.IReadOnlyCollection<Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyCollection`1",
+                        "name": "IReadOnlyCollection",
+                        "fullName": "System.Collections.Generic.IReadOnlyCollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation",
+                        "name": "IQueryAnnotation",
+                        "fullName": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyCollection`1",
+                        "name": "IReadOnlyCollection",
+                        "fullName": "System.Collections.Generic.IReadOnlyCollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation",
+                        "name": "IQueryAnnotation",
+                        "fullName": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyCollection`1\" name=\"System.Collections.Generic.IReadOnlyCollection\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation\" name=\"Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation\"/>&gt;",
+                    "id": "IReadOnlyCollection_IQueryAnnotation_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.Optimize(System.Collections.Generic.IReadOnlyCollection{Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation},Remotion.Linq.QueryModel)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.Optimize(System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.Data.Entity.Query.ResultOperators.IQueryAnnotation&gt;, Remotion.Linq.QueryModel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs/#L49"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitJoinClause(Remotion.Linq.Clauses.JoinClause,Remotion.Linq.QueryModel,System.Int32)",
+            "id": "VisitJoinClause_JoinClause__QueryModel__Int32_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.yml",
+            "name": "VisitJoinClause(JoinClause, QueryModel, Int32)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitJoinClause(Remotion.Linq.Clauses.JoinClause, Remotion.Linq.QueryModel, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public override void VisitJoinClause(JoinClause joinClause, QueryModel queryModel, int index)",
+              "content.vb": "Public Overrides Sub VisitJoinClause(joinClause As JoinClause, queryModel As QueryModel, index As Integer)",
+              "parameters": [
+                {
+                  "id": "joinClause",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.JoinClause",
+                    "parent": "Remotion.Linq.Clauses",
+                    "isExternal": true,
+                    "name": "JoinClause",
+                    "fullName": "Remotion.Linq.Clauses.JoinClause",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.JoinClause\" name=\"Remotion.Linq.Clauses.JoinClause\"/>",
+                    "id": "JoinClause",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "index",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "overridden": "Remotion.Linq.QueryModelVisitorBase.VisitJoinClause(Remotion.Linq.Clauses.JoinClause,Remotion.Linq.QueryModel,System.Int32)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitJoinClause(Remotion.Linq.Clauses.JoinClause,Remotion.Linq.QueryModel,System.Int32)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitJoinClause(Remotion.Linq.Clauses.JoinClause, Remotion.Linq.QueryModel, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs/#L58"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitResultOperator(Remotion.Linq.Clauses.ResultOperatorBase,Remotion.Linq.QueryModel,System.Int32)",
+            "id": "VisitResultOperator_ResultOperatorBase__QueryModel__Int32_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.yml",
+            "name": "VisitResultOperator(ResultOperatorBase, QueryModel, Int32)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitResultOperator(Remotion.Linq.Clauses.ResultOperatorBase, Remotion.Linq.QueryModel, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+              "startLine": 155,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public override void VisitResultOperator(ResultOperatorBase resultOperator, QueryModel queryModel, int index)",
+              "content.vb": "Public Overrides Sub VisitResultOperator(resultOperator As ResultOperatorBase, queryModel As QueryModel, index As Integer)",
+              "parameters": [
+                {
+                  "id": "resultOperator",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.ResultOperatorBase",
+                    "parent": "Remotion.Linq.Clauses",
+                    "isExternal": true,
+                    "name": "ResultOperatorBase",
+                    "fullName": "Remotion.Linq.Clauses.ResultOperatorBase",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.ResultOperatorBase\" name=\"Remotion.Linq.Clauses.ResultOperatorBase\"/>",
+                    "id": "ResultOperatorBase",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryModel",
+                  "type": {
+                    "uid": "Remotion.Linq.QueryModel",
+                    "parent": "Remotion.Linq",
+                    "isExternal": true,
+                    "name": "QueryModel",
+                    "fullName": "Remotion.Linq.QueryModel",
+                    "specName": "<xref href=\"Remotion.Linq.QueryModel\" name=\"Remotion.Linq.QueryModel\"/>",
+                    "id": "QueryModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "index",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "overridden": "Remotion.Linq.QueryModelVisitorBase.VisitResultOperator(Remotion.Linq.Clauses.ResultOperatorBase,Remotion.Linq.QueryModel,System.Int32)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitResultOperator(Remotion.Linq.Clauses.ResultOperatorBase,Remotion.Linq.QueryModel,System.Int32)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer.VisitResultOperator(Remotion.Linq.Clauses.ResultOperatorBase, Remotion.Linq.QueryModel, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs/#L156"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer.yml",
+    "name": "QueryOptimizer",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.QueryOptimizer",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs",
+      "startLine": 18,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public class QueryOptimizer : SubQueryFromClauseFlattener, IQueryModelVisitor, IQueryOptimizer",
+      "content.vb": "Public Class QueryOptimizer Inherits SubQueryFromClauseFlattener Implements IQueryModelVisitor, IQueryOptimizer"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Remotion.Linq.QueryModelVisitorBase",
+        "parent": "Remotion.Linq",
+        "isExternal": true,
+        "name": "QueryModelVisitorBase",
+        "fullName": "Remotion.Linq.QueryModelVisitorBase",
+        "specName": "<xref href=\"Remotion.Linq.QueryModelVisitorBase\" name=\"Remotion.Linq.QueryModelVisitorBase\"/>",
+        "id": "QueryModelVisitorBase",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Remotion.Linq.Transformations.SubQueryFromClauseFlattener",
+        "parent": "Remotion.Linq.Transformations",
+        "isExternal": true,
+        "name": "SubQueryFromClauseFlattener",
+        "fullName": "Remotion.Linq.Transformations.SubQueryFromClauseFlattener",
+        "specName": "<xref href=\"Remotion.Linq.Transformations.SubQueryFromClauseFlattener\" name=\"Remotion.Linq.Transformations.SubQueryFromClauseFlattener\"/>",
+        "id": "SubQueryFromClauseFlattener",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "implements": [
+      "Remotion.Linq.IQueryModelVisitor",
+      "Microsoft.Data.Entity.Query.Internal.IQueryOptimizer"
+    ],
+    "inheritedMembers": [
+      "Remotion.Linq.Transformations.SubQueryFromClauseFlattener.VisitMainFromClause(Remotion.Linq.Clauses.MainFromClause,Remotion.Linq.QueryModel)",
+      "Remotion.Linq.Transformations.SubQueryFromClauseFlattener.VisitAdditionalFromClause(Remotion.Linq.Clauses.AdditionalFromClause,Remotion.Linq.QueryModel,System.Int32)",
+      "Remotion.Linq.Transformations.SubQueryFromClauseFlattener.CheckFlattenable(Remotion.Linq.QueryModel)",
+      "Remotion.Linq.Transformations.SubQueryFromClauseFlattener.InsertBodyClauses(System.Collections.ObjectModel.ObservableCollection{Remotion.Linq.Clauses.IBodyClause},Remotion.Linq.QueryModel,System.Int32)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitQueryModel(Remotion.Linq.QueryModel)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitJoinClause(Remotion.Linq.Clauses.JoinClause,Remotion.Linq.QueryModel,Remotion.Linq.Clauses.GroupJoinClause)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitGroupJoinClause(Remotion.Linq.Clauses.GroupJoinClause,Remotion.Linq.QueryModel,System.Int32)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitWhereClause(Remotion.Linq.Clauses.WhereClause,Remotion.Linq.QueryModel,System.Int32)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitOrderByClause(Remotion.Linq.Clauses.OrderByClause,Remotion.Linq.QueryModel,System.Int32)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitOrdering(Remotion.Linq.Clauses.Ordering,Remotion.Linq.QueryModel,Remotion.Linq.Clauses.OrderByClause,System.Int32)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitSelectClause(Remotion.Linq.Clauses.SelectClause,Remotion.Linq.QueryModel)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitBodyClauses(System.Collections.ObjectModel.ObservableCollection{Remotion.Linq.Clauses.IBodyClause},Remotion.Linq.QueryModel)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitOrderings(System.Collections.ObjectModel.ObservableCollection{Remotion.Linq.Clauses.Ordering},Remotion.Linq.QueryModel,Remotion.Linq.Clauses.OrderByClause)",
+      "Remotion.Linq.QueryModelVisitorBase.VisitResultOperators(System.Collections.ObjectModel.ObservableCollection{Remotion.Linq.Clauses.ResultOperatorBase},Remotion.Linq.QueryModel)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer\" name=\"Microsoft.Data.Entity.Query.Internal.QueryOptimizer\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryOptimizer.cs/#L19"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

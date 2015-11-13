@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDatabaseCreator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDatabaseCreator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseCreator.cs/#L18" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Storage_IDatabaseCreator">Interface IDatabaseCreator</h1>
+              <div class="markdown level0 summary"><para>
+Creates and deletes databases for a given database provider.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Storage</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Storage_IDatabaseCreator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IDatabaseCreator</code></pre>
+              </div>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseCreator.cs/#L56">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_IDatabaseCreator_EnsureCreated">EnsureCreated()</h4>
+              <div class="markdown level1 summary"><p>Ensures that the database for the context exists. If it exists, no action is taken. If it does not
+exist then the database and all its schema are created. If the database exists, then no effort is made
+to ensure it is compatible with the model for this context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">bool EnsureCreated()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the database is created, false if it already existed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseCreator.cs/#L68">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_IDatabaseCreator_EnsureCreatedAsync_System_Threading_CancellationToken_">EnsureCreatedAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Asynchronously ensures that the database for the context exists. If it exists, no action is taken. If it does not
+exist then the database and all its schema are created. If the database exists, then no effort is made
+to ensure it is compatible with the model for this context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task&lt;bool&gt; EnsureCreatedAsync(CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><p>A task that represents the asynchronous save operation. The task result contains true if the database is created,
+false if it already existed.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseCreator.cs/#L31">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_IDatabaseCreator_EnsureDeleted">EnsureDeleted()</h4>
+              <div class="markdown level1 summary"><para>
+Ensures that the database for the context does not exist. If it does not exist, no action is taken. If it does
+exist then the database is deleted.
+</para>
+<para>
+Warning: The entire database is deleted an no effort is made to remove just the database objects that are used by
+the model for this context.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">bool EnsureDeleted()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the database is deleted, false if it did not exist.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseCreator.cs/#L48">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_IDatabaseCreator_EnsureDeletedAsync_System_Threading_CancellationToken_">EnsureDeletedAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><para>
+Asynchronously ensures that the database for the context does not exist. If it does not exist, no action is taken. If it does
+exist then the database is deleted.
+</para>
+<para>
+Warning: The entire database is deleted an no effort is made to remove just the database objects that are used by
+the model for this context.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task&lt;bool&gt; EnsureDeletedAsync(CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><p>A task that represents the asynchronous save operation. The task result contains true if the database is deleted,
+false if it did not exist.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

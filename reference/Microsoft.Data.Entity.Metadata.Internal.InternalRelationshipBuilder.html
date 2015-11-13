@@ -1,0 +1,1406 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class InternalRelationshipBuilder | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class InternalRelationshipBuilder | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">Class InternalRelationshipBuilder</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalMetadataBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalMetadataBuilder">InternalMetadataBuilder</a></div>
+                  <div class="level2"><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalMetadataBuilder`1.html#Microsoft_Data_Entity_Metadata_Internal_InternalMetadataBuilder_1">InternalMetadataBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ForeignKey.html#Microsoft_Data_Entity_Metadata_Internal_ForeignKey">ForeignKey</a>&gt;</div>
+                  <div class="level3"><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalMetadataItemBuilder`1.html#Microsoft_Data_Entity_Metadata_Internal_InternalMetadataItemBuilder_1">InternalMetadataItemBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ForeignKey.html#Microsoft_Data_Entity_Metadata_Internal_ForeignKey">ForeignKey</a>&gt;</div>
+                  <div class="level4"><span class="xref">InternalRelationshipBuilder</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata.Internal</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class InternalRelationshipBuilder : InternalMetadataItemBuilder&lt;ForeignKey&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L26">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder__ctor_Microsoft_Data_Entity_Metadata_Internal_ForeignKey_Microsoft_Data_Entity_Metadata_Internal_InternalModelBuilder_System_Nullable_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource__">InternalRelationshipBuilder(ForeignKey, InternalModelBuilder, Nullable&lt;ConfigurationSource&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public InternalRelationshipBuilder(ForeignKey foreignKey, InternalModelBuilder modelBuilder, ConfigurationSource? initialConfigurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ForeignKey.html#Microsoft_Data_Entity_Metadata_Internal_ForeignKey">ForeignKey</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalModelBuilder">InternalModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a>&gt;</td>
+                    <td><em>initialConfigurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L1766">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_AreCompatible_Microsoft_Data_Entity_Metadata_Internal_EntityType_Microsoft_Data_Entity_Metadata_Internal_EntityType_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__System_Nullable_System_Boolean__System_Nullable_System_Boolean__Microsoft_Data_Entity_Metadata_Internal_InternalModelBuilder_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">AreCompatible(EntityType, EntityType, String, String, IReadOnlyList&lt;Property&gt;, IReadOnlyList&lt;Property&gt;, Nullable&lt;Boolean&gt;, Nullable&lt;Boolean&gt;, InternalModelBuilder, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool AreCompatible(EntityType principalEntityType, EntityType dependentEntityType, string navigationToPrincipalName, string navigationToDependentName, IReadOnlyList&lt;Property&gt; dependentProperties, IReadOnlyList&lt;Property&gt; principalProperties, bool ? isUnique, bool ? isRequired, InternalModelBuilder modelBuilder, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>dependentEntityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToPrincipalName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToDependentName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>dependentProperties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>principalProperties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><em>isUnique</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><em>isRequired</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalModelBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalModelBuilder">InternalModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L1664">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_Attach_System_String_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">Attach(String, String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder Attach(string dependentToPrincipalName, string principalToDependentName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>dependentToPrincipalName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalToDependentName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L873">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_CanInvert_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">CanInvert(IReadOnlyList&lt;Property&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool CanInvert(IReadOnlyList&lt;Property&gt; newForeignKeyProperties, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>newForeignKeyProperties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L484">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_CanSetDeleteBehavior_Microsoft_Data_Entity_Metadata_DeleteBehavior_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">CanSetDeleteBehavior(DeleteBehavior, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool CanSetDeleteBehavior(DeleteBehavior deleteBehavior, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.DeleteBehavior.html#Microsoft_Data_Entity_Metadata_DeleteBehavior">DeleteBehavior</a></td>
+                    <td><em>deleteBehavior</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L255">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_CanSetNavigation_System_String_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">CanSetNavigation(String, Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool CanSetNavigation(string navigationName, bool pointsToPrincipal, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>pointsToPrincipal</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L464">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DeleteBehavior_Microsoft_Data_Entity_Metadata_DeleteBehavior_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DeleteBehavior(DeleteBehavior, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DeleteBehavior(DeleteBehavior deleteBehavior, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.DeleteBehavior.html#Microsoft_Data_Entity_Metadata_DeleteBehavior">DeleteBehavior</a></td>
+                    <td><em>deleteBehavior</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L586">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DependentEntityType_Microsoft_Data_Entity_Metadata_Internal_EntityType_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DependentEntityType(EntityType, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DependentEntityType(EntityType dependentEntityType, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>dependentEntityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L573">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DependentEntityType_Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DependentEntityType(InternalEntityTypeBuilder, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DependentEntityType(InternalEntityTypeBuilder dependentEntityTypeBuilder, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder">InternalEntityTypeBuilder</a></td>
+                    <td><em>dependentEntityTypeBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L582">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DependentEntityType_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DependentEntityType(String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DependentEntityType(string dependentTypeName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>dependentTypeName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L577">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DependentEntityType_System_Type_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DependentEntityType(Type, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DependentEntityType(Type dependentType, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>dependentType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L42">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_DependentToPrincipal_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">DependentToPrincipal(String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder DependentToPrincipal(string navigationToPrincipalName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToPrincipalName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L911">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasForeignKey_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasForeignKey(IReadOnlyList&lt;Property&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasForeignKey(IReadOnlyList&lt;Property&gt; properties, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L895">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasForeignKey_System_Collections_Generic_IReadOnlyList_System_Reflection_PropertyInfo__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasForeignKey(IReadOnlyList&lt;PropertyInfo&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasForeignKey(IReadOnlyList&lt;PropertyInfo&gt; properties, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L903">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasForeignKey_System_Collections_Generic_IReadOnlyList_System_String__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasForeignKey(IReadOnlyList&lt;String&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasForeignKey(IReadOnlyList&lt;string&gt; propertyNames, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>propertyNames</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L1041">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasPrincipalKey_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Metadata_Internal_Property__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasPrincipalKey(IReadOnlyList&lt;Property&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasPrincipalKey(IReadOnlyList&lt;Property&gt; properties, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L1025">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasPrincipalKey_System_Collections_Generic_IReadOnlyList_System_Reflection_PropertyInfo__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasPrincipalKey(IReadOnlyList&lt;PropertyInfo&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasPrincipalKey(IReadOnlyList&lt;PropertyInfo&gt; properties, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Reflection.PropertyInfo</span>&gt;</td>
+                    <td><em>properties</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L1033">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_HasPrincipalKey_System_Collections_Generic_IReadOnlyList_System_String__Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">HasPrincipalKey(IReadOnlyList&lt;String&gt;, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder HasPrincipalKey(IReadOnlyList&lt;string&gt; propertyNames, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><em>propertyNames</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L352">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_IsRequired_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">IsRequired(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder IsRequired(bool isRequired, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>isRequired</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L500">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_IsUnique_System_Boolean_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">IsUnique(Boolean, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder IsUnique(bool unique, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>unique</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L60">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_Navigations_System_String_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">Navigations(String, String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder Navigations(string navigationToPrincipalName, string navigationToDependentName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToPrincipalName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToDependentName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L738">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_PrincipalEntityType_Microsoft_Data_Entity_Metadata_Internal_EntityType_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">PrincipalEntityType(EntityType, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder PrincipalEntityType(EntityType principalEntityType, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>principalEntityType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L724">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_PrincipalEntityType_Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">PrincipalEntityType(InternalEntityTypeBuilder, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder PrincipalEntityType(InternalEntityTypeBuilder principalEntityTypeBuilder, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalEntityTypeBuilder">InternalEntityTypeBuilder</a></td>
+                    <td><em>principalEntityTypeBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L733">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_PrincipalEntityType_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">PrincipalEntityType(String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder PrincipalEntityType(string principalTypeName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalTypeName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L728">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_PrincipalEntityType_System_Type_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">PrincipalEntityType(Type, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder PrincipalEntityType(Type principalType, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>principalType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/InternalRelationshipBuilder.cs/#L51">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_PrincipalToDependent_System_String_Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource_">PrincipalToDependent(String, ConfigurationSource)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual InternalRelationshipBuilder PrincipalToDependent(string navigationToDependentName, ConfigurationSource configurationSource)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationToDependentName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.ConfigurationSource.html#Microsoft_Data_Entity_Metadata_Internal_ConfigurationSource">ConfigurationSource</a></td>
+                    <td><em>configurationSource</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

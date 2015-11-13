@@ -1,0 +1,403 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+    "id": "EntityMaterializerSource",
+    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.#ctor(Microsoft.Data.Entity.Metadata.Internal.IMemberMapper)",
+            "id": "EntityMaterializerSource_IMemberMapper_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.yml",
+            "name": "EntityMaterializerSource(IMemberMapper)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.EntityMaterializerSource(Microsoft.Data.Entity.Metadata.Internal.IMemberMapper)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public EntityMaterializerSource(IMemberMapper memberMapper)",
+              "content.vb": "Public Sub New(memberMapper As IMemberMapper)",
+              "parameters": [
+                {
+                  "id": "memberMapper",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.IMemberMapper",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.IMemberMapper.yml",
+                    "name": "IMemberMapper",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.IMemberMapper",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.IMemberMapper\" name=\"Microsoft.Data.Entity.Metadata.Internal.IMemberMapper\"/>",
+                    "id": "IMemberMapper",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.#ctor(Microsoft.Data.Entity.Metadata.Internal.IMemberMapper)\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.EntityMaterializerSource(Microsoft.Data.Entity.Metadata.Internal.IMemberMapper)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs/#L23"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateMaterializeExpression(Microsoft.Data.Entity.Metadata.IEntityType,System.Linq.Expressions.Expression,System.Int32[])",
+            "id": "CreateMaterializeExpression_IEntityType__Expression__Int32___",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.yml",
+            "name": "CreateMaterializeExpression(IEntityType, Expression, Int32[])",
+            "name.vb": "CreateMaterializeExpression(IEntityType, Expression, Int32())",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateMaterializeExpression(Microsoft.Data.Entity.Metadata.IEntityType, System.Linq.Expressions.Expression, System.Int32[])",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateMaterializeExpression(Microsoft.Data.Entity.Metadata.IEntityType, System.Linq.Expressions.Expression, System.Int32())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual Expression CreateMaterializeExpression(IEntityType entityType, Expression valueBufferExpression, int[] indexMap = null)",
+              "content.vb": "Public Overridable Function CreateMaterializeExpression(entityType As IEntityType, valueBufferExpression As Expression, indexMap As Integer() = Nothing) As Expression",
+              "parameters": [
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "valueBufferExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "indexMap",
+                  "type": {
+                    "uid": "System.Int32[]",
+                    "isExternal": true,
+                    "name": "Int32[]",
+                    "name.vb": "Int32()",
+                    "fullName": "System.Int32[]",
+                    "fullName.vb": "System.Int32()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>[]",
+                    "id": "Int32__",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateMaterializeExpression(Microsoft.Data.Entity.Metadata.IEntityType,System.Linq.Expressions.Expression,System.Int32[])\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateMaterializeExpression(Microsoft.Data.Entity.Metadata.IEntityType, System.Linq.Expressions.Expression, System.Int32[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs/#L34"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueCallExpression(System.Linq.Expressions.Expression,System.Int32)",
+            "id": "CreateReadValueCallExpression_Expression__Int32_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.yml",
+            "name": "CreateReadValueCallExpression(Expression, Int32)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueCallExpression(System.Linq.Expressions.Expression, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual Expression CreateReadValueCallExpression(Expression valueBuffer, int index)",
+              "content.vb": "Public Overridable Function CreateReadValueCallExpression(valueBuffer As Expression, index As Integer) As Expression",
+              "parameters": [
+                {
+                  "id": "valueBuffer",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "index",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueCallExpression(System.Linq.Expressions.Expression,System.Int32)\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueCallExpression(System.Linq.Expressions.Expression, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs/#L31"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueExpression(System.Linq.Expressions.Expression,System.Type,System.Int32)",
+            "id": "CreateReadValueExpression_Expression__Type__Int32_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.yml",
+            "name": "CreateReadValueExpression(Expression, Type, Int32)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueExpression(System.Linq.Expressions.Expression, System.Type, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual Expression CreateReadValueExpression(Expression valueBuffer, Type type, int index)",
+              "content.vb": "Public Overridable Function CreateReadValueExpression(valueBuffer As Expression, type As Type, index As Integer) As Expression",
+              "parameters": [
+                {
+                  "id": "valueBuffer",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "index",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueExpression(System.Linq.Expressions.Expression,System.Type,System.Int32)\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.CreateReadValueExpression(System.Linq.Expressions.Expression, System.Type, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs/#L28"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource.yml",
+    "name": "EntityMaterializerSource",
+    "fullName": "Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+    "syntax": {
+      "content": "public class EntityMaterializerSource : IEntityMaterializerSource",
+      "content.vb": "Public Class EntityMaterializerSource Implements IEntityMaterializerSource"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Metadata.Internal.IEntityMaterializerSource"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource\" name=\"Microsoft.Data.Entity.Metadata.Internal.EntityMaterializerSource\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/EntityMaterializerSource.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

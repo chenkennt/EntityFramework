@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Microsoft.Data.Entity.Infrastructure | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Microsoft.Data.Entity.Infrastructure | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/Annotatable.cs/#L12" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Infrastructure">Namespace Microsoft.Data.Entity.Infrastructure
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.AccessorExtensions.html#Microsoft_Data_Entity_Infrastructure_AccessorExtensions">AccessorExtensions</a></h4>
+                  <section><para>
+Extension methods for <a class="xref" href="Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.html#Microsoft_Data_Entity_Infrastructure_IInfrastructure_1">IInfrastructure&lt;T&gt;</a>.
+</para>
+<para>
+These methods are typically used by database providers (and other extensions). They are generally
+not used in application code.
+</para>
+<para><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.html#Microsoft_Data_Entity_Infrastructure_IInfrastructure_1">IInfrastructure&lt;T&gt;</a> is used to hide properties that are not intended to be used in
+application code but can be used in extension methods written by database providers etc.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.Annotatable.html#Microsoft_Data_Entity_Infrastructure_Annotatable">Annotatable</a></h4>
+                  <section><para>
+Base class for types that support reading and writing annotations.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions.html#Microsoft_Data_Entity_Infrastructure_AnnotatableExtensions">AnnotatableExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.Annotation.html#Microsoft_Data_Entity_Infrastructure_Annotation">Annotation</a></h4>
+                  <section><para>
+An arbitrary piece of metadata that can be stored on an object that implements <a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotatable.html#Microsoft_Data_Entity_Infrastructure_IAnnotatable">IAnnotatable</a>.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></h4>
+                  <section><p>Provides access to database related information and operations for a context.
+Instances of this class are typically obtained from <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Database">Database</a> and it is not designed
+to be directly constructed in your application code.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextAttribute.html#Microsoft_Data_Entity_Infrastructure_DbContextAttribute">DbContextAttribute</a></h4>
+                  <section><p>Identifies the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> that a class belongs to. For example, this attribute is used
+to identify which context a migration applies to.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a></h4>
+                  <section><p>The options to be used by a <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>. You normally override
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> or use a <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a>
+to create instances of this class and it is not designed to be directly constructed in your application code.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_1">DbContextOptions</a>&lt;TContext&gt;</h4>
+                  <section><p>The options to be used by a <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>. You normally override
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> or use a <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder`1.html#Microsoft_Data_Entity_DbContextOptionsBuilder_1">DbContextOptionsBuilder&lt;TContext&gt;</a>
+to create instances of this class and it is not designed to be directly constructed in your application code.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute.html#Microsoft_Data_Entity_Infrastructure_DesignTimeProviderServicesAttribute">DesignTimeProviderServicesAttribute</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.html#Microsoft_Data_Entity_Infrastructure_EntityFrameworkServicesBuilder">EntityFrameworkServicesBuilder</a></h4>
+                  <section><p>Provides Entity Framework specific APIs for configuring services in an <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span>.
+These APIs are usually accessed by calling
+<a class="xref" href="Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_EntityFrameworkServiceCollectionExtensions_AddEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_">AddEntityFramework(IServiceCollection)</a>
+and then chaining API calls on the returned <a class="xref" href="Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.html#Microsoft_Data_Entity_Infrastructure_EntityFrameworkServicesBuilder">EntityFrameworkServicesBuilder</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder.html#Microsoft_Data_Entity_Infrastructure_InMemoryDbContextOptionsBuilder">InMemoryDbContextOptionsBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.ModelSnapshot.html#Microsoft_Data_Entity_Infrastructure_ModelSnapshot">ModelSnapshot</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.ModelSource.html#Microsoft_Data_Entity_Infrastructure_ModelSource">ModelSource</a></h4>
+                  <section><para>
+A base implementation of <a class="xref" href="Microsoft.Data.Entity.Infrastructure.IModelSource.html#Microsoft_Data_Entity_Infrastructure_IModelSource">IModelSource</a> that produces a model based on the <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> properties
+exposed on the context. The model is cached to avoid recreating it every time it is requested.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.html#Microsoft_Data_Entity_Infrastructure_RelationalDbContextOptionsBuilder_2">RelationalDbContextOptionsBuilder</a>&lt;TBuilder, TExtension&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions.html#Microsoft_Data_Entity_Infrastructure_RelationalEntityFrameworkServicesBuilderExtensions">RelationalEntityFrameworkServicesBuilderExtensions</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension.html#Microsoft_Data_Entity_Infrastructure_RelationalOptionsExtension">RelationalOptionsExtension</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.html#Microsoft_Data_Entity_Infrastructure_RelationalSqlExecutor">RelationalSqlExecutor</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1.html#Microsoft_Data_Entity_Infrastructure_SensitiveDataLogger_1">SensitiveDataLogger</a>&lt;T&gt;</h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.html#Microsoft_Data_Entity_Infrastructure_SqliteDbContextOptionsBuilder">SqliteDbContextOptionsBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder.html#Microsoft_Data_Entity_Infrastructure_SqlServerDbContextOptionsBuilder">SqlServerDbContextOptionsBuilder</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.TypedAnnotation.html#Microsoft_Data_Entity_Infrastructure_TypedAnnotation">TypedAnnotation</a></h4>
+                  <section></section>
+                <h3 id="interfaces">Interfaces</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotatable.html#Microsoft_Data_Entity_Infrastructure_IAnnotatable">IAnnotatable</a></h4>
+                  <section><para>
+A class that exposes annotations. Annotations allow for arbitrary metadata to be stored on an object.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.html#Microsoft_Data_Entity_Infrastructure_IDbContextFactory_1">IDbContextFactory</a>&lt;TContext&gt;</h4>
+                  <section><p>A factory for creating derived <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> instances. Implement this interface to enable
+design-time services for context types that do not have a public default constructor. At design-time,
+derived <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> instances can be created in order to enable specific design-time
+experiences such as Migrations. Design-time services will automatically discover implementations of
+this interface that are in the same assembly as the derived context.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IDbContextOptions.html#Microsoft_Data_Entity_Infrastructure_IDbContextOptions">IDbContextOptions</a></h4>
+                  <section><p>The options to be used by a <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>. You normally override
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> or use a <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a>
+to create instances of classes that implement this interface, they are not designed to be directly created
+in your application code.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.html#Microsoft_Data_Entity_Infrastructure_IDbContextOptionsBuilderInfrastructure">IDbContextOptionsBuilderInfrastructure</a></h4>
+                  <section><para>
+Explicitly implemented by <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a> to hide methods that are used by database provider
+extension methods but not intended to be called by application developers.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.html#Microsoft_Data_Entity_Infrastructure_IDbContextOptionsExtension">IDbContextOptionsExtension</a></h4>
+                  <section><para>
+Interface for extensions that are stored in <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_Extensions">Extensions</a>.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.html#Microsoft_Data_Entity_Infrastructure_IInfrastructure_1">IInfrastructure</a>&lt;T&gt;</h4>
+                  <section><para>
+This interface is explicitly implemented by type to hide properties that are not intended to be used in application code
+but can be used in extension methods written by database providers etc.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a></h4>
+                  <section><para>
+Represents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities
+based on their key values.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IModelSource.html#Microsoft_Data_Entity_Infrastructure_IModelSource">IModelSource</a></h4>
+                  <section><para>
+Produces an <a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a> based on a context. This is typically implemented by database providers to ensure that any
+conventions
+and validation specific to their database are used.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger.html#Microsoft_Data_Entity_Infrastructure_ISensitiveDataLogger">ISensitiveDataLogger</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1.html#Microsoft_Data_Entity_Infrastructure_ISensitiveDataLogger_1">ISensitiveDataLogger</a>&lt;T&gt;</h4>
+                  <section></section>
+                <h3 id="enums">Enums</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId.html#Microsoft_Data_Entity_Infrastructure_CoreLoggingEventId">CoreLoggingEventId</a></h4>
+                  <section><p>Values that are used as the eventId when logging messages from this assembly via <span class="xref">Microsoft.Extensions.Logging.ILogger</span>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId.html#Microsoft_Data_Entity_Infrastructure_InMemoryLoggingEventId">InMemoryLoggingEventId</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId.html#Microsoft_Data_Entity_Infrastructure_RelationalLoggingEventId">RelationalLoggingEventId</a></h4>
+                  <section></section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

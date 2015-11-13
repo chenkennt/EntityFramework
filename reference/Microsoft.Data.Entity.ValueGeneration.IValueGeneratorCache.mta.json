@@ -1,0 +1,251 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+    "id": "IValueGeneratorCache",
+    "parent": "Microsoft.Data.Entity.ValueGeneration",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.GetOrAdd(Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType,System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.ValueGeneration.ValueGenerator})",
+            "id": "GetOrAdd_IProperty__IEntityType__Func_IProperty__IEntityType__ValueGenerator__",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+            "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.yml",
+            "name": "GetOrAdd(IProperty, IEntityType, Func<IProperty, IEntityType, ValueGenerator>)",
+            "name.vb": "GetOrAdd(IProperty, IEntityType, Func(Of IProperty, IEntityType, ValueGenerator))",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.GetOrAdd(Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, System.Func<Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.ValueGeneration.ValueGenerator>)",
+            "fullName.vb": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.GetOrAdd(Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, System.Func(Of Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.ValueGeneration.ValueGenerator))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Gets the existing value generator from the cache, or creates a new one if one is not present in\nthe cache.</p>\n",
+            "syntax": {
+              "content": "ValueGenerator GetOrAdd(IProperty property, IEntityType entityType, Func<IProperty, IEntityType, ValueGenerator> factory)",
+              "content.vb": "Function GetOrAdd(property As IProperty, entityType As IEntityType, factory As Func(Of IProperty, IEntityType, ValueGenerator)) As ValueGenerator",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get the value generator for.</p>\n"
+                },
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type that the value generator will be used for. When called on inherited properties on derived entity types,\nthis entity type may be different from the declared entity type on <paramref name=\"property\"></paramref></p>\n"
+                },
+                {
+                  "id": "factory",
+                  "type": {
+                    "uid": "System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.ValueGeneration.ValueGenerator}",
+                    "parent": "System",
+                    "definition": "System.Func`3",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "Func<IProperty, IEntityType, ValueGenerator>",
+                    "name.vb": "Func(Of IProperty, IEntityType, ValueGenerator)",
+                    "fullName": "System.Func<Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.ValueGeneration.ValueGenerator>",
+                    "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.ValueGeneration.ValueGenerator)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "name": "IEntityType",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                        "name": "ValueGenerator",
+                        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "name": "IEntityType",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                        "name": "ValueGenerator",
+                        "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`3\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>, <xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>&gt;",
+                    "id": "Func_IProperty__IEntityType__ValueGenerator_",
+                    "level": 0
+                  },
+                  "description": "<p>Factory to create a new value generator if one is not present in the cache.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                  "parent": "Microsoft.Data.Entity.ValueGeneration",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+                  "name": "ValueGenerator",
+                  "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                  "type": "class",
+                  "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+                  "id": "ValueGenerator",
+                  "level": 0
+                },
+                "description": "<p>The existing or newly created value generator.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.GetOrAdd(Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType,System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.ValueGeneration.ValueGenerator})\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.GetOrAdd(Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, System.Func&lt;Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.ValueGeneration.ValueGenerator&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs/#L32"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.yml",
+    "name": "IValueGeneratorCache",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs",
+      "startLine": 18,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ValueGeneration",
+    "summary": "<para>\nKeeps a cache of value generators for properties.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IValueGeneratorCache",
+      "content.vb": "Public Interface IValueGeneratorCache"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/IValueGeneratorCache.cs/#L19"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,534 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+    "id": "EntityEntryGraphNode",
+    "parent": "Microsoft.Data.Entity.ChangeTracking",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "EntityEntryGraphNode_InternalEntityEntry__INavigation_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "EntityEntryGraphNode(InternalEntityEntry, INavigation)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.EntityEntryGraphNode(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\"></xref> class.</p>\n",
+            "syntax": {
+              "content": "public EntityEntryGraphNode(InternalEntityEntry internalEntityEntry, INavigation inboundNavigation)",
+              "content.vb": "Public Sub New(internalEntityEntry As InternalEntityEntry, inboundNavigation As INavigation)",
+              "parameters": [
+                {
+                  "id": "internalEntityEntry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  },
+                  "description": "<p>The internal entry tracking information about this entity.</p>\n"
+                },
+                {
+                  "id": "inboundNavigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property that is being traversed to reach this node in the graph.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.EntityEntryGraphNode(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L27"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry",
+            "id": "Entry",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "Entry",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets the entry tracking information about this entity.</p>\n",
+            "syntax": {
+                "content": "public virtual EntityEntry Entry { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Entry As EntityEntry",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                    "name": "EntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                    "type": "class",
+                    "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                    "id": "EntityEntry",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation",
+            "id": "InboundNavigation",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "InboundNavigation",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 39,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets the navigation property that is being traversed to reach this node in the graph.</p>\n",
+            "syntax": {
+                "content": "public virtual INavigation InboundNavigation { get; }",
+                "content.vb": "Public Overridable ReadOnly Property InboundNavigation As INavigation",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L40"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#InternalEntityEntry}#Instance",
+            "id": "IInfrastructure_InternalEntityEntry__Instance",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "IInfrastructure<InternalEntityEntry>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>.Instance",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 60,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<para>\nGets the internal entry that is tracking information about this entity.\n</para>\n<para>\nThis property is intended for use by extension methods. It is not intended to be used in\napplication code.\n</para>",
+            "syntax": {
+                "content": "InternalEntityEntry IInfrastructure<InternalEntityEntry>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>.Instance As InternalEntityEntry Implements IInfrastructure(Of InternalEntityEntry).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#InternalEntityEntry}#Instance\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L61"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState",
+            "id": "NodeState",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "NodeState",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 44,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Gets or sets state that will be available to all nodes that are visited after this node.</p>\n",
+            "syntax": {
+                "content": "public virtual object NodeState { get; set; }",
+                "content.vb": "Public Overridable Property NodeState As Object",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L45"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode,Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "CreateNode_EntityEntryGraphNode__InternalEntityEntry__INavigation_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+            "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+            "name": "CreateNode(EntityEntryGraphNode, InternalEntityEntry, INavigation)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode, Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+              "startLine": 71,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking",
+            "summary": "<p>Creates a new node for the entity that is being traversed next in the graph.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntryGraphNode CreateNode(EntityEntryGraphNode currentNode, InternalEntityEntry internalEntityEntry, INavigation reachedVia)",
+              "content.vb": "Public Overridable Function CreateNode(currentNode As EntityEntryGraphNode, internalEntityEntry As InternalEntityEntry, reachedVia As INavigation) As EntityEntryGraphNode",
+              "parameters": [
+                {
+                  "id": "currentNode",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                    "id": "EntityEntryGraphNode",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking",
+                    "children": [
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode,Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry",
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation",
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#InternalEntityEntry}#Instance",
+                      "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState"
+                    ],
+                    "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+                    "name": "EntityEntryGraphNode",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                    "type": "class",
+                    "source": {
+                      "remote": {
+                        "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                        "branch": "dev",
+                        "repo": "https://github.com/chenkennt/EntityFramework.git"
+                      },
+                      "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                      "startLine": 15,
+                      "endLine": 0,
+                      "isExternal": false
+                    },
+                    "assemblies": [
+                      "EntityFramework.Core"
+                    ],
+                    "namespace": "Microsoft.Data.Entity.ChangeTracking",
+                    "summary": "<p>Provides access to change tracking information and operations for a node in a\ngraph of entities that is being traversed.</p>\n",
+                    "syntax": {
+                      "content": "public class EntityEntryGraphNode : IInfrastructure<InternalEntityEntry>",
+                      "content.vb": "Public Class EntityEntryGraphNode Implements IInfrastructure(Of InternalEntityEntry)"
+                    },
+                    "inheritance": [
+                      "System.Object"
+                    ],
+                    "implements": [
+                      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}"
+                    ],
+                    "inheritedMembers": [
+                      "System.Object.ToString",
+                      "System.Object.Equals(System.Object)",
+                      "System.Object.Equals(System.Object,System.Object)",
+                      "System.Object.ReferenceEquals(System.Object,System.Object)",
+                      "System.Object.GetHashCode",
+                      "System.Object.GetType",
+                      "System.Object.MemberwiseClone"
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\"/>",
+                    "level": 1
+                  },
+                  "description": "<p>The node that the entity is being traversed from.</p>\n"
+                },
+                {
+                  "id": "internalEntityEntry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  },
+                  "description": "<p>The internal entry tracking information about the entity being traversed to.</p>\n"
+                },
+                {
+                  "id": "reachedVia",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property that is being traversed to reach the new node.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                  "id": "EntityEntryGraphNode",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "children": [
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode,Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)",
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Entry",
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.InboundNavigation",
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#ChangeTracking#Internal#InternalEntityEntry}#Instance",
+                    "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.NodeState"
+                  ],
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+                  "name": "EntityEntryGraphNode",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+                    "startLine": 15,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.ChangeTracking",
+                  "summary": "<p>Provides access to change tracking information and operations for a node in a\ngraph of entities that is being traversed.</p>\n",
+                  "syntax": {
+                    "content": "public class EntityEntryGraphNode : IInfrastructure<InternalEntityEntry>",
+                    "content.vb": "Public Class EntityEntryGraphNode Implements IInfrastructure(Of InternalEntityEntry)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\"/>",
+                  "level": 1
+                },
+                "description": "<p>The newly created node.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode,Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.CreateNode(Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode, Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L72"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode.yml",
+    "name": "EntityEntryGraphNode",
+    "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs",
+      "startLine": 15,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ChangeTracking",
+    "summary": "<p>Provides access to change tracking information and operations for a node in a\ngraph of entities that is being traversed.</p>\n",
+    "syntax": {
+      "content": "public class EntityEntryGraphNode : IInfrastructure<InternalEntityEntry>",
+      "content.vb": "Public Class EntityEntryGraphNode Implements IInfrastructure(Of InternalEntityEntry)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntryGraphNode\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/EntityEntryGraphNode.cs/#L16"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

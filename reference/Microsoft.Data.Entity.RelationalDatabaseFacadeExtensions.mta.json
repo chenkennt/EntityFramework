@@ -1,0 +1,1199 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+    "id": "RelationalDatabaseFacadeExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.IsolationLevel)",
+            "id": "BeginTransaction_DatabaseFacade__IsolationLevel_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "BeginTransaction(DatabaseFacade, IsolationLevel)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.IsolationLevel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 76,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IDbContextTransaction BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)",
+              "content.vb": "Public Shared Function BeginTransaction(databaseFacade As DatabaseFacade, isolationLevel As IsolationLevel) As IDbContextTransaction",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "isolationLevel",
+                  "type": {
+                    "uid": "System.Data.IsolationLevel",
+                    "parent": "System.Data",
+                    "isExternal": true,
+                    "name": "IsolationLevel",
+                    "fullName": "System.Data.IsolationLevel",
+                    "specName": "<xref href=\"System.Data.IsolationLevel\" name=\"System.Data.IsolationLevel\"/>",
+                    "id": "IsolationLevel",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "IDbContextTransaction",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>",
+                  "id": "IDbContextTransaction",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.IsolationLevel)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.IsolationLevel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L77"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransactionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.IsolationLevel,System.Threading.CancellationToken)",
+            "id": "BeginTransactionAsync_DatabaseFacade__IsolationLevel__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "BeginTransactionAsync(DatabaseFacade, IsolationLevel, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransactionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.IsolationLevel, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 87,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static Task<IDbContextTransaction> BeginTransactionAsync(DatabaseFacade databaseFacade, IsolationLevel isolationLevel, CancellationToken cancellationToken = null)",
+              "content.vb": "Public Shared Function BeginTransactionAsync(databaseFacade As DatabaseFacade, isolationLevel As IsolationLevel, cancellationToken As CancellationToken = Nothing) As Task(Of IDbContextTransaction)",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "isolationLevel",
+                  "type": {
+                    "uid": "System.Data.IsolationLevel",
+                    "parent": "System.Data",
+                    "isExternal": true,
+                    "name": "IsolationLevel",
+                    "fullName": "System.Data.IsolationLevel",
+                    "specName": "<xref href=\"System.Data.IsolationLevel\" name=\"System.Data.IsolationLevel\"/>",
+                    "id": "IsolationLevel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{Microsoft.Data.Entity.Storage.IDbContextTransaction}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "Task<IDbContextTransaction>",
+                  "name.vb": "Task(Of IDbContextTransaction)",
+                  "fullName": "System.Threading.Tasks.Task<Microsoft.Data.Entity.Storage.IDbContextTransaction>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of Microsoft.Data.Entity.Storage.IDbContextTransaction)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>&gt;",
+                  "id": "Task_IDbContextTransaction_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransactionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.IsolationLevel,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.BeginTransactionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.IsolationLevel, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L88"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.CloseConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "id": "CloseConnection_DatabaseFacade_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "CloseConnection(DatabaseFacade)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.CloseConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 73,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static void CloseConnection(DatabaseFacade databaseFacade)",
+              "content.vb": "Public Shared Sub CloseConnection(databaseFacade As DatabaseFacade)",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.CloseConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.CloseConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L74"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.String,System.Object[])",
+            "id": "ExecuteSqlCommand_DatabaseFacade__String__Object___",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "ExecuteSqlCommand(DatabaseFacade, String, Object[])",
+            "name.vb": "ExecuteSqlCommand(DatabaseFacade, String, Object())",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 40,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static void ExecuteSqlCommand(DatabaseFacade databaseFacade, string sql, params object[] parameters)",
+              "content.vb": "Public Shared Sub ExecuteSqlCommand(databaseFacade As DatabaseFacade, sql As String, ParamArray parameters As Object())",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sql",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameters",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.String,System.Object[])\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommand(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L41"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.String,System.Threading.CancellationToken,System.Object[])",
+            "id": "ExecuteSqlCommandAsync_DatabaseFacade__String__CancellationToken__Object___",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "ExecuteSqlCommandAsync(DatabaseFacade, String, CancellationToken, Object[])",
+            "name.vb": "ExecuteSqlCommandAsync(DatabaseFacade, String, CancellationToken, Object())",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Threading.CancellationToken, System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Threading.CancellationToken, System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 50,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static Task ExecuteSqlCommandAsync(DatabaseFacade databaseFacade, string sql, CancellationToken cancellationToken = null, params object[] parameters)",
+              "content.vb": "Public Shared Function ExecuteSqlCommandAsync(databaseFacade As DatabaseFacade, sql As String, cancellationToken As CancellationToken = Nothing, ParamArray parameters As Object()) As Task",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sql",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameters",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.String,System.Threading.CancellationToken,System.Object[])\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.ExecuteSqlCommandAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.String, System.Threading.CancellationToken, System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L51"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "id": "GetCommandTimeout_DatabaseFacade_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "GetCommandTimeout(DatabaseFacade)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 119,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static int ? GetCommandTimeout(DatabaseFacade databaseFacade)",
+              "content.vb": "Public Shared Function GetCommandTimeout(databaseFacade As DatabaseFacade) As Integer?",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Nullable{System.Int32}",
+                  "parent": "System",
+                  "definition": "System.Nullable`1",
+                  "name": "Nullable<Int32>",
+                  "name.vb": "Nullable(Of Int32)",
+                  "fullName": "System.Nullable<System.Int32>",
+                  "fullName.vb": "System.Nullable(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Nullable`1",
+                      "name": "Nullable",
+                      "fullName": "System.Nullable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Nullable`1",
+                      "name": "Nullable",
+                      "fullName": "System.Nullable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Nullable_Int32_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L120"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetDbConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "id": "GetDbConnection_DatabaseFacade_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "GetDbConnection(DatabaseFacade)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetDbConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 62,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static DbConnection GetDbConnection(DatabaseFacade databaseFacade)",
+              "content.vb": "Public Shared Function GetDbConnection(databaseFacade As DatabaseFacade) As DbConnection",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Data.Common.DbConnection",
+                  "parent": "System.Data.Common",
+                  "isExternal": true,
+                  "name": "DbConnection",
+                  "fullName": "System.Data.Common.DbConnection",
+                  "specName": "<xref href=\"System.Data.Common.DbConnection\" name=\"System.Data.Common.DbConnection\"/>",
+                  "id": "DbConnection",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetDbConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.GetDbConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L63"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "id": "Migrate_DatabaseFacade_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "Migrate(DatabaseFacade)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 25,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Applies any pending migrations for the context to the database.</p>\n",
+            "syntax": {
+              "content": "public static void Migrate(DatabaseFacade databaseFacade)",
+              "content.vb": "Public Shared Sub Migrate(databaseFacade As DatabaseFacade)",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  },
+                  "description": "<p>The <xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"></xref> for the context.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.Migrate(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L26"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.MigrateAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Threading.CancellationToken)",
+            "id": "MigrateAsync_DatabaseFacade__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "MigrateAsync(DatabaseFacade, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.MigrateAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Asynchronously applies any pending migrations for the context to the database.</p>\n",
+            "syntax": {
+              "content": "public static Task MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken = null)",
+              "content.vb": "Public Shared Function MigrateAsync(databaseFacade As DatabaseFacade, cancellationToken As CancellationToken = Nothing) As Task",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  },
+                  "description": "<p>The <xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"></xref> for the context.</p>\n"
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  },
+                  "description": "<p>A <xref href=\"System.Threading.CancellationToken\"></xref> to observe while waiting for the task to complete.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                },
+                "description": "<p>A task that represents the asynchronous migration operation.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.MigrateAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.MigrateAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L35"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "id": "OpenConnection_DatabaseFacade_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "OpenConnection(DatabaseFacade)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static void OpenConnection(DatabaseFacade databaseFacade)",
+              "content.vb": "Public Shared Sub OpenConnection(databaseFacade As DatabaseFacade)",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnection(Microsoft.Data.Entity.Infrastructure.DatabaseFacade)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnectionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Threading.CancellationToken)",
+            "id": "OpenConnectionAsync_DatabaseFacade__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "OpenConnectionAsync(DatabaseFacade, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnectionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 68,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static Task OpenConnectionAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken = null)",
+              "content.vb": "Public Shared Function OpenConnectionAsync(databaseFacade As DatabaseFacade, cancellationToken As CancellationToken = Nothing) As Task",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnectionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.OpenConnectionAsync(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L69"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.SetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Nullable{System.Int32})",
+            "id": "SetCommandTimeout_DatabaseFacade__Nullable_Int32__",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "SetCommandTimeout(DatabaseFacade, Nullable<Int32>)",
+            "name.vb": "SetCommandTimeout(DatabaseFacade, Nullable(Of Int32))",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.SetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Nullable<System.Int32>)",
+            "fullName.vb": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.SetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Nullable(Of System.Int32))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 116,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static void SetCommandTimeout(DatabaseFacade databaseFacade, int ? timeout)",
+              "content.vb": "Public Shared Sub SetCommandTimeout(databaseFacade As DatabaseFacade, timeout As Integer?)",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "timeout",
+                  "type": {
+                    "uid": "System.Nullable{System.Int32}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Int32>",
+                    "name.vb": "Nullable(Of Int32)",
+                    "fullName": "System.Nullable<System.Int32>",
+                    "fullName.vb": "System.Nullable(Of System.Int32)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                    "id": "Nullable_Int32_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.SetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Nullable{System.Int32})\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.SetCommandTimeout(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Nullable&lt;System.Int32&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L117"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.UseTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.Common.DbTransaction)",
+            "id": "UseTransaction_DatabaseFacade__DbTransaction_",
+            "parent": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+            "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+            "name": "UseTransaction(DatabaseFacade, DbTransaction)",
+            "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.UseTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.Common.DbTransaction)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+              "startLine": 101,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IDbContextTransaction UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction)",
+              "content.vb": "Public Shared Function UseTransaction(databaseFacade As DatabaseFacade, transaction As DbTransaction) As IDbContextTransaction",
+              "parameters": [
+                {
+                  "id": "databaseFacade",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "transaction",
+                  "type": {
+                    "uid": "System.Data.Common.DbTransaction",
+                    "parent": "System.Data.Common",
+                    "isExternal": true,
+                    "name": "DbTransaction",
+                    "fullName": "System.Data.Common.DbTransaction",
+                    "specName": "<xref href=\"System.Data.Common.DbTransaction\" name=\"System.Data.Common.DbTransaction\"/>",
+                    "id": "DbTransaction",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "IDbContextTransaction",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>",
+                  "id": "IDbContextTransaction",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.UseTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade,System.Data.Common.DbTransaction)\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.UseTransaction(Microsoft.Data.Entity.Infrastructure.DatabaseFacade, System.Data.Common.DbTransaction)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L102"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions.yml",
+    "name": "RelationalDatabaseFacadeExtensions",
+    "fullName": "Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "syntax": {
+      "content": "public class RelationalDatabaseFacadeExtensions",
+      "content.vb": "Public Class RelationalDatabaseFacadeExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions\" name=\"Microsoft.Data.Entity.RelationalDatabaseFacadeExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,1034 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CSharpMigrationOperationGenerator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CSharpMigrationOperationGenerator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator">Class CSharpMigrationOperationGenerator</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">CSharpMigrationOperationGenerator</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Migrations.Design</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Commands.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class CSharpMigrationOperationGenerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L19">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator__ctor_Microsoft_Data_Entity_Migrations_Design_CSharpHelper_">CSharpMigrationOperationGenerator(CSharpHelper)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CSharpMigrationOperationGenerator(CSharpHelper codeHelper)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Design.CSharpHelper.html#Microsoft_Data_Entity_Migrations_Design_CSharpHelper">CSharpHelper</a></td>
+                    <td><em>codeHelper</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L1141">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Annotations_System_Collections_Generic_IEnumerable_Microsoft_Data_Entity_Infrastructure_Annotation__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Annotations(IEnumerable&lt;Annotation&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Annotations(IEnumerable&lt;Annotation&gt; annotations, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Infrastructure.Annotation.html#Microsoft_Data_Entity_Infrastructure_Annotation">Annotation</a>&gt;</td>
+                    <td><em>annotations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L51">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AddColumnOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AddColumnOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AddColumnOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddColumnOperation">AddColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L120">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AddForeignKeyOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AddForeignKeyOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AddForeignKeyOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddForeignKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddForeignKeyOperation">AddForeignKeyOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L193">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AddPrimaryKeyOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AddPrimaryKeyOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AddPrimaryKeyOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddPrimaryKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddPrimaryKeyOperation">AddPrimaryKeyOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L230">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AddUniqueConstraintOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AddUniqueConstraintOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AddUniqueConstraintOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddUniqueConstraintOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddUniqueConstraintOperation">AddUniqueConstraintOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L267">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AlterColumnOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AlterColumnOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AlterColumnOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AlterColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_AlterColumnOperation">AlterColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L335">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AlterSequenceOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(AlterSequenceOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(AlterSequenceOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AlterSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_AlterSequenceOperation">AlterSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L393">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(CreateIndexOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(CreateIndexOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation">CreateIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L454">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_CreateSequenceOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(CreateSequenceOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(CreateSequenceOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateSequenceOperation">CreateSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L530">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_CreateTableOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(CreateTableOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(CreateTableOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateTableOperation">CreateTableOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L732">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropColumnOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropColumnOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropColumnOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropColumnOperation">DropColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L759">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropForeignKeyOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropForeignKeyOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropForeignKeyOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropForeignKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropForeignKeyOperation">DropForeignKeyOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L786">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropIndexOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropIndexOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropIndexOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropIndexOperation">DropIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L813">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropPrimaryKeyOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropPrimaryKeyOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropPrimaryKeyOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropPrimaryKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropPrimaryKeyOperation">DropPrimaryKeyOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L840">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropSchemaOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropSchemaOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropSchemaOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropSchemaOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropSchemaOperation">DropSchemaOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L856">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropSequenceOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropSequenceOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropSequenceOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropSequenceOperation">DropSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L885">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropTableOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropTableOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropTableOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropTableOperation">DropTableOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L914">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropUniqueConstraintOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(DropUniqueConstraintOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(DropUniqueConstraintOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropUniqueConstraintOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropUniqueConstraintOperation">DropUniqueConstraintOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L438">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_EnsureSchemaOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(EnsureSchemaOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(EnsureSchemaOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.EnsureSchemaOperation.html#Microsoft_Data_Entity_Migrations_Operations_EnsureSchemaOperation">EnsureSchemaOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L43">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(MigrationOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(MigrationOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L941">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameColumnOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(RenameColumnOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(RenameColumnOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameColumnOperation">RenameColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L975">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameIndexOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(RenameIndexOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(RenameIndexOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameIndexOperation">RenameIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L1009">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameSequenceOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(RenameSequenceOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(RenameSequenceOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameSequenceOperation">RenameSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L1052">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameTableOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(RenameTableOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(RenameTableOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameTableOperation">RenameTableOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L1095">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RestartSequenceOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(RestartSequenceOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(RestartSequenceOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RestartSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_RestartSequenceOperation">RestartSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L1125">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_SqlOperation_Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(SqlOperation, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(SqlOperation operation, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.SqlOperation.html#Microsoft_Data_Entity_Migrations_Operations_SqlOperation">SqlOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Migrations/Design/CSharpMigrationOperationGenerator.cs/#L26">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_Design_CSharpMigrationOperationGenerator_Generate_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation__Microsoft_Data_Entity_Internal_IndentedStringBuilder_">Generate(String, IReadOnlyList&lt;MigrationOperation&gt;, IndentedStringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Generate(string builderName, IReadOnlyList&lt;MigrationOperation&gt; operations, IndentedStringBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>builderName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IndentedStringBuilder.html#Microsoft_Data_Entity_Internal_IndentedStringBuilder">IndentedStringBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

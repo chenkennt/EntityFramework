@@ -1,0 +1,535 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+    "id": "IForeignKey",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.DeclaringEntityType",
+            "id": "DeclaringEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "DeclaringEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.DeclaringEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 19,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the dependent entity type. This may be different from the type that <xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.Properties\"></xref>\nare defined on when the relationship is defined a derived type in an inheritance hierarchy (since the properties\nmay be defined on a base type).</p>\n",
+            "syntax": {
+                "content": "IEntityType DeclaringEntityType { get; }",
+                "content.vb": "ReadOnly Property DeclaringEntityType As IEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.DeclaringEntityType\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.DeclaringEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L20"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.DeleteBehavior",
+            "id": "DeleteBehavior",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "DeleteBehavior",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.DeleteBehavior",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 63,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating how a delete operation is applied to dependent entities in the relationship when the\nprincipal is deleted or the relationship is severed.</p>\n",
+            "syntax": {
+                "content": "DeleteBehavior DeleteBehavior { get; }",
+                "content.vb": "ReadOnly Property DeleteBehavior As DeleteBehavior",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.DeleteBehavior.yml",
+                    "name": "DeleteBehavior",
+                    "fullName": "Microsoft.Data.Entity.Metadata.DeleteBehavior",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.DeleteBehavior\" name=\"Microsoft.Data.Entity.Metadata.DeleteBehavior\"/>",
+                    "id": "DeleteBehavior",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.DeleteBehavior\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.DeleteBehavior\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L64"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.DependentToPrincipal",
+            "id": "DependentToPrincipal",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "DependentToPrincipal",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.DependentToPrincipal",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 41,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the navigation property on the dependent entity type that points to the principal entity.</p>\n",
+            "syntax": {
+                "content": "INavigation DependentToPrincipal { get; }",
+                "content.vb": "ReadOnly Property DependentToPrincipal As INavigation",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.DependentToPrincipal\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.DependentToPrincipal\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L42"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.IsRequired",
+            "id": "IsRequired",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "IsRequired",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.IsRequired",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating if this relationship is required. If true, the dependent entity must always be\nassigned to a valid principal entity.</p>\n",
+            "syntax": {
+                "content": "bool IsRequired { get; }",
+                "content.vb": "ReadOnly Property IsRequired As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.IsRequired\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.IsRequired\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L58"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.IsUnique",
+            "id": "IsUnique",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "IsUnique",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.IsUnique",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 51,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets a value indicating whether the values assigned to the foreign key properties are unique.</p>\n",
+            "syntax": {
+                "content": "bool IsUnique { get; }",
+                "content.vb": "ReadOnly Property IsUnique As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.IsUnique\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.IsUnique\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L52"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalEntityType",
+            "id": "PrincipalEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "PrincipalEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the principal entity type that this relationship targets. This may be different from the type that\n<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalKey\"></xref> is defined on when the relationship targets a derived type in an inheritance\nhierarchy (since the key is defined on the base type of the hierarchy).</p>\n",
+            "syntax": {
+                "content": "IEntityType PrincipalEntityType { get; }",
+                "content.vb": "ReadOnly Property PrincipalEntityType As IEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalEntityType\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L32"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalKey",
+            "id": "PrincipalKey",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "PrincipalKey",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalKey",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 36,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the primary or alternate key that the relationship targets.</p>\n",
+            "syntax": {
+                "content": "IKey PrincipalKey { get; }",
+                "content.vb": "ReadOnly Property PrincipalKey As IKey",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalKey\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L37"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalToDependent",
+            "id": "PrincipalToDependent",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "PrincipalToDependent",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalToDependent",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the navigation property on the principal entity type that points to the dependent entity.</p>\n",
+            "syntax": {
+                "content": "INavigation PrincipalToDependent { get; }",
+                "content.vb": "ReadOnly Property PrincipalToDependent As INavigation",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalToDependent\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.PrincipalToDependent\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L47"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IForeignKey.Properties",
+            "id": "Properties",
+            "parent": "Microsoft.Data.Entity.Metadata.IForeignKey",
+            "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+            "name": "Properties",
+            "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey.Properties",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+              "startLine": 24,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the foreign key properties in the dependent entity.</p>\n",
+            "syntax": {
+                "content": "IReadOnlyList<IProperty> Properties { get; }",
+                "content.vb": "ReadOnly Property Properties As IReadOnlyList(Of IProperty)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IReadOnlyList<IProperty>",
+                    "name.vb": "IReadOnlyList(Of IProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IProperty_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey.Properties\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey.Properties\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L25"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+    "name": "IForeignKey",
+    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IForeignKey.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<p>Represents a relationship where a foreign key property(s) in a dependent entity type\nreference a corresponding primary or alternate key in a principal entity type.</p>\n",
+    "syntax": {
+      "content": "public interface IForeignKey : IAnnotatable",
+      "content.vb": "Public Interface IForeignKey Inherits IAnnotatable"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.GetAnnotations"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IForeignKey.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

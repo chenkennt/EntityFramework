@@ -1,0 +1,276 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector",
+    "id": "DatabaseProviderSelector",
+    "parent": "Microsoft.Data.Entity.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.#ctor(System.IServiceProvider,Microsoft.Data.Entity.Infrastructure.IDbContextOptions,System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Storage.IDatabaseProvider})",
+            "id": "DatabaseProviderSelector_IServiceProvider__IDbContextOptions__IEnumerable_IDatabaseProvider__",
+            "parent": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector",
+            "href": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.yml",
+            "name": "DatabaseProviderSelector(IServiceProvider, IDbContextOptions, IEnumerable<IDatabaseProvider>)",
+            "name.vb": "DatabaseProviderSelector(IServiceProvider, IDbContextOptions, IEnumerable(Of IDatabaseProvider))",
+            "fullName": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.DatabaseProviderSelector(System.IServiceProvider, Microsoft.Data.Entity.Infrastructure.IDbContextOptions, System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Storage.IDatabaseProvider>)",
+            "fullName.vb": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.DatabaseProviderSelector(System.IServiceProvider, Microsoft.Data.Entity.Infrastructure.IDbContextOptions, System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Storage.IDatabaseProvider))",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+              "startLine": 18,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public DatabaseProviderSelector(IServiceProvider serviceProvider, IDbContextOptions contextOptions, IEnumerable<IDatabaseProvider> providers)",
+              "content.vb": "Public Sub New(serviceProvider As IServiceProvider, contextOptions As IDbContextOptions, providers As IEnumerable(Of IDatabaseProvider))",
+              "parameters": [
+                {
+                  "id": "serviceProvider",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "contextOptions",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions.yml",
+                    "name": "IDbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "type": "interface",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of classes that implement this interface, they are not designed to be directly created\nin your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\"/>",
+                    "id": "IDbContextOptions",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "providers",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Storage.IDatabaseProvider}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml",
+                    "name": "IEnumerable<IDatabaseProvider>",
+                    "name.vb": "IEnumerable(Of IDatabaseProvider)",
+                    "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Storage.IDatabaseProvider>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Storage.IDatabaseProvider)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+                        "name": "IDatabaseProvider",
+                        "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+                        "name": "IDatabaseProvider",
+                        "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProvider\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProvider\"/>&gt;",
+                    "id": "IEnumerable_IDatabaseProvider_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector.#ctor(System.IServiceProvider,Microsoft.Data.Entity.Infrastructure.IDbContextOptions,System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Storage.IDatabaseProvider})\" name=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector.DatabaseProviderSelector(System.IServiceProvider, Microsoft.Data.Entity.Infrastructure.IDbContextOptions, System.Collections.Generic.IEnumerable&lt;Microsoft.Data.Entity.Storage.IDatabaseProvider&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs/#L19"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.SelectServices(Microsoft.Data.Entity.Internal.ServiceProviderSource)",
+            "id": "SelectServices_ServiceProviderSource_",
+            "parent": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector",
+            "href": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.yml",
+            "name": "SelectServices(ServiceProviderSource)",
+            "fullName": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.SelectServices(Microsoft.Data.Entity.Internal.ServiceProviderSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public virtual IDatabaseProviderServices SelectServices(ServiceProviderSource providerSource)",
+              "content.vb": "Public Overridable Function SelectServices(providerSource As ServiceProviderSource) As IDatabaseProviderServices",
+              "parameters": [
+                {
+                  "id": "providerSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Internal.ServiceProviderSource",
+                    "parent": "Microsoft.Data.Entity.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Internal.ServiceProviderSource.yml",
+                    "name": "ServiceProviderSource",
+                    "fullName": "Microsoft.Data.Entity.Internal.ServiceProviderSource",
+                    "type": "enum",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.ServiceProviderSource\" name=\"Microsoft.Data.Entity.Internal.ServiceProviderSource\"/>",
+                    "id": "ServiceProviderSource",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices.yml",
+                  "name": "IDatabaseProviderServices",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\"/>",
+                  "id": "IDatabaseProviderServices",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector.SelectServices(Microsoft.Data.Entity.Internal.ServiceProviderSource)\" name=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector.SelectServices(Microsoft.Data.Entity.Internal.ServiceProviderSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs/#L29"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector.yml",
+    "name": "DatabaseProviderSelector",
+    "fullName": "Microsoft.Data.Entity.Internal.DatabaseProviderSelector",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Internal",
+    "syntax": {
+      "content": "public class DatabaseProviderSelector : IDatabaseProviderSelector",
+      "content.vb": "Public Class DatabaseProviderSelector Implements IDatabaseProviderSelector"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Internal.IDatabaseProviderSelector"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector\" name=\"Microsoft.Data.Entity.Internal.DatabaseProviderSelector\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Internal/DatabaseProviderSelector.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,142 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions",
+    "id": "EntityFrameworkServiceCollectionExtensions",
+    "parent": "Microsoft.Extensions.DependencyInjection",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "id": "AddEntityFramework_IServiceCollection_",
+            "parent": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions",
+            "href": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.yml",
+            "name": "AddEntityFramework(IServiceCollection)",
+            "fullName": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs",
+              "startLine": 70,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Extensions.DependencyInjection",
+            "summary": "<p>Adds the services required by the core of Entity Framework to an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.\nYou use this method when using dependency injection in your application, such as with ASP.NET.\nFor more information on setting up dependency injection, see http://go.microsoft.com/fwlink/?LinkId=526890.</p>\n",
+            "remarks": "<para>\nYou only need to use this functionality when you want Entity Framework to resolve the services it uses\nfrom an external <xref href=\"System.IServiceProvider\"></xref>. If you are not using an external\n<xref href=\"System.IServiceProvider\"></xref> Entity Framework will take care of creating the services it requires.\n</para>\n<para>\nThe database you are using will also define extension methods that can be called on the returned\n<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"></xref> to register the services required by the database.\nFor example, when using EntityFramework.MicrosoftSqlServer you would call\n<c>collection.AddEntityFramework().AddSqlServer()</c>.\n</para>\n<para>\nFor derived contexts to be registered in the <xref href=\"System.IServiceProvider\"></xref> and resolve their services\nfrom the <xref href=\"System.IServiceProvider\"></xref> you must chain a call to the\n<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.AddDbContext``1(System.Action{Microsoft.Data.Entity.DbContextOptionsBuilder})\"></xref> method on the returned\n<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"></xref>.\n</para>",
+            "example": "<code>\npublic void ConfigureServices(IServiceCollection services)\n{\nvar connectionString = \"connection string to database\";\n\n\nservices.AddEntityFramework()\n.AddSqlServer()\n.AddDbContext&lt;MyContext&gt;(options =&gt; options.UseSqlServer(connectionString));\n}\n</code>",
+            "syntax": {
+              "content": "public static EntityFrameworkServicesBuilder AddEntityFramework(IServiceCollection serviceCollection)",
+              "content.vb": "Public Shared Function AddEntityFramework(serviceCollection As IServiceCollection) As EntityFrameworkServicesBuilder",
+              "parameters": [
+                {
+                  "id": "serviceCollection",
+                  "type": {
+                    "uid": "Microsoft.Extensions.DependencyInjection.IServiceCollection",
+                    "parent": "Microsoft.Extensions.DependencyInjection",
+                    "isExternal": true,
+                    "name": "IServiceCollection",
+                    "fullName": "Microsoft.Extensions.DependencyInjection.IServiceCollection",
+                    "specName": "<xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\" name=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"/>",
+                    "id": "IServiceCollection",
+                    "level": 0
+                  },
+                  "description": "<p>The <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref> to add services to.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.yml",
+                  "name": "EntityFrameworkServicesBuilder",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+                  "type": "class",
+                  "summary": "<p>Provides Entity Framework specific APIs for configuring services in an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.\nThese APIs are usually accessed by calling\n<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"></xref>\nand then chaining API calls on the returned <xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"></xref>.</p>\n",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"/>",
+                  "id": "EntityFrameworkServicesBuilder",
+                  "level": 0
+                },
+                "description": "<p>A builder that allows further Entity Framework specific setup of the <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\" name=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs/#L71"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.yml",
+    "name": "EntityFrameworkServiceCollectionExtensions",
+    "fullName": "Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs",
+      "startLine": 28,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Extensions.DependencyInjection",
+    "summary": "<p>Extension methods for setting up Entity Framework related services in an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class EntityFrameworkServiceCollectionExtensions",
+      "content.vb": "Public Class EntityFrameworkServiceCollectionExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions\" name=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/EntityFrameworkServiceCollectionExtensions.cs/#L29"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

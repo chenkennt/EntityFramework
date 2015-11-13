@@ -1,0 +1,2457 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+    "id": "UpdateSqlGenerator",
+    "parent": "Microsoft.Data.Entity.Update",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.#ctor(Microsoft.Data.Entity.Storage.ISqlGenerator)",
+            "id": "UpdateSqlGenerator_ISqlGenerator_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "UpdateSqlGenerator(ISqlGenerator)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.UpdateSqlGenerator(Microsoft.Data.Entity.Storage.ISqlGenerator)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 14,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected UpdateSqlGenerator(ISqlGenerator sqlGenerator)",
+              "content.vb": "Protected Sub New(sqlGenerator As ISqlGenerator)",
+              "parameters": [
+                {
+                  "id": "sqlGenerator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlGenerator.yml",
+                    "name": "ISqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlGenerator\" name=\"Microsoft.Data.Entity.Storage.ISqlGenerator\"/>",
+                    "id": "ISqlGenerator",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.#ctor(Microsoft.Data.Entity.Storage.ISqlGenerator)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.UpdateSqlGenerator(Microsoft.Data.Entity.Storage.ISqlGenerator)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L15"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.SqlGenerator",
+            "id": "SqlGenerator",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "SqlGenerator",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.SqlGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+                "content": "protected virtual ISqlGenerator SqlGenerator { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property SqlGenerator As ISqlGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlGenerator.yml",
+                    "name": "ISqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlGenerator\" name=\"Microsoft.Data.Entity.Storage.ISqlGenerator\"/>",
+                    "id": "ISqlGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.SqlGenerator\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.SqlGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L22"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendBatchHeader(System.Text.StringBuilder)",
+            "id": "AppendBatchHeader_StringBuilder_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendBatchHeader(StringBuilder)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendBatchHeader(System.Text.StringBuilder)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 351,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "public virtual void AppendBatchHeader(StringBuilder commandStringBuilder)",
+              "content.vb": "Public Overridable Sub AppendBatchHeader(commandStringBuilder As StringBuilder)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendBatchHeader(System.Text.StringBuilder)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendBatchHeader(System.Text.StringBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L352"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendDeleteCommand_StringBuilder__String__String__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendDeleteCommand(StringBuilder, String, String, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendDeleteCommand(StringBuilder, String, String, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 123,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendDeleteCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> conditionOperations)",
+              "content.vb": "Protected Overridable Sub AppendDeleteCommand(commandStringBuilder As StringBuilder, name As String, schema As String, conditionOperations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "conditionOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L124"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommandHeader(System.Text.StringBuilder,System.String,System.String)",
+            "id": "AppendDeleteCommandHeader_StringBuilder__String__String_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendDeleteCommandHeader(StringBuilder, String, String)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommandHeader(System.Text.StringBuilder, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 187,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendDeleteCommandHeader(StringBuilder commandStringBuilder, string name, string schema)",
+              "content.vb": "Protected Overridable Sub AppendDeleteCommandHeader(commandStringBuilder As StringBuilder, name As String, schema As String)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommandHeader(System.Text.StringBuilder,System.String,System.String)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteCommandHeader(System.Text.StringBuilder, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L188"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)",
+            "id": "AppendDeleteOperation_StringBuilder__ModificationCommand_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendDeleteOperation(StringBuilder, ModificationCommand)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 76,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "public virtual void AppendDeleteOperation(StringBuilder commandStringBuilder, ModificationCommand command)",
+              "content.vb": "Public Overridable Sub AppendDeleteOperation(commandStringBuilder As StringBuilder, command As ModificationCommand)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "command",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                    "name": "ModificationCommand",
+                    "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>",
+                    "id": "ModificationCommand",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendDeleteOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L77"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendFromClause(System.Text.StringBuilder,System.String,System.String)",
+            "id": "AppendFromClause_StringBuilder__String__String_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendFromClause(StringBuilder, String, String)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendFromClause(System.Text.StringBuilder, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 235,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendFromClause(StringBuilder commandStringBuilder, string name, string schema)",
+              "content.vb": "Protected Overridable Sub AppendFromClause(commandStringBuilder As StringBuilder, name As String, schema As String)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendFromClause(System.Text.StringBuilder,System.String,System.String)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendFromClause(System.Text.StringBuilder, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L236"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendIdentityWhereCondition(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ColumnModification)",
+            "id": "AppendIdentityWhereCondition_StringBuilder__ColumnModification_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendIdentityWhereCondition(StringBuilder, ColumnModification)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendIdentityWhereCondition(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ColumnModification)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 347,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected abstract void AppendIdentityWhereCondition(StringBuilder commandStringBuilder, ColumnModification columnModification)",
+              "content.vb": "Protected MustOverride Sub AppendIdentityWhereCondition(commandStringBuilder As StringBuilder, columnModification As ColumnModification)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "columnModification",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "ColumnModification",
+                    "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>",
+                    "id": "ColumnModification",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendIdentityWhereCondition(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ColumnModification)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendIdentityWhereCondition(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ColumnModification)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L348"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendInsertCommand_StringBuilder__String__String__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendInsertCommand(StringBuilder, String, String, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendInsertCommand(StringBuilder, String, String, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 90,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendInsertCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> writeOperations)",
+              "content.vb": "Protected Overridable Sub AppendInsertCommand(commandStringBuilder As StringBuilder, name As String, schema As String, writeOperations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "writeOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L91"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommandHeader(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendInsertCommandHeader_StringBuilder__String__String__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendInsertCommandHeader(StringBuilder, String, String, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendInsertCommandHeader(StringBuilder, String, String, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 164,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendInsertCommandHeader(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendInsertCommandHeader(commandStringBuilder As StringBuilder, name As String, schema As String, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommandHeader(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L165"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)",
+            "id": "AppendInsertOperation_StringBuilder__ModificationCommand_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendInsertOperation(StringBuilder, ModificationCommand)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "public virtual void AppendInsertOperation(StringBuilder commandStringBuilder, ModificationCommand command)",
+              "content.vb": "Public Overridable Sub AppendInsertOperation(commandStringBuilder As StringBuilder, command As ModificationCommand)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "command",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                    "name": "ModificationCommand",
+                    "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>",
+                    "id": "ModificationCommand",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendInsertOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L24"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendRowsAffectedWhereCondition(System.Text.StringBuilder,System.Int32)",
+            "id": "AppendRowsAffectedWhereCondition_StringBuilder__Int32_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendRowsAffectedWhereCondition(StringBuilder, Int32)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendRowsAffectedWhereCondition(System.Text.StringBuilder, System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 327,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected abstract void AppendRowsAffectedWhereCondition(StringBuilder commandStringBuilder, int expectedRowsAffected)",
+              "content.vb": "Protected MustOverride Sub AppendRowsAffectedWhereCondition(commandStringBuilder As StringBuilder, expectedRowsAffected As Integer)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "expectedRowsAffected",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendRowsAffectedWhereCondition(System.Text.StringBuilder,System.Int32)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendRowsAffectedWhereCondition(System.Text.StringBuilder, System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L328"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendSelectAffectedCommand_StringBuilder__String__String__IReadOnlyList_ColumnModification___IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendSelectAffectedCommand(StringBuilder, String, String, IReadOnlyList<ColumnModification>, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendSelectAffectedCommand(StringBuilder, String, String, IReadOnlyList(Of ColumnModification), IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification), System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 145,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendSelectAffectedCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> readOperations, IReadOnlyList<ColumnModification> conditionOperations)",
+              "content.vb": "Protected Overridable Sub AppendSelectAffectedCommand(commandStringBuilder As StringBuilder, name As String, schema As String, readOperations As IReadOnlyList(Of ColumnModification), conditionOperations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "readOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "conditionOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L146"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCountCommand(System.Text.StringBuilder,System.String,System.String)",
+            "id": "AppendSelectAffectedCountCommand_StringBuilder__String__String_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendSelectAffectedCountCommand(StringBuilder, String, String)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCountCommand(System.Text.StringBuilder, System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 138,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendSelectAffectedCountCommand(StringBuilder commandStringBuilder, string name, string schema)",
+              "content.vb": "Protected Overridable Sub AppendSelectAffectedCountCommand(commandStringBuilder As StringBuilder, name As String, schema As String)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCountCommand(System.Text.StringBuilder,System.String,System.String)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectAffectedCountCommand(System.Text.StringBuilder, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L139"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectCommandHeader(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendSelectCommandHeader_StringBuilder__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendSelectCommandHeader(StringBuilder, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendSelectCommandHeader(StringBuilder, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectCommandHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectCommandHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 223,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendSelectCommandHeader(StringBuilder commandStringBuilder, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendSelectCommandHeader(commandStringBuilder As StringBuilder, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectCommandHeader(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendSelectCommandHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L224"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendUpdateCommand_StringBuilder__String__String__IReadOnlyList_ColumnModification___IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendUpdateCommand(StringBuilder, String, String, IReadOnlyList<ColumnModification>, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendUpdateCommand(StringBuilder, String, String, IReadOnlyList(Of ColumnModification), IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification), System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 106,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendUpdateCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> writeOperations, IReadOnlyList<ColumnModification> conditionOperations)",
+              "content.vb": "Protected Overridable Sub AppendUpdateCommand(commandStringBuilder As StringBuilder, name As String, schema As String, writeOperations As IReadOnlyList(Of ColumnModification), conditionOperations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "writeOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "conditionOperations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommand(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L107"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommandHeader(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendUpdateCommandHeader_StringBuilder__String__String__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendUpdateCommandHeader(StringBuilder, String, String, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendUpdateCommandHeader(StringBuilder, String, String, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 200,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendUpdateCommandHeader(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendUpdateCommandHeader(commandStringBuilder As StringBuilder, name As String, schema As String, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommandHeader(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateCommandHeader(System.Text.StringBuilder, System.String, System.String, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L201"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)",
+            "id": "AppendUpdateOperation_StringBuilder__ModificationCommand_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendUpdateOperation(StringBuilder, ModificationCommand)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "public virtual void AppendUpdateOperation(StringBuilder commandStringBuilder, ModificationCommand command)",
+              "content.vb": "Public Overridable Sub AppendUpdateOperation(commandStringBuilder As StringBuilder, command As ModificationCommand)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "command",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                    "name": "ModificationCommand",
+                    "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>",
+                    "id": "ModificationCommand",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateOperation(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ModificationCommand)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendUpdateOperation(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ModificationCommand)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValues(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendValues_StringBuilder__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendValues(StringBuilder, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendValues(StringBuilder, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValues(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValues(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 260,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendValues(StringBuilder commandStringBuilder, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendValues(commandStringBuilder As StringBuilder, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValues(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValues(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L261"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValuesHeader(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendValuesHeader_StringBuilder__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendValuesHeader(StringBuilder, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendValuesHeader(StringBuilder, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValuesHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValuesHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 249,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendValuesHeader(StringBuilder commandStringBuilder, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendValuesHeader(commandStringBuilder As StringBuilder, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValuesHeader(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendValuesHeader(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L250"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereAffectedClause(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendWhereAffectedClause_StringBuilder__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendWhereAffectedClause(StringBuilder, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendWhereAffectedClause(StringBuilder, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereAffectedClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereAffectedClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 293,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendWhereAffectedClause(StringBuilder commandStringBuilder, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendWhereAffectedClause(commandStringBuilder As StringBuilder, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereAffectedClause(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereAffectedClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L294"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereClause(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})",
+            "id": "AppendWhereClause_StringBuilder__IReadOnlyList_ColumnModification__",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendWhereClause(StringBuilder, IReadOnlyList<ColumnModification>)",
+            "name.vb": "AppendWhereClause(StringBuilder, IReadOnlyList(Of ColumnModification))",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 277,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendWhereClause(StringBuilder commandStringBuilder, IReadOnlyList<ColumnModification> operations)",
+              "content.vb": "Protected Overridable Sub AppendWhereClause(commandStringBuilder As StringBuilder, operations As IReadOnlyList(Of ColumnModification))",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "IReadOnlyList<ColumnModification>",
+                    "name.vb": "IReadOnlyList(Of ColumnModification)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.ColumnModification>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.ColumnModification)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "name": "ColumnModification",
+                        "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ColumnModification.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>&gt;",
+                    "id": "IReadOnlyList_ColumnModification_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereClause(System.Text.StringBuilder,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.ColumnModification})\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereClause(System.Text.StringBuilder, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.ColumnModification&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L278"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereCondition(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ColumnModification,System.Boolean)",
+            "id": "AppendWhereCondition_StringBuilder__ColumnModification__Boolean_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "AppendWhereCondition(StringBuilder, ColumnModification, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereCondition(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ColumnModification, System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 329,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "protected virtual void AppendWhereCondition(StringBuilder commandStringBuilder, ColumnModification columnModification, bool useOriginalValue)",
+              "content.vb": "Protected Overridable Sub AppendWhereCondition(commandStringBuilder As StringBuilder, columnModification As ColumnModification, useOriginalValue As Boolean)",
+              "parameters": [
+                {
+                  "id": "commandStringBuilder",
+                  "type": {
+                    "uid": "System.Text.StringBuilder",
+                    "parent": "System.Text",
+                    "isExternal": true,
+                    "name": "StringBuilder",
+                    "fullName": "System.Text.StringBuilder",
+                    "specName": "<xref href=\"System.Text.StringBuilder\" name=\"System.Text.StringBuilder\"/>",
+                    "id": "StringBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "columnModification",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ColumnModification",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ColumnModification.yml",
+                    "name": "ColumnModification",
+                    "fullName": "Microsoft.Data.Entity.Update.ColumnModification",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ColumnModification\" name=\"Microsoft.Data.Entity.Update.ColumnModification\"/>",
+                    "id": "ColumnModification",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "useOriginalValue",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereCondition(System.Text.StringBuilder,Microsoft.Data.Entity.Update.ColumnModification,System.Boolean)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.AppendWhereCondition(System.Text.StringBuilder, Microsoft.Data.Entity.Update.ColumnModification, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L330"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.GenerateNextSequenceValueOperation(System.String,System.String)",
+            "id": "GenerateNextSequenceValueOperation_String__String_",
+            "parent": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+            "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+            "name": "GenerateNextSequenceValueOperation(String, String)",
+            "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.GenerateNextSequenceValueOperation(System.String, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+              "startLine": 355,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "syntax": {
+              "content": "public virtual string GenerateNextSequenceValueOperation(string name, string schema)",
+              "content.vb": "Public Overridable Function GenerateNextSequenceValueOperation(name As String, schema As String) As String",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "schema",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.GenerateNextSequenceValueOperation(System.String,System.String)\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator.GenerateNextSequenceValueOperation(System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L356"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Update.UpdateSqlGenerator.yml",
+    "name": "UpdateSqlGenerator",
+    "fullName": "Microsoft.Data.Entity.Update.UpdateSqlGenerator",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Update",
+    "syntax": {
+      "content": "public abstract class UpdateSqlGenerator : IUpdateSqlGenerator",
+      "content.vb": "Public MustInherit Class UpdateSqlGenerator Implements IUpdateSqlGenerator"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Update.IUpdateSqlGenerator"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator\" name=\"Microsoft.Data.Entity.Update.UpdateSqlGenerator\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

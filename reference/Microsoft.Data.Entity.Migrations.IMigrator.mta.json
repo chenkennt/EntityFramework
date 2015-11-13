@@ -1,0 +1,256 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Migrations.IMigrator",
+    "id": "IMigrator",
+    "parent": "Microsoft.Data.Entity.Migrations",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.IMigrator.GenerateScript(System.String,System.String,System.Boolean)",
+            "id": "GenerateScript_String__String__Boolean_",
+            "parent": "Microsoft.Data.Entity.Migrations.IMigrator",
+            "href": "Microsoft.Data.Entity.Migrations.IMigrator.yml",
+            "name": "GenerateScript(String, String, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Migrations.IMigrator.GenerateScript(System.String, System.String, System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+              "startLine": 17,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "string GenerateScript(string fromMigration = null, string toMigration = null, bool idempotent = false)",
+              "content.vb": "Function GenerateScript(fromMigration As String = Nothing, toMigration As String = Nothing, idempotent As Boolean = False) As String",
+              "parameters": [
+                {
+                  "id": "fromMigration",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "toMigration",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "idempotent",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrator.GenerateScript(System.String,System.String,System.Boolean)\" name=\"Microsoft.Data.Entity.Migrations.IMigrator.GenerateScript(System.String, System.String, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrator.cs/#L18"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.IMigrator.Migrate(System.String)",
+            "id": "Migrate_String_",
+            "parent": "Microsoft.Data.Entity.Migrations.IMigrator",
+            "href": "Microsoft.Data.Entity.Migrations.IMigrator.yml",
+            "name": "Migrate(String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.IMigrator.Migrate(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+              "startLine": 11,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "void Migrate(string targetMigration = null)",
+              "content.vb": "Sub Migrate(targetMigration As String = Nothing)",
+              "parameters": [
+                {
+                  "id": "targetMigration",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrator.Migrate(System.String)\" name=\"Microsoft.Data.Entity.Migrations.IMigrator.Migrate(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrator.cs/#L12"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.IMigrator.MigrateAsync(System.String,System.Threading.CancellationToken)",
+            "id": "MigrateAsync_String__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Migrations.IMigrator",
+            "href": "Microsoft.Data.Entity.Migrations.IMigrator.yml",
+            "name": "MigrateAsync(String, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Migrations.IMigrator.MigrateAsync(System.String, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "Task MigrateAsync(string targetMigration = null, CancellationToken cancellationToken = null)",
+              "content.vb": "Function MigrateAsync(targetMigration As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task",
+              "parameters": [
+                {
+                  "id": "targetMigration",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrator.MigrateAsync(System.String,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Migrations.IMigrator.MigrateAsync(System.String, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrator.cs/#L14"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Migrations.IMigrator.yml",
+    "name": "IMigrator",
+    "fullName": "Microsoft.Data.Entity.Migrations.IMigrator",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Migrations/IMigrator.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Migrations",
+    "syntax": {
+      "content": "public interface IMigrator",
+      "content.vb": "Public Interface IMigrator"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrator\" name=\"Microsoft.Data.Entity.Migrations.IMigrator\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrator.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

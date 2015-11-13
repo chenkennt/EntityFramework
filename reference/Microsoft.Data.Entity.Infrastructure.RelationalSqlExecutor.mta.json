@@ -1,0 +1,346 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+    "id": "RelationalSqlExecutor",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.#ctor(Microsoft.Data.Entity.Storage.ISqlCommandBuilder,Microsoft.Data.Entity.Storage.IRelationalConnection)",
+            "id": "RelationalSqlExecutor_ISqlCommandBuilder__IRelationalConnection_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.yml",
+            "name": "RelationalSqlExecutor(ISqlCommandBuilder, IRelationalConnection)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.RelationalSqlExecutor(Microsoft.Data.Entity.Storage.ISqlCommandBuilder, Microsoft.Data.Entity.Storage.IRelationalConnection)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+              "startLine": 16,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public RelationalSqlExecutor(ISqlCommandBuilder sqlCommandBuilder, IRelationalConnection connection)",
+              "content.vb": "Public Sub New(sqlCommandBuilder As ISqlCommandBuilder, connection As IRelationalConnection)",
+              "parameters": [
+                {
+                  "id": "sqlCommandBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder.yml",
+                    "name": "ISqlCommandBuilder",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlCommandBuilder\" name=\"Microsoft.Data.Entity.Storage.ISqlCommandBuilder\"/>",
+                    "id": "ISqlCommandBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "connection",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalConnection.yml",
+                    "name": "IRelationalConnection",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalConnection\" name=\"Microsoft.Data.Entity.Storage.IRelationalConnection\"/>",
+                    "id": "IRelationalConnection",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.#ctor(Microsoft.Data.Entity.Storage.ISqlCommandBuilder,Microsoft.Data.Entity.Storage.IRelationalConnection)\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.RelationalSqlExecutor(Microsoft.Data.Entity.Storage.ISqlCommandBuilder, Microsoft.Data.Entity.Storage.IRelationalConnection)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs/#L17"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommand(System.String,System.Object[])",
+            "id": "ExecuteSqlCommand_String__Object___",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.yml",
+            "name": "ExecuteSqlCommand(String, Object[])",
+            "name.vb": "ExecuteSqlCommand(String, Object())",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommand(System.String, System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommand(System.String, System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual void ExecuteSqlCommand(string sql, params object[] parameters)",
+              "content.vb": "Public Overridable Sub ExecuteSqlCommand(sql As String, ParamArray parameters As Object())",
+              "parameters": [
+                {
+                  "id": "sql",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameters",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommand(System.String,System.Object[])\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommand(System.String, System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs/#L28"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommandAsync(System.String,System.Threading.CancellationToken,System.Object[])",
+            "id": "ExecuteSqlCommandAsync_String__CancellationToken__Object___",
+            "parent": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.yml",
+            "name": "ExecuteSqlCommandAsync(String, CancellationToken, Object[])",
+            "name.vb": "ExecuteSqlCommandAsync(String, CancellationToken, Object())",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommandAsync(System.String, System.Threading.CancellationToken, System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommandAsync(System.String, System.Threading.CancellationToken, System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual Task ExecuteSqlCommandAsync(string sql, CancellationToken cancellationToken = null, params object[] parameters)",
+              "content.vb": "Public Overridable Function ExecuteSqlCommandAsync(sql As String, cancellationToken As CancellationToken = Nothing, ParamArray parameters As Object()) As Task",
+              "parameters": [
+                {
+                  "id": "sql",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameters",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommandAsync(System.String,System.Threading.CancellationToken,System.Object[])\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.ExecuteSqlCommandAsync(System.String, System.Threading.CancellationToken, System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs/#L35"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.yml",
+    "name": "RelationalSqlExecutor",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "syntax": {
+      "content": "public class RelationalSqlExecutor",
+      "content.vb": "Public Class RelationalSqlExecutor"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Infrastructure/RelationalSqlExecutor.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

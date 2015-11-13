@@ -1,0 +1,358 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler",
+    "id": "IQueryCompiler",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.Execute``1(System.Linq.Expressions.Expression)",
+            "id": "Execute_TResult__Expression_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler",
+            "href": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.yml",
+            "name": "Execute<TResult>(Expression)",
+            "name.vb": "Execute(Of TResult)(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.Execute<TResult>(System.Linq.Expressions.Expression)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.Execute(Of TResult)(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "TResult Execute<TResult>(Expression query)",
+              "content.vb": "Function Execute(Of TResult)(query As Expression) As TResult",
+              "parameters": [
+                {
+                  "id": "query",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TResult}",
+                  "isExternal": false,
+                  "name": "TResult",
+                  "fullName": "TResult",
+                  "specName": "<xref href=\"{TResult}\" name=\"TResult\"/>",
+                  "id": "TResult",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.Execute``1(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.Execute&lt;TResult&gt;(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs/#L14"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync``1(System.Linq.Expressions.Expression)",
+            "id": "ExecuteAsync_TResult__Expression_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler",
+            "href": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.yml",
+            "name": "ExecuteAsync<TResult>(Expression)",
+            "name.vb": "ExecuteAsync(Of TResult)(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync<TResult>(System.Linq.Expressions.Expression)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync(Of TResult)(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "IAsyncEnumerable<TResult> ExecuteAsync<TResult>(Expression query)",
+              "content.vb": "Function ExecuteAsync(Of TResult)(query As Expression) As IAsyncEnumerable(Of TResult)",
+              "parameters": [
+                {
+                  "id": "query",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IAsyncEnumerable{{TResult}}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IAsyncEnumerable`1",
+                  "name": "IAsyncEnumerable<TResult>",
+                  "name.vb": "IAsyncEnumerable(Of TResult)",
+                  "fullName": "System.Collections.Generic.IAsyncEnumerable<TResult>",
+                  "fullName.vb": "System.Collections.Generic.IAsyncEnumerable(Of TResult)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                      "name": "IAsyncEnumerable",
+                      "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IAsyncEnumerable`1\" name=\"System.Collections.Generic.IAsyncEnumerable\"/>&lt;TResult&gt;",
+                  "id": "IAsyncEnumerable_TResult_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync``1(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync&lt;TResult&gt;(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs/#L16"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync``1(System.Linq.Expressions.Expression,System.Threading.CancellationToken)",
+            "id": "ExecuteAsync_TResult__Expression__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler",
+            "href": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.yml",
+            "name": "ExecuteAsync<TResult>(Expression, CancellationToken)",
+            "name.vb": "ExecuteAsync(Of TResult)(Expression, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync<TResult>(System.Linq.Expressions.Expression, System.Threading.CancellationToken)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync(Of TResult)(System.Linq.Expressions.Expression, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+              "startLine": 17,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "Task<TResult> ExecuteAsync<TResult>(Expression query, CancellationToken cancellationToken)",
+              "content.vb": "Function ExecuteAsync(Of TResult)(query As Expression, cancellationToken As CancellationToken) As Task(Of TResult)",
+              "parameters": [
+                {
+                  "id": "query",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{{TResult}}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<TResult>",
+                  "name.vb": "Task(Of TResult)",
+                  "fullName": "System.Threading.Tasks.Task<TResult>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of TResult)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TResult",
+                      "fullName": "TResult",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;TResult&gt;",
+                  "id": "Task_TResult_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync``1(System.Linq.Expressions.Expression,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler.ExecuteAsync&lt;TResult&gt;(System.Linq.Expressions.Expression, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs/#L18"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler.yml",
+    "name": "IQueryCompiler",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.IQueryCompiler",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public interface IQueryCompiler",
+      "content.vb": "Public Interface IQueryCompiler"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler\" name=\"Microsoft.Data.Entity.Query.Internal.IQueryCompiler\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/IQueryCompiler.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

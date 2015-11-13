@@ -1,0 +1,197 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase",
+    "id": "ExpressionVisitorBase",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.Visit(System.Linq.Expressions.Expression)",
+            "id": "Visit_Expression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.yml",
+            "name": "Visit(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.Visit(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "public override Expression Visit(Expression node)",
+              "content.vb": "Public Overrides Function Visit(node As Expression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.Visit(System.Linq.Expressions.Expression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.Visit(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.Visit(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs/#L14"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.yml",
+    "name": "ExpressionVisitorBase",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs",
+      "startLine": 10,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "syntax": {
+      "content": "public abstract class ExpressionVisitorBase : RelinqExpressionVisitor",
+      "content.vb": "Public MustInherit Class ExpressionVisitorBase Inherits RelinqExpressionVisitor"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "System.Linq.Expressions.ExpressionVisitor",
+        "parent": "System.Linq.Expressions",
+        "isExternal": true,
+        "name": "ExpressionVisitor",
+        "fullName": "System.Linq.Expressions.ExpressionVisitor",
+        "specName": "<xref href=\"System.Linq.Expressions.ExpressionVisitor\" name=\"System.Linq.Expressions.ExpressionVisitor\"/>",
+        "id": "ExpressionVisitor",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "parent": "Remotion.Linq.Parsing",
+        "isExternal": true,
+        "name": "RelinqExpressionVisitor",
+        "fullName": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "specName": "<xref href=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\" name=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\"/>",
+        "id": "RelinqExpressionVisitor",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "inheritedMembers": [
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.AdjustArgumentsForNewExpression(System.Collections.Generic.IList{System.Linq.Expressions.Expression},System.Collections.Generic.IList{System.Reflection.MemberInfo})",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression})",
+      "System.Linq.Expressions.ExpressionVisitor.Visit``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.Func{{T},{T}})",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1({T},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitBlock(System.Linq.Expressions.BlockExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDefault(System.Linq.Expressions.DefaultExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitGoto(System.Linq.Expressions.GotoExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLabelTarget(System.Linq.Expressions.LabelTarget)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLabel(System.Linq.Expressions.LabelExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{{T}})",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLoop(System.Linq.Expressions.LoopExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitIndex(System.Linq.Expressions.IndexExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitNewArray(System.Linq.Expressions.NewArrayExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitSwitchCase(System.Linq.Expressions.SwitchCase)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitSwitch(System.Linq.Expressions.SwitchExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitCatchBlock(System.Linq.Expressions.CatchBlock)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitTry(System.Linq.Expressions.TryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberInit(System.Linq.Expressions.MemberInitExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitListInit(System.Linq.Expressions.ListInitExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitElementInit(System.Linq.Expressions.ElementInit)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(System.Linq.Expressions.MemberBinding)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberListBinding(System.Linq.Expressions.MemberListBinding)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/ExpressionVisitorBase.cs/#L11"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

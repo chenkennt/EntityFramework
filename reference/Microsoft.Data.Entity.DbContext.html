@@ -1,0 +1,1542 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DbContext | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DbContext | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L47" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_DbContext">Class DbContext</h1>
+              <div class="markdown level0 summary"><p>A DbContext instance represents a session with the database and can be used to query and save
+instances of your entities. DbContext is a combination of the Unit Of Work and Repository patterns.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">DbContext</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_DbContext_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class DbContext : IDisposable, IInfrastructure&lt;IServiceProvider&gt;</code></pre>
+              </div>
+              <h5 id="Microsoft_Data_Entity_DbContext_remarks"><strong>Remarks<strong></strong></strong></h5>
+              <div class="markdown level0 remarks"><para>
+Typically you create a class that derives from DbContext and contains <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a>
+properties for each entity in the model. If the <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> properties have a public setter,
+they are automatically initialized when the instance of the derived context is created.
+</para>
+<para>
+Override the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> method to configure the database (and
+other options) to be used for the context. Alternatively, if you would rather perform configuration externally
+instead of inline in your context, you can use <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder`1.html#Microsoft_Data_Entity_DbContextOptionsBuilder_1">DbContextOptionsBuilder&lt;TContext&gt;</a>
+(or <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a>) to externally create an instance of <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_1">DbContextOptions&lt;TContext&gt;</a>
+(or <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a>) and pass it to a base constructor of <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a>.
+</para>
+<para>
+The model is discovered by running a set of conventions over the entity classes found in the
+<a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> properties on the derived context. To further configure the model that
+is discovered by convention, you can override the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnModelCreating_Microsoft_Data_Entity_ModelBuilder_">OnModelCreating(ModelBuilder)</a> method.
+</para></div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L65">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext__ctor">DbContext()</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> class. The
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a>
+method will be called to configure the database (and other options) to be used for this context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected DbContext()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L105">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext__ctor_Microsoft_Data_Entity_Infrastructure_DbContextOptions_">DbContext(DbContextOptions)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> with the specified options. The
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> method will still be called to allow further
+configuration of the options.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DbContext(DbContextOptions options)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The options for this context.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L92">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext__ctor_System_IServiceProvider_">DbContext(IServiceProvider)</h4>
+              <div class="markdown level1 summary"><para>
+Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> class using an <span class="xref">System.IServiceProvider</span>.
+</para>
+<para>
+The service provider must contain all the services required by Entity Framework (and the database being
+used). The Entity Framework services can be registered using the
+<a class="xref" href="Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_EntityFrameworkServiceCollectionExtensions_AddEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_">AddEntityFramework(IServiceCollection)</a> method.
+Most databases also provide an extension method on <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to register the
+services required. For example, the Microsoft SQL Server provider includes an AddSqlServer() method
+to add the required services.
+</para>
+<para>
+If the <span class="xref">System.IServiceProvider</span> has a <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a> or
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_1">DbContextOptions&lt;TContext&gt;</a> registered, then this will be used as the options for
+this context instance. The <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> method
+will still be called to allow further configuration of the options.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DbContext(IServiceProvider serviceProvider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td><em>serviceProvider</em></td>
+                    <td><p>The service provider to be used.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L137">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext__ctor_System_IServiceProvider_Microsoft_Data_Entity_Infrastructure_DbContextOptions_">DbContext(IServiceProvider, DbContextOptions)</h4>
+              <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext">DbContext</a> class using an <span class="xref">System.IServiceProvider</span>
+and the specified options.</p>
+<para>
+The <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a> method will still be called to allow further
+configuration of the options.
+</para><para>
+The service provider must contain all the services required by Entity Framework (and the database being
+used). The Entity Framework services can be registered using the
+<a class="xref" href="Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_EntityFrameworkServiceCollectionExtensions_AddEntityFramework_Microsoft_Extensions_DependencyInjection_IServiceCollection_">AddEntityFramework(IServiceCollection)</a> method.
+Most databases also provide an extension method on <span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span> to register the
+services required. For example, the Microsoft SQL Server provider includes an AddSqlServer() method
+to add the required services.
+</para><para>
+If the <span class="xref">System.IServiceProvider</span> has a <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a> or
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions_1">DbContextOptions&lt;TContext&gt;</a>
+registered, then this will be used as the options for this context instance. The
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a>
+method will still be called to allow further configuration of the options.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DbContext(IServiceProvider serviceProvider, DbContextOptions options)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td><em>serviceProvider</em></td>
+                    <td><p>The service provider to be used.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a></td>
+                    <td><em>options</em></td>
+                    <td><p>The options for this context.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L814">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_ChangeTracker">ChangeTracker</h4>
+              <div class="markdown level1 summary"><p>Provides access to information and operations for entity instances this context is tracking.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ChangeTracker ChangeTracker { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker">ChangeTracker</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L809">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Database">Database</h4>
+              <div class="markdown level1 summary"><p>Provides access to database related information and operations for this context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DatabaseFacade Database { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L240">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Microsoft_Data_Entity_Infrastructure_IInfrastructure_System_IServiceProvider__Instance">IInfrastructure&lt;IServiceProvider&gt;.Instance</h4>
+              <div class="markdown level1 summary"><para>
+Gets the scoped <span class="xref">System.IServiceProvider</span> being used to resolve services.
+</para>
+<para>
+This property is intended for use by extension methods that need to make use of services
+not directly exposed in the public API surface.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IServiceProvider IInfrastructure&lt;IServiceProvider&gt;.Instance { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L819">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Model">Model</h4>
+              <div class="markdown level1 summary"><p>The metadata about the shape of entities, the relationships between them, and how they map to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IModel Model { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L594">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Add_System_Object_Microsoft_Data_Entity_GraphBehavior_">Add(Object, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state such that it will
+be inserted into the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry Add(object entity, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to add.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L490">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Add__1___0_Microsoft_Data_Entity_GraphBehavior_">Add&lt;TEntity&gt;(TEntity, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state such that it will
+be inserted into the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry&lt;TEntity&gt; Add&lt;TEntity&gt;(TEntity entity, GraphBehavior behavior = 0)where TEntity : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TEntity</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to add.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry</a>&lt;TEntity&gt;</td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L741">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_AddRange_System_Collections_Generic_IEnumerable_System_Object__Microsoft_Data_Entity_GraphBehavior_">AddRange(IEnumerable&lt;Object&gt;, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state such that they will
+be inserted into the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddRange(IEnumerable&lt;object&gt; entities, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to add.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entities or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L684">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_AddRange_System_Object___">AddRange(Object[])</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state such that they will
+be inserted into the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AddRange(params object[] entities)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to add.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L611">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Attach_System_Object_Microsoft_Data_Entity_GraphBehavior_">Attach(Object, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a> state such that no
+operation will be performed when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry Attach(object entity, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to attach.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L508">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Attach__1___0_Microsoft_Data_Entity_GraphBehavior_">Attach&lt;TEntity&gt;(TEntity, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a> state such that no
+operation will be performed when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry&lt;TEntity&gt; Attach&lt;TEntity&gt;(TEntity entity, GraphBehavior behavior = 0)where TEntity : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TEntity</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to attach.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry</a>&lt;TEntity&gt;</td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L754">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_AttachRange_System_Collections_Generic_IEnumerable_System_Object__Microsoft_Data_Entity_GraphBehavior_">AttachRange(IEnumerable&lt;Object&gt;, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a> state such that no
+operation will be performed when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AttachRange(IEnumerable&lt;object&gt; entities, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to attach.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entities or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L692">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_AttachRange_System_Object___">AttachRange(Object[])</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a> state such that no
+operation will be performed when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AttachRange(params object[] entities)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to attach.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L414">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"><p>Releases the allocated resources for this context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+              </div>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L452">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Entry_System_Object_">Entry(Object)</h4>
+              <div class="markdown level1 summary"><para>
+Gets an <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the given entity. The entry provides
+access to change tracking information and operations for the entity.
+</para>
+<para>
+This method may be called on an entity that is not tracked. You can then
+set the <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_State">State</a> property on the returned entry
+to have the context begin tracking the entity in the specified state.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry Entry(object entity)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to get the entry for.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>The entry for the given entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L427">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Entry__1___0_">Entry&lt;TEntity&gt;(TEntity)</h4>
+              <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a> for the given entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry&lt;TEntity&gt; Entry&lt;TEntity&gt;(TEntity entity)where TEntity : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TEntity</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to get the entry for.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry</a>&lt;TEntity&gt;</td>
+                    <td><p>The entry for the given entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L258">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</h4>
+              <div class="markdown level1 summary"><para>
+Override this method to configure the database (and other options) to be used for this context.
+This method is called for each instance of the context that is created.
+</para>
+<para>
+In situations where an instance of <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DbContextOptions.html#Microsoft_Data_Entity_Infrastructure_DbContextOptions">DbContextOptions</a> may or may not have been passed
+to the constructor, you can use <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder_IsConfigured">IsConfigured</a> to determine if
+the options have already been set, and skip some or all of the logic in
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_OnConfiguring_Microsoft_Data_Entity_DbContextOptionsBuilder_">OnConfiguring(DbContextOptionsBuilder)</a>.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void OnConfiguring(DbContextOptionsBuilder optionsBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder">DbContextOptionsBuilder</a></td>
+                    <td><em>optionsBuilder</em></td>
+                    <td><p>A builder used to create or modify options for this context. Databases (and other extensions)
+typically define extension methods on this object that allow you to configure the context.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L276">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_OnModelCreating_Microsoft_Data_Entity_ModelBuilder_">OnModelCreating(ModelBuilder)</h4>
+              <div class="markdown level1 summary"><p>Override this method to further configure the model that was discovered by convention from the entity types
+exposed in <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> properties on your derived context. The resulting model may be cached
+and re-used for subsequent instances of your derived context.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_OnModelCreating_Microsoft_Data_Entity_ModelBuilder__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If a model is explicitly set on the options for this context (via <a class="xref" href="Microsoft.Data.Entity.DbContextOptionsBuilder.html#Microsoft_Data_Entity_DbContextOptionsBuilder_UseModel_Microsoft_Data_Entity_Metadata_IModel_">UseModel(IModel)</a>)
+then this method will not be run.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td><p>The builder being used to construct the model for this context. Databases (and other extensions) typically
+define extension methods on this object that allow you to configure aspects of the model that are specific
+to a given database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L654">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Remove_System_Object_">Remove(Object)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a> state such that it will
+be removed from the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_Remove_System_Object__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the entity is already tracked in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state then the context will
+stop tracking the entity (rather than marking it as <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a>) since the
+entity was previously added to the context and does not exist in the database.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry Remove(object entity)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L554">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Remove__1___0_">Remove&lt;TEntity&gt;(TEntity)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a> state such that it will
+be removed from the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_Remove__1___0__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If the entity is already tracked in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state then the context will
+stop tracking the entity (rather than marking it as <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a>) since the
+entity was previously added to the context and does not exist in the database.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry&lt;TEntity&gt; Remove&lt;TEntity&gt;(TEntity entity)where TEntity : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TEntity</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry</a>&lt;TEntity&gt;</td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L789">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_RemoveRange_System_Collections_Generic_IEnumerable_System_Object__">RemoveRange(IEnumerable&lt;Object&gt;)</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a> state such that they will
+be removed from the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_RemoveRange_System_Collections_Generic_IEnumerable_System_Object___remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If any of the entities are already tracked in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state then the context will
+stop tracking those entities (rather than marking them as <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a>) since those
+entities were previously added to the context and do not exist in the database.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveRange(IEnumerable&lt;object&gt; entities)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L720">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_RemoveRange_System_Object___">RemoveRange(Object[])</h4>
+              <div class="markdown level1 summary"><p>Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a> state such that they will
+be removed from the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_RemoveRange_System_Object____remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>If any of the entities are already tracked in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Added">Added</a> state then the context will
+stop tracking those entities (rather than marking them as <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Deleted">Deleted</a>) since those
+entities were previously added to the context and do not exist in the database.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveRange(params object[] entities)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to remove.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L291">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</h4>
+              <div class="markdown level1 summary"><p>Saves all changes made in this context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_SaveChanges_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method will automatically call <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_DetectChanges">DetectChanges()</a> to discover any
+changes to entity instances before saving to the underlying database. This can be disabled via
+<a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AutoDetectChangesEnabled">AutoDetectChangesEnabled</a>.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int SaveChanges()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>The number of state entries written to the database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L309">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_SaveChanges_System_Boolean_">SaveChanges(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Saves all changes made in this context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_SaveChanges_System_Boolean__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This method will automatically call <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_DetectChanges">DetectChanges()</a> to discover any
+changes to entity instances before saving to the underlying database. This can be disabled via
+<a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AutoDetectChangesEnabled">AutoDetectChangesEnabled</a>.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int SaveChanges(bool acceptAllChangesOnSuccess)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>acceptAllChangesOnSuccess</em></td>
+                    <td><p>Indicates whether <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AcceptAllChanges">AcceptAllChanges()</a> is called after the changes have
+been sent successfully to the database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>The number of state entries written to the database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L385">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken_">SaveChangesAsync(Boolean, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Asynchronously saves all changes made in this context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><para>
+This method will automatically call <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_DetectChanges">DetectChanges()</a> to discover any
+changes to entity instances before saving to the underlying database. This can be disabled via
+<a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AutoDetectChangesEnabled">AutoDetectChangesEnabled</a>.
+</para>
+<para>
+Multiple active operations on the same context instance are not supported.  Use &#39;await&#39; to ensure
+that any asynchronous operations have completed before calling another method on this context.
+</para></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>acceptAllChangesOnSuccess</em></td>
+                    <td><p>Indicates whether <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AcceptAllChanges">AcceptAllChanges()</a> is called after the changes have
+been sent successfully to the database.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td><p>A task that represents the asynchronous save operation. The task result contains the
+number of state entries written to the database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L359">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_SaveChangesAsync_System_Threading_CancellationToken_">SaveChangesAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Asynchronously saves all changes made in this context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_DbContext_SaveChangesAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><para>
+This method will automatically call <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_DetectChanges">DetectChanges()</a> to discover any
+changes to entity instances before saving to the underlying database. This can be disabled via
+<a class="xref" href="Microsoft.Data.Entity.ChangeTracking.ChangeTracker.html#Microsoft_Data_Entity_ChangeTracking_ChangeTracker_AutoDetectChangesEnabled">AutoDetectChangesEnabled</a>.
+</para>
+<para>
+Multiple active operations on the same context instance are not supported.  Use &#39;await&#39; to ensure
+that any asynchronous operations have completed before calling another method on this context.
+</para></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; SaveChangesAsync(CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td><p>A task that represents the asynchronous save operation. The task result contains the
+number of state entries written to the database.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L826">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Set__1">Set&lt;TEntity&gt;()</h4>
+              <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet&lt;TEntity&gt;</a> that can be used to query and save instances of <typeparamref name="TEntity"></typeparamref>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DbSet&lt;TEntity&gt; Set&lt;TEntity&gt;()where TEntity : class</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.DbSet`1.html#Microsoft_Data_Entity_DbSet_1">DbSet</a>&lt;TEntity&gt;</td>
+                    <td><p>A set for the given entity type.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L635">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Update_System_Object_Microsoft_Data_Entity_GraphBehavior_">Update(Object, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><para>
+Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Modified">Modified</a> state such that it will
+be updated in the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.
+</para>
+<para>
+All properties of the entity will be marked as modified. To mark only some properties as modified, use
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Attach_System_Object_Microsoft_Data_Entity_GraphBehavior_">Attach(Object, GraphBehavior)</a> to begin tracking the entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a>
+state and then use the returned <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> to mark the desired properties as modified.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry Update(object entity, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to update.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L534">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_Update__1___0_Microsoft_Data_Entity_GraphBehavior_">Update&lt;TEntity&gt;(TEntity, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><para>
+Begins tracking the given entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Modified">Modified</a> state such that it will
+be updated in the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.
+</para>
+<para>
+All properties of the entity will be marked as modified. To mark only some properties as modified, use
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Attach__1___0_Microsoft_Data_Entity_GraphBehavior_">Attach&lt;TEntity&gt;(TEntity, GraphBehavior)</a> to begin tracking the entity in the
+<a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a> state and then use the returned <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a>
+to mark the desired properties as modified.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual EntityEntry&lt;TEntity&gt; Update&lt;TEntity&gt;(TEntity entity, GraphBehavior behavior = 0)where TEntity : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TEntity</span></td>
+                    <td><em>entity</em></td>
+                    <td><p>The entity to update.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entity or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry</a>&lt;TEntity&gt;</td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry_1">EntityEntry&lt;TEntity&gt;</a> for the entity. The entry provides
+access to change tracking information and operations for the entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L774">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_UpdateRange_System_Collections_Generic_IEnumerable_System_Object__Microsoft_Data_Entity_GraphBehavior_">UpdateRange(IEnumerable&lt;Object&gt;, GraphBehavior)</h4>
+              <div class="markdown level1 summary"><para>
+Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Modified">Modified</a> state such that they will
+be updated in the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.
+</para>
+<para>
+All properties of the entities will be marked as modified. To mark only some properties as modified, use
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Attach_System_Object_Microsoft_Data_Entity_GraphBehavior_">Attach(Object, GraphBehavior)</a> to begin tracking each entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a>
+state and then use the returned <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> to mark the desired properties as modified.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void UpdateRange(IEnumerable&lt;object&gt; entities, GraphBehavior behavior = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to update.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.GraphBehavior.html#Microsoft_Data_Entity_GraphBehavior">GraphBehavior</a></td>
+                    <td><em>behavior</em></td>
+                    <td><p>Determines whether the context will bring in only the given entities or also other related entities.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L707">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_DbContext_UpdateRange_System_Object___">UpdateRange(Object[])</h4>
+              <div class="markdown level1 summary"><para>
+Begins tracking the given entities in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Modified">Modified</a> state such that they will
+be updated in the database when <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> is called.
+</para>
+<para>
+All properties of the entities will be marked as modified. To mark only some properties as modified, use
+<a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_Attach_System_Object_Microsoft_Data_Entity_GraphBehavior_">Attach(Object, GraphBehavior)</a> to begin tracking each entity in the <a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState_Unchanged">Unchanged</a>
+state and then use the returned <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> to mark the desired properties as modified.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void UpdateRange(params object[] entities)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>entities</em></td>
+                    <td><p>The entities to update.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RelationalScaffoldingModelFactory | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RelationalScaffoldingModelFactory | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L23" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory">Class RelationalScaffoldingModelFactory</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">RelationalScaffoldingModelFactory</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Scaffolding</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.Design.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class RelationalScaffoldingModelFactory : IScaffoldingModelFactory</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L36">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Microsoft_Data_Entity_Storage_IRelationalTypeMapper_Microsoft_Data_Entity_Scaffolding_IDatabaseModelFactory_">RelationalScaffoldingModelFactory(ILoggerFactory, IRelationalTypeMapper, IDatabaseModelFactory)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RelationalScaffoldingModelFactory(ILoggerFactory loggerFactory, IRelationalTypeMapper typeMapper, IDatabaseModelFactory databaseModelFactory)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
+                    <td><em>loggerFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalTypeMapper.html#Microsoft_Data_Entity_Storage_IRelationalTypeMapper">IRelationalTypeMapper</a></td>
+                    <td><em>typeMapper</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.IDatabaseModelFactory.html#Microsoft_Data_Entity_Scaffolding_IDatabaseModelFactory">IDatabaseModelFactory</a></td>
+                    <td><em>databaseModelFactory</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L28">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_Logger">Logger</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ILogger Logger { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L50">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_Create_System_String_Microsoft_Data_Entity_Scaffolding_TableSelectionSet_">Create(String, TableSelectionSet)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual IModel Create(string connectionString, TableSelectionSet tableSelectionSet)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>connectionString</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.TableSelectionSet.html#Microsoft_Data_Entity_Scaffolding_TableSelectionSet">TableSelectionSet</a></td>
+                    <td><em>tableSelectionSet</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L59">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_CreateFromDatabaseModel_Microsoft_Data_Entity_Scaffolding_Metadata_DatabaseModel_">CreateFromDatabaseModel(DatabaseModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IModel CreateFromDatabaseModel(DatabaseModel databaseModel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.DatabaseModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_DatabaseModel">DatabaseModel</a></td>
+                    <td><em>databaseModel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L83">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_GetEntityTypeName_Microsoft_Data_Entity_Scaffolding_Metadata_TableModel_">GetEntityTypeName(TableModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string GetEntityTypeName(TableModel table)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.TableModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_TableModel">TableModel</a></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L86">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_GetPropertyName_Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel_">GetPropertyName(ColumnModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string GetPropertyName(ColumnModel column)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.ColumnModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel">ColumnModel</a></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L175">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitColumn_Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel_">VisitColumn(EntityTypeBuilder, ColumnModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual PropertyBuilder VisitColumn(EntityTypeBuilder builder, ColumnModel column)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.ColumnModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel">ColumnModel</a></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder">PropertyBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L162">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitColumns_Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_System_Collections_Generic_IList_Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel__">VisitColumns(EntityTypeBuilder, IList&lt;ColumnModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual EntityTypeBuilder VisitColumns(EntityTypeBuilder builder, IList&lt;ColumnModel&gt; columns)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.ColumnModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_ColumnModel">ColumnModel</a>&gt;</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L106">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitDatabaseModel_Microsoft_Data_Entity_ModelBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_DatabaseModel_">VisitDatabaseModel(ModelBuilder, DatabaseModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ModelBuilder VisitDatabaseModel(ModelBuilder modelBuilder, DatabaseModel databaseModel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.DatabaseModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_DatabaseModel">DatabaseModel</a></td>
+                    <td><em>databaseModel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L322">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitForeignKey_Microsoft_Data_Entity_ModelBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_ForeignKeyModel_">VisitForeignKey(ModelBuilder, ForeignKeyModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IMutableForeignKey VisitForeignKey(ModelBuilder modelBuilder, ForeignKeyModel foreignKey)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.ForeignKeyModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_ForeignKeyModel">ForeignKeyModel</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IMutableForeignKey.html#Microsoft_Data_Entity_Metadata_IMutableForeignKey">IMutableForeignKey</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L309">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitForeignKeys_Microsoft_Data_Entity_ModelBuilder_System_Collections_Generic_IList_Microsoft_Data_Entity_Scaffolding_Metadata_ForeignKeyModel__">VisitForeignKeys(ModelBuilder, IList&lt;ForeignKeyModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ModelBuilder VisitForeignKeys(ModelBuilder modelBuilder, IList&lt;ForeignKeyModel&gt; foreignKeys)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.ForeignKeyModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_ForeignKeyModel">ForeignKeyModel</a>&gt;</td>
+                    <td><em>foreignKeys</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L276">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitIndex_Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_IndexModel_">VisitIndex(EntityTypeBuilder, IndexModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IndexBuilder VisitIndex(EntityTypeBuilder builder, IndexModel index)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.IndexModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_IndexModel">IndexModel</a></td>
+                    <td><em>index</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.html#Microsoft_Data_Entity_Metadata_Builders_IndexBuilder">IndexBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L258">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitIndexes_Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_System_Collections_Generic_IList_Microsoft_Data_Entity_Scaffolding_Metadata_IndexModel__">VisitIndexes(EntityTypeBuilder, IList&lt;IndexModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual EntityTypeBuilder VisitIndexes(EntityTypeBuilder builder, IList&lt;IndexModel&gt; indexes)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.IndexModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_IndexModel">IndexModel</a>&gt;</td>
+                    <td><em>indexes</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L401">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitNavigationProperties_Microsoft_Data_Entity_ModelBuilder_">VisitNavigationProperties(ModelBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void VisitNavigationProperties(ModelBuilder modelBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L229">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitPrimaryKey_Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_TableModel_">VisitPrimaryKey(EntityTypeBuilder, TableModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual KeyBuilder VisitPrimaryKey(EntityTypeBuilder builder, TableModel table)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.TableModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_TableModel">TableModel</a></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.KeyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_KeyBuilder">KeyBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L132">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitTable_Microsoft_Data_Entity_ModelBuilder_Microsoft_Data_Entity_Scaffolding_Metadata_TableModel_">VisitTable(ModelBuilder, TableModel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual EntityTypeBuilder VisitTable(ModelBuilder modelBuilder, TableModel table)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.TableModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_TableModel">TableModel</a></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.html#Microsoft_Data_Entity_Metadata_Builders_EntityTypeBuilder">EntityTypeBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational.Design/RelationalScaffoldingModelFactory.cs/#L119">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Scaffolding_RelationalScaffoldingModelFactory_VisitTables_Microsoft_Data_Entity_ModelBuilder_System_Collections_Generic_IList_Microsoft_Data_Entity_Scaffolding_Metadata_TableModel__">VisitTables(ModelBuilder, IList&lt;TableModel&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ModelBuilder VisitTables(ModelBuilder modelBuilder, IList&lt;TableModel&gt; tables)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td><em>modelBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Scaffolding.Metadata.TableModel.html#Microsoft_Data_Entity_Scaffolding_Metadata_TableModel">TableModel</a>&gt;</td>
+                    <td><em>tables</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

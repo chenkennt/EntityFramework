@@ -1,0 +1,355 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+    "id": "InMemoryTransactionManager",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.#ctor(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)",
+            "id": "InMemoryTransactionManager_IDbContextOptions_",
+            "parent": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+            "name": "InMemoryTransactionManager(IDbContextOptions)",
+            "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.InMemoryTransactionManager(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+              "startLine": 19,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.InMemory"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public InMemoryTransactionManager(IDbContextOptions options)",
+              "content.vb": "Public Sub New(options As IDbContextOptions)",
+              "parameters": [
+                {
+                  "id": "options",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions.yml",
+                    "name": "IDbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "type": "interface",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of classes that implement this interface, they are not designed to be directly created\nin your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\"/>",
+                    "id": "IDbContextOptions",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.#ctor(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.InMemoryTransactionManager(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L20"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransaction",
+            "id": "BeginTransaction__",
+            "parent": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+            "name": "BeginTransaction()",
+            "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransaction()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.InMemory"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual IDbContextTransaction BeginTransaction()",
+              "content.vb": "Public Overridable Function BeginTransaction As IDbContextTransaction",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "IDbContextTransaction",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>",
+                  "id": "IDbContextTransaction",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransaction\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransaction()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L31"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransactionAsync(System.Threading.CancellationToken)",
+            "id": "BeginTransactionAsync_CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+            "name": "BeginTransactionAsync(CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransactionAsync(System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+              "startLine": 39,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.InMemory"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual Task<IDbContextTransaction> BeginTransactionAsync(CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function BeginTransactionAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IDbContextTransaction)",
+              "parameters": [
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{Microsoft.Data.Entity.Storage.IDbContextTransaction}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "Task<IDbContextTransaction>",
+                  "name.vb": "Task(Of IDbContextTransaction)",
+                  "fullName": "System.Threading.Tasks.Task<Microsoft.Data.Entity.Storage.IDbContextTransaction>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of Microsoft.Data.Entity.Storage.IDbContextTransaction)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>&gt;",
+                  "id": "Task_IDbContextTransaction_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransactionAsync(System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.BeginTransactionAsync(System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L40"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.CommitTransaction",
+            "id": "CommitTransaction__",
+            "parent": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+            "name": "CommitTransaction()",
+            "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.CommitTransaction()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.InMemory"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual void CommitTransaction()",
+              "content.vb": "Public Overridable Sub CommitTransaction"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.CommitTransaction\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.CommitTransaction()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.RollbackTransaction",
+            "id": "RollbackTransaction__",
+            "parent": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+            "name": "RollbackTransaction()",
+            "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.RollbackTransaction()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.InMemory"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual void RollbackTransaction()",
+              "content.vb": "Public Overridable Sub RollbackTransaction"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.RollbackTransaction\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager.RollbackTransaction()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L58"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager.yml",
+    "name": "InMemoryTransactionManager",
+    "fullName": "Microsoft.Data.Entity.Storage.InMemoryTransactionManager",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs",
+      "startLine": 15,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.InMemory"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "syntax": {
+      "content": "public class InMemoryTransactionManager : IDbContextTransactionManager",
+      "content.vb": "Public Class InMemoryTransactionManager Implements IDbContextTransactionManager"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IDbContextTransactionManager"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager\" name=\"Microsoft.Data.Entity.Storage.InMemoryTransactionManager\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.InMemory/Storage/InMemoryTransactionManager.cs/#L16"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

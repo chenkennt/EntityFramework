@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ReferenceNavigationBuilder | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ReferenceNavigationBuilder | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L23" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder">Class ReferenceNavigationBuilder</h1>
+              <div class="markdown level0 summary"><para>
+Provides a simple API for configuring a relationship where configuration began on
+an end of the relationship with a reference that points to an instance of another entity type.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">ReferenceNavigationBuilder</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata.Builders</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ReferenceNavigationBuilder : IInfrastructure&lt;InternalRelationshipBuilder&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L40">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder__ctor_Microsoft_Data_Entity_Metadata_Internal_EntityType_System_String_Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder_">ReferenceNavigationBuilder(EntityType, String, InternalRelationshipBuilder)</h4>
+              <div class="markdown level1 summary"><para>
+Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder">ReferenceNavigationBuilder</a> class.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ReferenceNavigationBuilder(EntityType relatedEntityType, string navigationName, InternalRelationshipBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td><em>relatedEntityType</em></td>
+                    <td><p>The entity type that the reference points to.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>navigationName</em></td>
+                    <td><p>The name of the reference navigation property on the end of the relationship that configuration began
+on. If null, there is no navigation property on this end of the relationship.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td><p>The internal builder being used to configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L69">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_Microsoft_Data_Entity_Infrastructure_IInfrastructure_Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder__Instance">IInfrastructure&lt;InternalRelationshipBuilder&gt;.Instance</h4>
+              <div class="markdown level1 summary"><p>Gets the internal builder being used to configure the relationship.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">InternalRelationshipBuilder IInfrastructure&lt;InternalRelationshipBuilder&gt;.Instance { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L59">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_ReferenceName">ReferenceName</h4>
+              <div class="markdown level1 summary"><p>Gets the name of the reference navigation property on the end of the relationship that
+configuration began on. If null, there is no navigation property on this end of the relationship.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual string ReferenceName { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L64">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_RelatedEntityType">RelatedEntityType</h4>
+              <div class="markdown level1 summary"><p>Gets the entity type that the reference points to.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual EntityType RelatedEntityType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.EntityType.html#Microsoft_Data_Entity_Metadata_Internal_EntityType">EntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L79">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithMany_System_String_">WithMany(String)</h4>
+              <div class="markdown level1 summary"><p>Configures this as a one-to-many relationship.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ReferenceCollectionBuilder WithMany(string collection = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>collection</em></td>
+                    <td><p>The name of the collection navigation property on the other end of this relationship.
+If null, there is no navigation property on the other end of the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceCollectionBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceCollectionBuilder">ReferenceCollectionBuilder</a></td>
+                    <td><p>An object to further configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L90">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithManyBuilder_System_String_">WithManyBuilder(String)</h4>
+              <div class="markdown level1 summary"><p>Returns the internal builder to be used when <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithMany_System_String_">WithMany(String)</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual InternalRelationshipBuilder WithManyBuilder(string collection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>collection</em></td>
+                    <td><p>The name of the collection navigation property on the other end of this relationship.
+If null, there is no navigation property on the other end of the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td><p>The internal builder to further configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L103">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithOne_System_String_">WithOne(String)</h4>
+              <div class="markdown level1 summary"><p>Configures this as a one-to-one relationship.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ReferenceReferenceBuilder WithOne(string reference = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>reference</em></td>
+                    <td><p>The name of the reference navigation property on the other end of this relationship.
+If null, there is no navigation property on the other end of the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceReferenceBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceReferenceBuilder">ReferenceReferenceBuilder</a></td>
+                    <td><p>An object to further configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/ReferenceNavigationBuilder.cs/#L114">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithOneBuilder_System_String_">WithOneBuilder(String)</h4>
+              <div class="markdown level1 summary"><p>Returns the internal builder to be used when <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder.html#Microsoft_Data_Entity_Metadata_Builders_ReferenceNavigationBuilder_WithOne_System_String_">WithOne(String)</a> is called.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual InternalRelationshipBuilder WithOneBuilder(string reference)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>reference</em></td>
+                    <td><p>The name of the reference navigation property on the other end of this relationship.
+If null, there is no navigation property on the other end of the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalRelationshipBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalRelationshipBuilder">InternalRelationshipBuilder</a></td>
+                    <td><p>The internal builder to further configure the relationship.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

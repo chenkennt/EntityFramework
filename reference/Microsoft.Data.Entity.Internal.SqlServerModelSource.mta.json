@@ -1,0 +1,161 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Internal.SqlServerModelSource",
+    "id": "SqlServerModelSource",
+    "parent": "Microsoft.Data.Entity.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Internal.SqlServerModelSource.#ctor(Microsoft.Data.Entity.Internal.IDbSetFinder,Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder)",
+            "id": "SqlServerModelSource_IDbSetFinder__ICoreConventionSetBuilder_",
+            "parent": "Microsoft.Data.Entity.Internal.SqlServerModelSource",
+            "href": "Microsoft.Data.Entity.Internal.SqlServerModelSource.yml",
+            "name": "SqlServerModelSource(IDbSetFinder, ICoreConventionSetBuilder)",
+            "fullName": "Microsoft.Data.Entity.Internal.SqlServerModelSource.SqlServerModelSource(Microsoft.Data.Entity.Internal.IDbSetFinder, Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs",
+              "startLine": 11,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.MicrosoftSqlServer"
+            ],
+            "namespace": "Microsoft.Data.Entity.Internal",
+            "syntax": {
+              "content": "public SqlServerModelSource(IDbSetFinder setFinder, ICoreConventionSetBuilder coreConventionSetBuilder)",
+              "content.vb": "Public Sub New(setFinder As IDbSetFinder, coreConventionSetBuilder As ICoreConventionSetBuilder)",
+              "parameters": [
+                {
+                  "id": "setFinder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Internal.IDbSetFinder",
+                    "parent": "Microsoft.Data.Entity.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Internal.IDbSetFinder.yml",
+                    "name": "IDbSetFinder",
+                    "fullName": "Microsoft.Data.Entity.Internal.IDbSetFinder",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.IDbSetFinder\" name=\"Microsoft.Data.Entity.Internal.IDbSetFinder\"/>",
+                    "id": "IDbSetFinder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "coreConventionSetBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder.yml",
+                    "name": "ICoreConventionSetBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder\"/>",
+                    "id": "ICoreConventionSetBuilder",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Internal.SqlServerModelSource.#ctor(Microsoft.Data.Entity.Internal.IDbSetFinder,Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder)\" name=\"Microsoft.Data.Entity.Internal.SqlServerModelSource.SqlServerModelSource(Microsoft.Data.Entity.Internal.IDbSetFinder, Microsoft.Data.Entity.Metadata.Conventions.Internal.ICoreConventionSetBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs/#L12"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Internal.SqlServerModelSource.yml",
+    "name": "SqlServerModelSource",
+    "fullName": "Microsoft.Data.Entity.Internal.SqlServerModelSource",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.MicrosoftSqlServer"
+    ],
+    "namespace": "Microsoft.Data.Entity.Internal",
+    "syntax": {
+      "content": "public class SqlServerModelSource : ModelSource, IModelSource",
+      "content.vb": "Public Class SqlServerModelSource Inherits ModelSource Implements IModelSource"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Infrastructure.ModelSource",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Infrastructure.ModelSource.yml",
+        "name": "ModelSource",
+        "fullName": "Microsoft.Data.Entity.Infrastructure.ModelSource",
+        "type": "class",
+        "summary": "<para>\nA base implementation of <xref href=\"Microsoft.Data.Entity.Infrastructure.IModelSource\"></xref> that produces a model based on the <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> properties\nexposed on the context. The model is cached to avoid recreating it every time it is requested.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ModelSource\" name=\"Microsoft.Data.Entity.Infrastructure.ModelSource\"/>",
+        "id": "ModelSource",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IModelSource"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.SetFinder",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.CoreConventionSetBuilder",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.GetModel(Microsoft.Data.Entity.DbContext,Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder,Microsoft.Data.Entity.Internal.IModelValidator)",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.CreateModel(Microsoft.Data.Entity.DbContext,Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder,Microsoft.Data.Entity.Internal.IModelValidator)",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.CreateConventionSet(Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder)",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.FindSets(Microsoft.Data.Entity.ModelBuilder,Microsoft.Data.Entity.DbContext)",
+      "Microsoft.Data.Entity.Infrastructure.ModelSource.OnModelCreating(Microsoft.Data.Entity.DbContext,Microsoft.Data.Entity.ModelBuilder)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.SqlServerModelSource\" name=\"Microsoft.Data.Entity.Internal.SqlServerModelSource\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Internal/SqlServerModelSource.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,208 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IMutableKey",
+    "id": "IMutableKey",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableKey.DeclaringEntityType",
+            "id": "DeclaringEntityType",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+            "name": "DeclaringEntityType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey.DeclaringEntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the entity type the key is defined on. This may be different from the type that <xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey.Properties\"></xref>\nare defined on when the key is defined a derived type in an inheritance hierarchy (since the properties\nmay be defined on a base type).</p>\n",
+            "syntax": {
+                "content": "IMutableEntityType DeclaringEntityType { get; }",
+                "content.vb": "ReadOnly Property DeclaringEntityType As IMutableEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                    "name": "IMutableEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                    "id": "IMutableEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey.DeclaringEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey.DeclaringEntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableKey.cs/#L29"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IMutableKey.Properties",
+            "id": "Properties",
+            "parent": "Microsoft.Data.Entity.Metadata.IMutableKey",
+            "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+            "name": "Properties",
+            "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey.Properties",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the properties that make up the key.</p>\n",
+            "syntax": {
+                "content": "IReadOnlyList<IMutableProperty> Properties { get; }",
+                "content.vb": "ReadOnly Property Properties As IReadOnlyList(Of IMutableProperty)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IMutableProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml",
+                    "name": "IReadOnlyList<IMutableProperty>",
+                    "name.vb": "IReadOnlyList(Of IMutableProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IMutableProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IMutableProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "name": "IMutableProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IMutableProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IMutableProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IMutableProperty\" name=\"Microsoft.Data.Entity.Metadata.IMutableProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IMutableProperty_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey.Properties\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey.Properties\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableKey.cs/#L22"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IMutableKey.yml",
+    "name": "IMutableKey",
+    "fullName": "Microsoft.Data.Entity.Metadata.IMutableKey",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IMutableKey.cs",
+      "startLine": 16,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<para>\nRepresents a primary or alternate key on an entity.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IKey\"></xref> represents a ready-only view of the same metadata.\n</para>",
+    "syntax": {
+      "content": "public interface IMutableKey : IMutableAnnotatable, IKey, IAnnotatable",
+      "content.vb": "Public Interface IMutableKey Inherits IMutableAnnotatable, IKey"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.GetAnnotations",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.AddAnnotation(System.String,System.Object)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Metadata.IMutableAnnotatable.RemoveAnnotation(System.String)"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableKey\" name=\"Microsoft.Data.Entity.Metadata.IMutableKey\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IMutableKey.cs/#L17"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

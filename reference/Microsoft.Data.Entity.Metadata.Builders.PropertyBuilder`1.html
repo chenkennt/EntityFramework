@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PropertyBuilder&lt;TProperty&gt; | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PropertyBuilder&lt;TProperty&gt; | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L18" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">Class PropertyBuilder&lt;TProperty&gt;</h1>
+              <div class="markdown level0 summary"><para>
+Provides a simple API for configuring a <a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.Property.html#Microsoft_Data_Entity_Metadata_Internal_Property">Property</a>.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder">PropertyBuilder</a></div>
+                  <div class="level2"><span class="xref">PropertyBuilder&lt;TProperty&gt;</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Metadata.Builders</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class PropertyBuilder&lt;TProperty&gt; : PropertyBuilder, IInfrastructure&lt;IMutableModel&gt;, IInfrastructure&lt;InternalPropertyBuilder&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L31">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1__ctor_Microsoft_Data_Entity_Metadata_Internal_InternalPropertyBuilder_">PropertyBuilder(InternalPropertyBuilder)</h4>
+              <div class="markdown level1 summary"><para>
+Initializes a new instance of the <a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder">PropertyBuilder</a> class to configure a given
+property.
+</para>
+<para>
+Instances of this class are returned from methods when using the <a class="xref" href="Microsoft.Data.Entity.ModelBuilder.html#Microsoft_Data_Entity_ModelBuilder">ModelBuilder</a> API
+and it is not designed to be directly constructed in your application code.
+</para></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PropertyBuilder(InternalPropertyBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.InternalPropertyBuilder.html#Microsoft_Data_Entity_Metadata_Internal_InternalPropertyBuilder">InternalPropertyBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td><p>Internal builder for the property being configured.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L43">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_HasAnnotation_System_String_System_Object_">HasAnnotation(String, Object)</h4>
+              <div class="markdown level1 summary"><p>Adds or updates an annotation on the property. If an annotation with the key specified in</p>
+<p><paramref name="annotation"></paramref> already exists it&#39;s value will be updated.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; HasAnnotation(string annotation, object value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>annotation</em></td>
+                    <td><p>The key of the annotation to be added or updated.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The value to be stored in the annotation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L62">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_HasMaxLength_System_Int32_">HasMaxLength(Int32)</h4>
+              <div class="markdown level1 summary"><p>Configures the maximum length of data that can be stored in this property.
+Maximum length can only be set on array properties (including <span class="xref">System.String</span> properties).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; HasMaxLength(int maxLength)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>maxLength</em></td>
+                    <td><p>The maximum length of data allowed in the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L74">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_IsConcurrencyToken_System_Boolean_">IsConcurrencyToken(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Configures whether this property should be used as a concurrency token. When a property is configured
+as a concurrency token the value in the database will be checked when an instance of this entity type
+is updated or deleted during <a class="xref" href="Microsoft.Data.Entity.DbContext.html#Microsoft_Data_Entity_DbContext_SaveChanges">SaveChanges()</a> to ensure it has not changed since
+the instance was retrieved from the database. If it has changed, an exception will be thrown and the
+changes will not be applied to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; IsConcurrencyToken(bool concurrencyToken = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>concurrencyToken</em></td>
+                    <td><p>A value indicating whether this property is a concurrency token.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L53">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_IsRequired_System_Boolean_">IsRequired(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Configures whether this property must have a value assigned or whether null is a valid value.
+A property can only be configured as non-required if it is based on a CLR type that can be
+assigned null.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; IsRequired(bool required = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>required</em></td>
+                    <td><p>A value indicating whether the property is required.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L86">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_ValueGeneratedNever">ValueGeneratedNever()</h4>
+              <div class="markdown level1 summary"><p>Configures a property to never have a value generated when an instance of this
+entity type is saved.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_ValueGeneratedNever_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Note that temporary values may still be generated for use internally before a
+new entity is saved.</p>
+</div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; ValueGeneratedNever()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L96">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_ValueGeneratedOnAdd">ValueGeneratedOnAdd()</h4>
+              <div class="markdown level1 summary"><p>Configures a property to have a value generated only when saving a new entity, unless a non-null,
+non-temporary value has been set, in which case the set value will be saved instead. The value
+may be generated by a client-side value generator or may be generated by the database as part
+of saving the entity.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; ValueGeneratedOnAdd()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/PropertyBuilder`.cs/#L105">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1_ValueGeneratedOnAddOrUpdate">ValueGeneratedOnAddOrUpdate()</h4>
+              <div class="markdown level1 summary"><p>Configures a property to have a value generated only when saving a new or existing entity, unless
+a non-null, non-temporary value has been set for a new entity, or the existing property value has
+been modified for an existing entity, in which case the set value will be saved instead.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual PropertyBuilder&lt;TProperty&gt; ValueGeneratedOnAddOrUpdate()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.html#Microsoft_Data_Entity_Metadata_Builders_PropertyBuilder_1">PropertyBuilder&lt;TProperty&gt;</a></td>
+                    <td><p>The same builder instance so that multiple configuration calls can be chained.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,2420 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+    "id": "EntityTypeBuilder_TEntity_",
+    "parent": "Microsoft.Data.Entity.Metadata.Builders",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "id": "EntityTypeBuilder_InternalEntityTypeBuilder_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "EntityTypeBuilder(InternalEntityTypeBuilder)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.EntityTypeBuilder(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).EntityTypeBuilder(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 37,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<para>\nInitializes a new instance of the <xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\"></xref> class to configure a\ngiven entity type.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+            "syntax": {
+              "content": "public EntityTypeBuilder(InternalEntityTypeBuilder builder)",
+              "content.vb": "Public Sub New(builder As InternalEntityTypeBuilder)",
+              "parameters": [
+                {
+                  "id": "builder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.yml",
+                    "name": "InternalEntityTypeBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder\"/>",
+                    "id": "InternalEntityTypeBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>Internal typeBuilder for the entity type being configured.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.EntityTypeBuilder(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L38"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+            "id": "HasAlternateKey_Expression_Func_TEntity__Object___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasAlternateKey(Expression<Func<TEntity, Object>>)",
+            "name.vb": "HasAlternateKey(Expression(Of Func(Of TEntity, Object)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasAlternateKey(System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasAlternateKey(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 120,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Creates a new unique constraint for this entity type if one does not already exist over the specified\nproperties.</p>\n",
+            "syntax": {
+              "content": "public virtual KeyBuilder HasAlternateKey(Expression<Func<TEntity, object>> keyExpression)",
+              "content.vb": "Public Overridable Function HasAlternateKey(keyExpression As Expression(Of Func(Of TEntity, Object))) As KeyBuilder",
+              "parameters": [
+                {
+                  "id": "keyExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, Object>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, Object))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;&gt;",
+                    "id": "Expression_Func_TEntity__Object__",
+                    "level": 0
+                  },
+                  "description": "<para>\nA lambda expression representing the unique constraint property(s) (<c>blog =&gt; blog.Url</c>).\n</para>\n<para>\nIf the unique constraint is made up of multiple properties then specify an anonymous type including\nthe properties (<c>post =&gt; new { post.Title, post.BlogId }</c>).\n</para>"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder.yml",
+                  "name": "KeyBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.KeyBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.KeyBuilder\"/>",
+                  "id": "KeyBuilder",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the unique constraint.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasAlternateKey(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L121"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+            "id": "HasAnnotation_String__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasAnnotation(String, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasAnnotation(System.String, System.Object)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasAnnotation(System.String, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 59,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Adds or updates an annotation on the entity type. If an annotation with the key specified in</p>\n<p><paramref name=\"annotation\"></paramref> already exists it&#39;s value will be updated.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> HasAnnotation(string annotation, object value)",
+              "content.vb": "Public Overridable Function HasAnnotation(annotation As String, value As Object) As EntityTypeBuilder(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "annotation",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation to be added or updated.</p>\n"
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The value to be stored in the annotation.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                },
+                "description": "<p>The same typeBuilder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasAnnotation(System.String, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L60"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+            "id": "HasBaseType_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasBaseType(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasBaseType(System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasBaseType(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 67,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Sets the base type of this entity in an inheritance hierarchy.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> HasBaseType(string name)",
+              "content.vb": "Public Overridable Function HasBaseType(name As String) As EntityTypeBuilder(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the base type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                },
+                "description": "<p>The same builder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasBaseType(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L68"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+            "id": "HasBaseType_Type_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasBaseType(Type)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasBaseType(System.Type)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasBaseType(System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 75,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Sets the base type of this entity in an inheritance hierarchy.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> HasBaseType(Type entityType)",
+              "content.vb": "Public Overridable Function HasBaseType(entityType As Type) As EntityTypeBuilder(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  },
+                  "description": "<p>The base type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                },
+                "description": "<p>The same builder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasBaseType(System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L76"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+            "id": "HasBaseType_TBaseType___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasBaseType<TBaseType>()",
+            "name.vb": "HasBaseType(Of TBaseType)()",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasBaseType<TBaseType>()",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasBaseType(Of TBaseType)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 83,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Sets the base type of this entity in an inheritance hierarchy.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> HasBaseType<TBaseType>()",
+              "content.vb": "Public Overridable Function HasBaseType(Of TBaseType) As EntityTypeBuilder(Of TEntity)",
+              "typeParameters": [
+                {
+                  "id": "TBaseType",
+                  "description": "The base type."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                },
+                "description": "<p>The same builder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasBaseType&lt;TBaseType&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L84"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+            "id": "HasIndex_Expression_Func_TEntity__Object___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasIndex(Expression<Func<TEntity, Object>>)",
+            "name.vb": "HasIndex(Expression(Of Func(Of TEntity, Object)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasIndex(System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasIndex(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 191,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures an index on the specified properties. If there is an existing index on the given\nset of properties, then the existing index will be returned for configuration.</p>\n",
+            "syntax": {
+              "content": "public virtual IndexBuilder HasIndex(Expression<Func<TEntity, object>> indexExpression)",
+              "content.vb": "Public Overridable Function HasIndex(indexExpression As Expression(Of Func(Of TEntity, Object))) As IndexBuilder",
+              "parameters": [
+                {
+                  "id": "indexExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, Object>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, Object))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;&gt;",
+                    "id": "Expression_Func_TEntity__Object__",
+                    "level": 0
+                  },
+                  "description": "<para>\nA lambda expression representing the property(s) to be included in the index\n(<c>blog =&gt; blog.Url</c>).\n</para>\n<para>\nIf the index is made up of multiple properties then specify an anonymous type including the\nproperties (<c>post =&gt; new { post.Title, post.BlogId }</c>).\n</para>"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+                  "name": "IndexBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\"/>",
+                  "id": "IndexBuilder",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the index.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasIndex(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L192"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+            "id": "HasKey_Expression_Func_TEntity__Object___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasKey(Expression<Func<TEntity, Object>>)",
+            "name.vb": "HasKey(Expression(Of Func(Of TEntity, Object)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasKey(System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasKey(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 99,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Sets the properties that make up the primary key for this entity type.</p>\n",
+            "syntax": {
+              "content": "public virtual KeyBuilder HasKey(Expression<Func<TEntity, object>> keyExpression)",
+              "content.vb": "Public Overridable Function HasKey(keyExpression As Expression(Of Func(Of TEntity, Object))) As KeyBuilder",
+              "parameters": [
+                {
+                  "id": "keyExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, Object>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, Object))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;&gt;",
+                    "id": "Expression_Func_TEntity__Object__",
+                    "level": 0
+                  },
+                  "description": "<para>\nA lambda expression representing the primary key property(s) (<c>blog =&gt; blog.Url</c>).\n</para>\n<para>\nIf the primary key is made up of multiple properties then specify an anonymous type including the\nproperties (<c>post =&gt; new { post.Title, post.BlogId }</c>).\n</para>"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder.yml",
+                  "name": "KeyBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.KeyBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.KeyBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.KeyBuilder\"/>",
+                  "id": "KeyBuilder",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the primary key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasKey(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L100"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+            "id": "HasMany_TRelatedEntity__Expression_Func_TEntity__IEnumerable_TRelatedEntity____",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasMany<TRelatedEntity>(Expression<Func<TEntity, IEnumerable<TRelatedEntity>>>)",
+            "name.vb": "HasMany(Of TRelatedEntity)(Expression(Of Func(Of TEntity, IEnumerable(Of TRelatedEntity))))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasMany<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, System.Collections.Generic.IEnumerable<TRelatedEntity>>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasMany(Of TRelatedEntity)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Collections.Generic.IEnumerable(Of TRelatedEntity))))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 254,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<para>\nConfigures a relationship where this entity type has a collection that contains\ninstances of the other type in the relationship.\n</para>\n<para>\nAfter calling this method, you should chain a call to\n<xref href=\"Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2.WithOne(System.Linq.Expressions.Expression{System.Func{`1,`0}})\"></xref>\nto fully configure the relationship. Calling just this method without the chained call will not\nproduce a valid relationship.\n</para>",
+            "syntax": {
+              "content": "public virtual CollectionNavigationBuilder<TEntity, TRelatedEntity> HasMany<TRelatedEntity>(Expression<Func<TEntity, IEnumerable<TRelatedEntity>>> collection = null)where TRelatedEntity : class",
+              "content.vb": "Public Overridable Function HasMany(Of TRelatedEntity As Class)(collection As Expression(Of Func(Of TEntity, IEnumerable(Of TRelatedEntity))) = Nothing) As CollectionNavigationBuilder(Of TEntity, TRelatedEntity)",
+              "parameters": [
+                {
+                  "id": "collection",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},System.Collections.Generic.IEnumerable{{TRelatedEntity}}}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, IEnumerable<TRelatedEntity>>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, IEnumerable(Of TRelatedEntity)))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, System.Collections.Generic.IEnumerable<TRelatedEntity>>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Collections.Generic.IEnumerable(Of TRelatedEntity)))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;TRelatedEntity&gt;&gt;&gt;",
+                    "id": "Expression_Func_TEntity__IEnumerable_TRelatedEntity___",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the collection navigation property on this entity type that represents\nthe relationship (<c>blog =&gt; blog.Posts</c>). If no property is specified, the relationship will be\nconfigured without a navigation property on this end.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TRelatedEntity",
+                  "description": "The entity type that this relationship targets."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder{{TEntity},{TRelatedEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2.yml",
+                  "name": "CollectionNavigationBuilder<TEntity, TRelatedEntity>",
+                  "name.vb": "CollectionNavigationBuilder(Of TEntity, TRelatedEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder<TEntity, TRelatedEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder(Of TEntity, TRelatedEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2",
+                      "name": "CollectionNavigationBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2",
+                      "name": "CollectionNavigationBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.CollectionNavigationBuilder\"/>&lt;TEntity, TRelatedEntity&gt;",
+                  "id": "CollectionNavigationBuilder_TEntity__TRelatedEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasMany&lt;TRelatedEntity&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Collections.Generic.IEnumerable&lt;TRelatedEntity&gt;&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L255"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+            "id": "HasOne_TRelatedEntity__Expression_Func_TEntity__TRelatedEntity___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "HasOne<TRelatedEntity>(Expression<Func<TEntity, TRelatedEntity>>)",
+            "name.vb": "HasOne(Of TRelatedEntity)(Expression(Of Func(Of TEntity, TRelatedEntity)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).HasOne(Of TRelatedEntity)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TRelatedEntity)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 221,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<para>\nConfigures a relationship where this entity type has a reference that points\nto a single instance of the other type in the relationship.\n</para>\n<para>\nAfter calling this method, you should chain a call to\n<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithMany(System.Linq.Expressions.Expression{System.Func{`1,System.Collections.Generic.IEnumerable{`0}}})\"></xref>\nor\n<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.WithOne(System.Linq.Expressions.Expression{System.Func{`1,`0}})\"></xref>\nto fully configure the relationship. Calling just this method without the chained call will not\nproduce a valid relationship.\n</para>",
+            "syntax": {
+              "content": "public virtual ReferenceNavigationBuilder<TEntity, TRelatedEntity> HasOne<TRelatedEntity>(Expression<Func<TEntity, TRelatedEntity>> reference = null)where TRelatedEntity : class",
+              "content.vb": "Public Overridable Function HasOne(Of TRelatedEntity As Class)(reference As Expression(Of Func(Of TEntity, TRelatedEntity)) = Nothing) As ReferenceNavigationBuilder(Of TEntity, TRelatedEntity)",
+              "parameters": [
+                {
+                  "id": "reference",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},{TRelatedEntity}}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, TRelatedEntity>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, TRelatedEntity))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TRelatedEntity))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TRelatedEntity",
+                        "fullName": "TRelatedEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, TRelatedEntity&gt;&gt;",
+                    "id": "Expression_Func_TEntity__TRelatedEntity__",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the reference navigation property on this entity type that represents\nthe relationship (<c>post =&gt; post.Blog</c>). If no property is specified, the relationship will be\nconfigured without a navigation property on this end.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TRelatedEntity",
+                  "description": "The entity type that this relationship targets."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder{{TEntity},{TRelatedEntity}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml",
+                  "name": "ReferenceNavigationBuilder<TEntity, TRelatedEntity>",
+                  "name.vb": "ReferenceNavigationBuilder(Of TEntity, TRelatedEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder(Of TEntity, TRelatedEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+                      "name": "ReferenceNavigationBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2",
+                      "name": "ReferenceNavigationBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ", ",
+                      "fullName": ", ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TRelatedEntity",
+                      "fullName": "TRelatedEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder`2\" name=\"Microsoft.Data.Entity.Metadata.Builders.ReferenceNavigationBuilder\"/>&lt;TEntity, TRelatedEntity&gt;",
+                  "id": "ReferenceNavigationBuilder_TEntity__TRelatedEntity_",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the relationship.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.HasOne&lt;TRelatedEntity&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, TRelatedEntity&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L222"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+            "id": "Ignore_Expression_Func_TEntity__Object___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "Ignore(Expression<Func<TEntity, Object>>)",
+            "name.vb": "Ignore(Expression(Of Func(Of TEntity, Object)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.Ignore(System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).Ignore(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 152,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Excludes the given property from the entity type. This method is typically used to remove properties\nfrom the entity type that were added by convention.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> Ignore(Expression<Func<TEntity, object>> propertyExpression)",
+              "content.vb": "Public Overridable Function Ignore(propertyExpression As Expression(Of Func(Of TEntity, Object))) As EntityTypeBuilder(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "propertyExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},System.Object}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, Object>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, Object))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, System.Object>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, System.Object))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;&gt;",
+                    "id": "Expression_Func_TEntity__Object__",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the property to be ignored\n(<c>blog =&gt; blog.Url</c>).</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.Ignore(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, System.Object&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L153"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+            "id": "Ignore_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "Ignore(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.Ignore(System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).Ignore(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 167,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Excludes the given property from the entity type. This method is typically used to remove properties\nfrom the entity type that were added by convention.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityTypeBuilder<TEntity> Ignore(string propertyName)",
+              "content.vb": "Public Overridable Function Ignore(propertyName As String) As EntityTypeBuilder(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "propertyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of then property to be removed from the entity type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                  "id": "EntityTypeBuilder_TEntity_",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAlternateKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType(System.Type)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasBaseType``1",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasKey(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasMany``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.HasOne``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                  "name": "EntityTypeBuilder<TEntity>",
+                  "name.vb": "EntityTypeBuilder(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                    "startLine": 23,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+                    "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+                    "typeParameters": [
+                      {
+                        "id": "TEntity",
+                        "description": "The entity type being configured."
+                      }
+                    ]
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+                    "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+                  "level": 2
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Ignore(System.String)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.Ignore(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L168"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "id": "New_InternalEntityTypeBuilder_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "New(InternalEntityTypeBuilder)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Creates a new builder based on the provided internal builder. This overridden implementation creates\n<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\"></xref> instances so that logic inherited from the base class will\nuse those instead of <xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"></xref>.</p>\n",
+            "syntax": {
+              "content": "protected override EntityTypeBuilder New(InternalEntityTypeBuilder builder)",
+              "content.vb": "Protected Overrides Function New(builder As InternalEntityTypeBuilder) As EntityTypeBuilder",
+              "parameters": [
+                {
+                  "id": "builder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder.yml",
+                    "name": "InternalEntityTypeBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder\"/>",
+                    "id": "InternalEntityTypeBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The internal builder to create the new builder from.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+                  "name": "EntityTypeBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>",
+                  "id": "EntityTypeBuilder",
+                  "level": 0
+                },
+                "description": "<p>The newly created builder.</p>\n"
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.New(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})",
+            "id": "Property_TProperty__Expression_Func_TEntity__TProperty___",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+            "name": "Property<TProperty>(Expression<Func<TEntity, TProperty>>)",
+            "name.vb": "Property(Of TProperty)(Expression(Of Func(Of TEntity, TProperty)))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>.Property<TProperty>(System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity).Property(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TProperty)))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+              "startLine": 136,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Returns an object that can be used to configure a property of the entity type.\nIf the specified property is not already part of the model, it will be added.</p>\n",
+            "syntax": {
+              "content": "public virtual PropertyBuilder<TProperty> Property<TProperty>(Expression<Func<TEntity, TProperty>> propertyExpression)",
+              "content.vb": "Public Overridable Function Property(Of TProperty)(propertyExpression As Expression(Of Func(Of TEntity, TProperty))) As PropertyBuilder(Of TProperty)",
+              "parameters": [
+                {
+                  "id": "propertyExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{System.Func{{TEntity},{TProperty}}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<Func<TEntity, TProperty>>",
+                    "name.vb": "Expression(Of Func(Of TEntity, TProperty))",
+                    "fullName": "System.Linq.Expressions.Expression<System.Func<TEntity, TProperty>>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of System.Func(Of TEntity, TProperty))",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TProperty",
+                        "fullName": "TProperty",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TProperty",
+                        "fullName": "TProperty",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, TProperty&gt;&gt;",
+                    "id": "Expression_Func_TEntity__TProperty__",
+                    "level": 0
+                  },
+                  "description": "<p>A lambda expression representing the property to be configured (</p>\n<p><c>blog =&gt; blog.Url</c>).</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TProperty"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder{{TProperty}}",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "definition": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1",
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.yml",
+                  "name": "PropertyBuilder<TProperty>",
+                  "name.vb": "PropertyBuilder(Of TProperty)",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder<TProperty>",
+                  "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder(Of TProperty)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1",
+                      "name": "PropertyBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TProperty",
+                      "fullName": "TProperty",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1",
+                      "name": "PropertyBuilder",
+                      "fullName": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TProperty",
+                      "fullName": "TProperty",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.PropertyBuilder\"/>&lt;TProperty&gt;",
+                  "id": "PropertyBuilder_TProperty_",
+                  "level": 0
+                },
+                "description": "<p>An object that can be used to configure the property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.Property``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;.Property&lt;TProperty&gt;(System.Linq.Expressions.Expression&lt;System.Func&lt;TEntity, TProperty&gt;&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L137"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+    "name": "EntityTypeBuilder<TEntity>",
+    "name.vb": "EntityTypeBuilder(Of TEntity)",
+    "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<TEntity>",
+    "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of TEntity)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs",
+      "startLine": 23,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+    "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.EntityType\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+    "syntax": {
+      "content": "public class EntityTypeBuilder<TEntity> : EntityTypeBuilder, IInfrastructure<IMutableModel>, IInfrastructure<InternalEntityTypeBuilder> where TEntity : class",
+      "content.vb": "Public Class EntityTypeBuilder(Of TEntity As Class) Inherits EntityTypeBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalEntityTypeBuilder)",
+      "typeParameters": [
+        {
+          "id": "TEntity",
+          "description": "The entity type being configured."
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+        "parent": "Microsoft.Data.Entity.Metadata.Builders",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.yml",
+        "name": "EntityTypeBuilder",
+        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>",
+        "id": "EntityTypeBuilder",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder}"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalEntityTypeBuilder}#Instance",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Metadata",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasKey(System.String[])",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasAlternateKey(System.String[])",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property``1(System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.Property(System.Type,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasIndex(System.String[])",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.Type,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasOne(System.String,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.Type,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.HasMany(System.String,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.ReferenceBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.CollectionBuilder(Microsoft.Data.Entity.Metadata.Internal.EntityType,System.String)",
+      "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder.PropertyBuilder(System.Type,System.String)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;TEntity&gt;\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/EntityTypeBuilder`.cs/#L24"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

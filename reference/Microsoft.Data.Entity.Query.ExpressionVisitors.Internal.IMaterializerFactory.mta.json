@@ -1,0 +1,254 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory",
+    "id": "IMaterializerFactory",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.CreateMaterializer(Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Int32},Remotion.Linq.Clauses.IQuerySource)",
+            "id": "CreateMaterializer_IEntityType__SelectExpression__Func_IProperty__SelectExpression__Int32___IQuerySource_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.yml",
+            "name": "CreateMaterializer(IEntityType, SelectExpression, Func<IProperty, SelectExpression, Int32>, IQuerySource)",
+            "name.vb": "CreateMaterializer(IEntityType, SelectExpression, Func(Of IProperty, SelectExpression, Int32), IQuerySource)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.CreateMaterializer(Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Func<Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Int32>, Remotion.Linq.Clauses.IQuerySource)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.CreateMaterializer(Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Func(Of Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Int32), Remotion.Linq.Clauses.IQuerySource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs",
+              "startLine": 14,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "LambdaExpression CreateMaterializer(IEntityType entityType, SelectExpression selectExpression, Func<IProperty, SelectExpression, int> projectionAdder, IQuerySource querySource)",
+              "content.vb": "Function CreateMaterializer(entityType As IEntityType, selectExpression As SelectExpression, projectionAdder As Func(Of IProperty, SelectExpression, Integer), querySource As IQuerySource) As LambdaExpression",
+              "parameters": [
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "selectExpression",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "parent": "Microsoft.Data.Entity.Query.Expressions",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Expressions.SelectExpression.yml",
+                    "name": "SelectExpression",
+                    "fullName": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\" name=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\"/>",
+                    "id": "SelectExpression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "projectionAdder",
+                  "type": {
+                    "uid": "System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Int32}",
+                    "parent": "System",
+                    "definition": "System.Func`3",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "Func<IProperty, SelectExpression, Int32>",
+                    "name.vb": "Func(Of IProperty, SelectExpression, Int32)",
+                    "fullName": "System.Func<Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Int32>",
+                    "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Int32)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                        "name": "SelectExpression",
+                        "fullName": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Expressions.SelectExpression.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                        "name": "SelectExpression",
+                        "fullName": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Expressions.SelectExpression.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Int32",
+                        "name": "Int32",
+                        "fullName": "System.Int32",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`3\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>, <xref href=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\" name=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\"/>, <xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                    "id": "Func_IProperty__SelectExpression__Int32_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "querySource",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.IQuerySource",
+                    "parent": "Remotion.Linq.Clauses",
+                    "isExternal": true,
+                    "name": "IQuerySource",
+                    "fullName": "Remotion.Linq.Clauses.IQuerySource",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.IQuerySource\" name=\"Remotion.Linq.Clauses.IQuerySource\"/>",
+                    "id": "IQuerySource",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.LambdaExpression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "LambdaExpression",
+                  "fullName": "System.Linq.Expressions.LambdaExpression",
+                  "specName": "<xref href=\"System.Linq.Expressions.LambdaExpression\" name=\"System.Linq.Expressions.LambdaExpression\"/>",
+                  "id": "LambdaExpression",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.CreateMaterializer(Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Func{Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Int32},Remotion.Linq.Clauses.IQuerySource)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.CreateMaterializer(Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Func&lt;Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Int32&gt;, Remotion.Linq.Clauses.IQuerySource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs/#L15"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory.yml",
+    "name": "IMaterializerFactory",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "syntax": {
+      "content": "public interface IMaterializerFactory",
+      "content.vb": "Public Interface IMaterializerFactory"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.IMaterializerFactory\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/IMaterializerFactory.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

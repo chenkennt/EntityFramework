@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Microsoft.Data.Entity.ValueGeneration | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Microsoft.Data.Entity.ValueGeneration | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/ValueGenerator`.cs/#L4" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_ValueGeneration">Namespace Microsoft.Data.Entity.ValueGeneration
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="markdown level0 remarks"></div>
+                <h3 id="classes">Classes</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.GuidValueGenerator.html#Microsoft_Data_Entity_ValueGeneration_GuidValueGenerator">GuidValueGenerator</a></h4>
+                  <section><p>Generates <span class="xref">System.Guid</span> values using <span class="xref">System.Guid.NewGuid</span>.
+The generated values are non-temporary, meaning they will be saved to the database.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.html#Microsoft_Data_Entity_ValueGeneration_HiLoValueGenerator_1">HiLoValueGenerator</a>&lt;TValue&gt;</h4>
+                  <section><para>
+Acts as a <a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGenerator.html#Microsoft_Data_Entity_ValueGeneration_ValueGenerator">ValueGenerator</a>  by requesting a block of values from the
+underlying database and returning them one by one. Will ask the underlying
+database for another block when the current block is exhausted.
+</para>
+<para>
+A block is represented by a low value fetched from the database, and then a block size
+that indicates how many sequential values can be used, starting from the low value, before
+a new low value must be fetched from the database.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.HiLoValueGeneratorState.html#Microsoft_Data_Entity_ValueGeneration_HiLoValueGeneratorState">HiLoValueGeneratorState</a></h4>
+                  <section><p>The thread safe state used by <a class="xref" href="Microsoft.Data.Entity.ValueGeneration.HiLoValueGenerator`1.html#Microsoft_Data_Entity_ValueGeneration_HiLoValueGenerator_1">HiLoValueGenerator&lt;TValue&gt;</a>.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.RelationalValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_RelationalValueGeneratorSelector">RelationalValueGeneratorSelector</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.SequentialGuidValueGenerator.html#Microsoft_Data_Entity_ValueGeneration_SequentialGuidValueGenerator">SequentialGuidValueGenerator</a></h4>
+                  <section><p>Generates sequential <span class="xref">System.Guid</span> values using the same algorithm as NEWSEQUENTIALID()
+in Microsoft SQL Server. This is useful when entities are being saved to a database where sequential
+GUIDs will provide a performance benefit. The generated values are non-temporary, meaning they will
+be saved to the database.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.TemporaryGuidValueGenerator.html#Microsoft_Data_Entity_ValueGeneration_TemporaryGuidValueGenerator">TemporaryGuidValueGenerator</a></h4>
+                  <section><p>Generates <span class="xref">System.Guid</span> values using <span class="xref">System.Guid.NewGuid</span>.
+The generated values are temporary, meaning they will be replaced by database
+generated values when the entity is saved.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGenerator.html#Microsoft_Data_Entity_ValueGeneration_ValueGenerator">ValueGenerator</a></h4>
+                  <section><p>Generates values for properties when an entity is added to a context.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGenerator`1.html#Microsoft_Data_Entity_ValueGeneration_ValueGenerator_1">ValueGenerator</a>&lt;TValue&gt;</h4>
+                  <section><p>Generates values for properties when an entity is added to a context.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorCache.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorCache">ValueGeneratorCache</a></h4>
+                  <section><para>
+Keeps a cache of value generators for properties.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorFactory">ValueGeneratorFactory</a></h4>
+                  <section><p>Base class for factories that create value generators.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorFactory`1.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorFactory_1">ValueGeneratorFactory</a>&lt;TValueGenerator&gt;</h4>
+                  <section><p>Factory to create value generators of type</p>
+<p><typeparam name="TValueGenerator"></typeparam>
+.</p>
+</section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.ValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_ValueGeneratorSelector">ValueGeneratorSelector</a></h4>
+                  <section><para>
+Selects value generators to be used to generate values for properties of entities.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                <h3 id="interfaces">Interfaces</h3>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorCache">IValueGeneratorCache</a></h4>
+                  <section><para>
+Keeps a cache of value generators for properties.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+                  <h4><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorSelector">IValueGeneratorSelector</a></h4>
+                  <section><para>
+Selects value generators to be used to generate values for properties of entities.
+</para>
+<para>
+This type is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></section>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

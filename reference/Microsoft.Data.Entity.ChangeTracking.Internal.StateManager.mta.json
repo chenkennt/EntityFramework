@@ -1,0 +1,1966 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+    "id": "StateManager",
+    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory,Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber,Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier,Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager,Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource,Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Storage.IDatabase,Microsoft.Data.Entity.DbContext)",
+            "id": "StateManager_IInternalEntityEntryFactory__IInternalEntityEntrySubscriber__IInternalEntityEntryNotifier__IValueGenerationManager__IKeyValueFactorySource__IModel__IDatabase__DbContext_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "StateManager(IInternalEntityEntryFactory, IInternalEntityEntrySubscriber, IInternalEntityEntryNotifier, IValueGenerationManager, IKeyValueFactorySource, IModel, IDatabase, DbContext)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StateManager(Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory, Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber, Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier, Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager, Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource, Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Storage.IDatabase, Microsoft.Data.Entity.DbContext)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 39,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public StateManager(IInternalEntityEntryFactory factory, IInternalEntityEntrySubscriber subscriber, IInternalEntityEntryNotifier notifier, IValueGenerationManager valueGeneration, IKeyValueFactorySource keyValueFactorySource, IModel model, IDatabase database, DbContext context)",
+              "content.vb": "Public Sub New(factory As IInternalEntityEntryFactory, subscriber As IInternalEntityEntrySubscriber, notifier As IInternalEntityEntryNotifier, valueGeneration As IValueGenerationManager, keyValueFactorySource As IKeyValueFactorySource, model As IModel, database As IDatabase, context As DbContext)",
+              "parameters": [
+                {
+                  "id": "factory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory.yml",
+                    "name": "IInternalEntityEntryFactory",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory\"/>",
+                    "id": "IInternalEntityEntryFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "subscriber",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber.yml",
+                    "name": "IInternalEntityEntrySubscriber",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber\"/>",
+                    "id": "IInternalEntityEntrySubscriber",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "notifier",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier.yml",
+                    "name": "IInternalEntityEntryNotifier",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier\"/>",
+                    "id": "IInternalEntityEntryNotifier",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "valueGeneration",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager.yml",
+                    "name": "IValueGenerationManager",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager\"/>",
+                    "id": "IValueGenerationManager",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "keyValueFactorySource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource.yml",
+                    "name": "IKeyValueFactorySource",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource\"/>",
+                    "id": "IKeyValueFactorySource",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "database",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabase.yml",
+                    "name": "IDatabase",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "type": "interface",
+                    "summary": "<para>\nThe main interaction point between a context and the database provider.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabase\" name=\"Microsoft.Data.Entity.Storage.IDatabase\"/>",
+                    "id": "IDatabase",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "context",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory,Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber,Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier,Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager,Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource,Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Storage.IDatabase,Microsoft.Data.Entity.DbContext)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StateManager(Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryFactory, Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntrySubscriber, Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier, Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager, Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource, Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Storage.IDatabase, Microsoft.Data.Entity.DbContext)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L40"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Context",
+            "id": "Context",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "Context",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Context",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 517,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+                "content": "public virtual DbContext Context { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Context As DbContext",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Context\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Context\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L518"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Entries",
+            "id": "Entries",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "Entries",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Entries",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 204,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+                "content": "public virtual IEnumerable<InternalEntityEntry> Entries { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Entries As IEnumerable(Of InternalEntityEntry)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "IEnumerable<InternalEntityEntry>",
+                    "name.vb": "IEnumerable(Of InternalEntityEntry)",
+                    "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>&gt;",
+                    "id": "IEnumerable_InternalEntityEntry_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Entries\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Entries\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L205"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Notify",
+            "id": "Notify",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "Notify",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Notify",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 61,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+                "content": "public virtual IInternalEntityEntryNotifier Notify { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Notify As IInternalEntityEntryNotifier",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier.yml",
+                    "name": "IInternalEntityEntryNotifier",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IInternalEntityEntryNotifier\"/>",
+                    "id": "IInternalEntityEntryNotifier",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Notify\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.Notify\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L62"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SingleQueryMode",
+            "id": "SingleQueryMode",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "SingleQueryMode",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SingleQueryMode",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 59,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+                "content": "public virtual bool ? SingleQueryMode { get; set; }",
+                "content.vb": "Public Overridable Property SingleQueryMode As Boolean?",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Nullable{System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Boolean>",
+                    "name.vb": "Nullable(Of Boolean)",
+                    "fullName": "System.Nullable<System.Boolean>",
+                    "fullName.vb": "System.Nullable(Of System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Nullable_Boolean_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SingleQueryMode\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SingleQueryMode\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L60"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.ValueGeneration",
+            "id": "ValueGeneration",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "ValueGeneration",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.ValueGeneration",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 63,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+                "content": "public virtual IValueGenerationManager ValueGeneration { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ValueGeneration As IValueGenerationManager",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager.yml",
+                    "name": "IValueGenerationManager",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IValueGenerationManager\"/>",
+                    "id": "IValueGenerationManager",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.ValueGeneration\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.ValueGeneration\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L64"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.AcceptAllChanges",
+            "id": "AcceptAllChanges__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "AcceptAllChanges()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.AcceptAllChanges()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 498,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual void AcceptAllChanges()",
+              "content.vb": "Public Overridable Sub AcceptAllChanges"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.AcceptAllChanges\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.AcceptAllChanges()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L499"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.BeginTrackingQuery",
+            "id": "BeginTrackingQuery__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "BeginTrackingQuery()",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.BeginTrackingQuery()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 105,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual void BeginTrackingQuery()",
+              "content.vb": "Public Overridable Sub BeginTrackingQuery"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.BeginTrackingQuery\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.BeginTrackingQuery()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L106"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.CreateKey(Microsoft.Data.Entity.Metadata.IKey,System.Object)",
+            "id": "CreateKey_IKey__Object_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "CreateKey(IKey, Object)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.CreateKey(Microsoft.Data.Entity.Metadata.IKey, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual IKeyValue CreateKey(IKey key, object value)",
+              "content.vb": "Public Overridable Function CreateKey(key As IKey, value As Object) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "key",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.CreateKey(Microsoft.Data.Entity.Metadata.IKey,System.Object)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.CreateKey(Microsoft.Data.Entity.Metadata.IKey, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetDependents(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.IForeignKey)",
+            "id": "GetDependents_InternalEntityEntry__IForeignKey_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "GetDependents(InternalEntityEntry, IForeignKey)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetDependents(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.IForeignKey)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 397,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual IEnumerable<InternalEntityEntry> GetDependents(InternalEntityEntry principalEntry, IForeignKey foreignKey)",
+              "content.vb": "Public Overridable Function GetDependents(principalEntry As InternalEntityEntry, foreignKey As IForeignKey) As IEnumerable(Of InternalEntityEntry)",
+              "parameters": [
+                {
+                  "id": "principalEntry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "foreignKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                    "name": "IForeignKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                    "id": "IForeignKey",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "IEnumerable<InternalEntityEntry>",
+                  "name.vb": "IEnumerable(Of InternalEntityEntry)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                      "name": "InternalEntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                      "name": "InternalEntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>&gt;",
+                  "id": "IEnumerable_InternalEntityEntry_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetDependents(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.IForeignKey)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetDependents(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.IForeignKey)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L398"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetOrCreateEntry(System.Object)",
+            "id": "GetOrCreateEntry_Object_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "GetOrCreateEntry(Object)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetOrCreateEntry(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 68,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry GetOrCreateEntry(object entity)",
+              "content.vb": "Public Overridable Function GetOrCreateEntry(entity As Object) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetOrCreateEntry(System.Object)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetOrCreateEntry(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L69"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetPrincipal(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetPrincipal_InternalEntityEntry__IForeignKey__ValueSource_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "GetPrincipal(InternalEntityEntry, IForeignKey, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetPrincipal(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 291,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry GetPrincipal(InternalEntityEntry dependentEntry, IForeignKey foreignKey, ValueSource valueSource)",
+              "content.vb": "Public Overridable Function GetPrincipal(dependentEntry As InternalEntityEntry, foreignKey As IForeignKey, valueSource As ValueSource) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "dependentEntry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "foreignKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                    "name": "IForeignKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                    "id": "IForeignKey",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetPrincipal(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.GetPrincipal(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L292"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Boolean)",
+            "id": "SaveChanges_Boolean_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "SaveChanges(Boolean)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 410,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual int SaveChanges(bool acceptAllChangesOnSuccess)",
+              "content.vb": "Public Overridable Function SaveChanges(acceptAllChangesOnSuccess As Boolean) As Integer",
+              "parameters": [
+                {
+                  "id": "acceptAllChangesOnSuccess",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Int32",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int32",
+                  "fullName": "System.Int32",
+                  "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                  "id": "Int32",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Boolean)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L411"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry})",
+            "id": "SaveChanges_IReadOnlyList_InternalEntityEntry__",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "SaveChanges(IReadOnlyList<InternalEntityEntry>)",
+            "name.vb": "SaveChanges(IReadOnlyList(Of InternalEntityEntry))",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 489,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "protected virtual int SaveChanges(IReadOnlyList<InternalEntityEntry> entriesToSave)",
+              "content.vb": "Protected Overridable Function SaveChanges(entriesToSave As IReadOnlyList(Of InternalEntityEntry)) As Integer",
+              "parameters": [
+                {
+                  "id": "entriesToSave",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "IReadOnlyList<InternalEntityEntry>",
+                    "name.vb": "IReadOnlyList(Of InternalEntityEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>&gt;",
+                    "id": "IReadOnlyList_InternalEntityEntry_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Int32",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int32",
+                  "fullName": "System.Int32",
+                  "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                  "id": "Int32",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry})\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChanges(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L490"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)",
+            "id": "SaveChangesAsync_Boolean__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "SaveChangesAsync(Boolean, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 459,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function SaveChangesAsync(acceptAllChangesOnSuccess As Boolean, cancellationToken As CancellationToken = Nothing) As Task(Of Integer)",
+              "parameters": [
+                {
+                  "id": "acceptAllChangesOnSuccess",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Int32}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Int32>",
+                  "name.vb": "Task(Of Int32)",
+                  "fullName": "System.Threading.Tasks.Task<System.Int32>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Task_Int32_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L460"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry},System.Threading.CancellationToken)",
+            "id": "SaveChangesAsync_IReadOnlyList_InternalEntityEntry___CancellationToken_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "SaveChangesAsync(IReadOnlyList<InternalEntityEntry>, CancellationToken)",
+            "name.vb": "SaveChangesAsync(IReadOnlyList(Of InternalEntityEntry), CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>, System.Threading.CancellationToken)",
+            "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry), System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 493,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "protected virtual Task<int> SaveChangesAsync(IReadOnlyList<InternalEntityEntry> entriesToSave, CancellationToken cancellationToken = null)",
+              "content.vb": "Protected Overridable Function SaveChangesAsync(entriesToSave As IReadOnlyList(Of InternalEntityEntry), cancellationToken As CancellationToken = Nothing) As Task(Of Integer)",
+              "parameters": [
+                {
+                  "id": "entriesToSave",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "IReadOnlyList<InternalEntityEntry>",
+                    "name.vb": "IReadOnlyList(Of InternalEntityEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "name": "InternalEntityEntry",
+                        "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>&gt;",
+                    "id": "IReadOnlyList_InternalEntityEntry_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Int32}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Int32>",
+                  "name.vb": "Task(Of Int32)",
+                  "fullName": "System.Threading.Tasks.Task<System.Int32>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Task_Int32_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry},System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.SaveChangesAsync(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry&gt;, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L494"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+            "id": "StartTracking_InternalEntityEntry_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "StartTracking(InternalEntityEntry)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 206,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry StartTracking(InternalEntityEntry entry)",
+              "content.vb": "Public Overridable Function StartTracking(entry As InternalEntityEntry) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "entry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L207"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.Infrastructure.IKeyValue,System.Object,Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "id": "StartTracking_IEntityType__IKeyValue__Object__ValueBuffer_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "StartTracking(IEntityType, IKeyValue, Object, ValueBuffer)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.Infrastructure.IKeyValue, System.Object, Microsoft.Data.Entity.Storage.ValueBuffer)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 107,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry StartTracking(IEntityType entityType, IKeyValue keyValue, object entity, ValueBuffer valueBuffer)",
+              "content.vb": "Public Overridable Function StartTracking(entityType As IEntityType, keyValue As IKeyValue, entity As Object, valueBuffer As ValueBuffer) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "keyValue",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                    "name": "IKeyValue",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                    "id": "IKeyValue",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "valueBuffer",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "ValueBuffer",
+                    "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "type": "struct",
+                    "summary": "<para>\nRepresents a set of indexed values. Typically used to represent a row of data returned from a database.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>",
+                    "id": "ValueBuffer",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.Metadata.IEntityType,Microsoft.Data.Entity.Infrastructure.IKeyValue,System.Object,Microsoft.Data.Entity.Storage.ValueBuffer)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StartTracking(Microsoft.Data.Entity.Metadata.IEntityType, Microsoft.Data.Entity.Infrastructure.IKeyValue, System.Object, Microsoft.Data.Entity.Storage.ValueBuffer)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L108"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StopTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+            "id": "StopTracking_InternalEntityEntry_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "StopTracking(InternalEntityEntry)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StopTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 248,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual void StopTracking(InternalEntityEntry entry)",
+              "content.vb": "Public Overridable Sub StopTracking(entry As InternalEntityEntry)",
+              "parameters": [
+                {
+                  "id": "entry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StopTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.StopTracking(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L249"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(Microsoft.Data.Entity.Infrastructure.IKeyValue)",
+            "id": "TryGetEntry_IKeyValue_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "TryGetEntry(IKeyValue)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(Microsoft.Data.Entity.Infrastructure.IKeyValue)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 180,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry TryGetEntry(IKeyValue keyValueValue)",
+              "content.vb": "Public Overridable Function TryGetEntry(keyValueValue As IKeyValue) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "keyValueValue",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                    "name": "IKeyValue",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                    "id": "IKeyValue",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(Microsoft.Data.Entity.Infrastructure.IKeyValue)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(Microsoft.Data.Entity.Infrastructure.IKeyValue)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L181"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(System.Object)",
+            "id": "TryGetEntry_Object_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "TryGetEntry(Object)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 187,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual InternalEntityEntry TryGetEntry(object entity)",
+              "content.vb": "Public Overridable Function TryGetEntry(entity As Object) As InternalEntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                  "name": "InternalEntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                  "id": "InternalEntityEntry",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(System.Object)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.TryGetEntry(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L188"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateDependentMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Metadata.IForeignKey)",
+            "id": "UpdateDependentMap_InternalEntityEntry__IKeyValue__IForeignKey_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "UpdateDependentMap(InternalEntityEntry, IKeyValue, IForeignKey)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateDependentMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Metadata.IForeignKey)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 334,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual void UpdateDependentMap(InternalEntityEntry entry, IKeyValue oldKeyValue, IForeignKey foreignKey)",
+              "content.vb": "Public Overridable Sub UpdateDependentMap(entry As InternalEntityEntry, oldKeyValue As IKeyValue, foreignKey As IForeignKey)",
+              "parameters": [
+                {
+                  "id": "entry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "oldKeyValue",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                    "name": "IKeyValue",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                    "id": "IKeyValue",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "foreignKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                    "name": "IForeignKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                    "id": "IForeignKey",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateDependentMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Metadata.IForeignKey)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateDependentMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Metadata.IForeignKey)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L335"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateIdentityMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Metadata.IKey)",
+            "id": "UpdateIdentityMap_InternalEntityEntry__IKeyValue__IKey_",
+            "parent": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+            "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+            "name": "UpdateIdentityMap(InternalEntityEntry, IKeyValue, IKey)",
+            "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateIdentityMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Metadata.IKey)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+              "startLine": 305,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+            "syntax": {
+              "content": "public virtual void UpdateIdentityMap(InternalEntityEntry entry, IKeyValue oldKeyValue, IKey principalKey)",
+              "content.vb": "Public Overridable Sub UpdateIdentityMap(entry As InternalEntityEntry, oldKeyValue As IKeyValue, principalKey As IKey)",
+              "parameters": [
+                {
+                  "id": "entry",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry.yml",
+                    "name": "InternalEntityEntry",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry\"/>",
+                    "id": "InternalEntityEntry",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "oldKeyValue",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                    "name": "IKeyValue",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                    "id": "IKeyValue",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "principalKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateIdentityMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry,Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Metadata.IKey)\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.UpdateIdentityMap(Microsoft.Data.Entity.ChangeTracking.Internal.InternalEntityEntry, Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Metadata.IKey)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L306"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager.yml",
+    "name": "StateManager",
+    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.StateManager",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ChangeTracking.Internal",
+    "syntax": {
+      "content": "public class StateManager : IStateManager",
+      "content.vb": "Public Class StateManager Implements IStateManager"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.StateManager\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ChangeTracking/Internal/StateManager.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

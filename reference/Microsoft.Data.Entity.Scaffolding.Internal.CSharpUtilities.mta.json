@@ -1,0 +1,1903 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+    "id": "CSharpUtilities",
+    "parent": "Microsoft.Data.Entity.Scaffolding.Internal",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Instance",
+            "id": "Instance",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "Instance",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 101,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+                "content": "public static CSharpUtilities Instance { get; }",
+                "content.vb": "Public Shared ReadOnly Property Instance As CSharpUtilities",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+                    "id": "CSharpUtilities",
+                    "parent": "Microsoft.Data.Entity.Scaffolding.Internal",
+                    "children": [
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.DelimitString(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeString(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeVerbatimString(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String})",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String},System.Func{System.String,System.Collections.Generic.ICollection{System.String},System.String})",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Boolean)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte[])",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTime)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTimeOffset)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Decimal)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Double)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Guid)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int32)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int64)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Object)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Single)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.TimeSpan)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateVerbatimStringLiteral(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GetTypeName(System.Type)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Instance",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsCSharpKeyword(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsValidIdentifier(System.String)",
+                      "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String,System.Collections.Generic.ICollection{System.String})"
+                    ],
+                    "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+                    "name": "CSharpUtilities",
+                    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+                    "type": "class",
+                    "source": {
+                      "remote": {
+                        "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                        "branch": "dev",
+                        "repo": "https://github.com/chenkennt/EntityFramework.git"
+                      },
+                      "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                      "startLine": 13,
+                      "endLine": 0,
+                      "isExternal": false
+                    },
+                    "assemblies": [
+                      "EntityFramework.Commands"
+                    ],
+                    "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+                    "syntax": {
+                      "content": "public class CSharpUtilities",
+                      "content.vb": "Public Class CSharpUtilities"
+                    },
+                    "inheritance": [
+                      "System.Object"
+                    ],
+                    "inheritedMembers": [
+                      "System.Object.ToString",
+                      "System.Object.Equals(System.Object)",
+                      "System.Object.Equals(System.Object,System.Object)",
+                      "System.Object.ReferenceEquals(System.Object,System.Object)",
+                      "System.Object.GetHashCode",
+                      "System.Object.GetType",
+                      "System.Object.MemberwiseClone"
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities\"/>",
+                    "level": 1
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Instance\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L102"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.DelimitString(System.String)",
+            "id": "DelimitString_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "DelimitString(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.DelimitString(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 103,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string DelimitString(string value)",
+              "content.vb": "Public Overridable Function DelimitString(value As String) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.DelimitString(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.DelimitString(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L104"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeString(System.String)",
+            "id": "EscapeString_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "EscapeString(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeString(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 110,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string EscapeString(string str)",
+              "content.vb": "Public Overridable Function EscapeString(str As String) As String",
+              "parameters": [
+                {
+                  "id": "str",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeString(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeString(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L111"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeVerbatimString(System.String)",
+            "id": "EscapeVerbatimString_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "EscapeVerbatimString(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeVerbatimString(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 117,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string EscapeVerbatimString(string str)",
+              "content.vb": "Public Overridable Function EscapeVerbatimString(str As String) As String",
+              "parameters": [
+                {
+                  "id": "str",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeVerbatimString(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.EscapeVerbatimString(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L118"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String})",
+            "id": "GenerateCSharpIdentifier_String__ICollection_String__",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateCSharpIdentifier(String, ICollection<String>)",
+            "name.vb": "GenerateCSharpIdentifier(String, ICollection(Of String))",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection<System.String>)",
+            "fullName.vb": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection(Of System.String))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 214,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateCSharpIdentifier(string identifier, ICollection<string> existingIdentifiers)",
+              "content.vb": "Public Overridable Function GenerateCSharpIdentifier(identifier As String, existingIdentifiers As ICollection(Of String)) As String",
+              "parameters": [
+                {
+                  "id": "identifier",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "existingIdentifiers",
+                  "type": {
+                    "uid": "System.Collections.Generic.ICollection{System.String}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.ICollection`1",
+                    "name": "ICollection<String>",
+                    "name.vb": "ICollection(Of String)",
+                    "fullName": "System.Collections.Generic.ICollection<System.String>",
+                    "fullName.vb": "System.Collections.Generic.ICollection(Of System.String)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.ICollection`1\" name=\"System.Collections.Generic.ICollection\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                    "id": "ICollection_String_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String})\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection&lt;System.String&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L215"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String},System.Func{System.String,System.Collections.Generic.ICollection{System.String},System.String})",
+            "id": "GenerateCSharpIdentifier_String__ICollection_String___Func_String__ICollection_String___String__",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateCSharpIdentifier(String, ICollection<String>, Func<String, ICollection<String>, String>)",
+            "name.vb": "GenerateCSharpIdentifier(String, ICollection(Of String), Func(Of String, ICollection(Of String), String))",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection<System.String>, System.Func<System.String, System.Collections.Generic.ICollection<System.String>, System.String>)",
+            "fullName.vb": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection(Of System.String), System.Func(Of System.String, System.Collections.Generic.ICollection(Of System.String), System.String))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 220,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateCSharpIdentifier(string identifier, ICollection<string> existingIdentifiers, Func<string, ICollection<string>, string> uniquifier)",
+              "content.vb": "Public Overridable Function GenerateCSharpIdentifier(identifier As String, existingIdentifiers As ICollection(Of String), uniquifier As Func(Of String, ICollection(Of String), String)) As String",
+              "parameters": [
+                {
+                  "id": "identifier",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "existingIdentifiers",
+                  "type": {
+                    "uid": "System.Collections.Generic.ICollection{System.String}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.ICollection`1",
+                    "name": "ICollection<String>",
+                    "name.vb": "ICollection(Of String)",
+                    "fullName": "System.Collections.Generic.ICollection<System.String>",
+                    "fullName.vb": "System.Collections.Generic.ICollection(Of System.String)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.ICollection`1\" name=\"System.Collections.Generic.ICollection\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                    "id": "ICollection_String_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "uniquifier",
+                  "type": {
+                    "uid": "System.Func{System.String,System.Collections.Generic.ICollection{System.String},System.String}",
+                    "parent": "System",
+                    "definition": "System.Func`3",
+                    "name": "Func<String, ICollection<String>, String>",
+                    "name.vb": "Func(Of String, ICollection(Of String), String)",
+                    "fullName": "System.Func<System.String, System.Collections.Generic.ICollection<System.String>, System.String>",
+                    "fullName.vb": "System.Func(Of System.String, System.Collections.Generic.ICollection(Of System.String), System.String)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`3\" name=\"System.Func\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>, <xref href=\"System.Collections.Generic.ICollection`1\" name=\"System.Collections.Generic.ICollection\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>&gt;, <xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                    "id": "Func_String__ICollection_String___String_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String,System.Collections.Generic.ICollection{System.String},System.Func{System.String,System.Collections.Generic.ICollection{System.String},System.String})\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateCSharpIdentifier(System.String, System.Collections.Generic.ICollection&lt;System.String&gt;, System.Func&lt;System.String, System.Collections.Generic.ICollection&lt;System.String&gt;, System.String&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L221"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Boolean)",
+            "id": "GenerateLiteral_Boolean_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Boolean)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 131,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(bool value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Boolean) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Boolean)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L132"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte[])",
+            "id": "GenerateLiteral_Byte___",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Byte[])",
+            "name.vb": "GenerateLiteral(Byte())",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte[])",
+            "fullName.vb": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 124,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(byte[] value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Byte()) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Byte[]",
+                    "isExternal": true,
+                    "name": "Byte[]",
+                    "name.vb": "Byte()",
+                    "fullName": "System.Byte[]",
+                    "fullName.vb": "System.Byte()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Byte",
+                        "name": "Byte",
+                        "fullName": "System.Byte",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Byte",
+                        "name": "Byte",
+                        "fullName": "System.Byte",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Byte\" name=\"System.Byte\"/>[]",
+                    "id": "Byte__",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte[])\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Byte[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L125"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTime)",
+            "id": "GenerateLiteral_DateTime_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(DateTime)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTime)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 166,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(DateTime value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Date) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.DateTime",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "DateTime",
+                    "fullName": "System.DateTime",
+                    "specName": "<xref href=\"System.DateTime\" name=\"System.DateTime\"/>",
+                    "id": "DateTime",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTime)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTime)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L167"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTimeOffset)",
+            "id": "GenerateLiteral_DateTimeOffset_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(DateTimeOffset)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTimeOffset)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 172,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(DateTimeOffset value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As DateTimeOffset) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.DateTimeOffset",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "DateTimeOffset",
+                    "fullName": "System.DateTimeOffset",
+                    "specName": "<xref href=\"System.DateTimeOffset\" name=\"System.DateTimeOffset\"/>",
+                    "id": "DateTimeOffset",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTimeOffset)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.DateTimeOffset)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L173"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Decimal)",
+            "id": "GenerateLiteral_Decimal_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Decimal)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Decimal)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 146,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(decimal value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Decimal) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Decimal",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Decimal",
+                    "fullName": "System.Decimal",
+                    "specName": "<xref href=\"System.Decimal\" name=\"System.Decimal\"/>",
+                    "id": "Decimal",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Decimal)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Decimal)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L147"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Double)",
+            "id": "GenerateLiteral_Double_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Double)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Double)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 156,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(double value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Double) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Double",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Double",
+                    "fullName": "System.Double",
+                    "specName": "<xref href=\"System.Double\" name=\"System.Double\"/>",
+                    "id": "Double",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Double)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Double)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L157"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Guid)",
+            "id": "GenerateLiteral_Guid_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Guid)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Guid)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 178,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(Guid value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Guid) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Guid",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Guid",
+                    "fullName": "System.Guid",
+                    "specName": "<xref href=\"System.Guid\" name=\"System.Guid\"/>",
+                    "id": "Guid",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Guid)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Guid)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L179"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int32)",
+            "id": "GenerateLiteral_Int32_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Int32)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 136,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(int value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Integer) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int32)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L137"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int64)",
+            "id": "GenerateLiteral_Int64_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Int64)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int64)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 141,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(long value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Long) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Int64",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int64",
+                    "fullName": "System.Int64",
+                    "specName": "<xref href=\"System.Int64\" name=\"System.Int64\"/>",
+                    "id": "Int64",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int64)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Int64)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L142"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Object)",
+            "id": "GenerateLiteral_Object_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Object)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 197,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(object value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Object) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Object)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L198"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Single)",
+            "id": "GenerateLiteral_Single_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(Single)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Single)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 151,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(float value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As Single) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Single",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Single",
+                    "fullName": "System.Single",
+                    "specName": "<xref href=\"System.Single\" name=\"System.Single\"/>",
+                    "id": "Single",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Single)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.Single)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L152"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.String)",
+            "id": "GenerateLiteral_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 183,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(string value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As String) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L184"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.TimeSpan)",
+            "id": "GenerateLiteral_TimeSpan_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateLiteral(TimeSpan)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.TimeSpan)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 161,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateLiteral(TimeSpan value)",
+              "content.vb": "Public Overridable Function GenerateLiteral(value As TimeSpan) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.TimeSpan",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "TimeSpan",
+                    "fullName": "System.TimeSpan",
+                    "specName": "<xref href=\"System.TimeSpan\" name=\"System.TimeSpan\"/>",
+                    "id": "TimeSpan",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.TimeSpan)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateLiteral(System.TimeSpan)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L162"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateVerbatimStringLiteral(System.String)",
+            "id": "GenerateVerbatimStringLiteral_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GenerateVerbatimStringLiteral(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateVerbatimStringLiteral(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 190,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GenerateVerbatimStringLiteral(string value)",
+              "content.vb": "Public Overridable Function GenerateVerbatimStringLiteral(value As String) As String",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateVerbatimStringLiteral(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GenerateVerbatimStringLiteral(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L191"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GetTypeName(System.Type)",
+            "id": "GetTypeName_Type_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "GetTypeName(Type)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GetTypeName(System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 292,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string GetTypeName(Type propertyType)",
+              "content.vb": "Public Overridable Function GetTypeName(propertyType As Type) As String",
+              "parameters": [
+                {
+                  "id": "propertyType",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GetTypeName(System.Type)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.GetTypeName(System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L293"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsCSharpKeyword(System.String)",
+            "id": "IsCSharpKeyword_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "IsCSharpKeyword(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsCSharpKeyword(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 209,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual bool IsCSharpKeyword(string identifier)",
+              "content.vb": "Public Overridable Function IsCSharpKeyword(identifier As String) As Boolean",
+              "parameters": [
+                {
+                  "id": "identifier",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsCSharpKeyword(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsCSharpKeyword(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L210"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsValidIdentifier(System.String)",
+            "id": "IsValidIdentifier_String_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "IsValidIdentifier(String)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsValidIdentifier(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 316,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual bool IsValidIdentifier(string name)",
+              "content.vb": "Public Overridable Function IsValidIdentifier(name As String) As Boolean",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsValidIdentifier(System.String)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.IsValidIdentifier(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L317"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String,System.Collections.Generic.ICollection{System.String})",
+            "id": "Uniquifier_String__ICollection_String__",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+            "name": "Uniquifier(String, ICollection<String>)",
+            "name.vb": "Uniquifier(String, ICollection(Of String))",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String, System.Collections.Generic.ICollection<System.String>)",
+            "fullName.vb": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String, System.Collections.Generic.ICollection(Of System.String))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+              "startLine": 251,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public virtual string Uniquifier(string proposedIdentifier, ICollection<string> existingIdentifiers)",
+              "content.vb": "Public Overridable Function Uniquifier(proposedIdentifier As String, existingIdentifiers As ICollection(Of String)) As String",
+              "parameters": [
+                {
+                  "id": "proposedIdentifier",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "existingIdentifiers",
+                  "type": {
+                    "uid": "System.Collections.Generic.ICollection{System.String}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.ICollection`1",
+                    "name": "ICollection<String>",
+                    "name.vb": "ICollection(Of String)",
+                    "fullName": "System.Collections.Generic.ICollection<System.String>",
+                    "fullName.vb": "System.Collections.Generic.ICollection(Of System.String)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.ICollection`1",
+                        "name": "ICollection",
+                        "fullName": "System.Collections.Generic.ICollection",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.String",
+                        "name": "String",
+                        "fullName": "System.String",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.ICollection`1\" name=\"System.Collections.Generic.ICollection\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                    "id": "ICollection_String_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String,System.Collections.Generic.ICollection{System.String})\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.Uniquifier(System.String, System.Collections.Generic.ICollection&lt;System.String&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L252"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities.yml",
+    "name": "CSharpUtilities",
+    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Commands"
+    ],
+    "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+    "syntax": {
+      "content": "public class CSharpUtilities",
+      "content.vb": "Public Class CSharpUtilities"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CSharpUtilities\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CSharpUtilities.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,305 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager",
+    "id": "IRelationalTransactionManager",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransaction(System.Data.IsolationLevel)",
+            "id": "BeginTransaction_IsolationLevel_",
+            "parent": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.yml",
+            "name": "BeginTransaction(IsolationLevel)",
+            "fullName": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransaction(System.Data.IsolationLevel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "IDbContextTransaction BeginTransaction(IsolationLevel isolationLevel)",
+              "content.vb": "Function BeginTransaction(isolationLevel As IsolationLevel) As IDbContextTransaction",
+              "parameters": [
+                {
+                  "id": "isolationLevel",
+                  "type": {
+                    "uid": "System.Data.IsolationLevel",
+                    "parent": "System.Data",
+                    "isExternal": true,
+                    "name": "IsolationLevel",
+                    "fullName": "System.Data.IsolationLevel",
+                    "specName": "<xref href=\"System.Data.IsolationLevel\" name=\"System.Data.IsolationLevel\"/>",
+                    "id": "IsolationLevel",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "IDbContextTransaction",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>",
+                  "id": "IDbContextTransaction",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransaction(System.Data.IsolationLevel)\" name=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransaction(System.Data.IsolationLevel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs/#L14"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)",
+            "id": "BeginTransactionAsync_IsolationLevel__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.yml",
+            "name": "BeginTransactionAsync(IsolationLevel, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransactionAsync(System.Data.IsolationLevel, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "Task<IDbContextTransaction> BeginTransactionAsync(IsolationLevel isolationLevel, CancellationToken cancellationToken = null)",
+              "content.vb": "Function BeginTransactionAsync(isolationLevel As IsolationLevel, cancellationToken As CancellationToken = Nothing) As Task(Of IDbContextTransaction)",
+              "parameters": [
+                {
+                  "id": "isolationLevel",
+                  "type": {
+                    "uid": "System.Data.IsolationLevel",
+                    "parent": "System.Data",
+                    "isExternal": true,
+                    "name": "IsolationLevel",
+                    "fullName": "System.Data.IsolationLevel",
+                    "specName": "<xref href=\"System.Data.IsolationLevel\" name=\"System.Data.IsolationLevel\"/>",
+                    "id": "IsolationLevel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{Microsoft.Data.Entity.Storage.IDbContextTransaction}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "Task<IDbContextTransaction>",
+                  "name.vb": "Task(Of IDbContextTransaction)",
+                  "fullName": "System.Threading.Tasks.Task<Microsoft.Data.Entity.Storage.IDbContextTransaction>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of Microsoft.Data.Entity.Storage.IDbContextTransaction)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "name": "IDbContextTransaction",
+                      "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>&gt;",
+                  "id": "Task_IDbContextTransaction_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.BeginTransactionAsync(System.Data.IsolationLevel, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs/#L16"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.UseTransaction(System.Data.Common.DbTransaction)",
+            "id": "UseTransaction_DbTransaction_",
+            "parent": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager",
+            "href": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.yml",
+            "name": "UseTransaction(DbTransaction)",
+            "fullName": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.UseTransaction(System.Data.Common.DbTransaction)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+              "startLine": 17,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "IDbContextTransaction UseTransaction(DbTransaction transaction)",
+              "content.vb": "Function UseTransaction(transaction As DbTransaction) As IDbContextTransaction",
+              "parameters": [
+                {
+                  "id": "transaction",
+                  "type": {
+                    "uid": "System.Data.Common.DbTransaction",
+                    "parent": "System.Data.Common",
+                    "isExternal": true,
+                    "name": "DbTransaction",
+                    "fullName": "System.Data.Common.DbTransaction",
+                    "specName": "<xref href=\"System.Data.Common.DbTransaction\" name=\"System.Data.Common.DbTransaction\"/>",
+                    "id": "DbTransaction",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDbContextTransaction.yml",
+                  "name": "IDbContextTransaction",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransaction\"/>",
+                  "id": "IDbContextTransaction",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.UseTransaction(System.Data.Common.DbTransaction)\" name=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager.UseTransaction(System.Data.Common.DbTransaction)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs/#L18"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager.yml",
+    "name": "IRelationalTransactionManager",
+    "fullName": "Microsoft.Data.Entity.Storage.IRelationalTransactionManager",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "syntax": {
+      "content": "public interface IRelationalTransactionManager : IDbContextTransactionManager",
+      "content.vb": "Public Interface IRelationalTransactionManager Inherits IDbContextTransactionManager"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.BeginTransaction",
+      "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.BeginTransactionAsync(System.Threading.CancellationToken)",
+      "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.CommitTransaction",
+      "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.RollbackTransaction"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager\" name=\"Microsoft.Data.Entity.Storage.IRelationalTransactionManager\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/IRelationalTransactionManager.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

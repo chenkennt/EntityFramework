@@ -1,0 +1,159 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.EF",
+    "id": "EF",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.EF.Property``1(System.Object,System.String)",
+            "id": "Property_TProperty__Object__String_",
+            "parent": "Microsoft.Data.Entity.EF",
+            "href": "Microsoft.Data.Entity.EF.yml",
+            "name": "Property<TProperty>(Object, String)",
+            "name.vb": "Property(Of TProperty)(Object, String)",
+            "fullName": "Microsoft.Data.Entity.EF.Property<TProperty>(System.Object, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.EF.Property(Of TProperty)(System.Object, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/EF.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/EF.cs",
+              "startLine": 32,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Addresses a given property on an entity instance. This is useful when you want to reference a shadow state property in a\nLINQ query. Currently this method can only be used in LINQ queries and can not be used to access the value assigned to a\nproperty in other scenarios.</p>\n",
+            "example": "The following code performs a filter using the a LastUpdated shadow state property.\n<code>\nvar blogs = context.Blogs\n.Where(b =&gt; EF.Property&lt;DateTime&gt;(b, \"LastUpdated\") &gt; DateTime.Now.AddDays(-5))\n</code>",
+            "syntax": {
+              "content": "public static TProperty Property<TProperty>(object entity, string propertyName)",
+              "content.vb": "Public Shared Function Property(Of TProperty)(entity As Object, propertyName As String) As TProperty",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to access the property on.</p>\n"
+                },
+                {
+                  "id": "propertyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the property.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TProperty",
+                  "description": "The type of the property being referenced."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TProperty}",
+                  "isExternal": false,
+                  "name": "TProperty",
+                  "fullName": "TProperty",
+                  "specName": "<xref href=\"{TProperty}\" name=\"TProperty\"/>",
+                  "id": "TProperty",
+                  "level": 0
+                },
+                "description": "<p>The value assigned to the property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.EF.Property``1(System.Object,System.String)\" name=\"Microsoft.Data.Entity.EF.Property&lt;TProperty&gt;(System.Object, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/EF.cs/#L33"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.EF.yml",
+    "name": "EF",
+    "fullName": "Microsoft.Data.Entity.EF",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/EF.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/EF.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Static methods that are useful in application code where there is not an EF type for the method to be accessed from. For example,\nreferencing a shadow state property in a LINQ query.</p>\n",
+    "syntax": {
+      "content": "public class EF",
+      "content.vb": "Public Class EF"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.EF\" name=\"Microsoft.Data.Entity.EF\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/EF.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

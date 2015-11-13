@@ -1,0 +1,1019 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SqlServerMigrationsSqlGenerator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SqlServerMigrationsSqlGenerator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L16" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator">Class SqlServerMigrationsSqlGenerator</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="Microsoft.Data.Entity.Migrations.MigrationsSqlGenerator.html#Microsoft_Data_Entity_Migrations_MigrationsSqlGenerator">MigrationsSqlGenerator</a></div>
+                  <div class="level2"><span class="xref">SqlServerMigrationsSqlGenerator</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Migrations</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.MicrosoftSqlServer.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SqlServerMigrationsSqlGenerator : MigrationsSqlGenerator, IMigrationsSqlGenerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L20">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator__ctor_Microsoft_Data_Entity_Storage_IRelationalCommandBuilderFactory_Microsoft_Data_Entity_Storage_ISqlGenerator_Microsoft_Data_Entity_Storage_IRelationalTypeMapper_Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider_">SqlServerMigrationsSqlGenerator(IRelationalCommandBuilderFactory, ISqlGenerator, IRelationalTypeMapper, IRelationalAnnotationProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SqlServerMigrationsSqlGenerator(IRelationalCommandBuilderFactory commandBuilderFactory, ISqlGenerator sqlGenerator, IRelationalTypeMapper typeMapper, IRelationalAnnotationProvider annotations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalCommandBuilderFactory.html#Microsoft_Data_Entity_Storage_IRelationalCommandBuilderFactory">IRelationalCommandBuilderFactory</a></td>
+                    <td><em>commandBuilderFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td><em>sqlGenerator</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalTypeMapper.html#Microsoft_Data_Entity_Storage_IRelationalTypeMapper">IRelationalTypeMapper</a></td>
+                    <td><em>typeMapper</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.html#Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider">IRelationalAnnotationProvider</a></td>
+                    <td><em>annotations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L318">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_ColumnDefinition_System_String_System_String_System_String_System_Type_System_String_System_Boolean_System_Object_System_String_System_String_Microsoft_Data_Entity_Infrastructure_IAnnotatable_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">ColumnDefinition(String, String, String, Type, String, Boolean, Object, String, String, IAnnotatable, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void ColumnDefinition(string schema, string table, string name, Type clrType, string type, bool nullable, object defaultValue, string defaultValueSql, string computedColumnSql, IAnnotatable annotatable, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>clrType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>nullable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>defaultValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>defaultValueSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>computedColumnSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotatable.html#Microsoft_Data_Entity_Infrastructure_IAnnotatable">IAnnotatable</a></td>
+                    <td><em>annotatable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L351">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_ColumnDefinition_System_String_System_String_System_String_System_Type_System_String_System_Boolean_System_Object_System_String_System_String_System_Boolean_Microsoft_Data_Entity_Infrastructure_IAnnotatable_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">ColumnDefinition(String, String, String, Type, String, Boolean, Object, String, String, Boolean, IAnnotatable, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void ColumnDefinition(string schema, string table, string name, Type clrType, string type, bool nullable, object defaultValue, string defaultValueSql, string computedColumnSql, bool identity, IAnnotatable annotatable, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><em>clrType</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>nullable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>defaultValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>defaultValueSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>computedColumnSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>identity</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IAnnotatable.html#Microsoft_Data_Entity_Infrastructure_IAnnotatable">IAnnotatable</a></td>
+                    <td><em>annotatable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L473">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_DropDefaultConstraint_System_String_System_String_System_String_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">DropDefaultConstraint(String, String, String, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void DropDefaultConstraint(string schema, string tableName, string columnName, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>tableName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>columnName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L459">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_ForeignKeyAction_Microsoft_Data_Entity_Migrations_ReferentialAction_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">ForeignKeyAction(ReferentialAction, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void ForeignKeyAction(ReferentialAction referentialAction, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.ReferentialAction.html#Microsoft_Data_Entity_Migrations_ReferentialAction">ReferentialAction</a></td>
+                    <td><em>referentialAction</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L50">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_AlterColumnOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(AlterColumnOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(AlterColumnOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AlterColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_AlterColumnOperation">AlterColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L191">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(CreateIndexOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(CreateIndexOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation">CreateIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L283">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropColumnOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(DropColumnOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(DropColumnOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropColumnOperation">DropColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L268">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_DropIndexOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(DropIndexOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(DropIndexOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropIndexOperation">DropIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L214">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_EnsureSchemaOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(EnsureSchemaOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(EnsureSchemaOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.EnsureSchemaOperation.html#Microsoft_Data_Entity_Migrations_Operations_EnsureSchemaOperation">EnsureSchemaOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L29">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(MigrationOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(MigrationOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L295">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameColumnOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(RenameColumnOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(RenameColumnOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameColumnOperation">RenameColumnOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L95">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameIndexOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(RenameIndexOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(RenameIndexOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameIndexOperation">RenameIndexOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L118">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameSequenceOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(RenameSequenceOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(RenameSequenceOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameSequenceOperation">RenameSequenceOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L153">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_RenameTableOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(RenameTableOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void Generate(RenameTableOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameTableOperation">RenameTableOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L232">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_SqlServerCreateDatabaseOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(SqlServerCreateDatabaseOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(SqlServerCreateDatabaseOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.SqlServerCreateDatabaseOperation.html#Microsoft_Data_Entity_Migrations_Operations_SqlServerCreateDatabaseOperation">SqlServerCreateDatabaseOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L250">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Generate_Microsoft_Data_Entity_Migrations_Operations_SqlServerDropDatabaseOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Generate(SqlServerDropDatabaseOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Generate(SqlServerDropDatabaseOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.SqlServerDropDatabaseOperation.html#Microsoft_Data_Entity_Migrations_Operations_SqlServerDropDatabaseOperation">SqlServerDropDatabaseOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L447">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_IndexTraits_Microsoft_Data_Entity_Migrations_Operations_MigrationOperation_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">IndexTraits(MigrationOperation, IModel, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected override void IndexTraits(MigrationOperation operation, IModel model, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a></td>
+                    <td><em>operation</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L401">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Rename_System_String_System_String_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Rename(String, String, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Rename(string name, string newName, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L406">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Rename_System_String_System_String_System_String_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Rename(String, String, String, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Rename(string name, string newName, string type, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Migrations/SqlServerMigrationsSqlGenerator.cs/#L430">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_SqlServerMigrationsSqlGenerator_Transfer_System_String_System_String_System_String_Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder_">Transfer(String, String, String, RelationalCommandListBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void Transfer(string newSchema, string schema, string name, RelationalCommandListBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newSchema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.html#Microsoft_Data_Entity_Infrastructure_RelationalCommandListBuilder">RelationalCommandListBuilder</a></td>
+                    <td><em>builder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

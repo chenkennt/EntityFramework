@@ -1,0 +1,215 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator",
+    "id": "SingleOverloadInstanceMethodCallTranslator",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.#ctor(System.Type,System.String,System.String)",
+            "id": "SingleOverloadInstanceMethodCallTranslator_Type__String__String_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator",
+            "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.yml",
+            "name": "SingleOverloadInstanceMethodCallTranslator(Type, String, String)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.SingleOverloadInstanceMethodCallTranslator(System.Type, System.String, System.String)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+              "startLine": 18,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+            "syntax": {
+              "content": "protected SingleOverloadInstanceMethodCallTranslator(Type declaringType, string clrMethodName, string sqlFunctionName)",
+              "content.vb": "Protected Sub New(declaringType As Type, clrMethodName As String, sqlFunctionName As String)",
+              "parameters": [
+                {
+                  "id": "declaringType",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "clrMethodName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sqlFunctionName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.#ctor(System.Type,System.String,System.String)\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.SingleOverloadInstanceMethodCallTranslator(System.Type, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs/#L19"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.Translate(System.Linq.Expressions.MethodCallExpression)",
+            "id": "Translate_MethodCallExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator",
+            "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.yml",
+            "name": "Translate(MethodCallExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.Translate(System.Linq.Expressions.MethodCallExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+              "startLine": 25,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+            "syntax": {
+              "content": "public virtual Expression Translate(MethodCallExpression methodCallExpression)",
+              "content.vb": "Public Overridable Function Translate(methodCallExpression As MethodCallExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "methodCallExpression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.MethodCallExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "MethodCallExpression",
+                    "fullName": "System.Linq.Expressions.MethodCallExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.MethodCallExpression\" name=\"System.Linq.Expressions.MethodCallExpression\"/>",
+                    "id": "MethodCallExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.Translate(System.Linq.Expressions.MethodCallExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.Translate(System.Linq.Expressions.MethodCallExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs/#L26"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator.yml",
+    "name": "SingleOverloadInstanceMethodCallTranslator",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+    "syntax": {
+      "content": "public abstract class SingleOverloadInstanceMethodCallTranslator : IMethodCallTranslator",
+      "content.vb": "Public MustInherit Class SingleOverloadInstanceMethodCallTranslator Implements IMethodCallTranslator"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.SingleOverloadInstanceMethodCallTranslator\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionTranslators/SingleOverloadInstanceMethodCallTranslator.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

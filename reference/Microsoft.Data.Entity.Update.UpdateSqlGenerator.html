@@ -1,0 +1,991 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UpdateSqlGenerator | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UpdateSqlGenerator | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator">Class UpdateSqlGenerator</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">UpdateSqlGenerator</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Update</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class UpdateSqlGenerator : IUpdateSqlGenerator</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L15">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator__ctor_Microsoft_Data_Entity_Storage_ISqlGenerator_">UpdateSqlGenerator(ISqlGenerator)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected UpdateSqlGenerator(ISqlGenerator sqlGenerator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td><em>sqlGenerator</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L22">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_SqlGenerator">SqlGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ISqlGenerator SqlGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L352">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendBatchHeader_System_Text_StringBuilder_">AppendBatchHeader(StringBuilder)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AppendBatchHeader(StringBuilder commandStringBuilder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L124">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendDeleteCommand_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendDeleteCommand(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendDeleteCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; conditionOperations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>conditionOperations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L188">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendDeleteCommandHeader_System_Text_StringBuilder_System_String_System_String_">AppendDeleteCommandHeader(StringBuilder, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendDeleteCommandHeader(StringBuilder commandStringBuilder, string name, string schema)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L77">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendDeleteOperation_System_Text_StringBuilder_Microsoft_Data_Entity_Update_ModificationCommand_">AppendDeleteOperation(StringBuilder, ModificationCommand)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AppendDeleteOperation(StringBuilder commandStringBuilder, ModificationCommand command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ModificationCommand.html#Microsoft_Data_Entity_Update_ModificationCommand">ModificationCommand</a></td>
+                    <td><em>command</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L236">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendFromClause_System_Text_StringBuilder_System_String_System_String_">AppendFromClause(StringBuilder, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendFromClause(StringBuilder commandStringBuilder, string name, string schema)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L348">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendIdentityWhereCondition_System_Text_StringBuilder_Microsoft_Data_Entity_Update_ColumnModification_">AppendIdentityWhereCondition(StringBuilder, ColumnModification)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void AppendIdentityWhereCondition(StringBuilder commandStringBuilder, ColumnModification columnModification)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a></td>
+                    <td><em>columnModification</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L91">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendInsertCommand_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendInsertCommand(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendInsertCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; writeOperations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>writeOperations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L165">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendInsertCommandHeader_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendInsertCommandHeader(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendInsertCommandHeader(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L24">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendInsertOperation_System_Text_StringBuilder_Microsoft_Data_Entity_Update_ModificationCommand_">AppendInsertOperation(StringBuilder, ModificationCommand)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AppendInsertOperation(StringBuilder commandStringBuilder, ModificationCommand command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ModificationCommand.html#Microsoft_Data_Entity_Update_ModificationCommand">ModificationCommand</a></td>
+                    <td><em>command</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L328">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendRowsAffectedWhereCondition_System_Text_StringBuilder_System_Int32_">AppendRowsAffectedWhereCondition(StringBuilder, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void AppendRowsAffectedWhereCondition(StringBuilder commandStringBuilder, int expectedRowsAffected)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>expectedRowsAffected</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L146">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendSelectAffectedCommand_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendSelectAffectedCommand(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendSelectAffectedCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; readOperations, IReadOnlyList&lt;ColumnModification&gt; conditionOperations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>readOperations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>conditionOperations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L139">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendSelectAffectedCountCommand_System_Text_StringBuilder_System_String_System_String_">AppendSelectAffectedCountCommand(StringBuilder, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendSelectAffectedCountCommand(StringBuilder commandStringBuilder, string name, string schema)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L224">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendSelectCommandHeader_System_Text_StringBuilder_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendSelectCommandHeader(StringBuilder, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendSelectCommandHeader(StringBuilder commandStringBuilder, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L107">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendUpdateCommand_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendUpdateCommand(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendUpdateCommand(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; writeOperations, IReadOnlyList&lt;ColumnModification&gt; conditionOperations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>writeOperations</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>conditionOperations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L201">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendUpdateCommandHeader_System_Text_StringBuilder_System_String_System_String_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendUpdateCommandHeader(StringBuilder, String, String, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendUpdateCommandHeader(StringBuilder commandStringBuilder, string name, string schema, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L50">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendUpdateOperation_System_Text_StringBuilder_Microsoft_Data_Entity_Update_ModificationCommand_">AppendUpdateOperation(StringBuilder, ModificationCommand)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void AppendUpdateOperation(StringBuilder commandStringBuilder, ModificationCommand command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ModificationCommand.html#Microsoft_Data_Entity_Update_ModificationCommand">ModificationCommand</a></td>
+                    <td><em>command</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L261">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendValues_System_Text_StringBuilder_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendValues(StringBuilder, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendValues(StringBuilder commandStringBuilder, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L250">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendValuesHeader_System_Text_StringBuilder_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendValuesHeader(StringBuilder, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendValuesHeader(StringBuilder commandStringBuilder, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L294">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendWhereAffectedClause_System_Text_StringBuilder_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendWhereAffectedClause(StringBuilder, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendWhereAffectedClause(StringBuilder commandStringBuilder, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L278">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendWhereClause_System_Text_StringBuilder_System_Collections_Generic_IReadOnlyList_Microsoft_Data_Entity_Update_ColumnModification__">AppendWhereClause(StringBuilder, IReadOnlyList&lt;ColumnModification&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendWhereClause(StringBuilder commandStringBuilder, IReadOnlyList&lt;ColumnModification&gt; operations)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a>&gt;</td>
+                    <td><em>operations</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L330">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_AppendWhereCondition_System_Text_StringBuilder_Microsoft_Data_Entity_Update_ColumnModification_System_Boolean_">AppendWhereCondition(StringBuilder, ColumnModification, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual void AppendWhereCondition(StringBuilder commandStringBuilder, ColumnModification columnModification, bool useOriginalValue)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Text.StringBuilder</span></td>
+                    <td><em>commandStringBuilder</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ColumnModification.html#Microsoft_Data_Entity_Update_ColumnModification">ColumnModification</a></td>
+                    <td><em>columnModification</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>useOriginalValue</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/UpdateSqlGenerator.cs/#L356">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_UpdateSqlGenerator_GenerateNextSequenceValueOperation_System_String_System_String_">GenerateNextSequenceValueOperation(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string GenerateNextSequenceValueOperation(string name, string schema)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

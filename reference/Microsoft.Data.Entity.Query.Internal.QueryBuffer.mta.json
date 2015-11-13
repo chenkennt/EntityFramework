@@ -1,0 +1,815 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+    "id": "QueryBuffer",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager,Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource)",
+            "id": "QueryBuffer_IStateManager__IKeyValueFactorySource_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "QueryBuffer(IStateManager, IKeyValueFactorySource)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.QueryBuffer(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager, Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public QueryBuffer(IStateManager stateManager, IKeyValueFactorySource keyValueFactorySource)",
+              "content.vb": "Public Sub New(stateManager As IStateManager, keyValueFactorySource As IKeyValueFactorySource)",
+              "parameters": [
+                {
+                  "id": "stateManager",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager.yml",
+                    "name": "IStateManager",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager\"/>",
+                    "id": "IStateManager",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "keyValueFactorySource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource.yml",
+                    "name": "IKeyValueFactorySource",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource\"/>",
+                    "id": "IKeyValueFactorySource",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.#ctor(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager,Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.QueryBuffer(Microsoft.Data.Entity.ChangeTracking.Internal.IStateManager, Microsoft.Data.Entity.ChangeTracking.Internal.IKeyValueFactorySource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L35"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.BeginTrackingQuery",
+            "id": "BeginTrackingQuery__",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "BeginTrackingQuery()",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.BeginTrackingQuery()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 42,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual void BeginTrackingQuery()",
+              "content.vb": "Public Overridable Sub BeginTrackingQuery"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.BeginTrackingQuery\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.BeginTrackingQuery()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L43"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetEntity(Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Query.EntityLoadInfo,System.Boolean)",
+            "id": "GetEntity_IKeyValue__EntityLoadInfo__Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "GetEntity(IKeyValue, EntityLoadInfo, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetEntity(Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Query.EntityLoadInfo, System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual object GetEntity(IKeyValue keyValue, EntityLoadInfo entityLoadInfo, bool queryStateManager)",
+              "content.vb": "Public Overridable Function GetEntity(keyValue As IKeyValue, entityLoadInfo As EntityLoadInfo, queryStateManager As Boolean) As Object",
+              "parameters": [
+                {
+                  "id": "keyValue",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                    "name": "IKeyValue",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                    "id": "IKeyValue",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityLoadInfo",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.EntityLoadInfo.yml",
+                    "name": "EntityLoadInfo",
+                    "fullName": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                    "type": "struct",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.EntityLoadInfo\" name=\"Microsoft.Data.Entity.Query.EntityLoadInfo\"/>",
+                    "id": "EntityLoadInfo",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryStateManager",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Object",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Object",
+                  "fullName": "System.Object",
+                  "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                  "id": "Object",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetEntity(Microsoft.Data.Entity.Infrastructure.IKeyValue,Microsoft.Data.Entity.Query.EntityLoadInfo,System.Boolean)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetEntity(Microsoft.Data.Entity.Infrastructure.IKeyValue, Microsoft.Data.Entity.Query.EntityLoadInfo, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetPropertyValue(System.Object,Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "GetPropertyValue_Object__IProperty_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "GetPropertyValue(Object, IProperty)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetPropertyValue(System.Object, Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 110,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual object GetPropertyValue(object entity, IProperty property)",
+              "content.vb": "Public Overridable Function GetPropertyValue(entity As Object, property As IProperty) As Object",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Object",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Object",
+                  "fullName": "System.Object",
+                  "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                  "id": "Object",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetPropertyValue(System.Object,Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.GetPropertyValue(System.Object, Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L111"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.Include(System.Object,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader},System.Boolean)",
+            "id": "Include_Object__IReadOnlyList_INavigation___IReadOnlyList_RelatedEntitiesLoader___Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "Include(Object, IReadOnlyList<INavigation>, IReadOnlyList<RelatedEntitiesLoader>, Boolean)",
+            "name.vb": "Include(Object, IReadOnlyList(Of INavigation), IReadOnlyList(Of RelatedEntitiesLoader), Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.Include(System.Object, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.INavigation>, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader>, System.Boolean)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.Include(System.Object, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.INavigation), System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader), System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 147,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual void Include(object entity, IReadOnlyList<INavigation> navigationPath, IReadOnlyList<RelatedEntitiesLoader> relatedEntitiesLoaders, bool queryStateManager)",
+              "content.vb": "Public Overridable Sub Include(entity As Object, navigationPath As IReadOnlyList(Of INavigation), relatedEntitiesLoaders As IReadOnlyList(Of RelatedEntitiesLoader), queryStateManager As Boolean)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "navigationPath",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "IReadOnlyList<INavigation>",
+                    "name.vb": "IReadOnlyList(Of INavigation)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.INavigation>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.INavigation)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "name": "INavigation",
+                        "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.INavigation.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "name": "INavigation",
+                        "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.INavigation.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>&gt;",
+                    "id": "IReadOnlyList_INavigation_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "relatedEntitiesLoaders",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader.yml",
+                    "name": "IReadOnlyList<RelatedEntitiesLoader>",
+                    "name.vb": "IReadOnlyList(Of RelatedEntitiesLoader)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader",
+                        "name": "RelatedEntitiesLoader",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader",
+                        "name": "RelatedEntitiesLoader",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader\" name=\"Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader\"/>&gt;",
+                    "id": "IReadOnlyList_RelatedEntitiesLoader_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryStateManager",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.Include(System.Object,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader},System.Boolean)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.Include(System.Object, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.INavigation&gt;, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Query.Internal.RelatedEntitiesLoader&gt;, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L148"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.IncludeAsync(System.Object,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader},System.Threading.CancellationToken,System.Boolean)",
+            "id": "IncludeAsync_Object__IReadOnlyList_INavigation___IReadOnlyList_AsyncRelatedEntitiesLoader___CancellationToken__Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "IncludeAsync(Object, IReadOnlyList<INavigation>, IReadOnlyList<AsyncRelatedEntitiesLoader>, CancellationToken, Boolean)",
+            "name.vb": "IncludeAsync(Object, IReadOnlyList(Of INavigation), IReadOnlyList(Of AsyncRelatedEntitiesLoader), CancellationToken, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.IncludeAsync(System.Object, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.INavigation>, System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader>, System.Threading.CancellationToken, System.Boolean)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.IncludeAsync(System.Object, System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.INavigation), System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader), System.Threading.CancellationToken, System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 210,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual Task IncludeAsync(object entity, IReadOnlyList<INavigation> navigationPath, IReadOnlyList<AsyncRelatedEntitiesLoader> relatedEntitiesLoaders, CancellationToken cancellationToken, bool queryStateManager)",
+              "content.vb": "Public Overridable Function IncludeAsync(entity As Object, navigationPath As IReadOnlyList(Of INavigation), relatedEntitiesLoaders As IReadOnlyList(Of AsyncRelatedEntitiesLoader), cancellationToken As CancellationToken, queryStateManager As Boolean) As Task",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "navigationPath",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "IReadOnlyList<INavigation>",
+                    "name.vb": "IReadOnlyList(Of INavigation)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.INavigation>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.INavigation)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "name": "INavigation",
+                        "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.INavigation.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "name": "INavigation",
+                        "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.INavigation.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>&gt;",
+                    "id": "IReadOnlyList_INavigation_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "relatedEntitiesLoaders",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader.yml",
+                    "name": "IReadOnlyList<AsyncRelatedEntitiesLoader>",
+                    "name.vb": "IReadOnlyList(Of AsyncRelatedEntitiesLoader)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+                        "name": "AsyncRelatedEntitiesLoader",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+                        "name": "AsyncRelatedEntitiesLoader",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader\" name=\"Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader\"/>&gt;",
+                    "id": "IReadOnlyList_AsyncRelatedEntitiesLoader_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryStateManager",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.IncludeAsync(System.Object,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation},System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader},System.Threading.CancellationToken,System.Boolean)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.IncludeAsync(System.Object, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.INavigation&gt;, System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader&gt;, System.Threading.CancellationToken, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L211"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.StartTracking(System.Object,Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo)",
+            "id": "StartTracking_Object__EntityTrackingInfo_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+            "name": "StartTracking(Object, EntityTrackingInfo)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.StartTracking(System.Object, Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+              "startLine": 129,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual void StartTracking(object entity, EntityTrackingInfo entityTrackingInfo)",
+              "content.vb": "Public Overridable Sub StartTracking(entity As Object, entityTrackingInfo As EntityTrackingInfo)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityTrackingInfo",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                    "parent": "Microsoft.Data.Entity.Query.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo.yml",
+                    "name": "EntityTrackingInfo",
+                    "fullName": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo\" name=\"Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo\"/>",
+                    "id": "EntityTrackingInfo",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.StartTracking(System.Object,Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer.StartTracking(System.Object, Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L130"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.QueryBuffer.yml",
+    "name": "QueryBuffer",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.QueryBuffer",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/Internal/QueryBuffer.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public class QueryBuffer : IQueryBuffer",
+      "content.vb": "Public Class QueryBuffer Implements IQueryBuffer"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Query.Internal.IQueryBuffer"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer\" name=\"Microsoft.Data.Entity.Query.Internal.QueryBuffer\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryBuffer.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,1923 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MigrationBuilder | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MigrationBuilder | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L15" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Migrations_MigrationBuilder">Class MigrationBuilder</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">MigrationBuilder</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Migrations</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class MigrationBuilder</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L17">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder__ctor_System_String_">MigrationBuilder(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MigrationBuilder(string activeProvider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>activeProvider</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L22">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_ActiveProvider">ActiveProvider</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string ActiveProvider { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L23">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_Operations">Operations</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual List&lt;MigrationOperation&gt; Operations { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.html#Microsoft_Data_Entity_Migrations_Operations_MigrationOperation">MigrationOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L25">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddColumn__1_System_String_System_String_System_String_System_String_System_Boolean_System_Object_System_String_System_String_">AddColumn&lt;T&gt;(String, String, String, String, Boolean, Object, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddColumnOperation&gt; AddColumn&lt;T&gt;(string name, string table, string type = null, string schema = null, bool nullable = false, object defaultValue = null, string defaultValueSql = null, string computedColumnSql = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>nullable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>defaultValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>defaultValueSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>computedColumnSql</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddColumnOperation">AddColumnOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L55">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddForeignKey_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Microsoft_Data_Entity_Migrations_ReferentialAction_Microsoft_Data_Entity_Migrations_ReferentialAction_">AddForeignKey(String, String, String, String, String, String, String, ReferentialAction, ReferentialAction)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddForeignKeyOperation&gt; AddForeignKey(string name, string table, string column, string principalTable, string schema = null, string principalSchema = null, string principalColumn = null, ReferentialAction onUpdate = 0, ReferentialAction onDelete = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalTable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalSchema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalColumn</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.ReferentialAction.html#Microsoft_Data_Entity_Migrations_ReferentialAction">ReferentialAction</a></td>
+                    <td><em>onUpdate</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.ReferentialAction.html#Microsoft_Data_Entity_Migrations_ReferentialAction">ReferentialAction</a></td>
+                    <td><em>onDelete</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddForeignKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddForeignKeyOperation">AddForeignKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L76">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddForeignKey_System_String_System_String_System_String___System_String_System_String_System_String_System_String___Microsoft_Data_Entity_Migrations_ReferentialAction_Microsoft_Data_Entity_Migrations_ReferentialAction_">AddForeignKey(String, String, String[], String, String, String, String[], ReferentialAction, ReferentialAction)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddForeignKeyOperation&gt; AddForeignKey(string name, string table, string[] columns, string principalTable, string schema = null, string principalSchema = null, string[] principalColumns = null, ReferentialAction onUpdate = 0, ReferentialAction onDelete = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalTable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>principalSchema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>principalColumns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.ReferentialAction.html#Microsoft_Data_Entity_Migrations_ReferentialAction">ReferentialAction</a></td>
+                    <td><em>onUpdate</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.ReferentialAction.html#Microsoft_Data_Entity_Migrations_ReferentialAction">ReferentialAction</a></td>
+                    <td><em>onDelete</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddForeignKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddForeignKeyOperation">AddForeignKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L109">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddPrimaryKey_System_String_System_String_System_String_System_String_">AddPrimaryKey(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddPrimaryKeyOperation&gt; AddPrimaryKey(string name, string table, string column, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddPrimaryKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddPrimaryKeyOperation">AddPrimaryKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L120">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddPrimaryKey_System_String_System_String_System_String___System_String_">AddPrimaryKey(String, String, String[], String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddPrimaryKeyOperation&gt; AddPrimaryKey(string name, string table, string[] columns, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddPrimaryKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddPrimaryKeyOperation">AddPrimaryKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L142">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddUniqueConstraint_System_String_System_String_System_String_System_String_">AddUniqueConstraint(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddUniqueConstraintOperation&gt; AddUniqueConstraint(string name, string table, string column, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddUniqueConstraintOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddUniqueConstraintOperation">AddUniqueConstraintOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L153">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AddUniqueConstraint_System_String_System_String_System_String___System_String_">AddUniqueConstraint(String, String, String[], String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AddUniqueConstraintOperation&gt; AddUniqueConstraint(string name, string table, string[] columns, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AddUniqueConstraintOperation.html#Microsoft_Data_Entity_Migrations_Operations_AddUniqueConstraintOperation">AddUniqueConstraintOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L175">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AlterColumn__1_System_String_System_String_System_String_System_String_System_Boolean_System_Object_System_String_System_String_">AlterColumn&lt;T&gt;(String, String, String, String, Boolean, Object, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AlterColumnOperation&gt; AlterColumn&lt;T&gt;(string name, string table, string type = null, string schema = null, bool nullable = false, object defaultValue = null, string defaultValueSql = null, string computedColumnSql = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>type</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>nullable</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>defaultValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>defaultValueSql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>computedColumnSql</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AlterColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_AlterColumnOperation">AlterColumnOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L205">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_AlterSequence_System_String_System_String_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Boolean_">AlterSequence(String, String, Int32, Nullable&lt;Int64&gt;, Nullable&lt;Int64&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;AlterSequenceOperation&gt; AlterSequence(string name, string schema = null, int incrementBy = 1, long ? minValue = null, long ? maxValue = null, bool cyclic = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>incrementBy</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>minValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>maxValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>cyclic</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.AlterSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_AlterSequenceOperation">AlterSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L229">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_CreateIndex_System_String_System_String_System_String_System_String_System_Boolean_">CreateIndex(String, String, String, String, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;CreateIndexOperation&gt; CreateIndex(string name, string table, string column, string schema = null, bool unique = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>column</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>unique</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation">CreateIndexOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L242">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_CreateIndex_System_String_System_String_System_String___System_String_System_Boolean_">CreateIndex(String, String, String[], String, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;CreateIndexOperation&gt; CreateIndex(string name, string table, string[] columns, string schema = null, bool unique = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>unique</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateIndexOperation">CreateIndexOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L280">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_CreateSequence_System_String_System_String_System_Int64_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Boolean_">CreateSequence(String, String, Int64, Int32, Nullable&lt;Int64&gt;, Nullable&lt;Int64&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;CreateSequenceOperation&gt; CreateSequence(string name, string schema = null, long startValue = 1L, int incrementBy = 1, long ? minValue = null, long ? maxValue = null, bool cyclic = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>startValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>incrementBy</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>minValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>maxValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>cyclic</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateSequenceOperation">CreateSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L290">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_CreateSequence__1_System_String_System_String_System_Int64_System_Int32_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Boolean_">CreateSequence&lt;T&gt;(String, String, Int64, Int32, Nullable&lt;Int64&gt;, Nullable&lt;Int64&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;CreateSequenceOperation&gt; CreateSequence&lt;T&gt;(string name, string schema = null, long startValue = 1L, int incrementBy = 1, long ? minValue = null, long ? maxValue = null, bool cyclic = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>startValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><em>incrementBy</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>minValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><em>maxValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>cyclic</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.CreateSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_CreateSequenceOperation">CreateSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L317">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_CreateTable__1_System_String_System_Func_Microsoft_Data_Entity_Migrations_Operations_Builders_ColumnsBuilder___0__System_String_System_Action_Microsoft_Data_Entity_Migrations_Operations_Builders_CreateTableBuilder___0___">CreateTable&lt;TColumns&gt;(String, Func&lt;ColumnsBuilder, TColumns&gt;, String, Action&lt;CreateTableBuilder&lt;TColumns&gt;&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual CreateTableBuilder&lt;TColumns&gt; CreateTable&lt;TColumns&gt;(string name, Func&lt;ColumnsBuilder, TColumns&gt; columns, string schema = null, Action&lt;CreateTableBuilder&lt;TColumns&gt;&gt; constraints = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.ColumnsBuilder.html#Microsoft_Data_Entity_Migrations_Operations_Builders_ColumnsBuilder">ColumnsBuilder</a>, TColumns&gt;</td>
+                    <td><em>columns</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Action</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.CreateTableBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_CreateTableBuilder_1">CreateTableBuilder</a>&lt;TColumns&gt;&gt;</td>
+                    <td><em>constraints</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.CreateTableBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_CreateTableBuilder_1">CreateTableBuilder</a>&lt;TColumns&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L356">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropColumn_System_String_System_String_System_String_">DropColumn(String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropColumnOperation&gt; DropColumn(string name, string table, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropColumnOperation">DropColumnOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L375">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropForeignKey_System_String_System_String_System_String_">DropForeignKey(String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropForeignKeyOperation&gt; DropForeignKey(string name, string table, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropForeignKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropForeignKeyOperation">DropForeignKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L394">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropIndex_System_String_System_String_System_String_">DropIndex(String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropIndexOperation&gt; DropIndex(string name, string table = null, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropIndexOperation">DropIndexOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L412">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropPrimaryKey_System_String_System_String_System_String_">DropPrimaryKey(String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropPrimaryKeyOperation&gt; DropPrimaryKey(string name, string table, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropPrimaryKeyOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropPrimaryKeyOperation">DropPrimaryKeyOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L431">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropSchema_System_String_">DropSchema(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropSchemaOperation&gt; DropSchema(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropSchemaOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropSchemaOperation">DropSchemaOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L445">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropSequence_System_String_System_String_">DropSequence(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropSequenceOperation&gt; DropSequence(string name, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropSequenceOperation">DropSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L461">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropTable_System_String_System_String_">DropTable(String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropTableOperation&gt; DropTable(string name, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropTableOperation">DropTableOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L477">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_DropUniqueConstraint_System_String_System_String_System_String_">DropUniqueConstraint(String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;DropUniqueConstraintOperation&gt; DropUniqueConstraint(string name, string table, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.DropUniqueConstraintOperation.html#Microsoft_Data_Entity_Migrations_Operations_DropUniqueConstraintOperation">DropUniqueConstraintOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L266">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_EnsureSchema_System_String_">EnsureSchema(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;EnsureSchemaOperation&gt; EnsureSchema(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.EnsureSchemaOperation.html#Microsoft_Data_Entity_Migrations_Operations_EnsureSchemaOperation">EnsureSchemaOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L496">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_RenameColumn_System_String_System_String_System_String_System_String_">RenameColumn(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;RenameColumnOperation&gt; RenameColumn(string name, string table, string newName, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameColumnOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameColumnOperation">RenameColumnOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L518">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_RenameIndex_System_String_System_String_System_String_System_String_">RenameIndex(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;RenameIndexOperation&gt; RenameIndex(string name, string newName, string table = null, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>table</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameIndexOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameIndexOperation">RenameIndexOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L539">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_RenameSequence_System_String_System_String_System_String_System_String_">RenameSequence(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;RenameSequenceOperation&gt; RenameSequence(string name, string schema = null, string newName = null, string newSchema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newSchema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameSequenceOperation">RenameSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L559">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_RenameTable_System_String_System_String_System_String_System_String_">RenameTable(String, String, String, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;RenameTableOperation&gt; RenameTable(string name, string schema = null, string newName = null, string newSchema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newName</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>newSchema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RenameTableOperation.html#Microsoft_Data_Entity_Migrations_Operations_RenameTableOperation">RenameTableOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L579">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_RestartSequence_System_String_System_Int64_System_String_">RestartSequence(String, Int64, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;RestartSequenceOperation&gt; RestartSequence(string name, long startValue = 1L, string schema = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>name</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><em>startValue</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>schema</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.RestartSequenceOperation.html#Microsoft_Data_Entity_Migrations_Operations_RestartSequenceOperation">RestartSequenceOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/MigrationBuilder.cs/#L597">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Migrations_MigrationBuilder_Sql_System_String_System_Boolean_">Sql(String, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual OperationBuilder&lt;SqlOperation&gt; Sql(string sql, bool suppressTransaction = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><em>suppressTransaction</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.Builders.OperationBuilder`1.html#Microsoft_Data_Entity_Migrations_Operations_Builders_OperationBuilder_1">OperationBuilder</a>&lt;<a class="xref" href="Microsoft.Data.Entity.Migrations.Operations.SqlOperation.html#Microsoft_Data_Entity_Migrations_Operations_SqlOperation">SqlOperation</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

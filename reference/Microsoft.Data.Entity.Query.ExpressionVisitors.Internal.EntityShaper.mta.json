@@ -1,0 +1,675 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+    "id": "EntityShaper",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.#ctor(Remotion.Linq.Clauses.IQuerySource,System.String,Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory,System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,System.Object})",
+            "id": "EntityShaper_IQuerySource__String__KeyValueFactory__Func_ValueBuffer__Object__",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "EntityShaper(IQuerySource, String, KeyValueFactory, Func<ValueBuffer, Object>)",
+            "name.vb": "EntityShaper(IQuerySource, String, KeyValueFactory, Func(Of ValueBuffer, Object))",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityShaper(Remotion.Linq.Clauses.IQuerySource, System.String, Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory, System.Func<Microsoft.Data.Entity.Storage.ValueBuffer, System.Object>)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityShaper(Remotion.Linq.Clauses.IQuerySource, System.String, Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory, System.Func(Of Microsoft.Data.Entity.Storage.ValueBuffer, System.Object))",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected EntityShaper(IQuerySource querySource, string entityType, KeyValueFactory keyValueFactory, Func<ValueBuffer, object> materializer)",
+              "content.vb": "Protected Sub New(querySource As IQuerySource, entityType As String, keyValueFactory As KeyValueFactory, materializer As Func(Of ValueBuffer, Object))",
+              "parameters": [
+                {
+                  "id": "querySource",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.IQuerySource",
+                    "parent": "Remotion.Linq.Clauses",
+                    "isExternal": true,
+                    "name": "IQuerySource",
+                    "fullName": "Remotion.Linq.Clauses.IQuerySource",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.IQuerySource\" name=\"Remotion.Linq.Clauses.IQuerySource\"/>",
+                    "id": "IQuerySource",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "keyValueFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.yml",
+                    "name": "KeyValueFactory",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\"/>",
+                    "id": "KeyValueFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "materializer",
+                  "type": {
+                    "uid": "System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,System.Object}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "Func<ValueBuffer, Object>",
+                    "name.vb": "Func(Of ValueBuffer, Object)",
+                    "fullName": "System.Func<Microsoft.Data.Entity.Storage.ValueBuffer, System.Object>",
+                    "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Storage.ValueBuffer, System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "name": "ValueBuffer",
+                        "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "name": "ValueBuffer",
+                        "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "Func_ValueBuffer__Object_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.#ctor(Remotion.Linq.Clauses.IQuerySource,System.String,Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory,System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,System.Object})\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityShaper(Remotion.Linq.Clauses.IQuerySource, System.String, Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory, System.Func&lt;Microsoft.Data.Entity.Storage.ValueBuffer, System.Object&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L14"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.AllowNullResult",
+            "id": "AllowNullResult",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "AllowNullResult",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.AllowNullResult",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+                "content": "protected virtual bool AllowNullResult { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property AllowNullResult As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.AllowNullResult\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.AllowNullResult\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L29"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityType",
+            "id": "EntityType",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "EntityType",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 25,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+                "content": "protected virtual string EntityType { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property EntityType As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityType\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L26"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.KeyValueFactory",
+            "id": "KeyValueFactory",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "KeyValueFactory",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.KeyValueFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+                "content": "protected virtual KeyValueFactory KeyValueFactory { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property KeyValueFactory As KeyValueFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory.yml",
+                    "name": "KeyValueFactory",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\" name=\"Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory\"/>",
+                    "id": "KeyValueFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.KeyValueFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.KeyValueFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L27"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.Materializer",
+            "id": "Materializer",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "Materializer",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.Materializer",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+                "content": "protected virtual Func<ValueBuffer, object> Materializer { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property Materializer As Func(Of ValueBuffer, Object)",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,System.Object}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "Func<ValueBuffer, Object>",
+                    "name.vb": "Func(Of ValueBuffer, Object)",
+                    "fullName": "System.Func<Microsoft.Data.Entity.Storage.ValueBuffer, System.Object>",
+                    "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Storage.ValueBuffer, System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "name": "ValueBuffer",
+                        "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "name": "ValueBuffer",
+                        "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>, <xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "Func_ValueBuffer__Object_",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.Materializer\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.Materializer\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L28"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.ValueBufferOffset",
+            "id": "ValueBufferOffset",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "ValueBufferOffset",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.ValueBufferOffset",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+                "content": "protected virtual int ValueBufferOffset { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property ValueBufferOffset As Integer",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.ValueBufferOffset\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.ValueBufferOffset\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L30"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.WithOffset(System.Int32)",
+            "id": "WithOffset_Int32_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+            "name": "WithOffset(Int32)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.WithOffset(System.Int32)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "public virtual EntityShaper WithOffset(int offset)",
+              "content.vb": "Public Overridable Function WithOffset(offset As Integer) As EntityShaper",
+              "parameters": [
+                {
+                  "id": "offset",
+                  "type": {
+                    "uid": "System.Int32",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Int32",
+                    "fullName": "System.Int32",
+                    "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                    "id": "Int32",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+                  "id": "EntityShaper",
+                  "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+                  "children": [
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.#ctor(Remotion.Linq.Clauses.IQuerySource,System.String,Microsoft.Data.Entity.ChangeTracking.Internal.KeyValueFactory,System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,System.Object})",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.AllowNullResult",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.EntityType",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.KeyValueFactory",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.Materializer",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.ValueBufferOffset",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.WithOffset(System.Int32)"
+                  ],
+                  "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+                  "name": "EntityShaper",
+                  "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+                    "startLine": 11,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Relational"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+                  "syntax": {
+                    "content": "public abstract class EntityShaper : Shaper",
+                    "content.vb": "Public MustInherit Class EntityShaper Inherits Shaper"
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.IsShaperForQuerySource(Remotion.Linq.Clauses.IQuerySource)",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.UpdateQuerySource(Remotion.Linq.Clauses.IQuerySource)",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.Type",
+                    "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.QuerySource",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper\"/>",
+                  "level": 2
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.WithOffset(System.Int32)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.WithOffset(System.Int32)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L32"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper.yml",
+    "name": "EntityShaper",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "syntax": {
+      "content": "public abstract class EntityShaper : Shaper",
+      "content.vb": "Public MustInherit Class EntityShaper Inherits Shaper"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper",
+        "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.yml",
+        "name": "Shaper",
+        "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper\"/>",
+        "id": "Shaper",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.IsShaperForQuerySource(Remotion.Linq.Clauses.IQuerySource)",
+      "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.UpdateQuerySource(Remotion.Linq.Clauses.IQuerySource)",
+      "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.Type",
+      "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.Shaper.QuerySource",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityShaper\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/Internal/EntityShaper.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

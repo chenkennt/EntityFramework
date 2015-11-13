@@ -1,0 +1,764 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SqlServerDatabaseProviderServices | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SqlServerDatabaseProviderServices | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L26" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices">Class SqlServerDatabaseProviderServices</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="Microsoft.Data.Entity.Storage.DatabaseProviderServices.html#Microsoft_Data_Entity_Storage_DatabaseProviderServices">DatabaseProviderServices</a></div>
+                  <div class="level2"><a class="xref" href="Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.html#Microsoft_Data_Entity_Storage_RelationalDatabaseProviderServices">RelationalDatabaseProviderServices</a></div>
+                  <div class="level3"><span class="xref">SqlServerDatabaseProviderServices</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Storage.Internal</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.MicrosoftSqlServer.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class SqlServerDatabaseProviderServices : RelationalDatabaseProviderServices, IRelationalDatabaseProviderServices, IDatabaseProviderServices</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L28">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices__ctor_System_IServiceProvider_">SqlServerDatabaseProviderServices(IServiceProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SqlServerDatabaseProviderServices(IServiceProvider services)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.IServiceProvider</span></td>
+                    <td><em>services</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L49">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_AnnotationProvider">AnnotationProvider</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IRelationalAnnotationProvider AnnotationProvider { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.html#Microsoft_Data_Entity_Metadata_IRelationalAnnotationProvider">IRelationalAnnotationProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L55">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_CompiledQueryCacheKeyGenerator">CompiledQueryCacheKeyGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override ICompiledQueryCacheKeyGenerator CompiledQueryCacheKeyGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.html#Microsoft_Data_Entity_Query_ICompiledQueryCacheKeyGenerator">ICompiledQueryCacheKeyGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L51">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_CompositeMemberTranslator">CompositeMemberTranslator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IMemberTranslator CompositeMemberTranslator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator.html#Microsoft_Data_Entity_Query_ExpressionTranslators_IMemberTranslator">IMemberTranslator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L50">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_CompositeMethodCallTranslator">CompositeMethodCallTranslator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IMethodCallTranslator CompositeMethodCallTranslator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator.html#Microsoft_Data_Entity_Query_ExpressionTranslators_IMethodCallTranslator">IMethodCallTranslator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L39">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ConventionSetBuilder">ConventionSetBuilder</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IConventionSetBuilder ConventionSetBuilder { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Conventions.Internal.IConventionSetBuilder.html#Microsoft_Data_Entity_Metadata_Conventions_Internal_IConventionSetBuilder">IConventionSetBuilder</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L34">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_Creator">Creator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IDatabaseCreator Creator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDatabaseCreator.html#Microsoft_Data_Entity_Storage_IDatabaseCreator">IDatabaseCreator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L54">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_EntityQueryModelVisitorFactory">EntityQueryModelVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IEntityQueryModelVisitorFactory EntityQueryModelVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.html#Microsoft_Data_Entity_Query_IEntityQueryModelVisitorFactory">IEntityQueryModelVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L41">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_HistoryRepository">HistoryRepository</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IHistoryRepository HistoryRepository { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.IHistoryRepository.html#Microsoft_Data_Entity_Migrations_IHistoryRepository">IHistoryRepository</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L33">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_InvariantName">InvariantName</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string InvariantName { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L40">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_MigrationsAnnotationProvider">MigrationsAnnotationProvider</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IMigrationsAnnotationProvider MigrationsAnnotationProvider { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider.html#Microsoft_Data_Entity_Migrations_IMigrationsAnnotationProvider">IMigrationsAnnotationProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L42">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_MigrationsSqlGenerator">MigrationsSqlGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IMigrationsSqlGenerator MigrationsSqlGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.html#Microsoft_Data_Entity_Migrations_IMigrationsSqlGenerator">IMigrationsSqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L43">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ModelSource">ModelSource</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IModelSource ModelSource { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IModelSource.html#Microsoft_Data_Entity_Infrastructure_IModelSource">IModelSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L56">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ModelValidator">ModelValidator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IModelValidator ModelValidator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Internal.IModelValidator.html#Microsoft_Data_Entity_Internal_IModelValidator">IModelValidator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L47">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ModificationCommandBatchFactory">ModificationCommandBatchFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IModificationCommandBatchFactory ModificationCommandBatchFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.IModificationCommandBatchFactory.html#Microsoft_Data_Entity_Update_IModificationCommandBatchFactory">IModificationCommandBatchFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L52">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_QueryCompilationContextFactory">QueryCompilationContextFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IQueryCompilationContextFactory QueryCompilationContextFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.html#Microsoft_Data_Entity_Query_IQueryCompilationContextFactory">IQueryCompilationContextFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L53">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_QuerySqlGeneratorFactory">QuerySqlGeneratorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IQuerySqlGeneratorFactory QuerySqlGeneratorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory.html#Microsoft_Data_Entity_Query_Sql_IQuerySqlGeneratorFactory">IQuerySqlGeneratorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L35">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_RelationalConnection">RelationalConnection</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IRelationalConnection RelationalConnection { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalConnection.html#Microsoft_Data_Entity_Storage_IRelationalConnection">IRelationalConnection</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L38">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_RelationalDatabaseCreator">RelationalDatabaseCreator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IRelationalDatabaseCreator RelationalDatabaseCreator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator.html#Microsoft_Data_Entity_Storage_IRelationalDatabaseCreator">IRelationalDatabaseCreator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L36">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_SqlGenerator">SqlGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override ISqlGenerator SqlGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.ISqlGenerator.html#Microsoft_Data_Entity_Storage_ISqlGenerator">ISqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L46">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_TypeMapper">TypeMapper</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IRelationalTypeMapper TypeMapper { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalTypeMapper.html#Microsoft_Data_Entity_Storage_IRelationalTypeMapper">IRelationalTypeMapper</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L44">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_UpdateSqlGenerator">UpdateSqlGenerator</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IUpdateSqlGenerator UpdateSqlGenerator { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.IUpdateSqlGenerator.html#Microsoft_Data_Entity_Update_IUpdateSqlGenerator">IUpdateSqlGenerator</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L48">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ValueBufferFactoryFactory">ValueBufferFactoryFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IRelationalValueBufferFactoryFactory ValueBufferFactoryFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory.html#Microsoft_Data_Entity_Storage_IRelationalValueBufferFactoryFactory">IRelationalValueBufferFactoryFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L45">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ValueGeneratorCache">ValueGeneratorCache</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IValueGeneratorCache ValueGeneratorCache { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorCache.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorCache">IValueGeneratorCache</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Storage/Internal/SqlServerDatabaseProviderServices.cs/#L37">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Storage_Internal_SqlServerDatabaseProviderServices_ValueGeneratorSelector">ValueGeneratorSelector</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IValueGeneratorSelector ValueGeneratorSelector { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.html#Microsoft_Data_Entity_ValueGeneration_IValueGeneratorSelector">IValueGeneratorSelector</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

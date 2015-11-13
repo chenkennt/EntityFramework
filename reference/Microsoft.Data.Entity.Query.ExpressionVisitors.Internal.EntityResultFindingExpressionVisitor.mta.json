@@ -1,0 +1,932 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+    "id": "EntityResultFindingExpressionVisitor",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.#ctor(Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory,Microsoft.Data.Entity.Query.QueryCompilationContext)",
+            "id": "EntityResultFindingExpressionVisitor_IModel__IEntityTrackingInfoFactory__QueryCompilationContext_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "EntityResultFindingExpressionVisitor(IModel, IEntityTrackingInfoFactory, QueryCompilationContext)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.EntityResultFindingExpressionVisitor(Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory, Microsoft.Data.Entity.Query.QueryCompilationContext)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "public EntityResultFindingExpressionVisitor(IModel model, IEntityTrackingInfoFactory entityTrackingInfoFactory, QueryCompilationContext queryCompilationContext)",
+              "content.vb": "Public Sub New(model As IModel, entityTrackingInfoFactory As IEntityTrackingInfoFactory, queryCompilationContext As QueryCompilationContext)",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityTrackingInfoFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory",
+                    "parent": "Microsoft.Data.Entity.Query.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory.yml",
+                    "name": "IEntityTrackingInfoFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory\" name=\"Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory\"/>",
+                    "id": "IEntityTrackingInfoFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryCompilationContext",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.QueryCompilationContext.yml",
+                    "name": "QueryCompilationContext",
+                    "fullName": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.QueryCompilationContext\" name=\"Microsoft.Data.Entity.Query.QueryCompilationContext\"/>",
+                    "id": "QueryCompilationContext",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.#ctor(Microsoft.Data.Entity.Metadata.IModel,Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory,Microsoft.Data.Entity.Query.QueryCompilationContext)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.EntityResultFindingExpressionVisitor(Microsoft.Data.Entity.Metadata.IModel, Microsoft.Data.Entity.Query.Internal.IEntityTrackingInfoFactory, Microsoft.Data.Entity.Query.QueryCompilationContext)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L21"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.FindEntitiesInResult(System.Linq.Expressions.Expression)",
+            "id": "FindEntitiesInResult_Expression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "FindEntitiesInResult(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.FindEntitiesInResult(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "public virtual IReadOnlyCollection<EntityTrackingInfo> FindEntitiesInResult(Expression expression)",
+              "content.vb": "Public Overridable Function FindEntitiesInResult(expression As Expression) As IReadOnlyCollection(Of EntityTrackingInfo)",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IReadOnlyCollection{Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IReadOnlyCollection`1",
+                  "href": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo.yml",
+                  "name": "IReadOnlyCollection<EntityTrackingInfo>",
+                  "name.vb": "IReadOnlyCollection(Of EntityTrackingInfo)",
+                  "fullName": "System.Collections.Generic.IReadOnlyCollection<Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo>",
+                  "fullName.vb": "System.Collections.Generic.IReadOnlyCollection(Of Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyCollection`1",
+                      "name": "IReadOnlyCollection",
+                      "fullName": "System.Collections.Generic.IReadOnlyCollection",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                      "name": "EntityTrackingInfo",
+                      "fullName": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyCollection`1",
+                      "name": "IReadOnlyCollection",
+                      "fullName": "System.Collections.Generic.IReadOnlyCollection",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                      "name": "EntityTrackingInfo",
+                      "fullName": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IReadOnlyCollection`1\" name=\"System.Collections.Generic.IReadOnlyCollection\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo\" name=\"Microsoft.Data.Entity.Query.Internal.EntityTrackingInfo\"/>&gt;",
+                  "id": "IReadOnlyCollection_EntityTrackingInfo_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.FindEntitiesInResult(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.FindEntitiesInResult(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L31"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "id": "VisitBinary_BinaryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitBinary(BinaryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 64,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitBinary(BinaryExpression node)",
+              "content.vb": "Protected Overrides Function VisitBinary(node As BinaryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.BinaryExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "BinaryExpression",
+                    "fullName": "System.Linq.Expressions.BinaryExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.BinaryExpression\" name=\"System.Linq.Expressions.BinaryExpression\"/>",
+                    "id": "BinaryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L65"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "id": "VisitConditional_ConditionalExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitConditional(ConditionalExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 62,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitConditional(ConditionalExpression node)",
+              "content.vb": "Protected Overrides Function VisitConditional(node As ConditionalExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.ConditionalExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "ConditionalExpression",
+                    "fullName": "System.Linq.Expressions.ConditionalExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.ConditionalExpression\" name=\"System.Linq.Expressions.ConditionalExpression\"/>",
+                    "id": "ConditionalExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L63"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)",
+            "id": "VisitInvocation_InvocationExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitInvocation(InvocationExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 70,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitInvocation(InvocationExpression node)",
+              "content.vb": "Protected Overrides Function VisitInvocation(node As InvocationExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.InvocationExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "InvocationExpression",
+                    "fullName": "System.Linq.Expressions.InvocationExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.InvocationExpression\" name=\"System.Linq.Expressions.InvocationExpression\"/>",
+                    "id": "InvocationExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L71"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{``0})",
+            "id": "VisitLambda_T__Expression_T__",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitLambda<T>(Expression<T>)",
+            "name.vb": "VisitLambda(Of T)(Expression(Of T))",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitLambda<T>(System.Linq.Expressions.Expression<T>)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitLambda(Of T)(System.Linq.Expressions.Expression(Of T))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 68,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitLambda<T>(Expression<T> node)",
+              "content.vb": "Protected Overrides Function VisitLambda(Of T)(node As Expression(Of T)) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression{{T}}",
+                    "parent": "System.Linq.Expressions",
+                    "definition": "System.Linq.Expressions.Expression`1",
+                    "name": "Expression<T>",
+                    "name.vb": "Expression(Of T)",
+                    "fullName": "System.Linq.Expressions.Expression<T>",
+                    "fullName.vb": "System.Linq.Expressions.Expression(Of T)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Linq.Expressions.Expression`1",
+                        "name": "Expression",
+                        "fullName": "System.Linq.Expressions.Expression",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression`1\" name=\"System.Linq.Expressions.Expression\"/>&lt;T&gt;",
+                    "id": "Expression_T_",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "T"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{{T}})",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{``0})\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitLambda&lt;T&gt;(System.Linq.Expressions.Expression&lt;T&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L69"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "id": "VisitMember_MemberExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitMember(MemberExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 58,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitMember(MemberExpression node)",
+              "content.vb": "Protected Overrides Function VisitMember(node As MemberExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.MemberExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "MemberExpression",
+                    "fullName": "System.Linq.Expressions.MemberExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.MemberExpression\" name=\"System.Linq.Expressions.MemberExpression\"/>",
+                    "id": "MemberExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L59"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "id": "VisitMethodCall_MethodCallExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitMethodCall(MethodCallExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 60,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitMethodCall(MethodCallExpression node)",
+              "content.vb": "Protected Overrides Function VisitMethodCall(node As MethodCallExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.MethodCallExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "MethodCallExpression",
+                    "fullName": "System.Linq.Expressions.MethodCallExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.MethodCallExpression\" name=\"System.Linq.Expressions.MethodCallExpression\"/>",
+                    "id": "MethodCallExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L61"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "id": "VisitQuerySourceReference_QuerySourceReferenceExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitQuerySourceReference(QuerySourceReferenceExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 39,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitQuerySourceReference(QuerySourceReferenceExpression expression)",
+              "content.vb": "Protected Overrides Function VisitQuerySourceReference(expression As QuerySourceReferenceExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression",
+                    "parent": "Remotion.Linq.Clauses.Expressions",
+                    "isExternal": true,
+                    "name": "QuerySourceReferenceExpression",
+                    "fullName": "Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression\" name=\"Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression\"/>",
+                    "id": "QuerySourceReferenceExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L40"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "id": "VisitSubQuery_SubQueryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitSubQuery(SubQueryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitSubQuery(SubQueryExpression expression)",
+              "content.vb": "Protected Overrides Function VisitSubQuery(expression As SubQueryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "parent": "Remotion.Linq.Clauses.Expressions",
+                    "isExternal": true,
+                    "name": "SubQueryExpression",
+                    "fullName": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\" name=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\"/>",
+                    "id": "SubQueryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L57"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+            "id": "VisitTypeBinary_TypeBinaryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+            "name": "VisitTypeBinary(TypeBinaryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+              "startLine": 66,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+            "syntax": {
+              "content": "protected override Expression VisitTypeBinary(TypeBinaryExpression node)",
+              "content.vb": "Protected Overrides Function VisitTypeBinary(node As TypeBinaryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "node",
+                  "type": {
+                    "uid": "System.Linq.Expressions.TypeBinaryExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "TypeBinaryExpression",
+                    "fullName": "System.Linq.Expressions.TypeBinaryExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.TypeBinaryExpression\" name=\"System.Linq.Expressions.TypeBinaryExpression\"/>",
+                    "id": "TypeBinaryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Linq.Expressions.ExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L67"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor.yml",
+    "name": "EntityResultFindingExpressionVisitor",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors.Internal",
+    "syntax": {
+      "content": "public class EntityResultFindingExpressionVisitor : ExpressionVisitorBase",
+      "content.vb": "Public Class EntityResultFindingExpressionVisitor Inherits ExpressionVisitorBase"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "System.Linq.Expressions.ExpressionVisitor",
+        "parent": "System.Linq.Expressions",
+        "isExternal": true,
+        "name": "ExpressionVisitor",
+        "fullName": "System.Linq.Expressions.ExpressionVisitor",
+        "specName": "<xref href=\"System.Linq.Expressions.ExpressionVisitor\" name=\"System.Linq.Expressions.ExpressionVisitor\"/>",
+        "id": "ExpressionVisitor",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "parent": "Remotion.Linq.Parsing",
+        "isExternal": true,
+        "name": "RelinqExpressionVisitor",
+        "fullName": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "specName": "<xref href=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\" name=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\"/>",
+        "id": "RelinqExpressionVisitor",
+        "level": 0,
+        "index": 2
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.yml",
+        "name": "ExpressionVisitorBase",
+        "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase\"/>",
+        "id": "ExpressionVisitorBase",
+        "level": 0,
+        "index": 3
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Query.ExpressionVisitors.ExpressionVisitorBase.Visit(System.Linq.Expressions.Expression)",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.AdjustArgumentsForNewExpression(System.Collections.Generic.IList{System.Linq.Expressions.Expression},System.Collections.Generic.IList{System.Reflection.MemberInfo})",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression})",
+      "System.Linq.Expressions.ExpressionVisitor.Visit``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.Func{{T},{T}})",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1({T},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitBlock(System.Linq.Expressions.BlockExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDefault(System.Linq.Expressions.DefaultExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitGoto(System.Linq.Expressions.GotoExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLabelTarget(System.Linq.Expressions.LabelTarget)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLabel(System.Linq.Expressions.LabelExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitLoop(System.Linq.Expressions.LoopExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitIndex(System.Linq.Expressions.IndexExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitNewArray(System.Linq.Expressions.NewArrayExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitSwitchCase(System.Linq.Expressions.SwitchCase)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitSwitch(System.Linq.Expressions.SwitchExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitCatchBlock(System.Linq.Expressions.CatchBlock)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitTry(System.Linq.Expressions.TryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberInit(System.Linq.Expressions.MemberInitExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitListInit(System.Linq.Expressions.ListInitExpression)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitElementInit(System.Linq.Expressions.ElementInit)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(System.Linq.Expressions.MemberBinding)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitMemberListBinding(System.Linq.Expressions.MemberListBinding)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.Internal.EntityResultFindingExpressionVisitor\"/>",
+    "level": 4,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/ExpressionVisitors/Internal/EntityResultFindingExpressionVisitor.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

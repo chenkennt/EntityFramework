@@ -1,0 +1,1220 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+    "id": "IEntityType",
+    "parent": "Microsoft.Data.Entity.Metadata",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.BaseType",
+            "id": "BaseType",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "BaseType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.BaseType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the base type of the entity. Returns null if this is not a derived type in an inheritance hierarchy.</p>\n",
+            "syntax": {
+                "content": "IEntityType BaseType { get; }",
+                "content.vb": "ReadOnly Property BaseType As IEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "id": "IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "children": [
+                      "Microsoft.Data.Entity.Metadata.IEntityType.BaseType",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.ClrType",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Metadata.IEntityType)",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetKeys",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetProperties",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.Model",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.Name"
+                    ],
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "type": "interface",
+                    "source": {
+                      "remote": {
+                        "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                        "branch": "dev",
+                        "repo": "https://github.com/chenkennt/EntityFramework.git"
+                      },
+                      "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                      "startLine": 13,
+                      "endLine": 0,
+                      "isExternal": false
+                    },
+                    "assemblies": [
+                      "EntityFramework.Core"
+                    ],
+                    "namespace": "Microsoft.Data.Entity.Metadata",
+                    "summary": "<p>Represents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref>.</p>\n",
+                    "syntax": {
+                      "content": "public interface IEntityType : IAnnotatable",
+                      "content.vb": "Public Interface IEntityType Inherits IAnnotatable"
+                    },
+                    "inheritedMembers": [
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.Item(System.String)",
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.FindAnnotation(System.String)",
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.GetAnnotations"
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.BaseType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.BaseType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L29"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.ClrType",
+            "id": "ClrType",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "ClrType",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.ClrType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 40,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<para>\nGets the CLR class that is used to represent instances of this entity. Returns null if the entity does not have a\ncorresponding CLR class (known as a shadow entity).\n</para>\n<para>\nShadow entities are not currently supported in a model that is used at runtime with a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>.\nTherefore, shadow entities will only exist in migration model snapshots, etc.\n</para>",
+            "syntax": {
+                "content": "Type ClrType { get; }",
+                "content.vb": "ReadOnly Property ClrType As Type",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.ClrType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.ClrType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L41"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.Model",
+            "id": "Model",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "Model",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.Model",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 18,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the model this entity belongs to.</p>\n",
+            "syntax": {
+                "content": "IModel Model { get; }",
+                "content.vb": "ReadOnly Property Model As IModel",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.Model\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.Model\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L19"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.Name",
+            "id": "Name",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "Name",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.Name",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the name of the entity.</p>\n",
+            "syntax": {
+                "content": "string Name { get; }",
+                "content.vb": "ReadOnly Property Name As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.Name\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.Name\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L24"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Metadata.IEntityType)",
+            "id": "FindForeignKey_IReadOnlyList_IProperty___IKey__IEntityType_",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "FindForeignKey(IReadOnlyList<IProperty>, IKey, IEntityType)",
+            "name.vb": "FindForeignKey(IReadOnlyList(Of IProperty), IKey, IEntityType)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>, Microsoft.Data.Entity.Metadata.IKey, Microsoft.Data.Entity.Metadata.IEntityType)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty), Microsoft.Data.Entity.Metadata.IKey, Microsoft.Data.Entity.Metadata.IEntityType)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 80,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the foreign key for the given properties that points to a given primary or alternate key. Returns null\nif no foreign key is found.</p>\n",
+            "syntax": {
+              "content": "IForeignKey FindForeignKey(IReadOnlyList<IProperty> properties, IKey principalKey, IEntityType principalEntityType)",
+              "content.vb": "Function FindForeignKey(properties As IReadOnlyList(Of IProperty), principalKey As IKey, principalEntityType As IEntityType) As IForeignKey",
+              "parameters": [
+                {
+                  "id": "properties",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IReadOnlyList<IProperty>",
+                    "name.vb": "IReadOnlyList(Of IProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IProperty_",
+                    "level": 0
+                  },
+                  "description": "<p>The properties that the foreign key is defined on.</p>\n"
+                },
+                {
+                  "id": "principalKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  },
+                  "description": "<p>The primary or alternate key that is referenced.</p>\n"
+                },
+                {
+                  "id": "principalEntityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "id": "IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "children": [
+                      "Microsoft.Data.Entity.Metadata.IEntityType.BaseType",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.ClrType",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Metadata.IEntityType)",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetKeys",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.GetProperties",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.Model",
+                      "Microsoft.Data.Entity.Metadata.IEntityType.Name"
+                    ],
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "type": "interface",
+                    "source": {
+                      "remote": {
+                        "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                        "branch": "dev",
+                        "repo": "https://github.com/chenkennt/EntityFramework.git"
+                      },
+                      "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                      "startLine": 13,
+                      "endLine": 0,
+                      "isExternal": false
+                    },
+                    "assemblies": [
+                      "EntityFramework.Core"
+                    ],
+                    "namespace": "Microsoft.Data.Entity.Metadata",
+                    "summary": "<p>Represents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref>.</p>\n",
+                    "syntax": {
+                      "content": "public interface IEntityType : IAnnotatable",
+                      "content.vb": "Public Interface IEntityType Inherits IAnnotatable"
+                    },
+                    "inheritedMembers": [
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.Item(System.String)",
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.FindAnnotation(System.String)",
+                      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.GetAnnotations"
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type that the relationship targets. This may be different from the type that <paramref name=\"principalKey\"></paramref>\nis defined on when the relationship targets a derived type in an inheritance hierarchy (since the key is defined on the\nbase type of the hierarchy).</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                  "name": "IForeignKey",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                  "id": "IForeignKey",
+                  "level": 0
+                },
+                "description": "<p>The foreign key, or null if none is defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty},Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Metadata.IEntityType)\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.FindForeignKey(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.IProperty&gt;, Microsoft.Data.Entity.Metadata.IKey, Microsoft.Data.Entity.Metadata.IEntityType)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L81"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+            "id": "FindIndex_IReadOnlyList_IProperty__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "FindIndex(IReadOnlyList<IProperty>)",
+            "name.vb": "FindIndex(IReadOnlyList(Of IProperty))",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 96,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the index defined on the given properties. Returns null if no index is defined.</p>\n",
+            "syntax": {
+              "content": "IIndex FindIndex(IReadOnlyList<IProperty> properties)",
+              "content.vb": "Function FindIndex(properties As IReadOnlyList(Of IProperty)) As IIndex",
+              "parameters": [
+                {
+                  "id": "properties",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IReadOnlyList<IProperty>",
+                    "name.vb": "IReadOnlyList(Of IProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IProperty_",
+                    "level": 0
+                  },
+                  "description": "<p>The properties to find the index on.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IIndex",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IIndex.yml",
+                  "name": "IIndex",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IIndex",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IIndex\" name=\"Microsoft.Data.Entity.Metadata.IIndex\"/>",
+                  "id": "IIndex",
+                  "level": 0
+                },
+                "description": "<p>The index, or null if none is found.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.FindIndex(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.IProperty&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L97"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})",
+            "id": "FindKey_IReadOnlyList_IProperty__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "FindKey(IReadOnlyList<IProperty>)",
+            "name.vb": "FindKey(IReadOnlyList(Of IProperty))",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 60,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the primary or alternate key that is defined on the given properties. Returns null if no key is defined\nfor the given properties.</p>\n",
+            "syntax": {
+              "content": "IKey FindKey(IReadOnlyList<IProperty> properties)",
+              "content.vb": "Function FindKey(properties As IReadOnlyList(Of IProperty)) As IKey",
+              "parameters": [
+                {
+                  "id": "properties",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IReadOnlyList<IProperty>",
+                    "name.vb": "IReadOnlyList(Of IProperty)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Metadata.IProperty>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "name": "IProperty",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                    "id": "IReadOnlyList_IProperty_",
+                    "level": 0
+                  },
+                  "description": "<p>The properties that make up the key.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                  "name": "IKey",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                  "id": "IKey",
+                  "level": 0
+                },
+                "description": "<p>The key, or null if none is defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.IProperty})\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.FindKey(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Metadata.IProperty&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L61"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey",
+            "id": "FindPrimaryKey__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "FindPrimaryKey()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 52,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<para>\nGets primary key for this entity. Returns null if no primary key is defined.\n</para>\n<para>\nTo be a valid model, each entity type must have a primary key defined. Therefore, the primary key may be\nnull while the model is being created, but will be present by the time the model is used with a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>.\n</para>",
+            "syntax": {
+              "content": "IKey FindPrimaryKey()",
+              "content.vb": "Function FindPrimaryKey As IKey",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                  "name": "IKey",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                  "id": "IKey",
+                  "level": 0
+                },
+                "description": "<p>The primary key, or null if none is defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.FindPrimaryKey()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L53"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)",
+            "id": "FindProperty_String_",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "FindProperty(String)",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 115,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<para>\nGets the property with a given name. Returns null if no property with the given name is defined.\n</para>\n<para>\nThis API only finds scalar properties and does not find navigation properties. Use\n<xref href=\"Microsoft.Data.Entity.EntityTypeExtensions.FindNavigation(Microsoft.Data.Entity.Metadata.IEntityType,System.String)\"></xref> to find a navigation property.\n</para>",
+            "syntax": {
+              "content": "IProperty FindProperty(string name)",
+              "content.vb": "Function FindProperty(name As String) As IProperty",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the property.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                  "name": "IProperty",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                  "id": "IProperty",
+                  "level": 0
+                },
+                "description": "<p>The property, or null if none is found.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.FindProperty(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L116"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys",
+            "id": "GetForeignKeys__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "GetForeignKeys()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 89,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the foreign keys defined on this entity.</p>\n",
+            "syntax": {
+              "content": "IEnumerable<IForeignKey> GetForeignKeys()",
+              "content.vb": "Function GetForeignKeys As IEnumerable(Of IForeignKey)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IForeignKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                  "name": "IEnumerable<IForeignKey>",
+                  "name.vb": "IEnumerable(Of IForeignKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IForeignKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IForeignKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "name": "IForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "name": "IForeignKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>&gt;",
+                  "id": "IEnumerable_IForeignKey_",
+                  "level": 0
+                },
+                "description": "<p>The foreign keys defined on this entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.GetForeignKeys()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L90"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes",
+            "id": "GetIndexes__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "GetIndexes()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 102,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the indexes defined on this entity.</p>\n",
+            "syntax": {
+              "content": "IEnumerable<IIndex> GetIndexes()",
+              "content.vb": "Function GetIndexes As IEnumerable(Of IIndex)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IIndex}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IIndex.yml",
+                  "name": "IEnumerable<IIndex>",
+                  "name.vb": "IEnumerable(Of IIndex)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IIndex>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IIndex)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "name": "IIndex",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IIndex.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "name": "IIndex",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IIndex",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IIndex.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IIndex\" name=\"Microsoft.Data.Entity.Metadata.IIndex\"/>&gt;",
+                  "id": "IEnumerable_IIndex_",
+                  "level": 0
+                },
+                "description": "<p>The indexes defined on this entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.GetIndexes()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L103"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.GetKeys",
+            "id": "GetKeys__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "GetKeys()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.GetKeys()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 66,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<p>Gets the primary and alternate keys for this entity.</p>\n",
+            "syntax": {
+              "content": "IEnumerable<IKey> GetKeys()",
+              "content.vb": "Function GetKeys As IEnumerable(Of IKey)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IKey}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                  "name": "IEnumerable<IKey>",
+                  "name.vb": "IEnumerable(Of IKey)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IKey>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IKey)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                      "name": "IKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IKey.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                      "name": "IKey",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IKey.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>&gt;",
+                  "id": "IEnumerable_IKey_",
+                  "level": 0
+                },
+                "description": "<p>The primary and alternate keys.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.GetKeys\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.GetKeys()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L67"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.IEntityType.GetProperties",
+            "id": "GetProperties__",
+            "parent": "Microsoft.Data.Entity.Metadata.IEntityType",
+            "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+            "name": "GetProperties()",
+            "fullName": "Microsoft.Data.Entity.Metadata.IEntityType.GetProperties()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+              "startLine": 127,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata",
+            "summary": "<para>\nGets the properties defined on this entity.\n</para>\n<para>\nThis API only returns scalar properties and does not return navigation properties. Use\n<xref href=\"Microsoft.Data.Entity.EntityTypeExtensions.GetNavigations(Microsoft.Data.Entity.Metadata.IEntityType)\"></xref> to get navigation properties.\n</para>",
+            "syntax": {
+              "content": "IEnumerable<IProperty> GetProperties()",
+              "content.vb": "Function GetProperties As IEnumerable(Of IProperty)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IProperty}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                  "name": "IEnumerable<IProperty>",
+                  "name.vb": "IEnumerable(Of IProperty)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IProperty>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IProperty)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                      "name": "IProperty",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                      "name": "IProperty",
+                      "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Metadata.IProperty.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>&gt;",
+                  "id": "IEnumerable_IProperty_",
+                  "level": 0
+                },
+                "description": "<p>The properties defined on this entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType.GetProperties\" name=\"Microsoft.Data.Entity.Metadata.IEntityType.GetProperties()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L128"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+    "name": "IEntityType",
+    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/IEntityType.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata",
+    "summary": "<p>Represents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public interface IEntityType : IAnnotatable",
+      "content.vb": "Public Interface IEntityType Inherits IAnnotatable"
+    },
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.Item(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.FindAnnotation(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.IAnnotatable.GetAnnotations"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/IEntityType.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

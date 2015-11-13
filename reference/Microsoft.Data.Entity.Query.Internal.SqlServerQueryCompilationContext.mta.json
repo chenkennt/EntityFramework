@@ -1,0 +1,303 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext",
+    "id": "SqlServerQueryCompilationContext",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.#ctor(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger,Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory,Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory,Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider,Microsoft.Data.Entity.Query.IQueryMethodProvider,System.Type,System.Boolean)",
+            "id": "SqlServerQueryCompilationContext_ISensitiveDataLogger__IEntityQueryModelVisitorFactory__IRequiresMaterializationExpressionVisitorFactory__ILinqOperatorProvider__IQueryMethodProvider__Type__Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext",
+            "href": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.yml",
+            "name": "SqlServerQueryCompilationContext(ISensitiveDataLogger, IEntityQueryModelVisitorFactory, IRequiresMaterializationExpressionVisitorFactory, ILinqOperatorProvider, IQueryMethodProvider, Type, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.SqlServerQueryCompilationContext(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger, Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory, Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory, Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider, Microsoft.Data.Entity.Query.IQueryMethodProvider, System.Type, System.Boolean)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.MicrosoftSqlServer"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public SqlServerQueryCompilationContext(ISensitiveDataLogger logger, IEntityQueryModelVisitorFactory entityQueryModelVisitorFactory, IRequiresMaterializationExpressionVisitorFactory requiresMaterializationExpressionVisitorFactory, ILinqOperatorProvider linqOperatorProvider, IQueryMethodProvider queryMethodProvider, Type contextType, bool trackQueryResults)",
+              "content.vb": "Public Sub New(logger As ISensitiveDataLogger, entityQueryModelVisitorFactory As IEntityQueryModelVisitorFactory, requiresMaterializationExpressionVisitorFactory As IRequiresMaterializationExpressionVisitorFactory, linqOperatorProvider As ILinqOperatorProvider, queryMethodProvider As IQueryMethodProvider, contextType As Type, trackQueryResults As Boolean)",
+              "parameters": [
+                {
+                  "id": "logger",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger.yml",
+                    "name": "ISensitiveDataLogger",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\" name=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\"/>",
+                    "id": "ISensitiveDataLogger",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityQueryModelVisitorFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.yml",
+                    "name": "IEntityQueryModelVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"/>",
+                    "id": "IEntityQueryModelVisitorFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "requiresMaterializationExpressionVisitorFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory.yml",
+                    "name": "IRequiresMaterializationExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\"/>",
+                    "id": "IRequiresMaterializationExpressionVisitorFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "linqOperatorProvider",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider",
+                    "parent": "Microsoft.Data.Entity.Query.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider.yml",
+                    "name": "ILinqOperatorProvider",
+                    "fullName": "Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider\" name=\"Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider\"/>",
+                    "id": "ILinqOperatorProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryMethodProvider",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryMethodProvider",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryMethodProvider.yml",
+                    "name": "IQueryMethodProvider",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryMethodProvider",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryMethodProvider\" name=\"Microsoft.Data.Entity.Query.IQueryMethodProvider\"/>",
+                    "id": "IQueryMethodProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "contextType",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "trackQueryResults",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.#ctor(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger,Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory,Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory,Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider,Microsoft.Data.Entity.Query.IQueryMethodProvider,System.Type,System.Boolean)\" name=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.SqlServerQueryCompilationContext(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger, Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory, Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory, Microsoft.Data.Entity.Query.Internal.ILinqOperatorProvider, Microsoft.Data.Entity.Query.IQueryMethodProvider, System.Type, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs/#L14"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.IsLateralJoinSupported",
+            "id": "IsLateralJoinSupported",
+            "parent": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext",
+            "href": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.yml",
+            "name": "IsLateralJoinSupported",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.IsLateralJoinSupported",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+              "startLine": 32,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.MicrosoftSqlServer"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "public override bool IsLateralJoinSupported { get; }",
+                "content.vb": "Public Overrides ReadOnly Property IsLateralJoinSupported As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.IsLateralJoinSupported",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.IsLateralJoinSupported\" name=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.IsLateralJoinSupported\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs/#L33"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext.yml",
+    "name": "SqlServerQueryCompilationContext",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.MicrosoftSqlServer"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public class SqlServerQueryCompilationContext : RelationalQueryCompilationContext",
+      "content.vb": "Public Class SqlServerQueryCompilationContext Inherits RelationalQueryCompilationContext"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+        "parent": "Microsoft.Data.Entity.Query",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Query.QueryCompilationContext.yml",
+        "name": "QueryCompilationContext",
+        "fullName": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Query.QueryCompilationContext\" name=\"Microsoft.Data.Entity.Query.QueryCompilationContext\"/>",
+        "id": "QueryCompilationContext",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.yml",
+        "name": "RelationalQueryCompilationContext",
+        "fullName": "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Query.RelationalQueryCompilationContext\" name=\"Microsoft.Data.Entity.Query.RelationalQueryCompilationContext\"/>",
+        "id": "RelationalQueryCompilationContext",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.QueryMethodProvider",
+      "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.CreateQueryModelVisitor",
+      "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.CreateQueryModelVisitor(Microsoft.Data.Entity.Query.EntityQueryModelVisitor)",
+      "Microsoft.Data.Entity.Query.RelationalQueryCompilationContext.FindSelectExpression(Remotion.Linq.Clauses.IQuerySource)",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.Logger",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.LinqOperatorProvider",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.ContextType",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.TrackQueryResults",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.QuerySourceMapping",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.QueryAnnotations",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.IsTrackingQuery",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.IsQueryBufferRequired",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.DetermineQueryBufferRequirement(Remotion.Linq.QueryModel)",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.AddTrackableInclude(Remotion.Linq.Clauses.IQuerySource,System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Metadata.INavigation})",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.GetTrackableIncludes(Remotion.Linq.Clauses.IQuerySource)",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.FindQuerySourcesRequiringMaterialization(Microsoft.Data.Entity.Query.EntityQueryModelVisitor,Remotion.Linq.QueryModel)",
+      "Microsoft.Data.Entity.Query.QueryCompilationContext.QuerySourceRequiresMaterialization(Remotion.Linq.Clauses.IQuerySource)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext\" name=\"Microsoft.Data.Entity.Query.Internal.SqlServerQueryCompilationContext\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.MicrosoftSqlServer/Query/Internal/SqlServerQueryCompilationContext.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

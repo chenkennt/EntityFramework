@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EntityQueryModelVisitorFactory | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EntityQueryModelVisitorFactory | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory">Class EntityQueryModelVisitorFactory</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">EntityQueryModelVisitorFactory</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Query</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class EntityQueryModelVisitorFactory : IEntityQueryModelVisitorFactory</code></pre>
+              </div>
+              <h3 id="constructors">Constructors</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L15">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory__ctor_Microsoft_Data_Entity_Metadata_IModel_Microsoft_Data_Entity_Query_Internal_IQueryOptimizer_Microsoft_Data_Entity_Query_ExpressionVisitors_INavigationRewritingExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_ISubQueryMemberPushDownExpressionVisitor_Microsoft_Data_Entity_Query_ExpressionVisitors_IQuerySourceTracingExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityResultFindingExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_ITaskBlockingExpressionVisitor_Microsoft_Data_Entity_Query_ExpressionVisitors_IMemberAccessBindingExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_IOrderingExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_IProjectionExpressionVisitorFactory_Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityQueryableExpressionVisitorFactory_Microsoft_Data_Entity_Query_Internal_IQueryAnnotationExtractor_Microsoft_Data_Entity_Query_IResultOperatorHandler_Microsoft_Data_Entity_Metadata_Internal_IEntityMaterializerSource_Microsoft_Data_Entity_Query_Internal_IExpressionPrinter_">EntityQueryModelVisitorFactory(IModel, IQueryOptimizer, INavigationRewritingExpressionVisitorFactory, ISubQueryMemberPushDownExpressionVisitor, IQuerySourceTracingExpressionVisitorFactory, IEntityResultFindingExpressionVisitorFactory, ITaskBlockingExpressionVisitor, IMemberAccessBindingExpressionVisitorFactory, IOrderingExpressionVisitorFactory, IProjectionExpressionVisitorFactory, IEntityQueryableExpressionVisitorFactory, IQueryAnnotationExtractor, IResultOperatorHandler, IEntityMaterializerSource, IExpressionPrinter)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected EntityQueryModelVisitorFactory(IModel model, IQueryOptimizer queryOptimizer, INavigationRewritingExpressionVisitorFactory navigationRewritingExpressionVisitorFactory, ISubQueryMemberPushDownExpressionVisitor subQueryMemberPushDownExpressionVisitor, IQuerySourceTracingExpressionVisitorFactory querySourceTracingExpressionVisitorFactory, IEntityResultFindingExpressionVisitorFactory entityResultFindingExpressionVisitorFactory, ITaskBlockingExpressionVisitor taskBlockingExpressionVisitor, IMemberAccessBindingExpressionVisitorFactory memberAccessBindingExpressionVisitorFactory, IOrderingExpressionVisitorFactory orderingExpressionVisitorFactory, IProjectionExpressionVisitorFactory projectionExpressionVisitorFactory, IEntityQueryableExpressionVisitorFactory entityQueryableExpressionVisitorFactory, IQueryAnnotationExtractor queryAnnotationExtractor, IResultOperatorHandler resultOperatorHandler, IEntityMaterializerSource entityMaterializerSource, IExpressionPrinter expressionPrinter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td><em>model</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IQueryOptimizer.html#Microsoft_Data_Entity_Query_Internal_IQueryOptimizer">IQueryOptimizer</a></td>
+                    <td><em>queryOptimizer</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.INavigationRewritingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_INavigationRewritingExpressionVisitorFactory">INavigationRewritingExpressionVisitorFactory</a></td>
+                    <td><em>navigationRewritingExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.ISubQueryMemberPushDownExpressionVisitor.html#Microsoft_Data_Entity_Query_ExpressionVisitors_ISubQueryMemberPushDownExpressionVisitor">ISubQueryMemberPushDownExpressionVisitor</a></td>
+                    <td><em>subQueryMemberPushDownExpressionVisitor</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IQuerySourceTracingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IQuerySourceTracingExpressionVisitorFactory">IQuerySourceTracingExpressionVisitorFactory</a></td>
+                    <td><em>querySourceTracingExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityResultFindingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityResultFindingExpressionVisitorFactory">IEntityResultFindingExpressionVisitorFactory</a></td>
+                    <td><em>entityResultFindingExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.ITaskBlockingExpressionVisitor.html#Microsoft_Data_Entity_Query_ExpressionVisitors_ITaskBlockingExpressionVisitor">ITaskBlockingExpressionVisitor</a></td>
+                    <td><em>taskBlockingExpressionVisitor</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IMemberAccessBindingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IMemberAccessBindingExpressionVisitorFactory">IMemberAccessBindingExpressionVisitorFactory</a></td>
+                    <td><em>memberAccessBindingExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IOrderingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IOrderingExpressionVisitorFactory">IOrderingExpressionVisitorFactory</a></td>
+                    <td><em>orderingExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IProjectionExpressionVisitorFactory">IProjectionExpressionVisitorFactory</a></td>
+                    <td><em>projectionExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityQueryableExpressionVisitorFactory">IEntityQueryableExpressionVisitorFactory</a></td>
+                    <td><em>entityQueryableExpressionVisitorFactory</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IQueryAnnotationExtractor.html#Microsoft_Data_Entity_Query_Internal_IQueryAnnotationExtractor">IQueryAnnotationExtractor</a></td>
+                    <td><em>queryAnnotationExtractor</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IResultOperatorHandler.html#Microsoft_Data_Entity_Query_IResultOperatorHandler">IResultOperatorHandler</a></td>
+                    <td><em>resultOperatorHandler</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.IEntityMaterializerSource.html#Microsoft_Data_Entity_Metadata_Internal_IEntityMaterializerSource">IEntityMaterializerSource</a></td>
+                    <td><em>entityMaterializerSource</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.html#Microsoft_Data_Entity_Query_Internal_IExpressionPrinter">IExpressionPrinter</a></td>
+                    <td><em>expressionPrinter</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L77">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_EntityMaterializerSource">EntityMaterializerSource</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEntityMaterializerSource EntityMaterializerSource { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.Internal.IEntityMaterializerSource.html#Microsoft_Data_Entity_Metadata_Internal_IEntityMaterializerSource">IEntityMaterializerSource</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L75">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_EntityQueryableExpressionVisitorFactory">EntityQueryableExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEntityQueryableExpressionVisitorFactory EntityQueryableExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityQueryableExpressionVisitorFactory">IEntityQueryableExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L70">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_EntityResultFindingExpressionVisitorFactory">EntityResultFindingExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IEntityResultFindingExpressionVisitorFactory EntityResultFindingExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityResultFindingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IEntityResultFindingExpressionVisitorFactory">IEntityResultFindingExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L76">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_ExpressionPrinter">ExpressionPrinter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IExpressionPrinter ExpressionPrinter { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.html#Microsoft_Data_Entity_Query_Internal_IExpressionPrinter">IExpressionPrinter</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L72">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_MemberAccessBindingExpressionVisitorFactory">MemberAccessBindingExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IMemberAccessBindingExpressionVisitorFactory MemberAccessBindingExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IMemberAccessBindingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IMemberAccessBindingExpressionVisitorFactory">IMemberAccessBindingExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L65">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_Model">Model</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IModel Model { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IModel.html#Microsoft_Data_Entity_Metadata_IModel">IModel</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L67">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_NavigationRewritingExpressionVisitorFactory">NavigationRewritingExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual INavigationRewritingExpressionVisitorFactory NavigationRewritingExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.INavigationRewritingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_INavigationRewritingExpressionVisitorFactory">INavigationRewritingExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L73">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_OrderingExpressionVisitorFactory">OrderingExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IOrderingExpressionVisitorFactory OrderingExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IOrderingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IOrderingExpressionVisitorFactory">IOrderingExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L74">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_ProjectionExpressionVisitorFactory">ProjectionExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IProjectionExpressionVisitorFactory ProjectionExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IProjectionExpressionVisitorFactory">IProjectionExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L79">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_QueryAnnotationExtractor">QueryAnnotationExtractor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IQueryAnnotationExtractor QueryAnnotationExtractor { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IQueryAnnotationExtractor.html#Microsoft_Data_Entity_Query_Internal_IQueryAnnotationExtractor">IQueryAnnotationExtractor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L66">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_QueryOptimizer">QueryOptimizer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IQueryOptimizer QueryOptimizer { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.Internal.IQueryOptimizer.html#Microsoft_Data_Entity_Query_Internal_IQueryOptimizer">IQueryOptimizer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L69">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_QuerySourceTracingExpressionVisitorFactory">QuerySourceTracingExpressionVisitorFactory</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IQuerySourceTracingExpressionVisitorFactory QuerySourceTracingExpressionVisitorFactory { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.IQuerySourceTracingExpressionVisitorFactory.html#Microsoft_Data_Entity_Query_ExpressionVisitors_IQuerySourceTracingExpressionVisitorFactory">IQuerySourceTracingExpressionVisitorFactory</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L78">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_ResultOperatorHandler">ResultOperatorHandler</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual IResultOperatorHandler ResultOperatorHandler { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.IResultOperatorHandler.html#Microsoft_Data_Entity_Query_IResultOperatorHandler">IResultOperatorHandler</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L68">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_SubQueryMemberPushDownExpressionVisitor">SubQueryMemberPushDownExpressionVisitor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ISubQueryMemberPushDownExpressionVisitor SubQueryMemberPushDownExpressionVisitor { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.ISubQueryMemberPushDownExpressionVisitor.html#Microsoft_Data_Entity_Query_ExpressionVisitors_ISubQueryMemberPushDownExpressionVisitor">ISubQueryMemberPushDownExpressionVisitor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L71">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_TaskBlockingExpressionVisitor">TaskBlockingExpressionVisitor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected virtual ITaskBlockingExpressionVisitor TaskBlockingExpressionVisitor { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.ExpressionVisitors.ITaskBlockingExpressionVisitor.html#Microsoft_Data_Entity_Query_ExpressionVisitors_ITaskBlockingExpressionVisitor">ITaskBlockingExpressionVisitor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/EntityQueryModelVisitorFactory.cs/#L81">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Query_EntityQueryModelVisitorFactory_Create_Microsoft_Data_Entity_Query_QueryCompilationContext_Microsoft_Data_Entity_Query_EntityQueryModelVisitor_">Create(QueryCompilationContext, EntityQueryModelVisitor)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract EntityQueryModelVisitor Create(QueryCompilationContext queryCompilationContext, EntityQueryModelVisitor parentEntityQueryModelVisitor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.QueryCompilationContext.html#Microsoft_Data_Entity_Query_QueryCompilationContext">QueryCompilationContext</a></td>
+                    <td><em>queryCompilationContext</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.EntityQueryModelVisitor.html#Microsoft_Data_Entity_Query_EntityQueryModelVisitor">EntityQueryModelVisitor</a></td>
+                    <td><em>parentEntityQueryModelVisitor</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Query.EntityQueryModelVisitor.html#Microsoft_Data_Entity_Query_EntityQueryModelVisitor">EntityQueryModelVisitor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

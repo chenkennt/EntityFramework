@@ -1,0 +1,218 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+      "uid": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+      "id": "AsyncRelatedEntitiesLoader",
+      "parent": "Microsoft.Data.Entity.Query.Internal",
+      "children": [],
+      "href": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader.yml",
+      "name": "AsyncRelatedEntitiesLoader",
+      "fullName": "Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader",
+      "type": "Delegate",
+      "source": {
+        "remote": {
+          "path": "src/EntityFramework.Core/Query/Internal/IQueryBuffer.cs",
+          "branch": "dev",
+          "repo": "https://github.com/chenkennt/EntityFramework.git"
+        },
+        "path": "src/EntityFramework.Core/Query/Internal/IQueryBuffer.cs",
+        "startLine": 17,
+        "endLine": 0,
+        "isExternal": false
+      },
+      "assemblies": [
+        "EntityFramework.Core"
+      ],
+      "namespace": "Microsoft.Data.Entity.Query.Internal",
+      "syntax": {
+        "content": "public delegate IAsyncEnumerable<EntityLoadInfo> AsyncRelatedEntitiesLoader(IKeyValue primaryKeyValue, Func<ValueBuffer, IKeyValue> foreignKeyFactory);",
+        "content.vb": "Public Delegate Function AsyncRelatedEntitiesLoader(primaryKeyValue As IKeyValue, foreignKeyFactory As Func(Of ValueBuffer, IKeyValue)) As IAsyncEnumerable(Of EntityLoadInfo)",
+        "parameters": [
+          {
+            "id": "primaryKeyValue",
+            "type": {
+              "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+              "parent": "Microsoft.Data.Entity.Infrastructure",
+              "isExternal": false,
+              "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+              "name": "IKeyValue",
+              "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+              "type": "interface",
+              "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+              "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+              "id": "IKeyValue",
+              "level": 0
+            }
+          },
+          {
+            "id": "foreignKeyFactory",
+            "type": {
+              "uid": "System.Func{Microsoft.Data.Entity.Storage.ValueBuffer,Microsoft.Data.Entity.Infrastructure.IKeyValue}",
+              "parent": "System",
+              "definition": "System.Func`2",
+              "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+              "name": "Func<ValueBuffer, IKeyValue>",
+              "name.vb": "Func(Of ValueBuffer, IKeyValue)",
+              "fullName": "System.Func<Microsoft.Data.Entity.Storage.ValueBuffer, Microsoft.Data.Entity.Infrastructure.IKeyValue>",
+              "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Storage.ValueBuffer, Microsoft.Data.Entity.Infrastructure.IKeyValue)",
+              "spec.csharp": [
+                {
+                  "uid": "System.Func`2",
+                  "name": "Func",
+                  "fullName": "System.Func",
+                  "isExternal": true
+                },
+                {
+                  "name": "<",
+                  "fullName": "<",
+                  "isExternal": false
+                },
+                {
+                  "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                  "name": "ValueBuffer",
+                  "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                },
+                {
+                  "name": ", ",
+                  "fullName": ", ",
+                  "isExternal": false
+                },
+                {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml"
+                },
+                {
+                  "name": ">",
+                  "fullName": ">",
+                  "isExternal": false
+                }
+              ],
+              "spec.vb": [
+                {
+                  "uid": "System.Func`2",
+                  "name": "Func",
+                  "fullName": "System.Func",
+                  "isExternal": true
+                },
+                {
+                  "name": "(Of ",
+                  "fullName": "(Of ",
+                  "isExternal": false
+                },
+                {
+                  "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                  "name": "ValueBuffer",
+                  "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml"
+                },
+                {
+                  "name": ", ",
+                  "fullName": ", ",
+                  "isExternal": false
+                },
+                {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml"
+                },
+                {
+                  "name": ")",
+                  "fullName": ")",
+                  "isExternal": false
+                }
+              ],
+              "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>, <xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>&gt;",
+              "id": "Func_ValueBuffer__IKeyValue_",
+              "level": 0
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "uid": "System.Collections.Generic.IAsyncEnumerable{Microsoft.Data.Entity.Query.EntityLoadInfo}",
+            "parent": "System.Collections.Generic",
+            "definition": "System.Collections.Generic.IAsyncEnumerable`1",
+            "href": "Microsoft.Data.Entity.Query.EntityLoadInfo.yml",
+            "name": "IAsyncEnumerable<EntityLoadInfo>",
+            "name.vb": "IAsyncEnumerable(Of EntityLoadInfo)",
+            "fullName": "System.Collections.Generic.IAsyncEnumerable<Microsoft.Data.Entity.Query.EntityLoadInfo>",
+            "fullName.vb": "System.Collections.Generic.IAsyncEnumerable(Of Microsoft.Data.Entity.Query.EntityLoadInfo)",
+            "spec.csharp": [
+              {
+                "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                "name": "IAsyncEnumerable",
+                "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                "isExternal": true
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "uid": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                "name": "EntityLoadInfo",
+                "fullName": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Query.EntityLoadInfo.yml"
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "System.Collections.Generic.IAsyncEnumerable`1",
+                "name": "IAsyncEnumerable",
+                "fullName": "System.Collections.Generic.IAsyncEnumerable",
+                "isExternal": true
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "uid": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                "name": "EntityLoadInfo",
+                "fullName": "Microsoft.Data.Entity.Query.EntityLoadInfo",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Query.EntityLoadInfo.yml"
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"System.Collections.Generic.IAsyncEnumerable`1\" name=\"System.Collections.Generic.IAsyncEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.EntityLoadInfo\" name=\"Microsoft.Data.Entity.Query.EntityLoadInfo\"/>&gt;",
+            "id": "IAsyncEnumerable_EntityLoadInfo_",
+            "level": 0
+          }
+        }
+      },
+      "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader\" name=\"Microsoft.Data.Entity.Query.Internal.AsyncRelatedEntitiesLoader\"/>",
+      "level": 0,
+      "docurl": "",
+      "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/IQueryBuffer.cs/#L18"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,518 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+    "id": "IndexBuilder",
+    "parent": "Microsoft.Data.Entity.Metadata.Builders",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)",
+            "id": "IndexBuilder_InternalIndexBuilder_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "IndexBuilder(InternalIndexBuilder)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IndexBuilder(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<para>\nInitializes a new instance of the <xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\"></xref> class to configure a given index.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+            "syntax": {
+              "content": "public IndexBuilder(InternalIndexBuilder builder)",
+              "content.vb": "Public Sub New(builder As InternalIndexBuilder)",
+              "parameters": [
+                {
+                  "id": "builder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder.yml",
+                    "name": "InternalIndexBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder\"/>",
+                    "id": "InternalIndexBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>Internal builder for the index being configured.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IndexBuilder(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L34"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata",
+            "id": "Metadata",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "Metadata",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 48,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>The index being configured.</p>\n",
+            "syntax": {
+                "content": "public virtual IMutableIndex Metadata { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Metadata As IMutableIndex",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableIndex.yml",
+                    "name": "IMutableIndex",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableIndex",
+                    "type": "interface",
+                    "summary": "<para>\nRepresents an index on a set of properties.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IIndex\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableIndex\" name=\"Microsoft.Data.Entity.Metadata.IMutableIndex\"/>",
+                    "id": "IMutableIndex",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L49"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+            "id": "IInfrastructure_IMutableModel__Instance",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "IInfrastructure<IMutableModel>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.IMutableModel>.Instance",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.IMutableModel>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 53,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>The model that the index belongs to.</p>\n",
+            "syntax": {
+                "content": "IMutableModel IInfrastructure<IMutableModel>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.IMutableModel>.Instance As IMutableModel Implements IInfrastructure(Of IMutableModel).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;Microsoft.Data.Entity.Metadata.IMutableModel&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L54"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalIndexBuilder}#Instance",
+            "id": "IInfrastructure_InternalIndexBuilder__Instance",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "IInfrastructure<InternalIndexBuilder>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder>.Instance",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 43,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>The internal builder being used to configure the index.</p>\n",
+            "syntax": {
+                "content": "InternalIndexBuilder IInfrastructure<InternalIndexBuilder>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder>.Instance As InternalIndexBuilder Implements IInfrastructure(Of InternalIndexBuilder).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder",
+                    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder.yml",
+                    "name": "InternalIndexBuilder",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder\"/>",
+                    "id": "InternalIndexBuilder",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalIndexBuilder}#Instance\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L44"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String,System.Object)",
+            "id": "HasAnnotation_String__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "HasAnnotation(String, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 63,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Adds or updates an annotation on the index. If an annotation with the key specified in</p>\n<p><paramref name=\"annotation\"></paramref>\nalready exists it&#39;s value will be updated.</p>\n",
+            "syntax": {
+              "content": "public virtual IndexBuilder HasAnnotation(string annotation, object value)",
+              "content.vb": "Public Overridable Function HasAnnotation(annotation As String, value As Object) As IndexBuilder",
+              "parameters": [
+                {
+                  "id": "annotation",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The key of the annotation to be added or updated.</p>\n"
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The value to be stored in the annotation.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "id": "IndexBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalIndexBuilder}#Instance"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+                  "name": "IndexBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                    "startLine": 19,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.Index\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class IndexBuilder : IInfrastructure<IMutableModel>, IInfrastructure<InternalIndexBuilder>",
+                    "content.vb": "Public Class IndexBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalIndexBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same builder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L64"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)",
+            "id": "IsUnique_Boolean_",
+            "parent": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+            "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+            "name": "IsUnique(Boolean)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+              "startLine": 78,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+            "summary": "<p>Configures whether this index is unique (i.e. the value(s) for each instance must be unique).</p>\n",
+            "syntax": {
+              "content": "public virtual IndexBuilder IsUnique(bool unique = true)",
+              "content.vb": "Public Overridable Function IsUnique(unique As Boolean = True) As IndexBuilder",
+              "parameters": [
+                {
+                  "id": "unique",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether this index is unique.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "id": "IndexBuilder",
+                  "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                  "children": [
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.#ctor(Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.HasAnnotation(System.String,System.Object)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Metadata",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#IMutableModel}#Instance",
+                    "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.Microsoft#Data#Entity#Infrastructure#IInfrastructure{Microsoft#Data#Entity#Metadata#Internal#InternalIndexBuilder}#Instance"
+                  ],
+                  "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+                  "name": "IndexBuilder",
+                  "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+                    "startLine": 19,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Core"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+                  "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.Index\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+                  "syntax": {
+                    "content": "public class IndexBuilder : IInfrastructure<IMutableModel>, IInfrastructure<InternalIndexBuilder>",
+                    "content.vb": "Public Class IndexBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalIndexBuilder)"
+                  },
+                  "inheritance": [
+                    "System.Object"
+                  ],
+                  "implements": [
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+                    "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder}"
+                  ],
+                  "inheritedMembers": [
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\"/>",
+                  "level": 1
+                },
+                "description": "<p>The same builder instance so that multiple configuration calls can be chained.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.IsUnique(System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L79"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder.yml",
+    "name": "IndexBuilder",
+    "fullName": "Microsoft.Data.Entity.Metadata.Builders.IndexBuilder",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Builders",
+    "summary": "<para>\nProvides a simple API for configuring an <xref href=\"Microsoft.Data.Entity.Metadata.Internal.Index\"></xref>.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref> API\nand it is not designed to be directly constructed in your application code.\n</para>",
+    "syntax": {
+      "content": "public class IndexBuilder : IInfrastructure<IMutableModel>, IInfrastructure<InternalIndexBuilder>",
+      "content.vb": "Public Class IndexBuilder Implements IInfrastructure(Of IMutableModel), IInfrastructure(Of InternalIndexBuilder)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.IMutableModel}",
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{Microsoft.Data.Entity.Metadata.Internal.InternalIndexBuilder}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\" name=\"Microsoft.Data.Entity.Metadata.Builders.IndexBuilder\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Builders/IndexBuilder.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

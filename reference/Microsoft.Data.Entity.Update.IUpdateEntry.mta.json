@@ -1,0 +1,812 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+    "id": "IUpdateEntry",
+    "parent": "Microsoft.Data.Entity.Update",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.EntityState",
+            "id": "EntityState",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "EntityState",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.EntityState",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>The state of the entity to be saved.</p>\n",
+            "syntax": {
+                "content": "EntityState EntityState { get; }",
+                "content.vb": "ReadOnly Property EntityState As EntityState",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.EntityState",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.EntityState.yml",
+                    "name": "EntityState",
+                    "fullName": "Microsoft.Data.Entity.EntityState",
+                    "type": "enum",
+                    "summary": "<p>The state in which an entity is being tracked by a context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.EntityState\" name=\"Microsoft.Data.Entity.EntityState\"/>",
+                    "id": "EntityState",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.EntityState\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.EntityState\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L30"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.EntityType",
+            "id": "EntityType",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "EntityType",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.EntityType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 24,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>The type of entity to be saved to the database.</p>\n",
+            "syntax": {
+                "content": "IEntityType EntityType { get; }",
+                "content.vb": "ReadOnly Property EntityType As IEntityType",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.EntityType\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.EntityType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L25"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.GetDependentKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetDependentKeyValue_IForeignKey__ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "GetDependentKeyValue(IForeignKey, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.GetDependentKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 107,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets an object representing the values assigned to a foreign key.\n<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"></xref> is typically used to test the equivalence of key values.</p>\n",
+            "syntax": {
+              "content": "IKeyValue GetDependentKeyValue(IForeignKey foreignKey, ValueSource valueSource = 0)",
+              "content.vb": "Function GetDependentKeyValue(foreignKey As IForeignKey, valueSource As ValueSource = 0) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "foreignKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                    "name": "IForeignKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                    "id": "IForeignKey",
+                    "level": 0
+                  },
+                  "description": "<p>The foreign key to get values for.</p>\n"
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to get the current, original, or relationship snapshot value.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                },
+                "description": "<p>The values assigned to the key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetDependentKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetDependentKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L108"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrimaryKeyValue(Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetPrimaryKeyValue_ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "GetPrimaryKeyValue(ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrimaryKeyValue(Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 74,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets an object representing the values assigned to the primary key.\n<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"></xref> is typically used to test the equivalence of key values.</p>\n",
+            "syntax": {
+              "content": "IKeyValue GetPrimaryKeyValue(ValueSource valueSource = 0)",
+              "content.vb": "Function GetPrimaryKeyValue(valueSource As ValueSource = 0) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to get the current, original, or relationship snapshot value.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                },
+                "description": "<p>The values assigned to the primary key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrimaryKeyValue(Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrimaryKeyValue(Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L75"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetPrincipalKeyValue_IForeignKey__ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "GetPrincipalKeyValue(IForeignKey, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 85,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets an object representing the values assigned to the principal key that a foreign key references.\n<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"></xref> is typically used to test the equivalence of key values.</p>\n",
+            "syntax": {
+              "content": "IKeyValue GetPrincipalKeyValue(IForeignKey foreignKey, ValueSource valueSource = 0)",
+              "content.vb": "Function GetPrincipalKeyValue(foreignKey As IForeignKey, valueSource As ValueSource = 0) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "foreignKey",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IForeignKey.yml",
+                    "name": "IForeignKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IForeignKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IForeignKey\" name=\"Microsoft.Data.Entity.Metadata.IForeignKey\"/>",
+                    "id": "IForeignKey",
+                    "level": 0
+                  },
+                  "description": "<p>The foreign key to get the principal key values for.</p>\n"
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to get the current, original, or relationship snapshot value.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                },
+                "description": "<p>The values assigned to the key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IForeignKey, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L86"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetPrincipalKeyValue_IKey__ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "GetPrincipalKeyValue(IKey, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IKey, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 96,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets an object representing the values assigned to the principal key.\n<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"></xref> is typically used to test the equivalence of key values.</p>\n",
+            "syntax": {
+              "content": "IKeyValue GetPrincipalKeyValue(IKey key, ValueSource valueSource = 0)",
+              "content.vb": "Function GetPrincipalKeyValue(key As IKey, valueSource As ValueSource = 0) As IKeyValue",
+              "parameters": [
+                {
+                  "id": "key",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IKey",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IKey.yml",
+                    "name": "IKey",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IKey",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IKey\" name=\"Microsoft.Data.Entity.Metadata.IKey\"/>",
+                    "id": "IKey",
+                    "level": 0
+                  },
+                  "description": "<p>The prinicipal key to get values for.</p>\n"
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to get the current, original, or relationship snapshot value.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+                  "name": "IKeyValue",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+                  "id": "IKeyValue",
+                  "level": 0
+                },
+                "description": "<p>The values assigned to the key.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IKey,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetPrincipalKeyValue(Microsoft.Data.Entity.Metadata.IKey, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L97"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.GetValue(Microsoft.Data.Entity.Metadata.IPropertyBase,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "GetValue_IPropertyBase__ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "GetValue(IPropertyBase, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.GetValue(Microsoft.Data.Entity.Metadata.IPropertyBase, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 54,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets the value assigned to the property.</p>\n",
+            "syntax": {
+              "content": "object GetValue(IPropertyBase propertyBase, ValueSource valueSource = 0)",
+              "content.vb": "Function GetValue(propertyBase As IPropertyBase, valueSource As ValueSource = 0) As Object",
+              "parameters": [
+                {
+                  "id": "propertyBase",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IPropertyBase",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IPropertyBase.yml",
+                    "name": "IPropertyBase",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IPropertyBase",
+                    "type": "interface",
+                    "summary": "<p>Base type for navigation and scalar properties.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IPropertyBase\" name=\"Microsoft.Data.Entity.Metadata.IPropertyBase\"/>",
+                    "id": "IPropertyBase",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get the value for.</p>\n"
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to get the current, original, or relationship snapshot value.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Object",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Object",
+                  "fullName": "System.Object",
+                  "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                  "id": "Object",
+                  "level": 0
+                },
+                "description": "<p>The value for the property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetValue(Microsoft.Data.Entity.Metadata.IPropertyBase,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.GetValue(Microsoft.Data.Entity.Metadata.IPropertyBase, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L55"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.IsModified(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "IsModified_IProperty_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "IsModified(IProperty)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.IsModified(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 37,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets a value indicating if the specified property is modified. If true, the current value assigned\nto the property should be saved to the database.</p>\n",
+            "syntax": {
+              "content": "bool IsModified(IProperty property)",
+              "content.vb": "Function IsModified(property As IProperty) As Boolean",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to be checked.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the property is modified, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.IsModified(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.IsModified(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L38"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.IsStoreGenerated(Microsoft.Data.Entity.Metadata.IProperty)",
+            "id": "IsStoreGenerated_IProperty_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "IsStoreGenerated(IProperty)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.IsStoreGenerated(Microsoft.Data.Entity.Metadata.IProperty)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 44,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets a value indicating if the specified property should have a value generated by the database.</p>\n",
+            "syntax": {
+              "content": "bool IsStoreGenerated(IProperty property)",
+              "content.vb": "Function IsStoreGenerated(property As IProperty) As Boolean",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to be checked.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the property should have a value generated by the database, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.IsStoreGenerated(Microsoft.Data.Entity.Metadata.IProperty)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.IsStoreGenerated(Microsoft.Data.Entity.Metadata.IProperty)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L45"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.SetValue(Microsoft.Data.Entity.Metadata.IPropertyBase,System.Object,Microsoft.Data.Entity.Update.ValueSource)",
+            "id": "SetValue_IPropertyBase__Object__ValueSource_",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "SetValue(IPropertyBase, Object, ValueSource)",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.SetValue(Microsoft.Data.Entity.Metadata.IPropertyBase, System.Object, Microsoft.Data.Entity.Update.ValueSource)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 64,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets the value assigned to the property.</p>\n",
+            "syntax": {
+              "content": "void SetValue(IPropertyBase propertyBase, object value, ValueSource valueSource = 0)",
+              "content.vb": "Sub SetValue(propertyBase As IPropertyBase, value As Object, valueSource As ValueSource = 0)",
+              "parameters": [
+                {
+                  "id": "propertyBase",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IPropertyBase",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IPropertyBase.yml",
+                    "name": "IPropertyBase",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IPropertyBase",
+                    "type": "interface",
+                    "summary": "<p>Base type for navigation and scalar properties.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IPropertyBase\" name=\"Microsoft.Data.Entity.Metadata.IPropertyBase\"/>",
+                    "id": "IPropertyBase",
+                    "level": 0
+                  },
+                  "description": "<p>The property to set the value for.</p>\n"
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The value to set.</p>\n"
+                },
+                {
+                  "id": "valueSource",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ValueSource",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ValueSource.yml",
+                    "name": "ValueSource",
+                    "fullName": "Microsoft.Data.Entity.Update.ValueSource",
+                    "type": "enum",
+                    "summary": "<p>The type of value to get or set when accessing values of properties tracked by the context.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ValueSource\" name=\"Microsoft.Data.Entity.Update.ValueSource\"/>",
+                    "id": "ValueSource",
+                    "level": 0
+                  },
+                  "description": "<p>A value indicating whether to set the current, original, or relationship snapshot value.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.SetValue(Microsoft.Data.Entity.Metadata.IPropertyBase,System.Object,Microsoft.Data.Entity.Update.ValueSource)\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.SetValue(Microsoft.Data.Entity.Metadata.IPropertyBase, System.Object, Microsoft.Data.Entity.Update.ValueSource)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L65"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.IUpdateEntry.ToEntityEntry",
+            "id": "ToEntityEntry__",
+            "parent": "Microsoft.Data.Entity.Update.IUpdateEntry",
+            "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+            "name": "ToEntityEntry()",
+            "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry.ToEntityEntry()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+              "startLine": 115,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update",
+            "summary": "<p>Gets an <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the entity being saved. <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> is an API optimized for\napplication developers and <xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\"></xref> is optimized for database providers, but there may be instances\nwhere a database provider wants to access information from <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref>.</p>\n",
+            "syntax": {
+              "content": "EntityEntry ToEntityEntry()",
+              "content.vb": "Function ToEntityEntry As EntityEntry",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>An <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for this entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry.ToEntityEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry.ToEntityEntry()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L116"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+    "name": "IUpdateEntry",
+    "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Update/IUpdateEntry.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Update",
+    "summary": "<para>\nThe information passed to a database provider to save changes to an entity to the database.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IUpdateEntry",
+      "content.vb": "Public Interface IUpdateEntry"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

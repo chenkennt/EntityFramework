@@ -1,0 +1,117 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.QueryTrackingBehavior",
+    "id": "QueryTrackingBehavior",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Fields",
+        "id": "fields",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.QueryTrackingBehavior.NoTracking",
+            "id": "NoTracking",
+            "parent": "Microsoft.Data.Entity.QueryTrackingBehavior",
+            "href": "Microsoft.Data.Entity.QueryTrackingBehavior.yml",
+            "name": "NoTracking",
+            "fullName": "Microsoft.Data.Entity.QueryTrackingBehavior.NoTracking",
+            "type": "field",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+              "startLine": 36,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nThe change tracker will not track any of the entities that are returned from a LINQ query. If the\nentity instances are modified, this will not be detected by the change tracker and\n<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> will not persist those changes to the database.\n</para>\n<para>\nDisabling change tracking is useful for read-only scenarios because it avoids the overhead of setting\nup change tracking for each entity instance. You should not disable change tracking if you want to\nmanipulate entity instances and persist those changes to the database using\n<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref>.\n</para>\n<para>\nIdentity resolution will still be performed to ensure that all occurrences of an entity with a given key\nin the result set are represented by the same entity instance.\n</para>",
+            "syntax": {
+              "content": "NoTracking = 1"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.QueryTrackingBehavior.NoTracking\" name=\"Microsoft.Data.Entity.QueryTrackingBehavior.NoTracking\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/QueryTrackingBehavior.cs/#L37"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.QueryTrackingBehavior.TrackAll",
+            "id": "TrackAll",
+            "parent": "Microsoft.Data.Entity.QueryTrackingBehavior",
+            "href": "Microsoft.Data.Entity.QueryTrackingBehavior.yml",
+            "name": "TrackAll",
+            "fullName": "Microsoft.Data.Entity.QueryTrackingBehavior.TrackAll",
+            "type": "field",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+              "startLine": 17,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>The change tracker will keep track of changes for all entities that are returned from a LINQ query.\nAny modification to the entity instances will be detected and persisted to the database during\n<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref>.</p>\n",
+            "syntax": {
+              "content": "TrackAll = 0"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.QueryTrackingBehavior.TrackAll\" name=\"Microsoft.Data.Entity.QueryTrackingBehavior.TrackAll\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/QueryTrackingBehavior.cs/#L18"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.QueryTrackingBehavior.yml",
+    "name": "QueryTrackingBehavior",
+    "fullName": "Microsoft.Data.Entity.QueryTrackingBehavior",
+    "type": "Enum",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/QueryTrackingBehavior.cs",
+      "startLine": 10,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Indicates how the results of a query are tracked by the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public enum QueryTrackingBehavior",
+      "content.vb": "Public Enum QueryTrackingBehavior"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.QueryTrackingBehavior\" name=\"Microsoft.Data.Entity.QueryTrackingBehavior\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/QueryTrackingBehavior.cs/#L11"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

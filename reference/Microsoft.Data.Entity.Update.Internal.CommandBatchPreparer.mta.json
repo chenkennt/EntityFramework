@@ -1,0 +1,762 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+    "id": "CommandBatchPreparer",
+    "parent": "Microsoft.Data.Entity.Update.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.#ctor(Microsoft.Data.Entity.Update.IModificationCommandBatchFactory,Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory,System.Collections.Generic.IComparer{Microsoft.Data.Entity.Update.ModificationCommand},Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider)",
+            "id": "CommandBatchPreparer_IModificationCommandBatchFactory__IParameterNameGeneratorFactory__IComparer_ModificationCommand___IRelationalAnnotationProvider_",
+            "parent": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+            "href": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.yml",
+            "name": "CommandBatchPreparer(IModificationCommandBatchFactory, IParameterNameGeneratorFactory, IComparer<ModificationCommand>, IRelationalAnnotationProvider)",
+            "name.vb": "CommandBatchPreparer(IModificationCommandBatchFactory, IParameterNameGeneratorFactory, IComparer(Of ModificationCommand), IRelationalAnnotationProvider)",
+            "fullName": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CommandBatchPreparer(Microsoft.Data.Entity.Update.IModificationCommandBatchFactory, Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory, System.Collections.Generic.IComparer<Microsoft.Data.Entity.Update.ModificationCommand>, Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CommandBatchPreparer(Microsoft.Data.Entity.Update.IModificationCommandBatchFactory, Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory, System.Collections.Generic.IComparer(Of Microsoft.Data.Entity.Update.ModificationCommand), Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+              "startLine": 20,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update.Internal",
+            "syntax": {
+              "content": "public CommandBatchPreparer(IModificationCommandBatchFactory modificationCommandBatchFactory, IParameterNameGeneratorFactory parameterNameGeneratorFactory, IComparer<ModificationCommand> modificationCommandComparer, IRelationalAnnotationProvider annotations)",
+              "content.vb": "Public Sub New(modificationCommandBatchFactory As IModificationCommandBatchFactory, parameterNameGeneratorFactory As IParameterNameGeneratorFactory, modificationCommandComparer As IComparer(Of ModificationCommand), annotations As IRelationalAnnotationProvider)",
+              "parameters": [
+                {
+                  "id": "modificationCommandBatchFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory.yml",
+                    "name": "IModificationCommandBatchFactory",
+                    "fullName": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.IModificationCommandBatchFactory\" name=\"Microsoft.Data.Entity.Update.IModificationCommandBatchFactory\"/>",
+                    "id": "IModificationCommandBatchFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "parameterNameGeneratorFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory.yml",
+                    "name": "IParameterNameGeneratorFactory",
+                    "fullName": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory\" name=\"Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory\"/>",
+                    "id": "IParameterNameGeneratorFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "modificationCommandComparer",
+                  "type": {
+                    "uid": "System.Collections.Generic.IComparer{Microsoft.Data.Entity.Update.ModificationCommand}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IComparer`1",
+                    "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                    "name": "IComparer<ModificationCommand>",
+                    "name.vb": "IComparer(Of ModificationCommand)",
+                    "fullName": "System.Collections.Generic.IComparer<Microsoft.Data.Entity.Update.ModificationCommand>",
+                    "fullName.vb": "System.Collections.Generic.IComparer(Of Microsoft.Data.Entity.Update.ModificationCommand)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IComparer`1",
+                        "name": "IComparer",
+                        "fullName": "System.Collections.Generic.IComparer",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "name": "ModificationCommand",
+                        "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IComparer`1",
+                        "name": "IComparer",
+                        "fullName": "System.Collections.Generic.IComparer",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "name": "ModificationCommand",
+                        "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IComparer`1\" name=\"System.Collections.Generic.IComparer\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>&gt;",
+                    "id": "IComparer_ModificationCommand_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "annotations",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.yml",
+                    "name": "IRelationalAnnotationProvider",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\" name=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\"/>",
+                    "id": "IRelationalAnnotationProvider",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.#ctor(Microsoft.Data.Entity.Update.IModificationCommandBatchFactory,Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory,System.Collections.Generic.IComparer{Microsoft.Data.Entity.Update.ModificationCommand},Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider)\" name=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CommandBatchPreparer(Microsoft.Data.Entity.Update.IModificationCommandBatchFactory, Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory, System.Collections.Generic.IComparer&lt;Microsoft.Data.Entity.Update.ModificationCommand&gt;, Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs/#L21"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.BatchCommands(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})",
+            "id": "BatchCommands_IReadOnlyList_IUpdateEntry__",
+            "parent": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+            "href": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.yml",
+            "name": "BatchCommands(IReadOnlyList<IUpdateEntry>)",
+            "name.vb": "BatchCommands(IReadOnlyList(Of IUpdateEntry))",
+            "fullName": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.BatchCommands(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.BatchCommands(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+              "startLine": 32,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update.Internal",
+            "syntax": {
+              "content": "public virtual IEnumerable<ModificationCommandBatch> BatchCommands(IReadOnlyList<IUpdateEntry> entries)",
+              "content.vb": "Public Overridable Function BatchCommands(entries As IReadOnlyList(Of IUpdateEntry)) As IEnumerable(Of ModificationCommandBatch)",
+              "parameters": [
+                {
+                  "id": "entries",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+                    "name": "IReadOnlyList<IUpdateEntry>",
+                    "name.vb": "IReadOnlyList(Of IUpdateEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry\"/>&gt;",
+                    "id": "IReadOnlyList_IUpdateEntry_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Update.ModificationCommandBatch}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Update.ModificationCommandBatch.yml",
+                  "name": "IEnumerable<ModificationCommandBatch>",
+                  "name.vb": "IEnumerable(Of ModificationCommandBatch)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Update.ModificationCommandBatch>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Update.ModificationCommandBatch)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommandBatch",
+                      "name": "ModificationCommandBatch",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommandBatch",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommandBatch.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommandBatch",
+                      "name": "ModificationCommandBatch",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommandBatch",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommandBatch.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ModificationCommandBatch\" name=\"Microsoft.Data.Entity.Update.ModificationCommandBatch\"/>&gt;",
+                  "id": "IEnumerable_ModificationCommandBatch_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.BatchCommands(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})\" name=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.BatchCommands(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.IUpdateEntry&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs/#L33"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CreateModificationCommands(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})",
+            "id": "CreateModificationCommands_IReadOnlyList_IUpdateEntry__",
+            "parent": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+            "href": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.yml",
+            "name": "CreateModificationCommands(IReadOnlyList<IUpdateEntry>)",
+            "name.vb": "CreateModificationCommands(IReadOnlyList(Of IUpdateEntry))",
+            "fullName": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CreateModificationCommands(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CreateModificationCommands(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update.Internal",
+            "syntax": {
+              "content": "protected virtual IEnumerable<ModificationCommand> CreateModificationCommands(IReadOnlyList<IUpdateEntry> entries)",
+              "content.vb": "Protected Overridable Function CreateModificationCommands(entries As IReadOnlyList(Of IUpdateEntry)) As IEnumerable(Of ModificationCommand)",
+              "parameters": [
+                {
+                  "id": "entries",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml",
+                    "name": "IReadOnlyList<IUpdateEntry>",
+                    "name.vb": "IReadOnlyList(Of IUpdateEntry)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Update.IUpdateEntry>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Update.IUpdateEntry)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "name": "IUpdateEntry",
+                        "fullName": "Microsoft.Data.Entity.Update.IUpdateEntry",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.IUpdateEntry.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.IUpdateEntry\" name=\"Microsoft.Data.Entity.Update.IUpdateEntry\"/>&gt;",
+                    "id": "IReadOnlyList_IUpdateEntry_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Update.ModificationCommand}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                  "name": "IEnumerable<ModificationCommand>",
+                  "name.vb": "IEnumerable(Of ModificationCommand)",
+                  "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Update.ModificationCommand>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Update.ModificationCommand)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "name": "ModificationCommand",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "name": "ModificationCommand",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>&gt;",
+                  "id": "IEnumerable_ModificationCommand_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CreateModificationCommands(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Update.IUpdateEntry})\" name=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.CreateModificationCommands(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Update.IUpdateEntry&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs/#L58"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.TopologicalSort(System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Update.ModificationCommand})",
+            "id": "TopologicalSort_IEnumerable_ModificationCommand__",
+            "parent": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+            "href": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.yml",
+            "name": "TopologicalSort(IEnumerable<ModificationCommand>)",
+            "name.vb": "TopologicalSort(IEnumerable(Of ModificationCommand))",
+            "fullName": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.TopologicalSort(System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Update.ModificationCommand>)",
+            "fullName.vb": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.TopologicalSort(System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Update.ModificationCommand))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+              "startLine": 86,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Update.Internal",
+            "syntax": {
+              "content": "protected virtual IReadOnlyList<List<ModificationCommand>> TopologicalSort(IEnumerable<ModificationCommand> commands)",
+              "content.vb": "Protected Overridable Function TopologicalSort(commands As IEnumerable(Of ModificationCommand)) As IReadOnlyList(Of List(Of ModificationCommand))",
+              "parameters": [
+                {
+                  "id": "commands",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Update.ModificationCommand}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                    "name": "IEnumerable<ModificationCommand>",
+                    "name.vb": "IEnumerable(Of ModificationCommand)",
+                    "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Update.ModificationCommand>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Update.ModificationCommand)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "name": "ModificationCommand",
+                        "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "name": "ModificationCommand",
+                        "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>&gt;",
+                    "id": "IEnumerable_ModificationCommand_",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IReadOnlyList{System.Collections.Generic.List{Microsoft.Data.Entity.Update.ModificationCommand}}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IReadOnlyList`1",
+                  "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml",
+                  "name": "IReadOnlyList<List<ModificationCommand>>",
+                  "name.vb": "IReadOnlyList(Of List(Of ModificationCommand))",
+                  "fullName": "System.Collections.Generic.IReadOnlyList<System.Collections.Generic.List<Microsoft.Data.Entity.Update.ModificationCommand>>",
+                  "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.List(Of Microsoft.Data.Entity.Update.ModificationCommand))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.List`1",
+                      "name": "List",
+                      "fullName": "System.Collections.Generic.List",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "name": "ModificationCommand",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.List`1",
+                      "name": "List",
+                      "fullName": "System.Collections.Generic.List",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "name": "ModificationCommand",
+                      "fullName": "Microsoft.Data.Entity.Update.ModificationCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Update.ModificationCommand.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"System.Collections.Generic.List`1\" name=\"System.Collections.Generic.List\"/>&lt;<xref href=\"Microsoft.Data.Entity.Update.ModificationCommand\" name=\"Microsoft.Data.Entity.Update.ModificationCommand\"/>&gt;&gt;",
+                  "id": "IReadOnlyList_List_ModificationCommand__",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.TopologicalSort(System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Update.ModificationCommand})\" name=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.TopologicalSort(System.Collections.Generic.IEnumerable&lt;Microsoft.Data.Entity.Update.ModificationCommand&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs/#L87"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer.yml",
+    "name": "CommandBatchPreparer",
+    "fullName": "Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Update.Internal",
+    "syntax": {
+      "content": "public class CommandBatchPreparer : ICommandBatchPreparer",
+      "content.vb": "Public Class CommandBatchPreparer Implements ICommandBatchPreparer"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Update.ICommandBatchPreparer"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer\" name=\"Microsoft.Data.Entity.Update.Internal.CommandBatchPreparer\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Update/Internal/CommandBatchPreparer.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

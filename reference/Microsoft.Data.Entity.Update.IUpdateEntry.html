@@ -1,0 +1,588 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IUpdateEntry | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IUpdateEntry | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_Update_IUpdateEntry">Interface IUpdateEntry</h1>
+              <div class="markdown level0 summary"><para>
+The information passed to a database provider to save changes to an entity to the database.
+</para>
+<para>
+This interface is typically used by database providers (and other extensions). It is generally
+not used in application code.
+</para></div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity.Update</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Core.dll</h6>
+              <h5 id="Microsoft_Data_Entity_Update_IUpdateEntry_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IUpdateEntry</code></pre>
+              </div>
+              <h3 id="properties">Properties</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L30">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_EntityState">EntityState</h4>
+              <div class="markdown level1 summary"><p>The state of the entity to be saved.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">EntityState EntityState { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.EntityState.html#Microsoft_Data_Entity_EntityState">EntityState</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L25">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_EntityType">EntityType</h4>
+              <div class="markdown level1 summary"><p>The type of entity to be saved to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IEntityType EntityType { get; }</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IEntityType.html#Microsoft_Data_Entity_Metadata_IEntityType">IEntityType</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L108">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_GetDependentKeyValue_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Update_ValueSource_">GetDependentKeyValue(IForeignKey, ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets an object representing the values assigned to a foreign key.
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a> is typically used to test the equivalence of key values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKeyValue GetDependentKeyValue(IForeignKey foreignKey, ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td><p>The foreign key to get values for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to get the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a></td>
+                    <td><p>The values assigned to the key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L75">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_GetPrimaryKeyValue_Microsoft_Data_Entity_Update_ValueSource_">GetPrimaryKeyValue(ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets an object representing the values assigned to the primary key.
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a> is typically used to test the equivalence of key values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKeyValue GetPrimaryKeyValue(ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to get the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a></td>
+                    <td><p>The values assigned to the primary key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L86">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_GetPrincipalKeyValue_Microsoft_Data_Entity_Metadata_IForeignKey_Microsoft_Data_Entity_Update_ValueSource_">GetPrincipalKeyValue(IForeignKey, ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets an object representing the values assigned to the principal key that a foreign key references.
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a> is typically used to test the equivalence of key values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKeyValue GetPrincipalKeyValue(IForeignKey foreignKey, ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IForeignKey.html#Microsoft_Data_Entity_Metadata_IForeignKey">IForeignKey</a></td>
+                    <td><em>foreignKey</em></td>
+                    <td><p>The foreign key to get the principal key values for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to get the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a></td>
+                    <td><p>The values assigned to the key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L97">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_GetPrincipalKeyValue_Microsoft_Data_Entity_Metadata_IKey_Microsoft_Data_Entity_Update_ValueSource_">GetPrincipalKeyValue(IKey, ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets an object representing the values assigned to the principal key.
+<a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a> is typically used to test the equivalence of key values.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IKeyValue GetPrincipalKeyValue(IKey key, ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IKey.html#Microsoft_Data_Entity_Metadata_IKey">IKey</a></td>
+                    <td><em>key</em></td>
+                    <td><p>The prinicipal key to get values for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to get the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.IKeyValue.html#Microsoft_Data_Entity_Infrastructure_IKeyValue">IKeyValue</a></td>
+                    <td><p>The values assigned to the key.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L55">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_GetValue_Microsoft_Data_Entity_Metadata_IPropertyBase_Microsoft_Data_Entity_Update_ValueSource_">GetValue(IPropertyBase, ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets the value assigned to the property.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">object GetValue(IPropertyBase propertyBase, ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IPropertyBase.html#Microsoft_Data_Entity_Metadata_IPropertyBase">IPropertyBase</a></td>
+                    <td><em>propertyBase</em></td>
+                    <td><p>The property to get the value for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to get the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><p>The value for the property.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L38">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_IsModified_Microsoft_Data_Entity_Metadata_IProperty_">IsModified(IProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets a value indicating if the specified property is modified. If true, the current value assigned
+to the property should be saved to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">bool IsModified(IProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to be checked.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the property is modified, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L45">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_IsStoreGenerated_Microsoft_Data_Entity_Metadata_IProperty_">IsStoreGenerated(IProperty)</h4>
+              <div class="markdown level1 summary"><p>Gets a value indicating if the specified property should have a value generated by the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">bool IsStoreGenerated(IProperty property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IProperty.html#Microsoft_Data_Entity_Metadata_IProperty">IProperty</a></td>
+                    <td><em>property</em></td>
+                    <td><p>The property to be checked.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the property should have a value generated by the database, otherwise false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L65">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_SetValue_Microsoft_Data_Entity_Metadata_IPropertyBase_System_Object_Microsoft_Data_Entity_Update_ValueSource_">SetValue(IPropertyBase, Object, ValueSource)</h4>
+              <div class="markdown level1 summary"><p>Gets the value assigned to the property.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void SetValue(IPropertyBase propertyBase, object value, ValueSource valueSource = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Metadata.IPropertyBase.html#Microsoft_Data_Entity_Metadata_IPropertyBase">IPropertyBase</a></td>
+                    <td><em>propertyBase</em></td>
+                    <td><p>The property to set the value for.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><em>value</em></td>
+                    <td><p>The value to set.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Update.ValueSource.html#Microsoft_Data_Entity_Update_ValueSource">ValueSource</a></td>
+                    <td><em>valueSource</em></td>
+                    <td><p>A value indicating whether to set the current, original, or relationship snapshot value.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Update/IUpdateEntry.cs/#L116">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_Update_IUpdateEntry_ToEntityEntry">ToEntityEntry()</h4>
+              <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for the entity being saved. <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> is an API optimized for
+application developers and <a class="xref" href="Microsoft.Data.Entity.Update.IUpdateEntry.html#Microsoft_Data_Entity_Update_IUpdateEntry">IUpdateEntry</a> is optimized for database providers, but there may be instances
+where a database provider wants to access information from <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a>.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">EntityEntry ToEntityEntry()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a></td>
+                    <td><p>An <a class="xref" href="Microsoft.Data.Entity.ChangeTracking.EntityEntry.html#Microsoft_Data_Entity_ChangeTracking_EntityEntry">EntityEntry</a> for this entity.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

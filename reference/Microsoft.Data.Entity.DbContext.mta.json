@@ -1,0 +1,2873 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.DbContext",
+    "id": "DbContext",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.#ctor",
+            "id": "DbContext__",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "DbContext()",
+            "fullName": "Microsoft.Data.Entity.DbContext.DbContext()",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 64,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> class. The\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref>\nmethod will be called to configure the database (and other options) to be used for this context.</p>\n",
+            "syntax": {
+              "content": "protected DbContext()",
+              "content.vb": "Protected Sub New"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.#ctor\" name=\"Microsoft.Data.Entity.DbContext.DbContext()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L65"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.#ctor(Microsoft.Data.Entity.Infrastructure.DbContextOptions)",
+            "id": "DbContext_DbContextOptions_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "DbContext(DbContextOptions)",
+            "fullName": "Microsoft.Data.Entity.DbContext.DbContext(Microsoft.Data.Entity.Infrastructure.DbContextOptions)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 104,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> with the specified options. The\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method will still be called to allow further\nconfiguration of the options.</p>\n",
+            "syntax": {
+              "content": "public DbContext(DbContextOptions options)",
+              "content.vb": "Public Sub New(options As DbContextOptions)",
+              "parameters": [
+                {
+                  "id": "options",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions.yml",
+                    "name": "DbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                    "type": "class",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of this class and it is not designed to be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"/>",
+                    "id": "DbContextOptions",
+                    "level": 0
+                  },
+                  "description": "<p>The options for this context.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.#ctor(Microsoft.Data.Entity.Infrastructure.DbContextOptions)\" name=\"Microsoft.Data.Entity.DbContext.DbContext(Microsoft.Data.Entity.Infrastructure.DbContextOptions)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L105"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.#ctor(System.IServiceProvider)",
+            "id": "DbContext_IServiceProvider_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "DbContext(IServiceProvider)",
+            "fullName": "Microsoft.Data.Entity.DbContext.DbContext(System.IServiceProvider)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 91,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nInitializes a new instance of the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> class using an <xref href=\"System.IServiceProvider\"></xref>.\n</para>\n<para>\nThe service provider must contain all the services required by Entity Framework (and the database being\nused). The Entity Framework services can be registered using the\n<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"></xref> method.\nMost databases also provide an extension method on <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref> to register the\nservices required. For example, the Microsoft SQL Server provider includes an AddSqlServer() method\nto add the required services.\n</para>\n<para>\nIf the <xref href=\"System.IServiceProvider\"></xref> has a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> or\n<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions`1\"></xref> registered, then this will be used as the options for\nthis context instance. The <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method\nwill still be called to allow further configuration of the options.\n</para>",
+            "syntax": {
+              "content": "public DbContext(IServiceProvider serviceProvider)",
+              "content.vb": "Public Sub New(serviceProvider As IServiceProvider)",
+              "parameters": [
+                {
+                  "id": "serviceProvider",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  },
+                  "description": "<p>The service provider to be used.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.#ctor(System.IServiceProvider)\" name=\"Microsoft.Data.Entity.DbContext.DbContext(System.IServiceProvider)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L92"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.#ctor(System.IServiceProvider,Microsoft.Data.Entity.Infrastructure.DbContextOptions)",
+            "id": "DbContext_IServiceProvider__DbContextOptions_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "DbContext(IServiceProvider, DbContextOptions)",
+            "fullName": "Microsoft.Data.Entity.DbContext.DbContext(System.IServiceProvider, Microsoft.Data.Entity.Infrastructure.DbContextOptions)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 136,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Initializes a new instance of the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> class using an <xref href=\"System.IServiceProvider\"></xref>\nand the specified options.</p>\n<para>\nThe <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method will still be called to allow further\nconfiguration of the options.\n</para><para>\nThe service provider must contain all the services required by Entity Framework (and the database being\nused). The Entity Framework services can be registered using the\n<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"></xref> method.\nMost databases also provide an extension method on <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref> to register the\nservices required. For example, the Microsoft SQL Server provider includes an AddSqlServer() method\nto add the required services.\n</para><para>\nIf the <xref href=\"System.IServiceProvider\"></xref> has a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> or\n<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions`1\"></xref>\nregistered, then this will be used as the options for this context instance. The\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref>\nmethod will still be called to allow further configuration of the options.\n</para>",
+            "syntax": {
+              "content": "public DbContext(IServiceProvider serviceProvider, DbContextOptions options)",
+              "content.vb": "Public Sub New(serviceProvider As IServiceProvider, options As DbContextOptions)",
+              "parameters": [
+                {
+                  "id": "serviceProvider",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  },
+                  "description": "<p>The service provider to be used.</p>\n"
+                },
+                {
+                  "id": "options",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions.yml",
+                    "name": "DbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                    "type": "class",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of this class and it is not designed to be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"/>",
+                    "id": "DbContextOptions",
+                    "level": 0
+                  },
+                  "description": "<p>The options for this context.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.#ctor(System.IServiceProvider,Microsoft.Data.Entity.Infrastructure.DbContextOptions)\" name=\"Microsoft.Data.Entity.DbContext.DbContext(System.IServiceProvider, Microsoft.Data.Entity.Infrastructure.DbContextOptions)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L137"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.ChangeTracker",
+            "id": "ChangeTracker",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "ChangeTracker",
+            "fullName": "Microsoft.Data.Entity.DbContext.ChangeTracker",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 813,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Provides access to information and operations for entity instances this context is tracking.</p>\n",
+            "syntax": {
+                "content": "public virtual ChangeTracker ChangeTracker { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ChangeTracker As ChangeTracker",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+                    "parent": "Microsoft.Data.Entity.ChangeTracking",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker.yml",
+                    "name": "ChangeTracker",
+                    "fullName": "Microsoft.Data.Entity.ChangeTracking.ChangeTracker",
+                    "type": "class",
+                    "summary": "<p>Provides access to change tracking information and operations for entity instances the context is tracking.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.ChangeTracker\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\" name=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"/>",
+                    "id": "ChangeTracker",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.ChangeTracker\" name=\"Microsoft.Data.Entity.DbContext.ChangeTracker\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L814"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Database",
+            "id": "Database",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Database",
+            "fullName": "Microsoft.Data.Entity.DbContext.Database",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 808,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Provides access to database related information and operations for this context.</p>\n",
+            "syntax": {
+                "content": "public virtual DatabaseFacade Database { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Database As DatabaseFacade",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+                    "name": "DatabaseFacade",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+                    "type": "class",
+                    "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+                    "id": "DatabaseFacade",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Database\" name=\"Microsoft.Data.Entity.DbContext.Database\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L809"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Microsoft#Data#Entity#Infrastructure#IInfrastructure{System#IServiceProvider}#Instance",
+            "id": "IInfrastructure_IServiceProvider__Instance",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "IInfrastructure<IServiceProvider>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.IServiceProvider>.Instance",
+            "fullName": "Microsoft.Data.Entity.DbContext.Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.IServiceProvider>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 239,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nGets the scoped <xref href=\"System.IServiceProvider\"></xref> being used to resolve services.\n</para>\n<para>\nThis property is intended for use by extension methods that need to make use of services\nnot directly exposed in the public API surface.\n</para>",
+            "syntax": {
+                "content": "IServiceProvider IInfrastructure<IServiceProvider>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.IServiceProvider>.Instance As IServiceProvider Implements IInfrastructure(Of IServiceProvider).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Microsoft#Data#Entity#Infrastructure#IInfrastructure{System#IServiceProvider}#Instance\" name=\"Microsoft.Data.Entity.DbContext.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L240"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Model",
+            "id": "Model",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Model",
+            "fullName": "Microsoft.Data.Entity.DbContext.Model",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 818,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>The metadata about the shape of entities, the relationships between them, and how they map to the database.</p>\n",
+            "syntax": {
+                "content": "public virtual IModel Model { get; }",
+                "content.vb": "Public Overridable ReadOnly Property Model As IModel",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Model\" name=\"Microsoft.Data.Entity.DbContext.Model\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L819"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Add(System.Object,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Add_Object__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Add(Object, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Add(System.Object, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 593,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state such that it will\nbe inserted into the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry Add(object entity, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Function Add(entity As Object, behavior As GraphBehavior = 0) As EntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to add.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Add(System.Object,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Add(System.Object, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L594"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Add``1(``0,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Add_TEntity__TEntity__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Add<TEntity>(TEntity, GraphBehavior)",
+            "name.vb": "Add(Of TEntity)(TEntity, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Add<TEntity>(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Add(Of TEntity)(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 489,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state such that it will\nbe inserted into the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry<TEntity> Add<TEntity>(TEntity entity, GraphBehavior behavior = 0)where TEntity : class",
+              "content.vb": "Public Overridable Function Add(Of TEntity As Class)(entity As TEntity, behavior As GraphBehavior = 0) As EntityEntry(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "{TEntity}",
+                    "isExternal": false,
+                    "name": "TEntity",
+                    "fullName": "TEntity",
+                    "specName": "<xref href=\"{TEntity}\" name=\"TEntity\"/>",
+                    "id": "TEntity",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to add.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of the entity."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "definition": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "EntityEntry<TEntity>",
+                  "name.vb": "EntityEntry(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;",
+                  "id": "EntityEntry_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Add``1(``0,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Add&lt;TEntity&gt;(TEntity, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L490"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.AddRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)",
+            "id": "AddRange_IEnumerable_Object___GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "AddRange(IEnumerable<Object>, GraphBehavior)",
+            "name.vb": "AddRange(IEnumerable(Of Object), GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.AddRange(System.Collections.Generic.IEnumerable<System.Object>, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.AddRange(System.Collections.Generic.IEnumerable(Of System.Object), Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 740,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state such that they will\nbe inserted into the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual void AddRange(IEnumerable<object> entities, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Sub AddRange(entities As IEnumerable(Of Object), behavior As GraphBehavior = 0)",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to add.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entities or also other related entities.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.AddRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.AddRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L741"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.AddRange(System.Object[])",
+            "id": "AddRange_Object___",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "AddRange(Object[])",
+            "name.vb": "AddRange(Object())",
+            "fullName": "Microsoft.Data.Entity.DbContext.AddRange(System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.AddRange(System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 683,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state such that they will\nbe inserted into the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual void AddRange(params object[] entities)",
+              "content.vb": "Public Overridable Sub AddRange(ParamArray entities As Object())",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to add.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.AddRange(System.Object[])\" name=\"Microsoft.Data.Entity.DbContext.AddRange(System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L684"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Attach(System.Object,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Attach_Object__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Attach(Object, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Attach(System.Object, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 610,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref> state such that no\noperation will be performed when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry Attach(object entity, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Function Attach(entity As Object, behavior As GraphBehavior = 0) As EntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to attach.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Attach(System.Object,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Attach(System.Object, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L611"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Attach``1(``0,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Attach_TEntity__TEntity__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Attach<TEntity>(TEntity, GraphBehavior)",
+            "name.vb": "Attach(Of TEntity)(TEntity, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Attach<TEntity>(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Attach(Of TEntity)(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 507,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref> state such that no\noperation will be performed when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry<TEntity> Attach<TEntity>(TEntity entity, GraphBehavior behavior = 0)where TEntity : class",
+              "content.vb": "Public Overridable Function Attach(Of TEntity As Class)(entity As TEntity, behavior As GraphBehavior = 0) As EntityEntry(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "{TEntity}",
+                    "isExternal": false,
+                    "name": "TEntity",
+                    "fullName": "TEntity",
+                    "specName": "<xref href=\"{TEntity}\" name=\"TEntity\"/>",
+                    "id": "TEntity",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to attach.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of the entity."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "definition": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "EntityEntry<TEntity>",
+                  "name.vb": "EntityEntry(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;",
+                  "id": "EntityEntry_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Attach``1(``0,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Attach&lt;TEntity&gt;(TEntity, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L508"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)",
+            "id": "AttachRange_IEnumerable_Object___GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "AttachRange(IEnumerable<Object>, GraphBehavior)",
+            "name.vb": "AttachRange(IEnumerable(Of Object), GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.AttachRange(System.Collections.Generic.IEnumerable<System.Object>, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.AttachRange(System.Collections.Generic.IEnumerable(Of System.Object), Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 753,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref> state such that no\noperation will be performed when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual void AttachRange(IEnumerable<object> entities, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Sub AttachRange(entities As IEnumerable(Of Object), behavior As GraphBehavior = 0)",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to attach.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entities or also other related entities.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.AttachRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.AttachRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L754"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.AttachRange(System.Object[])",
+            "id": "AttachRange_Object___",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "AttachRange(Object[])",
+            "name.vb": "AttachRange(Object())",
+            "fullName": "Microsoft.Data.Entity.DbContext.AttachRange(System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.AttachRange(System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 691,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref> state such that no\noperation will be performed when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "syntax": {
+              "content": "public virtual void AttachRange(params object[] entities)",
+              "content.vb": "Public Overridable Sub AttachRange(ParamArray entities As Object())",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to attach.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.AttachRange(System.Object[])\" name=\"Microsoft.Data.Entity.DbContext.AttachRange(System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L692"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Dispose",
+            "id": "Dispose__",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Dispose()",
+            "fullName": "Microsoft.Data.Entity.DbContext.Dispose()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 413,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Releases the allocated resources for this context.</p>\n",
+            "syntax": {
+              "content": "public virtual void Dispose()",
+              "content.vb": "Public Overridable Sub Dispose"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Dispose\" name=\"Microsoft.Data.Entity.DbContext.Dispose()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L414"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Entry(System.Object)",
+            "id": "Entry_Object_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Entry(Object)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Entry(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 451,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nGets an <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the given entity. The entry provides\naccess to change tracking information and operations for the entity.\n</para>\n<para>\nThis method may be called on an entity that is not tracked. You can then\nset the <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry.State\"></xref> property on the returned entry\nto have the context begin tracking the entity in the specified state.\n</para>",
+            "syntax": {
+              "content": "public virtual EntityEntry Entry(object entity)",
+              "content.vb": "Public Overridable Function Entry(entity As Object) As EntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to get the entry for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>The entry for the given entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Entry(System.Object)\" name=\"Microsoft.Data.Entity.DbContext.Entry(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L452"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Entry``1(``0)",
+            "id": "Entry_TEntity__TEntity_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Entry<TEntity>(TEntity)",
+            "name.vb": "Entry(Of TEntity)(TEntity)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Entry<TEntity>(TEntity)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Entry(Of TEntity)(TEntity)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 426,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets an <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref> for the given entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry<TEntity> Entry<TEntity>(TEntity entity)where TEntity : class",
+              "content.vb": "Public Overridable Function Entry(Of TEntity As Class)(entity As TEntity) As EntityEntry(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "{TEntity}",
+                    "isExternal": false,
+                    "name": "TEntity",
+                    "fullName": "TEntity",
+                    "specName": "<xref href=\"{TEntity}\" name=\"TEntity\"/>",
+                    "id": "TEntity",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to get the entry for.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of the entity."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "definition": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "EntityEntry<TEntity>",
+                  "name.vb": "EntityEntry(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;",
+                  "id": "EntityEntry_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>The entry for the given entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Entry``1(``0)\" name=\"Microsoft.Data.Entity.DbContext.Entry&lt;TEntity&gt;(TEntity)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L427"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "id": "OnConfiguring_DbContextOptionsBuilder_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "OnConfiguring(DbContextOptionsBuilder)",
+            "fullName": "Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 257,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nOverride this method to configure the database (and other options) to be used for this context.\nThis method is called for each instance of the context that is created.\n</para>\n<para>\nIn situations where an instance of <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref> may or may not have been passed\nto the constructor, you can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder.IsConfigured\"></xref> to determine if\nthe options have already been set, and skip some or all of the logic in\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref>.\n</para>",
+            "syntax": {
+              "content": "protected virtual void OnConfiguring(DbContextOptionsBuilder optionsBuilder)",
+              "content.vb": "Protected Overridable Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder)",
+              "parameters": [
+                {
+                  "id": "optionsBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>A builder used to create or modify options for this context. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the context.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\" name=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L258"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)",
+            "id": "OnModelCreating_ModelBuilder_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "OnModelCreating(ModelBuilder)",
+            "fullName": "Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 275,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Override this method to further configure the model that was discovered by convention from the entity types\nexposed in <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> properties on your derived context. The resulting model may be cached\nand re-used for subsequent instances of your derived context.</p>\n",
+            "remarks": "<p>If a model is explicitly set on the options for this context (via <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder.UseModel(Microsoft.Data.Entity.Metadata.IModel)\"></xref>)\nthen this method will not be run.</p>\n",
+            "syntax": {
+              "content": "protected virtual void OnModelCreating(ModelBuilder modelBuilder)",
+              "content.vb": "Protected Overridable Sub OnModelCreating(modelBuilder As ModelBuilder)",
+              "parameters": [
+                {
+                  "id": "modelBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ModelBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ModelBuilder.yml",
+                    "name": "ModelBuilder",
+                    "fullName": "Microsoft.Data.Entity.ModelBuilder",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ModelBuilder\" name=\"Microsoft.Data.Entity.ModelBuilder\"/>",
+                    "id": "ModelBuilder",
+                    "level": 0
+                  },
+                  "description": "<p>The builder being used to construct the model for this context. Databases (and other extensions) typically\ndefine extension methods on this object that allow you to configure aspects of the model that are specific\nto a given database.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\" name=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L276"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Remove(System.Object)",
+            "id": "Remove_Object_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Remove(Object)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Remove(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 653,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref> state such that it will\nbe removed from the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "remarks": "<p>If the entity is already tracked in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state then the context will\nstop tracking the entity (rather than marking it as <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref>) since the\nentity was previously added to the context and does not exist in the database.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry Remove(object entity)",
+              "content.vb": "Public Overridable Function Remove(entity As Object) As EntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to remove.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Remove(System.Object)\" name=\"Microsoft.Data.Entity.DbContext.Remove(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L654"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Remove``1(``0)",
+            "id": "Remove_TEntity__TEntity_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Remove<TEntity>(TEntity)",
+            "name.vb": "Remove(Of TEntity)(TEntity)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Remove<TEntity>(TEntity)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Remove(Of TEntity)(TEntity)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 553,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref> state such that it will\nbe removed from the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "remarks": "<p>If the entity is already tracked in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state then the context will\nstop tracking the entity (rather than marking it as <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref>) since the\nentity was previously added to the context and does not exist in the database.</p>\n",
+            "syntax": {
+              "content": "public virtual EntityEntry<TEntity> Remove<TEntity>(TEntity entity)where TEntity : class",
+              "content.vb": "Public Overridable Function Remove(Of TEntity As Class)(entity As TEntity) As EntityEntry(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "{TEntity}",
+                    "isExternal": false,
+                    "name": "TEntity",
+                    "fullName": "TEntity",
+                    "specName": "<xref href=\"{TEntity}\" name=\"TEntity\"/>",
+                    "id": "TEntity",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to remove.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of the entity."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "definition": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "EntityEntry<TEntity>",
+                  "name.vb": "EntityEntry(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;",
+                  "id": "EntityEntry_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Remove``1(``0)\" name=\"Microsoft.Data.Entity.DbContext.Remove&lt;TEntity&gt;(TEntity)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L554"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})",
+            "id": "RemoveRange_IEnumerable_Object__",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "RemoveRange(IEnumerable<Object>)",
+            "name.vb": "RemoveRange(IEnumerable(Of Object))",
+            "fullName": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Collections.Generic.IEnumerable<System.Object>)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Collections.Generic.IEnumerable(Of System.Object))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 788,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref> state such that they will\nbe removed from the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "remarks": "<p>If any of the entities are already tracked in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state then the context will\nstop tracking those entities (rather than marking them as <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref>) since those\nentities were previously added to the context and do not exist in the database.</p>\n",
+            "syntax": {
+              "content": "public virtual void RemoveRange(IEnumerable<object> entities)",
+              "content.vb": "Public Overridable Sub RemoveRange(entities As IEnumerable(Of Object))",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to remove.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.RemoveRange(System.Collections.Generic.IEnumerable{System.Object})\" name=\"Microsoft.Data.Entity.DbContext.RemoveRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L789"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Object[])",
+            "id": "RemoveRange_Object___",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "RemoveRange(Object[])",
+            "name.vb": "RemoveRange(Object())",
+            "fullName": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.RemoveRange(System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 719,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Begins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref> state such that they will\nbe removed from the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.</p>\n",
+            "remarks": "<p>If any of the entities are already tracked in the <xref href=\"Microsoft.Data.Entity.EntityState.Added\"></xref> state then the context will\nstop tracking those entities (rather than marking them as <xref href=\"Microsoft.Data.Entity.EntityState.Deleted\"></xref>) since those\nentities were previously added to the context and do not exist in the database.</p>\n",
+            "syntax": {
+              "content": "public virtual void RemoveRange(params object[] entities)",
+              "content.vb": "Public Overridable Sub RemoveRange(ParamArray entities As Object())",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to remove.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.RemoveRange(System.Object[])\" name=\"Microsoft.Data.Entity.DbContext.RemoveRange(System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L720"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.SaveChanges",
+            "id": "SaveChanges__",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "SaveChanges()",
+            "fullName": "Microsoft.Data.Entity.DbContext.SaveChanges()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 290,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Saves all changes made in this context to the database.</p>\n",
+            "remarks": "<p>This method will automatically call <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> to discover any\nchanges to entity instances before saving to the underlying database. This can be disabled via\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"></xref>.</p>\n",
+            "syntax": {
+              "content": "public virtual int SaveChanges()",
+              "content.vb": "Public Overridable Function SaveChanges As Integer",
+              "return": {
+                "type": {
+                  "uid": "System.Int32",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int32",
+                  "fullName": "System.Int32",
+                  "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                  "id": "Int32",
+                  "level": 0
+                },
+                "description": "<p>The number of state entries written to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\" name=\"Microsoft.Data.Entity.DbContext.SaveChanges()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L291"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.SaveChanges(System.Boolean)",
+            "id": "SaveChanges_Boolean_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "SaveChanges(Boolean)",
+            "fullName": "Microsoft.Data.Entity.DbContext.SaveChanges(System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 308,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Saves all changes made in this context to the database.</p>\n",
+            "remarks": "<p>This method will automatically call <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> to discover any\nchanges to entity instances before saving to the underlying database. This can be disabled via\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"></xref>.</p>\n",
+            "syntax": {
+              "content": "public virtual int SaveChanges(bool acceptAllChangesOnSuccess)",
+              "content.vb": "Public Overridable Function SaveChanges(acceptAllChangesOnSuccess As Boolean) As Integer",
+              "parameters": [
+                {
+                  "id": "acceptAllChangesOnSuccess",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  },
+                  "description": "<p>Indicates whether <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges\"></xref> is called after the changes have\nbeen sent successfully to the database.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Int32",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Int32",
+                  "fullName": "System.Int32",
+                  "specName": "<xref href=\"System.Int32\" name=\"System.Int32\"/>",
+                  "id": "Int32",
+                  "level": 0
+                },
+                "description": "<p>The number of state entries written to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges(System.Boolean)\" name=\"Microsoft.Data.Entity.DbContext.SaveChanges(System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L309"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)",
+            "id": "SaveChangesAsync_Boolean__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "SaveChangesAsync(Boolean, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 384,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Asynchronously saves all changes made in this context to the database.</p>\n",
+            "remarks": "<para>\nThis method will automatically call <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> to discover any\nchanges to entity instances before saving to the underlying database. This can be disabled via\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"></xref>.\n</para>\n<para>\nMultiple active operations on the same context instance are not supported.  Use &#39;await&#39; to ensure\nthat any asynchronous operations have completed before calling another method on this context.\n</para>",
+            "syntax": {
+              "content": "public virtual Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function SaveChangesAsync(acceptAllChangesOnSuccess As Boolean, cancellationToken As CancellationToken = Nothing) As Task(Of Integer)",
+              "parameters": [
+                {
+                  "id": "acceptAllChangesOnSuccess",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  },
+                  "description": "<p>Indicates whether <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AcceptAllChanges\"></xref> is called after the changes have\nbeen sent successfully to the database.</p>\n"
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  },
+                  "description": "<p>A <xref href=\"System.Threading.CancellationToken\"></xref> to observe while waiting for the task to complete.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Int32}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Int32>",
+                  "name.vb": "Task(Of Int32)",
+                  "fullName": "System.Threading.Tasks.Task<System.Int32>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Task_Int32_",
+                  "level": 0
+                },
+                "description": "<p>A task that represents the asynchronous save operation. The task result contains the\nnumber of state entries written to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Boolean, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L385"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Threading.CancellationToken)",
+            "id": "SaveChangesAsync_CancellationToken_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "SaveChangesAsync(CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 358,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Asynchronously saves all changes made in this context to the database.</p>\n",
+            "remarks": "<para>\nThis method will automatically call <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.DetectChanges\"></xref> to discover any\nchanges to entity instances before saving to the underlying database. This can be disabled via\n<xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker.AutoDetectChangesEnabled\"></xref>.\n</para>\n<para>\nMultiple active operations on the same context instance are not supported.  Use &#39;await&#39; to ensure\nthat any asynchronous operations have completed before calling another method on this context.\n</para>",
+            "syntax": {
+              "content": "public virtual Task<int> SaveChangesAsync(CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function SaveChangesAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Integer)",
+              "parameters": [
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  },
+                  "description": "<p>A <xref href=\"System.Threading.CancellationToken\"></xref> to observe while waiting for the task to complete.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Int32}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Int32>",
+                  "name.vb": "Task(Of Int32)",
+                  "fullName": "System.Threading.Tasks.Task<System.Int32>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Int32)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Int32",
+                      "name": "Int32",
+                      "fullName": "System.Int32",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Int32\" name=\"System.Int32\"/>&gt;",
+                  "id": "Task_Int32_",
+                  "level": 0
+                },
+                "description": "<p>A task that represents the asynchronous save operation. The task result contains the\nnumber of state entries written to the database.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.DbContext.SaveChangesAsync(System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L359"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Set``1",
+            "id": "Set_TEntity___",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Set<TEntity>()",
+            "name.vb": "Set(Of TEntity)()",
+            "fullName": "Microsoft.Data.Entity.DbContext.Set<TEntity>()",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Set(Of TEntity)()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 825,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Creates a <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> that can be used to query and save instances of <typeparamref name=\"TEntity\"></typeparamref>.</p>\n",
+            "syntax": {
+              "content": "public virtual DbSet<TEntity> Set<TEntity>()where TEntity : class",
+              "content.vb": "Public Overridable Function Set(Of TEntity As Class) As DbSet(Of TEntity)",
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of entity for which a set should be returned."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.DbSet{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity",
+                  "definition": "Microsoft.Data.Entity.DbSet`1",
+                  "href": "Microsoft.Data.Entity.DbSet`1.yml",
+                  "name": "DbSet<TEntity>",
+                  "name.vb": "DbSet(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.DbSet<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.DbSet(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.DbSet`1",
+                      "name": "DbSet",
+                      "fullName": "Microsoft.Data.Entity.DbSet",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.DbSet`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.DbSet`1",
+                      "name": "DbSet",
+                      "fullName": "Microsoft.Data.Entity.DbSet",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.DbSet`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.DbSet`1\" name=\"Microsoft.Data.Entity.DbSet\"/>&lt;TEntity&gt;",
+                  "id": "DbSet_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>A set for the given entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Set``1\" name=\"Microsoft.Data.Entity.DbContext.Set&lt;TEntity&gt;()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L826"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Update(System.Object,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Update_Object__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Update(Object, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Update(System.Object, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 634,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nBegins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Modified\"></xref> state such that it will\nbe updated in the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.\n</para>\n<para>\nAll properties of the entity will be marked as modified. To mark only some properties as modified, use\n<xref href=\"Microsoft.Data.Entity.DbContext.Attach(System.Object,Microsoft.Data.Entity.GraphBehavior)\"></xref> to begin tracking the entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref>\nstate and then use the returned <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> to mark the desired properties as modified.\n</para>",
+            "syntax": {
+              "content": "public virtual EntityEntry Update(object entity, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Function Update(entity As Object, behavior As GraphBehavior = 0) As EntityEntry",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to update.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry.yml",
+                  "name": "EntityEntry",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                  "type": "class",
+                  "summary": "<para>\nProvides access to change tracking information and operations for a given entity.\n</para>\n<para>\nInstances of this class are returned from methods when using the <xref href=\"Microsoft.Data.Entity.ChangeTracking.ChangeTracker\"></xref> API and it is\nnot designed to be directly constructed in your application code.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>",
+                  "id": "EntityEntry",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Update(System.Object,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Update(System.Object, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L635"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.Update``1(``0,Microsoft.Data.Entity.GraphBehavior)",
+            "id": "Update_TEntity__TEntity__GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "Update<TEntity>(TEntity, GraphBehavior)",
+            "name.vb": "Update(Of TEntity)(TEntity, GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.Update<TEntity>(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.Update(Of TEntity)(TEntity, Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 533,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nBegins tracking the given entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Modified\"></xref> state such that it will\nbe updated in the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.\n</para>\n<para>\nAll properties of the entity will be marked as modified. To mark only some properties as modified, use\n<xref href=\"Microsoft.Data.Entity.DbContext.Attach``1(``0,Microsoft.Data.Entity.GraphBehavior)\"></xref> to begin tracking the entity in the\n<xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref> state and then use the returned <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref>\nto mark the desired properties as modified.\n</para>",
+            "syntax": {
+              "content": "public virtual EntityEntry<TEntity> Update<TEntity>(TEntity entity, GraphBehavior behavior = 0)where TEntity : class",
+              "content.vb": "Public Overridable Function Update(Of TEntity As Class)(entity As TEntity, behavior As GraphBehavior = 0) As EntityEntry(Of TEntity)",
+              "parameters": [
+                {
+                  "id": "entity",
+                  "type": {
+                    "uid": "{TEntity}",
+                    "isExternal": false,
+                    "name": "TEntity",
+                    "fullName": "TEntity",
+                    "specName": "<xref href=\"{TEntity}\" name=\"TEntity\"/>",
+                    "id": "TEntity",
+                    "level": 0
+                  },
+                  "description": "<p>The entity to update.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entity or also other related entities.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TEntity",
+                  "description": "The type of the entity."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry{{TEntity}}",
+                  "parent": "Microsoft.Data.Entity.ChangeTracking",
+                  "definition": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                  "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml",
+                  "name": "EntityEntry<TEntity>",
+                  "name.vb": "EntityEntry(Of TEntity)",
+                  "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry<TEntity>",
+                  "fullName.vb": "Microsoft.Data.Entity.ChangeTracking.EntityEntry(Of TEntity)",
+                  "spec.csharp": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1",
+                      "name": "EntityEntry",
+                      "fullName": "Microsoft.Data.Entity.ChangeTracking.EntityEntry",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.ChangeTracking.EntityEntry`1.yml"
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "name": "TEntity",
+                      "fullName": "TEntity",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\" name=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"/>&lt;TEntity&gt;",
+                  "id": "EntityEntry_TEntity_",
+                  "level": 0
+                },
+                "description": "<p>The <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry`1\"></xref> for the entity. The entry provides\naccess to change tracking information and operations for the entity.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.Update``1(``0,Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.Update&lt;TEntity&gt;(TEntity, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L534"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)",
+            "id": "UpdateRange_IEnumerable_Object___GraphBehavior_",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "UpdateRange(IEnumerable<Object>, GraphBehavior)",
+            "name.vb": "UpdateRange(IEnumerable(Of Object), GraphBehavior)",
+            "fullName": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Collections.Generic.IEnumerable<System.Object>, Microsoft.Data.Entity.GraphBehavior)",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Collections.Generic.IEnumerable(Of System.Object), Microsoft.Data.Entity.GraphBehavior)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 773,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nBegins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Modified\"></xref> state such that they will\nbe updated in the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.\n</para>\n<para>\nAll properties of the entities will be marked as modified. To mark only some properties as modified, use\n<xref href=\"Microsoft.Data.Entity.DbContext.Attach(System.Object,Microsoft.Data.Entity.GraphBehavior)\"></xref> to begin tracking each entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref>\nstate and then use the returned <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> to mark the desired properties as modified.\n</para>",
+            "syntax": {
+              "content": "public virtual void UpdateRange(IEnumerable<object> entities, GraphBehavior behavior = 0)",
+              "content.vb": "Public Overridable Sub UpdateRange(entities As IEnumerable(Of Object), behavior As GraphBehavior = 0)",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to update.</p>\n"
+                },
+                {
+                  "id": "behavior",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.GraphBehavior",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.GraphBehavior.yml",
+                    "name": "GraphBehavior",
+                    "fullName": "Microsoft.Data.Entity.GraphBehavior",
+                    "type": "enum",
+                    "summary": "<p>Indicates how the navigation properties of an entity are traversed so that a given operation can be recursively\nperformed on the entities that it is related to.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.GraphBehavior\" name=\"Microsoft.Data.Entity.GraphBehavior\"/>",
+                    "id": "GraphBehavior",
+                    "level": 0
+                  },
+                  "description": "<p>Determines whether the context will bring in only the given entities or also other related entities.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.UpdateRange(System.Collections.Generic.IEnumerable{System.Object},Microsoft.Data.Entity.GraphBehavior)\" name=\"Microsoft.Data.Entity.DbContext.UpdateRange(System.Collections.Generic.IEnumerable&lt;System.Object&gt;, Microsoft.Data.Entity.GraphBehavior)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L774"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Object[])",
+            "id": "UpdateRange_Object___",
+            "parent": "Microsoft.Data.Entity.DbContext",
+            "href": "Microsoft.Data.Entity.DbContext.yml",
+            "name": "UpdateRange(Object[])",
+            "name.vb": "UpdateRange(Object())",
+            "fullName": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Object[])",
+            "fullName.vb": "Microsoft.Data.Entity.DbContext.UpdateRange(System.Object())",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/DbContext.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/DbContext.cs",
+              "startLine": 706,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<para>\nBegins tracking the given entities in the <xref href=\"Microsoft.Data.Entity.EntityState.Modified\"></xref> state such that they will\nbe updated in the database when <xref href=\"Microsoft.Data.Entity.DbContext.SaveChanges\"></xref> is called.\n</para>\n<para>\nAll properties of the entities will be marked as modified. To mark only some properties as modified, use\n<xref href=\"Microsoft.Data.Entity.DbContext.Attach(System.Object,Microsoft.Data.Entity.GraphBehavior)\"></xref> to begin tracking each entity in the <xref href=\"Microsoft.Data.Entity.EntityState.Unchanged\"></xref>\nstate and then use the returned <xref href=\"Microsoft.Data.Entity.ChangeTracking.EntityEntry\"></xref> to mark the desired properties as modified.\n</para>",
+            "syntax": {
+              "content": "public virtual void UpdateRange(params object[] entities)",
+              "content.vb": "Public Overridable Sub UpdateRange(ParamArray entities As Object())",
+              "parameters": [
+                {
+                  "id": "entities",
+                  "type": {
+                    "uid": "System.Object[]",
+                    "isExternal": true,
+                    "name": "Object[]",
+                    "name.vb": "Object()",
+                    "fullName": "System.Object[]",
+                    "fullName.vb": "System.Object()",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "[]",
+                        "fullName": "[]",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "()",
+                        "fullName": "()",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>[]",
+                    "id": "Object__",
+                    "level": 0
+                  },
+                  "description": "<p>The entities to update.</p>\n"
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.DbContext.UpdateRange(System.Object[])\" name=\"Microsoft.Data.Entity.DbContext.UpdateRange(System.Object[])\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L707"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.DbContext.yml",
+    "name": "DbContext",
+    "fullName": "Microsoft.Data.Entity.DbContext",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/DbContext.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/DbContext.cs",
+      "startLine": 46,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>A DbContext instance represents a session with the database and can be used to query and save\ninstances of your entities. DbContext is a combination of the Unit Of Work and Repository patterns.</p>\n",
+    "remarks": "<para>\nTypically you create a class that derives from DbContext and contains <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref>\nproperties for each entity in the model. If the <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> properties have a public setter,\nthey are automatically initialized when the instance of the derived context is created.\n</para>\n<para>\nOverride the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method to configure the database (and\nother options) to be used for the context. Alternatively, if you would rather perform configuration externally\ninstead of inline in your context, you can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder`1\"></xref>\n(or <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>) to externally create an instance of <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions`1\"></xref>\n(or <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>) and pass it to a base constructor of <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>.\n</para>\n<para>\nThe model is discovered by running a set of conventions over the entity classes found in the\n<xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> properties on the derived context. To further configure the model that\nis discovered by convention, you can override the <xref href=\"Microsoft.Data.Entity.DbContext.OnModelCreating(Microsoft.Data.Entity.ModelBuilder)\"></xref> method.\n</para>",
+    "syntax": {
+      "content": "public class DbContext : IDisposable, IInfrastructure<IServiceProvider>",
+      "content.vb": "Public Class DbContext Implements IDisposable, IInfrastructure(Of IServiceProvider)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "System.IDisposable",
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{System.IServiceProvider}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/DbContext.cs/#L47"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

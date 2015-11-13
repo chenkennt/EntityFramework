@@ -1,0 +1,379 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Design.DbContextOperations",
+    "id": "DbContextOperations",
+    "parent": "Microsoft.Data.Entity.Design",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Design.DbContextOperations.#ctor(Microsoft.Extensions.Logging.ILoggerProvider,System.String,System.String,System.String)",
+            "id": "DbContextOperations_ILoggerProvider__String__String__String_",
+            "parent": "Microsoft.Data.Entity.Design.DbContextOperations",
+            "href": "Microsoft.Data.Entity.Design.DbContextOperations.yml",
+            "name": "DbContextOperations(ILoggerProvider, String, String, String)",
+            "fullName": "Microsoft.Data.Entity.Design.DbContextOperations.DbContextOperations(Microsoft.Extensions.Logging.ILoggerProvider, System.String, System.String, System.String)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Design",
+            "syntax": {
+              "content": "public DbContextOperations(ILoggerProvider loggerProvider, string assemblyName, string startupAssemblyName, string environment)",
+              "content.vb": "Public Sub New(loggerProvider As ILoggerProvider, assemblyName As String, startupAssemblyName As String, environment As String)",
+              "parameters": [
+                {
+                  "id": "loggerProvider",
+                  "type": {
+                    "uid": "Microsoft.Extensions.Logging.ILoggerProvider",
+                    "parent": "Microsoft.Extensions.Logging",
+                    "isExternal": true,
+                    "name": "ILoggerProvider",
+                    "fullName": "Microsoft.Extensions.Logging.ILoggerProvider",
+                    "specName": "<xref href=\"Microsoft.Extensions.Logging.ILoggerProvider\" name=\"Microsoft.Extensions.Logging.ILoggerProvider\"/>",
+                    "id": "ILoggerProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "assemblyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "startupAssemblyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "environment",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Design.DbContextOperations.#ctor(Microsoft.Extensions.Logging.ILoggerProvider,System.String,System.String,System.String)\" name=\"Microsoft.Data.Entity.Design.DbContextOperations.DbContextOperations(Microsoft.Extensions.Logging.ILoggerProvider, System.String, System.String, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Design/DbContextOperations.cs/#L28"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Design.DbContextOperations.CreateContext(System.String)",
+            "id": "CreateContext_String_",
+            "parent": "Microsoft.Data.Entity.Design.DbContextOperations",
+            "href": "Microsoft.Data.Entity.Design.DbContextOperations.yml",
+            "name": "CreateContext(String)",
+            "fullName": "Microsoft.Data.Entity.Design.DbContextOperations.CreateContext(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Design",
+            "syntax": {
+              "content": "public virtual DbContext CreateContext(string contextType)",
+              "content.vb": "Public Overridable Function CreateContext(contextType As String) As DbContext",
+              "parameters": [
+                {
+                  "id": "contextType",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.DbContext",
+                  "parent": "Microsoft.Data.Entity",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.DbContext.yml",
+                  "name": "DbContext",
+                  "fullName": "Microsoft.Data.Entity.DbContext",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                  "id": "DbContext",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Design.DbContextOperations.CreateContext(System.String)\" name=\"Microsoft.Data.Entity.Design.DbContextOperations.CreateContext(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Design/DbContextOperations.cs/#L47"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Design.DbContextOperations.GetContextType(System.String)",
+            "id": "GetContextType_String_",
+            "parent": "Microsoft.Data.Entity.Design.DbContextOperations",
+            "href": "Microsoft.Data.Entity.Design.DbContextOperations.yml",
+            "name": "GetContextType(String)",
+            "fullName": "Microsoft.Data.Entity.Design.DbContextOperations.GetContextType(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+              "startLine": 60,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Design",
+            "syntax": {
+              "content": "public virtual Type GetContextType(string name)",
+              "content.vb": "Public Overridable Function GetContextType(name As String) As Type",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Type",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Type",
+                  "fullName": "System.Type",
+                  "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                  "id": "Type",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Design.DbContextOperations.GetContextType(System.String)\" name=\"Microsoft.Data.Entity.Design.DbContextOperations.GetContextType(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Design/DbContextOperations.cs/#L61"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Design.DbContextOperations.GetContextTypes",
+            "id": "GetContextTypes__",
+            "parent": "Microsoft.Data.Entity.Design.DbContextOperations",
+            "href": "Microsoft.Data.Entity.Design.DbContextOperations.yml",
+            "name": "GetContextTypes()",
+            "fullName": "Microsoft.Data.Entity.Design.DbContextOperations.GetContextTypes()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Design",
+            "syntax": {
+              "content": "public virtual IEnumerable<Type> GetContextTypes()",
+              "content.vb": "Public Overridable Function GetContextTypes As IEnumerable(Of Type)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IEnumerable{System.Type}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IEnumerable`1",
+                  "name": "IEnumerable<Type>",
+                  "name.vb": "IEnumerable(Of Type)",
+                  "fullName": "System.Collections.Generic.IEnumerable<System.Type>",
+                  "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Type)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Type",
+                      "name": "Type",
+                      "fullName": "System.Type",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IEnumerable`1",
+                      "name": "IEnumerable",
+                      "fullName": "System.Collections.Generic.IEnumerable",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Type",
+                      "name": "Type",
+                      "fullName": "System.Type",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Type\" name=\"System.Type\"/>&gt;",
+                  "id": "IEnumerable_Type_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Design.DbContextOperations.GetContextTypes\" name=\"Microsoft.Data.Entity.Design.DbContextOperations.GetContextTypes()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Design/DbContextOperations.cs/#L58"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Design.DbContextOperations.yml",
+    "name": "DbContextOperations",
+    "fullName": "Microsoft.Data.Entity.Design.DbContextOperations",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Commands/Design/DbContextOperations.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Commands"
+    ],
+    "namespace": "Microsoft.Data.Entity.Design",
+    "syntax": {
+      "content": "public class DbContextOperations",
+      "content.vb": "Public Class DbContextOperations"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Design.DbContextOperations\" name=\"Microsoft.Data.Entity.Design.DbContextOperations\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Design/DbContextOperations.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

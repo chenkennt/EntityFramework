@@ -1,0 +1,875 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure",
+    "id": "Microsoft_Data_Entity_Infrastructure",
+    "children": [
+      {
+        "name": "Class",
+        "title": "Classes",
+        "id": "classes",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.yml",
+            "name": "AccessorExtensions",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+            "type": "class",
+            "summary": "<para>\nExtension methods for <xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref>.\n</para>\n<para>\nThese methods are typically used by database providers (and other extensions). They are generally\nnot used in application code.\n</para>\n<para><xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref> is used to hide properties that are not intended to be used in\napplication code but can be used in extension methods written by database providers etc.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions\" name=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions\"/>",
+            "id": "AccessorExtensions",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.Annotatable",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.Annotatable.yml",
+            "name": "Annotatable",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.Annotatable",
+            "type": "class",
+            "summary": "<para>\nBase class for types that support reading and writing annotations.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotatable\" name=\"Microsoft.Data.Entity.Infrastructure.Annotatable\"/>",
+            "id": "Annotatable",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions.yml",
+            "name": "AnnotatableExtensions",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions\" name=\"Microsoft.Data.Entity.Infrastructure.AnnotatableExtensions\"/>",
+            "id": "AnnotatableExtensions",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.Annotation",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.Annotation.yml",
+            "name": "Annotation",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.Annotation",
+            "type": "class",
+            "summary": "<para>\nAn arbitrary piece of metadata that can be stored on an object that implements <xref href=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\"></xref>.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Annotation\" name=\"Microsoft.Data.Entity.Infrastructure.Annotation\"/>",
+            "id": "Annotation",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade.yml",
+            "name": "DatabaseFacade",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.DatabaseFacade",
+            "type": "class",
+            "summary": "<p>Provides access to database related information and operations for a context.\nInstances of this class are typically obtained from <xref href=\"Microsoft.Data.Entity.DbContext.Database\"></xref> and it is not designed\nto be directly constructed in your application code.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\" name=\"Microsoft.Data.Entity.Infrastructure.DatabaseFacade\"/>",
+            "id": "DatabaseFacade",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.DbContextAttribute",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.DbContextAttribute.yml",
+            "name": "DbContextAttribute",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextAttribute",
+            "type": "class",
+            "summary": "<p>Identifies the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> that a class belongs to. For example, this attribute is used\nto identify which context a migration applies to.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextAttribute\" name=\"Microsoft.Data.Entity.Infrastructure.DbContextAttribute\"/>",
+            "id": "DbContextAttribute",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions.yml",
+            "name": "DbContextOptions",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+            "type": "class",
+            "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of this class and it is not designed to be directly constructed in your application code.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"/>",
+            "id": "DbContextOptions",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.yml",
+            "name": "DbContextOptions<TContext>",
+            "name.vb": "DbContextOptions(Of TContext)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions<TContext>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.DbContextOptions(Of TContext)",
+            "type": "class",
+            "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder`1\"></xref>\nto create instances of this class and it is not designed to be directly constructed in your application code.</p>\n",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1",
+                "name": "DbContextOptions",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TContext",
+                "fullName": "TContext",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1",
+                "name": "DbContextOptions",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.DbContextOptions",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.DbContextOptions`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TContext",
+                "fullName": "TContext",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions`1\" name=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"/>&lt;TContext&gt;",
+            "id": "DbContextOptions_TContext_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute.yml",
+            "name": "DesignTimeProviderServicesAttribute",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute\" name=\"Microsoft.Data.Entity.Infrastructure.DesignTimeProviderServicesAttribute\"/>",
+            "id": "DesignTimeProviderServicesAttribute",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder.yml",
+            "name": "EntityFrameworkServicesBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder",
+            "type": "class",
+            "summary": "<p>Provides Entity Framework specific APIs for configuring services in an <xref href=\"Microsoft.Extensions.DependencyInjection.IServiceCollection\"></xref>.\nThese APIs are usually accessed by calling\n<xref href=\"Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddEntityFramework(Microsoft.Extensions.DependencyInjection.IServiceCollection)\"></xref>\nand then chaining API calls on the returned <xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"></xref>.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.EntityFrameworkServicesBuilder\"/>",
+            "id": "EntityFrameworkServicesBuilder",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder.yml",
+            "name": "InMemoryDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.InMemoryDbContextOptionsBuilder\"/>",
+            "id": "InMemoryDbContextOptionsBuilder",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.ModelSnapshot",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.ModelSnapshot.yml",
+            "name": "ModelSnapshot",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.ModelSnapshot",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ModelSnapshot\" name=\"Microsoft.Data.Entity.Infrastructure.ModelSnapshot\"/>",
+            "id": "ModelSnapshot",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.ModelSource",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.ModelSource.yml",
+            "name": "ModelSource",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.ModelSource",
+            "type": "class",
+            "summary": "<para>\nA base implementation of <xref href=\"Microsoft.Data.Entity.Infrastructure.IModelSource\"></xref> that produces a model based on the <xref href=\"Microsoft.Data.Entity.DbSet`1\"></xref> properties\nexposed on the context. The model is cached to avoid recreating it every time it is requested.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ModelSource\" name=\"Microsoft.Data.Entity.Infrastructure.ModelSource\"/>",
+            "id": "ModelSource",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder.yml",
+            "name": "RelationalCommandListBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalCommandListBuilder\"/>",
+            "id": "RelationalCommandListBuilder",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+            "name": "RelationalDbContextOptionsBuilder<TBuilder, TExtension>",
+            "name.vb": "RelationalDbContextOptionsBuilder(Of TBuilder, TExtension)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<TBuilder, TExtension>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of TBuilder, TExtension)",
+            "type": "class",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+                "name": "RelationalDbContextOptionsBuilder",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TBuilder",
+                "fullName": "TBuilder",
+                "isExternal": false
+              },
+              {
+                "name": ", ",
+                "fullName": ", ",
+                "isExternal": false
+              },
+              {
+                "name": "TExtension",
+                "fullName": "TExtension",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+                "name": "RelationalDbContextOptionsBuilder",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TBuilder",
+                "fullName": "TBuilder",
+                "isExternal": false
+              },
+              {
+                "name": ", ",
+                "fullName": ", ",
+                "isExternal": false
+              },
+              {
+                "name": "TExtension",
+                "fullName": "TExtension",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder\"/>&lt;TBuilder, TExtension&gt;",
+            "id": "RelationalDbContextOptionsBuilder_TBuilder__TExtension_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions.yml",
+            "name": "RelationalEntityFrameworkServicesBuilderExtensions",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalEntityFrameworkServicesBuilderExtensions\"/>",
+            "id": "RelationalEntityFrameworkServicesBuilderExtensions",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension.yml",
+            "name": "RelationalOptionsExtension",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalOptionsExtension\"/>",
+            "id": "RelationalOptionsExtension",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor.yml",
+            "name": "RelationalSqlExecutor",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalSqlExecutor\"/>",
+            "id": "RelationalSqlExecutor",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1.yml",
+            "name": "SensitiveDataLogger<T>",
+            "name.vb": "SensitiveDataLogger(Of T)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger<T>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger(Of T)",
+            "type": "class",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1",
+                "name": "SensitiveDataLogger",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1",
+                "name": "SensitiveDataLogger",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger`1\" name=\"Microsoft.Data.Entity.Infrastructure.SensitiveDataLogger\"/>&lt;T&gt;",
+            "id": "SensitiveDataLogger_T_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+            "name": "SqliteDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\"/>",
+            "id": "SqliteDbContextOptionsBuilder",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder.yml",
+            "name": "SqlServerDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqlServerDbContextOptionsBuilder\"/>",
+            "id": "SqlServerDbContextOptionsBuilder",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.TypedAnnotation",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.TypedAnnotation.yml",
+            "name": "TypedAnnotation",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.TypedAnnotation",
+            "type": "class",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.TypedAnnotation\" name=\"Microsoft.Data.Entity.Infrastructure.TypedAnnotation\"/>",
+            "id": "TypedAnnotation",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          }
+        ]
+      },
+      {
+        "name": "Interface",
+        "title": "Interfaces",
+        "id": "interfaces",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IAnnotatable",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IAnnotatable.yml",
+            "name": "IAnnotatable",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IAnnotatable",
+            "type": "interface",
+            "summary": "<para>\nA class that exposes annotations. Annotations allow for arbitrary metadata to be stored on an object.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\" name=\"Microsoft.Data.Entity.Infrastructure.IAnnotatable\"/>",
+            "id": "IAnnotatable",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.yml",
+            "name": "IDbContextFactory<TContext>",
+            "name.vb": "IDbContextFactory(Of TContext)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory<TContext>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory(Of TContext)",
+            "type": "interface",
+            "summary": "<p>A factory for creating derived <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> instances. Implement this interface to enable\ndesign-time services for context types that do not have a public default constructor. At design-time,\nderived <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> instances can be created in order to enable specific design-time\nexperiences such as Migrations. Design-time services will automatically discover implementations of\nthis interface that are in the same assembly as the derived context.</p>\n",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1",
+                "name": "IDbContextFactory",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "TContext",
+                "fullName": "TContext",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1",
+                "name": "IDbContextFactory",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "TContext",
+                "fullName": "TContext",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory`1\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextFactory\"/>&lt;TContext&gt;",
+            "id": "IDbContextFactory_TContext_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions.yml",
+            "name": "IDbContextOptions",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+            "type": "interface",
+            "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of classes that implement this interface, they are not designed to be directly created\nin your application code.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\"/>",
+            "id": "IDbContextOptions",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure.yml",
+            "name": "IDbContextOptionsBuilderInfrastructure",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure",
+            "type": "interface",
+            "summary": "<para>\nExplicitly implemented by <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to hide methods that are used by database provider\nextension methods but not intended to be called by application developers.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsBuilderInfrastructure\"/>",
+            "id": "IDbContextOptionsBuilderInfrastructure",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension.yml",
+            "name": "IDbContextOptionsExtension",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension",
+            "type": "interface",
+            "summary": "<para>\nInterface for extensions that are stored in <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions.Extensions\"></xref>.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptionsExtension\"/>",
+            "id": "IDbContextOptionsExtension",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml",
+            "name": "IInfrastructure<T>",
+            "name.vb": "IInfrastructure(Of T)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<T>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure(Of T)",
+            "type": "interface",
+            "summary": "<para>\nThis interface is explicitly implemented by type to hide properties that are not intended to be used in application code\nbut can be used in extension methods written by database providers etc.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                "name": "IInfrastructure",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                "name": "IInfrastructure",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\" name=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure\"/>&lt;T&gt;",
+            "id": "IInfrastructure_T_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IKeyValue.yml",
+            "name": "IKeyValue",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IKeyValue",
+            "type": "interface",
+            "summary": "<para>\nRepresents the values assigned to a key of an entity. This type is mostly used to test the equivalence of entities\nbased on their key values.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\" name=\"Microsoft.Data.Entity.Infrastructure.IKeyValue\"/>",
+            "id": "IKeyValue",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.IModelSource",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.IModelSource.yml",
+            "name": "IModelSource",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.IModelSource",
+            "type": "interface",
+            "summary": "<para>\nProduces an <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> based on a context. This is typically implemented by database providers to ensure that any\nconventions\nand validation specific to their database are used.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IModelSource\" name=\"Microsoft.Data.Entity.Infrastructure.IModelSource\"/>",
+            "id": "IModelSource",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger.yml",
+            "name": "ISensitiveDataLogger",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+            "type": "interface",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\" name=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\"/>",
+            "id": "ISensitiveDataLogger",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1.yml",
+            "name": "ISensitiveDataLogger<T>",
+            "name.vb": "ISensitiveDataLogger(Of T)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger<T>",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger(Of T)",
+            "type": "interface",
+            "spec.csharp": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1",
+                "name": "ISensitiveDataLogger",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1.yml"
+              },
+              {
+                "name": "<",
+                "fullName": "<",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ">",
+                "fullName": ">",
+                "isExternal": false
+              }
+            ],
+            "spec.vb": [
+              {
+                "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1",
+                "name": "ISensitiveDataLogger",
+                "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                "isExternal": false,
+                "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1.yml"
+              },
+              {
+                "name": "(Of ",
+                "fullName": "(Of ",
+                "isExternal": false
+              },
+              {
+                "name": "T",
+                "fullName": "T",
+                "isExternal": false
+              },
+              {
+                "name": ")",
+                "fullName": ")",
+                "isExternal": false
+              }
+            ],
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger`1\" name=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\"/>&lt;T&gt;",
+            "id": "ISensitiveDataLogger_T_",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          }
+        ]
+      },
+      {
+        "name": "Enum",
+        "title": "Enums",
+        "id": "enums",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId.yml",
+            "name": "CoreLoggingEventId",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId",
+            "type": "enum",
+            "summary": "<p>Values that are used as the eventId when logging messages from this assembly via <xref href=\"Microsoft.Extensions.Logging.ILogger\"></xref>.</p>\n",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId\" name=\"Microsoft.Data.Entity.Infrastructure.CoreLoggingEventId\"/>",
+            "id": "CoreLoggingEventId",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId.yml",
+            "name": "InMemoryLoggingEventId",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId",
+            "type": "enum",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId\" name=\"Microsoft.Data.Entity.Infrastructure.InMemoryLoggingEventId\"/>",
+            "id": "InMemoryLoggingEventId",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId",
+            "parent": "Microsoft.Data.Entity.Infrastructure",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId.yml",
+            "name": "RelationalLoggingEventId",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId",
+            "type": "enum",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalLoggingEventId\"/>",
+            "id": "RelationalLoggingEventId",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": ""
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.yml",
+    "name": "Microsoft.Data.Entity.Infrastructure",
+    "fullName": "Microsoft.Data.Entity.Infrastructure",
+    "type": "Namespace",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Infrastructure/Annotatable.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Infrastructure/Annotatable.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure\" name=\"Microsoft.Data.Entity.Infrastructure\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/Annotatable.cs/#L12"
+  },
+  "isNamespace": true,
+  "_allowToc": true
+}

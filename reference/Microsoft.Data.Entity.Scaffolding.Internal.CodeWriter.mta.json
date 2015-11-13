@@ -1,0 +1,577 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+    "id": "CodeWriter",
+    "parent": "Microsoft.Data.Entity.Scaffolding.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.#ctor(Microsoft.Data.Entity.Scaffolding.Internal.IFileService)",
+            "id": "CodeWriter_IFileService_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+            "name": "CodeWriter(IFileService)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.CodeWriter(Microsoft.Data.Entity.Scaffolding.Internal.IFileService)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+              "startLine": 19,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "protected CodeWriter(IFileService fileService)",
+              "content.vb": "Protected Sub New(fileService As IFileService)",
+              "parameters": [
+                {
+                  "id": "fileService",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService",
+                    "parent": "Microsoft.Data.Entity.Scaffolding.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService.yml",
+                    "name": "IFileService",
+                    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService",
+                    "type": "interface",
+                    "summary": "<p>Abstraction for outputting a &#39;file&#39;. Normally this will be outputting a file to disk\nbut this allows for other implementations which e.g. just output to memory.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.IFileService\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.IFileService\"/>",
+                    "id": "IFileService",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.#ctor(Microsoft.Data.Entity.Scaffolding.Internal.IFileService)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.CodeWriter(Microsoft.Data.Entity.Scaffolding.Internal.IFileService)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L20"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileExtension",
+            "id": "FileExtension",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+            "name": "FileExtension",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileExtension",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+                "content": "public virtual string FileExtension { get; set; }",
+                "content.vb": "Public Overridable Property FileExtension As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileExtension\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileExtension\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L28"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileService",
+            "id": "FileService",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+            "name": "FileService",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileService",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+                "content": "public virtual IFileService FileService { get; }",
+                "content.vb": "Public Overridable ReadOnly Property FileService As IFileService",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService",
+                    "parent": "Microsoft.Data.Entity.Scaffolding.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService.yml",
+                    "name": "IFileService",
+                    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.IFileService",
+                    "type": "interface",
+                    "summary": "<p>Abstraction for outputting a &#39;file&#39;. Normally this will be outputting a file to disk\nbut this allows for other implementations which e.g. just output to memory.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.IFileService\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.IFileService\"/>",
+                    "id": "IFileService",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileService\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.FileService\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L27"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.GetReadOnlyFilePaths(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IEntityType})",
+            "id": "GetReadOnlyFilePaths_String__String__IEnumerable_IEntityType__",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+            "name": "GetReadOnlyFilePaths(String, String, IEnumerable<IEntityType>)",
+            "name.vb": "GetReadOnlyFilePaths(String, String, IEnumerable(Of IEntityType))",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.GetReadOnlyFilePaths(System.String, System.String, System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IEntityType>)",
+            "fullName.vb": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.GetReadOnlyFilePaths(System.String, System.String, System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IEntityType))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+              "startLine": 38,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "summary": "<p>Returns a list of the files which would be output by this class but\nwhich currently exist and would not be able to be overwritten due to\nbeing read-only.</p>\n",
+            "syntax": {
+              "content": "public virtual IList<string> GetReadOnlyFilePaths(string outputPath, string dbContextClassName, IEnumerable<IEntityType> entityTypes)",
+              "content.vb": "Public Overridable Function GetReadOnlyFilePaths(outputPath As String, dbContextClassName As String, entityTypes As IEnumerable(Of IEntityType)) As IList(Of String)",
+              "parameters": [
+                {
+                  "id": "outputPath",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>directory where the files are to be output</p>\n"
+                },
+                {
+                  "id": "dbContextClassName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>name of the <xref href=\"Microsoft.Data.Entity.DbContext\"></xref> class</p>\n"
+                },
+                {
+                  "id": "entityTypes",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IEntityType}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEnumerable<IEntityType>",
+                    "name.vb": "IEnumerable(Of IEntityType)",
+                    "fullName": "System.Collections.Generic.IEnumerable<Microsoft.Data.Entity.Metadata.IEntityType>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of Microsoft.Data.Entity.Metadata.IEntityType)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "name": "IEntityType",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "name": "IEntityType",
+                        "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>&gt;",
+                    "id": "IEnumerable_IEntityType_",
+                    "level": 0
+                  },
+                  "description": "<p>a list of the <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> classes to be output</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IList{System.String}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IList`1",
+                  "name": "IList<String>",
+                  "name.vb": "IList(Of String)",
+                  "fullName": "System.Collections.Generic.IList<System.String>",
+                  "fullName.vb": "System.Collections.Generic.IList(Of System.String)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IList`1",
+                      "name": "IList",
+                      "fullName": "System.Collections.Generic.IList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.String",
+                      "name": "String",
+                      "fullName": "System.String",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IList`1",
+                      "name": "IList",
+                      "fullName": "System.Collections.Generic.IList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.String",
+                      "name": "String",
+                      "fullName": "System.String",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IList`1\" name=\"System.Collections.Generic.IList\"/>&lt;<xref href=\"System.String\" name=\"System.String\"/>&gt;",
+                  "id": "IList_String_",
+                  "level": 0
+                },
+                "description": "<p>A list of paths to the output files which currently exist and are read-only</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.GetReadOnlyFilePaths(System.String,System.String,System.Collections.Generic.IEnumerable{Microsoft.Data.Entity.Metadata.IEntityType})\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.GetReadOnlyFilePaths(System.String, System.String, System.Collections.Generic.IEnumerable&lt;Microsoft.Data.Entity.Metadata.IEntityType&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L39"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.WriteCodeAsync(Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration,System.String,System.String,System.Threading.CancellationToken)",
+            "id": "WriteCodeAsync_ModelConfiguration__String__String__CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+            "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+            "name": "WriteCodeAsync(ModelConfiguration, String, String, CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.WriteCodeAsync(Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration, System.String, System.String, System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+              "startLine": 72,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Commands"
+            ],
+            "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+            "syntax": {
+              "content": "public abstract Task<ReverseEngineerFiles> WriteCodeAsync(ModelConfiguration modelConfiguration, string outputPath, string dbContextClassName, CancellationToken cancellationToken = null)",
+              "content.vb": "Public MustOverride Function WriteCodeAsync(modelConfiguration As ModelConfiguration, outputPath As String, dbContextClassName As String, cancellationToken As CancellationToken = Nothing) As Task(Of ReverseEngineerFiles)",
+              "parameters": [
+                {
+                  "id": "modelConfiguration",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration",
+                    "parent": "Microsoft.Data.Entity.Scaffolding.Internal.Configuration",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration.yml",
+                    "name": "ModelConfiguration",
+                    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration\"/>",
+                    "id": "ModelConfiguration",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "outputPath",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "dbContextClassName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "href": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles.yml",
+                  "name": "Task<ReverseEngineerFiles>",
+                  "name.vb": "Task(Of ReverseEngineerFiles)",
+                  "fullName": "System.Threading.Tasks.Task<Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles",
+                      "name": "ReverseEngineerFiles",
+                      "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles",
+                      "name": "ReverseEngineerFiles",
+                      "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.ReverseEngineerFiles\"/>&gt;",
+                  "id": "Task_ReverseEngineerFiles_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.WriteCodeAsync(Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration,System.String,System.String,System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.WriteCodeAsync(Microsoft.Data.Entity.Scaffolding.Internal.Configuration.ModelConfiguration, System.String, System.String, System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L73"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter.yml",
+    "name": "CodeWriter",
+    "fullName": "Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs",
+      "startLine": 15,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Commands"
+    ],
+    "namespace": "Microsoft.Data.Entity.Scaffolding.Internal",
+    "syntax": {
+      "content": "public abstract class CodeWriter",
+      "content.vb": "Public MustInherit Class CodeWriter"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter\" name=\"Microsoft.Data.Entity.Scaffolding.Internal.CodeWriter\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Commands/Scaffolding/Internal/CodeWriter.cs/#L16"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

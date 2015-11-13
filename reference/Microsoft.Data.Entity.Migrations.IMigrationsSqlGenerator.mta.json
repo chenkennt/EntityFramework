@@ -1,0 +1,233 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+    "id": "IMigrationsSqlGenerator",
+    "parent": "Microsoft.Data.Entity.Migrations",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.Generate(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Migrations.Operations.MigrationOperation},Microsoft.Data.Entity.Metadata.IModel)",
+            "id": "Generate_IReadOnlyList_MigrationOperation___IModel_",
+            "parent": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+            "href": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.yml",
+            "name": "Generate(IReadOnlyList<MigrationOperation>, IModel)",
+            "name.vb": "Generate(IReadOnlyList(Of MigrationOperation), IModel)",
+            "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.Generate(System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Migrations.Operations.MigrationOperation>, Microsoft.Data.Entity.Metadata.IModel)",
+            "fullName.vb": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.Generate(System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Migrations.Operations.MigrationOperation), Microsoft.Data.Entity.Metadata.IModel)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "IReadOnlyList<IRelationalCommand> Generate(IReadOnlyList<MigrationOperation> operations, IModel model = null)",
+              "content.vb": "Function Generate(operations As IReadOnlyList(Of MigrationOperation), model As IModel = Nothing) As IReadOnlyList(Of IRelationalCommand)",
+              "parameters": [
+                {
+                  "id": "operations",
+                  "type": {
+                    "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Migrations.Operations.MigrationOperation}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IReadOnlyList`1",
+                    "href": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.yml",
+                    "name": "IReadOnlyList<MigrationOperation>",
+                    "name.vb": "IReadOnlyList(Of MigrationOperation)",
+                    "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Migrations.Operations.MigrationOperation>",
+                    "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Migrations.Operations.MigrationOperation)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+                        "name": "MigrationOperation",
+                        "fullName": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IReadOnlyList`1",
+                        "name": "IReadOnlyList",
+                        "fullName": "System.Collections.Generic.IReadOnlyList",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+                        "name": "MigrationOperation",
+                        "fullName": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Migrations.Operations.MigrationOperation.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation\" name=\"Microsoft.Data.Entity.Migrations.Operations.MigrationOperation\"/>&gt;",
+                    "id": "IReadOnlyList_MigrationOperation_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IModel.yml",
+                    "name": "IModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IModel",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IModel\" name=\"Microsoft.Data.Entity.Metadata.IModel\"/>",
+                    "id": "IModel",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Storage.IRelationalCommand}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IReadOnlyList`1",
+                  "href": "Microsoft.Data.Entity.Storage.IRelationalCommand.yml",
+                  "name": "IReadOnlyList<IRelationalCommand>",
+                  "name.vb": "IReadOnlyList(Of IRelationalCommand)",
+                  "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Storage.IRelationalCommand>",
+                  "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Storage.IRelationalCommand)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                      "name": "IRelationalCommand",
+                      "fullName": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IRelationalCommand.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                      "name": "IRelationalCommand",
+                      "fullName": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Storage.IRelationalCommand.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IRelationalCommand\" name=\"Microsoft.Data.Entity.Storage.IRelationalCommand\"/>&gt;",
+                  "id": "IReadOnlyList_IRelationalCommand_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.Generate(System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Migrations.Operations.MigrationOperation},Microsoft.Data.Entity.Metadata.IModel)\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.Generate(System.Collections.Generic.IReadOnlyList&lt;Microsoft.Data.Entity.Migrations.Operations.MigrationOperation&gt;, Microsoft.Data.Entity.Metadata.IModel)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs/#L14"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.yml",
+    "name": "IMigrationsSqlGenerator",
+    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Migrations",
+    "syntax": {
+      "content": "public interface IMigrationsSqlGenerator",
+      "content.vb": "Public Interface IMigrationsSqlGenerator"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/IMigrationsSqlGenerator.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

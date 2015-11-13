@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RelationalDatabaseFacadeExtensions | Entity Framework</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RelationalDatabaseFacadeExtensions | Entity Framework">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/vendor.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:nav" content="toc.html">
+    <meta property="docfx:toc" content="reference/toc.html">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div class="sidenav">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div class="sidetoc">
+              <iframe id="sidetoc" src="toc.html"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L20" class="btn btn-primary pull-right mobile-hide">View Source</a>
+              <h1 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions">Class RelationalDatabaseFacadeExtensions</h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">RelationalDatabaseFacadeExtensions</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Microsoft.Data.Entity</h6>
+              <h6><strong>Assembly</strong>:EntityFramework.Relational.dll</h6>
+              <h5 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class RelationalDatabaseFacadeExtensions</code></pre>
+              </div>
+              <h3 id="methods">Methods</h3>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L77">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_BeginTransaction_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Data_IsolationLevel_">BeginTransaction(DatabaseFacade, IsolationLevel)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDbContextTransaction BeginTransaction(DatabaseFacade databaseFacade, IsolationLevel isolationLevel)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Data.IsolationLevel</span></td>
+                    <td><em>isolationLevel</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDbContextTransaction.html#Microsoft_Data_Entity_Storage_IDbContextTransaction">IDbContextTransaction</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L88">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_BeginTransactionAsync_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Data_IsolationLevel_System_Threading_CancellationToken_">BeginTransactionAsync(DatabaseFacade, IsolationLevel, CancellationToken)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task&lt;IDbContextTransaction&gt; BeginTransactionAsync(DatabaseFacade databaseFacade, IsolationLevel isolationLevel, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Data.IsolationLevel</span></td>
+                    <td><em>isolationLevel</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Data.Entity.Storage.IDbContextTransaction.html#Microsoft_Data_Entity_Storage_IDbContextTransaction">IDbContextTransaction</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L74">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_CloseConnection_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_">CloseConnection(DatabaseFacade)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CloseConnection(DatabaseFacade databaseFacade)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L41">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_ExecuteSqlCommand_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_String_System_Object___">ExecuteSqlCommand(DatabaseFacade, String, Object[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void ExecuteSqlCommand(DatabaseFacade databaseFacade, string sql, params object[] parameters)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>parameters</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L51">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_ExecuteSqlCommandAsync_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_String_System_Threading_CancellationToken_System_Object___">ExecuteSqlCommandAsync(DatabaseFacade, String, CancellationToken, Object[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task ExecuteSqlCommandAsync(DatabaseFacade databaseFacade, string sql, CancellationToken cancellationToken = null, params object[] parameters)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><em>sql</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Object</span>[]</td>
+                    <td><em>parameters</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L120">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_GetCommandTimeout_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_">GetCommandTimeout(DatabaseFacade)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static int ? GetCommandTimeout(DatabaseFacade databaseFacade)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L63">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_GetDbConnection_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_">GetDbConnection(DatabaseFacade)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static DbConnection GetDbConnection(DatabaseFacade databaseFacade)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Data.Common.DbConnection</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L26">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_Migrate_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_">Migrate(DatabaseFacade)</h4>
+              <div class="markdown level1 summary"><p>Applies any pending migrations for the context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Migrate(DatabaseFacade databaseFacade)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a> for the context.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L35">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_MigrateAsync_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Threading_CancellationToken_">MigrateAsync(DatabaseFacade, CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Asynchronously applies any pending migrations for the context to the database.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task MigrateAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td><p>The <a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a> for the context.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td><p>A <span class="xref">System.Threading.CancellationToken</span> to observe while waiting for the task to complete.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td><p>A task that represents the asynchronous migration operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L66">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_OpenConnection_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_">OpenConnection(DatabaseFacade)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void OpenConnection(DatabaseFacade databaseFacade)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L69">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_OpenConnectionAsync_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Threading_CancellationToken_">OpenConnectionAsync(DatabaseFacade, CancellationToken)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task OpenConnectionAsync(DatabaseFacade databaseFacade, CancellationToken cancellationToken = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><em>cancellationToken</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L117">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_SetCommandTimeout_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Nullable_System_Int32__">SetCommandTimeout(DatabaseFacade, Nullable&lt;Int32&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void SetCommandTimeout(DatabaseFacade databaseFacade, int ? timeout)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td><em>timeout</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/RelationalDatabaseFacadeExtensions.cs/#L102">View Source</a>
+              </span>
+              <h4 id="Microsoft_Data_Entity_RelationalDatabaseFacadeExtensions_UseTransaction_Microsoft_Data_Entity_Infrastructure_DatabaseFacade_System_Data_Common_DbTransaction_">UseTransaction(DatabaseFacade, DbTransaction)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IDbContextTransaction UseTransaction(DatabaseFacade databaseFacade, DbTransaction transaction)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Infrastructure.DatabaseFacade.html#Microsoft_Data_Entity_Infrastructure_DatabaseFacade">DatabaseFacade</a></td>
+                    <td><em>databaseFacade</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Data.Common.DbTransaction</span></td>
+                    <td><em>transaction</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.Data.Entity.Storage.IDbContextTransaction.html#Microsoft_Data_Entity_Storage_IDbContextTransaction">IDbContextTransaction</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/vendor.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

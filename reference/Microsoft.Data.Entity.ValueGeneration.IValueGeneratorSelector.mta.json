@@ -1,0 +1,134 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+    "id": "IValueGeneratorSelector",
+    "parent": "Microsoft.Data.Entity.ValueGeneration",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.Select(Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType)",
+            "id": "Select_IProperty__IEntityType_",
+            "parent": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+            "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.yml",
+            "name": "Select(IProperty, IEntityType)",
+            "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.Select(Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.ValueGeneration",
+            "summary": "<p>Selects the appropriate value generator for a given property.</p>\n",
+            "syntax": {
+              "content": "ValueGenerator Select(IProperty property, IEntityType entityType)",
+              "content.vb": "Function Select(property As IProperty, entityType As IEntityType) As ValueGenerator",
+              "parameters": [
+                {
+                  "id": "property",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IProperty.yml",
+                    "name": "IProperty",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IProperty",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IProperty\" name=\"Microsoft.Data.Entity.Metadata.IProperty\"/>",
+                    "id": "IProperty",
+                    "level": 0
+                  },
+                  "description": "<p>The property to get the value generator for.</p>\n"
+                },
+                {
+                  "id": "entityType",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                    "name": "IEntityType",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                    "id": "IEntityType",
+                    "level": 0
+                  },
+                  "description": "<p>The entity type that the value generator will be used for. When called on inherited properties on derived entity types,\nthis entity type may be different from the declared entity type on <paramref name=\"property\"></paramref></p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                  "parent": "Microsoft.Data.Entity.ValueGeneration",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator.yml",
+                  "name": "ValueGenerator",
+                  "fullName": "Microsoft.Data.Entity.ValueGeneration.ValueGenerator",
+                  "type": "class",
+                  "summary": "<p>Generates values for properties when an entity is added to a context.</p>\n",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\" name=\"Microsoft.Data.Entity.ValueGeneration.ValueGenerator\"/>",
+                  "id": "ValueGenerator",
+                  "level": 0
+                },
+                "description": "<p>The value generator to be used.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.Select(Microsoft.Data.Entity.Metadata.IProperty,Microsoft.Data.Entity.Metadata.IEntityType)\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.Select(Microsoft.Data.Entity.Metadata.IProperty, Microsoft.Data.Entity.Metadata.IEntityType)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs/#L29"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.yml",
+    "name": "IValueGeneratorSelector",
+    "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs",
+      "startLine": 17,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.ValueGeneration",
+    "summary": "<para>\nSelects value generators to be used to generate values for properties of entities.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IValueGeneratorSelector",
+      "content.vb": "Public Interface IValueGeneratorSelector"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/ValueGeneration/IValueGeneratorSelector.cs/#L18"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

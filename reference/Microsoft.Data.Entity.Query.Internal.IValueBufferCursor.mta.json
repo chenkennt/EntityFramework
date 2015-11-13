@@ -1,0 +1,197 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor",
+    "id": "IValueBufferCursor",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.Current",
+            "id": "Current",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor",
+            "href": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.yml",
+            "name": "Current",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.Current",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+              "startLine": 11,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "ValueBuffer Current { get; }",
+                "content.vb": "ReadOnly Property Current As ValueBuffer",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ValueBuffer.yml",
+                    "name": "ValueBuffer",
+                    "fullName": "Microsoft.Data.Entity.Storage.ValueBuffer",
+                    "type": "struct",
+                    "summary": "<para>\nRepresents a set of indexed values. Typically used to represent a row of data returned from a database.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ValueBuffer\" name=\"Microsoft.Data.Entity.Storage.ValueBuffer\"/>",
+                    "id": "ValueBuffer",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.Current\" name=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.Current\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs/#L12"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAll",
+            "id": "BufferAll__",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor",
+            "href": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.yml",
+            "name": "BufferAll()",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAll()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+              "startLine": 13,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "void BufferAll()",
+              "content.vb": "Sub BufferAll"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAll\" name=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAll()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs/#L14"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAllAsync(System.Threading.CancellationToken)",
+            "id": "BufferAllAsync_CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor",
+            "href": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.yml",
+            "name": "BufferAllAsync(CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAllAsync(System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+              "startLine": 14,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "Task BufferAllAsync(CancellationToken cancellationToken)",
+              "content.vb": "Function BufferAllAsync(cancellationToken As CancellationToken) As Task",
+              "parameters": [
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task",
+                  "parent": "System.Threading.Tasks",
+                  "isExternal": true,
+                  "name": "Task",
+                  "fullName": "System.Threading.Tasks.Task",
+                  "specName": "<xref href=\"System.Threading.Tasks.Task\" name=\"System.Threading.Tasks.Task\"/>",
+                  "id": "Task",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAllAsync(System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.BufferAllAsync(System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs/#L15"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor.yml",
+    "name": "IValueBufferCursor",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.IValueBufferCursor",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs",
+      "startLine": 9,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public interface IValueBufferCursor",
+      "content.vb": "Public Interface IValueBufferCursor"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor\" name=\"Microsoft.Data.Entity.Query.Internal.IValueBufferCursor\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/Internal/IValueBufferCursor.cs/#L10"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

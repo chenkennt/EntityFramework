@@ -1,0 +1,591 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+    "id": "RelationalCommandBuilder",
+    "parent": "Microsoft.Data.Entity.Storage.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.#ctor(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger,System.Diagnostics.DiagnosticSource,Microsoft.Data.Entity.Storage.IRelationalTypeMapper)",
+            "id": "RelationalCommandBuilder_ISensitiveDataLogger__DiagnosticSource__IRelationalTypeMapper_",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "RelationalCommandBuilder(ISensitiveDataLogger, DiagnosticSource, IRelationalTypeMapper)",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.RelationalCommandBuilder(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger, System.Diagnostics.DiagnosticSource, Microsoft.Data.Entity.Storage.IRelationalTypeMapper)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+              "content": "public RelationalCommandBuilder(ISensitiveDataLogger logger, DiagnosticSource diagnosticSource, IRelationalTypeMapper typeMapper)",
+              "content.vb": "Public Sub New(logger As ISensitiveDataLogger, diagnosticSource As DiagnosticSource, typeMapper As IRelationalTypeMapper)",
+              "parameters": [
+                {
+                  "id": "logger",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger.yml",
+                    "name": "ISensitiveDataLogger",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\" name=\"Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger\"/>",
+                    "id": "ISensitiveDataLogger",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "diagnosticSource",
+                  "type": {
+                    "uid": "System.Diagnostics.DiagnosticSource",
+                    "parent": "System.Diagnostics",
+                    "isExternal": true,
+                    "name": "DiagnosticSource",
+                    "fullName": "System.Diagnostics.DiagnosticSource",
+                    "specName": "<xref href=\"System.Diagnostics.DiagnosticSource\" name=\"System.Diagnostics.DiagnosticSource\"/>",
+                    "id": "DiagnosticSource",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "typeMapper",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml",
+                    "name": "IRelationalTypeMapper",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\" name=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\"/>",
+                    "id": "IRelationalTypeMapper",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.#ctor(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger,System.Diagnostics.DiagnosticSource,Microsoft.Data.Entity.Storage.IRelationalTypeMapper)\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.RelationalCommandBuilder(Microsoft.Data.Entity.Infrastructure.ISensitiveDataLogger, System.Diagnostics.DiagnosticSource, Microsoft.Data.Entity.Storage.IRelationalTypeMapper)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L22"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CommandTextBuilder",
+            "id": "CommandTextBuilder",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "CommandTextBuilder",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CommandTextBuilder",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+                "content": "public virtual IndentedStringBuilder CommandTextBuilder { get; }",
+                "content.vb": "Public Overridable ReadOnly Property CommandTextBuilder As IndentedStringBuilder",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Internal.IndentedStringBuilder",
+                    "parent": "Microsoft.Data.Entity.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Internal.IndentedStringBuilder.yml",
+                    "name": "IndentedStringBuilder",
+                    "fullName": "Microsoft.Data.Entity.Internal.IndentedStringBuilder",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.IndentedStringBuilder\" name=\"Microsoft.Data.Entity.Internal.IndentedStringBuilder\"/>",
+                    "id": "IndentedStringBuilder",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CommandTextBuilder\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CommandTextBuilder\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L36"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.AddParameter(Microsoft.Data.Entity.Storage.IRelationalParameter)",
+            "id": "AddParameter_IRelationalParameter_",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "AddParameter(IRelationalParameter)",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.AddParameter(Microsoft.Data.Entity.Storage.IRelationalParameter)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 50,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+              "content": "public virtual void AddParameter(IRelationalParameter relationalParameter)",
+              "content.vb": "Public Overridable Sub AddParameter(relationalParameter As IRelationalParameter)",
+              "parameters": [
+                {
+                  "id": "relationalParameter",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalParameter",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalParameter.yml",
+                    "name": "IRelationalParameter",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalParameter",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalParameter\" name=\"Microsoft.Data.Entity.Storage.IRelationalParameter\"/>",
+                    "id": "IRelationalParameter",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.AddParameter(Microsoft.Data.Entity.Storage.IRelationalParameter)\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.AddParameter(Microsoft.Data.Entity.Storage.IRelationalParameter)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L51"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.Build",
+            "id": "Build__",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "Build()",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.Build()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+              "content": "public virtual IRelationalCommand Build()",
+              "content.vb": "Public Overridable Function Build As IRelationalCommand",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IRelationalCommand.yml",
+                  "name": "IRelationalCommand",
+                  "fullName": "Microsoft.Data.Entity.Storage.IRelationalCommand",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalCommand\" name=\"Microsoft.Data.Entity.Storage.IRelationalCommand\"/>",
+                  "id": "IRelationalCommand",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.Build\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.Build()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L58"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CreateParameter(System.String,System.Object,System.Func{Microsoft.Data.Entity.Storage.IRelationalTypeMapper,Microsoft.Data.Entity.Storage.RelationalTypeMapping},System.Nullable{System.Boolean},System.String)",
+            "id": "CreateParameter_String__Object__Func_IRelationalTypeMapper__RelationalTypeMapping___Nullable_Boolean___String_",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "CreateParameter(String, Object, Func<IRelationalTypeMapper, RelationalTypeMapping>, Nullable<Boolean>, String)",
+            "name.vb": "CreateParameter(String, Object, Func(Of IRelationalTypeMapper, RelationalTypeMapping), Nullable(Of Boolean), String)",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CreateParameter(System.String, System.Object, System.Func<Microsoft.Data.Entity.Storage.IRelationalTypeMapper, Microsoft.Data.Entity.Storage.RelationalTypeMapping>, System.Nullable<System.Boolean>, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CreateParameter(System.String, System.Object, System.Func(Of Microsoft.Data.Entity.Storage.IRelationalTypeMapper, Microsoft.Data.Entity.Storage.RelationalTypeMapping), System.Nullable(Of System.Boolean), System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 37,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+              "content": "public virtual IRelationalParameter CreateParameter(string name, object value, Func<IRelationalTypeMapper, RelationalTypeMapping> mapType, bool ? nullable, string invariantName)",
+              "content.vb": "Public Overridable Function CreateParameter(name As String, value As Object, mapType As Func(Of IRelationalTypeMapper, RelationalTypeMapping), nullable As Boolean?, invariantName As String) As IRelationalParameter",
+              "parameters": [
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "mapType",
+                  "type": {
+                    "uid": "System.Func{Microsoft.Data.Entity.Storage.IRelationalTypeMapper,Microsoft.Data.Entity.Storage.RelationalTypeMapping}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml",
+                    "name": "Func<IRelationalTypeMapper, RelationalTypeMapping>",
+                    "name.vb": "Func(Of IRelationalTypeMapper, RelationalTypeMapping)",
+                    "fullName": "System.Func<Microsoft.Data.Entity.Storage.IRelationalTypeMapper, Microsoft.Data.Entity.Storage.RelationalTypeMapping>",
+                    "fullName.vb": "System.Func(Of Microsoft.Data.Entity.Storage.IRelationalTypeMapper, Microsoft.Data.Entity.Storage.RelationalTypeMapping)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                        "name": "IRelationalTypeMapper",
+                        "fullName": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.RelationalTypeMapping",
+                        "name": "RelationalTypeMapping",
+                        "fullName": "Microsoft.Data.Entity.Storage.RelationalTypeMapping",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.RelationalTypeMapping.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                        "name": "IRelationalTypeMapper",
+                        "fullName": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml"
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Storage.RelationalTypeMapping",
+                        "name": "RelationalTypeMapping",
+                        "fullName": "Microsoft.Data.Entity.Storage.RelationalTypeMapping",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Storage.RelationalTypeMapping.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\" name=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\"/>, <xref href=\"Microsoft.Data.Entity.Storage.RelationalTypeMapping\" name=\"Microsoft.Data.Entity.Storage.RelationalTypeMapping\"/>&gt;",
+                    "id": "Func_IRelationalTypeMapper__RelationalTypeMapping_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "nullable",
+                  "type": {
+                    "uid": "System.Nullable{System.Boolean}",
+                    "parent": "System",
+                    "definition": "System.Nullable`1",
+                    "name": "Nullable<Boolean>",
+                    "name.vb": "Nullable(Of Boolean)",
+                    "fullName": "System.Nullable<System.Boolean>",
+                    "fullName.vb": "System.Nullable(Of System.Boolean)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Nullable`1",
+                        "name": "Nullable",
+                        "fullName": "System.Nullable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Boolean",
+                        "name": "Boolean",
+                        "fullName": "System.Boolean",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Nullable`1\" name=\"System.Nullable\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                    "id": "Nullable_Boolean_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "invariantName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IRelationalParameter",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IRelationalParameter.yml",
+                  "name": "IRelationalParameter",
+                  "fullName": "Microsoft.Data.Entity.Storage.IRelationalParameter",
+                  "type": "interface",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalParameter\" name=\"Microsoft.Data.Entity.Storage.IRelationalParameter\"/>",
+                  "id": "IRelationalParameter",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CreateParameter(System.String,System.Object,System.Func{Microsoft.Data.Entity.Storage.IRelationalTypeMapper,Microsoft.Data.Entity.Storage.RelationalTypeMapping},System.Nullable{System.Boolean},System.String)\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.CreateParameter(System.String, System.Object, System.Func&lt;Microsoft.Data.Entity.Storage.IRelationalTypeMapper, Microsoft.Data.Entity.Storage.RelationalTypeMapping&gt;, System.Nullable&lt;System.Boolean&gt;, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L38"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.ToString",
+            "id": "ToString__",
+            "parent": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+            "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+            "name": "ToString()",
+            "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.ToString()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+              "startLine": 64,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage.Internal",
+            "syntax": {
+              "content": "public override string ToString()",
+              "content.vb": "Public Overrides Function ToString As String",
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "System.Object.ToString",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.ToString\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.ToString()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L65"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder.yml",
+    "name": "RelationalCommandBuilder",
+    "fullName": "Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs",
+      "startLine": 13,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage.Internal",
+    "syntax": {
+      "content": "public class RelationalCommandBuilder : IRelationalCommandBuilder",
+      "content.vb": "Public Class RelationalCommandBuilder Implements IRelationalCommandBuilder"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IRelationalCommandBuilder"
+    ],
+    "inheritedMembers": [
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder\" name=\"Microsoft.Data.Entity.Storage.Internal.RelationalCommandBuilder\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/Internal/RelationalCommandBuilder.cs/#L14"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

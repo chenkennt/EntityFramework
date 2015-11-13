@@ -1,0 +1,525 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+    "id": "QueryCompilationContextFactory",
+    "parent": "Microsoft.Data.Entity.Query.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory},Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory,Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory,Microsoft.Data.Entity.DbContext)",
+            "id": "QueryCompilationContextFactory_ILogger_QueryCompilationContextFactory___IEntityQueryModelVisitorFactory__IRequiresMaterializationExpressionVisitorFactory__DbContext_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "QueryCompilationContextFactory(ILogger<QueryCompilationContextFactory>, IEntityQueryModelVisitorFactory, IRequiresMaterializationExpressionVisitorFactory, DbContext)",
+            "name.vb": "QueryCompilationContextFactory(ILogger(Of QueryCompilationContextFactory), IEntityQueryModelVisitorFactory, IRequiresMaterializationExpressionVisitorFactory, DbContext)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.QueryCompilationContextFactory(Microsoft.Extensions.Logging.ILogger<Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory>, Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory, Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory, Microsoft.Data.Entity.DbContext)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.QueryCompilationContextFactory(Microsoft.Extensions.Logging.ILogger(Of Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory), Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory, Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory, Microsoft.Data.Entity.DbContext)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public QueryCompilationContextFactory(ILogger<QueryCompilationContextFactory> logger, IEntityQueryModelVisitorFactory entityQueryModelVisitorFactory, IRequiresMaterializationExpressionVisitorFactory requiresMaterializationExpressionVisitorFactory, DbContext context)",
+              "content.vb": "Public Sub New(logger As ILogger(Of QueryCompilationContextFactory), entityQueryModelVisitorFactory As IEntityQueryModelVisitorFactory, requiresMaterializationExpressionVisitorFactory As IRequiresMaterializationExpressionVisitorFactory, context As DbContext)",
+              "parameters": [
+                {
+                  "id": "logger",
+                  "type": {
+                    "uid": "Microsoft.Extensions.Logging.ILogger{Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory}",
+                    "parent": "Microsoft.Extensions.Logging",
+                    "definition": "Microsoft.Extensions.Logging.ILogger`1",
+                    "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+                    "name": "ILogger<QueryCompilationContextFactory>",
+                    "name.vb": "ILogger(Of QueryCompilationContextFactory)",
+                    "fullName": "Microsoft.Extensions.Logging.ILogger<Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory>",
+                    "fullName.vb": "Microsoft.Extensions.Logging.ILogger(Of Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory)",
+                    "spec.csharp": [
+                      {
+                        "uid": "Microsoft.Extensions.Logging.ILogger`1",
+                        "name": "ILogger",
+                        "fullName": "Microsoft.Extensions.Logging.ILogger",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+                        "name": "QueryCompilationContextFactory",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "Microsoft.Extensions.Logging.ILogger`1",
+                        "name": "ILogger",
+                        "fullName": "Microsoft.Extensions.Logging.ILogger",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+                        "name": "QueryCompilationContextFactory",
+                        "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"Microsoft.Extensions.Logging.ILogger`1\" name=\"Microsoft.Extensions.Logging.ILogger\"/>&lt;<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory\"/>&gt;",
+                    "id": "ILogger_QueryCompilationContextFactory_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "entityQueryModelVisitorFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.yml",
+                    "name": "IEntityQueryModelVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"/>",
+                    "id": "IEntityQueryModelVisitorFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "requiresMaterializationExpressionVisitorFactory",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory.yml",
+                    "name": "IRequiresMaterializationExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\"/>",
+                    "id": "IRequiresMaterializationExpressionVisitorFactory",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "context",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContext",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContext.yml",
+                    "name": "DbContext",
+                    "fullName": "Microsoft.Data.Entity.DbContext",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContext\" name=\"Microsoft.Data.Entity.DbContext\"/>",
+                    "id": "DbContext",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.#ctor(Microsoft.Extensions.Logging.ILogger{Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory},Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory,Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory,Microsoft.Data.Entity.DbContext)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.QueryCompilationContextFactory(Microsoft.Extensions.Logging.ILogger&lt;Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory&gt;, Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory, Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory, Microsoft.Data.Entity.DbContext)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L16"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.ContextType",
+            "id": "ContextType",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "ContextType",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.ContextType",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 38,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "protected virtual Type ContextType { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property ContextType As Type",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.ContextType\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.ContextType\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L39"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.EntityQueryModelVisitorFactory",
+            "id": "EntityQueryModelVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "EntityQueryModelVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.EntityQueryModelVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "protected virtual IEntityQueryModelVisitorFactory EntityQueryModelVisitorFactory { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property EntityQueryModelVisitorFactory As IEntityQueryModelVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.yml",
+                    "name": "IEntityQueryModelVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"/>",
+                    "id": "IEntityQueryModelVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.EntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.EntityQueryModelVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L36"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Logger",
+            "id": "Logger",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "Logger",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Logger",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "protected virtual ILogger Logger { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property Logger As ILogger",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Extensions.Logging.ILogger",
+                    "parent": "Microsoft.Extensions.Logging",
+                    "isExternal": true,
+                    "name": "ILogger",
+                    "fullName": "Microsoft.Extensions.Logging.ILogger",
+                    "specName": "<xref href=\"Microsoft.Extensions.Logging.ILogger\" name=\"Microsoft.Extensions.Logging.ILogger\"/>",
+                    "id": "ILogger",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Logger\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Logger\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L35"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.RequiresMaterializationExpressionVisitorFactory",
+            "id": "RequiresMaterializationExpressionVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "RequiresMaterializationExpressionVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.RequiresMaterializationExpressionVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 36,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "protected virtual IRequiresMaterializationExpressionVisitorFactory RequiresMaterializationExpressionVisitorFactory { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property RequiresMaterializationExpressionVisitorFactory As IRequiresMaterializationExpressionVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory.yml",
+                    "name": "IRequiresMaterializationExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IRequiresMaterializationExpressionVisitorFactory\"/>",
+                    "id": "IRequiresMaterializationExpressionVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.RequiresMaterializationExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.RequiresMaterializationExpressionVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L37"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.TrackQueryResults",
+            "id": "TrackQueryResults",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "TrackQueryResults",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.TrackQueryResults",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 40,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+                "content": "protected virtual bool TrackQueryResults { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property TrackQueryResults As Boolean",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.TrackQueryResults\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.TrackQueryResults\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L41"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Create(System.Boolean)",
+            "id": "Create_Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+            "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+            "name": "Create(Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Create(System.Boolean)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+              "startLine": 43,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.Internal",
+            "syntax": {
+              "content": "public virtual QueryCompilationContext Create(bool async)",
+              "content.vb": "Public Overridable Function Create(async As Boolean) As QueryCompilationContext",
+              "parameters": [
+                {
+                  "id": "async",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+                  "parent": "Microsoft.Data.Entity.Query",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Query.QueryCompilationContext.yml",
+                  "name": "QueryCompilationContext",
+                  "fullName": "Microsoft.Data.Entity.Query.QueryCompilationContext",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Query.QueryCompilationContext\" name=\"Microsoft.Data.Entity.Query.QueryCompilationContext\"/>",
+                  "id": "QueryCompilationContext",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Create(System.Boolean)\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.Create(System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L44"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory.yml",
+    "name": "QueryCompilationContextFactory",
+    "fullName": "Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.Internal",
+    "syntax": {
+      "content": "public class QueryCompilationContextFactory : IQueryCompilationContextFactory",
+      "content.vb": "Public Class QueryCompilationContextFactory Implements IQueryCompilationContextFactory"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Query.Internal.QueryCompilationContextFactory\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Query/Internal/QueryCompilationContextFactory.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

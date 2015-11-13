@@ -1,0 +1,1524 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+    "id": "HistoryRepository",
+    "parent": "Microsoft.Data.Entity.Migrations",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.#ctor(Microsoft.Data.Entity.Storage.IDatabaseCreator,Microsoft.Data.Entity.Storage.ISqlCommandBuilder,Microsoft.Data.Entity.Storage.IRelationalConnection,Microsoft.Data.Entity.Infrastructure.IDbContextOptions,Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer,Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator,Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider,Microsoft.Data.Entity.Storage.ISqlGenerator)",
+            "id": "HistoryRepository_IDatabaseCreator__ISqlCommandBuilder__IRelationalConnection__IDbContextOptions__IMigrationsModelDiffer__IMigrationsSqlGenerator__IRelationalAnnotationProvider__ISqlGenerator_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "HistoryRepository(IDatabaseCreator, ISqlCommandBuilder, IRelationalConnection, IDbContextOptions, IMigrationsModelDiffer, IMigrationsSqlGenerator, IRelationalAnnotationProvider, ISqlGenerator)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.HistoryRepository(Microsoft.Data.Entity.Storage.IDatabaseCreator, Microsoft.Data.Entity.Storage.ISqlCommandBuilder, Microsoft.Data.Entity.Storage.IRelationalConnection, Microsoft.Data.Entity.Infrastructure.IDbContextOptions, Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer, Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator, Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider, Microsoft.Data.Entity.Storage.ISqlGenerator)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "protected HistoryRepository(IDatabaseCreator databaseCreator, ISqlCommandBuilder sqlCommandBuilder, IRelationalConnection connection, IDbContextOptions options, IMigrationsModelDiffer modelDiffer, IMigrationsSqlGenerator migrationsSqlGenerator, IRelationalAnnotationProvider annotations, ISqlGenerator sqlGenerator)",
+              "content.vb": "Protected Sub New(databaseCreator As IDatabaseCreator, sqlCommandBuilder As ISqlCommandBuilder, connection As IRelationalConnection, options As IDbContextOptions, modelDiffer As IMigrationsModelDiffer, migrationsSqlGenerator As IMigrationsSqlGenerator, annotations As IRelationalAnnotationProvider, sqlGenerator As ISqlGenerator)",
+              "parameters": [
+                {
+                  "id": "databaseCreator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabaseCreator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabaseCreator.yml",
+                    "name": "IDatabaseCreator",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabaseCreator",
+                    "type": "interface",
+                    "summary": "<para>\nCreates and deletes databases for a given database provider.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseCreator\" name=\"Microsoft.Data.Entity.Storage.IDatabaseCreator\"/>",
+                    "id": "IDatabaseCreator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sqlCommandBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder.yml",
+                    "name": "ISqlCommandBuilder",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlCommandBuilder",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlCommandBuilder\" name=\"Microsoft.Data.Entity.Storage.ISqlCommandBuilder\"/>",
+                    "id": "ISqlCommandBuilder",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "connection",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalConnection.yml",
+                    "name": "IRelationalConnection",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalConnection\" name=\"Microsoft.Data.Entity.Storage.IRelationalConnection\"/>",
+                    "id": "IRelationalConnection",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "options",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions.yml",
+                    "name": "IDbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "type": "interface",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of classes that implement this interface, they are not designed to be directly created\nin your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\"/>",
+                    "id": "IDbContextOptions",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "modelDiffer",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer.yml",
+                    "name": "IMigrationsModelDiffer",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer\"/>",
+                    "id": "IMigrationsModelDiffer",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "migrationsSqlGenerator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.yml",
+                    "name": "IMigrationsSqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\"/>",
+                    "id": "IMigrationsSqlGenerator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "annotations",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.yml",
+                    "name": "IRelationalAnnotationProvider",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\" name=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\"/>",
+                    "id": "IRelationalAnnotationProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "sqlGenerator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlGenerator.yml",
+                    "name": "ISqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlGenerator\" name=\"Microsoft.Data.Entity.Storage.ISqlGenerator\"/>",
+                    "id": "ISqlGenerator",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.#ctor(Microsoft.Data.Entity.Storage.IDatabaseCreator,Microsoft.Data.Entity.Storage.ISqlCommandBuilder,Microsoft.Data.Entity.Storage.IRelationalConnection,Microsoft.Data.Entity.Infrastructure.IDbContextOptions,Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer,Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator,Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider,Microsoft.Data.Entity.Storage.ISqlGenerator)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.HistoryRepository(Microsoft.Data.Entity.Storage.IDatabaseCreator, Microsoft.Data.Entity.Storage.ISqlCommandBuilder, Microsoft.Data.Entity.Storage.IRelationalConnection, Microsoft.Data.Entity.Infrastructure.IDbContextOptions, Microsoft.Data.Entity.Migrations.IMigrationsModelDiffer, Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator, Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider, Microsoft.Data.Entity.Storage.ISqlGenerator)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L35"
+          }
+        ]
+      },
+      {
+        "title": "Fields",
+        "id": "fields",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.DefaultTableName",
+            "id": "DefaultTableName",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "DefaultTableName",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.DefaultTableName",
+            "type": "field",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public const string DefaultTableName",
+              "content.vb": "Public Const DefaultTableName As String = \"__EFMigrationsHistory\""
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.DefaultTableName\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.DefaultTableName\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L24"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsSql",
+            "id": "ExistsSql",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "ExistsSql",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsSql",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 89,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected abstract string ExistsSql { get; }",
+                "content.vb": "Protected MustOverride ReadOnly Property ExistsSql As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsSql\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsSql\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L90"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsSql",
+            "id": "GetAppliedMigrationsSql",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetAppliedMigrationsSql",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsSql",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 167,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual string GetAppliedMigrationsSql { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property GetAppliedMigrationsSql As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsSql\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsSql\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L168"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.MigrationIdColumnName",
+            "id": "MigrationIdColumnName",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "MigrationIdColumnName",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.MigrationIdColumnName",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 86,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual string MigrationIdColumnName { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property MigrationIdColumnName As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.MigrationIdColumnName\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.MigrationIdColumnName\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L87"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.ProductVersionColumnName",
+            "id": "ProductVersionColumnName",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "ProductVersionColumnName",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.ProductVersionColumnName",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 87,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual string ProductVersionColumnName { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property ProductVersionColumnName As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ProductVersionColumnName\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ProductVersionColumnName\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L88"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.SqlGenerator",
+            "id": "SqlGenerator",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "SqlGenerator",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.SqlGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 83,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual ISqlGenerator SqlGenerator { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property SqlGenerator As ISqlGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlGenerator.yml",
+                    "name": "ISqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlGenerator\" name=\"Microsoft.Data.Entity.Storage.ISqlGenerator\"/>",
+                    "id": "ISqlGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.SqlGenerator\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.SqlGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L84"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.TableName",
+            "id": "TableName",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "TableName",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.TableName",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 84,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual string TableName { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property TableName As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.TableName\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.TableName\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L85"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.TableSchema",
+            "id": "TableSchema",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "TableSchema",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.TableSchema",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 85,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+                "content": "protected virtual string TableSchema { get; }",
+                "content.vb": "Protected Overridable ReadOnly Property TableSchema As String",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.TableSchema\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.TableSchema\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L86"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.ConfigureTable(Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{Microsoft.Data.Entity.Migrations.HistoryRow})",
+            "id": "ConfigureTable_EntityTypeBuilder_HistoryRow__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "ConfigureTable(EntityTypeBuilder<HistoryRow>)",
+            "name.vb": "ConfigureTable(EntityTypeBuilder(Of HistoryRow))",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.ConfigureTable(Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<Microsoft.Data.Entity.Migrations.HistoryRow>)",
+            "fullName.vb": "Microsoft.Data.Entity.Migrations.HistoryRepository.ConfigureTable(Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of Microsoft.Data.Entity.Migrations.HistoryRow))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 118,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "protected virtual void ConfigureTable(EntityTypeBuilder<HistoryRow> history)",
+              "content.vb": "Protected Overridable Sub ConfigureTable(history As EntityTypeBuilder(Of HistoryRow))",
+              "parameters": [
+                {
+                  "id": "history",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{Microsoft.Data.Entity.Migrations.HistoryRow}",
+                    "parent": "Microsoft.Data.Entity.Metadata.Builders",
+                    "definition": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                    "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml",
+                    "name": "EntityTypeBuilder<HistoryRow>",
+                    "name.vb": "EntityTypeBuilder(Of HistoryRow)",
+                    "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder<Microsoft.Data.Entity.Migrations.HistoryRow>",
+                    "fullName.vb": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder(Of Microsoft.Data.Entity.Migrations.HistoryRow)",
+                    "spec.csharp": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                        "name": "HistoryRow",
+                        "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1",
+                        "name": "EntityTypeBuilder",
+                        "fullName": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1.yml"
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                        "name": "HistoryRow",
+                        "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder`1\" name=\"Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder\"/>&lt;<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRow\" name=\"Microsoft.Data.Entity.Migrations.HistoryRow\"/>&gt;",
+                    "id": "EntityTypeBuilder_HistoryRow_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ConfigureTable(Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder{Microsoft.Data.Entity.Migrations.HistoryRow})\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ConfigureTable(Microsoft.Data.Entity.Metadata.Builders.EntityTypeBuilder&lt;Microsoft.Data.Entity.Migrations.HistoryRow&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L119"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.Exists",
+            "id": "Exists__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "Exists()",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.Exists()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 91,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual bool Exists()",
+              "content.vb": "Public Overridable Function Exists As Boolean",
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.Exists\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.Exists()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L92"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsAsync(System.Threading.CancellationToken)",
+            "id": "ExistsAsync_CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "ExistsAsync(CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsAsync(System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 96,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual Task<bool> ExistsAsync(CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function ExistsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)",
+              "parameters": [
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Boolean}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "name": "Task<Boolean>",
+                  "name.vb": "Task(Of Boolean)",
+                  "fullName": "System.Threading.Tasks.Task<System.Boolean>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Boolean)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Boolean",
+                      "name": "Boolean",
+                      "fullName": "System.Boolean",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Boolean",
+                      "name": "Boolean",
+                      "fullName": "System.Boolean",
+                      "isExternal": true
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Boolean\" name=\"System.Boolean\"/>&gt;",
+                  "id": "Task_Boolean_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsAsync(System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.ExistsAsync(System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L97"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrations",
+            "id": "GetAppliedMigrations__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetAppliedMigrations()",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrations()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 126,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual IReadOnlyList<HistoryRow> GetAppliedMigrations()",
+              "content.vb": "Public Overridable Function GetAppliedMigrations As IReadOnlyList(Of HistoryRow)",
+              "return": {
+                "type": {
+                  "uid": "System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Migrations.HistoryRow}",
+                  "parent": "System.Collections.Generic",
+                  "definition": "System.Collections.Generic.IReadOnlyList`1",
+                  "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml",
+                  "name": "IReadOnlyList<HistoryRow>",
+                  "name.vb": "IReadOnlyList(Of HistoryRow)",
+                  "fullName": "System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Migrations.HistoryRow>",
+                  "fullName.vb": "System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Migrations.HistoryRow)",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "name": "HistoryRow",
+                      "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "name": "HistoryRow",
+                      "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRow\" name=\"Microsoft.Data.Entity.Migrations.HistoryRow\"/>&gt;",
+                  "id": "IReadOnlyList_HistoryRow_",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrations\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrations()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L127"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsAsync(System.Threading.CancellationToken)",
+            "id": "GetAppliedMigrationsAsync_CancellationToken_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetAppliedMigrationsAsync(CancellationToken)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsAsync(System.Threading.CancellationToken)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 146,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual Task<IReadOnlyList<HistoryRow>> GetAppliedMigrationsAsync(CancellationToken cancellationToken = null)",
+              "content.vb": "Public Overridable Function GetAppliedMigrationsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of HistoryRow))",
+              "parameters": [
+                {
+                  "id": "cancellationToken",
+                  "type": {
+                    "uid": "System.Threading.CancellationToken",
+                    "parent": "System.Threading",
+                    "isExternal": true,
+                    "name": "CancellationToken",
+                    "fullName": "System.Threading.CancellationToken",
+                    "specName": "<xref href=\"System.Threading.CancellationToken\" name=\"System.Threading.CancellationToken\"/>",
+                    "id": "CancellationToken",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{Microsoft.Data.Entity.Migrations.HistoryRow}}",
+                  "parent": "System.Threading.Tasks",
+                  "definition": "System.Threading.Tasks.Task`1",
+                  "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml",
+                  "name": "Task<IReadOnlyList<HistoryRow>>",
+                  "name.vb": "Task(Of IReadOnlyList(Of HistoryRow))",
+                  "fullName": "System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<Microsoft.Data.Entity.Migrations.HistoryRow>>",
+                  "fullName.vb": "System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of Microsoft.Data.Entity.Migrations.HistoryRow))",
+                  "spec.csharp": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "<",
+                      "fullName": "<",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "name": "HistoryRow",
+                      "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ">",
+                      "fullName": ">",
+                      "isExternal": false
+                    }
+                  ],
+                  "spec.vb": [
+                    {
+                      "uid": "System.Threading.Tasks.Task`1",
+                      "name": "Task",
+                      "fullName": "System.Threading.Tasks.Task",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "System.Collections.Generic.IReadOnlyList`1",
+                      "name": "IReadOnlyList",
+                      "fullName": "System.Collections.Generic.IReadOnlyList",
+                      "isExternal": true
+                    },
+                    {
+                      "name": "(Of ",
+                      "fullName": "(Of ",
+                      "isExternal": false
+                    },
+                    {
+                      "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "name": "HistoryRow",
+                      "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                      "isExternal": false,
+                      "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml"
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    },
+                    {
+                      "name": ")",
+                      "fullName": ")",
+                      "isExternal": false
+                    }
+                  ],
+                  "specName": "<xref href=\"System.Threading.Tasks.Task`1\" name=\"System.Threading.Tasks.Task\"/>&lt;<xref href=\"System.Collections.Generic.IReadOnlyList`1\" name=\"System.Collections.Generic.IReadOnlyList\"/>&lt;<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRow\" name=\"Microsoft.Data.Entity.Migrations.HistoryRow\"/>&gt;&gt;",
+                  "id": "Task_IReadOnlyList_HistoryRow__",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsAsync(System.Threading.CancellationToken)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetAppliedMigrationsAsync(System.Threading.CancellationToken)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L147"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfExistsScript(System.String)",
+            "id": "GetBeginIfExistsScript_String_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetBeginIfExistsScript(String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfExistsScript(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 214,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public abstract string GetBeginIfExistsScript(string migrationId)",
+              "content.vb": "Public MustOverride Function GetBeginIfExistsScript(migrationId As String) As String",
+              "parameters": [
+                {
+                  "id": "migrationId",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfExistsScript(System.String)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfExistsScript(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L215"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfNotExistsScript(System.String)",
+            "id": "GetBeginIfNotExistsScript_String_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetBeginIfNotExistsScript(String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfNotExistsScript(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 213,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public abstract string GetBeginIfNotExistsScript(string migrationId)",
+              "content.vb": "Public MustOverride Function GetBeginIfNotExistsScript(migrationId As String) As String",
+              "parameters": [
+                {
+                  "id": "migrationId",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfNotExistsScript(System.String)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetBeginIfNotExistsScript(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L214"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateIfNotExistsScript",
+            "id": "GetCreateIfNotExistsScript__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetCreateIfNotExistsScript()",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateIfNotExistsScript()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 104,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public abstract string GetCreateIfNotExistsScript()",
+              "content.vb": "Public MustOverride Function GetCreateIfNotExistsScript As String",
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateIfNotExistsScript\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateIfNotExistsScript()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L105"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateScript",
+            "id": "GetCreateScript__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetCreateScript()",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateScript()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 106,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual string GetCreateScript()",
+              "content.vb": "Public Overridable Function GetCreateScript As String",
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateScript\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetCreateScript()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L107"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetDeleteScript(System.String)",
+            "id": "GetDeleteScript_String_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetDeleteScript(String)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetDeleteScript(System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 199,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual string GetDeleteScript(string migrationId)",
+              "content.vb": "Public Overridable Function GetDeleteScript(migrationId As String) As String",
+              "parameters": [
+                {
+                  "id": "migrationId",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetDeleteScript(System.String)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetDeleteScript(System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L200"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetEndIfScript",
+            "id": "GetEndIfScript__",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetEndIfScript()",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetEndIfScript()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 215,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public abstract string GetEndIfScript()",
+              "content.vb": "Public MustOverride Function GetEndIfScript As String",
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetEndIfScript\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetEndIfScript()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L216"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetInsertScript(Microsoft.Data.Entity.Migrations.HistoryRow)",
+            "id": "GetInsertScript_HistoryRow_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "GetInsertScript(HistoryRow)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.GetInsertScript(Microsoft.Data.Entity.Migrations.HistoryRow)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 180,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "public virtual string GetInsertScript(HistoryRow row)",
+              "content.vb": "Public Overridable Function GetInsertScript(row As HistoryRow) As String",
+              "parameters": [
+                {
+                  "id": "row",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.HistoryRow.yml",
+                    "name": "HistoryRow",
+                    "fullName": "Microsoft.Data.Entity.Migrations.HistoryRow",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRow\" name=\"Microsoft.Data.Entity.Migrations.HistoryRow\"/>",
+                    "id": "HistoryRow",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.String",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "String",
+                  "fullName": "System.String",
+                  "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                  "id": "String",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetInsertScript(Microsoft.Data.Entity.Migrations.HistoryRow)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.GetInsertScript(Microsoft.Data.Entity.Migrations.HistoryRow)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L181"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Migrations.HistoryRepository.InterpretExistsResult(System.Object)",
+            "id": "InterpretExistsResult_Object_",
+            "parent": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+            "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+            "name": "InterpretExistsResult(Object)",
+            "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository.InterpretExistsResult(System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+              "startLine": 102,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Migrations",
+            "syntax": {
+              "content": "protected abstract bool InterpretExistsResult(object value)",
+              "content.vb": "Protected MustOverride Function InterpretExistsResult(value As Object) As Boolean",
+              "parameters": [
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>true if the table exists; otherwise, false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository.InterpretExistsResult(System.Object)\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository.InterpretExistsResult(System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L103"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Migrations.HistoryRepository.yml",
+    "name": "HistoryRepository",
+    "fullName": "Microsoft.Data.Entity.Migrations.HistoryRepository",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Migrations/HistoryRepository.cs",
+      "startLine": 21,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Migrations",
+    "syntax": {
+      "content": "public abstract class HistoryRepository : IHistoryRepository",
+      "content.vb": "Public MustInherit Class HistoryRepository Implements IHistoryRepository"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Migrations.IHistoryRepository"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.HistoryRepository\" name=\"Microsoft.Data.Entity.Migrations.HistoryRepository\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Migrations/HistoryRepository.cs/#L22"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

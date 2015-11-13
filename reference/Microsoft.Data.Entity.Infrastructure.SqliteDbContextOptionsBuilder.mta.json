@@ -1,0 +1,369 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+    "id": "SqliteDbContextOptionsBuilder",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.#ctor(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "id": "SqliteDbContextOptionsBuilder_DbContextOptionsBuilder_",
+            "parent": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+            "name": "SqliteDbContextOptionsBuilder(DbContextOptionsBuilder)",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SqliteDbContextOptionsBuilder(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+              "startLine": 10,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Sqlite"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public SqliteDbContextOptionsBuilder(DbContextOptionsBuilder optionsBuilder)",
+              "content.vb": "Public Sub New(optionsBuilder As DbContextOptionsBuilder)",
+              "parameters": [
+                {
+                  "id": "optionsBuilder",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "parent": "Microsoft.Data.Entity",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.DbContextOptionsBuilder.yml",
+                    "name": "DbContextOptionsBuilder",
+                    "fullName": "Microsoft.Data.Entity.DbContextOptionsBuilder",
+                    "type": "class",
+                    "summary": "<para>\nProvides a simple API surface for configuring <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>. Databases (and other extensions)\ntypically define extension methods on this object that allow you to configure the database connection (and other\noptions) to be used for a context.\n</para>\n<para>\nYou can use <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref> to configure a context by overriding\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or creating a <xref href=\"Microsoft.Data.Entity.Infrastructure.DbContextOptions\"></xref>\nexternally and passing it to the context constructor.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"/>",
+                    "id": "DbContextOptionsBuilder",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.#ctor(Microsoft.Data.Entity.DbContextOptionsBuilder)\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SqliteDbContextOptionsBuilder(Microsoft.Data.Entity.DbContextOptionsBuilder)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs/#L11"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.CloneExtension",
+            "id": "CloneExtension__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+            "name": "CloneExtension()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.CloneExtension()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Sqlite"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "protected override SqliteOptionsExtension CloneExtension()",
+              "content.vb": "Protected Overrides Function CloneExtension As SqliteOptionsExtension",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+                  "parent": "Microsoft.Data.Entity.Infrastructure.Internal",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension.yml",
+                  "name": "SqliteOptionsExtension",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+                  "type": "class",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension\" name=\"Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension\"/>",
+                  "id": "SqliteOptionsExtension",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.CloneExtension",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.CloneExtension\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.CloneExtension()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs/#L16"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SuppressForeignKeyEnforcement",
+            "id": "SuppressForeignKeyEnforcement__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+            "name": "SuppressForeignKeyEnforcement()",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SuppressForeignKeyEnforcement()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+              "startLine": 18,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Sqlite"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "syntax": {
+              "content": "public virtual SqliteDbContextOptionsBuilder SuppressForeignKeyEnforcement()",
+              "content.vb": "Public Overridable Function SuppressForeignKeyEnforcement As SqliteDbContextOptionsBuilder",
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+                  "id": "SqliteDbContextOptionsBuilder",
+                  "parent": "Microsoft.Data.Entity.Infrastructure",
+                  "children": [
+                    "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.#ctor(Microsoft.Data.Entity.DbContextOptionsBuilder)",
+                    "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.CloneExtension",
+                    "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SuppressForeignKeyEnforcement"
+                  ],
+                  "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+                  "name": "SqliteDbContextOptionsBuilder",
+                  "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+                  "type": "class",
+                  "source": {
+                    "remote": {
+                      "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+                      "branch": "dev",
+                      "repo": "https://github.com/chenkennt/EntityFramework.git"
+                    },
+                    "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+                    "startLine": 8,
+                    "endLine": 0,
+                    "isExternal": false
+                  },
+                  "assemblies": [
+                    "EntityFramework.Sqlite"
+                  ],
+                  "namespace": "Microsoft.Data.Entity.Infrastructure",
+                  "syntax": {
+                    "content": "public class SqliteDbContextOptionsBuilder : RelationalDbContextOptionsBuilder<SqliteDbContextOptionsBuilder, SqliteOptionsExtension>",
+                    "content.vb": "Public Class SqliteDbContextOptionsBuilder Inherits RelationalDbContextOptionsBuilder(Of SqliteDbContextOptionsBuilder, SqliteOptionsExtension)"
+                  },
+                  "inheritance": [
+                    "System.Object",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}"
+                  ],
+                  "inheritedMembers": [
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.OptionsBuilder",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.CloneExtension",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MaxBatchSize(System.Int32)",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.CommandTimeout(System.Nullable{System.Int32})",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MigrationsAssembly(System.String)",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MigrationsHistoryTable(System.String,System.String)",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.SuppressAmbientTransactionWarning",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.UseRelationalNulls",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.DisableQueryClientEvaluation",
+                    "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.SetOption(System.Action{Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension})",
+                    "System.Object.ToString",
+                    "System.Object.Equals(System.Object)",
+                    "System.Object.Equals(System.Object,System.Object)",
+                    "System.Object.ReferenceEquals(System.Object,System.Object)",
+                    "System.Object.GetHashCode",
+                    "System.Object.GetType",
+                    "System.Object.MemberwiseClone"
+                  ],
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\"/>",
+                  "level": 2
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SuppressForeignKeyEnforcement\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.SuppressForeignKeyEnforcement()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs/#L19"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml",
+    "name": "SqliteDbContextOptionsBuilder",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs",
+      "startLine": 8,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Sqlite"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "syntax": {
+      "content": "public class SqliteDbContextOptionsBuilder : RelationalDbContextOptionsBuilder<SqliteDbContextOptionsBuilder, SqliteOptionsExtension>",
+      "content.vb": "Public Class SqliteDbContextOptionsBuilder Inherits RelationalDbContextOptionsBuilder(Of SqliteDbContextOptionsBuilder, SqliteOptionsExtension)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}",
+        "parent": "Microsoft.Data.Entity.Infrastructure",
+        "definition": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+        "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml",
+        "name": "RelationalDbContextOptionsBuilder<SqliteDbContextOptionsBuilder, SqliteOptionsExtension>",
+        "name.vb": "RelationalDbContextOptionsBuilder(Of SqliteDbContextOptionsBuilder, SqliteOptionsExtension)",
+        "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder<Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder, Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension>",
+        "fullName.vb": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder(Of Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder, Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension)",
+        "spec.csharp": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "name": "RelationalDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml"
+          },
+          {
+            "name": "<",
+            "fullName": "<",
+            "isExternal": false
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "name": "SqliteDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml"
+          },
+          {
+            "name": ", ",
+            "fullName": ", ",
+            "isExternal": false
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+            "name": "SqliteOptionsExtension",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension.yml"
+          },
+          {
+            "name": ">",
+            "fullName": ">",
+            "isExternal": false
+          }
+        ],
+        "spec.vb": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2",
+            "name": "RelationalDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2.yml"
+          },
+          {
+            "name": "(Of ",
+            "fullName": "(Of ",
+            "isExternal": false
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "name": "SqliteDbContextOptionsBuilder",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder.yml"
+          },
+          {
+            "name": ", ",
+            "fullName": ", ",
+            "isExternal": false
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+            "name": "SqliteOptionsExtension",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension.yml"
+          },
+          {
+            "name": ")",
+            "fullName": ")",
+            "isExternal": false
+          }
+        ],
+        "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder`2\" name=\"Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder\"/>&lt;<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\"/>, <xref href=\"Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension\" name=\"Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension\"/>&gt;",
+        "id": "RelationalDbContextOptionsBuilder_SqliteDbContextOptionsBuilder__SqliteOptionsExtension_",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.OptionsBuilder",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.CloneExtension",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MaxBatchSize(System.Int32)",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.CommandTimeout(System.Nullable{System.Int32})",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MigrationsAssembly(System.String)",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.MigrationsHistoryTable(System.String,System.String)",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.SuppressAmbientTransactionWarning",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.UseRelationalNulls",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.DisableQueryClientEvaluation",
+      "Microsoft.Data.Entity.Infrastructure.RelationalDbContextOptionsBuilder{Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder,Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension}.SetOption(System.Action{Microsoft.Data.Entity.Infrastructure.Internal.SqliteOptionsExtension})",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\" name=\"Microsoft.Data.Entity.Infrastructure.SqliteDbContextOptionsBuilder\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Sqlite/Infrastructure/SqliteDbContextOptionsBuilder.cs/#L9"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

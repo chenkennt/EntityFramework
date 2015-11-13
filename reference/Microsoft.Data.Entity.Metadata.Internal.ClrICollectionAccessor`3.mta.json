@@ -1,0 +1,767 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+    "id": "ClrICollectionAccessor_TEntity__TCollection__TElement_",
+    "parent": "Microsoft.Data.Entity.Metadata.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.#ctor(System.String,System.Func{`0,`1},System.Action{`0,`1},System.Func{`0,System.Action{`0,`1},`1})",
+            "id": "ClrICollectionAccessor_String__Func_TEntity__TCollection___Action_TEntity__TCollection___Func_TEntity__Action_TEntity__TCollection___TCollection__",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+            "name": "ClrICollectionAccessor(String, Func<TEntity, TCollection>, Action<TEntity, TCollection>, Func<TEntity, Action<TEntity, TCollection>, TCollection>)",
+            "name.vb": "ClrICollectionAccessor(String, Func(Of TEntity, TCollection), Action(Of TEntity, TCollection), Func(Of TEntity, Action(Of TEntity, TCollection), TCollection))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>.ClrICollectionAccessor(System.String, System.Func<TEntity, TCollection>, System.Action<TEntity, TCollection>, System.Func<TEntity, System.Action<TEntity, TCollection>, TCollection>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement).ClrICollectionAccessor(System.String, System.Func(Of TEntity, TCollection), System.Action(Of TEntity, TCollection), System.Func(Of TEntity, System.Action(Of TEntity, TCollection), TCollection))",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+              "startLine": 19,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public ClrICollectionAccessor(string propertyName, Func<TEntity, TCollection> getCollection, Action<TEntity, TCollection> setCollection, Func<TEntity, Action<TEntity, TCollection>, TCollection> createAndSetCollection)",
+              "content.vb": "Public Sub New(propertyName As String, getCollection As Func(Of TEntity, TCollection), setCollection As Action(Of TEntity, TCollection), createAndSetCollection As Func(Of TEntity, Action(Of TEntity, TCollection), TCollection))",
+              "parameters": [
+                {
+                  "id": "propertyName",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "getCollection",
+                  "type": {
+                    "uid": "System.Func{{TEntity},{TCollection}}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "name": "Func<TEntity, TCollection>",
+                    "name.vb": "Func(Of TEntity, TCollection)",
+                    "fullName": "System.Func<TEntity, TCollection>",
+                    "fullName.vb": "System.Func(Of TEntity, TCollection)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TEntity, TCollection&gt;",
+                    "id": "Func_TEntity__TCollection_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "setCollection",
+                  "type": {
+                    "uid": "System.Action{{TEntity},{TCollection}}",
+                    "parent": "System",
+                    "definition": "System.Action`2",
+                    "name": "Action<TEntity, TCollection>",
+                    "name.vb": "Action(Of TEntity, TCollection)",
+                    "fullName": "System.Action<TEntity, TCollection>",
+                    "fullName.vb": "System.Action(Of TEntity, TCollection)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Action`2",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Action`2",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Action`2\" name=\"System.Action\"/>&lt;TEntity, TCollection&gt;",
+                    "id": "Action_TEntity__TCollection_",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "createAndSetCollection",
+                  "type": {
+                    "uid": "System.Func{{TEntity},System.Action{{TEntity},{TCollection}},{TCollection}}",
+                    "parent": "System",
+                    "definition": "System.Func`3",
+                    "name": "Func<TEntity, Action<TEntity, TCollection>, TCollection>",
+                    "name.vb": "Func(Of TEntity, Action(Of TEntity, TCollection), TCollection)",
+                    "fullName": "System.Func<TEntity, System.Action<TEntity, TCollection>, TCollection>",
+                    "fullName.vb": "System.Func(Of TEntity, System.Action(Of TEntity, TCollection), TCollection)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Action`2",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`3",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Action`2",
+                        "name": "Action",
+                        "fullName": "System.Action",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TEntity",
+                        "fullName": "TEntity",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TCollection",
+                        "fullName": "TCollection",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`3\" name=\"System.Func\"/>&lt;TEntity, <xref href=\"System.Action`2\" name=\"System.Action\"/>&lt;TEntity, TCollection&gt;, TCollection&gt;",
+                    "id": "Func_TEntity__Action_TEntity__TCollection___TCollection_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.#ctor(System.String,System.Func{`0,`1},System.Action{`0,`1},System.Func{`0,System.Action{`0,`1},`1})\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;.ClrICollectionAccessor(System.String, System.Func&lt;TEntity, TCollection&gt;, System.Action&lt;TEntity, TCollection&gt;, System.Func&lt;TEntity, System.Action&lt;TEntity, TCollection&gt;, TCollection&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L20"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Add(System.Object,System.Object)",
+            "id": "Add_Object__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+            "name": "Add(Object, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>.Add(System.Object, System.Object)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement).Add(System.Object, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual void Add(object instance, object value)",
+              "content.vb": "Public Overridable Sub Add(instance As Object, value As Object)",
+              "parameters": [
+                {
+                  "id": "instance",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Add(System.Object,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;.Add(System.Object, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L32"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.AddRange(System.Object,System.Collections.Generic.IEnumerable{System.Object})",
+            "id": "AddRange_Object__IEnumerable_Object__",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+            "name": "AddRange(Object, IEnumerable<Object>)",
+            "name.vb": "AddRange(Object, IEnumerable(Of Object))",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>.AddRange(System.Object, System.Collections.Generic.IEnumerable<System.Object>)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement).AddRange(System.Object, System.Collections.Generic.IEnumerable(Of System.Object))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual void AddRange(object instance, IEnumerable<object> values)",
+              "content.vb": "Public Overridable Sub AddRange(instance As Object, values As IEnumerable(Of Object))",
+              "parameters": [
+                {
+                  "id": "instance",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "values",
+                  "type": {
+                    "uid": "System.Collections.Generic.IEnumerable{System.Object}",
+                    "parent": "System.Collections.Generic",
+                    "definition": "System.Collections.Generic.IEnumerable`1",
+                    "name": "IEnumerable<Object>",
+                    "name.vb": "IEnumerable(Of Object)",
+                    "fullName": "System.Collections.Generic.IEnumerable<System.Object>",
+                    "fullName.vb": "System.Collections.Generic.IEnumerable(Of System.Object)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Collections.Generic.IEnumerable`1",
+                        "name": "IEnumerable",
+                        "fullName": "System.Collections.Generic.IEnumerable",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.Object",
+                        "name": "Object",
+                        "fullName": "System.Object",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Collections.Generic.IEnumerable`1\" name=\"System.Collections.Generic.IEnumerable\"/>&lt;<xref href=\"System.Object\" name=\"System.Object\"/>&gt;",
+                    "id": "IEnumerable_Object_",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.AddRange(System.Object,System.Collections.Generic.IEnumerable{System.Object})\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;.AddRange(System.Object, System.Collections.Generic.IEnumerable&lt;System.Object&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L35"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Contains(System.Object,System.Object)",
+            "id": "Contains_Object__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+            "name": "Contains(Object, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>.Contains(System.Object, System.Object)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement).Contains(System.Object, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+              "startLine": 69,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual bool Contains(object instance, object value)",
+              "content.vb": "Public Overridable Function Contains(instance As Object, value As Object) As Boolean",
+              "parameters": [
+                {
+                  "id": "instance",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Contains(System.Object,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;.Contains(System.Object, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L70"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Remove(System.Object,System.Object)",
+            "id": "Remove_Object__Object_",
+            "parent": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3",
+            "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+            "name": "Remove(Object, Object)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>.Remove(System.Object, System.Object)",
+            "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement).Remove(System.Object, System.Object)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+              "startLine": 76,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+            "syntax": {
+              "content": "public virtual void Remove(object instance, object value)",
+              "content.vb": "Public Overridable Sub Remove(instance As Object, value As Object)",
+              "parameters": [
+                {
+                  "id": "instance",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "value",
+                  "type": {
+                    "uid": "System.Object",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Object",
+                    "fullName": "System.Object",
+                    "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+                    "id": "Object",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.Remove(System.Object,System.Object)\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;.Remove(System.Object, System.Object)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L77"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3.yml",
+    "name": "ClrICollectionAccessor<TEntity, TCollection, TElement>",
+    "name.vb": "ClrICollectionAccessor(Of TEntity, TCollection, TElement)",
+    "fullName": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor<TEntity, TCollection, TElement>",
+    "fullName.vb": "Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor(Of TEntity, TCollection, TElement)",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs",
+      "startLine": 10,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Internal",
+    "syntax": {
+      "content": "public class ClrICollectionAccessor<TEntity, TCollection, TElement> : IClrCollectionAccessor where TEntity : class where TCollection : class, ICollection<TElement>",
+      "content.vb": "Public Class ClrICollectionAccessor(Of TEntity As Class, TCollection As {Class, ICollection(Of TElement)}, TElement) Implements IClrCollectionAccessor",
+      "typeParameters": [
+        {
+          "id": "TEntity"
+        },
+        {
+          "id": "TCollection"
+        },
+        {
+          "id": "TElement"
+        }
+      ]
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Metadata.Internal.IClrCollectionAccessor"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor`3\" name=\"Microsoft.Data.Entity.Metadata.Internal.ClrICollectionAccessor&lt;TEntity, TCollection, TElement&gt;\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Metadata/Internal/ClrICollectionAccessor.cs/#L11"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

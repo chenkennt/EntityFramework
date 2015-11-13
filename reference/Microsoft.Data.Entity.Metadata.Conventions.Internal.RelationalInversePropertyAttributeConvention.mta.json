@@ -1,0 +1,269 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention",
+    "id": "RelationalInversePropertyAttributeConvention",
+    "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.#ctor(Microsoft.Data.Entity.Storage.IRelationalTypeMapper)",
+            "id": "RelationalInversePropertyAttributeConvention_IRelationalTypeMapper_",
+            "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention",
+            "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.yml",
+            "name": "RelationalInversePropertyAttributeConvention(IRelationalTypeMapper)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.RelationalInversePropertyAttributeConvention(Microsoft.Data.Entity.Storage.IRelationalTypeMapper)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+              "startLine": 15,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+            "syntax": {
+              "content": "public RelationalInversePropertyAttributeConvention(IRelationalTypeMapper typeMapper)",
+              "content.vb": "Public Sub New(typeMapper As IRelationalTypeMapper)",
+              "parameters": [
+                {
+                  "id": "typeMapper",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml",
+                    "name": "IRelationalTypeMapper",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\" name=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\"/>",
+                    "id": "IRelationalTypeMapper",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.#ctor(Microsoft.Data.Entity.Storage.IRelationalTypeMapper)\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.RelationalInversePropertyAttributeConvention(Microsoft.Data.Entity.Storage.IRelationalTypeMapper)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs/#L16"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.FindCandidateNavigationPropertyType(System.Reflection.PropertyInfo)",
+            "id": "FindCandidateNavigationPropertyType_PropertyInfo_",
+            "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention",
+            "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.yml",
+            "name": "FindCandidateNavigationPropertyType(PropertyInfo)",
+            "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.FindCandidateNavigationPropertyType(System.Reflection.PropertyInfo)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+            "syntax": {
+              "content": "public override Type FindCandidateNavigationPropertyType(PropertyInfo propertyInfo)",
+              "content.vb": "Public Overrides Function FindCandidateNavigationPropertyType(propertyInfo As PropertyInfo) As Type",
+              "parameters": [
+                {
+                  "id": "propertyInfo",
+                  "type": {
+                    "uid": "System.Reflection.PropertyInfo",
+                    "parent": "System.Reflection",
+                    "isExternal": true,
+                    "name": "PropertyInfo",
+                    "fullName": "System.Reflection.PropertyInfo",
+                    "specName": "<xref href=\"System.Reflection.PropertyInfo\" name=\"System.Reflection.PropertyInfo\"/>",
+                    "id": "PropertyInfo",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Type",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Type",
+                  "fullName": "System.Type",
+                  "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                  "id": "Type",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention{System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute}.FindCandidateNavigationPropertyType(System.Reflection.PropertyInfo)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.FindCandidateNavigationPropertyType(System.Reflection.PropertyInfo)\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.FindCandidateNavigationPropertyType(System.Reflection.PropertyInfo)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs/#L23"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention.yml",
+    "name": "RelationalInversePropertyAttributeConvention",
+    "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs",
+      "startLine": 11,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+    "syntax": {
+      "content": "public class RelationalInversePropertyAttributeConvention : InversePropertyAttributeConvention, IEntityTypeConvention",
+      "content.vb": "Public Class RelationalInversePropertyAttributeConvention Inherits InversePropertyAttributeConvention Implements IEntityTypeConvention"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention{System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute}",
+        "parent": "Microsoft.Data.Entity.Metadata.Conventions.Internal",
+        "definition": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1",
+        "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1.yml",
+        "name": "NavigationAttributeEntityTypeConvention<InversePropertyAttribute>",
+        "name.vb": "NavigationAttributeEntityTypeConvention(Of InversePropertyAttribute)",
+        "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention<System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute>",
+        "fullName.vb": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention(Of System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute)",
+        "spec.csharp": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1",
+            "name": "NavigationAttributeEntityTypeConvention",
+            "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1.yml"
+          },
+          {
+            "name": "<",
+            "fullName": "<",
+            "isExternal": false
+          },
+          {
+            "uid": "System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute",
+            "name": "InversePropertyAttribute",
+            "fullName": "System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute",
+            "isExternal": true
+          },
+          {
+            "name": ">",
+            "fullName": ">",
+            "isExternal": false
+          }
+        ],
+        "spec.vb": [
+          {
+            "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1",
+            "name": "NavigationAttributeEntityTypeConvention",
+            "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention",
+            "isExternal": false,
+            "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1.yml"
+          },
+          {
+            "name": "(Of ",
+            "fullName": "(Of ",
+            "isExternal": false
+          },
+          {
+            "uid": "System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute",
+            "name": "InversePropertyAttribute",
+            "fullName": "System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute",
+            "isExternal": true
+          },
+          {
+            "name": ")",
+            "fullName": ")",
+            "isExternal": false
+          }
+        ],
+        "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention`1\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention\"/>&lt;<xref href=\"System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute\" name=\"System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute\"/>&gt;",
+        "id": "NavigationAttributeEntityTypeConvention_InversePropertyAttribute_",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention.yml",
+        "name": "InversePropertyAttributeConvention",
+        "fullName": "Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention",
+        "type": "class",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention\"/>",
+        "id": "InversePropertyAttributeConvention",
+        "level": 0,
+        "index": 2
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Metadata.Conventions.Internal.IEntityTypeConvention"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Metadata.Conventions.Internal.InversePropertyAttributeConvention.Apply(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder,System.Reflection.PropertyInfo,System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute)",
+      "Microsoft.Data.Entity.Metadata.Conventions.Internal.NavigationAttributeEntityTypeConvention{System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute}.Apply(Microsoft.Data.Entity.Metadata.Internal.InternalEntityTypeBuilder)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention\" name=\"Microsoft.Data.Entity.Metadata.Conventions.Internal.RelationalInversePropertyAttributeConvention\"/>",
+    "level": 3,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Metadata/Conventions/Internal/RelationalInversePropertyAttributeConvention.cs/#L12"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

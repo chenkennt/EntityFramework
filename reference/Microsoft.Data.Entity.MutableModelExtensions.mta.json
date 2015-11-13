@@ -1,0 +1,473 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.MutableModelExtensions",
+    "id": "MutableModelExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.MutableModelExtensions.AddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)",
+            "id": "AddEntityType_IMutableModel__Type_",
+            "parent": "Microsoft.Data.Entity.MutableModelExtensions",
+            "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+            "name": "AddEntityType(IMutableModel, Type)",
+            "fullName": "Microsoft.Data.Entity.MutableModelExtensions.AddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+              "startLine": 41,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IMutableEntityType AddEntityType(IMutableModel model, Type type)",
+              "content.vb": "Public Shared Function AddEntityType(model As IMutableModel, type As Type) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions.AddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)\" name=\"Microsoft.Data.Entity.MutableModelExtensions.AddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L42"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutableModelExtensions.FindEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)",
+            "id": "FindEntityType_IMutableModel__Type_",
+            "parent": "Microsoft.Data.Entity.MutableModelExtensions",
+            "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+            "name": "FindEntityType(IMutableModel, Type)",
+            "fullName": "Microsoft.Data.Entity.MutableModelExtensions.FindEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+              "startLine": 22,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the entity that maps the given entity class. Returns null if no entity type with the given name is found.</p>\n",
+            "syntax": {
+              "content": "public static IMutableEntityType FindEntityType(IMutableModel model, Type type)",
+              "content.vb": "Public Shared Function FindEntityType(model As IMutableModel, type As Type) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  },
+                  "description": "<p>The model to find the entity type in.</p>\n"
+                },
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  },
+                  "description": "<p>The type of the entity class to find the type for.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                },
+                "description": "<p>The entity type, or null if none if found.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions.FindEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)\" name=\"Microsoft.Data.Entity.MutableModelExtensions.FindEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L23"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.String)",
+            "id": "GetOrAddEntityType_IMutableModel__String_",
+            "parent": "Microsoft.Data.Entity.MutableModelExtensions",
+            "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+            "name": "GetOrAddEntityType(IMutableModel, String)",
+            "fullName": "Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the entity type with the given name or adds a new entity type if none is found.</p>\n",
+            "syntax": {
+              "content": "public static IMutableEntityType GetOrAddEntityType(IMutableModel model, string name)",
+              "content.vb": "Public Shared Function GetOrAddEntityType(model As IMutableModel, name As String) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  },
+                  "description": "<p>The model to find or add the entity type to.</p>\n"
+                },
+                {
+                  "id": "name",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  },
+                  "description": "<p>The name of the entity type.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                },
+                "description": "<p>The existing or newly created entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.String)\" name=\"Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L32"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)",
+            "id": "GetOrAddEntityType_IMutableModel__Type_",
+            "parent": "Microsoft.Data.Entity.MutableModelExtensions",
+            "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+            "name": "GetOrAddEntityType(IMutableModel, Type)",
+            "fullName": "Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+              "startLine": 38,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IMutableEntityType GetOrAddEntityType(IMutableModel model, Type type)",
+              "content.vb": "Public Shared Function GetOrAddEntityType(model As IMutableModel, type As Type) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)\" name=\"Microsoft.Data.Entity.MutableModelExtensions.GetOrAddEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L39"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.MutableModelExtensions.RemoveEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)",
+            "id": "RemoveEntityType_IMutableModel__Type_",
+            "parent": "Microsoft.Data.Entity.MutableModelExtensions",
+            "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+            "name": "RemoveEntityType(IMutableModel, Type)",
+            "fullName": "Microsoft.Data.Entity.MutableModelExtensions.RemoveEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+              "startLine": 51,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "syntax": {
+              "content": "public static IMutableEntityType RemoveEntityType(IMutableModel model, Type type)",
+              "content.vb": "Public Shared Function RemoveEntityType(model As IMutableModel, type As Type) As IMutableEntityType",
+              "parameters": [
+                {
+                  "id": "model",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IMutableModel.yml",
+                    "name": "IMutableModel",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IMutableModel",
+                    "type": "interface",
+                    "summary": "<para>\nMetadata about the shape of entities, the relationships between them, and how they map to the database. A model is typically\ncreated by overriding the <xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> method on a derived context, or\nusing <xref href=\"Microsoft.Data.Entity.ModelBuilder\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IModel\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\" name=\"Microsoft.Data.Entity.Metadata.IMutableModel\"/>",
+                    "id": "IMutableModel",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "type",
+                  "type": {
+                    "uid": "System.Type",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Type",
+                    "fullName": "System.Type",
+                    "specName": "<xref href=\"System.Type\" name=\"System.Type\"/>",
+                    "id": "Type",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IMutableEntityType.yml",
+                  "name": "IMutableEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IMutableEntityType",
+                  "type": "interface",
+                  "summary": "<para>\nRepresents an entity in an <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.\n</para>\n<para>\nThis interface is used during model creation and allows the metadata to be modified.\nOnce the model is built, <xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\"></xref> represents a ready-only view of the same metadata.\n</para>",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\" name=\"Microsoft.Data.Entity.Metadata.IMutableEntityType\"/>",
+                  "id": "IMutableEntityType",
+                  "level": 0
+                }
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions.RemoveEntityType(Microsoft.Data.Entity.Metadata.IMutableModel,System.Type)\" name=\"Microsoft.Data.Entity.MutableModelExtensions.RemoveEntityType(Microsoft.Data.Entity.Metadata.IMutableModel, System.Type)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L52"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.MutableModelExtensions.yml",
+    "name": "MutableModelExtensions",
+    "fullName": "Microsoft.Data.Entity.MutableModelExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/MutableModelExtensions.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.IMutableModel\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class MutableModelExtensions",
+      "content.vb": "Public Class MutableModelExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.MutableModelExtensions\" name=\"Microsoft.Data.Entity.MutableModelExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/MutableModelExtensions.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,317 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+    "id": "AccessorExtensions",
+    "parent": "Microsoft.Data.Entity.Infrastructure",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetInfrastructure``1(Microsoft.Data.Entity.Infrastructure.IInfrastructure{``0})",
+            "id": "GetInfrastructure_T__IInfrastructure_T__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+            "href": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.yml",
+            "name": "GetInfrastructure<T>(IInfrastructure<T>)",
+            "name.vb": "GetInfrastructure(Of T)(IInfrastructure(Of T))",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetInfrastructure<T>(Microsoft.Data.Entity.Infrastructure.IInfrastructure<T>)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetInfrastructure(Of T)(Microsoft.Data.Entity.Infrastructure.IInfrastructure(Of T))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+              "startLine": 61,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "summary": "<para>\nGets the value from a property that is being hidden using <xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref>.\n</para>\n<para>\nThis method is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>\n<para><xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref> is used to hide properties that are not intended to be used in\napplication code but can be used in extension methods written by database providers etc.\n</para>",
+            "syntax": {
+              "content": "public static T GetInfrastructure<T>(IInfrastructure<T> accessor)",
+              "content.vb": "Public Shared Function GetInfrastructure(Of T)(accessor As IInfrastructure(Of T)) As T",
+              "parameters": [
+                {
+                  "id": "accessor",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure{{T}}",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "definition": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                    "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml",
+                    "name": "IInfrastructure<T>",
+                    "name.vb": "IInfrastructure(Of T)",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<T>",
+                    "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure(Of T)",
+                    "spec.csharp": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                        "name": "IInfrastructure",
+                        "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                        "name": "IInfrastructure",
+                        "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "T",
+                        "fullName": "T",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\" name=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure\"/>&lt;T&gt;",
+                    "id": "IInfrastructure_T_",
+                    "level": 0
+                  },
+                  "description": "<p>The object that exposes the property.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "T",
+                  "description": "The type of the property being hidden by @'Microsoft.Data.Entity.Infrastructure.IInfrastructure`1'."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{T}",
+                  "isExternal": false,
+                  "name": "T",
+                  "fullName": "T",
+                  "specName": "<xref href=\"{T}\" name=\"T\"/>",
+                  "id": "T",
+                  "level": 0
+                },
+                "description": "<p>The object assigned to the property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetInfrastructure``1(Microsoft.Data.Entity.Infrastructure.IInfrastructure{``0})\" name=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetInfrastructure&lt;T&gt;(Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;T&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs/#L62"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetService``1(Microsoft.Data.Entity.Infrastructure.IInfrastructure{System.IServiceProvider})",
+            "id": "GetService_TService__IInfrastructure_IServiceProvider__",
+            "parent": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+            "href": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.yml",
+            "name": "GetService<TService>(IInfrastructure<IServiceProvider>)",
+            "name.vb": "GetService(Of TService)(IInfrastructure(Of IServiceProvider))",
+            "fullName": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetService<TService>(Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.IServiceProvider>)",
+            "fullName.vb": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetService(Of TService)(Microsoft.Data.Entity.Infrastructure.IInfrastructure(Of System.IServiceProvider))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+              "startLine": 42,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Infrastructure",
+            "summary": "<para>\nResolves a service from the <xref href=\"System.IServiceProvider\"></xref> exposed from a type that implements\n<xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref>.\n</para>\n<para>\nThis method is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>\n<para><xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref> is used to hide properties that are not intended to be used in\napplication code but can be used in extension methods written by database providers etc.\n</para>",
+            "syntax": {
+              "content": "public static TService GetService<TService>(IInfrastructure<IServiceProvider> accessor)",
+              "content.vb": "Public Shared Function GetService(Of TService)(accessor As IInfrastructure(Of IServiceProvider)) As TService",
+              "parameters": [
+                {
+                  "id": "accessor",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure{System.IServiceProvider}",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "definition": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                    "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml",
+                    "name": "IInfrastructure<IServiceProvider>",
+                    "name.vb": "IInfrastructure(Of IServiceProvider)",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.IServiceProvider>",
+                    "fullName.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure(Of System.IServiceProvider)",
+                    "spec.csharp": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                        "name": "IInfrastructure",
+                        "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.IServiceProvider",
+                        "name": "IServiceProvider",
+                        "fullName": "System.IServiceProvider",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1",
+                        "name": "IInfrastructure",
+                        "fullName": "Microsoft.Data.Entity.Infrastructure.IInfrastructure",
+                        "isExternal": false,
+                        "href": "Microsoft.Data.Entity.Infrastructure.IInfrastructure`1.yml"
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "uid": "System.IServiceProvider",
+                        "name": "IServiceProvider",
+                        "fullName": "System.IServiceProvider",
+                        "isExternal": true
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\" name=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure\"/>&lt;<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>&gt;",
+                    "id": "IInfrastructure_IServiceProvider_",
+                    "level": 0
+                  },
+                  "description": "<p>The object exposing the service provider.</p>\n"
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TService",
+                  "description": "The type of service to be resolved."
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TService}",
+                  "isExternal": false,
+                  "name": "TService",
+                  "fullName": "TService",
+                  "specName": "<xref href=\"{TService}\" name=\"TService\"/>",
+                  "id": "TService",
+                  "level": 0
+                },
+                "description": "<p>The requested service.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetService``1(Microsoft.Data.Entity.Infrastructure.IInfrastructure{System.IServiceProvider})\" name=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions.GetService&lt;TService&gt;(Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;System.IServiceProvider&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs/#L43"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions.yml",
+    "name": "AccessorExtensions",
+    "fullName": "Microsoft.Data.Entity.Infrastructure.AccessorExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs",
+      "startLine": 23,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Infrastructure",
+    "summary": "<para>\nExtension methods for <xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref>.\n</para>\n<para>\nThese methods are typically used by database providers (and other extensions). They are generally\nnot used in application code.\n</para>\n<para><xref href=\"Microsoft.Data.Entity.Infrastructure.IInfrastructure`1\"></xref> is used to hide properties that are not intended to be used in\napplication code but can be used in extension methods written by database providers etc.\n</para>",
+    "syntax": {
+      "content": "public class AccessorExtensions",
+      "content.vb": "Public Class AccessorExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions\" name=\"Microsoft.Data.Entity.Infrastructure.AccessorExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Infrastructure/AccessorExtensions.cs/#L24"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

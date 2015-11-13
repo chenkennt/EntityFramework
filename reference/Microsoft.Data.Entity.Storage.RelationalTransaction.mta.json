@@ -1,0 +1,321 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+    "id": "RelationalTransaction",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction.#ctor(Microsoft.Data.Entity.Storage.IRelationalConnection,System.Data.Common.DbTransaction,Microsoft.Extensions.Logging.ILogger,System.Boolean)",
+            "id": "RelationalTransaction_IRelationalConnection__DbTransaction__ILogger__Boolean_",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+            "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+            "name": "RelationalTransaction(IRelationalConnection, DbTransaction, ILogger, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction.RelationalTransaction(Microsoft.Data.Entity.Storage.IRelationalConnection, System.Data.Common.DbTransaction, Microsoft.Extensions.Logging.ILogger, System.Boolean)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public RelationalTransaction(IRelationalConnection connection, DbTransaction transaction, ILogger logger, bool transactionOwned)",
+              "content.vb": "Public Sub New(connection As IRelationalConnection, transaction As DbTransaction, logger As ILogger, transactionOwned As Boolean)",
+              "parameters": [
+                {
+                  "id": "connection",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalConnection.yml",
+                    "name": "IRelationalConnection",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalConnection\" name=\"Microsoft.Data.Entity.Storage.IRelationalConnection\"/>",
+                    "id": "IRelationalConnection",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "transaction",
+                  "type": {
+                    "uid": "System.Data.Common.DbTransaction",
+                    "parent": "System.Data.Common",
+                    "isExternal": true,
+                    "name": "DbTransaction",
+                    "fullName": "System.Data.Common.DbTransaction",
+                    "specName": "<xref href=\"System.Data.Common.DbTransaction\" name=\"System.Data.Common.DbTransaction\"/>",
+                    "id": "DbTransaction",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "logger",
+                  "type": {
+                    "uid": "Microsoft.Extensions.Logging.ILogger",
+                    "parent": "Microsoft.Extensions.Logging",
+                    "isExternal": true,
+                    "name": "ILogger",
+                    "fullName": "Microsoft.Extensions.Logging.ILogger",
+                    "specName": "<xref href=\"Microsoft.Extensions.Logging.ILogger\" name=\"Microsoft.Extensions.Logging.ILogger\"/>",
+                    "id": "ILogger",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "transactionOwned",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction.#ctor(Microsoft.Data.Entity.Storage.IRelationalConnection,System.Data.Common.DbTransaction,Microsoft.Extensions.Logging.ILogger,System.Boolean)\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction.RelationalTransaction(Microsoft.Data.Entity.Storage.IRelationalConnection, System.Data.Common.DbTransaction, Microsoft.Extensions.Logging.ILogger, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L24"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction.Microsoft#Data#Entity#Infrastructure#IInfrastructure{System#Data#Common#DbTransaction}#Instance",
+            "id": "IInfrastructure_DbTransaction__Instance",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+            "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+            "name": "IInfrastructure<DbTransaction>.Instance",
+            "name.vb": "Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.Data.Common.DbTransaction>.Instance",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction.Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.Data.Common.DbTransaction>.Instance",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+              "startLine": 89,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "DbTransaction IInfrastructure<DbTransaction>.Instance { get; }",
+                "content.vb": "ReadOnly WriteOnly Property Microsoft.Data.Entity.Infrastructure.IInfrastructure<System.Data.Common.DbTransaction>.Instance As DbTransaction Implements IInfrastructure(Of DbTransaction).Instance",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Data.Common.DbTransaction",
+                    "parent": "System.Data.Common",
+                    "isExternal": true,
+                    "name": "DbTransaction",
+                    "fullName": "System.Data.Common.DbTransaction",
+                    "specName": "<xref href=\"System.Data.Common.DbTransaction\" name=\"System.Data.Common.DbTransaction\"/>",
+                    "id": "DbTransaction",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Microsoft#Data#Entity#Infrastructure#IInfrastructure{System#Data#Common#DbTransaction}#Instance\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Microsoft.Data.Entity.Infrastructure.IInfrastructure&lt;System.Data.Common.DbTransaction&gt;.Instance\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L90"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction.Commit",
+            "id": "Commit__",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+            "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+            "name": "Commit()",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction.Commit()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual void Commit()",
+              "content.vb": "Public Overridable Sub Commit"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Commit\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Commit()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction.Dispose",
+            "id": "Dispose__",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+            "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+            "name": "Dispose()",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction.Dispose()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+              "startLine": 67,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual void Dispose()",
+              "content.vb": "Public Overridable Sub Dispose"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Dispose\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Dispose()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L68"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalTransaction.Rollback",
+            "id": "Rollback__",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+            "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+            "name": "Rollback()",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction.Rollback()",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "public virtual void Rollback()",
+              "content.vb": "Public Overridable Sub Rollback"
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Rollback\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction.Rollback()\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L57"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.RelationalTransaction.yml",
+    "name": "RelationalTransaction",
+    "fullName": "Microsoft.Data.Entity.Storage.RelationalTransaction",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Storage/RelationalTransaction.cs",
+      "startLine": 14,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "syntax": {
+      "content": "public class RelationalTransaction : IDbContextTransaction, IDisposable, IInfrastructure<DbTransaction>",
+      "content.vb": "Public Class RelationalTransaction Implements IDbContextTransaction, IDisposable, IInfrastructure(Of DbTransaction)"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IDbContextTransaction",
+      "System.IDisposable",
+      "Microsoft.Data.Entity.Infrastructure.IInfrastructure{System.Data.Common.DbTransaction}"
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalTransaction\" name=\"Microsoft.Data.Entity.Storage.RelationalTransaction\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalTransaction.cs/#L15"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

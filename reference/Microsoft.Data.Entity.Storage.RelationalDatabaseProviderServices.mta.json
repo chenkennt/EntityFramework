@@ -1,0 +1,1569 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+    "id": "RelationalDatabaseProviderServices",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.#ctor(System.IServiceProvider)",
+            "id": "RelationalDatabaseProviderServices_IServiceProvider_",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "RelationalDatabaseProviderServices(IServiceProvider)",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseProviderServices(System.IServiceProvider)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 21,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+              "content": "protected RelationalDatabaseProviderServices(IServiceProvider services)",
+              "content.vb": "Protected Sub New(services As IServiceProvider)",
+              "parameters": [
+                {
+                  "id": "services",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.#ctor(System.IServiceProvider)\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseProviderServices(System.IServiceProvider)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L22"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.AnnotationProvider",
+            "id": "AnnotationProvider",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "AnnotationProvider",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.AnnotationProvider",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 56,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IRelationalAnnotationProvider AnnotationProvider { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property AnnotationProvider As IRelationalAnnotationProvider",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.yml",
+                    "name": "IRelationalAnnotationProvider",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\" name=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\"/>",
+                    "id": "IRelationalAnnotationProvider",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.AnnotationProvider\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.AnnotationProvider\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L57"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.BatchExecutor",
+            "id": "BatchExecutor",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "BatchExecutor",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.BatchExecutor",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 41,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IBatchExecutor BatchExecutor { get; }",
+                "content.vb": "Public Overridable ReadOnly Property BatchExecutor As IBatchExecutor",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.IBatchExecutor",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.IBatchExecutor.yml",
+                    "name": "IBatchExecutor",
+                    "fullName": "Microsoft.Data.Entity.Update.IBatchExecutor",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.IBatchExecutor\" name=\"Microsoft.Data.Entity.Update.IBatchExecutor\"/>",
+                    "id": "IBatchExecutor",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.BatchExecutor\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.BatchExecutor\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L42"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CommandBatchPreparer",
+            "id": "CommandBatchPreparer",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "CommandBatchPreparer",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CommandBatchPreparer",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 43,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual ICommandBatchPreparer CommandBatchPreparer { get; }",
+                "content.vb": "Public Overridable ReadOnly Property CommandBatchPreparer As ICommandBatchPreparer",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.ICommandBatchPreparer",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.ICommandBatchPreparer.yml",
+                    "name": "ICommandBatchPreparer",
+                    "fullName": "Microsoft.Data.Entity.Update.ICommandBatchPreparer",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.ICommandBatchPreparer\" name=\"Microsoft.Data.Entity.Update.ICommandBatchPreparer\"/>",
+                    "id": "ICommandBatchPreparer",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CommandBatchPreparer\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CommandBatchPreparer\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L44"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompiledQueryCacheKeyGenerator",
+            "id": "CompiledQueryCacheKeyGenerator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "CompiledQueryCacheKeyGenerator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompiledQueryCacheKeyGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 29,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override ICompiledQueryCacheKeyGenerator CompiledQueryCacheKeyGenerator { get; }",
+                "content.vb": "Public Overrides ReadOnly Property CompiledQueryCacheKeyGenerator As ICompiledQueryCacheKeyGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator.yml",
+                    "name": "ICompiledQueryCacheKeyGenerator",
+                    "fullName": "Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator\" name=\"Microsoft.Data.Entity.Query.ICompiledQueryCacheKeyGenerator\"/>",
+                    "id": "ICompiledQueryCacheKeyGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.CompiledQueryCacheKeyGenerator",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompiledQueryCacheKeyGenerator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompiledQueryCacheKeyGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L30"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeExpressionFragmentTranslator",
+            "id": "CompositeExpressionFragmentTranslator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "CompositeExpressionFragmentTranslator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeExpressionFragmentTranslator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 46,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IExpressionFragmentTranslator CompositeExpressionFragmentTranslator { get; }",
+                "content.vb": "Public Overridable ReadOnly Property CompositeExpressionFragmentTranslator As IExpressionFragmentTranslator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator.yml",
+                    "name": "IExpressionFragmentTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator\"/>",
+                    "id": "IExpressionFragmentTranslator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeExpressionFragmentTranslator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeExpressionFragmentTranslator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L47"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMemberTranslator",
+            "id": "CompositeMemberTranslator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "CompositeMemberTranslator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMemberTranslator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 49,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IMemberTranslator CompositeMemberTranslator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property CompositeMemberTranslator As IMemberTranslator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator.yml",
+                    "name": "IMemberTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator\"/>",
+                    "id": "IMemberTranslator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMemberTranslator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMemberTranslator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L50"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMethodCallTranslator",
+            "id": "CompositeMethodCallTranslator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "CompositeMethodCallTranslator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMethodCallTranslator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 48,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IMethodCallTranslator CompositeMethodCallTranslator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property CompositeMethodCallTranslator As IMethodCallTranslator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator.yml",
+                    "name": "IMethodCallTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator\"/>",
+                    "id": "IMethodCallTranslator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMethodCallTranslator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.CompositeMethodCallTranslator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L49"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.Database",
+            "id": "Database",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "Database",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.Database",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IDatabase Database { get; }",
+                "content.vb": "Public Overrides ReadOnly Property Database As IDatabase",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDatabase.yml",
+                    "name": "IDatabase",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDatabase",
+                    "type": "interface",
+                    "summary": "<para>\nThe main interaction point between a context and the database provider.\n</para>\n<para>\nThis interface is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabase\" name=\"Microsoft.Data.Entity.Storage.IDatabase\"/>",
+                    "id": "IDatabase",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Database",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.Database\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.Database\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L27"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryableExpressionVisitorFactory",
+            "id": "EntityQueryableExpressionVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "EntityQueryableExpressionVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryableExpressionVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IEntityQueryableExpressionVisitorFactory EntityQueryableExpressionVisitorFactory { get; }",
+                "content.vb": "Public Overrides ReadOnly Property EntityQueryableExpressionVisitorFactory As IEntityQueryableExpressionVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory.yml",
+                    "name": "IEntityQueryableExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IEntityQueryableExpressionVisitorFactory\"/>",
+                    "id": "IEntityQueryableExpressionVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryableExpressionVisitorFactory",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryableExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryableExpressionVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L36"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryModelVisitorFactory",
+            "id": "EntityQueryModelVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "EntityQueryModelVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryModelVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 36,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IEntityQueryModelVisitorFactory EntityQueryModelVisitorFactory { get; }",
+                "content.vb": "Public Overrides ReadOnly Property EntityQueryModelVisitorFactory As IEntityQueryModelVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory.yml",
+                    "name": "IEntityQueryModelVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Query.IEntityQueryModelVisitorFactory\"/>",
+                    "id": "IEntityQueryModelVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.EntityQueryModelVisitorFactory",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryModelVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.EntityQueryModelVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L37"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ExpressionPrinter",
+            "id": "ExpressionPrinter",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ExpressionPrinter",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ExpressionPrinter",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 31,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IExpressionPrinter ExpressionPrinter { get; }",
+                "content.vb": "Public Overrides ReadOnly Property ExpressionPrinter As IExpressionPrinter",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter",
+                    "parent": "Microsoft.Data.Entity.Query.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter.yml",
+                    "name": "IExpressionPrinter",
+                    "fullName": "Microsoft.Data.Entity.Query.Internal.IExpressionPrinter",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Internal.IExpressionPrinter\" name=\"Microsoft.Data.Entity.Query.Internal.IExpressionPrinter\"/>",
+                    "id": "IExpressionPrinter",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ExpressionPrinter",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ExpressionPrinter\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ExpressionPrinter\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L32"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.HistoryRepository",
+            "id": "HistoryRepository",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "HistoryRepository",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.HistoryRepository",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 50,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IHistoryRepository HistoryRepository { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property HistoryRepository As IHistoryRepository",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IHistoryRepository",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IHistoryRepository.yml",
+                    "name": "IHistoryRepository",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IHistoryRepository",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IHistoryRepository\" name=\"Microsoft.Data.Entity.Migrations.IHistoryRepository\"/>",
+                    "id": "IHistoryRepository",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.HistoryRepository\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.HistoryRepository\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L51"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsAnnotationProvider",
+            "id": "MigrationsAnnotationProvider",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "MigrationsAnnotationProvider",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsAnnotationProvider",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 40,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IMigrationsAnnotationProvider MigrationsAnnotationProvider { get; }",
+                "content.vb": "Public Overridable ReadOnly Property MigrationsAnnotationProvider As IMigrationsAnnotationProvider",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider.yml",
+                    "name": "IMigrationsAnnotationProvider",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsAnnotationProvider\"/>",
+                    "id": "IMigrationsAnnotationProvider",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsAnnotationProvider\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsAnnotationProvider\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L41"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsSqlGenerator",
+            "id": "MigrationsSqlGenerator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "MigrationsSqlGenerator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsSqlGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 45,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IMigrationsSqlGenerator MigrationsSqlGenerator { get; }",
+                "content.vb": "Public Overridable ReadOnly Property MigrationsSqlGenerator As IMigrationsSqlGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Migrations",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator.yml",
+                    "name": "IMigrationsSqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\" name=\"Microsoft.Data.Entity.Migrations.IMigrationsSqlGenerator\"/>",
+                    "id": "IMigrationsSqlGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsSqlGenerator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.MigrationsSqlGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L46"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModelValidator",
+            "id": "ModelValidator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ModelValidator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModelValidator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 28,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IModelValidator ModelValidator { get; }",
+                "content.vb": "Public Overrides ReadOnly Property ModelValidator As IModelValidator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Internal.IModelValidator",
+                    "parent": "Microsoft.Data.Entity.Internal",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Internal.IModelValidator.yml",
+                    "name": "IModelValidator",
+                    "fullName": "Microsoft.Data.Entity.Internal.IModelValidator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Internal.IModelValidator\" name=\"Microsoft.Data.Entity.Internal.IModelValidator\"/>",
+                    "id": "IModelValidator",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelValidator",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModelValidator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModelValidator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L29"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModificationCommandBatchFactory",
+            "id": "ModificationCommandBatchFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ModificationCommandBatchFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModificationCommandBatchFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 54,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IModificationCommandBatchFactory ModificationCommandBatchFactory { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property ModificationCommandBatchFactory As IModificationCommandBatchFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory.yml",
+                    "name": "IModificationCommandBatchFactory",
+                    "fullName": "Microsoft.Data.Entity.Update.IModificationCommandBatchFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.IModificationCommandBatchFactory\" name=\"Microsoft.Data.Entity.Update.IModificationCommandBatchFactory\"/>",
+                    "id": "IModificationCommandBatchFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModificationCommandBatchFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ModificationCommandBatchFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L55"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ParameterNameGeneratorFactory",
+            "id": "ParameterNameGeneratorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ParameterNameGeneratorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ParameterNameGeneratorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 44,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IParameterNameGeneratorFactory ParameterNameGeneratorFactory { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ParameterNameGeneratorFactory As IParameterNameGeneratorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory.yml",
+                    "name": "IParameterNameGeneratorFactory",
+                    "fullName": "Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory\" name=\"Microsoft.Data.Entity.Storage.IParameterNameGeneratorFactory\"/>",
+                    "id": "IParameterNameGeneratorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ParameterNameGeneratorFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ParameterNameGeneratorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L45"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ProjectionExpressionVisitorFactory",
+            "id": "ProjectionExpressionVisitorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ProjectionExpressionVisitorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ProjectionExpressionVisitorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 37,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IProjectionExpressionVisitorFactory ProjectionExpressionVisitorFactory { get; }",
+                "content.vb": "Public Overrides ReadOnly Property ProjectionExpressionVisitorFactory As IProjectionExpressionVisitorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory.yml",
+                    "name": "IProjectionExpressionVisitorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.IProjectionExpressionVisitorFactory\"/>",
+                    "id": "IProjectionExpressionVisitorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ProjectionExpressionVisitorFactory",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ProjectionExpressionVisitorFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ProjectionExpressionVisitorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L38"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryCompilationContextFactory",
+            "id": "QueryCompilationContextFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "QueryCompilationContextFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryCompilationContextFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 34,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IQueryCompilationContextFactory QueryCompilationContextFactory { get; }",
+                "content.vb": "Public Overrides ReadOnly Property QueryCompilationContextFactory As IQueryCompilationContextFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory.yml",
+                    "name": "IQueryCompilationContextFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryCompilationContextFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Query.IQueryCompilationContextFactory\"/>",
+                    "id": "IQueryCompilationContextFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryCompilationContextFactory",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryCompilationContextFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryCompilationContextFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L35"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryContextFactory",
+            "id": "QueryContextFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "QueryContextFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryContextFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IQueryContextFactory QueryContextFactory { get; }",
+                "content.vb": "Public Overrides ReadOnly Property QueryContextFactory As IQueryContextFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IQueryContextFactory",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IQueryContextFactory.yml",
+                    "name": "IQueryContextFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.IQueryContextFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IQueryContextFactory\" name=\"Microsoft.Data.Entity.Query.IQueryContextFactory\"/>",
+                    "id": "IQueryContextFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.QueryContextFactory",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryContextFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QueryContextFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L34"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QuerySqlGeneratorFactory",
+            "id": "QuerySqlGeneratorFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "QuerySqlGeneratorFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QuerySqlGeneratorFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 57,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IQuerySqlGeneratorFactory QuerySqlGeneratorFactory { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property QuerySqlGeneratorFactory As IQuerySqlGeneratorFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory",
+                    "parent": "Microsoft.Data.Entity.Query.Sql",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory.yml",
+                    "name": "IQuerySqlGeneratorFactory",
+                    "fullName": "Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory\" name=\"Microsoft.Data.Entity.Query.Sql.IQuerySqlGeneratorFactory\"/>",
+                    "id": "IQuerySqlGeneratorFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QuerySqlGeneratorFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.QuerySqlGeneratorFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L58"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalConnection",
+            "id": "RelationalConnection",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "RelationalConnection",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalConnection",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 51,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IRelationalConnection RelationalConnection { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property RelationalConnection As IRelationalConnection",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalConnection.yml",
+                    "name": "IRelationalConnection",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalConnection",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalConnection\" name=\"Microsoft.Data.Entity.Storage.IRelationalConnection\"/>",
+                    "id": "IRelationalConnection",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalConnection\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalConnection\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L52"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseCreator",
+            "id": "RelationalDatabaseCreator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "RelationalDatabaseCreator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseCreator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 55,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IRelationalDatabaseCreator RelationalDatabaseCreator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property RelationalDatabaseCreator As IRelationalDatabaseCreator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator.yml",
+                    "name": "IRelationalDatabaseCreator",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator\" name=\"Microsoft.Data.Entity.Storage.IRelationalDatabaseCreator\"/>",
+                    "id": "IRelationalDatabaseCreator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseCreator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.RelationalDatabaseCreator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L56"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ResultOperatorHandler",
+            "id": "ResultOperatorHandler",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ResultOperatorHandler",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ResultOperatorHandler",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 32,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IResultOperatorHandler ResultOperatorHandler { get; }",
+                "content.vb": "Public Overrides ReadOnly Property ResultOperatorHandler As IResultOperatorHandler",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.IResultOperatorHandler",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.IResultOperatorHandler.yml",
+                    "name": "IResultOperatorHandler",
+                    "fullName": "Microsoft.Data.Entity.Query.IResultOperatorHandler",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.IResultOperatorHandler\" name=\"Microsoft.Data.Entity.Query.IResultOperatorHandler\"/>",
+                    "id": "IResultOperatorHandler",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ResultOperatorHandler",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ResultOperatorHandler\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ResultOperatorHandler\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L33"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.SqlGenerator",
+            "id": "SqlGenerator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "SqlGenerator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.SqlGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 52,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract ISqlGenerator SqlGenerator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property SqlGenerator As ISqlGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.ISqlGenerator.yml",
+                    "name": "ISqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Storage.ISqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.ISqlGenerator\" name=\"Microsoft.Data.Entity.Storage.ISqlGenerator\"/>",
+                    "id": "ISqlGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.SqlGenerator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.SqlGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L53"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TransactionManager",
+            "id": "TransactionManager",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "TransactionManager",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TransactionManager",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 27,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IDbContextTransactionManager TransactionManager { get; }",
+                "content.vb": "Public Overrides ReadOnly Property TransactionManager As IDbContextTransactionManager",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager.yml",
+                    "name": "IDbContextTransactionManager",
+                    "fullName": "Microsoft.Data.Entity.Storage.IDbContextTransactionManager",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDbContextTransactionManager\" name=\"Microsoft.Data.Entity.Storage.IDbContextTransactionManager\"/>",
+                    "id": "IDbContextTransactionManager",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.TransactionManager",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TransactionManager\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TransactionManager\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L28"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TypeMapper",
+            "id": "TypeMapper",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "TypeMapper",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TypeMapper",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 39,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IRelationalTypeMapper TypeMapper { get; }",
+                "content.vb": "Public Overridable ReadOnly Property TypeMapper As IRelationalTypeMapper",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper.yml",
+                    "name": "IRelationalTypeMapper",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalTypeMapper",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\" name=\"Microsoft.Data.Entity.Storage.IRelationalTypeMapper\"/>",
+                    "id": "IRelationalTypeMapper",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TypeMapper\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.TypeMapper\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L40"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.UpdateSqlGenerator",
+            "id": "UpdateSqlGenerator",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "UpdateSqlGenerator",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.UpdateSqlGenerator",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 53,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public abstract IUpdateSqlGenerator UpdateSqlGenerator { get; }",
+                "content.vb": "Public MustOverride ReadOnly Property UpdateSqlGenerator As IUpdateSqlGenerator",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Update.IUpdateSqlGenerator",
+                    "parent": "Microsoft.Data.Entity.Update",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Update.IUpdateSqlGenerator.yml",
+                    "name": "IUpdateSqlGenerator",
+                    "fullName": "Microsoft.Data.Entity.Update.IUpdateSqlGenerator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Update.IUpdateSqlGenerator\" name=\"Microsoft.Data.Entity.Update.IUpdateSqlGenerator\"/>",
+                    "id": "IUpdateSqlGenerator",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.UpdateSqlGenerator\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.UpdateSqlGenerator\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L54"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueBufferFactoryFactory",
+            "id": "ValueBufferFactoryFactory",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ValueBufferFactoryFactory",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueBufferFactoryFactory",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 42,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public virtual IRelationalValueBufferFactoryFactory ValueBufferFactoryFactory { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ValueBufferFactoryFactory As IRelationalValueBufferFactoryFactory",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory",
+                    "parent": "Microsoft.Data.Entity.Storage",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory.yml",
+                    "name": "IRelationalValueBufferFactoryFactory",
+                    "fullName": "Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory\" name=\"Microsoft.Data.Entity.Storage.IRelationalValueBufferFactoryFactory\"/>",
+                    "id": "IRelationalValueBufferFactoryFactory",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueBufferFactoryFactory\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueBufferFactoryFactory\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L43"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueGeneratorSelector",
+            "id": "ValueGeneratorSelector",
+            "parent": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+            "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+            "name": "ValueGeneratorSelector",
+            "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueGeneratorSelector",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+              "startLine": 30,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "syntax": {
+                "content": "public override IValueGeneratorSelector ValueGeneratorSelector { get; }",
+                "content.vb": "Public Overrides ReadOnly Property ValueGeneratorSelector As IValueGeneratorSelector",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+                    "parent": "Microsoft.Data.Entity.ValueGeneration",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector.yml",
+                    "name": "IValueGeneratorSelector",
+                    "fullName": "Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector",
+                    "type": "interface",
+                    "summary": "<para>\nSelects value generators to be used to generate values for properties of entities.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\" name=\"Microsoft.Data.Entity.ValueGeneration.IValueGeneratorSelector\"/>",
+                    "id": "IValueGeneratorSelector",
+                    "level": 0
+                  }
+                }
+            },
+            "overridden": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorSelector",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueGeneratorSelector\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.ValueGeneratorSelector\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L31"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices.yml",
+    "name": "RelationalDatabaseProviderServices",
+    "fullName": "Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "syntax": {
+      "content": "public abstract class RelationalDatabaseProviderServices : DatabaseProviderServices, IRelationalDatabaseProviderServices, IDatabaseProviderServices",
+      "content.vb": "Public MustInherit Class RelationalDatabaseProviderServices Inherits DatabaseProviderServices Implements IRelationalDatabaseProviderServices, IDatabaseProviderServices"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+        "isExternal": false,
+        "href": "Microsoft.Data.Entity.Storage.DatabaseProviderServices.yml",
+        "name": "DatabaseProviderServices",
+        "fullName": "Microsoft.Data.Entity.Storage.DatabaseProviderServices",
+        "type": "class",
+        "summary": "<para>\nThe base set of services required by EF for a database provider to function.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+        "specName": "<xref href=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.DatabaseProviderServices\"/>",
+        "id": "DatabaseProviderServices",
+        "level": 0,
+        "index": 1
+      }
+    ],
+    "implements": [
+      "Microsoft.Data.Entity.Storage.IRelationalDatabaseProviderServices",
+      "Microsoft.Data.Entity.Storage.IDatabaseProviderServices"
+    ],
+    "inheritedMembers": [
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.InvariantName",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Services",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.GetService``1",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ConventionSetBuilder",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.Creator",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ModelSource",
+      "Microsoft.Data.Entity.Storage.DatabaseProviderServices.ValueGeneratorCache",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.RelationalDatabaseProviderServices\"/>",
+    "level": 2,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Storage/RelationalDatabaseProviderServices.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

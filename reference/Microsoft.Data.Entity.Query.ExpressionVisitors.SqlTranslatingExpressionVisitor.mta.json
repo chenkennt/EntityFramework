@@ -1,0 +1,1353 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+    "id": "SqlTranslatingExpressionVisitor",
+    "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "children": [
+      {
+        "title": "Constructors",
+        "id": "constructors",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.#ctor(Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider,Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator,Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator,Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator,Microsoft.Data.Entity.Query.RelationalQueryModelVisitor,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Linq.Expressions.Expression,System.Boolean,System.Boolean)",
+            "id": "SqlTranslatingExpressionVisitor_IRelationalAnnotationProvider__IExpressionFragmentTranslator__IMethodCallTranslator__IMemberTranslator__RelationalQueryModelVisitor__SelectExpression__Expression__Boolean__Boolean_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "SqlTranslatingExpressionVisitor(IRelationalAnnotationProvider, IExpressionFragmentTranslator, IMethodCallTranslator, IMemberTranslator, RelationalQueryModelVisitor, SelectExpression, Expression, Boolean, Boolean)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.SqlTranslatingExpressionVisitor(Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider, Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator, Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator, Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator, Microsoft.Data.Entity.Query.RelationalQueryModelVisitor, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Linq.Expressions.Expression, System.Boolean, System.Boolean)",
+            "type": "constructor",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 35,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "public SqlTranslatingExpressionVisitor(IRelationalAnnotationProvider relationalAnnotationProvider, IExpressionFragmentTranslator compositeExpressionFragmentTranslator, IMethodCallTranslator methodCallTranslator, IMemberTranslator memberTranslator, RelationalQueryModelVisitor queryModelVisitor, SelectExpression targetSelectExpression = null, Expression topLevelPredicate = null, bool bindParentQueries = false, bool inProjection = false)",
+              "content.vb": "Public Sub New(relationalAnnotationProvider As IRelationalAnnotationProvider, compositeExpressionFragmentTranslator As IExpressionFragmentTranslator, methodCallTranslator As IMethodCallTranslator, memberTranslator As IMemberTranslator, queryModelVisitor As RelationalQueryModelVisitor, targetSelectExpression As SelectExpression = Nothing, topLevelPredicate As Expression = Nothing, bindParentQueries As Boolean = False, inProjection As Boolean = False)",
+              "parameters": [
+                {
+                  "id": "relationalAnnotationProvider",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider.yml",
+                    "name": "IRelationalAnnotationProvider",
+                    "fullName": "Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\" name=\"Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider\"/>",
+                    "id": "IRelationalAnnotationProvider",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "compositeExpressionFragmentTranslator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator.yml",
+                    "name": "IExpressionFragmentTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator\"/>",
+                    "id": "IExpressionFragmentTranslator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "methodCallTranslator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator.yml",
+                    "name": "IMethodCallTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator\"/>",
+                    "id": "IMethodCallTranslator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "memberTranslator",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator",
+                    "parent": "Microsoft.Data.Entity.Query.ExpressionTranslators",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator.yml",
+                    "name": "IMemberTranslator",
+                    "fullName": "Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator",
+                    "type": "interface",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator\" name=\"Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator\"/>",
+                    "id": "IMemberTranslator",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "queryModelVisitor",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor",
+                    "parent": "Microsoft.Data.Entity.Query",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor.yml",
+                    "name": "RelationalQueryModelVisitor",
+                    "fullName": "Microsoft.Data.Entity.Query.RelationalQueryModelVisitor",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.RelationalQueryModelVisitor\" name=\"Microsoft.Data.Entity.Query.RelationalQueryModelVisitor\"/>",
+                    "id": "RelationalQueryModelVisitor",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "targetSelectExpression",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "parent": "Microsoft.Data.Entity.Query.Expressions",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Query.Expressions.SelectExpression.yml",
+                    "name": "SelectExpression",
+                    "fullName": "Microsoft.Data.Entity.Query.Expressions.SelectExpression",
+                    "type": "class",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\" name=\"Microsoft.Data.Entity.Query.Expressions.SelectExpression\"/>",
+                    "id": "SelectExpression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "topLevelPredicate",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "bindParentQueries",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "inProjection",
+                  "type": {
+                    "uid": "System.Boolean",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "Boolean",
+                    "fullName": "System.Boolean",
+                    "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                    "id": "Boolean",
+                    "level": 0
+                  }
+                }
+              ]
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.#ctor(Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider,Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator,Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator,Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator,Microsoft.Data.Entity.Query.RelationalQueryModelVisitor,Microsoft.Data.Entity.Query.Expressions.SelectExpression,System.Linq.Expressions.Expression,System.Boolean,System.Boolean)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.SqlTranslatingExpressionVisitor(Microsoft.Data.Entity.Metadata.IRelationalAnnotationProvider, Microsoft.Data.Entity.Query.ExpressionTranslators.IExpressionFragmentTranslator, Microsoft.Data.Entity.Query.ExpressionTranslators.IMethodCallTranslator, Microsoft.Data.Entity.Query.ExpressionTranslators.IMemberTranslator, Microsoft.Data.Entity.Query.RelationalQueryModelVisitor, Microsoft.Data.Entity.Query.Expressions.SelectExpression, System.Linq.Expressions.Expression, System.Boolean, System.Boolean)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L36"
+          }
+        ]
+      },
+      {
+        "title": "Properties",
+        "id": "properties",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.ClientEvalPredicate",
+            "id": "ClientEvalPredicate",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "ClientEvalPredicate",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.ClientEvalPredicate",
+            "type": "property",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 63,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+                "content": "public virtual Expression ClientEvalPredicate { get; }",
+                "content.vb": "Public Overridable ReadOnly Property ClientEvalPredicate As Expression",
+                "parameters": [],
+                "return": {
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.ClientEvalPredicate\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.ClientEvalPredicate\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L64"
+          }
+        ]
+      },
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.CreateUnhandledItemException``1(``0,System.String)",
+            "id": "CreateUnhandledItemException_T__T__String_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "CreateUnhandledItemException<T>(T, String)",
+            "name.vb": "CreateUnhandledItemException(Of T)(T, String)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.CreateUnhandledItemException<T>(T, System.String)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.CreateUnhandledItemException(Of T)(T, System.String)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 648,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Exception CreateUnhandledItemException<T>(T unhandledItem, string visitMethod)",
+              "content.vb": "Protected Overrides Function CreateUnhandledItemException(Of T)(unhandledItem As T, visitMethod As String) As Exception",
+              "parameters": [
+                {
+                  "id": "unhandledItem",
+                  "type": {
+                    "uid": "{T}",
+                    "isExternal": false,
+                    "name": "T",
+                    "fullName": "T",
+                    "specName": "<xref href=\"{T}\" name=\"T\"/>",
+                    "id": "T",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "visitMethod",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "T"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Exception",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Exception",
+                  "fullName": "System.Exception",
+                  "specName": "<xref href=\"System.Exception\" name=\"System.Exception\"/>",
+                  "id": "Exception",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.CreateUnhandledItemException``1({T},System.String)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.CreateUnhandledItemException``1(``0,System.String)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.CreateUnhandledItemException&lt;T&gt;(T, System.String)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L649"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.Visit(System.Linq.Expressions.Expression)",
+            "id": "Visit_Expression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "Visit(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.Visit(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 65,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "public override Expression Visit(Expression expression)",
+              "content.vb": "Public Overrides Function Visit(expression As Expression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.Visit(System.Linq.Expressions.Expression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.Visit(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.Visit(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L66"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "id": "VisitBinary_BinaryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitBinary(BinaryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 78,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitBinary(BinaryExpression expression)",
+              "content.vb": "Protected Overrides Function VisitBinary(expression As BinaryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.BinaryExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "BinaryExpression",
+                    "fullName": "System.Linq.Expressions.BinaryExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.BinaryExpression\" name=\"System.Linq.Expressions.BinaryExpression\"/>",
+                    "id": "BinaryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L79"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "id": "VisitConditional_ConditionalExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitConditional(ConditionalExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 169,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitConditional(ConditionalExpression expression)",
+              "content.vb": "Protected Overrides Function VisitConditional(expression As ConditionalExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.ConditionalExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "ConditionalExpression",
+                    "fullName": "System.Linq.Expressions.ConditionalExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.ConditionalExpression\" name=\"System.Linq.Expressions.ConditionalExpression\"/>",
+                    "id": "ConditionalExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L170"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)",
+            "id": "VisitConstant_ConstantExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitConstant(ConstantExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 583,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitConstant(ConstantExpression expression)",
+              "content.vb": "Protected Overrides Function VisitConstant(expression As ConstantExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.ConstantExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "ConstantExpression",
+                    "fullName": "System.Linq.Expressions.ConstantExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.ConstantExpression\" name=\"System.Linq.Expressions.ConstantExpression\"/>",
+                    "id": "ConstantExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L584"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)",
+            "id": "VisitExtension_Expression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitExtension(Expression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 610,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitExtension(Expression expression)",
+              "content.vb": "Protected Overrides Function VisitExtension(expression As Expression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.Expression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "Expression",
+                    "fullName": "System.Linq.Expressions.Expression",
+                    "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                    "id": "Expression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L611"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "id": "VisitMember_MemberExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitMember(MemberExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 328,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitMember(MemberExpression expression)",
+              "content.vb": "Protected Overrides Function VisitMember(expression As MemberExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.MemberExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "MemberExpression",
+                    "fullName": "System.Linq.Expressions.MemberExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.MemberExpression\" name=\"System.Linq.Expressions.MemberExpression\"/>",
+                    "id": "MemberExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L329"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "id": "VisitMethodCall_MethodCallExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitMethodCall(MethodCallExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 279,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitMethodCall(MethodCallExpression expression)",
+              "content.vb": "Protected Overrides Function VisitMethodCall(expression As MethodCallExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.MethodCallExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "MethodCallExpression",
+                    "fullName": "System.Linq.Expressions.MethodCallExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.MethodCallExpression\" name=\"System.Linq.Expressions.MethodCallExpression\"/>",
+                    "id": "MethodCallExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L280"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)",
+            "id": "VisitNew_NewExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitNew(NewExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 445,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitNew(NewExpression expression)",
+              "content.vb": "Protected Overrides Function VisitNew(expression As NewExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.NewExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "NewExpression",
+                    "fullName": "System.Linq.Expressions.NewExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.NewExpression\" name=\"System.Linq.Expressions.NewExpression\"/>",
+                    "id": "NewExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L446"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)",
+            "id": "VisitParameter_ParameterExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitParameter(ParameterExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 599,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitParameter(ParameterExpression expression)",
+              "content.vb": "Protected Overrides Function VisitParameter(expression As ParameterExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.ParameterExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "ParameterExpression",
+                    "fullName": "System.Linq.Expressions.ParameterExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.ParameterExpression\" name=\"System.Linq.Expressions.ParameterExpression\"/>",
+                    "id": "ParameterExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L600"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "id": "VisitQuerySourceReference_QuerySourceReferenceExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitQuerySourceReference(QuerySourceReferenceExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 632,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitQuerySourceReference(QuerySourceReferenceExpression expression)",
+              "content.vb": "Protected Overrides Function VisitQuerySourceReference(expression As QuerySourceReferenceExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression",
+                    "parent": "Remotion.Linq.Clauses.Expressions",
+                    "isExternal": true,
+                    "name": "QuerySourceReferenceExpression",
+                    "fullName": "Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression\" name=\"Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression\"/>",
+                    "id": "QuerySourceReferenceExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L633"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "id": "VisitSubQuery_SubQueryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitSubQuery(SubQueryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 484,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitSubQuery(SubQueryExpression expression)",
+              "content.vb": "Protected Overrides Function VisitSubQuery(expression As SubQueryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "parent": "Remotion.Linq.Clauses.Expressions",
+                    "isExternal": true,
+                    "name": "SubQueryExpression",
+                    "fullName": "Remotion.Linq.Clauses.Expressions.SubQueryExpression",
+                    "specName": "<xref href=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\" name=\"Remotion.Linq.Clauses.Expressions.SubQueryExpression\"/>",
+                    "id": "SubQueryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L485"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)",
+            "id": "VisitUnary_UnaryExpression_",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitUnary(UnaryExpression)",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 414,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override Expression VisitUnary(UnaryExpression expression)",
+              "content.vb": "Protected Overrides Function VisitUnary(expression As UnaryExpression) As Expression",
+              "parameters": [
+                {
+                  "id": "expression",
+                  "type": {
+                    "uid": "System.Linq.Expressions.UnaryExpression",
+                    "parent": "System.Linq.Expressions",
+                    "isExternal": true,
+                    "name": "UnaryExpression",
+                    "fullName": "System.Linq.Expressions.UnaryExpression",
+                    "specName": "<xref href=\"System.Linq.Expressions.UnaryExpression\" name=\"System.Linq.Expressions.UnaryExpression\"/>",
+                    "id": "UnaryExpression",
+                    "level": 0
+                  }
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Linq.Expressions.Expression",
+                  "parent": "System.Linq.Expressions",
+                  "isExternal": true,
+                  "name": "Expression",
+                  "fullName": "System.Linq.Expressions.Expression",
+                  "specName": "<xref href=\"System.Linq.Expressions.Expression\" name=\"System.Linq.Expressions.Expression\"/>",
+                  "id": "Expression",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L415"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnhandledItem``2(``0,System.String,System.Func{``0,``1})",
+            "id": "VisitUnhandledItem_TItem__TResult__TItem__String__Func_TItem__TResult__",
+            "parent": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+            "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+            "name": "VisitUnhandledItem<TItem, TResult>(TItem, String, Func<TItem, TResult>)",
+            "name.vb": "VisitUnhandledItem(Of TItem, TResult)(TItem, String, Func(Of TItem, TResult))",
+            "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnhandledItem<TItem, TResult>(TItem, System.String, System.Func<TItem, TResult>)",
+            "fullName.vb": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnhandledItem(Of TItem, TResult)(TItem, System.String, System.Func(Of TItem, TResult))",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+              "startLine": 644,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Relational"
+            ],
+            "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+            "syntax": {
+              "content": "protected override TResult VisitUnhandledItem<TItem, TResult>(TItem unhandledItem, string visitMethod, Func<TItem, TResult> baseBehavior)where TItem : TResult",
+              "content.vb": "Protected Overrides Function VisitUnhandledItem(Of TItem As TResult, TResult)(unhandledItem As TItem, visitMethod As String, baseBehavior As Func(Of TItem, TResult)) As TResult",
+              "parameters": [
+                {
+                  "id": "unhandledItem",
+                  "type": {
+                    "uid": "{TItem}",
+                    "isExternal": false,
+                    "name": "TItem",
+                    "fullName": "TItem",
+                    "specName": "<xref href=\"{TItem}\" name=\"TItem\"/>",
+                    "id": "TItem",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "visitMethod",
+                  "type": {
+                    "uid": "System.String",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "String",
+                    "fullName": "System.String",
+                    "specName": "<xref href=\"System.String\" name=\"System.String\"/>",
+                    "id": "String",
+                    "level": 0
+                  }
+                },
+                {
+                  "id": "baseBehavior",
+                  "type": {
+                    "uid": "System.Func{{TItem},{TResult}}",
+                    "parent": "System",
+                    "definition": "System.Func`2",
+                    "name": "Func<TItem, TResult>",
+                    "name.vb": "Func(Of TItem, TResult)",
+                    "fullName": "System.Func<TItem, TResult>",
+                    "fullName.vb": "System.Func(Of TItem, TResult)",
+                    "spec.csharp": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "<",
+                        "fullName": "<",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TItem",
+                        "fullName": "TItem",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ">",
+                        "fullName": ">",
+                        "isExternal": false
+                      }
+                    ],
+                    "spec.vb": [
+                      {
+                        "uid": "System.Func`2",
+                        "name": "Func",
+                        "fullName": "System.Func",
+                        "isExternal": true
+                      },
+                      {
+                        "name": "(Of ",
+                        "fullName": "(Of ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TItem",
+                        "fullName": "TItem",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ", ",
+                        "fullName": ", ",
+                        "isExternal": false
+                      },
+                      {
+                        "name": "TResult",
+                        "fullName": "TResult",
+                        "isExternal": false
+                      },
+                      {
+                        "name": ")",
+                        "fullName": ")",
+                        "isExternal": false
+                      }
+                    ],
+                    "specName": "<xref href=\"System.Func`2\" name=\"System.Func\"/>&lt;TItem, TResult&gt;",
+                    "id": "Func_TItem__TResult_",
+                    "level": 0
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "id": "TItem"
+                },
+                {
+                  "id": "TResult"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "{TResult}",
+                  "isExternal": false,
+                  "name": "TResult",
+                  "fullName": "TResult",
+                  "specName": "<xref href=\"{TResult}\" name=\"TResult\"/>",
+                  "id": "TResult",
+                  "level": 0
+                }
+              }
+            },
+            "overridden": "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitUnhandledItem``2({TItem},System.String,System.Func{{TItem},{TResult}})",
+            "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnhandledItem``2(``0,System.String,System.Func{``0,``1})\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.VisitUnhandledItem&lt;TItem, TResult&gt;(TItem, System.String, System.Func&lt;TItem, TResult&gt;)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L645"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor.yml",
+    "name": "SqlTranslatingExpressionVisitor",
+    "fullName": "Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs",
+      "startLine": 22,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Relational"
+    ],
+    "namespace": "Microsoft.Data.Entity.Query.ExpressionVisitors",
+    "syntax": {
+      "content": "public class SqlTranslatingExpressionVisitor : ThrowingExpressionVisitor",
+      "content.vb": "Public Class SqlTranslatingExpressionVisitor Inherits ThrowingExpressionVisitor"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      },
+      {
+        "uid": "System.Linq.Expressions.ExpressionVisitor",
+        "parent": "System.Linq.Expressions",
+        "isExternal": true,
+        "name": "ExpressionVisitor",
+        "fullName": "System.Linq.Expressions.ExpressionVisitor",
+        "specName": "<xref href=\"System.Linq.Expressions.ExpressionVisitor\" name=\"System.Linq.Expressions.ExpressionVisitor\"/>",
+        "id": "ExpressionVisitor",
+        "level": 0,
+        "index": 1
+      },
+      {
+        "uid": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "parent": "Remotion.Linq.Parsing",
+        "isExternal": true,
+        "name": "RelinqExpressionVisitor",
+        "fullName": "Remotion.Linq.Parsing.RelinqExpressionVisitor",
+        "specName": "<xref href=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\" name=\"Remotion.Linq.Parsing.RelinqExpressionVisitor\"/>",
+        "id": "RelinqExpressionVisitor",
+        "level": 0,
+        "index": 2
+      },
+      {
+        "uid": "Remotion.Linq.Parsing.ThrowingExpressionVisitor",
+        "parent": "Remotion.Linq.Parsing",
+        "isExternal": true,
+        "name": "ThrowingExpressionVisitor",
+        "fullName": "Remotion.Linq.Parsing.ThrowingExpressionVisitor",
+        "specName": "<xref href=\"Remotion.Linq.Parsing.ThrowingExpressionVisitor\" name=\"Remotion.Linq.Parsing.ThrowingExpressionVisitor\"/>",
+        "id": "ThrowingExpressionVisitor",
+        "level": 0,
+        "index": 3
+      }
+    ],
+    "inheritedMembers": [
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitUnknownStandardExpression(System.Linq.Expressions.Expression,System.String,System.Func{System.Linq.Expressions.Expression,System.Linq.Expressions.Expression})",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitExtension(System.Linq.Expressions.Expression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitUnary(System.Linq.Expressions.UnaryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitBinary(System.Linq.Expressions.BinaryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitConstant(System.Linq.Expressions.ConstantExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitConditional(System.Linq.Expressions.ConditionalExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitParameter(System.Linq.Expressions.ParameterExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{{T}})",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitLambda``1(System.Linq.Expressions.Expression{{T}})",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMethodCall(System.Linq.Expressions.MethodCallExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitInvocation(System.Linq.Expressions.InvocationExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMember(System.Linq.Expressions.MemberExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitNew(System.Linq.Expressions.NewExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitNewArray(System.Linq.Expressions.NewArrayExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitNewArray(System.Linq.Expressions.NewArrayExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMemberInit(System.Linq.Expressions.MemberInitExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMemberInit(System.Linq.Expressions.MemberInitExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitListInit(System.Linq.Expressions.ListInitExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitListInit(System.Linq.Expressions.ListInitExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitBlock(System.Linq.Expressions.BlockExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitBlock(System.Linq.Expressions.BlockExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitDefault(System.Linq.Expressions.DefaultExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitDefault(System.Linq.Expressions.DefaultExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitGoto(System.Linq.Expressions.GotoExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitGoto(System.Linq.Expressions.GotoExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitIndex(System.Linq.Expressions.IndexExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitIndex(System.Linq.Expressions.IndexExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitLabel(System.Linq.Expressions.LabelExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitLabel(System.Linq.Expressions.LabelExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitLoop(System.Linq.Expressions.LoopExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitLoop(System.Linq.Expressions.LoopExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitSwitch(System.Linq.Expressions.SwitchExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitSwitch(System.Linq.Expressions.SwitchExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitTry(System.Linq.Expressions.TryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitTry(System.Linq.Expressions.TryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMemberBinding(System.Linq.Expressions.MemberBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMemberBinding(System.Linq.Expressions.MemberBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitElementInit(System.Linq.Expressions.ElementInit)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitElementInit(System.Linq.Expressions.ElementInit)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMemberAssignment(System.Linq.Expressions.MemberAssignment)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitMemberListBinding(System.Linq.Expressions.MemberListBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitMemberListBinding(System.Linq.Expressions.MemberListBinding)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitCatchBlock(System.Linq.Expressions.CatchBlock)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitCatchBlock(System.Linq.Expressions.CatchBlock)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitLabelTarget(System.Linq.Expressions.LabelTarget)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitLabelTarget(System.Linq.Expressions.LabelTarget)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.VisitSwitchCase(System.Linq.Expressions.SwitchCase)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitSwitchCase(System.Linq.Expressions.SwitchCase)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitSubQuery(Remotion.Linq.Clauses.Expressions.SubQueryExpression)",
+      "Remotion.Linq.Parsing.ThrowingExpressionVisitor.BaseVisitQuerySourceReference(Remotion.Linq.Clauses.Expressions.QuerySourceReferenceExpression)",
+      "Remotion.Linq.Parsing.RelinqExpressionVisitor.AdjustArgumentsForNewExpression(System.Collections.Generic.IList{System.Linq.Expressions.Expression},System.Collections.Generic.IList{System.Reflection.MemberInfo})",
+      "System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression})",
+      "System.Linq.Expressions.ExpressionVisitor.Visit``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.Func{{T},{T}})",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1({T},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collections.ObjectModel.ReadOnlyCollection{{T}},System.String)",
+      "System.Linq.Expressions.ExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)",
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor\" name=\"Microsoft.Data.Entity.Query.ExpressionVisitors.SqlTranslatingExpressionVisitor\"/>",
+    "level": 4,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Relational/Query/ExpressionVisitors/SqlTranslatingExpressionVisitor.cs/#L23"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

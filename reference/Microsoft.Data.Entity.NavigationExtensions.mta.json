@@ -1,0 +1,339 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.NavigationExtensions",
+    "id": "NavigationExtensions",
+    "parent": "Microsoft.Data.Entity",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.NavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "FindInverse_INavigation_",
+            "parent": "Microsoft.Data.Entity.NavigationExtensions",
+            "href": "Microsoft.Data.Entity.NavigationExtensions.yml",
+            "name": "FindInverse(INavigation)",
+            "fullName": "Microsoft.Data.Entity.NavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+              "startLine": 48,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the navigation property on the other end of the relationship. Returns null if\nthere is no navigation property defined on the other end of the relationship.</p>\n",
+            "syntax": {
+              "content": "public static INavigation FindInverse(INavigation navigation)",
+              "content.vb": "Public Shared Function FindInverse(navigation As INavigation) As INavigation",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to find the inverse of.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                  "name": "INavigation",
+                  "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                  "type": "interface",
+                  "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                  "id": "INavigation",
+                  "level": 0
+                },
+                "description": "<p>The inverse navigation, or null if none is defined.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.NavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.NavigationExtensions.FindInverse(Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/NavigationExtensions.cs/#L49"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.NavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "GetTargetType_INavigation_",
+            "parent": "Microsoft.Data.Entity.NavigationExtensions",
+            "href": "Microsoft.Data.Entity.NavigationExtensions.yml",
+            "name": "GetTargetType(INavigation)",
+            "fullName": "Microsoft.Data.Entity.NavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+              "startLine": 63,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets the entity type that a given navigation property will hold an instance of\n(or hold instances of if it is a collection navigation).</p>\n",
+            "syntax": {
+              "content": "public static IEntityType GetTargetType(INavigation navigation)",
+              "content.vb": "Public Shared Function GetTargetType(navigation As INavigation) As IEntityType",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to find the target entity type of.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Metadata.IEntityType",
+                  "parent": "Microsoft.Data.Entity.Metadata",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Metadata.IEntityType.yml",
+                  "name": "IEntityType",
+                  "fullName": "Microsoft.Data.Entity.Metadata.IEntityType",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.IEntityType\" name=\"Microsoft.Data.Entity.Metadata.IEntityType\"/>",
+                  "id": "IEntityType",
+                  "level": 0
+                },
+                "description": "<p>The target entity type.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.NavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.NavigationExtensions.GetTargetType(Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/NavigationExtensions.cs/#L64"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.NavigationExtensions.IsCollection(Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "IsCollection_INavigation_",
+            "parent": "Microsoft.Data.Entity.NavigationExtensions",
+            "href": "Microsoft.Data.Entity.NavigationExtensions.yml",
+            "name": "IsCollection(INavigation)",
+            "fullName": "Microsoft.Data.Entity.NavigationExtensions.IsCollection(Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets a value indicating whether the given navigation property is a collection property.</p>\n",
+            "syntax": {
+              "content": "public static bool IsCollection(INavigation navigation)",
+              "content.vb": "Public Shared Function IsCollection(navigation As INavigation) As Boolean",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to check.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if this is a collection property, false if it is a reference property.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.NavigationExtensions.IsCollection(Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.NavigationExtensions.IsCollection(Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/NavigationExtensions.cs/#L34"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.NavigationExtensions.IsDependentToPrincipal(Microsoft.Data.Entity.Metadata.INavigation)",
+            "id": "IsDependentToPrincipal_INavigation_",
+            "parent": "Microsoft.Data.Entity.NavigationExtensions",
+            "href": "Microsoft.Data.Entity.NavigationExtensions.yml",
+            "name": "IsDependentToPrincipal(INavigation)",
+            "fullName": "Microsoft.Data.Entity.NavigationExtensions.IsDependentToPrincipal(Microsoft.Data.Entity.Metadata.INavigation)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+              "startLine": 23,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity",
+            "summary": "<p>Gets a value indicating whether the given navigation property is the navigation property on the dependent entity\ntype that points to the principal entity.</p>\n",
+            "syntax": {
+              "content": "public static bool IsDependentToPrincipal(INavigation navigation)",
+              "content.vb": "Public Shared Function IsDependentToPrincipal(navigation As INavigation) As Boolean",
+              "parameters": [
+                {
+                  "id": "navigation",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "parent": "Microsoft.Data.Entity.Metadata",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Metadata.INavigation.yml",
+                    "name": "INavigation",
+                    "fullName": "Microsoft.Data.Entity.Metadata.INavigation",
+                    "type": "interface",
+                    "summary": "<p>Represents a navigation property which can be used to navigate a relationship.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Metadata.INavigation\" name=\"Microsoft.Data.Entity.Metadata.INavigation\"/>",
+                    "id": "INavigation",
+                    "level": 0
+                  },
+                  "description": "<p>The navigation property to check.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the given navigation property is the navigation property on the dependent entity\ntype that points to the principal entity, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.NavigationExtensions.IsDependentToPrincipal(Microsoft.Data.Entity.Metadata.INavigation)\" name=\"Microsoft.Data.Entity.NavigationExtensions.IsDependentToPrincipal(Microsoft.Data.Entity.Metadata.INavigation)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/NavigationExtensions.cs/#L24"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.NavigationExtensions.yml",
+    "name": "NavigationExtensions",
+    "fullName": "Microsoft.Data.Entity.NavigationExtensions",
+    "type": "Class",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Extensions/NavigationExtensions.cs",
+      "startLine": 12,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity",
+    "summary": "<p>Extension methods for <xref href=\"Microsoft.Data.Entity.Metadata.INavigation\"></xref>.</p>\n",
+    "syntax": {
+      "content": "public class NavigationExtensions",
+      "content.vb": "Public Class NavigationExtensions"
+    },
+    "inheritance": [
+      {
+        "uid": "System.Object",
+        "parent": "System",
+        "isExternal": true,
+        "name": "Object",
+        "fullName": "System.Object",
+        "specName": "<xref href=\"System.Object\" name=\"System.Object\"/>",
+        "id": "Object",
+        "level": 0,
+        "index": 0
+      }
+    ],
+    "inheritedMembers": [
+      "System.Object.ToString",
+      "System.Object.Equals(System.Object)",
+      "System.Object.Equals(System.Object,System.Object)",
+      "System.Object.ReferenceEquals(System.Object,System.Object)",
+      "System.Object.GetHashCode",
+      "System.Object.GetType",
+      "System.Object.MemberwiseClone"
+    ],
+    "specName": "<xref href=\"Microsoft.Data.Entity.NavigationExtensions\" name=\"Microsoft.Data.Entity.NavigationExtensions\"/>",
+    "level": 1,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Extensions/NavigationExtensions.cs/#L13"
+  },
+  "isClass": true,
+  "_allowToc": true
+}

@@ -1,0 +1,181 @@
+﻿
+{
+  "_lang": "csharp",
+  "_tocPath": "reference/toc.html",
+  "_navPath": "toc.html",
+  "_rel": "../",
+  "_navRel": "../toc.html",
+  "_tocRel": "toc.html",
+  "_appTitle": "Entity Framework",
+  "item": {
+    "uid": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+    "id": "IDatabaseProvider",
+    "parent": "Microsoft.Data.Entity.Storage",
+    "children": [
+      {
+        "title": "Methods",
+        "id": "methods",
+        "children": [
+          {
+            "uid": "Microsoft.Data.Entity.Storage.IDatabaseProvider.GetProviderServices(System.IServiceProvider)",
+            "id": "GetProviderServices_IServiceProvider_",
+            "parent": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+            "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml",
+            "name": "GetProviderServices(IServiceProvider)",
+            "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProvider.GetProviderServices(System.IServiceProvider)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+              "startLine": 26,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets the base set of services required by EF for the database provider to function.</p>\n",
+            "syntax": {
+              "content": "IDatabaseProviderServices GetProviderServices(IServiceProvider serviceProvider)",
+              "content.vb": "Function GetProviderServices(serviceProvider As IServiceProvider) As IDatabaseProviderServices",
+              "parameters": [
+                {
+                  "id": "serviceProvider",
+                  "type": {
+                    "uid": "System.IServiceProvider",
+                    "parent": "System",
+                    "isExternal": true,
+                    "name": "IServiceProvider",
+                    "fullName": "System.IServiceProvider",
+                    "specName": "<xref href=\"System.IServiceProvider\" name=\"System.IServiceProvider\"/>",
+                    "id": "IServiceProvider",
+                    "level": 0
+                  },
+                  "description": "<p>The service provider to resolve services from.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                  "parent": "Microsoft.Data.Entity.Storage",
+                  "isExternal": false,
+                  "href": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices.yml",
+                  "name": "IDatabaseProviderServices",
+                  "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProviderServices",
+                  "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProviderServices\"/>",
+                  "id": "IDatabaseProviderServices",
+                  "level": 0
+                },
+                "description": "<p>The services for this database provider.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProvider.GetProviderServices(System.IServiceProvider)\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProvider.GetProviderServices(System.IServiceProvider)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseProvider.cs/#L27"
+          },
+          {
+            "uid": "Microsoft.Data.Entity.Storage.IDatabaseProvider.IsConfigured(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)",
+            "id": "IsConfigured_IDbContextOptions_",
+            "parent": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+            "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml",
+            "name": "IsConfigured(IDbContextOptions)",
+            "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProvider.IsConfigured(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)",
+            "type": "method",
+            "source": {
+              "remote": {
+                "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+                "branch": "dev",
+                "repo": "https://github.com/chenkennt/EntityFramework.git"
+              },
+              "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+              "startLine": 33,
+              "endLine": 0,
+              "isExternal": false
+            },
+            "assemblies": [
+              "EntityFramework.Core"
+            ],
+            "namespace": "Microsoft.Data.Entity.Storage",
+            "summary": "<p>Gets a value indicating whether this database provider has been selected for a given context.</p>\n",
+            "syntax": {
+              "content": "bool IsConfigured(IDbContextOptions options)",
+              "content.vb": "Function IsConfigured(options As IDbContextOptions) As Boolean",
+              "parameters": [
+                {
+                  "id": "options",
+                  "type": {
+                    "uid": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "parent": "Microsoft.Data.Entity.Infrastructure",
+                    "isExternal": false,
+                    "href": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions.yml",
+                    "name": "IDbContextOptions",
+                    "fullName": "Microsoft.Data.Entity.Infrastructure.IDbContextOptions",
+                    "type": "interface",
+                    "summary": "<p>The options to be used by a <xref href=\"Microsoft.Data.Entity.DbContext\"></xref>. You normally override\n<xref href=\"Microsoft.Data.Entity.DbContext.OnConfiguring(Microsoft.Data.Entity.DbContextOptionsBuilder)\"></xref> or use a <xref href=\"Microsoft.Data.Entity.DbContextOptionsBuilder\"></xref>\nto create instances of classes that implement this interface, they are not designed to be directly created\nin your application code.</p>\n",
+                    "specName": "<xref href=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\" name=\"Microsoft.Data.Entity.Infrastructure.IDbContextOptions\"/>",
+                    "id": "IDbContextOptions",
+                    "level": 0
+                  },
+                  "description": "<p>The options for the context.</p>\n"
+                }
+              ],
+              "return": {
+                "type": {
+                  "uid": "System.Boolean",
+                  "parent": "System",
+                  "isExternal": true,
+                  "name": "Boolean",
+                  "fullName": "System.Boolean",
+                  "specName": "<xref href=\"System.Boolean\" name=\"System.Boolean\"/>",
+                  "id": "Boolean",
+                  "level": 0
+                },
+                "description": "<p>True if the database provider has been selected, otherwise false.</p>\n"
+              }
+            },
+            "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProvider.IsConfigured(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProvider.IsConfigured(Microsoft.Data.Entity.Infrastructure.IDbContextOptions)\"/>",
+            "level": 0,
+            "docurl": "",
+            "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseProvider.cs/#L34"
+          }
+        ]
+      }
+    ],
+    "href": "Microsoft.Data.Entity.Storage.IDatabaseProvider.yml",
+    "name": "IDatabaseProvider",
+    "fullName": "Microsoft.Data.Entity.Storage.IDatabaseProvider",
+    "type": "Interface",
+    "source": {
+      "remote": {
+        "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+        "branch": "dev",
+        "repo": "https://github.com/chenkennt/EntityFramework.git"
+      },
+      "path": "src/EntityFramework.Core/Storage/IDatabaseProvider.cs",
+      "startLine": 19,
+      "endLine": 0,
+      "isExternal": false
+    },
+    "assemblies": [
+      "EntityFramework.Core"
+    ],
+    "namespace": "Microsoft.Data.Entity.Storage",
+    "summary": "<para>\nThe primary point where a database provider can tell EF that it has been selected for the current context\nand provide the services required for it to function.\n</para>\n<para>\nThis type is typically used by database providers (and other extensions). It is generally\nnot used in application code.\n</para>",
+    "syntax": {
+      "content": "public interface IDatabaseProvider",
+      "content.vb": "Public Interface IDatabaseProvider"
+    },
+    "specName": "<xref href=\"Microsoft.Data.Entity.Storage.IDatabaseProvider\" name=\"Microsoft.Data.Entity.Storage.IDatabaseProvider\"/>",
+    "level": 0,
+    "docurl": "",
+    "sourceurl": "https://github.com/chenkennt/EntityFramework/blob/dev/src/EntityFramework.Core/Storage/IDatabaseProvider.cs/#L20"
+  },
+  "isClass": true,
+  "_allowToc": true
+}
